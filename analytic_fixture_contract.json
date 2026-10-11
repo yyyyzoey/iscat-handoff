@@ -1,0 +1,4 @@
+{"schema":"iscat063.analytic_fixture.1","Fs_Hz":5000,"N":2001,"k":160,"f_k_Hz":399.800099950025,"C0":0.2,"A":0.01,
+ "phases":[0,1.0471975511965976,-1.5707963267948966],"two_freq":{"k2":73,"A2":0.003,"phi2":0.6283185307179586},
+ "exposure":{"Delta_s":1.0e-4,"tag":"TEST_ASSUMPTION","sinc_400Hz_100us":0.9973701827725034},
+ "reference_Z":"(2/N)*sum((C-C0)*exp(-1i*2*pi*k*n/N))","gate":"rel L2 <= 1e-10 (abs scale 1e-12 for near-zero)","result":"16/16 PASS"}

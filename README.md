@@ -1,5 +1,5 @@
 # iSCAT 交接包仓库
 
-- v062 分支：A0-A3 收口 + P0 布局门槛 PASS + duffy OOM 未复现记录
-- v061：R5/R6 PASS；v060：R2/R3/R4；v059-readable：文本版
-- 磁材料输入缺失留空；原始帧与大数组在工作站
+- v063 分支：A1/A2 证据修复 + M0b 解析测试 16/16 + M1 Fe3O4 材料合同 + M2 60nm 首例（复远场 PASS）+ B1 十新条件泛化 PASS
+- 历史分支：v062/v061/v060/v059...
+- 原始大数组在工作站（numeric_inventory.csv）

@@ -1,0 +1,12 @@
+check,result,detail
+r6_rows_1000,PASS,n=1000
+r6_ids_unique_100x100,PASS,
+bool_strict_parse,PASS,explicit 0/1
+case_D_correspondence,PASS,D_true_nm checked against pre-registered B01-B10 mapping (anonymized IDs carry no D)
+D_err_recompute,PASS,
+threshold_crossed_from_unrounded_tau,PASS,tau=-0.7383393556080129
+grouped_SSE_reconciliation_relative_1e-12,PASS,[]
+CP_0_300,PASS,
+CP_8_300,PASS,
+CP_9_300,PASS,
+Wilson_100_100,PASS,

@@ -1,0 +1,3 @@
+[063:m2] start 60nm Fe3O4 in water 1.33 @520nm
+[063:m2] mesh=1444 rawL2=0.00393556 scaErr=0.00789978 absErr=1.98702e+305 extErr=0.00784679 passed=0
+[063:m2] passed=0

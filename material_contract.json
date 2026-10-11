@@ -1,0 +1,10 @@
+{
+ "schema": "iscat063.material_contract.1",
+ "material":"Fe3O4 (magnetite)",
+ "mode":"LITERATURE_MATERIAL_EXPLORATION (uniform sphere,演示光路)",
+ "source":{"database":"refractiveindex.info (polyanskiy/refractiveindex.info-database)","file":"database/data/main/Fe3O4/nk/Querry.yml","citation":"M. R. Querry, Optical Constants, Contractor Report CRDC-CR-85034 (1987)","license":"CC0 public domain","fetched":"2026-10-11"},
+ "data":{"points":612,"range_um":[0.21,55.5556],"format":"wavelength_um n k"},
+ "interpolation":{"method":"linear in wavelength","workpoint_nm":520,"n":2.349,"k":0.083,"nodes_used":[0.51,0.52]},
+ "conventions":{"time_convention":"exp(+i omega t) per NANOBEM build_system (n+i*kappa, kappa>=0 = absorption)","complex_index_used":"n_complex=2.349+0.0831i"},
+ "limitations":["bulk literature data, not particle-measured","no shell/coating","demo geometry 520nm"],"sha256_file":"Fe3O4_Querry.yml in repo"
+}

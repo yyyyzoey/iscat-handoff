@@ -1,0 +1,4 @@
+{"schema":"iscat063.experimental_observable_contract.1","status":"PARTIAL",
+ "known":{"camera_axes":"rows=camera_x (IDENTITY)","pixel_nm":65,"contrast":"C=(It-I0)/I0","roi":"central 41x41","subpixels_q5":5},
+ "missing":{"real_extractor_source":"NOT_FOUND in confirmed dirs","frame_rate":null,"demodulation_protocol":null,"exposure_actual":null,"timestamp_file":null},
+ "note":"M0b analytic tests use ANALYTIC_REFERENCE_ONLY fixtures; real extractor contract blocked on locating user extractor source"}

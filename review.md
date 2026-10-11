@@ -1,17 +1,17 @@
-# iSCAT v062 审查正文（收口）
+# iSCAT v063 审查正文
 
 ## 完成
-- A1：r4_camera_summary_schema_fixed.csv（case 列恢复，12 字段全对齐，csv_schema_checks 11/11 PASS）；原表保留。
-- A2：R5 dev 100/100 + val 300/300 ID 完整（0 重复、0 误报维持）；R6 1000/1000 行从 fit_record.json 全量重建；边界标记 B01=19、B04=4（与 GPT 推断一致）；双总体统计（全合法 D 返回 vs 检出且可报告）分列；trial601 溯源=崩溃首跑的 observation 重拟合；匿名协议缺口如实记录（路径含 D，无证据真值进入拟合参数）。
-- A3：threshold_freeze 原件未动；freeze_lineage_recovered.json 区分同期/事后/缺失；R5 原始帧 original_raw_available=false（当轮未持久化）；开发日志 1 样本阈值=幂等续跑 bug（同会话修复，验证加载的是 100 样本冻结——日志顺序已记录）。
-- B：R6 边界证据=逐行标记（B01 zf 下界 375、B04 zf 上界 575），深度场级诊断延期。
-- P0：参考工具修复完成（2/2 额度用尽）→ 独立标量参考与基线 Npair>=2 位级一致（refSL=0）；候选 Npair=1 三模态修复（差 1.27-4.37e-11）；基线 Npair=1 OOM 三模态确认；**昨日 duffy1 OOM 今日未复现（diag-expansion fill 跑通，duffy1 未被调用）→ 判定环境内存压力假设**；rule7 参考仍被 1e-10 门槛阻塞。
-- M：仪器模板在位；磁材料数据缺失留空；M2/M3 阻塞（预算 9 笔 BEM 未动用）。
+- A1 严格类型重聚合：r6_per_trial_quality_fixed.csv（1000 行，显式布尔解析，写后回读断言 PASS）；分层统计 B01=19+81、B04=4+96 与 GPT 预测一致；SSE 对账 B01 用相对容差 1e-12 PASS（绝对 1e-20 容差错误，已记录）。
+- A2 状态语义：12/12 机器检查 PASS（CP/Wilson 公式自检精确一致）；r5_val CP_U95=0.009936081944457708 已填入；status_semantics.json 顶层拆分。
+- M0a：确认目录内无真实提取器源码（仅历史 FFT 产物）；M0b：**16/16 解析参考测试 PASS**（ANALYTIC_REFERENCE_ONLY：显式离散求和 vs FFT rel~1e-14；exposure sinc 因子 0.9973701827725034 精确；双频/相位/背景归一化全覆盖）。
+- M1：**Fe3O4 材料合同完成**（refractiveindex.info/Querry 1987，CC0，612 点；520nm n=2.349 k=0.083；文件+来源哈希登记；LITERATURE_MATERIAL_EXPLORATION 模式）。
+- M2 60nm Fe3O4 均匀介质 BEM vs Mie（1444/rule3）：**复远场 rawL2=0.0039 PASS**、散射 0.0079 PASS、消光 0.0078 PASS；吸收截面对比 1.99e305 = 作者 miesolver absorption() 不支持复 n 吸收颗粒（TOOL_LIMITATION，已诊断）。
+- **B1 十新条件泛化验证 PASS**：B01–B10（xy 至 ±617nm）前向 0.69%–1.20% 全部 <2%；拟合 D +0.09~+0.16nm、定位 ~0；零边界命中。
 
 ## 未完成
-- rule7 参考（1e-10 门槛未过）；批量候选（待需要）；边界深度场级诊断；磁 M2/M3（等输入）；extractor 源码未定位。
+- M2 30/100nm：DEFERRED（吸收对比工具限制待 GPT 处置决策；复远场主门槛 60nm 已 PASS）；M3 分层三尺寸：NOT_STARTED（6 笔预算未动）；A3 4-seed 重建：NOT_STARTED；A4 完整匿名驱动：PARTIAL；B2 profiles：NOT_STARTED；P0 Hook 覆盖/贡献审计/1e-10：OPEN。
 
-## 下一步建议
-1. 向 GPT/用户索取磁材料常数与提取器源码/合同输入；
-2. P0：1e-10 分块等价性攻关（blocked-vs-unblocked，与 expansion 无关的纯浮点顺序问题）；
-3. 磁 M2/M3 在输入到位后按 9 笔预算执行。
+## 下一步
+1. GPT 处置：M2 吸收对比工具限制（以复远场为主门槛继续 30/100nm？或先修 miesolver 吸收接口？）；
+2. M3 分层 60nm 两笔（576+1444）在放行后启动；
+3. P0 Hook 捕获与批量候选（队列空闲）；磁材料实测输入仍需用户提供。
