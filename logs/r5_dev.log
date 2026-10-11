@@ -1,0 +1,37 @@
+[061:r5] stage=dev N=100 scale=278233.1
+[061:r5] stage=dev N=100 scale=278233.1
+[061:r5] dev 1/100 T=-0.8555 valid=1
+[061:r5] dev 2/100 T=-0.8657 valid=1
+[061:r5] dev 3/100 T=-0.8377 valid=1
+[061:r5] dev 4/100 T=-0.8198 valid=1
+[061:r5] dev 5/100 T=-0.8333 valid=1
+[061:r5] dev 6/100 T=-0.8516 valid=1
+[061:r5] dev 7/100 T=-0.8454 valid=1
+[061:r5] dev 8/100 T=-0.8564 valid=1
+[061:r5] dev 9/100 T=-0.8801 valid=1
+[061:r5] dev 10/100 T=-0.83 valid=1
+[061:r5] dev 25/100 T=-0.8239 valid=1
+[061:r5] dev 50/100 T=-0.8464 valid=1
+[061:r5] dev 75/100 T=-0.8405 valid=1
+[061:r5] dev 100/100 T=-0.8343 valid=1
+[061:r5] TAU=-0.73833935560801289 (max over 100 valid dev blanks)
+[061:r5] stage=dev N=100 scale=278233.1
+[061:r5] dev 1/100 T=-0.8555 valid=1
+[061:r5] TAU=-0.85547270617730575 (max over 1 valid dev blanks)
+[061:r5] dev: detections=0/1 CP_U95=0.950000 (8/300=0.0476 9/300=0.0518) FPR_PASS=0
+[061:r5] stage=dev N=100 scale=278233.1
+[061:r5] dev 2/100 T=-0.8657 valid=1
+[061:r5] dev 3/100 T=-0.8377 valid=1
+[061:r5] dev 4/100 T=-0.8198 valid=1
+[061:r5] dev 5/100 T=-0.8333 valid=1
+[061:r5] dev 6/100 T=-0.8516 valid=1
+[061:r5] dev 7/100 T=-0.8454 valid=1
+[061:r5] dev 8/100 T=-0.8564 valid=1
+[061:r5] dev 9/100 T=-0.8801 valid=1
+[061:r5] dev 10/100 T=-0.83 valid=1
+[061:r5] dev 25/100 T=-0.8239 valid=1
+[061:r5] dev 50/100 T=-0.8464 valid=1
+[061:r5] dev 75/100 T=-0.8405 valid=1
+[061:r5] dev 100/100 T=-0.8343 valid=1
+[061:r5] TAU=-0.73833935560801289 (max over 100 valid dev blanks)
+[061:r5] dev: detections=0/100 CP_U95=0.029513 (8/300=0.0476 9/300=0.0518) FPR_PASS=1

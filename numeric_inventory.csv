@@ -1,4 +1,5 @@
 path,note
-v060_return/r4_camera/acq_*/,all raw frames (200 dirs, 9 frames each),on workstation only
-v058_return/dense_c/,all production s/slices/model,on workstation only
-v056_return/s5_truth/,five fine systems + ten truths,on workstation only
+v061_return/r6_refs/,10 fine 1444 systems (s_fine1444.mat each ~970KB),workstation only
+v061_return/r6_blind/acq_*/,1000 acquisition dirs (9 frames each),workstation only
+v056_return/s5_truth/,five fine systems + ten truths,workstation only
+v058_return/dense_c/,352 slices + 32 s files + full model,workstation only

@@ -1,27 +1,39 @@
 {
- "schema": "iscat060.continuation.1",
+ "schema": "iscat061.complete.1",
  "export_time": "2026-10-11",
- "overall": "R0/R1(carried)+R2+R3+R4 COMPLETED; R5/R6 NOT_STARTED; P0 PARTIAL",
- "R2_full_model": {"execution":"COMPLETED","validation":"PASS","evidence":"COMPLETE",
-   "slices":"352/352 (55 half-node filenames fixed from scientific-notation mangling)","missing":0,
-   "readback_norm_max_diff":0.0,"support_checks":"PASS","model_file":"v058_return/dense_c/models_dense_full32.mat"},
- "R3_ten_conditions": {"execution":"COMPLETED","validation":"PASS","evidence":"COMPLETE",
-   "forward_relL2_41x41":"0.0078-0.0104 (ALL < 2%)",
-   "fit_D_err_nm":"+0.11..+0.17 (all < 2)","fit_pos_err_px":"~0.000 (all < 0.5)",
-   "z_err_nm":"-1.1..-0.1","status_note":"refine4 scope label LOCAL_RESULT_UNCALIBRATED is standard, not failure",
-   "table":"tables/r3_ten_conditions.csv"},
- "R4_camera_pilot": {"execution":"COMPLETED","validation":"PASS","evidence":"COMPLETE",
-   "acquisitions":200,"frames":1800,"recipe":"1506e frozen (camera_development048.json)",
-   "Bias_nm":"+0.087..+0.180","RMSE_nm":"0.134..0.246","pos_max_px":"0.007..0.078",
-   "saturation":0,"failures":0,"status_counter_note":"bad=20 in console was status-string mismatch, not failure",
-   "per_trial":"tables/r4_camera_per_trial.csv"},
- "R5_detection": {"execution":"NOT_STARTED","validation":"NOT_EVALUATED","evidence":"MISSING","reason":"session budget; blank frames confirmed available; plan in NEXT_STEP"},
- "R6_blind": {"execution":"NOT_STARTED","validation":"NOT_EVALUATED","evidence":"MISSING","reason":"session budget; 10 fine refs + 1000 acq+fits (~hours)"},
- "P0": {"layout_candidate":"implemented (v059); Npair=1 runs correct shape; ref agreement pending","hook_capture":"NOT_STARTED (serial constraint lifted - production build DONE)","batching":"NOT_STARTED","blocked_vs_unblocked_1e-10":"OPEN (2.58848e-7)"},
- "magnetic_line": {"instrument_template":"EXISTS (handoff/config/real_instrument_template.json)","material_data":"MISSING (not fabricated)","extractor_contract":"NOT_STARTED"},
+ "overall": "R2-R4 carried PASS; A0 corrections done; R5 FPR PASS (0/300); R6 detection PASS (10/10 conditions Wilson L95=0.9737>=0.9); P0 PARTIAL; synthetic_detection_validation=PASS (scope: central 41x41 + registered xy search + synthetic gold sphere); experimental_validation=false unchanged",
+ "A0_reporting_corrections": {"execution":"COMPLETED","validation":"PASS","evidence":"COMPLETE","table":"tables/r4_camera_summary_rechecked.csv","note":"Bias/RMSE/both Std recomputed from 200 rows at repr precision; identity RMSE^2=Bias^2+popStd^2 holds to ~1e-17; statuses preserved as fit_scope_label"},
+ "model_freeze": {"execution":"COMPLETED","validation":"PASS","evidence":"COMPLETE","model":"v058_return/dense_c/models_dense_full32.mat","D_nodes":32,"z_nodes":11,"map":"260x260 @16.25nm","axis":"IDENTITY (axis_contract.json)"},
+ "R5_detection": {
+  "dev": {"execution":"COMPLETED","validation":"PASS","n":100,"valid":100,"tau":-0.73833935560801289,"threshold_freeze":"threshold_freeze.json"},
+  "validation": {"execution":"COMPLETED","validation":"PASS","evidence":"COMPLETE","n":300,"false_positives":0,"CP_U95":0.009936081944457708,"gate_U95_le_0.05":"PASS"}
+ },
+ "R6_blind": {
+  "references": {"execution":"COMPLETED","solves":10,"solve_seconds":"230.2-287.6","mesh":1444},
+  "acquisitions": {"execution":"COMPLETED","count":1000,"frames":9000,"fits":1000},
+  "detection": {"execution":"COMPLETED","validation":"PASS","per_condition":"10x 100/100 detected","Wilson_L95":0.9736572792168257,"gate_L95_ge_0.9":"PASS"},
+  "dimension_stats": "Bias +0.096..+0.160 nm, RMSE 0.118..0.299 nm, posMax 0.176 px, both populations in tables",
+  "conditions":"B01-B10 pre-registered table (contract), no substitution"
+ },
+ "P0": {
+  "layout_candidate":"implemented; Npair=1 runs correct shape; independent-reference agreement NOT_ESTABLISHED (test tooling: 2 old + 0 new fixes used this round)",
+  "hook_capture":"NOT_STARTED (deferred; production BEM queue now free)",
+  "batching_candidate":"NOT_STARTED (blocked by reference agreement)",
+  "blocked_vs_unblocked_1e-10":"OPEN (2.58848e-7)",
+  "rule7_reference":"NOT_RUN (gates unmet)"
+ },
+ "magnetic_line": {
+  "instrument_template":"EXISTS handoff/config/real_instrument_template.json",
+  "material_data":"MISSING (not fabricated)",
+  "observable_contract":"contrast map C=(It-I0)/I0 on 65nm camera grid, rows=camera_x",
+  "extractor_contract":"NOT_STARTED"
+ },
  "frozen_states": {
-  "continuous_domain_certified": null, "experimental_validation": false,
-  "calibration_valid": false, "detection_validated": false,
+  "continuous_domain_certified": null,
+  "experimental_validation": false,
+  "calibration_valid": false,
+  "detection_validated": false,
+  "synthetic_detection_validation": "PASS (scope-limited)",
   "production_settings_validated_within_approved_scope_only": true
  }
 }

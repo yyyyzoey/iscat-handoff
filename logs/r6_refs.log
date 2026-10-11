@@ -1,0 +1,11 @@
+[061:r6] B01_D28.9 solve 287.6s mesh=1444
+[061:r6] B02_D33.2 solve 239.7s mesh=1444
+[061:r6] B03_D39.1 solve 232.0s mesh=1444
+[061:r6] B04_D43.3 solve 231.3s mesh=1444
+[061:r6] B05_D49.1 solve 231.7s mesh=1444
+[061:r6] B06_D57.3 solve 230.9s mesh=1444
+[061:r6] B07_D63.1 solve 230.3s mesh=1444
+[061:r6] B08_D71.3 solve 230.2s mesh=1444
+[061:r6] B09_D79.1 solve 236.1s mesh=1444
+[061:r6] B10_D85.1 solve 235.6s mesh=1444
+[061:r6] all 10 references done 19:20:07

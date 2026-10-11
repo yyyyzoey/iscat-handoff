@@ -1,6 +1,5 @@
 # iSCAT 交接包仓库
 
-- v059 分支：二进制包；v059-readable：ChatGPT 文本版
-- v060 分支：R2/R3/R4 完成（密 C 全模型 + 十条件验收 + 200 采集相机 pilot）
-- 原始相机帧保留于工作站 v060_return/r4_camera/acq_*（未入 git，见 review.md numeric 说明）
-- 每轮生成为一个新分支
+- v061 分支：R5 检测（0/300 FPR PASS）+ R6 盲测（10x100 全检出 PASS）+ A0 报告订正
+- v060：R2/R3/R4；v059-readable：ChatGPT 文本版；分支规则：每轮一个新分支
+- 原始帧与大数组在工作站（见 numeric_inventory.csv）
