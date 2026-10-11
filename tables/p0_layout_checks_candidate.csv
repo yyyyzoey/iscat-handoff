@@ -1,0 +1,4 @@
+npair,modes,candidate_status,candidate_note
+1,face,OK_shape_only,"eval2 ran; SL shape [1,3,3] correct; independent-reference agreement NOT_ESTABLISHED (test reference impl under repair, diff 5.77e4)"
+2,face+edge+vert,NOT_RUN,"test script interrupted before k=2"
+3,face+edge+vert,NOT_RUN,"same"

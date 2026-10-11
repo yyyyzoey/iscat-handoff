@@ -1,0 +1,55 @@
+D_nm,artifact,bytes,sha256,solve_seconds,mesh_vertices,status
+44,D44_s_prod576.mat,250194,da0ba24d06564c8408e558a56ac07ea1d2ddd84c1100ef404ed805d05912cd4c,35.3,576,COMPLETED
+44,slices/slice_D44_z350.mat,654493,7e07c860816289185897ec13ca4fbff300f7c34ca3a133ecad00b07927185503,,,COMPLETED
+44,slices/slice_D44_z375.mat,654661,39bedc51a83246327dddc41aaa832ac028b534904f4cc00991effefebd867b0b,,,COMPLETED
+44,slices/slice_D44_z400.mat,654849,c5559fc094929c5975d4aae27177206bba17d8de97991fd37d81d67cad3e87eb,,,COMPLETED
+44,slices/slice_D44_z425.mat,655099,ad21c3b356fe5b6142e55266ad9cea17dbe6e507101a2179506af32edf1bbca1,,,COMPLETED
+44,slices/slice_D44_z450.mat,655283,6a0a699af96bf32954a9ea9e51e35cedac48d918e76775854fcab6ea3063071c,,,COMPLETED
+44,slices/slice_D44_z475.mat,655757,6e289fbb42e06e3bd3345f7a16f700c5c7df76971fc3b323290407c2dd5cc55a,,,COMPLETED
+44,slices/slice_D44_z500.mat,655781,8b72071f7a183665500b3b691a9601dc0ae47bee3d4953656a596671dcda9bfb,,,COMPLETED
+44,slices/slice_D44_z525.mat,655440,0bd04edcabcb06ccc33b2ba1ec29c864429ce8a7db694cabd2417304b270f91b,,,COMPLETED
+44,slices/slice_D44_z550.mat,655231,0534aaedf47fd8b56132d0c0082755c8b18118cdeb6cf5e6d885e67f4d71397f,,,COMPLETED
+44,slices/slice_D44_z575.mat,654902,d6a4dc668853d38f8248c58a616c3bcec1e6475f76c318ec8ef1115e8605d00b,,,COMPLETED
+44,slices/slice_D44_z600.mat,654526,35d0fce7f39f883d603dd16e37d43873b8014f96a79b0aa759db3f04eac38bca,,,COMPLETED
+46,D46_s_prod576.mat,250131,029a60bec2964b5248c1892f11d5f8522c43630c30d28e615f1d9f69932cfe4c,36.7,576,COMPLETED
+46,slices/slice_D46_z350.mat,654471,f563737c394ed0418f9188b91fd8011a186741f201e56c295519a1d17eb91f18,,,COMPLETED
+46,slices/slice_D46_z375.mat,654678,e20364950eb3ce7c39dde3b5015a689661d143f60529320321f607445ec87c16,,,COMPLETED
+46,slices/slice_D46_z400.mat,654860,44643c36665f5957f901dc445b82c78de57263e889c238441da7fe17cf5ce1be,,,COMPLETED
+46,slices/slice_D46_z425.mat,655159,ddd422c7b650034dead50d0acaf02b1e67b49df9bdac0c66cecddc91c107585b,,,COMPLETED
+46,slices/slice_D46_z450.mat,655275,50f38e68a39b824da9553317d81d5a6be4b9dbea7cf863b7363729e8ec3e33f6,,,COMPLETED
+46,slices/slice_D46_z475.mat,655717,499b0bd1d62e0f7ae00d72c38656dfd9da1c126dd94f4bf1dd868b5293e7503d,,,COMPLETED
+46,slices/slice_D46_z500.mat,655809,e5cc3d260db49cf2f1b71ed937b849a2bf4879cc04dbc666524196b42a28d692,,,COMPLETED
+46,slices/slice_D46_z525.mat,655397,44d3c5ef29ad105d888445005e731754c1bd59d83cddce4c62766a102fdebf99,,,COMPLETED
+46,slices/slice_D46_z550.mat,654944,b5d726dd830a5503c4d9b4ca4ad896022e4a103ba7d7e9d89b4136b72137d3ab,,,COMPLETED
+46,slices/slice_D46_z575.mat,654795,f4ec390f1019feb688973b8c2f7f6aa3b3e804828ca465cc2a3159df71b8870c,,,COMPLETED
+46,slices/slice_D46_z600.mat,654518,dbbdd09a274f441c5fe5b4959866693b0028e3440de20302cc6a4c2be9af1ebc,,,COMPLETED
+28,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+29.5,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+31,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+32.5,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+34,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+35.5,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+37,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+38.5,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+40,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+41.5,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+48,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+50,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+52,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+54,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+56,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+58,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+60,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+62,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+64,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+66,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+68,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+70,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+72,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+74,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+76,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+78,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+80,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+82,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+84,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED
+86,"PENDING serial build (background, started 2026-10-11 12:23)",,,,,NOT_STARTED

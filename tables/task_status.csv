@@ -1,0 +1,11 @@
+stage,status,note
+R0_takeover,COMPLETED,stuck launcher replaced with visible session 28504
+R1_axis,COMPLETED,sentinel IDENTITY frozen; D45 fixed-axis PASS (1.03%/0.94%)
+R2_build,RUNNING,2/32 nodes + 22/352 slices before relaunch; serial build producing
+R2_assemble,NOT_STARTED,awaits 32 nodes
+R3_fits,NOT_STARTED,awaits R2
+R4_camera,NOT_STARTED,1506e recipe PASS 10/10; gated on R3
+R5_detection,NOT_STARTED,freeze pending
+R6_blind,NOT_STARTED,freeze pending
+P0_layout_candidate,PARTIAL,Npair=1 runs correct shape; ref agreement pending
+P0_hook_capture,NOT_STARTED,serial constraint

@@ -1,0 +1,5 @@
+item,status,note
+"expansion candidate regressions (rule3 144, rule7 small vs v054)",PASS bitwise 0.0,"carried from v057, no new runs"
+blocked-vs-unblocked Frobenius 2.58848e-7,OPEN,not explained by expansion; separate acceptance item
+A512=A1200,bitwise for these two values only,no general cap-independence claim
+rule3/7 increment 1444,NOT_EVALUATED,blocked by duffy1 wall

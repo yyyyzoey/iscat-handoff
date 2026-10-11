@@ -1,0 +1,4 @@
+npair,modes,baseline_status,baseline_note
+1,face,ERROR,"OOM at eval2 (squeeze axis loss for Npair=1) - reproduced twice"
+2,face+edge+vert,NOT_RUN,"test script interrupted before k=2 (tooling bug, 2 recorded fixes used)"
+3,face+edge+vert,NOT_RUN,"same"
