@@ -1,0 +1,28 @@
+[065:mie] D=30 Csca=1.1141977 Cext=19.141176 Cabs=18.026978
+[065:mie] D=60 Csca=73.866732 Cext=237.97511 Cabs=164.10838
+[065:mie] D=100 Csca=1624.8257 Cext=2592.4202 Cabs=967.59452
+[065] D30 homog mesh=1444 BEM start
+[065] D30 homog mesh=1444 solve 243.8s
+[065] D30 layered mesh=576 BEM start
+[065] D30 layered mesh=576 solve 34.9s
+[065] D30 layered mesh=1444 BEM start
+[065] D30 layered mesh=1444 solve 232.6s
+[065] D60 homog mesh=1444 BEM start
+[065] D60 homog mesh=1444 solve 227.4s
+[065] D60 layered mesh=576 BEM start
+[065] D60 layered mesh=576 solve 35.8s
+[065] D60 layered mesh=1444 BEM start
+[065] D60 layered mesh=1444 solve 228.9s
+[065] D100 homog mesh=1444 BEM start
+[065] D100 homog mesh=1444 solve 235.1s
+[065] D100 layered mesh=576 BEM start
+[065] D100 layered mesh=576 solve 35.4s
+[065] D100 layered mesh=1444 BEM start
+[065] D100 layered mesh=1444 solve 230.4s
+[065:fwd] D=30 zf=450 prod-vs-fine relL2=0.0056 gate=1
+[065:fwd] D=30 zf=550 prod-vs-fine relL2=0.0056 gate=1
+[065:fwd] D=60 zf=450 prod-vs-fine relL2=0.0053 gate=1
+[065:fwd] D=60 zf=550 prod-vs-fine relL2=0.0053 gate=1
+[065:fwd] D=100 zf=450 prod-vs-fine relL2=0.0067 gate=1
+[065:fwd] D=100 zf=550 prod-vs-fine relL2=0.0057 gate=1
+[065] all forward comparisons done
