@@ -1,0 +1,10 @@
+trisphere: loading sphere32 from trisphere.mat
+[062:p0] case=1 npair=1 modes=face OK SL[1 3 3] refSL=4.37e-11 refDL=1.22e-16
+[062:p0] case=2 npair=1 modes=edge OK SL[1 3 3] refSL=2.91e-11 refDL=8.88e-16
+[062:p0] case=3 npair=1 modes=vert OK SL[1 3 3] refSL=1.27e-11 refDL=3.33e-16
+[062:p0] case=4 npair=2 modes=face OK SL[2 3 3] refSL=0 refDL=1.92e-16
+[062:p0] case=5 npair=2 modes=edge OK SL[2 3 3] refSL=0 refDL=3.33e-16
+[062:p0] case=6 npair=2 modes=vert OK SL[2 3 3] refSL=0 refDL=2.22e-16
+[062:p0] case=7 npair=3 modes=face OK SL[3 3 3] refSL=0 refDL=2.98e-16
+[062:p0] case=8 npair=3 modes=edge OK SL[3 3 3] refSL=0 refDL=3.33e-16
+[062:p0] case=9 npair=3 modes=vert OK SL[3 3 3] refSL=0 refDL=2.22e-16

@@ -1,0 +1,5 @@
+{
+ "recovered_fields": {"model_identity":"models_dense_full32.mat (v060 accepted)","axis":"IDENTITY","recipe":"1506e","tau":"-0.73833935560801289 (same-period)"},
+ "post_hoc_fields": {"dev_log_1sample_tau_explanation":"idempotent-resume bug fixed same session"},
+ "missing_fields": {"original_R5_raw_frames":"not persisted","full_RNG_dump":"not persisted","quality_boundary_rule":"not pre-declared"}
+}

@@ -1,15 +1,17 @@
-# iSCAT v061 审查正文
+# iSCAT v062 审查正文（收口）
 
 ## 完成
-- A0 报告订正：r4_camera_summary_rechecked.csv 由 200 行逐次以 repr 精度重算（Bias/RMSE/双口径 Std；恒等式残差 ~1e-17）；状态字段保留为 fit_scope_label，未改标定语义；边界计数单列。
-- R5 检测开发→冻结→独立验证：100 开发空白（tau=-0.73833935560801289，threshold_freeze.json）→ 300 独立空白 **0 误报，CP U95=0.009936 ≤ 0.05 PASS**（与合同自检 0/300 值精确一致）。
-- R6 独立盲测：预注册 B01-B10 十条件（28.9-85.1nm × zf 381.7-573.1 × 大位移 xy）→ 10 笔 1444/rule3 精细参考（230-288s/笔）→ 1000 采集/9000 帧/1000 拟合 → **逐条件 100/100 检出，Wilson L95=0.9737 ≥ 0.9 全部 PASS**；尺寸 Bias +0.096~+0.160nm、RMSE 0.118~0.299nm、定位 ≤0.176px（双口径 Std 在表）。
-- synthetic_detection_validation=PASS（范围限定：中央 41×41 + 预注册搜索 + 合成金球）；experimental_validation/calibration 仍 false。
+- A1：r4_camera_summary_schema_fixed.csv（case 列恢复，12 字段全对齐，csv_schema_checks 11/11 PASS）；原表保留。
+- A2：R5 dev 100/100 + val 300/300 ID 完整（0 重复、0 误报维持）；R6 1000/1000 行从 fit_record.json 全量重建；边界标记 B01=19、B04=4（与 GPT 推断一致）；双总体统计（全合法 D 返回 vs 检出且可报告）分列；trial601 溯源=崩溃首跑的 observation 重拟合；匿名协议缺口如实记录（路径含 D，无证据真值进入拟合参数）。
+- A3：threshold_freeze 原件未动；freeze_lineage_recovered.json 区分同期/事后/缺失；R5 原始帧 original_raw_available=false（当轮未持久化）；开发日志 1 样本阈值=幂等续跑 bug（同会话修复，验证加载的是 100 样本冻结——日志顺序已记录）。
+- B：R6 边界证据=逐行标记（B01 zf 下界 375、B04 zf 上界 575），深度场级诊断延期。
+- P0：参考工具修复完成（2/2 额度用尽）→ 独立标量参考与基线 Npair>=2 位级一致（refSL=0）；候选 Npair=1 三模态修复（差 1.27-4.37e-11）；基线 Npair=1 OOM 三模态确认；**昨日 duffy1 OOM 今日未复现（diag-expansion fill 跑通，duffy1 未被调用）→ 判定环境内存压力假设**；rule7 参考仍被 1e-10 门槛阻塞。
+- M：仪器模板在位；磁材料数据缺失留空；M2/M3 阻塞（预算 9 笔 BEM 未动用）。
 
-## 未完成/开放
-- P0：Npair=1 独立参考一致性（测试工具额度已用 2+2，记录保留）；Hook 捕获；批量候选；1e-10 分块等价性（2.58848e-7）；rule7 参考未放行。
-- 磁接入：材料数据缺失留空；提取器合同 NOT_STARTED。
-- R6 的 B01 trial601 记录在崩溃重试后由磁盘补齐（1000/1000 完整）。
+## 未完成
+- rule7 参考（1e-10 门槛未过）；批量候选（待需要）；边界深度场级诊断；磁 M2/M3（等输入）；extractor 源码未定位。
 
 ## 下一步建议
-P0 Hook 捕获（生产队列已空闲）→ 布局一致性 → 批量候选 → 1e-10 三矩阵 → rule7 参考；磁材料输入向用户索取。
+1. 向 GPT/用户索取磁材料常数与提取器源码/合同输入；
+2. P0：1e-10 分块等价性攻关（blocked-vs-unblocked，与 expansion 无关的纯浮点顺序问题）；
+3. 磁 M2/M3 在输入到位后按 9 笔预算执行。

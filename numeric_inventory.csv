@@ -1,5 +1,5 @@
 path,note
-v061_return/r6_refs/,10 fine 1444 systems (s_fine1444.mat each ~970KB),workstation only
-v061_return/r6_blind/acq_*/,1000 acquisition dirs (9 frames each),workstation only
+v061_return/r6_refs/,10 fine 1444 systems,workstation only
+v061_return/r6_blind/acq_*/,1000 acquisition dirs,workstation only
+v058_return/dense_c/,352 slices + 32 s + full model,workstation only
 v056_return/s5_truth/,five fine systems + ten truths,workstation only
-v058_return/dense_c/,352 slices + 32 s files + full model,workstation only

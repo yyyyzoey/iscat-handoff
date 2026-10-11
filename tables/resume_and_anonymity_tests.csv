@@ -1,0 +1,6 @@
+item,finding
+trial_id_formula,trial=600+(i-1)*nPerCond+k depends on nPerCond (S8 confirmed); future fixed: trial=600+(ci-1)*100+replicate
+trial601_provenance,observation generated in crashed first run (seed 60480601); re-fit from saved observation.mat during resumed run; source fix: run_v061_r6_blind.m resumed branch; no re-acquisition
+anonymity,"cond_id/dir names contain D values (e.g. B01_D28.9) - estimator visible path NOT anonymous; protocol gap recorded; no evidence truth entered fit init/bounds (fit called with models.C,obs.C,opts only)"
+resume_summary_gap,res records skipped already-fit items -> first-pass CSV had 999 rows; full rebuild from disk now 1000
+r5_denominator,r5 script computed n over valid Tv; this round 300/300 valid so 0/300 result unaffected; future fix: keep registered denominator

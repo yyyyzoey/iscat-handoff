@@ -1,5 +1,5 @@
 # iSCAT 交接包仓库
 
-- v061 分支：R5 检测（0/300 FPR PASS）+ R6 盲测（10x100 全检出 PASS）+ A0 报告订正
-- v060：R2/R3/R4；v059-readable：ChatGPT 文本版；分支规则：每轮一个新分支
-- 原始帧与大数组在工作站（见 numeric_inventory.csv）
+- v062 分支：A0-A3 收口 + P0 布局门槛 PASS + duffy OOM 未复现记录
+- v061：R5/R6 PASS；v060：R2/R3/R4；v059-readable：文本版
+- 磁材料输入缺失留空；原始帧与大数组在工作站

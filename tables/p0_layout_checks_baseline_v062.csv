@@ -1,0 +1,10 @@
+case,npair,modes,status,error,stack_top,layout_candidate,SL_shape,ref_SL_max_abs_diff,ref_DL_max_abs_diff
+1,1,face,ERROR,对于此运算，数组的大小不兼容。,eval2,0,NaN,NaN,NaN
+2,1,edge,ERROR,对于此运算，数组的大小不兼容。,eval2,0,NaN,NaN,NaN
+3,1,vert,ERROR,对于此运算，数组的大小不兼容。,eval2,0,NaN,NaN,NaN
+4,2,face,OK,NaN,NaN,0,[2 3 3],0,1.92154158400145e-16
+5,2,edge,OK,NaN,NaN,0,[2 3 3],0,3.33066907387547e-16
+6,2,vert,OK,NaN,NaN,0,[2 3 3],0,2.22044606579393e-16
+7,3,face,OK,NaN,NaN,0,[3 3 3],0,2.98160994009568e-16
+8,3,edge,OK,NaN,NaN,0,[3 3 3],0,3.33066907387547e-16
+9,3,vert,OK,NaN,NaN,0,[3 3 3],0,2.22044606579393e-16
