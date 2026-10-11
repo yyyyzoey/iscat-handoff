@@ -1,0 +1,8 @@
+[060:r2] slices found=297 missing=55
+[060:r2] slices found=352 missing=0
+[060:r2] readback normalized_max_difference=0 over 33 slices
+[060:r2] support grid checks OK (D/z endpoints x xy corners)
+[060:r2] slices found=352 missing=0
+[060:r2] reusing assembled model
+[060:r2] readback normalized_max_difference=0 over 33 slices
+[060:r2] support grid checks OK (D/z endpoints x xy corners)
