@@ -1,5 +1,4 @@
 path,note
-v061_return/r6_refs/,10 fine 1444 systems,workstation only
-v061_return/r6_blind/acq_*/,1000 acquisition dirs,workstation only
-v058_return/dense_c/,352 slices + 32 s + full model,workstation only
-v056_return/s5_truth/,five fine systems + ten truths,workstation only
+v064_return/m2r_fe3o4_60nm/,corrected BEM results,workstation only
+v064_return/m3_60nm/,layered 576+1444 systems,workstation only
+v063_return/m2_fe3o4_60nm/,ISOLATED wrong-material results,workstation only
