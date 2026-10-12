@@ -1,4 +1,4 @@
 path,note
-v065_return/,all 32 s files + 352 slices + full model,workstation only
+v065_return/,all 32 s + 352 slices + full model,workstation only
 v067_return/,true homogeneous 30/100 systems,workstation only
-v068_return/,27-condition renders,workstation only
+v070_return/,controlled render C arrays,workstation only
