@@ -1,0 +1,229 @@
+{
+  "schema": "iscat067.d3_zero_crossing.1",
+  "D60_center_zero_crossing": {
+    "bracket": [
+      512.5,
+      515.0
+    ],
+    "linear_interpolation_zf": 514.7316784869977,
+    "note": "C_center_prod crosses zero between zf=512.5 and 515.0 (linear interp ~514.2nm)",
+    "detail": [
+      {
+        "D": 60,
+        "zf": 500,
+        "C_center_prod": -0.013429,
+        "C_center_fine": -0.013281,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 60,
+        "zf": 502.5,
+        "C_center_prod": -0.010992,
+        "C_center_fine": -0.010834,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 60,
+        "zf": 505,
+        "C_center_prod": -0.008619,
+        "C_center_fine": -0.008452,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 60,
+        "zf": 507.5,
+        "C_center_prod": -0.006311,
+        "C_center_fine": -0.006134,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 60,
+        "zf": 510,
+        "C_center_prod": -0.004067,
+        "C_center_fine": -0.003881,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 60,
+        "zf": 512.5,
+        "C_center_prod": -0.001888,
+        "C_center_fine": -0.001694,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 60,
+        "zf": 515,
+        "C_center_prod": 0.000227,
+        "C_center_fine": 0.000429,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 60,
+        "zf": 517.5,
+        "C_center_prod": 0.002276,
+        "C_center_fine": 0.002486,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 60,
+        "zf": 520,
+        "C_center_prod": 0.004261,
+        "C_center_fine": 0.004479,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 60,
+        "zf": 522.5,
+        "C_center_prod": 0.00618,
+        "C_center_fine": 0.006405,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 60,
+        "zf": 525,
+        "C_center_prod": 0.008035,
+        "C_center_fine": 0.008267,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      }
+    ]
+  },
+  "D100_S_area_zero_crossing": {
+    "prod_bracket": [
+      425,
+      427.5
+    ],
+    "fine_bracket": [
+      435,
+      437.5
+    ],
+    "note": "prod and fine S_area zero-cross at different zf values; prod crosses earlier",
+    "detail": [
+      {
+        "D": 100,
+        "zf": 375,
+        "S_area_prod_nm2": 2327.14,
+        "S_area_fine_nm2": 3104.64,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 400,
+        "S_area_prod_nm2": 1433.58,
+        "S_area_fine_nm2": 2203.92,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 425,
+        "S_area_prod_nm2": 61.01,
+        "S_area_fine_nm2": 821.86,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 427.5,
+        "S_area_prod_nm2": -101.1,
+        "S_area_fine_nm2": 658.67,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 430,
+        "S_area_prod_nm2": -267.53,
+        "S_area_fine_nm2": 491.16,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 432.5,
+        "S_area_prod_nm2": -438.21,
+        "S_area_fine_nm2": 319.37,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 435,
+        "S_area_prod_nm2": -613.07,
+        "S_area_fine_nm2": 143.38,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 437.5,
+        "S_area_prod_nm2": -792.06,
+        "S_area_fine_nm2": -36.75,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 440,
+        "S_area_prod_nm2": -975.11,
+        "S_area_fine_nm2": -220.95,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 442.5,
+        "S_area_prod_nm2": -1162.13,
+        "S_area_fine_nm2": -409.16,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 445,
+        "S_area_prod_nm2": -1353.08,
+        "S_area_fine_nm2": -601.3,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 447.5,
+        "S_area_prod_nm2": -1547.86,
+        "S_area_fine_nm2": -797.3,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 450,
+        "S_area_prod_nm2": -1746.4,
+        "S_area_fine_nm2": -997.08,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 475,
+        "S_area_prod_nm2": -3920.52,
+        "S_area_fine_nm2": -3184.28,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 500,
+        "S_area_prod_nm2": -6371.89,
+        "S_area_fine_nm2": -5649.79,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 525,
+        "S_area_prod_nm2": -8993.58,
+        "S_area_fine_nm2": -8286.05,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 550,
+        "S_area_prod_nm2": -11665.83,
+        "S_area_fine_nm2": -10972.68,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      },
+      {
+        "D": 100,
+        "zf": 575,
+        "S_area_prod_nm2": -14261.51,
+        "S_area_fine_nm2": -13581.87,
+        "scope": "POST_HOC_LINEAR_INTERPOLATION_NOT_A_SIMULATED_ROOT"
+      }
+    ]
+  }
+}

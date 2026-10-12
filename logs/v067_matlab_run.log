@@ -1,0 +1,42 @@
+[067:B] D30 material readback n=2.349+0.083i OK
+[067:B] D30 homogeneous BEM start
+[067:B] D30 material readback n=2.349+0.083i OK
+[067:B] D30 homogeneous BEM start
+[067:B] D30 material readback n=2.349+0.083i OK
+[067:B] D30 homogeneous BEM start
+[067:B] D30 material readback n=2.349+0.083i OK
+[067:B] D30 homogeneous BEM start
+[067:B] D30 homogeneous solve 39.4s rawL2=0.0039 sca=0.0082 abs=0.0039 ext=0.0042 PASS=1
+[067:B] D100 material readback n=2.349+0.083i OK
+[067:B] D100 homogeneous BEM start
+[067:B] D100 homogeneous solve 39.0s rawL2=0.0039 sca=0.0077 abs=0.0046 ext=0.0065 PASS=1
+[067:cd] D=30 zf=375 rF=0.0056 rSpec=0.0056 close=4.2e-16
+[067:cd] D=30 zf=400 rF=0.0056 rSpec=0.0056 close=5.9e-16
+[067:cd] D=30 zf=425 rF=0.0056 rSpec=0.0056 close=5.0e-16
+[067:cd] D=30 zf=450 rF=0.0056 rSpec=0.0056 close=5.2e-16
+[067:cd] D=30 zf=475 rF=0.0056 rSpec=0.0056 close=5.9e-16
+[067:cd] D=30 zf=500 rF=0.0056 rSpec=0.0056 close=5.1e-16
+[067:cd] D=30 zf=525 rF=0.0056 rSpec=0.0056 close=5.1e-16
+[067:cd] D=30 zf=550 rF=0.0057 rSpec=0.0056 close=5.4e-16
+[067:cd] D=30 zf=575 rF=0.0057 rSpec=0.0056 close=4.6e-16
+[067:cd] D=60 zf=375 rF=0.0052 rSpec=0.0051 close=4.4e-16
+[067:cd] D=60 zf=400 rF=0.0053 rSpec=0.0052 close=5.8e-16
+[067:cd] D=60 zf=425 rF=0.0053 rSpec=0.0052 close=5.2e-16
+[067:cd] D=60 zf=450 rF=0.0054 rSpec=0.0053 close=4.7e-16
+[067:cd] D=60 zf=475 rF=0.0054 rSpec=0.0053 close=6.4e-16
+[067:cd] D=60 zf=500 rF=0.0054 rSpec=0.0053 close=4.8e-16
+[067:cd] D=60 zf=525 rF=0.0054 rSpec=0.0053 close=5.3e-16
+[067:cd] D=60 zf=550 rF=0.0054 rSpec=0.0053 close=5.3e-16
+[067:cd] D=60 zf=575 rF=0.0054 rSpec=0.0053 close=5.0e-16
+[067:cd] D=100 zf=375 rF=0.0069 rSpec=0.0080 close=2.2e-16
+[067:cd] D=100 zf=400 rF=0.0065 rSpec=0.0075 close=2.1e-16
+[067:cd] D=100 zf=425 rF=0.0062 rSpec=0.0070 close=1.8e-16
+[067:cd] D=100 zf=450 rF=0.0059 rSpec=0.0067 close=1.5e-16
+[067:cd] D=100 zf=475 rF=0.0057 rSpec=0.0064 close=2.3e-16
+[067:cd] D=100 zf=500 rF=0.0055 rSpec=0.0061 close=2.0e-16
+[067:cd] D=100 zf=525 rF=0.0053 rSpec=0.0059 close=2.1e-16
+[067:cd] D=100 zf=550 rF=0.0052 rSpec=0.0057 close=2.3e-16
+[067:cd] D=100 zf=575 rF=0.0051 rSpec=0.0055 close=2.3e-16
+[067:cd] all 27 conditions done
+[警告: 未找到变量 '; s'。] 
+[> 位置：run_v067_comprehensive (第 111 行)] 

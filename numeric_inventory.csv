@@ -1,5 +1,4 @@
 path,note
+v067_return/,true homogeneous 30/100 systems + all render outputs,workstation only
 v065_return/,all 32 s files + 352 slices + full model,workstation only
 v061_return/r6_refs/,10 fine 1444 systems,workstation only
-v061_return/r6_blind/acq_*/,1000 acquisition dirs,workstation only
-v064_return/m3_60nm/,60nm layered 576+1444 systems,workstation only
