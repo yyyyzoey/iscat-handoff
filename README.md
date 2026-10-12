@@ -1,12 +1,9 @@
-# iscat-handoff v071
+# iscat-handoff v072
 
-Readable handoff for the iSCAT magnetic nanoparticle project, branch v071.
+Readable handoff after the v072 round (v071 audit close-out + experimental FFT bridge).
 
-- `status.json` - three-field execution/validation/evidence status after the v070 audit.
-- `review.md` - what this round established and what remains open.
-- `tables/` - v071 controlled plan (actual configs), 36 comparison rows (18 COMPLETED / 18 NOT_EXECUTABLE), side scalars, cost ledger, numeric manifest. v070 history preserved in `history/`.
-- `numeric/` - small K01 example package + array manifest; full per-side arrays stay on the workstation (`v071_return/numeric/`).
-- `logs/` - preflight paths, native run log, config-effectiveness lines, checkpoint roundtrip PASS.
-- `source/` - v071 MATLAB entry points and change list.
-- `experimental/` - located original FFT extractor inventory (test.m), observable contract, corrected material contract (1985, 2.349+0.083i).
-- `material_contract.json` - PRESERVED unchanged (v063) for lineage; see `experimental/material_contract_v071.json` for the corrected active copy.
+- `status.json` / `review.md` - three-field statuses and the full round narrative.
+- `tables/` - reconciled ledger, semantics-fixed comparisons (deltaS signed/abs separated), six-condition scalar consistency (K03/K06 bit-identical vs v068), 12/12 analytic FFT fixtures, bin audit (400/420), real-data replay summary, static identifiability screening, P0 actual state, compute cost ledger.
+- `numeric/` - K01/K03/K05 ROI examples, analytic fixture arrays, source numeric manifest. Full arrays stay on the workstation.
+- `experimental/` - both extractor scripts inventoried with byte SHA-256 (test.m 420 unnormalized; test_with_contrast.m 400 normalized contrast), observable contracts, source diff notes.
+- `material_contract.json` (root) - PRESERVED unchanged; corrected active copy remains `experimental/material_contract_v071.json` with real YAML SHA-256 now verified.

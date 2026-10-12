@@ -1,0 +1,16 @@
+field,value,note
+data_folder,C:\Users\PC\Desktop\课题\7.29\7.29\BMP100053022-20260729-105610,BMP100053022-20260729-105610
+total_bmps,5000,batch has 5000 frames >= 3000 required
+frame_range,1000-3000,N=2001 per both source scripts
+first_frame,20260729_002739_570890-999.bmp,
+last_frame,20260729_002739_970890-2999.bmp,
+bmp_dims,352x296,8-bit grayscale (352x296)
+frame_rate_source,5000 fps,timestamp deltas 200 us between consecutive frames
+chainA,test.m 420 unnormalized,actualFreq=419.790105 Hz
+chainA_amp420_min_max_mean,0 / 3.47769e-05 / 2.00109e-06,single-sided 2|X|/N gray-level units
+chainB,test_with_contrast.m 400 normalized,actualFreq=399.800100 Hz
+chainB_meanFloor,0.000117616,0.01 x median positive timeMean
+chainB_valid_mask_fraction,0.894301,fraction of pixels passing meanFloor mask
+chainB_ampC_min_max_mean,0 / 0.0615005 / 0.000332619,|C_f| normalized modulation contrast
+reconstruction,NOT_EXECUTED,display-only single-frequency BMP reconstruction skipped to avoid writing 2001 files; core observable (FFT amplitude/phase/contrast) computed
+validation_status,ANALYTIC_EXTRACTOR_TEST_PASS__REPLAY_EXECUTED,calibration_valid=false; experimental_validation=false (units/instrument still unresolved)

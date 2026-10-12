@@ -1,34 +1,42 @@
-# v071 review summary (Codex execution report)
+# v072 review summary (Codex execution report)
 
-## What this round established
+## A. Freeze, reconcile, correct (zero BEM)
 
-1. **v070 arrays are gone.** `v070_return/` contains only `matlab_run.log`, `compare.log`, `controlled_plan24.csv`, `controlled_results24.csv`. `numeric_inventory.csv` claimed local C arrays exist; that was false. No live MATLAB session holds the `C_*_1..6` base-workspace arrays. The v070 36-value table is plausible but unverifiable from primary data; it is preserved as history, not as validated evidence.
+- All 24 v071 executable sides re-verified by frozen keys (case/D/zf/suffix/mesh/lens dims/far dirs/ntab/q/SHA-256/shape/finite/identity fields). `tables/controlled_ledger_reconciled.csv` lists v071 events, the 12 NOT_EXECUTABLE sides, the probe, and the 24 v070 history rows (arrays never persisted).
+- The v071 `evi.sol_sha256` field is renamed in documentation to what it actually is: the SHA-256 of the saved system file `s` (not a BEM `sol`). No sol exists on the workstation; `P_common`/`F_angle` are formally `NOT_EXECUTABLE_UNDER_ZERO_BEM_BUDGET` and no interpolation was used.
+- K01 wrapper lineage: `render_system` SHA-256 (`87ef0db0...`) constant across every render; the wrapper edits between v071 runs changed only evidence fields/CSV writing, never the render switch or cfg overrides. No K01 re-render was needed (0 of 4 authorized used).
+- Semantics fixed without touching originals: `controlled_comparisons_semantics_fixed.csv` now carries `deltaS_signed`, `deltaS_abs`, `S_ref_sumC`, `S_area_nm2_A/B` (4225 x sumC), `K2_ref`, `chi1_ref`; the misleading `abs_dS` column is retired (the old column held signed dS).
+- Cross-check: v071 K03/K06 P_base/F_base scalars reproduce the v068 frozen-pipeline scalars EXACTLY (rel_diff = 0), a strong bit-level provenance link across versions.
+- K05 D100/zf437.5 fine-side signed-area sensitivity confirmed as a finite-numerical fact: scalar |Delta|/|S| ~ 7.35% while whole-image rF ~ 8.2e-6 (near-cancellation regime), not an experimental diameter error.
 
-2. **The angle switch never worked.** `cfg.numerics.ntheta/nphi` is consumed only by `build_system` (lens construction); `render_system` ignores it. A K01 probe requesting 200/301 left the lens at 50x51 and far at 2550 directions (`numeric/probe_angle_deadswitch.mat`, INACTIVE_CONTROL). Therefore v070's `F_angle` rows were exact zeros because nothing changed, and v070's `P_common` "common post-processing" only changed the Bessel table (its 3.1e-5 signal matches the fine-side Bessel row).
+## B. Two real extractor scripts - both now byte-verified (top priority item)
 
-3. **P_common and F_angle are NOT_EXECUTABLE this round.** Both require recomputing `farfields(sol, dir)` on a new angle grid, but `build_system` sol objects were never saved; only `s` (with far on frozen 50/51 or 100/151 grids) persists in `v065_return/*_s_*.mat`. No new BEM is authorized, so both sides are recorded NOT_EXECUTABLE with reason `SOL_NOT_PERSISTED_AND_CFG_ANGLE_DEAD_SWITCH`. No interpolation was used to fake them.
+| | test.m | test_with_contrast.m |
+|---|---|---|
+| sha256 | fdc918e6...95aea684 | d08575b1...3ea3aa |
+| target | 420 Hz (bin 169 -> 419.790105 Hz) | 400 Hz (bin 161 -> 399.800100 Hz) |
+| observable | gray-level FFT amplitude `2|X|/N` + phase | normalized complex modulation contrast `2X/(N*Imean)` with 1%-median floor mask |
+| folderPath | points at a single .bmp (stale/bug) | correct 7.29 folder |
 
-4. **Approved q7 and Bessel controls were executed correctly** on existing boundary solutions: 24 sides (6 conditions x {P_base, F_base, F_q7, F_bessel}) plus 1 dead-switch probe. Per-side evidence (lens counts, far direction count, ntab, subpixels, sol/far hashes, identity error) is stored in `numeric/side_*.mat` and `controlled_plan24_v071.csv`.
+12 analytic fixtures (constant bg, exact-bin 400/420 with known amp/phase, off-bin leakage, two-tone, time-origin shift, zero bg, low-Imean mask, RGB weights, NaN behavior, exposure sinc) ALL PASS against an independent direct-DFT reference. Declared tolerances: abs 1e-7, rel 1e-5, phase 1e-4 rad (single precision, N=2001). Bin audit table confirms the historical 399.8001 Hz outputs correspond to a 400 Hz target at N=2001/Fs=5000. `FREQ_VERSION_CONFLICT_PENDING_USER_CONFIRM` is recorded; neither script is auto-promoted to "the" formal extractor.
 
-5. **Results (41x41 frozen ROI, full-grid 33 +/- 20):**
-   - P_base vs F_base: rF = 0.005409 - 0.006215 (unchanged vs v070, as expected)
-   - F_q7 vs F_base: rF = 0.000528 - 0.000711 (nonzero, q7 effective)
-   - F_bessel vs F_base: rF = 7.81e-6 - 8.21e-6 (nonzero, ntab effective; ~1/4 of the 2001->4001 increment, consistent with second-order tabulation convergence)
-   - Telescope identity |dS|/|S_R| = K2R * rF * eta closes to <= ~2e-16 on every completed row.
-   - Attribution limited to: COMMON_POSTPROCESS_RESIDUAL (Bessel side), POSTPROCESS_SENSITIVE (q side), and for the prod-fine gap: INDETERMINATE/MIXED - no "100% mesh" claim is made.
+## C. Real data replay (one group, both chains)
 
-6. **Experimental extractor found.** `C:/Users/PC/Desktop/课题/test.m` implements a per-pixel single-frequency FFT amplitude/phase extractor (Fs=5000, targetFreq=420 Hz, frames 1000-3000, no window, 2|X|/N single-sided normalization, phase=angle(X)). Raw BMP data path in the script points to a single .bmp path and the E: drive folder is absent on this workstation; no prior FFT outputs found; replay blocked. Target frequency 420 Hz conflicts with the historical 399.8001 Hz and needs user confirmation.
+The 7.29 batch EXISTS on this workstation: 5000 BMPs, 352x296, 8-bit gray, timestamp delta 200 us (5000 fps). Frames 1000-3000 (N=2001) were replayed through both chains on the identical input:
+- chain A (420): amplitude range 0..3.48e-05 gray units; actualFreq 419.790105 Hz
+- chain B (400): meanFloor 1.17616e-4, valid mask 89.43%, |C_f| range 0..0.0615; actualFreq 399.800100 Hz
+Full arrays remain on the workstation (`numeric/replay_729_frames1000_3000.mat`); only the summary CSV is published. Display-only single-frequency BMP reconstruction was skipped (would write 2001 files; not part of the measurement observable). `calibration_valid=false`, `experimental_validation=false`.
 
-7. **Material contract corrected** (active copy `experimental/material_contract_v071.json`): citation year 1985 (CRDC-CR-85034), 520 nm node exactly `2.349+0.083i`. The old v063 contract is preserved unchanged.
+## D. Static identifiability screening (cached tables only)
 
-## Not done this round (with reasons)
+- D60 C_center zero-crossing between zf 500-525 (v067 refined: 512.5-515). D100 S_area sign change between 425-450 (v071: +143.4 at 435 -> -36.7 at 437.5).
+- D-ordering is focus-dependent and NON-monotonic: zf<=475 both scalars order 100>30>60; from zf~475/500 the signed-area ordering flips to 30>100>60; C_center is monotone in D only for zf>=500.
+- Consequence (screening only): within this demo optics no single static scalar uniquely identifies D across the focus range; a focus prior or axial-motion model is required. Static focus sweeps are not particle axial motion.
 
-- P0 passive hook: not run (budget preserved; hung -batch MATLAB sessions on workstation). P0 gate remains OPEN at 2.58848e-7 vs 1e-10. rule7 large reference authorization stays 0.
-- R6 boundary depth diagnostics, A3 4-seed rebuild: not started (unchanged).
-- No new BEM, no new D nodes, no camera/noise batches.
+## E. P0 / R6 / A3
 
-## Verification chain
+P0 hook NOT_RUN (budget preserved; hung -batch MATLAB sessions remain on the workstation). The 1e-10 blocked/unblocked gate stays OPEN at the historical 2.58848e-7. rule7 large reference authorization 0. R6/A3 BLOCKED (no pre-authorized budget).
 
-- Renders executed in a fresh `matlab -batch` session (R2024b), hash-keyed cache in `numeric/`.
-- Independent second `matlab -batch` session reloaded only `numeric/*.mat` and recomputed all 36 comparison rows: `controlled_comparisons_recheck_v071.csv` is byte-identical to the original (checkpoint roundtrip PASS).
-- Cost ledger: 24 controlled renders + 1 probe = 25 render invocations (<= 24 correction + 12 baseline budget).
+## Not claimed
+
+- No experimental validation, no calibration, no diameter measurement, no "36/36 physical closure", no Bessel "proven second-order convergence" beyond the two finite-config increments, no mesh-percentage attribution.

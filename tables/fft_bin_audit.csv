@@ -1,0 +1,4 @@
+targetFreq_Hz,N,Fs,deltaF_Hz,bin_index_1based,actualFreq_Hz,source_script
+400,2001,5000,2.4987506246876561,161,399.80009995002496,test_with_contrast.m sha256=d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa (workstation C:\\Users\\PC\\Downloads\\test_with_contrast.m)
+420,2001,5000,2.4987506246876561,169,419.79010494752623,test.m sha256=fdc918e691b13b33cbae8b32ecaacd1e63ec27be3e23b61b0701d0e595aea684 (workstation C:\\Users\\PC\\Desktop\\课题\\test.m)
+historical_399.8001,2001,5000,2.4987506246876561,161,399.80009995002496,historical FFT output files; consistent with 400 Hz target on N=2001/Fs=5000

@@ -1,0 +1,6 @@
+item,status,evidence,note
+p0_passive_hook,NOT_RUN,target duffy1/eval2 path not exercised this round; workstation still hosts hung -batch MATLAB sessions; hook budget (<=1) preserved,budget remains for a future safe window
+blocked_unblocked_1e-10,OPEN,last recorded 2.58848e-7 vs gate 1e-10 (v059/v062 era); no new evidence this round,gate unchanged; not replaced by FFT or static results
+rule7_large_reference,0_AUTHORIZED_THIS_ROUND,prerequisite P0 gate not met,unchanged
+r6_boundary_diagnostics,BLOCKED,no remaining pre-authorized budget identified this round,unchanged
+a3_four_seed,BLOCKED,unchanged,unchanged

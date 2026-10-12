@@ -1,0 +1,25 @@
+{
+  "schema": "iscat072.fft_observable_contracts.1",
+  "version_conflict": "FREQ_VERSION_CONFLICT_PENDING_USER_CONFIRM (400 vs 420)",
+  "chain_A_test420_unnormalized": {
+    "source": "C:/Users/PC/Desktop/课题/test.m",
+    "sha256": "fdc918e691b13b33cbae8b32ecaacd1e63ec27be3e23b61b0701d0e595aea684",
+    "pipeline": "im2single -> gray 0.2989/0.5870/0.114 -> per-pixel temporal mean removal -> FFT along time (no window) -> nearest bin to 420 Hz -> amplitude 2|X_k|/N (non-DC/non-Nyquist) -> phase angle(X_k)",
+    "units": "im2single gray-level amplitude (dimensionless, fraction of single range)",
+    "bin": {"N": 2001, "Fs": 5000, "k_1based": 169, "actualFreq_Hz": 419.790104947526}
+  },
+  "chain_B_test400_normalized_contrast": {
+    "source": "C:/Users/PC/Downloads/test_with_contrast.m",
+    "sha256": "d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa",
+    "pipeline": "same FFT core -> timeMean kept -> meanFloor=0.01*median(positive finite Imean) -> validContrastMask -> C_f=2*X_k/(N*Imean) inside mask",
+    "units": "normalized modulation contrast (dimensionless)",
+    "bin": {"N": 2001, "Fs": 5000, "k_1based": 161, "actualFreq_Hz": 399.800099950025}
+  },
+  "replay_729": {
+    "input": "BMP100053022-20260729-105610 frames 1000-3000 (2001), 352x296 8-bit gray",
+    "status": "REPLAY_EXECUTED (both chains, shared FFT, independent labels)",
+    "results": "numeric/replay_729_frames1000_3000.mat (workstation-only); summary in tables/fft_replay_one_case.csv",
+    "limits": "no calibration_valid/experimental_validation; reconstruction display step skipped; 400-vs-420 formal assignment pending user"
+  },
+  "phase_caveat": "startFrame shift changes phase origin; without a magnetic-drive reference phase, FFT phase is not an absolute magnetic-response phase"
+}

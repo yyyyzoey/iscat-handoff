@@ -1,67 +1,63 @@
-[071:preflight] matlab=24.2.0.2712019 (R2024b)
-[071:preflight] render_system=C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\render_system.m
-[071:preflight] build_system=C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\build_system.m
-[071:preflight] matlab=24.2.0.2712019 (R2024b)
-[071:preflight] render_system=C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\render_system.m
-[071:preflight] build_system=C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\build_system.m
-[071:preflight] code_sha=3a5ef5007f221375134359897ca5bb71a683c60677a7ea4351e57a36a179c528 render_system_sha=87ef0db094d714d23d54ed9213a0faa634c140f7041f3563bf0de7fa5158fecd
-[071] K01 P_base: COMPLETED render 2.4s (lens=50x51 dirs=3 ntab=2001 q=5)
-[071] probe: cfg 200/301 -> lens=50x51 dirs=3 (dead switch confirmed)
-[071] K01 F_base: COMPLETED render 12.2s (lens=100x151 dirs=3 ntab=4001 q=5)
-[071] K01 F_q7: COMPLETED render 23.7s (lens=100x151 dirs=3 ntab=4001 q=7)
-[071] K01 F_bessel: COMPLETED render 12.3s (lens=100x151 dirs=3 ntab=8001 q=5)
-[071] K01 P_common: NOT_EXECUTABLE (far_dirs=3 want=15100, lens=50x51)
-[071] K01 F_angle: NOT_EXECUTABLE (far_dirs=3 want=60200, lens=100x151)
-[071:preflight] matlab=24.2.0.2712019 (R2024b)
-[071:preflight] render_system=C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\render_system.m
-[071:preflight] build_system=C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\build_system.m
-[071:preflight] code_sha=a13eecd195295bbad887deafea796436de980956afba39509b53bb155aff3e79 render_system_sha=87ef0db094d714d23d54ed9213a0faa634c140f7041f3563bf0de7fa5158fecd
-[071] K01 P_base: COMPLETED render 2.5s (lens=50x51 dirs=2550 ntab=2001 q=5)
-[071] probe: cfg 200/301 -> lens=50x51 dirs=2550 (dead switch confirmed)
-[071] K01 F_base: COMPLETED render 12.2s (lens=100x151 dirs=15100 ntab=4001 q=5)
-[071] K01 F_q7: COMPLETED render 23.8s (lens=100x151 dirs=15100 ntab=4001 q=7)
-[071] K01 F_bessel: COMPLETED render 12.3s (lens=100x151 dirs=15100 ntab=8001 q=5)
-[071] K01 P_common: NOT_EXECUTABLE (far_dirs=2550 want=15100, lens=50x51)
-[071] K01 F_angle: NOT_EXECUTABLE (far_dirs=15100 want=60200, lens=100x151)
-[071] mode=k01 done
-[071:preflight] matlab=24.2.0.2712019 (R2024b)
-[071:preflight] render_system=C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\render_system.m
-[071:preflight] build_system=C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\build_system.m
-[071:preflight] code_sha=667889a4e5c3aa4e73739fd253bd88e8915118c93f3c99f903f725fb3186111c render_system_sha=87ef0db094d714d23d54ed9213a0faa634c140f7041f3563bf0de7fa5158fecd
-[071] K01 P_base: CACHE_HIT 64f7c282a1fd4238
-[071] K01 F_base: CACHE_HIT 45a86754b41d8742
-[071] K01 F_q7: CACHE_HIT d6c5c22829a54e39
-[071] K01 F_bessel: CACHE_HIT ef0f5c8de72713f6
-[071] K01 P_common: NOT_EXECUTABLE (far_dirs=2550 want=15100, lens=50x51)
-[071] K01 F_angle: NOT_EXECUTABLE (far_dirs=15100 want=60200, lens=100x151)
-[071] K02 P_base: COMPLETED render 2.4s (lens=50x51 dirs=2550 ntab=2001 q=5)
-[071] K02 F_base: COMPLETED render 12.1s (lens=100x151 dirs=15100 ntab=4001 q=5)
-[071] K02 F_q7: COMPLETED render 23.7s (lens=100x151 dirs=15100 ntab=4001 q=7)
-[071] K02 F_bessel: COMPLETED render 12.2s (lens=100x151 dirs=15100 ntab=8001 q=5)
-[071] K02 P_common: NOT_EXECUTABLE (far_dirs=2550 want=15100, lens=50x51)
-[071] K02 F_angle: NOT_EXECUTABLE (far_dirs=15100 want=60200, lens=100x151)
-[071] K03 P_base: COMPLETED render 2.1s (lens=50x51 dirs=2550 ntab=2001 q=5)
-[071] K03 F_base: COMPLETED render 12.1s (lens=100x151 dirs=15100 ntab=4001 q=5)
-[071] K03 F_q7: COMPLETED render 23.7s (lens=100x151 dirs=15100 ntab=4001 q=7)
-[071] K03 F_bessel: COMPLETED render 12.1s (lens=100x151 dirs=15100 ntab=8001 q=5)
-[071] K03 P_common: NOT_EXECUTABLE (far_dirs=2550 want=15100, lens=50x51)
-[071] K03 F_angle: NOT_EXECUTABLE (far_dirs=15100 want=60200, lens=100x151)
-[071] K04 P_base: COMPLETED render 2.1s (lens=50x51 dirs=2550 ntab=2001 q=5)
-[071] K04 F_base: COMPLETED render 12.1s (lens=100x151 dirs=15100 ntab=4001 q=5)
-[071] K04 F_q7: COMPLETED render 23.7s (lens=100x151 dirs=15100 ntab=4001 q=7)
-[071] K04 F_bessel: COMPLETED render 12.2s (lens=100x151 dirs=15100 ntab=8001 q=5)
-[071] K04 P_common: NOT_EXECUTABLE (far_dirs=2550 want=15100, lens=50x51)
-[071] K04 F_angle: NOT_EXECUTABLE (far_dirs=15100 want=60200, lens=100x151)
-[071] K05 P_base: COMPLETED render 2.2s (lens=50x51 dirs=2550 ntab=2001 q=5)
-[071] K05 F_base: COMPLETED render 12.2s (lens=100x151 dirs=15100 ntab=4001 q=5)
-[071] K05 F_q7: COMPLETED render 23.6s (lens=100x151 dirs=15100 ntab=4001 q=7)
-[071] K05 F_bessel: COMPLETED render 12.1s (lens=100x151 dirs=15100 ntab=8001 q=5)
-[071] K05 P_common: NOT_EXECUTABLE (far_dirs=2550 want=15100, lens=50x51)
-[071] K05 F_angle: NOT_EXECUTABLE (far_dirs=15100 want=60200, lens=100x151)
-[071] K06 P_base: COMPLETED render 2.1s (lens=50x51 dirs=2550 ntab=2001 q=5)
-[071] K06 F_base: COMPLETED render 12.1s (lens=100x151 dirs=15100 ntab=4001 q=5)
-[071] K06 F_q7: COMPLETED render 23.5s (lens=100x151 dirs=15100 ntab=4001 q=7)
-[071] K06 F_bessel: COMPLETED render 12.1s (lens=100x151 dirs=15100 ntab=8001 q=5)
-[071] K06 P_common: NOT_EXECUTABLE (far_dirs=2550 want=15100, lens=50x51)
-[071] K06 F_angle: NOT_EXECUTABLE (far_dirs=15100 want=60200, lens=100x151)
-[071] mode=all done
+[072A] code_sha=2812788517037c55e69dc3fc59b02a6d25cd6692b3dc0014b37bf74984173b1e
+[072A] verified 24 executable sides
+[072A] code_sha=58bc1fcab1393a6608bd86e8389704a2079feb62fbcdd65a3a2ebf644a23029e
+[072A] verified 24 executable sides
+[072A] reconcile done
+[072A] code_sha=066bc27f0036a2878a54a380711afdd14d13bb35d75b6e637798a3be07b5e004
+[072A] verified 24 executable sides
+[072A] code_sha=2176de78f5b3e7e09042ac47d7ce71100cdc450ae1f85c2cff7e463b18c6afed
+[072A] verified 24 executable sides
+[072A] reconcile done
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[警告: 转义字符 '\U' 无效。有关支持的特殊字符，请参阅 'doc sprintf'。] 
+[> 位置：run_v072_fft_fixtures (第 18 行)] 
+[警告: 转义字符 '\U' 无效。有关支持的特殊字符，请参阅 'doc sprintf'。] 
+[> 位置：run_v072_fft_fixtures (第 19 行)] 
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[警告: 矩阵在工作精度内为奇异的。] 
+[> 位置：run_v072_fft_fixtures>runFixtureRGB (第 166 行)
+位置: run_v072_fft_fixtures (第 64 行)
+] 
+[072B] 12 fixtures done
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[警告: 矩阵在工作精度内为奇异的。] 
+[> 位置：run_v072_fft_fixtures>runFixtureRGB (第 166 行)
+位置: run_v072_fft_fixtures (第 64 行)
+] 
+[072B] 12 fixtures done
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[072B] 12 fixtures done
+[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
+[072B] 12 fixtures done
+[072C] folder bmps=5000
+[072C] processing frames 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
+[072C] folder bmps=5000
+[072C] processing frames 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
+[072C] folder bmps=5000
+[072C] processing frames 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
+[072C] read 500/2001 (2.7s)
+[072C] read 1000/2001 (5.2s)
+[072C] read 1500/2001 (7.7s)
+[072C] read 2000/2001 (10.1s)
+[072C] stack read 10.1s
+[072C] fft 0.3s
+[072C] folder bmps=5000
+[072C] processing frames 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
+[072C] read 500/2001 (2.5s)
+[072C] read 1000/2001 (4.7s)
+[072C] read 1500/2001 (6.9s)
+[072C] read 2000/2001 (9.1s)
+[072C] stack read 9.1s
+[072C] fft 0.1s
+[072C] actualFreq 420-chain=419.790105 Hz, 400-chain=399.800100 Hz, meanFloor=0.000117616, valid mask=89.43%
+[072C] replay done

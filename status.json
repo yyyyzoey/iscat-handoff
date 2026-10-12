@@ -1,65 +1,54 @@
 {
-  "schema": "iscat071.status.1",
+  "schema": "iscat072.status.1",
   "export_time": "2026-10-13",
-  "overall": "v070 controlled arrays were NOT persisted (evidence MISSING); angle cfg switch proven dead in render_system; P_common and F_angle NOT_EXECUTABLE without sol; F_q7 and F_bessel re-rendered with approved configs from existing boundary solutions; 18/36 comparisons COMPLETED, 18 NOT_EXECUTABLE; telescope identity closed to ~1e-16; Bessel 4001->8001 increment ~7.8e-6 consistent with second-order tabulation convergence; experimental FFT extractor located (test.m) but raw data path missing",
-  "A_v070_audit": {
-    "execution_status": "COMPLETED",
-    "validation_status": "PASS",
-    "evidence_status": "EVIDENCE_MISSING_FOR_V070_ARRAYS",
-    "findings": [
-      "v070_return contained only 2 logs + 2 CSVs; no .mat arrays on workstation; numeric_inventory.csv claim of 'controlled render C arrays' was false",
-      "no live MATLAB session with v070 command line exists (all MATLAB.exe processes are earlier hung -batch jobs); base-workspace arrays C_*_1..6 unrecoverable",
-      "run_v070_controlled.m bugs confirmed by source read: assignin('base') stored C_P_common_1 style names but getappdata(0,...) read a different store; [res.case_idx] on cell array; rp typo before rpb",
-      "run_v070_compare.m used evalin('base') in the same session and could have read the in-memory arrays; its 36 CSV numbers are plausible but unverifiable without arrays"
+  "overall": "24 v071 side arrays re-verified by frozen keys (K03/K06 scalars bit-identical to v068 frozen pipeline); P_common/F_angle remain NOT_EXECUTABLE_UNDER_ZERO_BEM_BUDGET; BOTH real FFT extractor scripts located with byte SHA-256 (test.m 420 unnormalized; test_with_contrast.m 400 normalized contrast); 12/12 analytic FFT fixtures PASS vs independent direct-DFT reference; ONE real 2001-frame replay executed on both chains (actualFreq 419.790105/399.800100 Hz exactly as predicted); static identifiability screening shows D-ordering of both scalars is focus-dependent and non-monotonic; P0 hook NOT_RUN (budget preserved)",
+  "A_freeze_and_reconcile": {
+    "execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "VERIFIED_FOR_24_SIDES",
+    "facts": [
+      "all 24 executable sides re-checked: shape 65x65, finite, identity fields present; per-side SHA-256 in tables/controlled_ledger_reconciled.csv",
+      "v071 evi.sol_sha256 semantics corrected: it is the SHA-256 of the saved system file (s), NOT a persisted BEM sol object",
+      "P_common/F_angle: 12 items formally NOT_EXECUTABLE_UNDER_ZERO_BEM_BUDGET; no sol on workstation; no interpolation attempted",
+      "K03/K06 v071 P_base/F_base scalars reproduce v068 prod/fine S_area_nm2 and C_center EXACTLY (rel_diff=0)",
+      "semantics fixed: deltaS_signed/deltaS_abs separated; S_area_nm2=4225*sumC column added; original v071 tables untouched"
     ]
   },
-  "B_config_effectiveness": {
-    "execution_status": "COMPLETED",
-    "validation_status": "PASS_FOR_Q7_AND_BESSEL__NOT_EXECUTABLE_FOR_P_COMMON_AND_F_ANGLE",
-    "evidence_status": "COMPLETE_FOR_EXECUTED_SIDES",
-    "findings": [
-      "cfg.numerics.ntheta/nphi is a dead switch in render_system: lens is built in build_system; K01 probe with requested 200/301 left lens at 50x51 and far at 2550 directions (INACTIVE_CONTROL)",
-      "P_common needs prod far on 100/151 and F_angle needs fine far on 200/301; build_system sol objects were never saved (only s with far on frozen grids), so recomputation without new BEM is impossible: NOT_EXECUTABLE, reason SOL_NOT_PERSISTED_AND_CFG_ANGLE_DEAD_SWITCH",
-      "F_q7 (subpixels 5->7) and F_bessel (ntab 4001->8001) verified effective by nonzero increments and per-side evidence (fine_grid_len 455 vs 325, far dirs 15100, lens 100x151)"
+  "B_fft_extractor_versions": {
+    "execution_status": "COMPLETED", "validation_status": "ANALYTIC_EXTRACTOR_TEST_PASS", "evidence_status": "BYTE_VERIFIED_SOURCES__FIXTURES_12_OF_12_PASS",
+    "facts": [
+      "test.m  sha256 fdc918e691b13b33cbae8b32ecaacd1e63ec27be3e23b61b0701d0e595aea684 (420 Hz, unnormalized)",
+      "test_with_contrast.m sha256 d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa (400 Hz, normalized contrast, meanFloor mask)",
+      "bin audit N=2001/Fs=5000: df=2.4987506246876561 Hz; 400 Hz -> k=161 -> 399.800099950025 Hz (matches historical FFT outputs); 420 Hz -> k=169 -> 419.790104947526 Hz",
+      "12 analytic fixtures PASS against independent direct-DFT reference (tolerances declared: abs=1e-7, rel=1e-5, phase=1e-4 rad for single precision N=2001)",
+      "FREQ_VERSION_CONFLICT_PENDING_USER_CONFIRM: which script/frequency is the user's current formal extractor"
     ]
   },
-  "C_controlled_comparisons": {
-    "execution_status": "COMPLETED",
-    "validation_status": "PARTIAL_18_OF_36",
-    "evidence_status": "COMPLETE_FOR_18_COMPLETED_ROWS",
-    "renders_this_round": 24,
-    "probe_renders_this_round": 1,
-    "key_numbers": {
-      "P_base-F_base_rF_range": "0.005409-0.006215",
-      "F_q7-F_base_rF_range": "0.000528-0.000711",
-      "F_bessel-F_base_rF_range": "7.81e-6-8.21e-6"
-    },
-    "identity": "telescope identity |dS|/|S_R| = K2R * rF * eta verified on every COMPLETED row (relative absdiff <= ~2e-16)",
-    "interpretation": "Bessel tabulation increments shrink ~4x when spacing halves (2001->4001 gave ~3.1e-5 in v070; 4001->8001 gives ~7.8e-6 here), consistent with second-order tabulation error; prod-fine gap ~0.54-0.62 percent remains dominated by the two different discrete boundary solutions and cannot be attributed to a single mechanism without P_common/F_angle"
+  "C_real_data_replay": {
+    "execution_status": "EXECUTED_ONE_GROUP", "validation_status": "REPLAY_EXECUTED__NOT_EXPERIMENTAL_VALIDATION", "evidence_status": "PARTIAL (full arrays workstation-only)",
+    "facts": [
+      "7.29 batch found: 5000 BMPs 352x296 8-bit gray at C:/Users/PC/Desktop/课题/7.29/7.29/BMP100053022-20260729-105610; timestamp delta 200us = 5000 fps",
+      "replay frames 1000-3000 (N=2001), both chains on identical input, independent labels; actualFreq 419.790105/399.800100 Hz exactly as predicted",
+      "chainA amp420 range 0..3.47769e-05 (gray units); chainB meanFloor=0.000117616, valid mask 89.43%, |C_f| range 0..0.0615005",
+      "single-frequency BMP reconstruction (display-only) not executed; core observable computed",
+      "calibration_valid=false; experimental_validation=false; no absolute diameter claims"
+    ]
   },
-  "D_experimental_extractor": {
-    "execution_status": "FOUND_SOURCE__DATA_MISSING",
-    "validation_status": "CONTRACT_DOCUMENTED__REPLAY_BLOCKED",
-    "evidence_status": "PARTIAL",
-    "findings": [
-      "C:/Users/PC/Desktop/课题/test.m located (sha256 fdc918e691b13b33cbae8b32ecaacd1e63ec27be3e23b61b0701d0e595aea684, GBK-encoded)",
-      "observable = per-pixel single-frequency FFT amplitude/phase: gray 0.2989/0.5870/0.1140, per-pixel temporal mean removed, FFT along time without window, bin nearest targetFreq, amplitude 2|X_k|/N (non-DC/non-Nyquist), phase angle(X_k)",
-      "script parameters Fs=5000 fps, targetFreq=420 Hz, frames 1000-3000; 420 Hz conflicts with historical 399.8001 Hz and needs user confirmation",
-      "folderPath points to a single .bmp file then globbed for *.bmp (bug or stale path); E: drive path absent on this workstation; no existing FFT outputs found; replay blocked"
+  "D_static_identifiability": {
+    "execution_status": "COMPLETED", "validation_status": "SCREENING_ONLY", "evidence_status": "CACHED_TABLES_ONLY",
+    "facts": [
+      "D60 C_center crosses zero between zf 500-525 (consistent with v067 512.5-515 refinement); D100 S_area crosses between zf 425-450 (v071: fine S +143.4 at 435, -36.7 at 437.5)",
+      "D-ordering of C_center and S_area is focus-dependent and non-monotonic (zf<=475: 100>30>60; zf>=475/500: S ordering flips to 30>100>60; C monotonic in D only for zf>=500)",
+      "conclusion limited to STATIC_DEMO_IDENTIFIABILITY_SCREENING: no single static scalar identifies D uniquely across the demo focus range without focus prior; static focus sweep is NOT particle axial motion"
     ]
   },
   "E_p0": {
-    "execution_status": "NOT_RUN_THIS_ROUND",
-    "validation_status": "OPEN_2.58848e-7_vs_1e-10",
-    "evidence_status": "N/A",
-    "reason": "hook budget preserved; workstation still hosts hung -batch MATLAB sessions; rule7 large reference authorization remains 0"
+    "execution_status": "NOT_RUN_THIS_ROUND", "validation_status": "OPEN_2.58848e-7_vs_1e-10", "evidence_status": "N/A",
+    "reason": "workstation still hosts hung -batch MATLAB sessions; hook budget (<=1) preserved; rule7 large reference authorization 0"
   },
   "M_line": {
-    "M0_extractor": "FOUND_SOURCE_DATA_MISSING",
-    "M1_material": "PASS_WITH_CORRECTED_CONTRACT_v071 (1985, 2.349+0.083i); old v063 contract preserved",
-    "M2_60nm": "PASS_WITH_LIMITATION (historical v064, unchanged)",
-    "M2_30_100nm": "HISTORICAL_SOLVES_PRESENT_v065__FORMAL_CALIBRATION_OPEN (v070 status field was stale)",
-    "M3": "HISTORICAL_SOLVES_PRESENT_v065-v068__FORMAL_CALIBRATION_OPEN"
+    "M0_extractor": "TWO_VERSIONS_DOCUMENTED__FORMAL_CHOICE_PENDING_USER",
+    "M1_material": "PASS_WITH_LIMITS: corrected text (1985, 2.349+0.083i); real YAML sha256 verified c42e5a5007827fb3548df61daf222b164a7799206790fb2116c8488aefe9e802; particle_n readback complex-preserving; time-convention source-inspected, not independently re-derived",
+    "M2_30_100nm": "HISTORICAL_SOLVES_PRESENT__source corrected to v067 galerkin.bemsolver (v065 homog label was layered)",
+    "M3": "HISTORICAL_SOLVES_PRESENT_v064-v068__FORMAL_CALIBRATION_OPEN"
   },
   "frozen_states": {"continuous_domain_certified": null, "experimental_validation": false,
     "calibration_valid": false, "detection_validated": false,

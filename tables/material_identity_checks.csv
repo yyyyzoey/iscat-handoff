@@ -1,0 +1,5 @@
+item,value_sha256_or_value,source,note
+Fe3O4_Querry_yml_sha256,c42e5a5007827fb3548df61daf222b164a7799206790fb2116c8488aefe9e802,computed from actual bytes on workstation,matches historical manifest
+particle_n_readback,2.3490000000000006+0.083000000000000004i,K01,complex n+i*kappa preserved through save/load; kappa>0 consistent with exp(+i*omega*t) absorption per build_system guard (kappa>=0) and wrapper Material(np^2,1) convention
+M2_30_100nm_source,v067 galerkin.bemsolver single-medium,github status correction,v065 *_homog label was layered construction; v067 is the true homogeneous reference
+M3_source,v064-v068 layered solves,github status correction,do not relabel v065 homog as homogeneous

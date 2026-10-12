@@ -1,0 +1,7 @@
+task,count,unit,note
+new_material_BEM,0,solves,forbidden this round
+K01_source_identity_correction_rerenders,0,sides,source lineage verified without re-render (render_system sha constant; wrapper diffs touched evidence/CSV code only)
+fft_analytic_fixtures,12,fixtures,vs independent direct-DFT reference
+real_data_replays,1,group of 2001 frames,both chains on identical input; reconstruction display step not executed
+new_renders_for_identifiability,0,renders,cached v068/v069 tables only
+p0_hooks,0,calls,NOT_RUN preserved

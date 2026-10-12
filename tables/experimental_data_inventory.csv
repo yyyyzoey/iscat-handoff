@@ -1,0 +1,4 @@
+path,exists,total_bmps,dims,dtype,first_frame,last_frame,timestamp_delta_s,fps_derived,batch_note,authorization
+C:\Users\PC\Desktop\课题\7.29\7.29\BMP100053022-20260729-105610,true,5000,352x296,8-bit grayscale BMP,20260729_002739_371090-0.bmp,20260729_002740_370890-4999.bmp,0.0002,5000,"7.29 batch; 5000 frames; sorting by trailing number group verified",local read-only replay of 2001 frames performed this round; no upload
+E:\xwechat_files\wxid_f4m2x85t95eh22_9c77\msg\file\2026-09\7.29\7.29\BMP100053022-20260729-105610,false,,,,,,,,"E: path absent on this workstation (stale path in test.m)",n/a
+C:\Users\PC\Desktop\课题\select2 / select4 / select5,true (present),60fps-class samples,,,,,,,"different 60 fps samples; NOT substitutes for the 7.29 5000 fps contract",not used this round
