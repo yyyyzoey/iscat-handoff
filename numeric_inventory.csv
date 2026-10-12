@@ -1,4 +1,5 @@
 path,note
 v065_return/,all 32 s + 352 slices + full model,workstation only
 v067_return/,true homogeneous 30/100 systems,workstation only
-v070_return/,controlled render C arrays,workstation only
+v070_return/,logs and CSVs only; controlled C arrays NOT persisted (evidence MISSING)
+v071_return/,24 side mats + diffs + probe + examples on workstation; small K01 example packaged in numeric/controlled_recovered_examples.mat

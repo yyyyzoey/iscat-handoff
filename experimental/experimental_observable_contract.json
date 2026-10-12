@@ -1,0 +1,39 @@
+{
+  "schema": "iscat071.experimental_observable_contract.1",
+  "source_script": "C:/Users/PC/Desktop/课题/test.m",
+  "source_sha256": "fdc918e691b13b33cbae8b32ecaacd1e63ec27be3e23b61b0701d0e595aea684",
+  "observable": {
+    "type": "per-pixel single-frequency FFT amplitude and phase (complex coefficient also saved)",
+    "pipeline": [
+      "read BMP stack (im2single, optional ind2rgb)",
+      "gray = 0.2989*R + 0.5870*G + 0.1140*B (processMode=gray)",
+      "subtract per-pixel temporal mean",
+      "fft along time (no window, no detrend beyond mean removal)",
+      "select bin nearest to targetFreq on one-sided axis",
+      "amplitude = 2*|X_k|/N for non-DC/non-Nyquist bins; |X_k|/N otherwise",
+      "phase = angle(X_k)",
+      "optional single-bin inverse FFT reconstruction saved as normalized BMP frames"
+    ],
+    "normalization": "2|X_k|/N single-sided (non-DC, non-Nyquist)",
+    "output_units": "gray-level amplitude units (unitless, image intensity fraction of mean-removed single)"
+  },
+  "parameters": [
+    {"name":"frame_rate_Fs","value":5000,"unit":"fps","source":"test.m Fs","status":"FROM_SCRIPT_UNVERIFIED_AGAINST_HARDWARE","uncertainty":null},
+    {"name":"target_frequency","value":420,"unit":"Hz","source":"test.m targetFreq","status":"FROM_SCRIPT_CONFLICTS_WITH_HISTORICAL_399.8001_HZ_NEEDS_USER_CONFIRM","uncertainty":null},
+    {"name":"frame_range","value":[1000,3000],"unit":"frames","source":"test.m startFrame/endFrame","status":"FROM_SCRIPT","uncertainty":null},
+    {"name":"frequency_resolution","value":"Fs/numFrames","unit":"Hz","source":"derived","status":"DERIVED","uncertainty":null},
+    {"name":"actual_extracted_frequency","value":"nearest one-sided bin to 420 Hz","unit":"Hz","source":"derived","status":"DERIVED","uncertainty":"within +/- Fs/(2*numFrames)"},
+    {"name":"exposure_time","value":null,"unit":"s","source":null,"status":"MISSING_NEEDS_USER","uncertainty":null},
+    {"name":"total_magnification","value":null,"unit":"x","source":null,"status":"MISSING_NEEDS_USER","uncertainty":null},
+    {"name":"camera_pixel_size","value":null,"unit":"um","source":null,"status":"MISSING_NEEDS_USER","uncertainty":null},
+    {"name":"laser_wavelength","value":null,"unit":"nm","source":null,"status":"MISSING_NEEDS_USER","uncertainty":null},
+    {"name":"magnetic_particle_material_batch","value":null,"unit":null,"source":null,"status":"MISSING_NEEDS_USER","uncertainty":null}
+  ],
+  "blocking_issues": [
+    "folderPath in test.m points to a single .bmp file path and is then globbed for *.bmp; likely stale/incorrect path",
+    "E:/xwechat_files/.../BMP100053022-20260729-105610 does not exist on this workstation (Test-Path false)",
+    "no existing FFT output .mat/.png found on workstation for replay; replay of one existing trace is blocked",
+    "target frequency 420 Hz in script conflicts with historical 399.8001 Hz; needs user confirmation"
+  ],
+  "frozen_states": {"calibration_valid": false, "experimental_validation": false, "detection_validated": false}
+}

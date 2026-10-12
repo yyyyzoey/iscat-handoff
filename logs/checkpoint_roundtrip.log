@@ -1,0 +1,4 @@
+command: matlab -batch "cd(src); run_v071_controlled('','verify')"
+mode: independent MATLAB session, no BEM, no render; loaded numeric/*.mat only
+result: [071:verify] PASS: recheck CSV identical to original (5160 bytes)
+detail: controlled_comparisons_recheck_v071.csv byte-identical to controlled_comparisons_v071.csv

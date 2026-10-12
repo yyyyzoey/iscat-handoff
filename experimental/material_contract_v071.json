@@ -1,0 +1,25 @@
+{
+  "schema": "iscat071.material_contract.2",
+  "material": "Fe3O4 (magnetite)",
+  "mode": "LITERATURE_MATERIAL_EXPLORATION (uniform sphere, demo optics)",
+  "correction_of": "github_handoff/material_contract.json (schema iscat063.material_contract.1, PRESERVED UNCHANGED)",
+  "corrections": [
+    "citation year: Contractor Report CRDC-CR-85034 is 1985 (was written as 1987); verified against Fe3O4_Querry.yml REFERENCES header",
+    "complex index at 520 nm: 2.349+0.083i (was 2.349+0.0831i); verified against yml node 0.5200 2.349 0.083"
+  ],
+  "source": {
+    "database": "refractiveindex.info (polyanskiy/refractiveindex.info-database)",
+    "file": "database/data/main/Fe3O4/nk/Querry.yml",
+    "citation": "M. R. Querry, Optical Constants, Contractor Report CRDC-CR-85034 (1985), DTIC ADA158623",
+    "license": "CC0 public domain",
+    "fetched": "2026-10-11",
+    "sha256_file_local_copy": "Fe3O4_Querry.yml in repo"
+  },
+  "data": {"points": 612, "range_um": [0.21, 55.5556], "format": "wavelength_um n k"},
+  "interpolation": {"method": "linear in wavelength", "workpoint_nm": 520, "n": 2.349, "k": 0.083, "nodes_used": [0.51, 0.52], "exact_node_520": true},
+  "conventions": {
+    "time_convention": "exp(+i omega t) per NANOBEM build_system (n+i*kappa, kappa>=0 = absorption)",
+    "complex_index_used": "2.349+0.083i"
+  },
+  "limitations": ["bulk literature data, not particle-measured", "no shell/coating", "demo geometry 520nm"]
+}

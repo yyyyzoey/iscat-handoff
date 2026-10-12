@@ -1,0 +1,23 @@
+changed vs v070 (github_handoff):
+- tables/controlled_plan24_v071.csv            NEW (explicit actual cfg per side, NOT_EXECUTABLE reasons)
+- tables/controlled_comparisons_v071.csv       NEW (18 COMPLETED + 18 NOT_EXECUTABLE, explicit num/den/ref, eta, telescope identity)
+- tables/controlled_comparisons_recheck_v071.csv NEW (independent-session recheck, byte-identical)
+- tables/controlled_side_scalars_v071.csv      NEW (C_center,S_area,S_plus,S_minus,chi1,K_pixelL2 per side on frozen 41x41 ROI)
+- tables/cost_ledger_v071.csv                  NEW (25 render invocations)
+- tables/numeric_manifest_v071.csv             NEW
+- numeric/controlled_array_manifest.csv        NEW (alias copy)
+- numeric/controlled_recovered_examples.mat    NEW (K01 ROI arrays + evidence + probe)
+- logs/preflight_actual_paths.txt              NEW
+- logs/matlab_native_run.log                   NEW
+- logs/checkpoint_roundtrip.log                NEW
+- source/run_v071_controlled.m                 NEW
+- source/run_v071_examples.m                   NEW
+- experimental/*                               NEW (extractor inventory, observable contract, material contract v071)
+- history/v070_original_plan.csv               NEW (preserved copy)
+- history/v070_original_results.csv            NEW (preserved copy)
+- numeric_inventory.csv                        UPDATED (v070 arrays claim corrected to MISSING)
+- status.json                                  UPDATED (three-field statuses)
+- review.md                                    UPDATED
+- README.md                                    UPDATED
+- manifest_sha256.csv                          REGENERATED
+unchanged: material_contract.json (old v063 contract preserved), all v070 tables under tables/ (history)
