@@ -1,4 +1,5 @@
 path,note
-v064_return/m2r_fe3o4_60nm/,corrected BEM results,workstation only
-v064_return/m3_60nm/,layered 576+1444 systems,workstation only
-v063_return/m2_fe3o4_60nm/,ISOLATED wrong-material results,workstation only
+v065_return/,all 32 s files + 352 slices + full model,workstation only
+v061_return/r6_refs/,10 fine 1444 systems,workstation only
+v061_return/r6_blind/acq_*/,1000 acquisition dirs,workstation only
+v064_return/m3_60nm/,60nm layered 576+1444 systems,workstation only

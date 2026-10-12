@@ -1,33 +1,25 @@
 {
- "schema": "iscat065.three_size.1",
+ "schema": "iscat066.static_sweep.1",
  "export_time": "2026-10-12",
- "overall": "6/6 BEM COMPLETED (30/60/100nm homog+layered); 6/6 forward comparisons PASS (<2%); Mie reference corrected; signed response table generated; P0 Hook/B2 deferred",
- "mie_reference_fixed": {
-  "bug": "v064 helper used besselj(l,z,true) (scaled cylindrical) instead of spherical j_l(z)=sqrt(pi/(2z))*J_{l+0.5}(z)",
-  "fix": "half-integer recurrence: j_l(z)=sqrt(pi/(2z))*besselj(l+0.5,z); d_l=z*sqrt(pi/(2z))*besselj(l-0.5,z)-l*j_l",
-  "validation":"D60 Csca=73.866732 Cext=237.97511 Cabs=164.10838 matches v064 GPT scipy audit exactly",
-  "independent_ref":"local_mie_sections with corrected spherical Bessel"
- },
- "three_size_mie": {
-  "30nm":{"Csca":1.1141977,"Cext":19.141176,"Cabs":18.026978},
-  "60nm":{"Csca":73.866732,"Cext":237.97511,"Cabs":164.10838},
-  "100nm":{"Csca":1624.8257,"Cext":2592.4202,"Cabs":967.59452}
- },
- "three_size_BEM": {
-  "BEM_solves": 6,
-  "solves_completed": ["D30 homog 1444 243.8s","D30 layered 576 34.9s + 1444 232.6s","D60 homog 1444 227.4s (v064 cache)","D60 layered 576 35.8s + 1444 228.9s (v064 cache)","D100 homog 1444 235.1s","D100 layered 576 35.4s + 1444 230.4s"],
-  "material_readback":"n=2.349+0.083i (complex preserved through Material(eps,1) via zsqrt)",
-  "forward_relL2_41x41": {
-   "D30_z450": 0.0056, "D30_z550": 0.0056,
-   "D60_z450": 0.0053, "D60_z550": 0.0053,
-   "D100_z450": 0.0067, "D100_z550": 0.0057
-  },
-  "all_gates_2pct": "PASS (6/6)"
- },
- "signed_response_table": "Fe3O4 contrast increases monotonically with D (max |C| from ~0.19 at D30 to ~9.75 at D85-100 range); all forward gates < 2%; not a calibrated D^3 curve",
- "P0": {"layout_reference":"INDEPENDENT (explicit scalar index summation, fix1+fix2)","hook_capture":"NOT_RUN (deferred)","batching":"NOT_STARTED","blocked_vs_unblocked_1e-10":"OPEN"},
- "M0_extractor": {"search":"NOT_FOUND in confirmed dirs","analytic_tests":"16/16 PASS (carried v063)"},
- "magnetic_inputs": {"material":"Fe3O4 Querry1985 via refractiveindex.info (traceable)","real_sample":"MISSING","extractor":"NOT_FOUND","note":"LITERATURE_MATERIAL_EXPLORATION continues"},
+ "overall": "C1 Frobenius recomputed (6/6 <2%); C2 physical identity PASS; E 27-condition sweep COMPLETE (all fwd <2%); P0 Hook/B2 deferred; D 30/100nm homogeneous NOT_STARTED (budget unused)",
+ "C1_frobenius": {"execution":"COMPLETED","validation":"PASS","evidence":"COMPLETE",
+   "table":"tables/c1_frobenius_recomputed.csv",
+   "results":"D30:0.0056/0.0057 D60:0.0054/0.0054 D100:0.0059/0.0052 (all <2%)",
+   "note":"correct Frobenius pixel L2; spectral norm kept as diagnostic column"},
+ "C2_identity": {"execution":"COMPLETED","validation":"PASS","evidence":"COMPLETE",
+   "material_readback":"n=2.349+0.083i complex preserved all 6 systems","gap":"5nm","layers":"glass 1.50/water 1.33","lambda":"520nm"},
+ "E_static_sweep": {"execution":"COMPLETED","validation":"PASS","evidence":"COMPLETE",
+   "conditions":27,"forward_all_lt2pct":true,
+   "key_findings":[
+     "D30 C_center: -0.049 to -0.009 (weak, negative, monotone toward zero)",
+     "D60 C_center: -0.206 to +0.032 (SIGN CHANGE at zf~512nm)",
+     "D100 C_center: +1.08 to +1.55 (strong positive)",
+     "D100 S_area changes sign between zf=425 and zf=450",
+     "D30 S_area: -2650 nm2 range (near-constant)",
+     "prod-vs-fine relL2: 0.0051-0.0080 (all <2%)"],
+   "zero_BEM":true},
+ "P0": {"hook":"NOT_RUN","batching":"NOT_STARTED","contribution_audit":"NOT_STARTED","1e-10":"OPEN"},
+ "M2_true_homogeneous": {"execution":"NOT_STARTED","reason":"existing homog tag was same layered config; true homogeneous needs separate BEM (budget 2 authorized but not yet spent)"},
  "frozen_states": {"continuous_domain_certified": null, "experimental_validation": false,
   "calibration_valid": false, "detection_validated": false,
   "synthetic_detection_validation": "PASS (scope-limited, carried)",
