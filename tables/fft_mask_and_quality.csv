@@ -1,0 +1,17 @@
+metric,value,note
+total_pixels,104192,296x352
+valid_pixels,93179,validMask from meanFloor=0.01*median positive Imean
+invalid_pixels,11013,complex NaN stored (NOT zero)
+valid_fraction,0.894301,
+meanFloor,0.00011761607311200351,0.01 x median(Imean(Imean>0&finite))
+Imean_valid_min,0.00011953607463510707,
+Imean_valid_median,0.013147040270268917,
+Imean_valid_max,0.19374935328960419,
+absC400_valid_min,2.2736295539425161e-15,
+absC400_valid_median,0.0065966537222266197,
+absC400_valid_mean,0.023981023579835892,valid-only mean
+absC400_valid_max,0.90186554193496704,
+absC400_valid_ge_1e-3,82749,candidate-bright pixel count (diagnostic only)
+actualFreq400,399.800100,bin 161
+actualFreq420,419.790105,bin 169 (control)
+status,REAL_400_HZ_OBSERVABLE_COMPUTED,calibration_valid=false; experimental_validation=false

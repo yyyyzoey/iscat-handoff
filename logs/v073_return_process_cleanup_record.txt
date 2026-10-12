@@ -1,0 +1,5 @@
+2026-10-13 02:35 license-seat cleanup record (Codex session only)
+- stopped PIDs: 13216,31848,41628,36264,43320,39728,26264,39804,32804,33728,37764,35220,38524,42476,42852,46060,46000,8888
+- all were '-batch' jobs created by this Codex session (v072 dbg09 / run_v072_fft_fixtures attempts and one v073 attempt); outputs verified on disk before stopping
+- historical hung processes from 2026-10-10..12 (PIDs: 7680,33848,24432,27816,18676,8724,22168,25064,24752,1900,36048,36084,33372,28704,9264,10392,36340,36040,32360,34380) were NOT touched, per v073 E2
+- reason: license-seat exhaustion blocked new MATLAB startup (0 CPU at 1.1GB for >3 min)

@@ -1,5 +1,4 @@
-preflight: MATLAB R2024b (24.2.0.2712019) at C:\software\bin\matlab.exe
-render_system_sha256=87ef0db094d714d23d54ed9213a0faa634c140f7041f3563bf0de7fa5158fecd (constant across v071 renders and this round; no renders this round)
-project_root=C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
-v071_numeric_dir readable: yes (24 side mats + diffs + probe + examples)
-data_folder=C:\Users\PC\Desktop\课题\7.29\7.29\BMP100053022-20260729-105610 (5000 bmps)
+preflight: MATLAB R2024b at C:\software\bin\matlab.exe; render_system_sha256=87ef0db094d714d23d54ed9213a0faa634c140f7041f3563bf0de7fa5158fecd (no renders this round)
+upstream_locked=v072 e1abfed0dca0acf9e656f39775d8274ceb561a0c
+data_folder=C:\Users\PC\Desktop\课题\7.29\7.29\BMP100053022-20260729-105610 (5000 bmps; 2001 used, SHA-256 each in tables/input_provenance_replay.csv)
+license_cleanup=v073_return_process_cleanup_record.txt (own-session PIDs only; historical processes untouched)

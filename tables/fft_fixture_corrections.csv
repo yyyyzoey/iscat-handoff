@@ -1,0 +1,9 @@
+fixture_id,v072_old,covers,new_status,measured,note
+AXIS_FAIL_NEGATIVE,new,guard rejects dim>ndims; correct dim3 matches analytic,PASS,rel=2.86e-06 phase_err=2.79e-06,
+3D_VS_4D,new,same data H*W*1*N dim4 vs H*W*N dim3,PASS,maxdiff=0,source semantic equivalence
+TIME_ORIGIN,F07_NOT_ACTUALLY_TESTED_ORIGIN_SHIFT,real n0=500 sample shift: amplitude invariant and phase rotation matches -2*pi*k0*n0/N,PASS,ampRel=9.31e-08 phaseResid=4.45e-06,v072 gap closed
+MASK_VALUE,F09_zero_filled,invalid pixels complex NaN + mask=0 (not zero-filled),PASS,nanOK=1 maskOK=1 validOK=1,source NaN+validContrastMask semantics
+RGB_INDEPENDENT,F10_same_expression,manual weights vs chain weights on unequal RGB + analytic gray amplitude check,PASS,chainDiff=3.87e-09 ampRel=3.27e-06,independent analytic expectation added
+OFF_BIN,new,400.5 Hz off-bin leakage recorded as diagnostic (no correction applied),DIAGNOSTIC,binAmp=0.0175156 idealAmp=0.02 ratio=0.875780,leakage is expected physics of finite records
+EXPOSURE_ANALYTIC_ONLY,F12_numeric_s_field,both start/center conventions verified; tau=1e-4s SYNTHETIC ONLY,PASS,ampRel1=3.83e-06 ampRel2=3.83e-06 phaseResid=1.64e-08,not real exposure; v072 numeric-s field removed
+IO_CSV,F12_U0000_in_csv,no control characters; NaN literal and UNDEFINED tokens serialize cleanly,PASS,ctrl=0,v072 NUL bug closed

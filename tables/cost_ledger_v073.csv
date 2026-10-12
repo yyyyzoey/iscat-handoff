@@ -1,0 +1,7 @@
+task,count,note
+new_BEM,0,unchanged prohibition
+corrected_replay_runs,1,same 2001-frame group; earlier attempts that errored before writing produced no accepted results
+targeted_fixtures,8,<=8 authorized; 7 PASS + 1 OFF_BIN diagnostic
+analytic_observable_operator_checks,2,"bin-center amplitude recovery + real time-origin phase rotation (subset of fixtures), ANALYTIC_OBSERVABLE_ONLY"
+ledger_fix_renders,0,text/metadata only
+p0_hooks,0,passive process inventory only; budget preserved

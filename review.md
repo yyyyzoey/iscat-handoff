@@ -1,42 +1,61 @@
-# v072 review summary (Codex execution report)
+# v073 review summary (Codex execution report)
 
-## A. Freeze, reconcile, correct (zero BEM)
+## 1. v072 replay bug: confirmed, corrected, re-verified
 
-- All 24 v071 executable sides re-verified by frozen keys (case/D/zf/suffix/mesh/lens dims/far dirs/ntab/q/SHA-256/shape/finite/identity fields). `tables/controlled_ledger_reconciled.csv` lists v071 events, the 12 NOT_EXECUTABLE sides, the probe, and the 24 v070 history rows (arrays never persisted).
-- The v071 `evi.sol_sha256` field is renamed in documentation to what it actually is: the SHA-256 of the saved system file `s` (not a BEM `sol`). No sol exists on the workstation; `P_common`/`F_angle` are formally `NOT_EXECUTABLE_UNDER_ZERO_BEM_BUDGET` and no interpolation was used.
-- K01 wrapper lineage: `render_system` SHA-256 (`87ef0db0...`) constant across every render; the wrapper edits between v071 runs changed only evidence fields/CSV writing, never the render switch or cfg overrides. No K01 re-render was needed (0 of 4 authorized used).
-- Semantics fixed without touching originals: `controlled_comparisons_semantics_fixed.csv` now carries `deltaS_signed`, `deltaS_abs`, `S_ref_sumC`, `S_area_nm2_A/B` (4225 x sumC), `K2_ref`, `chi1_ref`; the misleading `abs_dS` column is retired (the old column held signed dS).
-- Cross-check: v071 K03/K06 P_base/F_base scalars reproduce the v068 frozen-pipeline scalars EXACTLY (rel_diff = 0), a strong bit-level provenance link across versions.
-- K05 D100/zf437.5 fine-side signed-area sensitivity confirmed as a finite-numerical fact: scalar |Delta|/|S| ~ 7.35% while whole-image rF ~ 8.2e-6 (near-cancellation regime), not an experimental diameter error.
+The v072 replay built a 3-D `H x W x N` stack but called `fft(signal,[],4)`. MATLAB returns
+the input unchanged when dim > ndims, so v072's "frequency" arrays were time-domain frames
+161/169. v073 response:
 
-## B. Two real extractor scripts - both now byte-verified (top priority item)
+- `extract_fft_v073.m` implements the full contract with a hard axis guard (timeDim>ndims
+  -> error), N=2001 assertion, bin/actualFreq assertions, source-script mask semantics,
+  and complex-NaN (never zero) for invalid pixels.
+- Negative tests: guarded wrong dim caught; unguarded `fft(...,4)` on 3-D shown to return
+  the input unchanged (documents the v072 failure mode); correct dim-3 chain recovers the
+  analytic coefficient (rel 2.9e-6, phase 2.8e-6 rad).
+- 3-D vs 4-D layout equivalence on identical data: maxdiff = 0.
 
-| | test.m | test_with_contrast.m |
-|---|---|---|
-| sha256 | fdc918e6...95aea684 | d08575b1...3ea3aa |
-| target | 420 Hz (bin 169 -> 419.790105 Hz) | 400 Hz (bin 161 -> 399.800100 Hz) |
-| observable | gray-level FFT amplitude `2|X|/N` + phase | normalized complex modulation contrast `2X/(N*Imean)` with 1%-median floor mask |
-| folderPath | points at a single .bmp (stale/bug) | correct 7.29 folder |
+## 2. Coverage gaps from v072 fixtures closed (8 targeted fixtures, <=8 budget)
 
-12 analytic fixtures (constant bg, exact-bin 400/420 with known amp/phase, off-bin leakage, two-tone, time-origin shift, zero bg, low-Imean mask, RGB weights, NaN behavior, exposure sinc) ALL PASS against an independent direct-DFT reference. Declared tolerances: abs 1e-7, rel 1e-5, phase 1e-4 rad (single precision, N=2001). Bin audit table confirms the historical 399.8001 Hz outputs correspond to a 400 Hz target at N=2001/Fs=5000. `FREQ_VERSION_CONFLICT_PENDING_USER_CONFIRM` is recorded; neither script is auto-promoted to "the" formal extractor.
+TIME_ORIGIN (real 500-sample shift: amplitude invariant 9.3e-8, phase rotation matches
+-2*pi*k0*n0/N), MASK_VALUE (complex NaN + mask=0), RGB_INDEPENDENT (unequal channels +
+independent analytic gray amplitude), EXPOSURE_ANALYTIC_ONLY (start/center conventions,
+SYNTHETIC tau), IO_CSV (no control characters; v072 U+0000 closed), OFF_BIN leakage
+diagnostic (ratio 0.8758, no correction applied). Original v072 fixture CSV preserved.
 
-## C. Real data replay (one group, both chains)
+## 3. Corrected replay of the SAME 2001 frames (one group, primary = 400 Hz)
 
-The 7.29 batch EXISTS on this workstation: 5000 BMPs, 352x296, 8-bit gray, timestamp delta 200 us (5000 fps). Frames 1000-3000 (N=2001) were replayed through both chains on the identical input:
-- chain A (420): amplitude range 0..3.48e-05 gray units; actualFreq 419.790105 Hz
-- chain B (400): meanFloor 1.17616e-4, valid mask 89.43%, |C_f| range 0..0.0615; actualFreq 399.800100 Hz
-Full arrays remain on the workstation (`numeric/replay_729_frames1000_3000.mat`); only the summary CSV is published. Display-only single-frequency BMP reconstruction was skipped (would write 2001 files; not part of the measurement observable). `calibration_valid=false`, `experimental_validation=false`.
+- 4-D `H x W x 1 x N` single stack (source-script layout), `fft(...,4)`; actualFreq
+  399.800100 Hz (primary) / 419.790105 Hz (control) asserted.
+- PRIMARY `normalizedComplexContrast400`: 93179/104192 valid pixels (89.43%, identical to
+  v072's independently-valid mask fraction), 11013 invalid pixels stored complex NaN;
+  meanFloor 1.1761607311200351e-4 (matches v072 - mean/mask were reproducible); valid-only
+  |C400|: median 6.60e-3, mean 2.40e-2, max 0.9019.
+- CONTROL 420 Hz amplitude from the same FFT pass; no rescaling to 400.
+- 12 predeclared pixels (corners, center, ROI corners, high/low Imean, brightest |C400|):
+  direct double-precision DFT vs FFT all PASS (rel <= 3.68e-7; phase <= 3.45e-7 rad).
+- Independent second MATLAB session recheck on the saved 41x41 ROI (frames included):
+  3D/4D maxdiff 0, stored-vs-recomputed maxdiff 0, 4 corner direct DFTs PASS,
+  C_k formula vs stored PASS -> RECHECK PASS.
+- Spectral neighborhood (fixed bins k=158:164 + 169): bin 161 ROI-mean|X| = 0.1626 vs
+  neighbor baseline 0.125-0.131 (~25% above local baseline). Labeled
+  ASSOCIATION_ONLY_NOT_CAUSAL_MAGNETIC_SIGNAL; no detection threshold claimed.
+- v072 wrong artifact isolated (sha256 d7ffe435...), never overwritten; full corrected
+  arrays workstation-only; small ROI + control small mat packaged.
 
-## D. Static identifiability screening (cached tables only)
+## 4. Ledger / P0 / gaps
 
-- D60 C_center zero-crossing between zf 500-525 (v067 refined: 512.5-515). D100 S_area sign change between 425-450 (v071: +143.4 at 435 -> -36.7 at 437.5).
-- D-ordering is focus-dependent and NON-monotonic: zf<=475 both scalars order 100>30>60; from zf~475/500 the signed-area ordering flips to 30>100>60; C_center is monotone in D only for zf>=500.
-- Consequence (screening only): within this demo optics no single static scalar uniquely identifies D across the focus range; a focus prior or axial-motion model is required. Static focus sweeps are not particle axial motion.
-
-## E. P0 / R6 / A3
-
-P0 hook NOT_RUN (budget preserved; hung -batch MATLAB sessions remain on the workstation). The 1e-10 blocked/unblocked gate stays OPEN at the historical 2.58848e-7. rule7 large reference authorization 0. R6/A3 BLOCKED (no pre-authorized budget).
+- `controlled_ledger_v073_verified.csv`: 24 sides with REAL cfg D/zf (v072's
+  sprintf-in-find bug fixed) and corrected SHA column semantics (render_system vs wrapper);
+  12 NOT_EXECUTABLE; v070 rows remain HISTORY_UNVERIFIABLE in the untouched v072-era table.
+- P0: passive process/memory inventory only; own-session hung MATLAB leftovers cleaned with
+  per-PID command-line verification and on-disk output verification (historical processes
+  untouched). Gate stays OPEN at 2.58848e-7 vs 1e-10; rule7 authorization 0.
+- Physical input gap: lambda=520 nm USER_CONFIRMED recorded; exposure, NA, magnification,
+  object pixel, drive waveform/reference phase, batch constants, trajectories still missing
+  -> single-particle diameter NOT_ESTIMATED; calibration_valid=false;
+  experimental_validation=false.
 
 ## Not claimed
 
-- No experimental validation, no calibration, no diameter measurement, no "36/36 physical closure", no Bessel "proven second-order convergence" beyond the two finite-config increments, no mesh-percentage attribution.
+No experimental validation, no diameter estimate, no causal magnetic attribution, no
+static-to-400Hz calibration multiplier, no new BEM (0), no renders (0).

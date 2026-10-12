@@ -1,0 +1,12 @@
+input,value,unit,source,status,note
+laser_wavelength,520,nm,USER_CONFIRMED_2026-10-12,CONFIRMED,matches demo model lambda; single-factor alignment only
+frame_rate,5000,fps,timestamp deltas 200us in 7.29 batch,MEASURED_CONSISTENT,"also the source scripts hardcode Fs=5000"
+exposure_time,,s,,MISSING,do not assume 0.2ms frame interval = exposure; no gold-sphere 1ms reuse
+objective_NA,,-,demo model 1.3,DEMO_ONLY_UNCONFIRMED,
+total_magnification,,x,,MISSING,
+object_pixel_size,,nm,demo 65,DEMO_ONLY_UNCONFIRMED,
+magnetic_drive_frequency_and_waveform,,Hz,,MISSING,"200 Hz drive + 2f=400 motivation is historical record, not confirmed for this batch"
+drive_reference_phase,,rad,,MISSING,FFT phase remains time-origin dependent without it
+particle_batch_optical_constants,,-,Fe3O4 Querry 1985 bulk,LITERATURE_PLACEHOLDER,not batch-measured
+particle_trajectory_height_constraints,,nm,,MISSING,static zf sweep is NOT axial motion
+magnetite_particle_diameter,,nm,,NOT_ESTIMATED,no absolute diameter claims this round

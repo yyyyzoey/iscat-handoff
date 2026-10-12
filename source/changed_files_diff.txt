@@ -1,25 +1,26 @@
-changed vs v071 (github_handoff):
-- tables/controlled_ledger_reconciled.csv        NEW (frozen-key verification, v070 history rows)
-- tables/controlled_comparisons_semantics_fixed.csv NEW (deltaS signed/abs, S_area_nm2, K2/chi1)
-- tables/six_condition_scalar_consistency.csv    NEW (K03/K06 bit-identical vs v068)
-- tables/material_identity_checks.csv            NEW (real YAML sha256, particle_n readback, source corrections)
-- tables/fft_extractor_versions.csv              NEW (two byte-verified extractor scripts)
-- tables/fft_analytic_fixtures.csv               NEW (12/12 PASS)
-- tables/fft_bin_audit.csv                       NEW (400/420 bins)
-- tables/experimental_data_inventory.csv         NEW (7.29 batch 5000 frames found)
-- tables/fft_replay_one_case.csv                 NEW (replay executed, summary only)
-- tables/static_identifiability_screen.csv       NEW (screening)
-- tables/p0_hook_actual_state.csv                NEW (NOT_RUN)
-- tables/compute_cost_ledger.csv                 NEW
-- numeric/K01_K03_K05_recovered_examples.mat     NEW
-- numeric/analytic_fft_fixture_small.mat         NEW
-- numeric/source_numeric_manifest.csv            NEW (workstation inventory)
-- experimental/*                                 NEW/UPDATED (source_inventory, extractor_versions, observable contracts, diff+hashes)
-- source/run_v072_reconcile.m                    NEW
-- source/run_v072_fft_fixtures.m                 NEW
-- source/run_v072_replay.m                       NEW
-- 00_全部文本汇总_v072.md                        NEW
-- 00_Codex_v072_执行指令.md                      NEW (contract copy)
-- status.json / review.md / README.md            UPDATED
-- manifest_sha256.csv                            REGENERATED
-unchanged: v071 tables (history), root material_contract.json, v070 history
+changed vs v072 (github_handoff):
+- tables/fft_axis_negative_tests.csv            NEW (guard + v072 failure-mode documentation + analytic recovery)
+- tables/fft_fixture_corrections.csv            NEW (8 targeted fixtures: TIME_ORIGIN/MASK_VALUE/RGB/EXPOSURE/IO closed; OFF_BIN diagnostic)
+- tables/fft_bin_audit_v073.csv                 NEW
+- tables/fft_replay_direct_dft_checks.csv       NEW (12 pixels, corrected FFT, all PASS)
+- tables/fft_replay_direct_dft_checks_recheck.csv NEW (independent session, PASS)
+- tables/fft_replay_corrected_summary.csv       via fft_mask_and_quality.csv + fft_spectral_neighborhood.csv (v072 invalid frequency rows superseded)
+- tables/fft_mask_and_quality.csv               NEW (valid-only stats; NaN invalid pixels)
+- tables/fft_spectral_neighborhood.csv          NEW (k=158:164+169, ASSOCIATION_ONLY label)
+- tables/controlled_ledger_v073_verified.csv    NEW (real cfg D/zf; SHA semantics fixed; 24+12)
+- tables/input_provenance_replay.csv            NEW (2001 frames, sha256 each)
+- tables/extractor_versions_v073.csv            NEW (copy of byte-verified inventory)
+- tables/physical_input_gap.csv                 NEW (lambda 520 CONFIRMED; gaps listed)
+- tables/cost_ledger_v073.csv                   NEW
+- numeric/fft400_corrected_small_roi.mat        NEW (ROI incl. frames)
+- numeric/fft420_control_small_roi.mat          NEW
+- numeric/fft_analytic_small_examples.mat       NEW
+- numeric/numeric_inventory.json                NEW (workstation-only inventory incl. v072 INVALID artifact)
+- experimental/experimental_inputs_v073.json    NEW (520 nm USER_CONFIRMED)
+- experimental/observable_contract_v073.json    NEW (PRIMARY C400)
+- history/*                                     NEW (v072 wrong-axis record; prior CSV problems)
+- source/extract_fft_v073.m + 4 entry points    NEW
+- status.json / review.md / README.md           UPDATED
+- 00_全部文本汇总_v073.md                       NEW
+- manifest_sha256.csv                           REGENERATED
+unchanged: all v071/v072 historical tables, root material_contract.json, user scripts

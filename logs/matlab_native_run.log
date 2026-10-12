@@ -1,63 +1,107 @@
-[072A] code_sha=2812788517037c55e69dc3fc59b02a6d25cd6692b3dc0014b37bf74984173b1e
-[072A] verified 24 executable sides
-[072A] code_sha=58bc1fcab1393a6608bd86e8389704a2079feb62fbcdd65a3a2ebf644a23029e
-[072A] verified 24 executable sides
-[072A] reconcile done
-[072A] code_sha=066bc27f0036a2878a54a380711afdd14d13bb35d75b6e637798a3be07b5e004
-[072A] verified 24 executable sides
-[072A] code_sha=2176de78f5b3e7e09042ac47d7ce71100cdc450ae1f85c2cff7e463b18c6afed
-[072A] verified 24 executable sides
-[072A] reconcile done
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[警告: 转义字符 '\U' 无效。有关支持的特殊字符，请参阅 'doc sprintf'。] 
-[> 位置：run_v072_fft_fixtures (第 18 行)] 
-[警告: 转义字符 '\U' 无效。有关支持的特殊字符，请参阅 'doc sprintf'。] 
-[> 位置：run_v072_fft_fixtures (第 19 行)] 
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[警告: 矩阵在工作精度内为奇异的。] 
-[> 位置：run_v072_fft_fixtures>runFixtureRGB (第 166 行)
-位置: run_v072_fft_fixtures (第 64 行)
-] 
-[072B] 12 fixtures done
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[警告: 矩阵在工作精度内为奇异的。] 
-[> 位置：run_v072_fft_fixtures>runFixtureRGB (第 166 行)
-位置: run_v072_fft_fixtures (第 64 行)
-] 
-[072B] 12 fixtures done
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[072B] 12 fixtures done
-[072B] df=2.4987506246876561 f400=399.80009995002496 f420=419.79010494752623
-[072B] 12 fixtures done
-[072C] folder bmps=5000
-[072C] processing frames 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
-[072C] folder bmps=5000
-[072C] processing frames 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
-[072C] folder bmps=5000
-[072C] processing frames 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
-[072C] read 500/2001 (2.7s)
-[072C] read 1000/2001 (5.2s)
-[072C] read 1500/2001 (7.7s)
-[072C] read 2000/2001 (10.1s)
-[072C] stack read 10.1s
-[072C] fft 0.3s
-[072C] folder bmps=5000
-[072C] processing frames 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
-[072C] read 500/2001 (2.5s)
-[072C] read 1000/2001 (4.7s)
-[072C] read 1500/2001 (6.9s)
-[072C] read 2000/2001 (9.1s)
-[072C] stack read 9.1s
-[072C] fft 0.1s
-[072C] actualFreq 420-chain=419.790105 Hz, 400-chain=399.800100 Hz, meanFloor=0.000117616, valid mask=89.43%
-[072C] replay done
+[073A] f400=399.80009995002501 f420=419.79010494752623
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 31 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 44 行)] 
+[073A] negative tests: PASS PASS PASS
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 61 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 70 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 70 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 77 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 89 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 90 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 100 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 110 行)] 
+[073A] f400=399.80009995002501 f420=419.79010494752623
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 31 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 44 行)] 
+[073A] negative tests: PASS PASS PASS
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 61 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 70 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 70 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 77 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 89 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 90 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 100 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 110 行)] 
+[警告: 不支持属性 ndims>0。] 
+[> 位置：extract_fft_v073 (第 12 行)
+位置: run_v073_fft_validation (第 111 行)] 
+[073A/B] validation done
+[073A] f400=399.80009995002501 f420=419.79010494752623
+[073A] negative tests: PASS PASS PASS
+[073A/B] validation done
+[073A] f400=399.80009995002501 f420=419.79010494752623
+[073A] negative tests: PASS PASS PASS
+[073A/B] validation done
+[073C] batch=5000 frames; using 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
+[073C] read 500/2001 (2.4s)
+[073C] read 1000/2001 (4.5s)
+[073C] read 1500/2001 (6.7s)
+[073C] read 2000/2001 (8.8s)
+[073C] stack 8.8s  size=296x352x1x2001
+[073C] fft 1.7s; actualFreq400=399.800100 actualFreq420=419.790105
+[073C] batch=5000 frames; using 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
+[073C] read 500/2001 (2.3s)
+[073C] read 1000/2001 (4.4s)
+[073C] read 1500/2001 (6.6s)
+[073C] read 2000/2001 (8.6s)
+[073C] stack 8.6s  size=296x352x1x2001
+[073C] fft 1.6s; actualFreq400=399.800100 actualFreq420=419.790105
+[073C] batch=5000 frames; using 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
+[073C] read 500/2001 (2.3s)
+[073C] read 1000/2001 (4.5s)
+[073C] read 1500/2001 (6.7s)
+[073C] read 2000/2001 (8.8s)
+[073C] stack 8.8s  size=296x352x1x2001
+[073C] fft 1.6s; actualFreq400=399.800100 actualFreq420=419.790105
+[073C] direct DFT 12 px 0.0s
+[073C] corrected replay done
+[073C] batch=5000 frames; using 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
+[073C] read 500/2001 (2.4s)
+[073C] read 1000/2001 (4.5s)
+[073C] read 1500/2001 (6.7s)
+[073C] read 2000/2001 (8.8s)
+[073C] stack 8.8s  size=296x352x1x2001
+[073C] fft 1.7s; actualFreq400=399.800100 actualFreq420=419.790105
+[073C] direct DFT 12 px 0.0s
+[073C] corrected replay done
+[073E1] verified 24 executable sides + NOT_EXECUTABLE rows; render_source=87ef0db094d7 wrapper=667889a4e5c3

@@ -1,0 +1,9 @@
+item,value,check
+N,2001,asserted inside extract_fft_v073
+Fs,5000,
+deltaF_Hz,2.4987506246876561,Fs/N
+k0_400,160,round(400*N/Fs)
+k_matlab_400,161,k0+1; actual 399.80009995002501 Hz
+k0_420,168,round(420*N/Fs)
+k_matlab_420,169,k0+1; actual 419.79010494752623 Hz
+historical_399.8001,consistent,matches bin 161 exactly

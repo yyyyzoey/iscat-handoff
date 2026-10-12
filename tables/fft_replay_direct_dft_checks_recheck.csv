@@ -1,0 +1,9 @@
+check,value,threshold,status
+roi_3d_vs_4d_maxdiff,0,0,PASS
+roi_vs_stored_fullfield_maxdiff,0,1e-6,PASS
+roi_corner_1_directDFT_rel,9.5502538887730931e-08,1e-5,PASS
+roi_corner_2_directDFT_rel,3.6760898156602014e-07,1e-5,PASS
+roi_corner_3_directDFT_rel,1.8911208967271951e-08,1e-5,PASS
+roi_corner_4_directDFT_rel,4.8887600633547616e-08,1e-5,PASS
+meanFloor_roi_local_vs_fullfield,0.0005691937985830009,0.00011761607311200351,EXPECTED_DIFFERENCE
+Ck_formula_vs_stored_maxdiff,0,1e-6,PASS

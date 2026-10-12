@@ -1,0 +1,4 @@
+test_id,setup,expected,observed,status
+NEG1_wrong_dim_guarded,extract_fft_v073(stack3D,timeDim=4),error extract_fft_v073:BAD_TIME_DIM,extract_fft_v073:BAD_TIME_DIM,PASS
+NEG2_unguarded_dim4_returns_input,fft(signal3D,[],4),array returned unchanged (no FFT),unchanged=1 fft dim>ndims returned input unchanged (v072 failure mode documented),PASS
+NEG3_correct_dim3_analytic,extract_fft_v073(stack3D,3),|X_k-(N/2)Ae^{i phi}|/|X|<1e-05 and phase<1e-04,rel=2.86e-06 phase=2.79e-06,PASS

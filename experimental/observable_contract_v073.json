@@ -1,0 +1,19 @@
+{
+  "schema": "iscat073.observable_contract.1",
+  "PRIMARY": {
+    "name": "normalizedComplexContrast400",
+    "definition": "Imean(x,y)=mean_time I_j; X_k=sum_j (I_j-Imean) exp(-i2 pi k0 j/N); C400 = 2 X_k / (N Imean)",
+    "amplitude": "absC400 = |C400| (primary for inversion)",
+    "phase": "angle(C400) - time-origin dependent; internal diagnostic only until drive reference exists",
+    "bin": {"N": 2001, "Fs": 5000, "k0": 160, "k_matlab": 161, "actualFreq_Hz": 399.80009995002496},
+    "source_script": "test_with_contrast.m sha256 d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa (unmodified)",
+    "mask": "validMask = isfinite(Imean) & Imean > 0.01*median(positive finite Imean); invalid pixels stored complex NaN, excluded from all statistics",
+    "units": "dimensionless normalized modulation contrast"
+  },
+  "CONTROL_420": {
+    "name": "chainA amplitude 2|X|/N at bin 169 (419.79010494752623 Hz)",
+    "role": "source cross-reference and spectral diagnostic only; NOT the primary calibration observable; no rescaling to 400"
+  },
+  "negative_frequency_guard": "extract_fft_v073 refuses timeDim>ndims; NEG tests document that unguarded fft(dim>ndims) returns input unchanged (v072 failure mode)",
+  "status": "REAL_400_HZ_OBSERVABLE_COMPUTED; calibration_valid=false; experimental_validation=false; single-particle diameter NOT_ESTIMATED"
+}

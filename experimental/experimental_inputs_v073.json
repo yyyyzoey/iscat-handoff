@@ -1,0 +1,8 @@
+{
+  "schema": "iscat073.experimental_inputs.1",
+  "laser_wavelength_nm": {"value": 520, "source": "USER_CONFIRMED_2026-10-12", "status": "CONFIRMED"},
+  "frame_rate_fps": {"value": 5000, "source": "7.29 batch timestamp deltas (200us) + source scripts", "status": "MEASURED_CONSISTENT"},
+  "processing": {"N": 2001, "startFrame": 1000, "endFrame": 3000, "sorting": "trailing number group", "primary_observable": "normalizedComplexContrast400 (test_with_contrast.m semantics)"},
+  "unconfirmed_or_missing": ["objective NA", "total magnification", "object pixel size", "exposure time", "magnetic drive waveform/field", "drive reference phase", "batch optical constants", "particle trajectories/heights"],
+  "frozen_states": {"calibration_valid": false, "experimental_validation": false, "detection_validated": false}
+}
