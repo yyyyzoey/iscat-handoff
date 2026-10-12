@@ -1,5 +1,4 @@
 path,note
 v065_return/,all 32 s files + 352 slices + full model,workstation only
-v061_return/r6_refs/,10 fine 1444 systems,workstation only
 v067_return/,true homogeneous 30/100 systems,workstation only
-v068_return/,27-condition renders + aperture data,workstation only
+v068_return/,27-condition renders,workstation only
