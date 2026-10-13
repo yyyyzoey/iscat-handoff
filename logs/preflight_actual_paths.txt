@@ -1,1 +1,1 @@
-preflight: upstream v074=8aa02ccfc690b111a2e915951963d37932d0d313; MATLAB R2024b; anchor states from v074 signed render cache; 24 holdout renders (budget); zero BEM
+preflight: upstream v075=edb36dddf1b855063f0aa2491f589d5aef13e006; MATLAB R2024b; zero BEM; zero new renders (anchors/holdouts from caches); centre ROI fine 61:265 verified via pixel_mean exact reproduction

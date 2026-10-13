@@ -1,0 +1,12 @@
+test_id,description,expected,observed,status,note
+T1_makeValidName_collision,makeValidName maps +-10 to same field,equal,1,PASS,documented v074 defect
+T2_position_key_unique_30,30 unique keys,30,PASS,fixed key helper
+T3_position_key_rejects,4 unauthorised inputs rejected,4,PASS,hardened v076
+T4_fine_axis_center,fine_x(163)=0,actual 0 nm,PASS,fine_x_nm from render_system
+T5_fine_axis_step,13 nm per subpixel,actual 13 nm,PASS,q=5 with 65nm pixel
+T6_legacy_offset,legacy centre fine166 = +39 nm vs correct 163,actual 39 nm,PASS,deterministic 3-subpixel offset
+T7_C33_recompute_itpath,abs diff <=1e-6,0,PASS,pixel_mean path reproduces render_system contrast
+T8_C33_recompute_aspath,abs diff <=1e-6,6.94e-17,PASS,(Isca+Iint)/Iref decomposition identity
+T9_Cblock_recompute,max abs diff <=1e-6,0,PASS,full 41x41 physical-pixel ROI block
+T10_legacy_block_rejected,legacy 64:268 block differs from correct 13:53 block,maxdiff 0.15 > 0,PASS,3-subpixel offset must FAIL identity
+T11_com_reference,x=0 CoM at pixel 33,actual 32.999999,PASS,

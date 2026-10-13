@@ -1,9 +1,9 @@
 {
-  "schema": "iscat075.numeric_inventory.1",
-  "in_zip": ["v075_holdout_example_D60_zf450_M5.mat / _P5.mat (66x66 direct+interp fields)", "v075_dynamic_C400_corrected.mat (24+8+2 C400 maps)"],
+  "schema": "iscat076.numeric_inventory.1",
+  "in_zip": ["v076_center_roi_static_sentinels.mat (full-field render + correct/legacy ROI comparisons for D60/zf450 x=0)", "v076_center_roi_harmonic_small_examples.mat (24 centre-pixel series + QR harmonics)"],
   "workstation_only": [
-    {"path": "v075_return/numeric/v075_holdout_data.mat", "bytes": 157939329, "sha256_note": "recompute at packaging", "content": "24 holdout structs: relEs/relIt/st + Es_direct/Es_interp/Eref 325x325x3 complex single", "reason": "exceeds GitHub 100MB file limit; small signed-side examples packaged instead"},
-    {"path": "v074_return/numeric/render_cache/*.mat", "count": 30, "note": "anchor states (signed filenames correct; only v074 in-memory keys collided)"},
-    {"path": "v075_return/numeric/render_cache/*.mat", "count": 24, "note": "holdout states re-rendered this round under the 24-render budget"}
+    {"path": "v074_return/numeric/render_cache/*.mat", "count": 30, "note": "signed anchor states"},
+    {"path": "v075_return/numeric/render_cache/*.mat", "count": 24, "note": "holdout states"},
+    {"path": "v075_return/numeric/v075_holdout_data.mat", "bytes": 157939329, "note": "24 full-field holdout structs (source of the v076 B-stage reprocessing)"}
   ]
 }

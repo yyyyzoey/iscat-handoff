@@ -1,0 +1,17 @@
+state_i,state_j,changed_parameter,complex_relL2,abs_relL2,note
+D100_zf450_M200_a20,D100_zf450_M200_a5,+a,9.1321033109607512,9.1318788528442383,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D100_zf450_M400_a20,+type,1.0022178730004649,0.95863771438598633,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D100_zf450_M400_a5,+a+type,1.0308436646533834,0.85006558895111084,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D100_zf550_M200_a20,+zf,0.48879567156233272,0.45883139967918396,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D100_zf550_M200_a5,+zf+a,10.750718491029883,10.734827041625977,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D100_zf550_M400_a20,+zf+type,1.0026235015103704,0.9542086124420166,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D100_zf550_M400_a5,+zf+a+type,1.0375978422079628,0.83652275800704956,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D30_zf450_M200_a20,+D,57.987344955051377,57.750583648681641,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D30_zf450_M200_a5,+D+a,534.74081971126054,534.50469970703125,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D30_zf450_M400_a20,+D+type,2.8285727002128875,1.9391956329345703,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D30_zf450_M400_a5,+D+a+type,10.587486877418675,9.7567529678344727,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D30_zf550_M200_a20,+D+zf,48.164876760052167,48.12603759765625,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D30_zf550_M200_a5,+D+zf+a,447.40270101627982,447.3641357421875,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D30_zf550_M400_a20,+D+zf+type,2.5862592866355039,1.8880574703216553,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D30_zf550_M400_a5,+D+zf+a+type,9.544798806686595,8.8690567016601562,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting
+D100_zf450_M200_a20,D60_zf450_M200_a20,+D,5.8755268300319079,5.8292746543884277,PRESCRIBED trajectories; no arbitrary amplitude/phase fitting

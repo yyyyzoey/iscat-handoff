@@ -1,0 +1,4 @@
+fixture_id,description,bin_k0,f_actual_Hz,expected_absC400_exact,computed_absC400_explicitDFT,abs_err,rel_err,status,note
+FIX1,"200Hz-only intensity modulation (true 400Hz harmonic strictly zero)",160,399.800099950,8.0498157269339954e-06,8.0498157269363247e-06,2.3293406049493259e-18,2.8936570524907188e-13,PASS,closed-form two-term complex reference (G_N incl. mirror term)
+FIX2,"400Hz-only intensity modulation",160,399.800099950,0.024140282887973707,0.024140282887973593,1.1449174941446927e-16,4.7427675121200495e-15,PASS,closed-form two-term complex reference (G_N incl. mirror term)
+FIX3,"200+400Hz mixed, known phases (0 and 0)",160,399.800099950,0.024735222329692847,0.02473522232969276,8.6736173798840355e-17,3.5065855743176338e-15,PASS,closed-form two-term complex reference (G_N incl. mirror term)

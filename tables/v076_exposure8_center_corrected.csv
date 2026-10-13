@@ -1,0 +1,9 @@
+case,trajectory_type,amplitude_nm,tau_s,interval_convention,absC400_center_tau,absC400_center_tau0,rel_change,sinc_ref_pure_sine,note
+D60_zf450_M200_a5,M200,5,0.0001,[t_j,t_j+tau]_forward_5node,0.00013032,0.000130432,-0.000861,0.999342,SYNTHETIC_tau_only
+D60_zf450_M200_a5,M200,5,0.0002,[t_j,t_j+tau]_forward_5node,0.000129367,0.000130432,-0.008165,0.997370,SYNTHETIC_tau_only
+D60_zf450_M200_a20,M200,20,0.0001,[t_j,t_j+tau]_forward_5node,0.0011861,0.00118735,-0.001053,0.999342,SYNTHETIC_tau_only
+D60_zf450_M200_a20,M200,20,0.0002,[t_j,t_j+tau]_forward_5node,0.00117709,0.00118735,-0.008644,0.997370,SYNTHETIC_tau_only
+D60_zf450_M400_a5,M400,5,0.0001,[t_j,t_j+tau]_forward_5node,1.86911e-07,1.06786e-07,0.750327,0.997370,SYNTHETIC_tau_only
+D60_zf450_M400_a5,M400,5,0.0002,[t_j,t_j+tau]_forward_5node,1.29686e-07,1.06786e-07,0.214451,0.989506,SYNTHETIC_tau_only
+D60_zf450_M400_a20,M400,20,0.0001,[t_j,t_j+tau]_forward_5node,1.77965e-06,1.10983e-06,0.603536,0.997370,SYNTHETIC_tau_only
+D60_zf450_M400_a20,M400,20,0.0002,[t_j,t_j+tau]_forward_5node,1.42707e-06,1.10983e-06,0.285847,0.989506,SYNTHETIC_tau_only

@@ -1,0 +1,7 @@
+task,count,note
+new_BEM,0,
+new_renders,0,anchors/holdouts from v074/v075 caches
+dynamic_time_series,24,corrected centre
+exposure_time_series,8,corrected centre
+analytic_fixtures,3,exact two-term G_N references
+qr_decompositions,24,centre physical pixel

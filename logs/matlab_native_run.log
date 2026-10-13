@@ -1,53 +1,37 @@
-[075A] v074 collision reproduced: 'D60_zf450_x_10' == 'D60_zf450_x_10'
-[075A] position_key unique over 30 states
-[075A] C1 units corrected: 9.9187 nm measured vs 10 nm prescribed (0.81%)
-[075A] re-exported 8 ROIs under 6-neighbour contract (zero render)
-[075A] done
 [project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
 [loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
 [source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
 [pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
-[075B] 30 anchors loaded from v074 cache with position_key
-[075B] D30_ZF450_XM0005000 relEs=0.0008834 PASS
-[075B] D30_ZF450_XP0005000 relEs=0.0008834 PASS
-[075B] D30_ZF450_XM0015000 relEs=0.0008834 PASS
-[075B] D30_ZF450_XP0015000 relEs=0.0008834 PASS
-[075B] D60_ZF450_XM0005000 relEs=0.0008822 PASS
-[075B] D60_ZF450_XP0005000 relEs=0.0008822 PASS
-[075B] D60_ZF450_XM0015000 relEs=0.0008822 PASS
-[075B] D60_ZF450_XP0015000 relEs=0.0008822 PASS
-[075B] D100_ZF450_XM0005000 relEs=0.0008753 PASS
-[075B] D100_ZF450_XP0005000 relEs=0.0008753 PASS
-[075B] D100_ZF450_XM0015000 relEs=0.0008753 PASS
-[075B] D100_ZF450_XP0015000 relEs=0.0008753 PASS
-[075B] D30_ZF550_XM0005000 relEs=0.0008828 PASS
-[075B] D30_ZF550_XP0005000 relEs=0.0008828 PASS
-[075B] D30_ZF550_XM0015000 relEs=0.0008828 PASS
-[075B] D30_ZF550_XP0015000 relEs=0.0008828 PASS
-[075B] D60_ZF550_XM0005000 relEs=0.0008817 PASS
-[075B] D60_ZF550_XP0005000 relEs=0.0008817 PASS
-[075B] D60_ZF550_XM0015000 relEs=0.0008817 PASS
-[075B] D60_ZF550_XP0015000 relEs=0.0008817 PASS
-[075B] D100_ZF550_XM0005000 relEs=0.0008749 PASS
-[075B] D100_ZF550_XP0005000 relEs=0.0008749 PASS
-[075B] D100_ZF550_XM0015000 relEs=0.0008749 PASS
-[075B] D100_ZF550_XP0015000 relEs=0.0008749 PASS
-[075B] done; new holdout renders: 24
 [project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
 [loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
 [source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
 [pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
-[075C] gate: all 24 holdouts PASS = 1
 [project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
 [loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
 [source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
 [pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
-[075C] gate: all 24 holdouts PASS = 1
-[075C] 30 anchors loaded via position_key (zero renders)
 [project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
 [loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
 [source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
 [pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
-[075C] gate: all 24 holdouts PASS = 1
-[075C] 30 anchors loaded via position_key (zero renders)
-[075C] done: 32 evaluations
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[076A] done
+[076B] done: 24 holdout camera-ROI postprocessing (zero renders)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[076C] 30 anchors loaded (zero renders)
+[076C] done: 32 evaluations
+[076D-QR] done
