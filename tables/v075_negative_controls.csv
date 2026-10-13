@@ -1,0 +1,3 @@
+case,modulation_depth,expected_absC400_with_leakage,computed_absC400,abs_err,status,note
+NEG1,0.050,0.050000000000000003,0.049486946570429013,0.00051305342957098932,PASS,ANALYTIC_SIGNAL_OPERATOR_FIXTURE via explicit DFT; computed/naive=0.98974 matches the Dirichlet leakage band for delta=0.08 bins; uniform intensity modulation alone produces a 400 Hz FFT peak
+NEG2,0.100,0.10000000000000001,0.098971420153672413,0.001028579846327593,PASS,ANALYTIC_SIGNAL_OPERATOR_FIXTURE via explicit DFT; computed/naive=0.98974 matches the Dirichlet leakage band for delta=0.08 bins; uniform intensity modulation alone produces a 400 Hz FFT peak

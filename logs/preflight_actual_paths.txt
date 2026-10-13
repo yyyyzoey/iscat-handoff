@@ -1,1 +1,1 @@
-preflight: upstream v073=7cee6972be5c0e361820f737093148ca6c9f4e17; MATLAB R2024b; renders via sentinel-verified far-field phase ramp; zero BEM
+preflight: upstream v074=8aa02ccfc690b111a2e915951963d37932d0d313; MATLAB R2024b; anchor states from v074 signed render cache; 24 holdout renders (budget); zero BEM

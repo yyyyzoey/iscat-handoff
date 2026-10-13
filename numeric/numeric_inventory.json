@@ -1,9 +1,9 @@
 {
-  "schema": "iscat074.numeric_inventory.1",
-  "in_zip": ["v074_roi_spectral_maps.mat (8 ROIs A_k/Rlocal maps)", "v074_translation_sentinel.mat", "v074_dynamic_forward_examples.mat (24+8+2 C400 maps)", "v074_roi_recheck.mat"],
+  "schema": "iscat075.numeric_inventory.1",
+  "in_zip": ["v075_holdout_example_D60_zf450_M5.mat / _P5.mat (66x66 direct+interp fields)", "v075_dynamic_C400_corrected.mat (24+8+2 C400 maps)"],
   "workstation_only": [
-    {"path": "v074_return/numeric/render_cache/*.mat", "count": 54, "content": "per-state Esca/Eref 325x325x3 complex single + metadata", "note": "54 unique render states (30 anchors + 24 holdouts), zero BEM"},
-    {"path": "v073_return/numeric/fft400_corrected_full.mat", "status": "v073 primary artifact (unchanged)"},
-    {"path": "v073_return/numeric/fft420_control_full.mat", "status": "v073 control (unchanged)"}
+    {"path": "v075_return/numeric/v075_holdout_data.mat", "bytes": 157939329, "sha256_note": "recompute at packaging", "content": "24 holdout structs: relEs/relIt/st + Es_direct/Es_interp/Eref 325x325x3 complex single", "reason": "exceeds GitHub 100MB file limit; small signed-side examples packaged instead"},
+    {"path": "v074_return/numeric/render_cache/*.mat", "count": 30, "note": "anchor states (signed filenames correct; only v074 in-memory keys collided)"},
+    {"path": "v075_return/numeric/render_cache/*.mat", "count": 24, "note": "holdout states re-rendered this round under the 24-render budget"}
   ]
 }

@@ -1,0 +1,9 @@
+check,expected,recomputed,status
+holdout_D60_zf450_M5_relEs,crop_relEs_below_1e-3,0.00075279587175428042,PASS
+holdout_D60_zf450_P5_relEs,crop_relEs_below_1e-3,0.00075292127070433572,PASS
+D60_M200_a20_center_from_map,0.00087716872803866863,0.00087716872803866863,PASS
+D60_M400_a20_center_from_map,0.0081537114456295967,0.0081537114456295967,PASS
+M400_firstorder_gt_M200_secondorder_D60_a20,true,1,PASS
+M200_scaling_superlinear_between_a2_and_a4,4..32,8.8619,PASS
+M400_scaling_near_linear,4,3.9589,PASS
+NEG1_absC400_equals_depth_naive_x_Dirichlet_leakage,0.985..1.0,0.989739,PASS

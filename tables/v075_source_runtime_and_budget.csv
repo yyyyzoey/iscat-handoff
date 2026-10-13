@@ -1,0 +1,6 @@
+item,value,note
+upstream,v074 8aa02ccfc690b111a2e915951963d37932d0d313,locked
+new_BEM,0,prohibition respected
+holdout_budget,24,non-BEM direct renders authorised this round
+roi_reexport_renders,0,zero-render from saved Ak maps
+makeValidName_collision,reproduced_and_fixed,see v075_reject_tests

@@ -1,0 +1,4 @@
+item,value_nm,check,note
+measured_CoM_shift_nm,9.918701,abs(measured-9.918701)<1e-6 via px*65,C1 sentinel expressed in physical pixels
+prescribed_dx_nm,10.0,abs(10/65-0.15384615384615385)<1e-12,expected in 65nm-pixel units is 0.15384615 px
+rel_error,0.008130,|measured-prescribed|/prescribed,~0.8%: sentinel PASS with corrected units (v074 table mis-scaled by 13/65)

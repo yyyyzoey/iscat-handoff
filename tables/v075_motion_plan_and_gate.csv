@@ -1,0 +1,7 @@
+D_nm,zf_nm,gate_status,trajectories_recomputed,note
+30,450,PASS,2,per-(D,zf) holdouts both sides PASS under fixed keys
+30,550,PASS,2,per-(D,zf) holdouts both sides PASS under fixed keys
+60,450,PASS,2,per-(D,zf) holdouts both sides PASS under fixed keys
+60,550,PASS,2,per-(D,zf) holdouts both sides PASS under fixed keys
+100,450,PASS,2,per-(D,zf) holdouts both sides PASS under fixed keys
+100,550,PASS,2,per-(D,zf) holdouts both sides PASS under fixed keys
