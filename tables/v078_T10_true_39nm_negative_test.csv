@@ -1,0 +1,2 @@
+test,description,max_diff_pixels,status
+T10_39nm,fine 64:268 vs 61:265 through q5 pixel_mean,0.00049389056893889022,PASS (diff>0 confirms offset)

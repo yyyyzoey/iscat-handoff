@@ -1,19 +1,104 @@
-[077A] identity table written
-[077B] done; centre-series crosscheck identical cases: 0/6
-[077B] done; centre-series crosscheck identical cases: 0/6
-[077B] done; centre-series crosscheck identical cases: 0/6
-[077B] done; centre-series crosscheck identical cases: 0/6
-[077B] done; centre-series crosscheck identical cases: 0/6
-[警告: 未找到变量 'a'。] 
-[> 位置：run_v077_CCD (第 20 行)] 
-[警告: 未找到变量 'a'。] 
-[> 位置：run_v077_CCD (第 20 行)] 
-[警告: 未找到变量 'a'。] 
-[> 位置：run_v077_CCD (第 20 行)] 
-[警告: 未找到变量 'a'。] 
-[> 位置：run_v077_CCD (第 23 行)] 
-[警告: 未找到变量 'a'。] 
-[> 位置：run_v077_CCD (第 20 行)] 
-[警告: 未找到变量 'a'。] 
-[> 位置：run_v077_CCD (第 23 行)] 
-[077CCD] done: odd/even + T10 + holdout semantics + 276 identifiability pairs
+[078A] identity done
+[警告: 秩亏，秩 = 4，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 52 行)
+] 
+[警告: 秩亏，秩 = 4，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 52 行)
+] 
+[警告: 秩亏，秩 = 4，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 52 行)
+] 
+[警告: 秩亏，秩 = 4，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 52 行)
+] 
+[警告: 秩亏，秩 = 4，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 52 行)
+] 
+[警告: 秩亏，秩 = 6，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 52 行)
+] 
+[警告: 秩亏，秩 = 6，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 52 行)
+] 
+[警告: 秩亏，秩 = 2，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 52 行)
+] 
+[078B] 6 fixtures done
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[警告: 秩亏，秩 = 8，tol =  1.405738e-11。] 
+[> 位置：run_v078_B_closure (第 112 行)
+] 
+[078B] trajectory closure: 24/24 PASS
+[078C] odd/even: 270 records
+[078C2] camera ROI 24 rows + T10 done (d39=0.00049)
+[078D] exposure 8 rows done
+[078E] identifiability: 276 pairs
+[078CDE] all done

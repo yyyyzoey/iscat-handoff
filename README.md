@@ -1,3 +1,3 @@
-# iscat-handoff v077
+# iscat-handoff v078
 
-QR normalisation fix, proper odd/even derivatives, 276-pair identifiability, CSV schema fixes.
+Complex conjugate closure fix, proper odd/even derivatives, 276-pair identifiability.
