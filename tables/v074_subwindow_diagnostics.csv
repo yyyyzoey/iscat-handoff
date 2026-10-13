@@ -1,0 +1,3 @@
+window,frame_start,frame_end,nframes,f_star_Hz,demod_amp_median,demod_amp_mean,rect_window_len_s,note
+SUBWIN1,1000,1999,1000,399.800100,0.0032738900523918784,0.0044883970747991104,0.2,DEVELOPMENT_DIAGNOSTIC explicit demodulation at fixed f*; same physical frequency both windows; not two independent experiments
+SUBWIN2,2000,3000,1001,399.800100,0.0036568910601000966,0.0048738320305415431,0.2002,DEVELOPMENT_DIAGNOSTIC explicit demodulation at fixed f*; same physical frequency both windows; not two independent experiments

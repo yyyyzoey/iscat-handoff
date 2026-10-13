@@ -1,59 +1,16 @@
 {
-  "schema": "iscat073.status.1",
+  "schema": "iscat074.status.1",
   "export_time": "2026-10-13",
-  "overall": "v072 replay FFT-axis bug confirmed and corrected: real time-dim FFT now verified by analytic recovery, 3D/4D equivalence, 12-pixel direct-DFT cross-check (rel<=3.7e-7) and independent-session small-ROI recheck; corrected replay of the SAME 2001 frames executed with 400 Hz normalized complex modulation contrast as PRIMARY and 420 Hz as control; v072 frequency outputs marked INVALID_FFT_AXIS and isolated; user-confirmed lambda=520 nm recorded; 8/8 targeted fixtures closed v072 coverage gaps (7 PASS + 1 leakage diagnostic); controlled ledger re-exported with real D/zf and corrected SHA semantics; P0 hook NOT_RUN (passive process inventory only)",
-  "A_fft_axis_fix": {
-    "execution_status": "COMPLETED", "validation_status": "FFT_PIPELINE_NUMERIC_PASS", "evidence_status": "COMPLETE_FOR_TIME_AXIS",
-    "facts": [
-      "extract_fft_v073.m: hard guard timeDim>ndims -> error; N=2001 asserted; bin/actualFreq asserted (399.80009995002496 / 419.79010494752623)",
-      "NEG1 guarded wrong dim caught; NEG2 documents unguarded fft(dim>ndims) returns input unchanged (v072 failure mode); NEG3 analytic coefficient recovery rel=2.9e-6 phase=2.8e-6 rad",
-      "3D vs 4D layout equivalence: maxdiff = 0"
-    ]
+  "overall": "v073 replay artifacts re-verified from stored arrays (all table numbers reproduce; 5 rejection tests PASS); 8 predeclared ROI spectral/background qualification executed on ONE additional 2001-frame scan (HOTSPOT1 shows Rlocal median 1.88; background ROIs ~1.1; ASSOCIATION_ONLY); Fe3O4 complex-field lateral translation QUALIFIED from saved far fields via sentinel (image CoM moves 9.92nm for prescribed 10nm, linear 19.8nm at 20nm, Eref invariant exactly, D30/D60/D100 consistent); bounded prescribed-motion forward completed: 54 unique render states (0 BEM), 24 trajectories + 8 exposure variants + 2 negative controls = 34 time-series evaluations; M200 geometric nonlinearity produces 400Hz second harmonic (absC400_center up to 0.0157 for a=20nm, ~a-scaling at center with a^2 component in ROI); M400 center pixel silent by mirror symmetry (leading term a^2 -> 1e-8) with first-order response off-center; strong D/zf non-uniqueness documented; P0 NOT_RUN resource-gated",
+  "A_freeze": {"execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "COMPLETE_FROM_STORED_ARRAYS", "facts": ["valid 93179 / invalid 11013 / total 104192 reproduced", "BRIGHT_PIXELS_DIAGNOSTIC 82749 reproduced (not detections)", "meanFloor/median/mean/max reproduced bit-level", "rejection tests: wrong time dim guarded, recompute matches stored (maxdiff 0), wrong bin differs (1.23), zero-fill detected, ROI-local floor preserved, transpose detected"]},
+  "B_roi_qualification": {"execution_status": "COMPLETED", "validation_status": "DEVELOPMENT_SCREENING_ONLY", "evidence_status": "ONE_BATCH_DEVELOPMENTAL", "facts": ["8 predeclared ROIs (center, 3 hotspots, 3 background candidates, 1 edge) selected from |C400|/Imean only, logged before neighbor computation", "HOTSPOT1: Rlocal median 1.883, 37.3% pixels >1.5; background ROIs 1.10-1.19; EDGE 1.18", "sub-window demodulation at fixed f*: median amplitude 0.00327 (frames 1000-1999) vs 0.00366 (2000-3000), ~11% drift, DEVELOPMENT_DIAGNOSTIC", "ASSOCIATION_ONLY_NOT_CAUSAL_MAGNETIC_SIGNAL on all spectral statements"]},
+  "C_translation_and_forward": {
+    "C1": {"execution_status": "COMPLETED", "validation_status": "PASS_SENTINEL", "evidence_status": "COMPLETE", "facts": ["far-field phase ramp on saved far fields; image CoM shift 9.92nm for prescribed 10nm; linear at 20nm (19.8nm); Eref invariant (maxdiff 0); D30/D60/D100 consistent", "image-plane periodic-DFT shift cross-check INVALID as verifier (windowed non-periodic field wrap) - documented, sentinel route used per contract", "sign fixed by physical sentinel (image moves with particle), not by data fitting"]},
+    "C2": {"execution_status": "COMPLETED", "validation_status": "PARTIAL_18_PASS_6_FAIL", "evidence_status": "COMPLETE_FOR_54_STATES", "facts": ["54 unique render states (0 BEM); holdout interpolation gate 0.001: +5/+15 sides PASS (relEs ~8.8e-4), -5/-15 sides FAIL (0.069-0.207) - interpolation nonlinearity asymmetric and documented; the time-domain trajectories used 4-anchor interpolation whose errors are bounded by these holdouts", "34 time-series evaluations: 24 prescribed trajectories, 8 exposure variants (tau 0.1/0.2ms SYNTHETIC: |C400| changes +16%..+224%), 2 analytic negative controls (|C400|=modulation depth exactly, PASS)"]},
+    "C3": {"execution_status": "COMPLETED", "validation_status": "SCREENING_ONLY", "evidence_status": "COMPLETE_FOR_24_EXPLORATION_POINTS", "facts": ["M200 (prescribed 200Hz lateral motion): 400Hz second harmonic via geometric nonlinearity, absC400_center 2.3e-5 (D30) to 1.57e-2 (D100/zf450) at a=20nm, ~a-scaling at center", "M400 (prescribed 400Hz motion): center pixel silent by mirror symmetry (1e-8), first-order response off-center (ROI norm 6e-6 D30 to 2.3e-4 D100)", "same |C400| arises from multiple (D,zf,a) combinations -> NOT_IDENTIFIABLE_UNDER_CURRENT_NUISANCE; zf550/zf450 ratio ~0.80 across D"]}
   },
-  "B_fixture_gaps": {
-    "execution_status": "COMPLETED", "validation_status": "PASS_7_PLUS_1_DIAGNOSTIC", "evidence_status": "COVERS_F07_F09_F10_F12_GAPS",
-    "facts": [
-      "TIME_ORIGIN: real n0=500 sample shift; amplitude invariant (9.3e-8) and phase rotation matches -2*pi*k0*n0/N; v072 F07 reclassified NOT_ACTUALLY_TESTED_ORIGIN_SHIFT -> now actually tested",
-      "MASK_VALUE: invalid pixels complex NaN + mask=0 (v072 F09 zero-fill closed)",
-      "RGB_INDEPENDENT: unequal channels, manual weights vs chain + independent analytic gray amplitude (v072 F10 same-expression closed)",
-      "EXPOSURE_ANALYTIC_ONLY: start/center conventions both verified with SYNTHETIC tau=1e-4s (v072 numeric-s field removed)",
-      "IO_CSV: no control characters; v072 U+0000 in F12 row closed",
-      "OFF_BIN: 400.5 Hz leakage ratio 0.8758 recorded as diagnostic, no correction applied"
-    ]
-  },
-  "C_corrected_replay": {
-    "execution_status": "COMPLETED", "validation_status": "FFT_PIPELINE_NUMERIC_PASS", "evidence_status": "COMPLETE_FOR_REPLAY (full arrays workstation-only)",
-    "facts": [
-      "same 5000-bmp 7.29 batch, frames 1000-3000 (N=2001), 4-D HxWx1xN single, fft dim4; actualFreq 399.800100/419.790105 asserted",
-      "PRIMARY normalizedComplexContrast400: valid pixels 93179/104192 (89.43%), invalid 11013 stored complex NaN (not zero); meanFloor=1.1761607311200351e-4 (identical to v072 independently-valid value); |C400| valid stats: median 6.60e-3, mean 2.40e-2, max 0.9019",
-      "CONTROL 420 Hz channel from the same FFT pass; no rescaling",
-      "12 predeclared pixels direct DFT (double, explicit sum): all PASS, rel<=3.68e-7, phase<=3.45e-7 rad",
-      "independent second MATLAB session: small-ROI 3D/4D + direct DFT + C_k formula vs stored -> RECHECK PASS",
-      "spectral neighborhood k=158:164: bin 161 ROI-mean|X|=0.1626 vs neighbors 0.125-0.131 (~25% above local baseline) - ASSOCIATION_ONLY_NOT_CAUSAL_MAGNETIC_SIGNAL",
-      "v072 wrong replay artifact isolated: sha256 d7ffe435e44e85744e59a29ea761e26e0229d4c74461f3ef94736f776281bc7f, INVALID_FFT_AXIS"
-    ]
-  },
-  "D_observability": {
-    "execution_status": "COMPLETED", "validation_status": "SCREENING_ONLY", "evidence_status": "CACHED_TABLES_PLUS_REPLAY",
-    "facts": [
-      "no single-particle diameter estimated; no calibration multiplier between static C(D,zf) and |C400| established",
-      "physical input gap table records lambda=520 USER_CONFIRMED; NA/magnification/pixel/exposure/drive/phase/batch/trajectory still missing",
-      "analytic observable-operator checks (2 of 4 budget used): bin-center amplitude recovery and real time-origin phase rotation through extract_fft_v073"
-    ]
-  },
-  "E_lines": {
-    "E1_ledger": {"execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "TEXT_METADATA_ONLY", "facts": ["controlled_ledger_v073_verified.csv: 24 sides with real cfg D/zf, corrected render/wrapper SHA semantics; 12 NOT_EXECUTABLE; v070 history rows remain HISTORY_UNVERIFIABLE in the v072-era tables (untouched)"]},
-    "E2_p0": {"execution_status": "NOT_RUN_THIS_ROUND", "validation_status": "OPEN_2.58848e-7_vs_1e-10", "evidence_status": "PASSIVE_INVENTORY_ONLY", "facts": ["hung -batch MATLAB sessions enumerated; own session leftovers cleaned with per-PID command-line verification and outputs verified on disk (record: v073_return_process_cleanup_record.txt); historical 2026-10-10..12 processes untouched", "hook budget (<=1) preserved; rule7 authorization 0"]}
-  },
-  "M_line": {
-    "M0_extractor": "PRIMARY_C400_FORMALIZED (user decision); 420 kept as control",
-    "M1_material": "PASS_WITH_LIMITS (1985 text + real sha256 verified; time convention source-inspected)",
-    "M2_30_100nm": "HISTORICAL_SOLVES_PRESENT__source=v067 galerkin.bemsolver",
-    "M3": "HISTORICAL_SOLVES_PRESENT_v064-v068__FORMAL_CALIBRATION_OPEN",
-    "single_particle_diameter": "NOT_ESTIMATED"
-  },
-  "frozen_states": {"continuous_domain_certified": null, "experimental_validation": false,
-    "calibration_valid": false, "detection_validated": false,
-    "synthetic_detection_validation": "PASS (scope-limited, carried)",
-    "production_settings_validated_within_approved_scope_only": true}
+  "D_inputs": {"execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "COMPLETE", "facts": ["physical_input_readiness.json: 520nm USER_CONFIRMED enters contract; exposure/NA/magnification/pixel/drive/phase/batch/trajectory still missing with impacts quantified"]},
+  "E_p0": {"execution_status": "NOT_RUN_RESOURCE_GATED", "validation_status": "OPEN_2.58848e-7_vs_1e-10", "evidence_status": "PASSIVE_INVENTORY_ONLY"},
+  "M_line": {"M0_extractor": "PRIMARY_C400_FORMALIZED", "M1_material": "PASS_WITH_LIMITS", "single_particle_diameter": "NOT_ESTIMATED"},
+  "frozen_states": {"continuous_domain_certified": null, "experimental_validation": false, "calibration_valid": false, "detection_validated": false, "single_particle_diameter": "NOT_ESTIMATED"}
 }

@@ -1,61 +1,37 @@
-# v073 review summary (Codex execution report)
+# v074 review summary (Codex execution report)
 
-## 1. v072 replay bug: confirmed, corrected, re-verified
+## A. Replay closeout (no 2001-frame recompute)
 
-The v072 replay built a 3-D `H x W x N` stack but called `fft(signal,[],4)`. MATLAB returns
-the input unchanged when dim > ndims, so v072's "frequency" arrays were time-domain frames
-161/169. v073 response:
+All v073 table numbers reproduce from the stored full-field arrays: 93179/11013/104192 pixels, bright-pixel diagnostic 82749, meanFloor 1.1761607311200351e-4, |C400| median/mean/max. Five rejection tests all PASS: wrong time dim guarded (BAD_TIME_DIM), ROI recompute matches stored X400 (maxdiff 0), wrong bin (169) differs (1.23), zero-fill of invalid pixels detected, ROI-local floor (5.69e-4) preserved distinct from full-field floor (1.18e-4), transpose detected (0.883). The v072 "400/420 same FFT pass" narrative is corrected: v073 called extract twice; the new multi-bin ROI interface computes one FFT for k=158:164+169.
 
-- `extract_fft_v073.m` implements the full contract with a hard axis guard (timeDim>ndims
-  -> error), N=2001 assertion, bin/actualFreq assertions, source-script mask semantics,
-  and complex-NaN (never zero) for invalid pixels.
-- Negative tests: guarded wrong dim caught; unguarded `fft(...,4)` on 3-D shown to return
-  the input unchanged (documents the v072 failure mode); correct dim-3 chain recovers the
-  analytic coefficient (rel 2.9e-6, phase 2.8e-6 rad).
-- 3-D vs 4-D layout equivalence on identical data: maxdiff = 0.
+## B. ROI spectral/background qualification (8 predeclared ROIs, one additional scan)
 
-## 2. Coverage gaps from v072 fixtures closed (8 targeted fixtures, <=8 budget)
+ROIs selected ONLY from v073 |C400|/Imean/validMask (selection logged before any neighbor-bin computation): center (reused), 3 hotspots, 3 background candidates, 1 edge. One read-only 2001-frame scan; per-ROI A_k=|2X_k/(N Imean)| for k=158:164,169 with the SAME full-image mask/floor.
+- HOTSPOT1: Rlocal=A161/median(neighbors) median 1.883; 37.3% of valid pixels >1.5.
+- BACKGROUND candidates: Rlocal median 1.10-1.19; EDGE 1.18 - the local 400Hz excess is NOT spatially exclusive to hotspot-like regions at this diagnostic level.
+- Sub-window demodulation at fixed f*: median amplitude 0.00327 vs 0.00366 (~11% drift) - DEVELOPMENT_DIAGNOSTIC only.
+- Everything labeled ASSOCIATION_ONLY_NOT_CAUSAL_MAGNETIC_SIGNAL; no detection threshold, no FPR claim, no single-particle claims.
 
-TIME_ORIGIN (real 500-sample shift: amplitude invariant 9.3e-8, phase rotation matches
--2*pi*k0*n0/N), MASK_VALUE (complex NaN + mask=0), RGB_INDEPENDENT (unequal channels +
-independent analytic gray amplitude), EXPOSURE_ANALYTIC_ONLY (start/center conventions,
-SYNTHETIC tau), IO_CSV (no control characters; v072 U+0000 closed), OFF_BIN leakage
-diagnostic (ratio 0.8758, no correction applied). Original v072 fixture CSV preserved.
+## C. Translation qualification + bounded prescribed-motion forward (0 BEM)
 
-## 3. Corrected replay of the SAME 2001 frames (one group, primary = 400 Hz)
+C1: lateral translation of the SAVED Fe3O4 complex fields implemented as a far-field phase ramp (flat layers are x/y-translation invariant). Sentinel: prescribed dx=+10nm moves the image intensity CoM by 9.92nm (0.1526 px x 65nm), linear 19.8nm at 20nm, Eref invariant exactly (maxdiff 0), consistent across D30/D60/D100. The sign was fixed by the physical sentinel (image moves with particle), not by fitting. The image-plane periodic-DFT shift was tried as an independent cross-check and REJECTED as a verifier (windowed non-periodic field wrap; relAB~0.9) - documented, sentinel route used per contract C1.2.
 
-- 4-D `H x W x 1 x N` single stack (source-script layout), `fft(...,4)`; actualFreq
-  399.800100 Hz (primary) / 419.790105 Hz (control) asserted.
-- PRIMARY `normalizedComplexContrast400`: 93179/104192 valid pixels (89.43%, identical to
-  v072's independently-valid mask fraction), 11013 invalid pixels stored complex NaN;
-  meanFloor 1.1761607311200351e-4 (matches v072 - mean/mask were reproducible); valid-only
-  |C400|: median 6.60e-3, mean 2.40e-2, max 0.9019.
-- CONTROL 420 Hz amplitude from the same FFT pass; no rescaling to 400.
-- 12 predeclared pixels (corners, center, ROI corners, high/low Imean, brightest |C400|):
-  direct double-precision DFT vs FFT all PASS (rel <= 3.68e-7; phase <= 3.45e-7 rad).
-- Independent second MATLAB session recheck on the saved 41x41 ROI (frames included):
-  3D/4D maxdiff 0, stored-vs-recomputed maxdiff 0, 4 corner direct DFTs PASS,
-  C_k formula vs stored PASS -> RECHECK PASS.
-- Spectral neighborhood (fixed bins k=158:164 + 169): bin 161 ROI-mean|X| = 0.1626 vs
-  neighbor baseline 0.125-0.131 (~25% above local baseline). Labeled
-  ASSOCIATION_ONLY_NOT_CAUSAL_MAGNETIC_SIGNAL; no detection threshold claimed.
-- v072 wrong artifact isolated (sha256 d7ffe435...), never overwritten; full corrected
-  arrays workstation-only; small ROI + control small mat packaged.
+C2 (54 unique render states, 0 BEM): 30 anchors (3D x 2zf x 5x) + 24 holdouts. Interpolation-holdout gate 0.001 on the complex field: +5/+15 sides PASS (relEs 8.8e-4), -5/-15 sides FAIL (0.069-0.207) - the piecewise-linear complex-field interpolation is asymmetric and its errors bound the trajectory stage; reported as-is.
 
-## 4. Ledger / P0 / gaps
+34 time-series evaluations:
+- 24 prescribed trajectories (M200/M400 x a=5/20nm, 3D x 2zf): M200 produces a 400Hz second harmonic through the optical/geometric nonlinearity (absC400_center 2.3e-5..1.57e-2, grows with a and with D; ROI norm up to 0.47); M400 shows a mirror-symmetry silent center (1e-8) with first-order response off-center (ROI norm 6e-6..2.3e-4).
+- 8 exposure variants (SYNTHETIC tau=0.1/0.2ms): |C400| shifts +16%..+224% vs tau=0 - exposure is a first-order nuisance; no real exposure claimed.
+- 2 analytic negative controls: uniform intensity modulation alone yields |C400|=modulation depth exactly (PASS) - a 400Hz FFT peak is NOT evidence of particles.
+- FFT-vs-explicit-DFT spot checks on every trajectory: rel <= 1.6e-6.
 
-- `controlled_ledger_v073_verified.csv`: 24 sides with REAL cfg D/zf (v072's
-  sprintf-in-find bug fixed) and corrected SHA column semantics (render_system vs wrapper);
-  12 NOT_EXECUTABLE; v070 rows remain HISTORY_UNVERIFIABLE in the untouched v072-era table.
-- P0: passive process/memory inventory only; own-session hung MATLAB leftovers cleaned with
-  per-PID command-line verification and on-disk output verification (historical processes
-  untouched). Gate stays OPEN at 2.58848e-7 vs 1e-10; rule7 authorization 0.
-- Physical input gap: lambda=520 nm USER_CONFIRMED recorded; exposure, NA, magnification,
-  object pixel, drive waveform/reference phase, batch constants, trajectories still missing
-  -> single-particle diameter NOT_ESTIMATED; calibration_valid=false;
-  experimental_validation=false.
+## C3 Non-identifiability
+
+The same |C400| arises from multiple (D,zf,a) combinations across the 24 exploration points; zf550/zf450 ratio ~0.80 across D for both trajectory types. NOT_IDENTIFIABLE_UNDER_CURRENT_NUISANCE. No diameter, no bias/RMSE, no calibration curve.
+
+## D/E
+
+physical_input_readiness.json: 520nm USER_CONFIRMED enters the experiment contract; exposure (+16..+224% impact), NA/magnification/pixel, drive waveform/phase, batch constants, trajectories remain missing with quantified impacts. P0: NOT_RUN_RESOURCE_GATED (license-seat exhaustion from hung historical sessions twice blocked startup; own-session leftovers cleaned with per-PID verification; historical processes untouched). Gate OPEN at 2.58848e-7.
 
 ## Not claimed
 
-No experimental validation, no diameter estimate, no causal magnetic attribution, no
-static-to-400Hz calibration multiplier, no new BEM (0), no renders (0).
+No real magnetic motion, no experimental validation, no calibration, no diameter, no detection performance, no new BEM (0), no threshold changes.

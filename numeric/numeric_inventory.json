@@ -1,9 +1,9 @@
 {
-  "schema": "iscat073.numeric_inventory.1",
+  "schema": "iscat074.numeric_inventory.1",
+  "in_zip": ["v074_roi_spectral_maps.mat (8 ROIs A_k/Rlocal maps)", "v074_translation_sentinel.mat", "v074_dynamic_forward_examples.mat (24+8+2 C400 maps)", "v074_roi_recheck.mat"],
   "workstation_only": [
-    {"path": "v073_return/numeric/fft400_corrected_full.mat", "variables": ["Xk","A_k","C_k","absC","phase","Imean","validMask","meanFloor","k","k0","actualFreq","targetFreq","Fs","N","scale","timeDim","meta"], "shape": "Xk/C_k/absC/phase 296x352 complex single; Imean/validMask 296x352", "status": "COMPLETE_FOR_REPLAY", "sha256_note": "see numeric_manifest recompute at packaging"},
-    {"path": "v073_return/numeric/fft420_control_full.mat", "variables": ["Xk","A_k","C_k","absC","phase","Imean","validMask","meanFloor","k","k0","actualFreq","targetFreq","Fs","N","scale","timeDim","meta"], "status": "CONTROL_CHANNEL"},
-    {"path": "v072_return/numeric/replay_729_frames1000_3000.mat", "sha256": "d7ffe435e44e85744e59a29ea761e26e0229d4c74461f3ef94736f776281bc7f", "status": "INVALID_FFT_AXIS_ISOLATED", "reason": "v072 run used fft(signal,[],4) on a 3-D array; MATLAB returns input unchanged; stored 'frequency' arrays are time-domain frames 161/169. mean/mask fields remain independently reproducible."}
-  ],
-  "in_zip": ["numeric/fft400_corrected_small_roi.mat (41x41 ROI incl. 2001 frames + stored FFT)", "numeric/fft420_control_small_roi.mat", "numeric/fft_analytic_small_examples.mat"]
+    {"path": "v074_return/numeric/render_cache/*.mat", "count": 54, "content": "per-state Esca/Eref 325x325x3 complex single + metadata", "note": "54 unique render states (30 anchors + 24 holdouts), zero BEM"},
+    {"path": "v073_return/numeric/fft400_corrected_full.mat", "status": "v073 primary artifact (unchanged)"},
+    {"path": "v073_return/numeric/fft420_control_full.mat", "status": "v073 control (unchanged)"}
+  ]
 }

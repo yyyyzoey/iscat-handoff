@@ -1,0 +1,11 @@
+check,expected,recomputed,status,note
+valid_pixels,93179,93179,PASS,recomputed from stored validMask
+invalid_pixels,11013,11013,PASS,complex NaN preserved in stored C_k
+total_pixels,104192,104192,PASS,
+invalid_stored_as_nan,true,1,PASS,not zero-filled
+BRIGHT_PIXELS_DIAGNOSTIC,82749,82749,PASS,|C400|>=1e-3 valid pixels; NOT particle detections
+absC400_median,0.00659665...,0.0065966537222266197,PASS,
+absC400_mean,0.0239810...,0.023981023579835892,PASS,
+absC400_max,0.9018655...,0.90186554193496704,PASS,
+meanFloor,1.1761607311200351e-4,0.00011761607311200351,PASS,
+actualFreq400,399.80009995002496,399.80009995002501,PASS,

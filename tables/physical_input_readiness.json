@@ -1,0 +1,23 @@
+{
+  "schema": "iscat074.physical_input_readiness.1",
+  "confirmed": [
+    {"parameter": "laser_vacuum_wavelength_nm", "value": 520, "source": "USER_CONFIRMED_2026-10-12", "enters_experiment_contract": true},
+    {"parameter": "camera_frame_rate_fps", "value": 5000, "source": "7.29 batch timestamp deltas (200us) + both source scripts", "status": "MEASURED_CONSISTENT"},
+    {"parameter": "primary_observable", "value": "|normalizedComplexContrast400| at bin k=161 (399.80009995002496 Hz)", "source": "user decision relayed in v074 contract", "status": "FORMAL_CANDIDATE"}
+  ],
+  "missing_before_dynamic_inverse_or_calibration": [
+    {"parameter": "exposure_time_and_shutter_timing", "status": "MISSING", "impact": "|C400| changes +16%..+224% across SYNTHETIC tau in {0.1,0.2}ms for the demo trajectories; cannot bound experimental error"},
+    {"parameter": "objective_NA_total_magnification_object_pixel_nm", "status": "UNCONFIRMED", "impact": "image scale and collection angle unknown; demo 65nm/px and NA1.3 not transferable"},
+    {"parameter": "magnetic_drive_frequency_waveform_field_amplitude", "status": "MISSING", "impact": "200Hz-drive/2f=400 is a historical clue; not confirmed for this batch"},
+    {"parameter": "drive_reference_phase", "status": "MISSING", "impact": "FFT phase remains time-origin dependent"},
+    {"parameter": "particle_batch_n_and_kappa_geometry_shell", "status": "LITERATURE_PLACEHOLDER (Querry 1985 bulk, 2.349+0.083i)", "impact": "static library is demo material, not the batch"},
+    {"parameter": "particle_trajectories_heights_z_t", "status": "MISSING", "impact": "static zf sweep is NOT axial motion; prescribed trajectories are NOT measured magnetism"}
+  ],
+  "minimal_next_round_requirements": [
+    "1) exposure time (or permission to treat it as a fitted nuisance with stated bounds)",
+    "2) NA + total magnification (or object-space pixel size) from instrument records",
+    "3) drive frequency/waveform and a reference trigger (or agreement to treat phase as nuisance)",
+    "4) batch material identification (or explicit scope agreement to stay LITERATURE_MATERIAL_EXPLORATION)"
+  ],
+  "frozen_states": {"calibration_valid": false, "experimental_validation": false, "detection_validated": false, "single_particle_diameter": "NOT_ESTIMATED"}
+}

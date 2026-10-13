@@ -1,0 +1,9 @@
+roi_name,row0,col0,kind,roi_size,valid_fraction,median_Imean,median_absC_valid,selection_rule
+CENTER,128,156,CENTER_REUSED,41x41,1.000000,0.05691937729716301,0.0026303995400667191,predeclared from v073 full-field |C400|/Imean/validMask only; no neighbor-bin data used
+HOTSPOT1,112,236,C400_HOTSPOT,41x41,0.978584,0.011714567430317402,NaN,predeclared from v073 full-field |C400|/Imean/validMask only; no neighbor-bin data used
+HOTSPOT2,1,195,C400_HOTSPOT,41x41,0.809042,0.004126968327909708,NaN,predeclared from v073 full-field |C400|/Imean/validMask only; no neighbor-bin data used
+HOTSPOT3,256,261,C400_HOTSPOT,41x41,0.801309,0.0023240880109369755,NaN,predeclared from v073 full-field |C400|/Imean/validMask only; no neighbor-bin data used
+BACKGROUND1,65,1,BACKGROUND_CANDIDATE,41x41,0.885187,0.0063863657414913177,NaN,predeclared from v073 full-field |C400|/Imean/validMask only; no neighbor-bin data used
+BACKGROUND2,250,1,BACKGROUND_CANDIDATE,41x41,0.919096,0.0061688651330769062,NaN,predeclared from v073 full-field |C400|/Imean/validMask only; no neighbor-bin data used
+BACKGROUND3,13,1,BACKGROUND_CANDIDATE,41x41,0.706127,0.003133401507511735,NaN,predeclared from v073 full-field |C400|/Imean/validMask only; no neighbor-bin data used
+EDGE_LOWLIGHT,256,1,EDGE_ARTIFACT_DIAG,41x41,0.912552,0.0060708955861628056,NaN,predeclared from v073 full-field |C400|/Imean/validMask only; no neighbor-bin data used

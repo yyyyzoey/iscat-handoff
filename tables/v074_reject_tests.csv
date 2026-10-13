@@ -1,0 +1,7 @@
+reject_id,scheme,expected,observed,status
+R1_wrong_time_dim,extract(squeezed3D,timeDim=4),error BAD_TIME_DIM,extract_fft_v073:BAD_TIME_DIM,PASS
+R2_recompute_matches_stored,dim3 bin161 vs stored X400,maxdiff<1e-6,0,PASS
+R2b_wrong_bin_not_used,bin169 vs stored X400,maxdiff large,1.23,PASS
+R3_zero_fill_detected,zero-fill invalid pixels,stored array changes (NaN!=0),1,PASS
+R4_roi_local_floor_differs,ROI-local median vs full-field meanFloor,different values preserved,0.0005691937985830009 vs 0.00011761607311200351,PASS
+R5_transpose_detected,transposed ROI frames vs stored X400,maxdiff>0,0.883,PASS

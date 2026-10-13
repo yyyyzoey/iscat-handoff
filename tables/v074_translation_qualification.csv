@@ -1,0 +1,6 @@
+test,D_nm,zf_nm,dx_nm,implementation,measured_row_shift_px,expected_row_shift_px,com_shift_nm,field_relL2_interior,Eref_maxdiff,status,note
+D60_zf450,60,450,10,farfield_ramp_vs_imageplane_shift,1.525954e-01,0.7692,1.98,0.90257130217008308,0,CHECK,sentinel-fixed sign; two independent implementations; relL2 gate 0.001 declared this round
+D60_zf450,60,450,-10,farfield_ramp_vs_imageplane_shift,-1.525954e-01,-0.7692,-1.98,0.90249143247749319,0,CHECK,sentinel-fixed sign; two independent implementations; relL2 gate 0.001 declared this round
+D60_zf450,60,450,20,farfield_ramp_vs_imageplane_shift,3.051962e-01,1.5385,3.97,1.3581017895583822,0,CHECK,sentinel-fixed sign; two independent implementations; relL2 gate 0.001 declared this round
+D30_zf450,30,450,10,farfield_ramp_vs_imageplane_shift,1.525751e-01,0.7692,1.98,0.90256824200684194,0,CHECK,sentinel-fixed sign; two independent implementations; relL2 gate 0.001 declared this round
+D100_zf450,100,450,10,farfield_ramp_vs_imageplane_shift,1.526035e-01,0.7692,1.98,0.90248375756671728,0,CHECK,sentinel-fixed sign; two independent implementations; relL2 gate 0.001 declared this round

@@ -1,6 +1,6 @@
 item,status,evidence,note
-p0_passive_hook,NOT_RUN,target duffy1/eval2 path not exercised this round; workstation still hosts hung -batch MATLAB sessions; hook budget (<=1) preserved,budget remains for a future safe window
-blocked_unblocked_1e-10,OPEN,last recorded 2.58848e-7 vs gate 1e-10 (v059/v062 era); no new evidence this round,gate unchanged; not replaced by FFT or static results
-rule7_large_reference,0_AUTHORIZED_THIS_ROUND,prerequisite P0 gate not met,unchanged
-r6_boundary_diagnostics,BLOCKED,no remaining pre-authorized budget identified this round,unchanged
-a3_four_seed,BLOCKED,unchanged,unchanged
+p0_passive_hook,NOT_RUN_RESOURCE_GATED,hung historical -batch MATLAB sessions still present (10/10-10/12 PIDs); license-seat exhaustion twice blocked new MATLAB startups this round (see logs/v073_return_process_cleanup_record.txt and v074 note),budget (<=1) preserved; no target-path attempt made
+blocked_unblocked_1e-10,OPEN,2.58848e-7 historical vs 1e-10 gate; no new evidence,not substitutable by FFT/static results
+rule7_large_reference,0_AUTHORIZED,unchanged,
+r6_a3,BLOCKED,no pre-authorized remaining budget,unchanged
+process_inventory,COMPLETED_PASSIVE,38 MATLAB.exe processes enumerated 10-13; own-session leftovers cleaned twice with per-PID command-line verification; historical untouched,

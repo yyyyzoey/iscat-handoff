@@ -1,0 +1,8 @@
+task,count,note
+new_BEM,0,prohibition respected
+renders_unique_states,54,30 anchors + 24 holdouts (C1 states reused; duplicate invocations from C1 reruns documented below)
+render_invocations_wasted,~8,C1 qualification loop re-rendered r0/rp per test row before caching was introduced
+replay_rescan_2001_frames,1,only the 7 non-center ROI reads; center ROI reused from v073 cache
+targeted_fixtures,8,7 PASS + 1 OFF_BIN diagnostic (v073 gaps closed)
+dynamic_time_series_evaluations,34,24 prescribed + 8 exposure + 2 negative controls
+p0_hooks,0,resource-gated

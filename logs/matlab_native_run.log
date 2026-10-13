@@ -1,107 +1,142 @@
-[073A] f400=399.80009995002501 f420=419.79010494752623
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 31 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 44 行)] 
-[073A] negative tests: PASS PASS PASS
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 61 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 70 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 70 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 77 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 89 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 90 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 100 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 110 行)] 
-[073A] f400=399.80009995002501 f420=419.79010494752623
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 31 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 44 行)] 
-[073A] negative tests: PASS PASS PASS
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 61 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 70 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 70 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 77 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 89 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 90 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 100 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 110 行)] 
-[警告: 不支持属性 ndims>0。] 
-[> 位置：extract_fft_v073 (第 12 行)
-位置: run_v073_fft_validation (第 111 行)] 
-[073A/B] validation done
-[073A] f400=399.80009995002501 f420=419.79010494752623
-[073A] negative tests: PASS PASS PASS
-[073A/B] validation done
-[073A] f400=399.80009995002501 f420=419.79010494752623
-[073A] negative tests: PASS PASS PASS
-[073A/B] validation done
-[073C] batch=5000 frames; using 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
-[073C] read 500/2001 (2.4s)
-[073C] read 1000/2001 (4.5s)
-[073C] read 1500/2001 (6.7s)
-[073C] read 2000/2001 (8.8s)
-[073C] stack 8.8s  size=296x352x1x2001
-[073C] fft 1.7s; actualFreq400=399.800100 actualFreq420=419.790105
-[073C] batch=5000 frames; using 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
-[073C] read 500/2001 (2.3s)
-[073C] read 1000/2001 (4.4s)
-[073C] read 1500/2001 (6.6s)
-[073C] read 2000/2001 (8.6s)
-[073C] stack 8.6s  size=296x352x1x2001
-[073C] fft 1.6s; actualFreq400=399.800100 actualFreq420=419.790105
-[073C] batch=5000 frames; using 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
-[073C] read 500/2001 (2.3s)
-[073C] read 1000/2001 (4.5s)
-[073C] read 1500/2001 (6.7s)
-[073C] read 2000/2001 (8.8s)
-[073C] stack 8.8s  size=296x352x1x2001
-[073C] fft 1.6s; actualFreq400=399.800100 actualFreq420=419.790105
-[073C] direct DFT 12 px 0.0s
-[073C] corrected replay done
-[073C] batch=5000 frames; using 1000..3000 (N=2001): 20260729_002739_570890-999.bmp .. 20260729_002739_970890-2999.bmp
-[073C] read 500/2001 (2.4s)
-[073C] read 1000/2001 (4.5s)
-[073C] read 1500/2001 (6.7s)
-[073C] read 2000/2001 (8.8s)
-[073C] stack 8.8s  size=296x352x1x2001
-[073C] fft 1.7s; actualFreq400=399.800100 actualFreq420=419.790105
-[073C] direct DFT 12 px 0.0s
-[073C] corrected replay done
-[073E1] verified 24 executable sides + NOT_EXECUTABLE rows; render_source=87ef0db094d7 wrapper=667889a4e5c3
+[074A] loaded full-field C400 artifact: absC 296x352
+[074A] small ROI loaded: 41x41 frames=2001
+[074A] loaded full-field C400 artifact: absC 296x352
+[074A] small ROI loaded: 41x41 frames=2001
+[074A] loaded full-field C400 artifact: absC 296x352
+[074A] small ROI loaded: 41x41 frames=2001
+[074A] loaded full-field C400 artifact: absC 296x352
+[074A] small ROI loaded: 41x41 frames=2001
+[074A] done
+[074A] loaded full-field C400 artifact: absC 296x352
+[074A] small ROI loaded: 41x41 frames=2001
+[074A] done
+[074B] selected 8 ROIs
+[074B] selected 8 ROIs
+[074B] scan 500/2001 (2.5s)
+[074B] scan 1000/2001 (4.6s)
+[074B] scan 1500/2001 (6.7s)
+[074B] scan 2000/2001 (8.8s)
+[074B] scan done 8.8s
+[074B] done
+[074B] selected 8 ROIs
+[074B] scan 500/2001 (2.8s)
+[074B] scan 1000/2001 (5.0s)
+[074B] scan 1500/2001 (7.3s)
+[074B] scan 2000/2001 (9.5s)
+[074B] scan done 9.5s
+[074B] done
+[074B] selected 8 ROIs
+[074B] scan 500/2001 (2.7s)
+[074B] scan 1000/2001 (4.9s)
+[074B] scan 1500/2001 (7.1s)
+[074B] scan 2000/2001 (9.3s)
+[074B] scan done 9.3s
+[074B] done
+[074B] selected 8 ROIs
+[074B] scan 500/2001 (2.7s)
+[074B] scan 1000/2001 (4.9s)
+[074B] scan 1500/2001 (7.1s)
+[074B] scan 2000/2001 (9.2s)
+[074B] scan done 9.2s
+[074B] done
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C1] sign=+1 dx=+10: CoM row shift=0.1526 px (1.98 nm)
+[074C1] sign=-1 dx=+10: CoM row shift=-0.1526 px (-1.98 nm)
+[074C1] chosen far-field ramp sign=+1 (sentinel: image moves with particle)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C1] sign=+1 dx=+10: CoM row shift=0.1526 px (1.98 nm)
+[074C1] sign=-1 dx=+10: CoM row shift=-0.1526 px (-1.98 nm)
+[074C1] chosen far-field ramp sign=+1 (sentinel: image moves with particle)
+[074C1] D60 dx=+10: shift=0.153 px (exp 0.769) relAB=0.903 dEref=0.0e+00 CHECK
+[074C1] D60 dx=-10: shift=-0.153 px (exp -0.769) relAB=0.902 dEref=0.0e+00 CHECK
+[074C1] D60 dx=+20: shift=0.305 px (exp 1.538) relAB=1.36 dEref=0.0e+00 CHECK
+[074C1] D30 dx=+10: shift=0.153 px (exp 0.769) relAB=0.903 dEref=0.0e+00 CHECK
+[074C1] D100 dx=+10: shift=0.153 px (exp 0.769) relAB=0.902 dEref=0.0e+00 CHECK
+[074C1] done; SIG=+1
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 30 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
+[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
+[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
+[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
+[074C2] anchors ready; new renders this session: 0 (C1 already covered 8 unique states; total unique <=54)
+[074C2] done: 34 time-series evaluations

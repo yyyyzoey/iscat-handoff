@@ -1,0 +1,3 @@
+case,modulation_depth,expected_absC400,computed_absC400,abs_err,status,note
+NEG1,0.050,0.050000000000000003,0.050000000000000003,0,PASS,ANALYTIC_SIGNAL_OPERATOR_FIXTURE: uniform intensity modulation alone produces a 400 Hz FFT peak
+NEG2,0.100,0.10000000000000001,0.10000000000000001,0,PASS,ANALYTIC_SIGNAL_OPERATOR_FIXTURE: uniform intensity modulation alone produces a 400 Hz FFT peak
