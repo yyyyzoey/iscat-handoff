@@ -1,0 +1,10 @@
+task,count,note
+new_BEM,0,
+new_renders,0,
+holdout_renders,24,v075 budget (already used)
+qr_fixtures,6,analytic
+qr_decompositions,24,correct normalization
+odd_even_states,30,3D x 2zf x 5 pixels
+holdout_semantics_rows,24,
+identifiability_pairs,276,
+exposure_requadrature,8,

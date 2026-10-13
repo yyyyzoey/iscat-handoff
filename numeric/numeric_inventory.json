@@ -1,9 +1,11 @@
 {
-  "schema": "iscat076.numeric_inventory.1",
-  "in_zip": ["v076_center_roi_static_sentinels.mat (full-field render + correct/legacy ROI comparisons for D60/zf450 x=0)", "v076_center_roi_harmonic_small_examples.mat (24 centre-pixel series + QR harmonics)"],
+  "schema": "iscat077.numeric_inventory.1",
+  "in_zip": ["v077_harmonic_correct.mat (24 trajectories corrected QR + leakage decomposition)"],
   "workstation_only": [
-    {"path": "v074_return/numeric/render_cache/*.mat", "count": 30, "note": "signed anchor states"},
-    {"path": "v075_return/numeric/render_cache/*.mat", "count": 24, "note": "holdout states"},
-    {"path": "v075_return/numeric/v075_holdout_data.mat", "bytes": 157939329, "note": "24 full-field holdout structs (source of the v076 B-stage reprocessing)"}
+    {"path": "v074_return/numeric/render_cache/*.mat", "count": 30},
+    {"path": "v075_return/numeric/render_cache/*.mat", "count": 24},
+    {"path": "v075_return/numeric/v075_holdout_data.mat", "bytes": 157939329},
+    {"path": "v076_return/numeric/v076_dynamic_center_corrected.mat"},
+    {"path": "v076_return/numeric/v076_center_roi_harmonic_small_examples.mat"}
   ]
 }

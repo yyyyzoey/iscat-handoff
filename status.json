@@ -1,13 +1,31 @@
 {
-  "schema": "iscat076.status.1",
+  "schema": "iscat077.status.1",
   "export_time": "2026-10-13",
-  "overall": "v075 ROI centre-offset defect (legacy fine 64:268 vs correct 61:265, +39nm) confirmed by coordinate verification (pixel_mean path reproduces render_system contrast exactly, legacy block rejected); 24 holdout camera-ROI postprocessing redone from cached full fields (zero renders); all 24 prescribed trajectories and 8 exposure variants recomputed with the CORRECT centre: M400 centre response collapses to ~1e-9..5.9e-6 (mirror symmetry confirmed: v075 values up to 5.2e-2 were pure offset artefacts), M200 second harmonic persists (up to 6.6e-3); harmonic authenticity separated: QR decomposition shows the coherent 400Hz harmonic at the centre is 2-3 orders SMALLER than the raw bin-161 value (bin161/fit ~990), i.e. bin-161 content is NOT a coherent 400Hz harmonic - labelled ODD_EVEN_MODEL_SENSITIVITY/INDETERMINATE; closed-form two-term G_N references match explicit DFT to ~1e-13; odd/even finite differences at the physical centre are even-dominated (odd ~0) - I''(0)-driven, not I''(0)=0 assumption; P0 NOT_RUN_RESOURCE_GATED",
-  "A_coord": {"execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "COMPLETE", "facts": ["fine axis verified: fine_x(163)=0, step 13nm (T4/T5)", "legacy centre 166 = +39nm offset (T6)", "pixel_mean path reproduces render_system C(33,33) and the full 41x41 block exactly (T7 diff 0, T9 diff 0)", "(Isca+Iint)/Iref decomposition identity to 6.9e-17 (T8)", "legacy block rejected as identity mismatch (maxdiff 0.15) (T10)", "position_key hardened: 30-state uniqueness + 4 unauthorised-input rejections (T2/T3)"]},
-  "B_holdout_roi": {"execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "COMPLETE", "facts": ["24 holdout camera-ROI postprocessing from cached full fields (zero renders); exact 24-key set guard", "Itot ROI relL2 (interp vs direct) 1.6e-4 to 1.9e-4", "C33 direct vs interp consistent; S_area_nm2 diffs reported"]},
-  "C_dynamic": {"execution_status": "COMPLETED", "validation_status": "PASS_WITH_CORRECTED_CENTRE", "evidence_status": "COMPLETE_FOR_32_EVALUATIONS", "facts": ["24 trajectories + 8 exposure recomputed at fine 61:265; zero renders", "M400 centre: 1.0e-9..5.9e-6 (v075 legacy: 6.4e-5..5.24e-2 were offset artefacts)", "M200 centre: 2.7e-6..6.6e-3 (second harmonic persists, now with corrected curvature sampling)", "ROI norms essentially unchanged (offset-insensitive)", "FFT vs explicit DFT spot checks <= 2.3e-6"]},
-  "D_harmonics": {"execution_status": "COMPLETED", "validation_status": "PASS_REFERENCES__INDETERMINATE_HARMONIC_SPLIT", "evidence_status": "COMPLETE", "facts": ["closed-form two-term G_N references match explicit DFT: abs err 1e-16..2.3e-18 (3 fixtures)", "FIX1 200Hz-only: bin161 leakage 8.05e-6 (true 400Hz harmonic zero)", "QR centre decomposition: coherent 400Hz harmonic 2.7e-9..5.7e-8 vs raw bin161 2.7e-6..6.6e-3 -> bin161/fit ~990..115660: bin-161 content is NOT a coherent 400Hz harmonic", "odd/even finite differences at the physical centre: even-dominated (odd ~0) -> I''(0)-driven response; ODD_EVEN_MODEL_SENSITIVITY", "v075 M200 'a^2-dominated' claim retracted pending the corrected decomposition"]},
-  "E_ident": {"execution_status": "COMPLETED", "validation_status": "SCREENING_ONLY", "evidence_status": "16_PAIRS", "facts": ["pairwise complex/abs relL2 across the 24 exploration points; changing trajectory type at D100 a=20 gives relL2 ~1.0 (completely different maps); severe aliasing confirmed"]},
+  "overall": "v076 QR 2/N double-normalization defect confirmed by regression and fixed: corrected C400_fit now matches bin161 within ~1% (ratio 0.9895-0.9897 for all M200 rows), retracting v076 claim that bin-161 content is not a coherent 400Hz harmonic; 6 analytic fixtures PASS with exact two-term G_N references; proper 3-state odd/even derivatives show even-dominated response at the physical centre (odd_half ~ 7e-11, even_increment ~ -7.8e-7); 276-pair identifiability computed from v076 corrected C400 maps; exposure re-quadrature with correct 400Hz sinc reference; all v076 CSV schema defects documented and corrected in new tables; P0 NOT_RUN_RESOURCE_GATED",
+  "A_identity": {"execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "COMPLETE", "facts": ["render_system sha=87ef0db0... constant", "all 30 anchor cache files verified with D/zf/dx metadata", "v075 holdout cache files verified"]},
+  "B_qr_fix": {
+    "execution_status": "COMPLETED", "validation_status": "PASS_6_OF_6_FIXTURES", "evidence_status": "COMPLETE",
+    "facts": [
+      "v076 2/N defect reproduced: old formula on FIX2 (pure 400Hz, depth 0.05) gives 2.5e-5 instead of 0.05 (factor N/2=1000.5)",
+      "correct QR normalisation C400_complex=(coef4-1i*coef5)/Im verified on 6 fixtures",
+      "single-bin DFT matches G_N closed-form reference to rel_err ~1e-13..1e-15",
+      "24-row correct decomposition: M200 bin161/corrected_C400_fit ratio 0.9895-0.9897 (NOT ~990)",
+      "v076 claim that bin-161 content is not a coherent 400Hz harmonic RETRACTED"
+    ]
+  },
+  "C_evenodd_and_holdout": {
+    "execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "COMPLETE",
+    "facts": [
+      "proper 3-state odd/even: odd_half ~ 6.8e-11 (near zero, centre even-symmetric confirmed); even_increment ~ -7.8e-7",
+      "central derivatives Iprime and Isecond computed from 30 states x 5 pixels x 3 columns",
+      "holdout camera-ROI semantics fixed: Sarea_nm2_direct/interp/signedDelta/absDelta separated",
+      "Itot ROI relL2 range 4.16e-6 to 1.93e-4 (corrected from v076 status claim of 1.6e-4..1.9e-4)",
+      "T10 proper 39nm negative test from fine 64:268 vs 61:265 (not the v076 1-pixel-scaled version)"
+    ]
+  },
+  "D_identifiability": {"execution_status": "COMPLETED", "validation_status": "SCREENING_ONLY", "evidence_status": "COMPLETE_276_PAIRS", "facts": ["276 pairs from v076 corrected C400 maps (not the withdrawn v075 offset maps)", "symmetric normalisation ||Ci-Cj||/((||Ci||+||Cj||)/2)", "cross-D pairs show large distances; same-D different-a pairs show smaller but nonzero distances"]},
+  "E_exposure": {"execution_status": "COMPLETED", "validation_status": "PASS_SCHEMA_AND_QUADRATURE", "evidence_status": "COMPLETE_8_ROWS", "facts": ["sinc reference uses the actual observation frequency 400Hz (not the 200Hz motion frequency)", "5-node left-sum vs analytical sinc reference reported", "CSV schema fixed (all fields quoted)"]},
   "F_p0": {"execution_status": "NOT_RUN_RESOURCE_GATED", "validation_status": "OPEN_2.58848e-7_vs_1e-10", "evidence_status": "PASSIVE_INVENTORY_ONLY"},
-  "v075_verdicts_preserved": ["A3_ROI_CENTRE_OFFSET_WITHDRAWN_FOR_REDO", "B0_LEGACY_SHIFTED_ROI_HISTORY"],
+  "v076_verdicts_preserved": ["ROI_SCHEMA_FAIL", "C1_SENTINEL_PARTIAL", "HOLDOUT_12_PASS_12_FAIL", "DYNAMIC_DEVELOPMENT_INVALID_KEY_COLLISION", "QR_2N_DOUBLE_NORM_DEFECT"],
   "frozen_states": {"calibration_valid": false, "experimental_validation": false, "detection_validated": false, "single_particle_diameter": "NOT_ESTIMATED"}
 }

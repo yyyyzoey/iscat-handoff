@@ -1,0 +1,7 @@
+case,saved_series_maxabsdiff_fresh,fresh_vs_saved_status,double_vs_single_C400_diff,note
+D30_zf450_M200_a5,2.2208177311022759e-10,DIFFERS,double-vs-single C400 diff=documented,fresh recomputation from v074 anchors vs saved v076 series
+D30_zf550_M200_a5,2.0413579420591743e-10,DIFFERS,double-vs-single C400 diff=documented,fresh recomputation from v074 anchors vs saved v076 series
+D60_zf450_M200_a5,2.2404750710941501e-10,DIFFERS,double-vs-single C400 diff=documented,fresh recomputation from v074 anchors vs saved v076 series
+D60_zf550_M200_a5,1.9988467998832693e-10,DIFFERS,double-vs-single C400 diff=documented,fresh recomputation from v074 anchors vs saved v076 series
+D100_zf450_M200_a5,4.5919691660234463e-10,DIFFERS,double-vs-single C400 diff=documented,fresh recomputation from v074 anchors vs saved v076 series
+D100_zf550_M200_a5,4.6422364910481129e-10,DIFFERS,double-vs-single C400 diff=documented,fresh recomputation from v074 anchors vs saved v076 series

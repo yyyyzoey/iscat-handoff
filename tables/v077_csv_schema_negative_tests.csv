@@ -1,0 +1,7 @@
+test_id,description,expected,observed,status
+S1_v076_exposure8_unquoted_comma,v076 exposure CSV had unquoted [t_j,t_j+tau] causing column shift,10 columns,11 columns,FAIL_CONFIRMED
+S2_v076_coord_missing_field,v076 coordinate CSV rows had 5 fields vs 6-column header,6,5,FAIL_CONFIRMED
+S3_v076_harmonic_unquoted_comma,v076 harmonic CSV FIX3 description had unquoted comma,10,11,FAIL_CONFIRMED
+S4_v077_all_new_csvs_readback,all v077 CSVs machine-readable with correct column count,match,match,PASS
+S5_v077_no_control_chars,no NUL or control characters in any v077 CSV,0,0,PASS
+S6_v077_holdout_sarea_split,v077 holdout CSV has Sarea_direct/interp/signedDelta/absDelta as separate columns,split,split,PASS

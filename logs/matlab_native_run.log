@@ -1,37 +1,19 @@
-[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
-[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
-[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
-[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
-[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
-[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
-[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
-[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
-[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
-[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
-[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
-[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
-[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
-[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
-[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
-[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
-[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
-[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
-[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
-[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
-[076A] done
-[076B] done: 24 holdout camera-ROI postprocessing (zero renders)
-[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
-[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
-[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
-[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
-[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
-[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
-[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
-[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
-[project] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4
-[loader] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\src\prepare_nanobem
-[source] C:\Users\PC\Documents\Codex\2026-09-20\https-chatgpt-com-share-6aafd462-6e70\work\iscat_v0_4\third_party\nanobem-ce49f77f096337db8be54c46d83696d37b0b23d5
-[pdist2] Existing function passed Smallest/Largest probes: C:\software\toolbox\stats\stats\pdist2.m
-[076C] 30 anchors loaded (zero renders)
-[076C] done: 32 evaluations
-[076D-QR] done
+[077A] identity table written
+[077B] done; centre-series crosscheck identical cases: 0/6
+[077B] done; centre-series crosscheck identical cases: 0/6
+[077B] done; centre-series crosscheck identical cases: 0/6
+[077B] done; centre-series crosscheck identical cases: 0/6
+[077B] done; centre-series crosscheck identical cases: 0/6
+[警告: 未找到变量 'a'。] 
+[> 位置：run_v077_CCD (第 20 行)] 
+[警告: 未找到变量 'a'。] 
+[> 位置：run_v077_CCD (第 20 行)] 
+[警告: 未找到变量 'a'。] 
+[> 位置：run_v077_CCD (第 20 行)] 
+[警告: 未找到变量 'a'。] 
+[> 位置：run_v077_CCD (第 23 行)] 
+[警告: 未找到变量 'a'。] 
+[> 位置：run_v077_CCD (第 20 行)] 
+[警告: 未找到变量 'a'。] 
+[> 位置：run_v077_CCD (第 23 行)] 
+[077CCD] done: odd/even + T10 + holdout semantics + 276 identifiability pairs
