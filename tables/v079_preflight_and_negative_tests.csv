@@ -1,0 +1,8 @@
+test_id,description,expected,observed,status
+T1_v078_old_matrix,"9 cols, rank=8, col9=0, col1!=1","rank=8 col9zero col1not1","rank=8 col9zero=1 col1not1=1",PASS
+T2_new_matrix_fullrank,"rank=9 cond<1e8","rank=9 cond=1.4146",PASS
+T3_intercept_intact,col1==1,1,PASS
+T4_old_intercept_overwritten,col1!=1,1,PASS
+T5_old_last_col_zero,col9==0,1,PASS
+T6_position_key_unique,30,30,PASS
+T7_position_key_rejects,2 rejections,2,PASS

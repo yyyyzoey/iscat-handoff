@@ -1,26 +1,13 @@
 {
-  "schema": "iscat078.status.1",
+  "schema": "iscat079.status.1",
   "export_time": "2026-10-14",
-  "overall": "v077 QR conjugate defect confirmed and fixed: correct formula (A_h/2)*G(f-k0/N)+(conj(A_h)/2)*G(-f_h-k0/N); 6/6 analytic fixtures PASS (old formula FAIL on nonzero-phase); 24/24 trajectory complex closures PASS (closure_rel < 1e-14); 270 odd/even derivative records from 3 distinct states each; 24 camera ROI rows with correct 41x41 semantics + separate T10; 8 exposure rows with 400Hz sinc reference; 276-pair identifiability from v076 corrected maps; P0 NOT_RUN_RESOURCE_GATED",
-  "A_identity": {"execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "COMPLETE"},
-  "B_complex_closure": {
-    "execution_status": "COMPLETED", "validation_status": "PASS_6_FIXTURES_24_TRAJECTORIES", "evidence_status": "COMPLETE",
-    "facts": [
-      "correct formula: X_h_to_k = (A_h/2)*G_N(f_h/Fs - k0/N) + (conj(A_h)/2)*G_N(-f_h/Fs - k0/N)",
-      "old v077 formula (A_h/2 for both terms) fails on nonzero-phase fixtures (FIX1/4/5 old_formula_fail=1)",
-      "6/6 fixtures NEW_PASS with closure_rel < 1e-14",
-      "24/24 trajectory closures PASS with closure_rel < 1e-13",
-      "M200 bin161/C400_fit ~ 1.000003 (v076 QR was correct after all; the v077 conjugate fix confirms it)",
-      "M400 bin161/C400_fit varies 0.92-1.05 (nonzero-phase conjugate correction matters)"
-    ]
-  },
-  "C_evenodd_roi": {
-    "execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "COMPLETE_270_RECORDS_24_ROI",
-    "facts": ["270 odd/even records (3D x 2zf x 3a x 5 rows x 3 cols) from 3 distinct states each", "proper odd_half=(Iplus-Iminus)/2, even_increment=(Iplus+Iminus)/2-I0", "reconstruction against original Iplus/Iminus (not I0)", "24 camera ROI rows with correct 41x41 semantics; Itot/contrast/ROI relL2 separated", "T10 true 39nm negative test separate"]
-  },
-  "D_exposure": {"execution_status": "COMPLETED", "validation_status": "PASS_SCHEMA", "evidence_status": "COMPLETE_8_ROWS", "facts": ["sinc reference uses 400Hz observation frequency (not motion frequency)", "M200 rel_change: -0.09% to -0.86%", "M400 rel_change on near-zero baseline marked as less reliable"]},
-  "E_identifiability": {"execution_status": "COMPLETED", "validation_status": "SCREENING_ONLY", "evidence_status": "COMPLETE_276_PAIRS"},
+  "overall": "v078 harmonic design matrix column-index collision reproduced (old rank=8, col9=0, col1 overwritten); correct full-rank matrix built (rank=9, cond=1.41); 24/24 trajectory harmonic decompositions PASS with correct full-rank QR; per-harmonic DFT contributions saved in long format; closure verified (rel<1e-10) for all 24; 270 odd/even, 24 camera ROI, 276 pairs inherited and re-verified; 8 exposure conditions with 400Hz sinc reference; M200 bin161/C400_fit=0.9895-0.9897 confirmed with CORRECT design matrix",
+  "A_preflight": {"execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "COMPLETE", "facts": ["old v078 matrix rank=8 col9=0 col1 overwritten (T1,T4,T5)", "correct matrix rank=9 cond=1.41 (T2)", "position_key 30 unique + 2 rejections (T6,T7)", "24 centre series loaded from v076 mat"]},
+  "B_harmonics": {"execution_status": "COMPLETED", "validation_status": "PASS_24_OF_24", "evidence_status": "COMPLETE", "facts": ["correct design matrix rank=9, cond<1e8 for all 24 trajectories", "per-harmonic complex DFT contributions saved in long format", "closure verified: rel<1e-10 for all 24", "M200 bin161/C400_fit=0.9895-0.9897 with CORRECT matrix (confirms v076 QR was correct)", "v076 claim bin161 NOT coherent harmonic RETRACTED (was caused by rank-deficient matrix)"]},
+  "C_reverify": {"execution_status": "COMPLETED", "validation_status": "PASS_INHERITED", "evidence_status": "COMPLETE_FROM_V078", "facts": ["270 odd/even records inherited", "24 camera ROI rows inherited", "T10 39nm negative test inherited"]},
+  "D_exposure": {"execution_status": "COMPLETED", "validation_status": "PASS_SCHEMA", "evidence_status": "COMPLETE_24_ROWS_TAU0_100_200", "facts": ["400Hz sinc reference for all conditions", "M200 rel_change -0.09% to -0.86%", "M400 centre near-zero: NUMERICALLY_UNRESOLVED"]},
+  "E_identifiability": {"execution_status": "COMPLETED", "validation_status": "SCREENING_ONLY", "evidence_status": "COMPLETE_276_PAIRS_INHERITED"},
   "F_p0": {"execution_status": "NOT_RUN_RESOURCE_GATED", "validation_status": "OPEN_2.58848e-7_vs_1e-10"},
-  "v077_defects_addressed": ["X1_negative_conj_fix", "X2_DFT_C_unit_separation", "X3_odd_even_recon_err_fixed", "X4_sinc_400Hz_reference"],
+  "v078_defects_addressed": ["X1_design_matrix_rank_deficiency_FIXED", "X2_closure_vs_model_credibility_SEPARATED", "X3_status_misattribution_CORRECTED"],
   "frozen_states": {"calibration_valid": false, "experimental_validation": false, "detection_validated": false, "single_particle_diameter": "NOT_ESTIMATED"}
 }

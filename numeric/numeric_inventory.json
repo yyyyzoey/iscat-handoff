@@ -1,10 +1,11 @@
 {
-  "schema": "iscat078.numeric_inventory.1",
-  "in_zip": ["v076_center_roi_harmonic_small_examples.mat (24 centre series, carried from v076)", "v078_harmonics24_complex_closed.csv (24 closure records)"],
+  "schema": "iscat079.numeric_inventory.1",
+  "in_zip": [],
   "workstation_only": [
     {"path": "v074_return/numeric/render_cache/*.mat", "count": 30},
     {"path": "v075_return/numeric/render_cache/*.mat", "count": 24},
     {"path": "v076_return/numeric/v076_dynamic_center_corrected.mat"},
+    {"path": "v076_return/numeric/v076_center_roi_harmonic_small_examples.mat"},
     {"path": "v075_return/numeric/v075_holdout_data.mat", "bytes": 157939329}
   ]
 }

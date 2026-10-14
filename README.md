@@ -1,3 +1,3 @@
-# iscat-handoff v078
+# iscat-handoff v079
 
-Complex conjugate closure fix, proper odd/even derivatives, 276-pair identifiability.
+Full-rank harmonic decomposition fix. v078 design matrix rank deficiency corrected; all 24 trajectories re-verified.

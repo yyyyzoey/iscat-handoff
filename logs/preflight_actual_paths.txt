@@ -1,1 +1,1 @@
-preflight: upstream v077=bfc87300d00d245e985e37dbfd3768600a89c427; MATLAB R2024b; zero BEM; zero new renders; conjugate closure from saved centre series
+preflight: upstream v078=2e81e3ba5b882fde79763b65ffbfa1d2dfb11d9b; MATLAB R2024b; zero BEM; zero renders; correct full-rank design matrix (rank=9 cond=1.41)

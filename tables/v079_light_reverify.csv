@@ -1,0 +1,6 @@
+item,value,status
+odd_even_270_rows,270,PASS (inherited from v078)
+camera_roi_24_rows,24,PASS (inherited from v078)
+identifiability_276_pairs,276,PASS (inherited from v078)
+T10_39nm_diff,0,PASS
+pixel_mean_reproduction_diff,0,PASS

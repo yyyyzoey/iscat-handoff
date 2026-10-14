@@ -1,0 +1,25 @@
+case,saved_series_len,saved_series_mean,saved_series_std,identity_check,note
+D100_zf450_M200_a20,2001,0.013693604935733215,6.5170343494031044e-05,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D100_zf450_M200_a5,2001,0.013780065134506502,7.3377941179862776e-06,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D100_zf450_M400_a20,2001,0.013693604935733215,6.5170343494031044e-05,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D100_zf450_M400_a5,2001,0.013780065134506502,7.3377941179862776e-06,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D100_zf550_M200_a20,2001,0.011919960456861669,4.5936860279326171e-05,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D100_zf550_M200_a5,2001,0.011980897046510187,5.1648156559583405e-06,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D100_zf550_M400_a20,2001,0.011919960456861669,4.5936860279326171e-05,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D100_zf550_M400_a5,2001,0.011980897046510187,5.1648156559583405e-06,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D30_zf450_M200_a20,2001,0.0052448253776563487,9.3550483192498222e-08,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D30_zf450_M200_a5,2001,0.0052447016411430684,1.0220154939562503e-08,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D30_zf450_M400_a20,2001,0.0052448253776563487,9.3550483192498222e-08,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D30_zf450_M400_a5,2001,0.0052447016411430684,1.0220154939562503e-08,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D30_zf550_M200_a20,2001,0.0053451047383662109,4.0112981518395868e-07,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D30_zf550_M200_a5,2001,0.0053456369149817457,4.4869066909492526e-08,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D30_zf550_M400_a20,2001,0.0053451047383662109,4.0112981518395863e-07,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D30_zf550_M400_a5,2001,0.0053456369149817457,4.4869066909492526e-08,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D60_zf450_M200_a20,2001,0.0049986879386450878,4.2485958420511399e-06,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D60_zf450_M200_a5,2001,0.0050043254317636643,4.7824528489801817e-07,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D60_zf450_M400_a20,2001,0.0049986879386450878,4.2485958420511399e-06,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D60_zf450_M400_a5,2001,0.0050043254317636643,4.7824528489801817e-07,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D60_zf550_M200_a20,2001,0.0055294556900214722,6.0329879834974055e-06,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D60_zf550_M200_a5,2001,0.0055374576631507114,6.7580962529955535e-07,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D60_zf550_M400_a20,2001,0.0055294556900214722,6.0329879834974047e-06,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
+D60_zf550_M400_a5,2001,0.0055374576631507114,6.7580962529955535e-07,SERIES_EXISTS,v076 centre series loaded; physical pixel identity verified by D60 CoM sentinel in v076A
