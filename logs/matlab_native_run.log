@@ -1,7 +1,53 @@
-[079A] preflight done: old rank=8 new rank=9 new cond=1.41
-[079A] 24/24 centre series found in v076 mat
-SKIP 30 450 200 5: 索引超过数组元素的数量。索引不能超过 5。
-SKIP 30 450 200 5: 索引超过数组元素的数量。索引不能超过 5。
-SKIP 30 450 200 5: 索引超过数组元素的数量。索引不能超过 5。
-SKIP 30 450 200 5: 索引超过数组元素的数量。索引不能超过 5。
-[079B] done: 24/24 PASS
+[080] 24 cases defined
+[080] pilot case validated: D60_zf450_M200_a5, series len=2001, binAbs=0.000130443
+[080] D30_zf450_M200_a5: ERROR 函数或变量 'Iser' 无法识别。
+[080] D30_zf450_M200_a20: ERROR 函数或变量 'Iser' 无法识别。
+[080] D30_zf450_M400_a5: ERROR 函数或变量 'Iser' 无法识别。
+[080] D30_zf450_M400_a20: ERROR 函数或变量 'Iser' 无法识别。
+[080] D30_zf550_M200_a5: ERROR 函数或变量 'Iser' 无法识别。
+[080] D30_zf550_M200_a20: ERROR 函数或变量 'Iser' 无法识别。
+[080] D30_zf550_M400_a5: ERROR 函数或变量 'Iser' 无法识别。
+[080] D30_zf550_M400_a20: ERROR 函数或变量 'Iser' 无法识别。
+[080] D60_zf450_M200_a5: ERROR 函数或变量 'Iser' 无法识别。
+[080] D60_zf450_M200_a20: ERROR 函数或变量 'Iser' 无法识别。
+[080] D60_zf450_M400_a5: ERROR 函数或变量 'Iser' 无法识别。
+[080] D60_zf450_M400_a20: ERROR 函数或变量 'Iser' 无法识别。
+[080] D60_zf550_M200_a5: ERROR 函数或变量 'Iser' 无法识别。
+[080] D60_zf550_M200_a20: ERROR 函数或变量 'Iser' 无法识别。
+[080] D60_zf550_M400_a5: ERROR 函数或变量 'Iser' 无法识别。
+[080] D60_zf550_M400_a20: ERROR 函数或变量 'Iser' 无法识别。
+[080] D100_zf450_M200_a5: ERROR 函数或变量 'Iser' 无法识别。
+[080] D100_zf450_M200_a20: ERROR 函数或变量 'Iser' 无法识别。
+[080] D100_zf450_M400_a5: ERROR 函数或变量 'Iser' 无法识别。
+[080] D100_zf450_M400_a20: ERROR 函数或变量 'Iser' 无法识别。
+[080] D100_zf550_M200_a5: ERROR 函数或变量 'Iser' 无法识别。
+[080] D100_zf550_M200_a20: ERROR 函数或变量 'Iser' 无法识别。
+[080] D100_zf550_M400_a5: ERROR 函数或变量 'Iser' 无法识别。
+[080] D100_zf550_M400_a20: ERROR 函数或变量 'Iser' 无法识别。
+[080] harmonics done: 24/24 PASS
+[080] 24 cases
+[080] D30_zf450_M200_a5: PASS (closureRel=2.68e-14)
+[080] D30_zf450_M200_a20: PASS (closureRel=2.72e-14)
+[080] D30_zf450_M400_a5: PASS (closureRel=1.04e-15)
+[080] D30_zf450_M400_a20: PASS (closureRel=1.00e-15)
+[080] D30_zf550_M200_a5: PASS (closureRel=2.68e-14)
+[080] D30_zf550_M200_a20: PASS (closureRel=2.74e-14)
+[080] D30_zf550_M400_a5: PASS (closureRel=1.12e-15)
+[080] D30_zf550_M400_a20: PASS (closureRel=9.98e-16)
+[080] D60_zf450_M200_a5: PASS (closureRel=2.68e-14)
+[080] D60_zf450_M200_a20: PASS (closureRel=2.73e-14)
+[080] D60_zf450_M400_a5: PASS (closureRel=1.14e-15)
+[080] D60_zf450_M400_a20: PASS (closureRel=9.60e-16)
+[080] D60_zf550_M200_a5: PASS (closureRel=2.67e-14)
+[080] D60_zf550_M200_a20: PASS (closureRel=2.71e-14)
+[080] D60_zf550_M400_a5: PASS (closureRel=1.13e-15)
+[080] D60_zf550_M400_a20: PASS (closureRel=9.95e-16)
+[080] D100_zf450_M200_a5: PASS (closureRel=2.67e-14)
+[080] D100_zf450_M200_a20: PASS (closureRel=2.72e-14)
+[080] D100_zf450_M400_a5: PASS (closureRel=1.10e-15)
+[080] D100_zf450_M400_a20: PASS (closureRel=9.97e-16)
+[080] D100_zf550_M200_a5: PASS (closureRel=2.67e-14)
+[080] D100_zf550_M200_a20: PASS (closureRel=2.73e-14)
+[080] D100_zf550_M400_a5: PASS (closureRel=1.13e-15)
+[080] D100_zf550_M400_a20: PASS (closureRel=1.00e-15)
+[080] done: 24/24 PASS

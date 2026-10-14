@@ -1,0 +1,9 @@
+case,type,a_nm,tau_s,quadrature,absC400_tau0,sinc_ref_400Hz,status,note
+D60_zf450_M200_a5,M200,5,0.0001,5_node_left_from_v078,NOT_EXECUTED,0.997370,NOT_EXECUTED_RESOURCE_LIMIT,higher-order quadrature not executed; analytic sinc reference only
+D60_zf450_M200_a5,M200,5,0.0002,5_node_left_from_v078,NOT_EXECUTED,0.989506,NOT_EXECUTED_RESOURCE_LIMIT,higher-order quadrature not executed; analytic sinc reference only
+D60_zf450_M200_a20,M200,20,0.0001,5_node_left_from_v078,NOT_EXECUTED,0.997370,NOT_EXECUTED_RESOURCE_LIMIT,higher-order quadrature not executed; analytic sinc reference only
+D60_zf450_M200_a20,M200,20,0.0002,5_node_left_from_v078,NOT_EXECUTED,0.989506,NOT_EXECUTED_RESOURCE_LIMIT,higher-order quadrature not executed; analytic sinc reference only
+D60_zf450_M400_a5,M400,5,0.0001,5_node_left_from_v078,NOT_EXECUTED,0.997370,NOT_EXECUTED_RESOURCE_LIMIT,higher-order quadrature not executed; analytic sinc reference only
+D60_zf450_M400_a5,M400,5,0.0002,5_node_left_from_v078,NOT_EXECUTED,0.989506,NOT_EXECUTED_RESOURCE_LIMIT,higher-order quadrature not executed; analytic sinc reference only
+D60_zf450_M400_a20,M400,20,0.0001,5_node_left_from_v078,NOT_EXECUTED,0.997370,NOT_EXECUTED_RESOURCE_LIMIT,higher-order quadrature not executed; analytic sinc reference only
+D60_zf450_M400_a20,M400,20,0.0002,5_node_left_from_v078,NOT_EXECUTED,0.989506,NOT_EXECUTED_RESOURCE_LIMIT,higher-order quadrature not executed; analytic sinc reference only

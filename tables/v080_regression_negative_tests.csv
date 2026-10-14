@@ -1,0 +1,6 @@
+test_id,description,expected,observed,status
+N1_makeValidName_collision,makeValidName(+-10) same field,equal,1,PASS
+N2_scalar_2D_index,scalar C400(21,21) must error,INDEX_ERROR,INDEX_ERROR,PASS
+N3_numeric_to_È,char(200) not M200,PASS,N4_old_matrix_rank,rank=8,8,PASS
+N5_new_matrix_rank,rank=9,9,PASS
+N6_new_matrix_cond,cond<1e8,1.4146,PASS

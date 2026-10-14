@@ -1,3 +1,3 @@
-# iscat-handoff v079
+# iscat-handoff v080
 
-Full-rank harmonic decomposition fix. v078 design matrix rank deficiency corrected; all 24 trajectories re-verified.
+QR normalisation corrected, 24/24 trajectories PASS, 276-pair identifiability.

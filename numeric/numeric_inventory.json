@@ -1,5 +1,5 @@
 {
-  "schema": "iscat079.numeric_inventory.1",
+  "schema": "iscat080.numeric_inventory.1",
   "in_zip": [],
   "workstation_only": [
     {"path": "v074_return/numeric/render_cache/*.mat", "count": 30},
