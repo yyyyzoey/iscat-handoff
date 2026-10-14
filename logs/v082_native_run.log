@@ -1,0 +1,5 @@
+v082 native execution record
+time_utc: 2026-10-14T10:23:45.395367Z
+host: DESKTOP-RN9651M | python 3.11.7 | numpy 1.26.4 | h5py 3.9.0
+parent_commit: 812171a5fbea43c68d1ca93995f876e2fd051e19 (branch v081)
+phases: A preflight+negative(10 reject) | B 24/24 PASS | C 6 cond x 3 paths | D fixture PASS + 16/16 evals | E 24 params | F NOT_RUN_RESOURCE_GATED

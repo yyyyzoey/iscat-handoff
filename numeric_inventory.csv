@@ -1,5 +1,11 @@
 path,note
-v065_return/,all 32 s + 352 slices + full model,workstation only
-v067_return/,true homogeneous 30/100 systems,workstation only
+v065_return/,"all 32 s + 352 slices + full model,workstation only"
+v067_return/,"true homogeneous 30/100 systems,workstation only"
 v070_return/,logs and CSVs only; controlled C arrays NOT persisted (evidence MISSING)
 v071_return/,24 side mats + diffs + probe + examples on workstation; small K01 example packaged in numeric/controlled_recovered_examples.mat
+numeric/v076_center_roi_harmonic_small_examples.mat,24 saved centre series (Phase A/B primary source)
+numeric/v082_small_sample_D60_zf450_M200_a5.mat,v082 small sample: series/coef/parts/residual/closure complex DFT
+numeric/v082_small_sample_D30_zf450_M400_a5.mat,v082 small sample weak M400
+numeric/v082_small_sample_D30_zf550_M400_a5.mat,v082 small sample weak M400
+v074_return/numeric/render_cache/,30 anchor complex-field caches (Phase C/D source; workstation only)
+v076_return/numeric/v076_dynamic_center_corrected.mat,41x41 corrected centre maps + 8 legacy 5-node tau results (cross-check source)

@@ -1,0 +1,3 @@
+item,gate,historical_best,status,matlab_processes_detected,process_evidence,reason,recorded_utc
+P0_passive_hook_direct_reflected_total,each < 1e-10 (frozen),2.58848e-07,NOT_RUN_RESOURCE_GATED,0,none,"no MATLAB native run started this session; P0 hook deferred to preserve license/process safety budget (max 1 attempt, only when safe); independent of phases A-E",2026-10-14T10:20:41.597073Z
+rule7_large_reference,increment < 0.005 (frozen),NOT_RUN,NOT_RUN_BUDGET_0,NA,,no new budget authorized for rule7 this session,2026-10-14T10:20:41.597073Z

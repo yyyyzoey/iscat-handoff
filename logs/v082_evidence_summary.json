@@ -1,0 +1,10 @@
+{
+  "cases_total": 24,
+  "cases_pass": 24,
+  "parts_rows": 96,
+  "resid_rows": 24,
+  "ident_rows": 24,
+  "negative_tests": 16,
+  "negative_unexpected_pass": 0,
+  "readback_clean": true
+}

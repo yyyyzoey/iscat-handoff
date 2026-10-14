@@ -1,0 +1,12 @@
+item,budget_v082,used,unit,status,note
+new_BEM_solve,0,0,count,RESPECTED,zero new BEM this session
+new_position_complex_field_render,0,0,count,RESPECTED,zero new renders; only cached v074 anchor fields read
+center_time_series_decomposition,24,24,count,COMPLETED,24/24 cases Phase B
+independent_synthetic_analytic_fixture,6,2,count,COMPLETED,NEG fixtures (validator-level) + pure 400Hz sinc fixture
+weak_M400_precision_conditions,6,6,count,COMPLETED,Phase C: 6 conditions x 3 numerical paths
+exposure_higher_order_evaluations,16,16,count,COMPLETED,Phase D: 8 conditions x {16,32}-node midpoint
+old_5node_exposure_results,read_only,8,count,INHERITED,read-only from v076 dynamic center MAT
+original_7.29_BMP_reread,0,0,count,RESPECTED,no experiment data touched
+new_D_zf_material_field_waveform_scan,0,0,count,RESPECTED,frozen
+P0_passive_hook,1,0,count,NOT_RUN_RESOURCE_GATED,deferred; process state recorded
+rule7_large_reference,0,0,count,RESPECTED,no budget

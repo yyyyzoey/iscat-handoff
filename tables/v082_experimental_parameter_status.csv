@@ -1,0 +1,24 @@
+parameter,status_category,value_or_state,source,note
+laser_vacuum_wavelength_nm,USER_CONFIRMED,520,USER_CONFIRMED_2026-10-12,true experimental input
+ac_magnetic_field_frequency_Hz,HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP,200,historical lab record,frequency recorded only; amplitude/direction/gradient/exact waveform still missing; 400Hz possible 2f but causality unestablished
+camera_Fs_fps,EXPERIMENTAL_SCRIPT_RECORDED,5000,"7.29 batch extraction scripts (test.m / test_with_contrast.m, GBK, SHA-verified v071)",2001-frame subset; does not guarantee other batches identical
+analysis_frames,EXPERIMENTAL_SCRIPT_RECORDED,2001,7.29 batch replay contract,frames 1000-3000
+dft_bin161_actual_Hz,EXPERIMENTAL_SCRIPT_RECORDED,399.800099950025,round(400*2001/5000)=160 (0-based); k0*Fs/N,candidate primary observable; normalization contract from test_with_contrast.m
+camera_sensor_pixel_um,HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP,14,historical lab record,sensor pixel only; object-space scale NOT closed
+objective_nominal_magnification,HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP,50x,historical lab record,nominal; total magnification and extra lenses unverified
+object_space_scale_nm_per_px,MISSING,UNDETERMINED,-,280nm/px ONLY IF no extra magnification (14um/50); 65nm/px is demo; needs stage calibration or full optical chain
+camera_exposure_time_s,MISSING,UNDETERMINED,-,100/200us are SYNTHETIC_TAU math fixtures only
+camera_trigger_mode,MISSING,UNDETERMINED,-,-
+imaging_NA,MISSING,UNDETERMINED,-,"NA1.3 is simulation assumption, not experimental"
+objective_model_immersion,MISSING,UNDETERMINED,-,-
+illumination_incidence_polarization,MISSING,UNDETERMINED,-,-
+reference_beam_geometry,MISSING,UNDETERMINED,-,iSCAT reference = reflected beam; experimental alignment unclosed
+magnetic_field_amplitude_direction_gradient,MISSING,UNDETERMINED,-,200Hz frequency record does not give drive amplitude or B(t); motion not preset to horizontal 5/20nm
+Bt_image_synchronization,MISSING,UNDETERMINED,-,-
+sample_batch_magnetic_material,MISSING_PARTIAL_HISTORICAL,nominal 100nm Fe3O4 recorded; batch material unverified,historical record,"Querry 1985 bulk constants are literature, not batch measurement"
+particle_coating_medium_interface_fixation,MISSING,UNDETERMINED,-,glass/water/5nm gap is simulation assumption
+particle_diameter_nm,MISSING,NOT_ESTIMATED,-,single-particle diameter NOT_ESTIMATED by frozen state
+demo_object_pixel_nm,SIMULATION_ASSUMPTION,65,v06x forward model contract,"demo only, NOT user calibration"
+demo_translation_amplitudes_nm,SIMULATION_ASSUMPTION,"5, 20",prescribed trajectory contract,"prescribed kinematics, NOT real magnetic motion"
+demo_focus_planes_nm,SIMULATION_ASSUMPTION,"450, 550",forward model grid,-
+material_constants_source,SIMULATION_ASSUMPTION,Fe3O4 Querry 1985; Au 520nm measured table,material contract,Au table measured; Fe3O4 literature

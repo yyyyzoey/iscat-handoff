@@ -1,0 +1,19 @@
+test_id,category,description,expected_result,observed_result,status
+PRE01,source_structure,"24 cases, key structure, ttype/key agreement, series 2001 float64 finite mean!=0",PASS,all 24 verified against v076_center_roi_harmonic_small_examples.mat,PASS
+PRE02,source_structure,"corrected center map C400(21,21) is 41x41 complex; scalar small-MAT C400 NOT used as map",PASS,"C400(21,21)=-0.00012633815640583634-3.2421212381450459e-05j (map absCenter=0.00013043184299021959)",PASS
+NEG01,negative_fixture,M200 case validated against M400 basis (wrong frequency label),REJECT,ValidationError raised,PASS
+NEG02,negative_fixture,intercept claimed at column 9 while v082 contract fixes intercept-first metadata,REJECT,ValidationError raised,PASS
+NEG03,negative_fixture,undefined/non-finite residual R (v081 V2/V3 failure mode),REJECT,ValidationError raised,PASS
+NEG04,negative_fixture,rank-deficient design matrix accepted (rank=8),REJECT,ValidationError raised,PASS
+NEG05,negative_fixture,raw DFT count Xbin mislabeled as normalized C (v081 V1/V6 dimensional error),REJECT,ValidationError raised,PASS
+NEG06,negative_fixture,closure_rel above frozen 1e-10 gate accepted,REJECT,ValidationError raised,PASS
+NEG07,negative_fixture,CSV row count shorter than declared (v081 V3/V4 failure mode),REJECT,ValidationError raised,PASS
+NEG08,negative_fixture,duplicate keys accepted in CSV,REJECT,ValidationError raised,PASS
+NEG09,negative_fixture,control character inside CSV field accepted,REJECT,ValidationError raised,PASS
+NEG10,negative_fixture,short row (fewer fields than header) accepted (v081 V2/V3/V4 failure mode),REJECT,ValidationError raised,PASS
+RB_v082_input_and_source_identity.csv,external_readback,"independent stdlib readback: 2 rows, 0 cols, unique file_path, no control chars",no problems,clean,PASS
+RB_v082_harmonics24_validated.csv,external_readback,"independent stdlib readback: 24 rows, 0 cols, unique case_id, no control chars",no problems,clean,PASS
+RB_v082_harmonic_parts_long.csv,external_readback,"independent stdlib readback: 96 rows, 0 cols, unique record_key, no control chars",no problems,clean,PASS
+RB_v082_harmonic_residual24.csv,external_readback,"independent stdlib readback: 24 rows, 0 cols, unique case_id, no control chars",no problems,clean,PASS
+RB_v082_time_series_identity24.csv,external_readback,"independent stdlib readback: 24 rows, 0 cols, unique case_id, no control chars",no problems,clean,PASS
+RB_v082_experimental_parameter_status.csv,external_readback,"independent stdlib readback: 23 rows, 0 cols, unique parameter, no control chars",no problems,clean,PASS
