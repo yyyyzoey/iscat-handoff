@@ -1,0 +1,4 @@
+v083 failures and skipped dependencies
+none: all executable phases A-F completed; no dependency failed
+P0 passive hook intentionally NOT executed (resource-gated, budget preserved) - not a failure
+rule7 large reference: 0 authorisation - not attempted

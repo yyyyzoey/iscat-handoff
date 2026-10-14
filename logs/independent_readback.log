@@ -1,0 +1,12 @@
+tables/v083_correct_center_series_identity24.csv        rows=24 expected=24 cols=30 unique_keys=True control_chars=False -> CLEAN
+tables/v083_pixel_identity_negative_tests.csv           rows= 7 expected= 7 cols=5 unique_keys=True control_chars=False -> CLEAN
+tables/v083_harmonic_complex_closure_X0_corrected.csv   rows=24 expected=24 cols=21 unique_keys=True control_chars=False -> CLEAN
+tables/v083_phase_columns_corrected.csv                 rows=42 expected=42 cols=14 unique_keys=True control_chars=False -> CLEAN
+tables/v083_fullROI_precision4.csv                      rows= 4 expected= 4 cols=25 unique_keys=True control_chars=False -> CLEAN
+tables/v083_exposure64_target2.csv                      rows= 2 expected= 2 cols=24 unique_keys=True control_chars=False -> CLEAN
+tables/v083_nuisance_observables24.csv                  rows=24 expected=24 cols=12 unique_keys=True control_chars=False -> CLEAN
+tables/v083_nuisance_feature_pairwise276.csv            rows=276 expected=276 cols=10 unique_keys=True control_chars=False -> CLEAN
+tables/v083_experimental_parameter_contract.csv         rows=23 expected=23 cols=6 unique_keys=True control_chars=False -> CLEAN
+tables/v083_cost_ledger.csv                             rows=11 expected=11 cols=6 unique_keys=True control_chars=False -> CLEAN
+tables/v083_p0_status.csv                               rows= 2 expected= 2 cols=7 unique_keys=True control_chars=False -> CLEAN
+ALL_CLEAN

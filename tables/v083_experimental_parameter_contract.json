@@ -1,0 +1,19 @@
+{
+  "schema": "iscat083.paramgate.1",
+  "export_time": "2026-10-14",
+  "blocking_gaps_before_magnet_dynamics_to_absolute_D_model": [
+    "total_magnification_or_calibrated_nm_per_px",
+    "objective_model_NA_immersion",
+    "true_exposure_and_trigger",
+    "magnetic_field_amplitude_gradient_geometry_waveform_sync",
+    "particle_batch_material_coating",
+    "actual_particle_position_motion_mechanism"
+  ],
+  "statement": "These cannot be filled from demo parameters; user must provide instrument setup material. Does NOT block phases A-E pure numerical work.",
+  "frozen_states": {
+    "calibration_valid": false,
+    "experimental_validation": false,
+    "detection_validated": false,
+    "single_particle_diameter": "NOT_ESTIMATED"
+  }
+}

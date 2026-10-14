@@ -1,0 +1,8 @@
+v083 native/python execution record
+time_utc: 2026-10-14T15:54:23.712319Z
+host: DESKTOP-RN9651M | python 3.11.7 | numpy 1.26.4 | h5py 3.9.0
+parent_commit: 0fbebbb1db863a7ad79081ea470e907b442781d4 (branch v082)
+phases: A 24/24 SAME_PIXEL_SAME_OPERATOR_VERIFIED + 7 negatives rejected | B X0+phase fixes PASS | C 4 fullROI maps | D 2x64node | E 276 pairs | F params+P0
+
+source_identity_sha256:
+376 files hashed (see source_identity_sha256.csv and manifest_sha256.csv)

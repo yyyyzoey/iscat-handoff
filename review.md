@@ -1,17 +1,16 @@
-# v082 Review
+# v083 Review
 
-## Verdict on v081 (upheld from instruction contract)
-- KEEP: `v081_harmonics24_correct.csv` mathematics (24 rows, rank 9, closure <= 3.9e-14) as a Python/NumPy math result.
-- REJECT as publish: v081 validated/residual/identity/parts tables (ERROR rows / empty), `bin161_absC` dimensional mislabel (raw DFT count presented where dimensionless C belongs), intercept-column documentation mismatch, status over-claim.
-- v081 tables preserved unchanged under `history/`.
+## Verdict on v082 (per instruction contract)
+- RETAINED: the 24/96/24 validated tables, full-rank closure, negative guards, exposure 16/16 evaluations, parameter separation. No re-runs to pad records.
+- CORRECTED: (X1) the v076 `tseries_center` cross-source comparison was a pixel mismatch (legacy field = MATLAB Ipix(21,1), proven numerically); (X2) `C400fit_phase_rad` held the FFT phase; (X3) closure omitted X0 (max 3.5e-21 - verdict unchanged, now explicit); (X4) "path_noise_scale" renamed semantics: deterministic numerical path-difference bound, NOT instrument noise; (X5) exposure convergence limited to finite 16->32 (now 32->64) increments, no general O(M^-2) claim; (X6) completion evidence separated from scientific conclusions.
 
-## What v082 adds
-1. **Phase A**: source identity with SHA-256 for both cached MATs (copies verified byte-identical); 24-case structural verification; corrected-map C400(21,21) cross-check; 10 negative fixtures ALL rejected by the validator (wrong basis label, intercept metadata lie, undefined R, rank-8 acceptance, raw-X-as-C units, closure-gate violation, short CSV row, duplicate keys, control chars, wrong row count).
-2. **Phase B**: full-rank intercept-first harmonic decomposition of the 24 stored centre series; complex closure `Xbin = sum(X_h) + X0 + Xres` with every numerator stored as Re/Im in DFT_count; normalized operators kept separate (`Cbin = 2Xbin/(N*Im)`, `C400fit = A400/Im`); 5 tables with 24/96/24/24 unique-key records verified by independent stdlib readback; 3 small readable MAT samples.
-3. **Phase C**: weak M400 centre diagnostics on 6 fixed conditions. Key finding: the single-precision historical path has noise 2.1e-8..5.7e-8 in |C400|, which SWAMPS the D30 signal (2.7e-9); the double-precision and complex-field-first paths agree to ~1e-17, and D100-level signals are robust. Relative error is flagged meaningful only above 10x the path noise.
-4. **Phase D**: analytic 400 Hz sinc fixture (measured quadrature vs full predicted DFT model match 1e-14; att_M -> |sinc(400 tau)| with O(M^-2) convergence); 16/32-node midpoint exposure integrals for all 8 legacy synthetic conditions = exactly 16 evaluations, deltas vs the inherited v076 5-node results recorded. ALL tau remain SYNTHETIC_TAU; real exposure is MISSING.
-5. **Phase E**: parameter contract separated into USER_CONFIRMED / EXPERIMENTAL_SCRIPT_RECORDED / HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP / SIMULATION_ASSUMPTION / MISSING. The 200 Hz field frequency, 14 um sensor pixel and 50x nominal objective are historical records, not verified final setup; object-space scale remains undetermined (280 nm/px only if no extra magnification; 65 nm/px is demo).
-6. **Phase F**: P0 hook NOT_RUN_RESOURCE_GATED (0 MATLAB processes detected; budget preserved).
+## What v083 adds
+1. **Phase A**: all 24 true-centre (ROI 21,21) series rebuilt from the same five anchors via three documented operators (field-first double, quadratic-form double, quadratic-form float32). The float32 reconstruction matches the v076 small-MAT series to <=4.7e-10 (accumulation-order rounding) for ALL 24 conditions -> SAME_PIXEL_SAME_OPERATOR_VERIFIED. The legacy field is reproduced by the (row21,col1) reconstruction to 9.3e-10 -> bug PROVEN, documented in `history/v076_tseries_center_col1_bug_source.txt`. 7 negative tests all rejected (pixel injection, axis-convention metadata + asymmetric numeric check, wrong ROI 64:268, SHA mismatch, length, map-centre guard).
+2. **Phase B**: X0-explicit complex closure for all 24 (all PASS; v082 historical without-X0 columns preserved); corrected phase columns (42 rows; 12 UNRESOLVED_NEAR_ZERO).
+3. **Phase C**: 4 frozen conditions, full 41x41 double complex C400 maps by bounded streaming (batch<=32, peak 12.1 MB); map-level double-vs-single Frobenius spread 1.1e-5..1.2e-4 quantified; centre diffs consistent with the known single-precision path scale.
+4. **Phase D**: exactly the 2 authorised 64-node midpoint evaluations; both show 32->64 increments smaller than 16->32 (finite convergence evidence only).
+5. **Phase E**: 276-pair screening of fixed observables from the 24 existing maps; within-D amplitude confounding quantified (e.g. D30 A_ROI spans 1.4e-4..0.032); shape is amplitude-eliminated diagnostic only.
+6. **Phase F**: 23-row parameter contract with per-item last-verified status and 6 gating gaps; P0 NOT_RUN_RESOURCE_GATED (0 processes detected - explicitly NOT proof of licence safety).
 
 ## Not claimed
-- No experimental magnetic causality, no particle diameter, no calibration, no physical accuracy. All observables are prescribed synthetic trajectories on cached optical fields. The 400 Hz / 200 Hz association stays ASSOCIATION_ONLY.
+No experimental causality, diameter, calibration, noise model, detectability, or inversion uniqueness. Frozen states unchanged.

@@ -1,0 +1,8 @@
+test_id,description,expected_result,observed_result,status
+NEG-P01,"inject MATLAB (21,1) legacy series as centre",REJECT,rejected: centre identity rejected: max|recon-reference|=4.353e-04 >= gate 1e-08,PASS
+NEG-P02,swapped axis-order convention metadata (undetectable at symmetric centre by series diff; mandatory metadata guard),REJECT,"rejected: extraction convention 'row_first_col_second' rejected: h5py axis1=MATLAB col, axis2=MATLAB row (empirically proven against legacy Ipix(21,1) series); symmetric centre pixels cannot catch a swap, so the convention metadata is mandatory",PASS
+NEG-P02b,"swapped h5py axis order at asymmetric pixel (21,1) breaks pixel identity",REJECT,rejected: centre identity rejected: max|recon-reference|=4.353e-04 >= gate 1e-06,PASS
+NEG-P03,wrong legacy ROI fine 64:268 (v075 offset defect),REJECT,rejected: centre identity rejected: max|recon-reference|=1.326e-04 >= gate 1e-08,PASS
+NEG-P04,source SHA-256 mismatch,REJECT,rejected: source SHA-256 mismatch: 0000000000000000 != 5f674da21940963d,PASS
+NEG-P05,series length != 2001,REJECT,rejected: series length 2000 != 2001,PASS
+NEG-P06,"map element (row21,col1)/(transposed) mistaken for centre C400(21,21)",REJECT,"rejected: map centre identity rejected: candidate differs from C400(21,21) by 1.315e-04",PASS

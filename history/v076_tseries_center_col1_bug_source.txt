@@ -1,0 +1,13 @@
+v076 tseries_center col-1 bug - source evidence
+================================================
+Source: github_handoff/source/run_v076_C_dynamic_center.m line 99 (v082 commit 0fbebbb):
+    'tseries_center',double(Ipix(ci,1,1,:)),'tseries_off1',double(Ipix(ci+5,1,1,:)),...
+Ipix is (L,L,1,N) with (row, col, singleton, frame); ci=(L+1)/2=21.
+Ipix(ci,1,1,:) is therefore MATLAB ROW 21, COLUMN 1 - not the centre Ipix(21,21).
+v083 numerical proof (D60_zf450_M200_a5, pilot):
+  recon of MATLAB (row21,col1) vs stored tseries_center: max|d| = 9.3e-10 (fp rounding)
+  recon of true centre (21,21) vs stored tseries_center: max|d| = 5.273e-4
+  recon of true centre f32 vs v076 small-MAT series:     max|d| = 4.7e-10
+Conclusion: v082_time_series_identity24.csv cross_source_max_absdiff values are
+true_center_vs_legacy_row21_col1 PIXEL MISMATCHES; they must not be read as
+numerical-precision or noise estimates. Historical file preserved read-only.

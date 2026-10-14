@@ -1,0 +1,12 @@
+item,budget_v083,used,unit,status,note
+new_BEM_solve,0,0,count,RESPECTED,no BEM this session
+new_position_field_render,0,0,count,RESPECTED,only v074 cached anchors read
+correct_centre_timeseries_reextraction_24,24,24,count,COMPLETED,Phase A: all 24 rebuilt on true ROI(21x21); legacy bug proven
+fullROI_double_complex_maps,4,4,count,COMPLETED,Phase C: streamed batch<=32; peak 12.1 MB coefficients
+exposure_64node_evaluations,2,2,count,COMPLETED,Phase D: 2 frozen conditions only; v082 16 evals not re-run
+new_analytic_or_error_injection_fixtures,6,6,count,COMPLETED,NEG-P01..P06; NEG-P02/P02b are one axis-order fixture with two assertions (metadata + asymmetric numeric check)
+observable_feature_pair_stats,derived_only,276,pairs,COMPLETED,192 cross-D + 84 same-D; pure algebra
+new_D_zf_material_field_scans,0,0,count,RESPECTED,frozen
+original_7.29_BMP_reread,0,0,count,RESPECTED,untouched
+P0_passive_hook,1,0,count,NOT_RUN_RESOURCE_GATED,not consumed; process state recorded
+rule7_large_reference,0,0,count,RESPECTED,0 authorisations
