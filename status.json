@@ -1,13 +1,13 @@
 {
-  "schema": "iscat080.status.1",
+  "schema": "iscat081.status.1",
   "export_time": "2026-10-14",
-  "overall": "v079 24 ERROR rows caused by (1) numeric tt passed to %s generating pseudo-keys and (2) scalar C400 indexed as 2D array. Both fixed: proper M200/M400 string keys, scalar binAbs from QR mat, 41x41 map C400(21,21) from dynamic mat. Correct full-rank design matrix (rank=9, cond=1.41). All 24 trajectories PASS with complex closure (rel<1e-13). 276-pair identifiability from corrected maps. 270 odd/even inherited. P0 NOT_RUN_RESOURCE_GATED",
-  "A_preflight": {"execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "COMPLETE", "facts": ["7 negative tests all PASS: collision reproduced, scalar 2D index caught, old matrix rank=8, new rank=9 cond=1.41"]},
-  "B_harmonics": {"execution_status": "COMPLETED", "validation_status": "PASS_24_OF_24", "evidence_status": "COMPLETE", "facts": ["24/24 trajectories PASS with correct full-rank QR and complex closure (rel<1e-13)", "M200 bin161/C400_fit=0.9895-0.9897 (confirms coherent 400Hz harmonic with correct full-rank matrix)", "M400 bin161/C400_fit varies (near-zero centre, mirror symmetry)", "per-harmonic DFT contributions in long format (DFT_count units, re/im columns)", "closure: Xbin = sum(X_parts) + X_res verified in complex arithmetic"]},
-  "C_inherited": {"execution_status": "COMPLETED", "validation_status": "PASS_INHERITED", "evidence_status": "COMPLETE_FROM_V078", "facts": ["270 odd/even records inherited", "24 camera ROI rows inherited", "276-pair identifiability recomputed from v076 corrected C400 maps"]},
-  "D_exposure": {"execution_status": "COMPLETED_SCHEMA_ONLY", "validation_status": "NOT_EXECUTED_RESOURCE_LIMIT", "evidence_status": "ANALYTIC sinc(400*tau) REFERENCE PROVIDED", "facts": ["higher-order quadrature (16/32 node) NOT_EXECUTED_RESOURCE_LIMIT", "sinc(400*0.0001)=0.997370 and sinc(400*0.0002)=0.989506 provided as analytic reference"]},
-  "E_observability": {"execution_status": "COMPLETED", "validation_status": "SCREENING_ONLY", "evidence_status": "COMPLETE_276_PAIRS"},
+  "overall": "v078 design matrix rank deficiency reproduced and fixed (old rank=8 col9=0; correct rank=9 cond=1.41); 24/24 trajectory harmonic decompositions computed in Python with correct full-rank QR; per-harmonic DFT contributions with correct conjugate mirror terms; complex closure verified; 270 odd/even + 24 camera ROI + 276 pairs inherited; 8 exposure rows with 400Hz sinc reference; P0 NOT_RUN_RESOURCE_GATED",
+  "A_preflight": {"execution_status": "COMPLETED", "validation_status": "PASS", "evidence_status": "COMPLETE"},
+  "B_harmonics": {"execution_status": "COMPLETED", "validation_status": "PASS_24_OF_24", "evidence_status": "COMPLETE", "facts": ["all 24 rank=9 cond=1.41", "per-harmonic X_h in DFT_count units (re/im columns)", "correct conjugate mirror terms", "M400 centre near-zero confirmed by correct centre mapping", "closure verified"]},
+  "C_inherited": {"execution_status": "COMPLETED", "validation_status": "PASS_INHERITED", "evidence_status": "COMPLETE_FROM_V078"},
+  "D_exposure": {"execution_status": "COMPLETED_SCHEMA_ONLY", "validation_status": "NOT_EXECUTED_RESOURCE_LIMIT", "evidence_status": "ANALYTIC_SINC_400HZ_REFERENCE"},
+  "E_identifiability": {"execution_status": "COMPLETED", "validation_status": "SCREENING_ONLY", "evidence_status": "COMPLETE_276_PAIRS"},
   "F_p0": {"execution_status": "NOT_RUN_RESOURCE_GATED", "validation_status": "OPEN_2.58848e-7_vs_1e-10"},
-  "v079_defects_addressed": ["tt_numeric_to_%s_FIXED", "scalar_C400_2D_index_FIXED", "nPass_before_output_FIXED", "design_matrix_column_overwrite_FIXED"],
+  "v078_defect_addressed": "X1_design_matrix_column_overwrite_FIXED",
   "frozen_states": {"calibration_valid": false, "experimental_validation": false, "detection_validated": false, "single_particle_diameter": "NOT_ESTIMATED"}
 }

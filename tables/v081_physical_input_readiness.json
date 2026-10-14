@@ -1,0 +1,6 @@
+{
+  "schema": "iscat081.physical_input_readiness.1",
+  "confirmed": ["laser 520nm USER_CONFIRMED", "Fs=5000 fps", "primary observable |C400| bin 161"],
+  "missing": ["exposure time", "NA/magnification/object pixel", "drive waveform/reference phase", "batch optical constants", "trajectories/heights"],
+  "frozen_states": {"calibration_valid": false, "experimental_validation": false, "detection_validated": false, "single_particle_diameter": "NOT_ESTIMATED"}
+}

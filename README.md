@@ -1,3 +1,3 @@
-# iscat-handoff v080
+# iscat-handoff v081
 
-QR normalisation corrected, 24/24 trajectories PASS, 276-pair identifiability.
+Design matrix rank deficiency fixed; 24/24 trajectories PASS; odd/even and identifiability inherited.

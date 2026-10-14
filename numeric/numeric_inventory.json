@@ -1,11 +1,11 @@
 {
-  "schema": "iscat080.numeric_inventory.1",
-  "in_zip": [],
+  "schema": "iscat081.numeric_inventory.1",
+  "in_zip": ["v081_harmonics24_correct.csv (24 rows, Python computed)"],
   "workstation_only": [
+    {"path": "v076_return/numeric/v076_center_roi_harmonic_small_examples.mat"},
+    {"path": "v076_return/numeric/v076_dynamic_center_corrected.mat"},
     {"path": "v074_return/numeric/render_cache/*.mat", "count": 30},
     {"path": "v075_return/numeric/render_cache/*.mat", "count": 24},
-    {"path": "v076_return/numeric/v076_dynamic_center_corrected.mat"},
-    {"path": "v076_return/numeric/v076_center_roi_harmonic_small_examples.mat"},
     {"path": "v075_return/numeric/v075_holdout_data.mat", "bytes": 157939329}
   ]
 }
