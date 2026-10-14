@@ -1,0 +1,4 @@
+v084 native/python execution record
+time_utc: 2026-10-14T16:28:40.510074Z
+parent_commit: 79140295855c76cd42f11ae84be7f837ba96f485 (branch v083)
+phases: A0 PILOT_PASS (8/8) | A1 24/24 LEGACY_COL1_NUMERIC_VERIFIED | B 4/4 ORIENTATION_CONFIRMED | C 2/2 maps + shape pair stable | inherited ledger | params/P0

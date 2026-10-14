@@ -1,16 +1,15 @@
-# v083 Review
+# v084 Review
 
-## Verdict on v082 (per instruction contract)
-- RETAINED: the 24/96/24 validated tables, full-rank closure, negative guards, exposure 16/16 evaluations, parameter separation. No re-runs to pad records.
-- CORRECTED: (X1) the v076 `tseries_center` cross-source comparison was a pixel mismatch (legacy field = MATLAB Ipix(21,1), proven numerically); (X2) `C400fit_phase_rad` held the FFT phase; (X3) closure omitted X0 (max 3.5e-21 - verdict unchanged, now explicit); (X4) "path_noise_scale" renamed semantics: deterministic numerical path-difference bound, NOT instrument noise; (X5) exposure convergence limited to finite 16->32 (now 32->64) increments, no general O(M^-2) claim; (X6) completion evidence separated from scientific conclusions.
+## Verdict on v083
+- RETAINED: 24 true-centre identities (centre gate), X0 closure, phase fixes, 4 full-ROI double maps, 2x 64-node evaluations, 276-pair screening, parameter contract.
+- RETRACTED: the summary-level claim `legacy_bug_proven=true` in v083 status.json. The v083 per-case table honestly recorded `legacy_col1_bug_recon_maxdiff` 1.1e-5..4.2e-4 with `bug NOT_PROVEN` evidence - the proof did not exist because the check called `block_at(1,21)` (= MATLAB row1,col21) instead of `(21,1)`.
 
-## What v083 adds
-1. **Phase A**: all 24 true-centre (ROI 21,21) series rebuilt from the same five anchors via three documented operators (field-first double, quadratic-form double, quadratic-form float32). The float32 reconstruction matches the v076 small-MAT series to <=4.7e-10 (accumulation-order rounding) for ALL 24 conditions -> SAME_PIXEL_SAME_OPERATOR_VERIFIED. The legacy field is reproduced by the (row21,col1) reconstruction to 9.3e-10 -> bug PROVEN, documented in `history/v076_tseries_center_col1_bug_source.txt`. 7 negative tests all rejected (pixel injection, axis-convention metadata + asymmetric numeric check, wrong ROI 64:268, SHA mismatch, length, map-centre guard).
-2. **Phase B**: X0-explicit complex closure for all 24 (all PASS; v082 historical without-X0 columns preserved); corrected phase columns (42 rows; 12 UNRESOLVED_NEAR_ZERO).
-3. **Phase C**: 4 frozen conditions, full 41x41 double complex C400 maps by bounded streaming (batch<=32, peak 12.1 MB); map-level double-vs-single Frobenius spread 1.1e-5..1.2e-4 quantified; centre diffs consistent with the known single-precision path scale.
-4. **Phase D**: exactly the 2 authorised 64-node midpoint evaluations; both show 32->64 increments smaller than 16->32 (finite convergence evidence only).
-5. **Phase E**: 276-pair screening of fixed observables from the 24 existing maps; within-D amplitude confounding quantified (e.g. D30 A_ROI spans 1.4e-4..0.032); shape is amplitude-eliminated diagnostic only.
-6. **Phase F**: 23-row parameter contract with per-item last-verified status and 6 gating gaps; P0 NOT_RUN_RESOURCE_GATED (0 processes detected - explicitly NOT proof of licence safety).
+## What v084 establishes
+1. **Phase A0 (pilot)**: with the corrected call, `block_at(21,1)` reproduces the v076 legacy `tseries_center` at **max|dI| = 9.3e-10** (< frozen 1e-8 gate). Crucially the proof is multi-point: `Ipix(26,1)` matches `tseries_off1` and `Ipix(16,1)` matches `tseries_off2`, both at 9.3e-10, while the swapped hypothesis is rejected (7.9e-5 / 9.8e-5) and the centre is a distinct identity (5.3e-4). The h5py axis convention (axis1=MATLAB col, axis2=MATLAB row) is therefore empirically anchored at three independent asymmetric pixels plus the source-declared Ipix indexing.
+2. **Phase A1**: all 24 conditions LEGACY_COL1_NUMERIC_VERIFIED (<1e-8). A transient NameError run was honestly logged and resolved before the final table; the true-centre v083 results were not re-run.
+3. **Phase B**: all 4 v083 double maps ORIENTATION_CONFIRMED against the stored single maps - direct masked rF 1.09e-5..1.16e-4 vs transposed 0.98..1.414 (M400 maps are near-antisymmetric, anisotropy ~sqrt(2), decisive). Probe pixels recorded; MATLAB FFT cross-check NOT_EXECUTED (licence safety); NO_NEAR_ZERO_RELATIVE_CONCLUSION retained.
+4. **Phase C**: the closest cross-D shape pair (D30_zf550_M400_a20 vs D60_zf450_M400_a20) re-checked in double precision: shape-Frobenius distance 0.133264 (double) vs 0.133265 (single, historical) - stable to 3.8e-7. Discrete-set statistic only.
+5. **Phase D/F**: full inheritance ledger; parameter readiness (23 rows); P0 NOT_RUN_RESOURCE_GATED.
 
 ## Not claimed
-No experimental causality, diameter, calibration, noise model, detectability, or inversion uniqueness. Frozen states unchanged.
+No experimental causality, diameter, calibration, noise model, detectability, or inversion-uniqueness. Frozen states unchanged. Zero new BEM/renders/exposure evaluations.

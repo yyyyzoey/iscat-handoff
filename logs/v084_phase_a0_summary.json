@@ -1,0 +1,13 @@
+{
+  "pilot": "D60_zf450_M200_a5",
+  "pilot_pass": true,
+  "n_checks": 8,
+  "all_pass": true,
+  "gate": 1e-08,
+  "matlab_session_step": "NOT_EXECUTED (licence/process safety); HDF5+legacy-field evidence per contract",
+  "sentinels": {
+    "row21_col1_vs_legacy": 9.313225746154785e-10,
+    "row26_col1_vs_off1": 9.313225746154785e-10,
+    "row16_col1_vs_off2": 9.313225746154785e-10
+  }
+}

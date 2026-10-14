@@ -1,0 +1,11 @@
+item,count,origin,status
+v082 24-case full-rank harmonic decomposition,24,v082_harmonics24_validated.csv,INHERITED_READ_ONLY
+v082 96 per-harmonic DFT contributions,96,v082_harmonic_parts_long.csv,INHERITED_READ_ONLY
+v082 24 complex residual records,24,v082_harmonic_residual24.csv,INHERITED_READ_ONLY
+v082 16 exposure evaluations (16/32-node),16/16 used,v082_exposure16_convergence.csv,INHERITED_BUDGET_CONSUMED
+v083 24 true-centre identities (centre gate <1e-8),24,v083_correct_center_series_identity24.csv,INHERITED_READ_ONLY
+v083 X0-explicit complex closure (24/24 PASS),24,v083_harmonic_complex_closure_X0_corrected.csv,INHERITED_READ_ONLY
+v083 4 full-ROI double maps,4,v083_fullROI_precision4.csv + numeric/*.mat,INHERITED_ORIENTATION_CONFIRMED_V084B
+v083 2x 64-node exposure evaluations,2/2 used,v083_exposure64_target2.csv,INHERITED_BUDGET_CONSUMED
+v083 276-pair observable screening,276,v083_nuisance_feature_pairwise276.csv,INHERITED_READ_ONLY
+270 odd/even + 24 camera ROI pairs,inherited,v078 lineage,INHERITED_READ_ONLY

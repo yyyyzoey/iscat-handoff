@@ -1,0 +1,9 @@
+{
+  "total": 24,
+  "verified": 24,
+  "spread": 0,
+  "blocked": 0,
+  "negative_tests": 7,
+  "negative_all_rejected": true,
+  "legacy_bug_proven": true
+}

@@ -1,0 +1,24 @@
+parameter,status_category,value_or_state,blocks_allows_note
+laser_vacuum_wavelength_nm,USER_CONFIRMED,520,allows real optical forward input
+camera_Fs_fps,EXPERIMENTAL_SCRIPT_RECORDED,5000,this batch only
+analysis_frames,EXPERIMENTAL_SCRIPT_RECORDED,2001 (1000:3000),this batch only
+dft_bin161_actual_Hz,EXPERIMENTAL_SCRIPT_RECORDED,399.800099950025,candidate primary observable
+ac_magnetic_field_frequency_Hz,HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP,200,amplitude/geometry/waveform missing; 2f causality unestablished
+camera_sensor_pixel_um,HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP,14,object-space scale NOT closed
+objective_nominal_magnification,HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP,50x,total magnification unverified
+object_space_scale_nm_per_px,MISSING,UNDETERMINED,blocks experimental absolute-D inversion
+camera_exposure_time_s,MISSING,UNDETERMINED,100/200us = SYNTHETIC_TAU only
+camera_trigger_mode,MISSING,UNDETERMINED,
+imaging_NA,MISSING,UNDETERMINED,NA1.3 is simulation assumption
+objective_model_immersion,MISSING,UNDETERMINED,
+illumination_incidence_polarization,MISSING,UNDETERMINED,
+reference_beam_geometry,MISSING,UNDETERMINED,
+magnetic_field_amplitude_direction_gradient,MISSING,UNDETERMINED,motion NOT preset to 5/20nm
+Bt_image_synchronization,MISSING,UNDETERMINED,no magnetic phase reference
+sample_batch_magnetic_material,MISSING_PARTIAL_HISTORICAL,nominal 100nm Fe3O4,Querry 1985 = literature
+particle_coating_medium_interface_fixation,MISSING,UNDETERMINED,glass/water/5nm gap = simulation
+particle_diameter_nm,MISSING,NOT_ESTIMATED,frozen state unchanged
+demo_object_pixel_nm,SIMULATION_ASSUMPTION,65,demo grid only
+demo_translation_amplitudes_nm,SIMULATION_ASSUMPTION,"5, 20",prescribed kinematics
+demo_focus_planes_nm,SIMULATION_ASSUMPTION,"450, 550",
+material_constants_source,SIMULATION_ASSUMPTION,Fe3O4 Querry 1985; Au 520nm measured,

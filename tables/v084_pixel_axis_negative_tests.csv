@@ -1,0 +1,13 @@
+test_id,description,expected_result,observed_result,status
+POS_legacy_row21_col1,POS_legacy_row21_col1 vs tseries_center (matlab r21 c1),MATCH,max|dI|=9.3132257461547852e-10,PASS
+POS_off1_row26_col1,POS_off1_row26_col1 vs tseries_off1 (matlab r26 c1),MATCH,max|dI|=9.3132257461547852e-10,PASS
+POS_off2_row16_col1,POS_off2_row16_col1 vs tseries_off2 (matlab r16 c1),MATCH,max|dI|=9.3132257461547852e-10,PASS
+NEG_swapped_row1_col21,NEG_swapped_row1_col21 vs tseries_center (matlab r1 c21),REJECT,max|dI|=9.8134856671094894e-05,PASS
+NEG_swapped_row1_col26,NEG_swapped_row1_col26 vs tseries_off1 (matlab r1 c26),REJECT,max|dI|=7.8722834587097168e-05,PASS
+NEG_centre_is_not_legacy,NEG_centre_is_not_legacy vs tseries_center (matlab r21 c21),REJECT,max|dI|=0.00052733160555362701,PASS
+POS_true_centre_row21_col21,POS_true_centre_row21_col21 vs small-MAT series (matlab r21 c21),MATCH,max|dI|=4.6566128730773926e-10,PASS
+POS_centre_and_legacy_distinct,"POS_centre_and_legacy_distinct vs recon(21,1) vs recon(21,21) (matlab r21 c1)",DISTINCT,max|dI|=0.00052733207121491432,PASS
+NEG-ORIENT_D30_zf450_M400_a5,transposed stored map must NOT match double map,REJECT,rF_transposed=1.4142141034738116 >> rF_direct=0.00011572174250301473,PASS
+NEG-ORIENT_D30_zf550_M400_a5,transposed stored map must NOT match double map,REJECT,rF_transposed=1.4142175240995647 >> rF_direct=0.00010510632514756693,PASS
+NEG-ORIENT_D60_zf450_M400_a5,transposed stored map must NOT match double map,REJECT,rF_transposed=1.4142138387272476 >> rF_direct=1.3780168715657773e-05,PASS
+NEG-ORIENT_D100_zf450_M200_a20,transposed stored map must NOT match double map,REJECT,rF_transposed=0.98103255044527971 >> rF_direct=1.0949477644119055e-05,PASS

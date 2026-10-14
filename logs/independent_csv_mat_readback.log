@@ -1,0 +1,16 @@
+v084 independent readback (clean session):
+time_utc: 2026-10-14T16:29:50.191684Z
+
+tables/v084_asymmetric_pixel_pilot.csv                  rows= 8 expected= 8 cols=13 unique_keys=True control_chars=False -> CLEAN
+tables/v084_legacy_col1_identity24.csv                  rows=24 expected=24 cols=27 unique_keys=True control_chars=False -> CLEAN
+tables/v084_pixel_axis_negative_tests.csv               rows=12 expected=12 cols=5 unique_keys=True control_chars=False -> CLEAN
+tables/v084_roi_orientation4.csv                        rows= 4 expected= 4 cols=14 unique_keys=True control_chars=False -> CLEAN
+tables/v084_nearest_shape_pair_double2.csv              rows= 2 expected= 2 cols=23 unique_keys=True control_chars=False -> CLEAN
+tables/v084_existing_harmonic_exposure_inherited.csv    rows=10 expected=10 cols=4 unique_keys=True control_chars=False -> CLEAN
+tables/v084_parameter_readiness.csv                     rows=23 expected=23 cols=4 unique_keys=True control_chars=False -> CLEAN
+tables/v084_cost_ledger.csv                             rows=11 expected=11 cols=5 unique_keys=True control_chars=False -> CLEAN
+tables/v084_p0_status.csv                               rows= 2 expected= 2 cols=7 unique_keys=True control_chars=False -> CLEAN
+numeric/v084_double_C400_D30_zf550_M400_a20.mat         shape=(41, 41) finite_on_mask=True -> CLEAN
+numeric/v084_double_C400_D60_zf450_M400_a20.mat         shape=(41, 41) finite_on_mask=True -> CLEAN
+numeric/v084_asymmetric_pixel_pilot.npz                 series=2001 pilot_gate=<1e-8 -> CLEAN
+ALL_CLEAN

@@ -1,0 +1,7 @@
+v084 case failures and stacktraces
+transient (resolved during session, before any evidence table was finalised):
+  run_v084_legacy_col1_recheck.py first run: NameError FS not imported -> all 24 rows recorded as LEGACY_COL1_NUMERIC_FAILED (honest failure rows);
+  import fixed and re-run: 24/24 LEGACY_COL1_NUMERIC_VERIFIED. The failed run performed no data corruption (pure in-memory).
+  run_v084_roi_orientation_validation.py first run: OSError reading scipy-savemat v5 file with h5py -> switched to scipy.io.loadmat.
+persistent failures: none
+skipped by design: MATLAB extract_fft_v073 cross-check (NOT_EXECUTED, licence/process safety); MATLAB Ipix shape session (NOT_EXECUTED, source-derived shape recorded); P0 hook (resource-gated)

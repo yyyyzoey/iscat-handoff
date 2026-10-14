@@ -1,0 +1,12 @@
+item,budget,used,status,note
+new_BEM_solve,0,0,RESPECTED,
+new_position_field_render,0,0,RESPECTED,only v074 cached anchors
+"A0 pilot legacy(row21,col1) reconstruction",1,1,COMPLETED,included in the 24
+"A1 legacy(row21,col1) 24-state recheck",24,24,COMPLETED,all VERIFIED at max|dI|<1e-8
+B orientation validation of 4 double maps,0 new evals preferred,0,COMPLETED,pure file/array comparison
+C nearest-shape-pair double full-ROI maps,2,2,COMPLETED,explicitly authorised narrow addition
+new exposure quadrature evaluations,0,0,RESPECTED,"v082 16/16 and v083 2/2 consumed, not reset"
+new D/zf/a/f/material/tau/noise points,0,0,RESPECTED,
+original 7.29 BMP rereads,0,0,RESPECTED,
+P0 passive hook,1 (inherited),0,NOT_RUN_RESOURCE_GATED,
+rule7 large reference,0,0,RESPECTED,
