@@ -1,0 +1,5 @@
+v085 failures and stacktraces
+transient (resolved before final evidence tables):
+  run_v085_preflight.py: NEG-S03/NAG-S07 initially vacuous (self-defeating test params / missing finite check) -> guards fixed, 8/8 rejected
+persistent failures: none
+skipped by design: MATLAB native FFT cross-check and P0 hook (licence/process safety, resource-gated)

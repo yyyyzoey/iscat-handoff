@@ -1,0 +1,12 @@
+item,budget,used,status,note
+new_BEM_solve,0,0,RESPECTED,
+new_position_field_render,0,0,RESPECTED,only v074 cached anchors
+A preflight (cache/identity/negative tests),zero expensive compute,0,COMPLETED,"8 sources frozen, 6 caches verified, 3 sentinels, 8 negatives"
+B operator regression (field-first vs QF),2,2,COMPLETED,REGRESSION_PASS both; rF 1.6e-14 / 2.8e-13
+C new double full-ROI maps,18,18,COMPLETED,6 inherited caches reused; 24/24 DOUBLE_MAP_VERIFIED
+D 276-pair stability + epsilon24,derived only,276 pairs,COMPLETED,192 cross-D + 84 same-D; pure algebra
+new exposure quadrature,0,0,RESPECTED,"v082 16/16, v083 2/2 consumed"
+new D/zf/a/f/material/tau/noise points,0,0,RESPECTED,
+original 7.29 BMP rereads,0,0,RESPECTED,
+P0 passive hook,1 (inherited),0,NOT_RUN_RESOURCE_GATED,
+rule7 large reference,0,0,RESPECTED,

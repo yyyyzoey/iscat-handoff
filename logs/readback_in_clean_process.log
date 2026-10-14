@@ -1,0 +1,39 @@
+v085 independent readback (clean session):
+time_utc: 2026-10-14T18:29:00.665168Z
+
+tables/v085_source_identity_and_fine_slices.csv         rows= 18 cols=7 unique_keys=True control_chars=False -> CLEAN
+tables/v085_preflight_negative_tests.csv                rows=  8 cols=5 unique_keys=True control_chars=False -> CLEAN
+tables/v085_operator_regression2.csv                    rows=  2 cols=22 unique_keys=True control_chars=False -> CLEAN
+tables/v085_double_maps24_status.csv                    rows= 24 cols=21 unique_keys=True control_chars=False -> CLEAN
+tables/v085_double_vs_single_24.csv                     rows= 24 cols=9 unique_keys=True control_chars=False -> CLEAN
+tables/v085_shape_numerical_delta24.csv                 rows= 24 cols=12 unique_keys=True control_chars=False -> CLEAN
+tables/v085_pairwise_276_stability.csv                  rows=276 cols=11 unique_keys=True control_chars=False -> CLEAN
+tables/v085_feature_nuisance_summary.csv                rows= 13 cols=2 unique_keys=True control_chars=False -> CLEAN
+tables/v085_parameter_readiness.csv                     rows= 23 cols=4 unique_keys=True control_chars=False -> CLEAN
+tables/v085_budget_ledger.csv                           rows= 11 cols=5 unique_keys=True control_chars=False -> CLEAN
+tables/v085_p0_status.csv                               rows=  2 cols=7 unique_keys=True control_chars=False -> CLEAN
+numeric/C400_double_D100_zf450_M200_a5.mat              shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D100_zf450_M400_a20.mat             shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D100_zf450_M400_a5.mat              shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D100_zf550_M200_a20.mat             shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D100_zf550_M200_a5.mat              shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D100_zf550_M400_a20.mat             shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D100_zf550_M400_a5.mat              shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D30_zf450_M200_a20.mat              shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D30_zf450_M200_a5.mat               shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D30_zf450_M400_a20.mat              shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D30_zf550_M200_a20.mat              shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D30_zf550_M200_a5.mat               shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D60_zf450_M200_a20.mat              shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D60_zf450_M200_a5.mat               shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D60_zf550_M200_a20.mat              shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D60_zf550_M200_a5.mat               shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D60_zf550_M400_a20.mat              shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/C400_double_D60_zf550_M400_a5.mat               shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/v083_fullROI_double_C400_D100_zf450_M200_a20.mat shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/v083_fullROI_double_C400_D30_zf450_M400_a5.mat  shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/v083_fullROI_double_C400_D30_zf550_M400_a5.mat  shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/v083_fullROI_double_C400_D60_zf450_M400_a5.mat  shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/v084_double_C400_D30_zf550_M400_a20.mat         shape=(41,41) complex finite_on_mask=True -> CLEAN
+numeric/v084_double_C400_D60_zf450_M400_a20.mat         shape=(41,41) complex finite_on_mask=True -> CLEAN
+ALL_CLEAN

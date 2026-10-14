@@ -1,0 +1,8 @@
+{
+  "phase": "A",
+  "sources_frozen": 8,
+  "caches_verified": 6,
+  "sentinels_pass": 3,
+  "negative_tests": 8,
+  "gate_released_to_B": true
+}

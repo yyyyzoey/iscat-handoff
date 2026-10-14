@@ -1,0 +1,5 @@
+v085 execution record
+time_utc: 2026-10-14T18:26:48.053365Z
+parent_commit: 517ac105948e20b48677b994d8de10cad2c1388b (branch v084)
+commands: python source/run_v085_preflight.py; python source/run_v085_operator_regression.py; python source/run_v085_complete_double_maps.py; python source/run_v085_feature_stability.py; python source/run_v085_assembly_tables.py
+phases: A gate released | B REGRESSION_PASS 2/2 | C 18 new + 6 inherited = 24/24 VERIFIED | D 276/276 evaluated

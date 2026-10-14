@@ -1,0 +1,17 @@
+{
+  "phase": "D",
+  "pairs": 276,
+  "cross_D": 192,
+  "same_D": 84,
+  "common_mask_pixels": 1681,
+  "eps_range": [
+    2.017163851713166e-06,
+    0.0060336594061311975
+  ],
+  "nearest_cross_D_double": "0.13326434264817294",
+  "nearest_pair": "D30_zf550_M400_a20 vs D60_zf450_M400_a20",
+  "nearest_changed_vs_single": "NO",
+  "margin_to_second": "8.8930964010108804e-05",
+  "min_same_D": "0.0021658817164796106",
+  "max_cross_D": "0.94916857094740759"
+}

@@ -1,0 +1,14 @@
+metric,value
+n_common_mask_pixels,1681
+per_state_mask_pixels_min,1681
+per_state_mask_pixels_max,1681
+epsilon_min,2.0171638517131659e-06
+epsilon_max,0.0060336594061311975
+nearest_cross_D_pair_double,D30_zf550_M400_a20 vs D60_zf450_M400_a20
+nearest_cross_D_d_double,0.13326434264817294
+nearest_cross_D_d_single,0.13326472532638595
+nearest_cross_D_changed_vs_single,NO
+margin_to_second_nearest_double,8.8930964010108804e-05
+boundary,"triangle bound = numerical-path conservative bound for THIS algorithm/cache; not physical model error, instrument noise, or diameter CI"
+min_same_D_d_double,0.0021658817164796106
+max_cross_D_d_double,0.94916857094740759

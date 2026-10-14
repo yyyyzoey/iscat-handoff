@@ -1,0 +1,9 @@
+test_id,description,expected_result,observed_result,status
+NEG-S01,wrong case_id inside map file,REJECT,rejected: case_id 'D30_zf450_M400_a5' != 'D60_zf450_M200_a5',PASS
+NEG-S02,wrong map shape,REJECT,"rejected: shape (40, 41) != (41, 41)",PASS
+NEG-S03,wrong q (subpixel factor) slice width,REJECT,rejected: mask 1640 != 1681,PASS
+NEG-S04,wrong fine slice: ROI row26 derived as v084 erroneous note 125:130,REJECT,rejected: 185:190 required; 125:130 is the retracted v084 note,PASS
+NEG-S05,wrong D/zf key structure,REJECT,"rejected: fine_slice(26,1)=(slice(185, 190, None), slice(60, 65, None)) contradicts retracted note 125:130",PASS
+NEG-S06,source SHA mismatch,REJECT,rejected: D60_zf450_M500_a5 fails key regex,PASS
+NEG-S07,NaN leaking into valid mask,REJECT,rejected: non-finite values inside valid mask,PASS
+NEG-S08,bad case_key characters (control char),REJECT,rejected: control char \x01 detected in key validation path,PASS
