@@ -1,5 +1,5 @@
 v088 independent readback (clean session):
-time_utc: 2026-10-15T10:04:59.512476Z
+time_utc: 2026-10-15T10:05:50.164880Z
 
 tables/v088_spectral_bins_corrected.csv                    rows=   8 expected=   8 cols=8 unique=True control=False -> CLEAN
 tables/v088_rank_fixtures_validated.csv                    rows=   4 expected=   4 cols=6 unique=True control=False -> CLEAN
