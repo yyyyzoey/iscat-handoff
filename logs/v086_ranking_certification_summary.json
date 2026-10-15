@@ -1,0 +1,26 @@
+{
+  "phase": "C",
+  "pairs": 276,
+  "cross_D": 192,
+  "same_D": 84,
+  "observed_rank_same_between_two_paths": "YES",
+  "rank_certified_by_reported_triangle_intervals": "NO",
+  "nearest_cross_D_pair": "D30_zf550_M400_a20__vs__D60_zf450_M400_a20",
+  "nearest_d_double": "0.13326434264817294",
+  "nearest_interval": [
+    "0.13323436067213862",
+    "0.13329432462420726"
+  ],
+  "second_pair": "D30_zf550_M400_a5__vs__D60_zf450_M400_a20",
+  "second_d_double": "0.13335327361218305",
+  "second_interval": [
+    "0.13324433560969901",
+    "0.13346221161466709"
+  ],
+  "intervals_overlap": "YES",
+  "overlapping_candidates_count": 1,
+  "margin_d2_minus_d1": "8.8930964010108804e-05",
+  "b1_plus_b2": "0.00013891997851835059",
+  "nuisance_24_of_24_same_D_nearest": 24,
+  "interpretation": "continuous-D identifiability NOT established; in-sample geometry screen only"
+}

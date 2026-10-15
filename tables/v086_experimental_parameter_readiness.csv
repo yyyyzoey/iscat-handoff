@@ -1,0 +1,21 @@
+parameter,status_category,value_or_state,blocking_note
+object_space_scale_nm_per_px,MISSING,UNDETERMINED,blocks: experimental absolute-D inversion; 280nm/px ONLY IF 14um/50x with no extra magnification (unverified); demo 65nm/px is NOT calibration
+objective_model_NA_immersion,MISSING,UNDETERMINED,blocks: PSF match to demo system
+illumination_incidence_polarization_reference_geometry,MISSING,UNDETERMINED,blocks: interference reference match
+true_exposure_gain_trigger_time_origin,MISSING,UNDETERMINED,100/200us are SYNTHETIC_TAU fixtures
+magnetic_field_amplitude_vector_gradient_waveform_sync,MISSING,UNDETERMINED,200Hz frequency record only; motion mechanism (none/lateral/axial/rotation) NOT selectable from one 400Hz peak
+particle_batch_core_coating_medium_fixation_interface,MISSING_PARTIAL_HISTORICAL,nominal 100nm recorded; batch material unverified,needs TEM/SEM/DLS + measured 520nm complex permittivity
+independent_calibration_standard_noise_background,MISSING,UNDETERMINED,needed for any detectability/error claim; in-sample 24-state distances are NOT independent validation
+laser_vacuum_wavelength_nm,USER_CONFIRMED,520,allows real optical forward input
+camera_Fs_fps,EXPERIMENTAL_SCRIPT_RECORDED,5000,this batch only
+analysis_frames,EXPERIMENTAL_SCRIPT_RECORDED,2001 (1000:3000),this batch only
+dft_bin161_actual_Hz,EXPERIMENTAL_SCRIPT_RECORDED,399.800099950025,k0=160 (0-based) / MATLAB bin 161
+ac_magnetic_field_frequency_Hz,HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP,200,
+camera_sensor_pixel_um,HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP,14,
+objective_nominal_magnification,HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP,50x,
+demo_object_pixel_nm,SIMULATION_ASSUMPTION,65,
+demo_translation_amplitudes_nm,SIMULATION_ASSUMPTION,"5, 20",
+demo_focus_planes_nm,SIMULATION_ASSUMPTION,"450, 550",
+demo_NA_gap_medium,SIMULATION_ASSUMPTION,1.3 / 5nm / glass-water,
+material_constants_source,SIMULATION_ASSUMPTION,Fe3O4 Querry 1985; Au 520nm measured,
+particle_diameter_nm,MISSING,NOT_ESTIMATED,frozen state unchanged

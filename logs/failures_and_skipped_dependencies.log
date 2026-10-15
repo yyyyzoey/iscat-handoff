@@ -1,4 +1,6 @@
-v083 failures and skipped dependencies
-none: all executable phases A-F completed; no dependency failed
-P0 passive hook intentionally NOT executed (resource-gated, budget preserved) - not a failure
-rule7 large reference: 0 authorisation - not attempted
+v086 failures and skipped dependencies
+transient (resolved before final tables):
+  v086_verify_v085_tables.py first run: NameError (D/zf not unpacked in loop) -> 24 honest failure rows; fixed and re-run: 24/24 VERIFIED
+  v086_experimental_cached_observable_interface.py: duplicate CSV column name source/SOURCE -> renamed object_name; k check initially 0-based-only -> now records 161(MATLAB)/160(0-based)
+persistent failures: none
+skipped by design: MATLAB native session steps and P0 hook (licence/process safety, resource-gated)

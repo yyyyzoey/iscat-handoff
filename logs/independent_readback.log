@@ -1,12 +1,12 @@
-tables/v083_correct_center_series_identity24.csv        rows=24 expected=24 cols=30 unique_keys=True control_chars=False -> CLEAN
-tables/v083_pixel_identity_negative_tests.csv           rows= 7 expected= 7 cols=5 unique_keys=True control_chars=False -> CLEAN
-tables/v083_harmonic_complex_closure_X0_corrected.csv   rows=24 expected=24 cols=21 unique_keys=True control_chars=False -> CLEAN
-tables/v083_phase_columns_corrected.csv                 rows=42 expected=42 cols=14 unique_keys=True control_chars=False -> CLEAN
-tables/v083_fullROI_precision4.csv                      rows= 4 expected= 4 cols=25 unique_keys=True control_chars=False -> CLEAN
-tables/v083_exposure64_target2.csv                      rows= 2 expected= 2 cols=24 unique_keys=True control_chars=False -> CLEAN
-tables/v083_nuisance_observables24.csv                  rows=24 expected=24 cols=12 unique_keys=True control_chars=False -> CLEAN
-tables/v083_nuisance_feature_pairwise276.csv            rows=276 expected=276 cols=10 unique_keys=True control_chars=False -> CLEAN
-tables/v083_experimental_parameter_contract.csv         rows=23 expected=23 cols=6 unique_keys=True control_chars=False -> CLEAN
-tables/v083_cost_ledger.csv                             rows=11 expected=11 cols=6 unique_keys=True control_chars=False -> CLEAN
-tables/v083_p0_status.csv                               rows= 2 expected= 2 cols=7 unique_keys=True control_chars=False -> CLEAN
+v086 independent readback (clean session):
+time_utc: 2026-10-15T08:41:33.523177Z
+
+tables/v086_production_negative_tests.csv                  rows= 11 expected= 11 cols=9 unique=True control=False -> CLEAN
+tables/v086_24map_source_identity.csv                      rows= 24 expected= 24 cols=21 unique=True control=False -> CLEAN
+tables/v086_276_pair_distance_intervals.csv                rows=276 expected=276 cols=16 unique=True control=False -> CLEAN
+tables/v086_24state_same_cross_nuisance.csv                rows= 24 expected= 24 cols=8 unique=True control=False -> CLEAN
+tables/v086_cached_experimental_observable_interface.csv   rows=  5 expected=  5 cols=7 unique=True control=False -> CLEAN
+tables/v086_experimental_parameter_readiness.csv           rows= 20 expected= 20 cols=4 unique=True control=False -> CLEAN
+tables/v086_budget_ledger.csv                              rows= 11 expected= 11 cols=5 unique=True control=False -> CLEAN
+tables/v086_p0_status.csv                                  rows=  2 expected=  2 cols=7 unique=True control=False -> CLEAN
 ALL_CLEAN

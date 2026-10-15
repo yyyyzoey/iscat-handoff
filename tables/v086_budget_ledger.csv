@@ -1,0 +1,12 @@
+item,budget,used,status,note
+new_BEM_solve,0,0,RESPECTED,
+new_position_field_render,0,0,RESPECTED,
+A production guard fixes + 8 injections + 1 positive + detector,8+1,10 tests,COMPLETED,incl. escape and hardcoded-throw detector; heavy_compute_calls=0
+B 24-map file/array identity re-verification,24 read-only,24,COMPLETED,"SHA vs frozen ledger, rF/epsilon recomputed from arrays"
+C 276-pair recompute + rank certification intervals,276 pure algebra,276,COMPLETED,rank_certified=NO (nearest two intervals overlap)
+D experimental cached observable interface,read-only,4 sources,COMPLETED,OPERATOR_MATCH / SPATIAL_CALIBRATION=MISSING / NUMERIC_ONLY
+new 2001-frame evaluations,0,0,RESPECTED,
+original 7.29 BMP rereads,0,0,RESPECTED,
+new D/zf/a/f/tau/noise points,0,0,RESPECTED,
+P0 passive hook,1 (inherited),0,NOT_RUN_RESOURCE_GATED,
+rule7 large reference,0,0,RESPECTED,

@@ -1,0 +1,7 @@
+{
+  "phase": "A",
+  "tests": 11,
+  "all_pass": true,
+  "positive_case": "POS-G00 through real validate_map_metadata",
+  "heavy_compute_calls_total": 0
+}

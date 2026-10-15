@@ -1,0 +1,12 @@
+test_id,injected_field,expected_guard,observed_exception_type,observed_exception_message,production_validator_called,heavy_compute_calls_before_rejection,sourceSHA,status
+POS-G00,well-formed map object (in-memory),no error,no exception,passed,YES,0,-,PASS
+NEG-G01,internal case_id mismatch,IdentityError,IdentityError,internal case_id 'D30_zf450_M400_a5' != expected 'D60_zf450_M200_a5',YES,0,-,PASS
+NEG-G02,"C400 shape (40,41)",ShapeError,ShapeError,"C400_double shape (40, 41) != (41, 41)",YES,0,-,PASS
+NEG-G03,q=4 violates frozen q=5,GeometryError,GeometryError,subpixel factor q=4 violates frozen q=5,YES,0,-,PASS
+NEG-G04,"row26/col1 claimed slices (125,130) instead of (185,190)",GeometryError,GeometryError,"fine slices ((185, 190), (60, 65)) != frozen geometry ((125, 130), (60, 65)) (row 26, col 1, q 5)",YES,0,-,PASS
+NEG-G05,case key grammar rejects M500,CaseKeyError,CaseKeyError,case key 'D60_zf450_M500_a5' does not match the frozen 24-state grammar,YES,0,-,PASS
+NEG-G06,claimed SHA != actual file bytes,SourceHashError,SourceHashError,file SHA bff535612a86891c != frozen ledger 0000000000000000 for C400_double_D60_zf550_M400_a5.mat,YES,0,-,PASS
+NEG-G07,NaN inside valid mask,MaskError,MaskError,non-finite C400 values inside the valid mask,YES,0,-,PASS
+NEG-G08,control char / escape in case key,CaseKeyError,CaseKeyError,control character in case key: 'D60_zf450_M200_a5\x01',YES,0,-,PASS
+NEG-G08b,SQL/quote escape cannot form a frozen key,CaseKeyError,CaseKeyError,"case key ""D60_zf450_M200_a5' OR '1'='1"" does not match the frozen 24-state grammar",YES,0,-,PASS
+NEG-G09,hardcoded-throw validator (v085 style),framework detects validators rejecting even valid input,RuntimeError,detector: fake validator rejects the POSITIVE case -> insufficient; real guard accepted it,YES,0,-,PASS

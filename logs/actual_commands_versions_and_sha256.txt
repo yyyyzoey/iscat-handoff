@@ -1,0 +1,6 @@
+v086 execution record
+time_utc: 2026-10-15T08:41:11.490028Z
+host: DESKTOP-RN9651M | python 3.11.7 | numpy 1.26.4
+parent_commit: 9d34f12d7faea45e3f553e4dff683237b4a038e8 (branch v085)
+commands: python source/v086_negative_tests.py; python source/v086_verify_v085_tables.py; python source/v086_recompute_24_maps_and_276_pairs.py; python source/v086_experimental_cached_observable_interface.py; python source/run_v086_assembly_tables.py
+phases: A 10/10 guards | B 24/24 ARRAY_RECHECK_VERIFIED | C 276/276, rank_certified=NO | D OPERATOR_MATCH/MISSING/NUMERIC_ONLY
