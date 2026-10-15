@@ -1,0 +1,20 @@
+{
+  "source_tables": {
+    "v086": "d92651efa4d8bb437c9efec7e571376108bc6c02e4a4a786e3c904de532eec2b",
+    "v085": "8333776979108d5c62e714b249af021618168e6f5e2165b6c4bef1de872d6eaf"
+  },
+  "n_cross_D_candidates": 192,
+  "argmin_single_pair": "D30_zf550_M400_a20__vs__D60_zf450_M400_a20",
+  "argmin_single_distance": "0.13326472532638595",
+  "argmin_double_pair": "D30_zf550_M400_a20__vs__D60_zf450_M400_a20",
+  "argmin_double_distance": "0.13326434264817294",
+  "observed_rank_same_between_two_paths": "YES",
+  "v086_old_criterion": "per-pair proxy |d_d-d_s|<=b (mathematical necessity, not an argmin comparison)",
+  "certification_criterion": "nearest_hi < min(other_lo), strict; endpoint touching = NOT certified",
+  "nearest_hi": "0.13329432462420726",
+  "min_other_lo": "0.13324433560969901",
+  "triangle_interval_certified": "NO",
+  "v086_not_certified_result_stands": true,
+  "interpretation": "single- and double-precision paths select DIFFERENT nearest cross-D pairs at the reported distances; the conservative triangle intervals overlap, so no rank is certified; this is a numerical-path statement, not physics",
+  "fixtures_all_pass": true
+}

@@ -1,0 +1,4 @@
+fixture_id,description,v086_old_criterion_result,v087_correct_criterion_verdict,expected,detail,status
+FIX1_argmin_swap,two cross-D pairs each satisfy |d_d-d_s|<=b but argmins swap between paths,YES (wrong: proxy only checks per-pair bound),NO,NO,"argmin_single=A, argmin_double=B; both per-pair bounds hold (True)",PASS
+FIX2_endpoint_touch,nearest_hi == other_lo exactly (touching intervals),potentially YES (overlap logic with >= tolerance),NO,NO,hi 0.11 == lo 0.1; strict < required,PASS
+FIX3_separated,genuinely separated intervals,YES,YES,YES,hi 0.105 < lo 0.115,PASS

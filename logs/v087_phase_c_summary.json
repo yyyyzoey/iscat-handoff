@@ -1,0 +1,14 @@
+{
+  "phase": "C",
+  "orientation": "A_direct",
+  "errA_direct": "2.5196328030245219e-08",
+  "errB_transposed": "0.069785158243757847",
+  "probes_pass": true,
+  "max_abs_dX_vs_stored": 1.0567185548122951e-07,
+  "max_abs_dC_vs_stored": 2.3512195579686795e-07,
+  "max_abs_dImean": 8.541433469261284e-07,
+  "mask_rule_disagreements": 0,
+  "crop_status": "CROP_IDENTITY_CONFIRMED",
+  "new_2001frame_SIMULATIONS": 0,
+  "note": "cached-video re-analysis only (authorised single 41x41x2001 FFT pass)"
+}

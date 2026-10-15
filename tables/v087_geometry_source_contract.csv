@@ -1,0 +1,8 @@
+item,value,status
+fine_slice_source,v086_identity_guard.fine_slice (single shared source); mirrors v083_common.fine_slice,PROVEN_BY_VERSIONED_SOURCE
+q,5 (frozen),PROVEN_BY_VERSIONED_SOURCE
+h5py_axis_convention,"axis1=MATLAB col, axis2=MATLAB row (anchored v084 at (21,1),(26,1),(16,1))",PROVEN_BY_VERSIONED_SOURCE
+map_loader_mask_check,load_double_map validates mask shape/1681/finite; mask RULE recheck added as check_mask_rule (v087),IMPLEMENTED_V087
+heavy_compute_counter,v086 HEAVY_CALLS was a test-local stub; renamed TEST_FRAMEWORK_LOCAL and NOT claimed as production instrumentation,HONESTY_FIX_V087
+NEG-G09,renamed TEST_FRAMEWORK_SELFTEST (not a data-level guard),RENAMED_V087
+old demo MAT q/coord metadata,not stored in MAT files; provenance via versioned fine_slice source,PROVEN_BY_VERSIONED_SOURCE

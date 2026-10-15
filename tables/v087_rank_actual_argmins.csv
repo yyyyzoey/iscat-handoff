@@ -1,0 +1,5 @@
+record_key,path,rank,pair_id,distance
+single|1,single,1,D30_zf550_M400_a20__vs__D60_zf450_M400_a20,0.13326472532638595
+double|1,double,1,D30_zf550_M400_a20__vs__D60_zf450_M400_a20,0.13326434264817294
+single|2,single,2,D30_zf550_M400_a5__vs__D60_zf450_M400_a20,0.13334975933646523
+double|2,double,2,D30_zf550_M400_a5__vs__D60_zf450_M400_a20,0.13335327361218305

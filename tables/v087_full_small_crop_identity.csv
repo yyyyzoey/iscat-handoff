@@ -1,0 +1,5 @@
+item,value
+crop_window_matlab_1based,"rows 128:168, cols 156:196"
+max_abs_dC_small_vs_full_crop,0
+status,CROP_IDENTITY_CONFIRMED
+full_file_sha256,abd7ac4e1ad0f03c774622ef5339c19ad80cb5f1b18969bdd54c0f0cc5dd3057

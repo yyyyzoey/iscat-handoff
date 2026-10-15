@@ -1,6 +1,6 @@
-v086 failures and skipped dependencies
+v087 failures and skipped dependencies
 transient (resolved before final tables):
-  v086_verify_v085_tables.py first run: NameError (D/zf not unpacked in loop) -> 24 honest failure rows; fixed and re-run: 24/24 VERIFIED
-  v086_experimental_cached_observable_interface.py: duplicate CSV column name source/SOURCE -> renamed object_name; k check initially 0-based-only -> now records 161(MATLAB)/160(0-based)
+  run_v087_B_guard_and_mask.py: LIVE-03/LIVE-05 test logic initially inverted -> fixed, 8/8
+  run_v087_C_cached_experimental_fft.py: roiFrames 3D indexing fixed (time already sliced)
 persistent failures: none
-skipped by design: MATLAB native session steps and P0 hook (licence/process safety, resource-gated)
+skipped by design: P0 hook (resource-gated); no MATLAB native run

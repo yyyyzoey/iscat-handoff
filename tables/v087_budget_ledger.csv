@@ -1,0 +1,11 @@
+item,budget,used,status,note
+new_BEM_solve,0,0,RESPECTED,
+new_position_field_render,0,0,RESPECTED,
+A rank-argmin fix + fixtures,0 simulation,3 fixtures + real argmins,COMPLETED,"observed_rank_same=YES (true argmins), certified=NO"
+B guard mask rule + live tests,small fixtures,8 live tests,COMPLETED,incl. disk-file positive; HEAVY_CALLS honesty fix; NEG-G09 renamed
+C cached experimental FFT (roiFrames 41x41x2001),1 pass,1,COMPLETED,independent double recompute; 12 probes PASS; crop identity confirmed
+new synthetic 2001-frame computations,0,0,RESPECTED,cached-video reanalysis is not new imaging
+original 7.29 BMP rereads,0,0,RESPECTED,
+new D/zf/a/f/tau/noise/material points,0,0,RESPECTED,
+P0 passive hook,1 (inherited),0,NOT_RUN_RESOURCE_GATED,
+rule7 large reference,0,0,RESPECTED,

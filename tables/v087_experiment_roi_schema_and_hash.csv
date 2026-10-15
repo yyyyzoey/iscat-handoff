@@ -1,0 +1,10 @@
+field,value,note
+roiFrames,"shape (2001,1,41,41) float32 (h5py); MATLAB (41,41,1,2001) single","time on h5py axis 0 (MATLAB last dim); spatial h5 axes: axis1=MATLAB col, axis2=MATLAB row (established below)"
+file_sha256_committed,49c10f1b24c6798f745dd8b7f1409b0472912761ac639b71566f9c1e800582be,github_handoff/numeric copy
+file_sha256_workstation,49c10f1b24c6798f745dd8b7f1409b0472912761ac639b71566f9c1e800582be,v073 original; identical=True
+meanFloor_full_frame,0.00011761607311200351,"full-frame operator threshold from the v073 extractor, NOT ROI-local"
+k_matlab/N/Fs,161/2001/5000,MATLAB bin 161 = 0-based 160
+stored_validMask_sum,1681,of 1681
+orientation_test,"A_direct wins (errA=2.5196328030245219e-08, errB=0.069785158243757847)",2 asymmetric pixels vs stored X400; wrong orientation must disagree
+full_vs_small_crop,CROP_IDENTITY_CONFIRMED (max|dC|=0),"full C_k rows 128:168, cols 156:196 (MATLAB 1-based), h5py axes (col,row); full sha=abd7ac4e1ad0f03c"
+v072_replay_frames,d7ffe435e44e85744e59a29ea761e26e0229d4c74461f3ef94736f776281bc7f,"LEGACY_WRONG_AXIS_NEGATIVE - v072 applied fft(signal,[],4) with a 3D array (wrong axis); never a valid experimental observation"

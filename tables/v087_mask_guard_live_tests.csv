@@ -1,0 +1,9 @@
+test_id,description,input_mutation,guard_function,expected,observed,status
+LIVE-POS01,existing disk map through real load_double_map,none (existing file C400_double_D60_zf550_M400_a5.mat),load_double_map -> validate_map_metadata,accept,accepted; sha=bff535612a86891c,PASS
+LIVE-02,demo map mask vs full-frame floor rule (1681/1681 valid expected),none,check_mask_rule,n_disagree=0,"n_disagree=0 ({'mean_floor': 0.0001176160731120035, 'n_stored_valid': 1681, 'n_rule_valid': 1681, 'n_disagree': 0})",PASS
+LIVE-03,stored mask includes a below-floor pixel (Imean halved),"Imean[3,4] set to floor*0.5; stored mask still marks it valid",check_mask_rule,REJECT (rule disagrees),n_disagree=1 -> rejected,PASS
+LIVE-04,stored mask marks an above-floor pixel invalid,"valid_mask[7,7]=False while Imean>floor",check_mask_rule,REJECT,n_disagree=1 -> rejected,PASS
+LIVE-05,NaN in Imean map,"Imean[1,1]=NaN",check_mask_rule,REJECT (NaN fails isfinite; rule disagrees with stored mask),n_disagree=1 -> rejected,PASS
+LIVE-06,Imean/mask full-shape mismatch (40x41 vs 41x41),"Imean (40,41)",check_mask_rule,REJECT (ShapeError),rejected,PASS
+LIVE-07,disk map with wrong expected case_id,expected case_id changed,load_double_map,REJECT (IdentityError),rejected,PASS
+LIVE-08,q/fine-slice provenance,none,fine_slice (versioned source),"row26,col1 -> rows 185:190, cols 60:65 (0-based)","rows 185:190, cols 60:65",PASS

@@ -179,3 +179,20 @@ def load_double_map(path, expected_case_id, sha_ledger=None):
     meta = validate_map_metadata(arrays, expected_case_id, source_path=path, sha_ledger=sha_ledger)
     meta['arrays'] = arrays
     return meta
+
+def check_mask_rule(Imean, stored_mask, mean_floor, tolerance_pixels=0):
+    """Production mask-rule recheck against the FULL-FRAME operator threshold.
+
+    expected = finite(Imean) & (Imean > mean_floor), where mean_floor must be
+    the sourced full-frame threshold (e.g. 0.01*median of the positive full-
+    frame Imean from the v073 extractor) - NOT a ROI-local median.
+    Returns (mask_ok, n_diff, details)."""
+    Im = np.asarray(Imean, dtype=np.float64)
+    sm = np.asarray(stored_mask).astype(bool)
+    if Im.shape != sm.shape:
+        raise ShapeError('Imean shape %s != mask shape %s' % (Im.shape, sm.shape))
+    expected = np.isfinite(Im) & (Im > float(mean_floor))
+    n_diff = int(np.sum(expected != sm))
+    details = {'mean_floor': float(mean_floor), 'n_stored_valid': int(sm.sum()),
+               'n_rule_valid': int(expected.sum()), 'n_disagree': n_diff}
+    return (n_diff <= tolerance_pixels), n_diff, details

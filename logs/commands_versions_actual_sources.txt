@@ -1,0 +1,5 @@
+v087 execution record
+time_utc: 2026-10-15T09:23:59.030129Z
+host: DESKTOP-RN9651M | python 3.11.7 | numpy 1.26.4 | h5py 3.9.0
+parent_commit: 4fd783e5438a6cae3a9801711a13cb1db3c75f84 (branch v086)
+phases: A fixtures 3/3, observed_rank_same=YES, certified=NO | B 8/8 live | C independent cached-video FFT, 12/12 probes, crop CONFIRMED
