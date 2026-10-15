@@ -1,7 +1,7 @@
 item,value
-item,value
-item,value
-item,value
-item,value
-item,value
-item,value
+full_frame_meanFloor_stored,0.00011761607311200351
+full_frame_floor_recomputed_0.01median_positive,0.00011761607602238655
+abs_diff,2.9103830483838758e-12
+rel_diff,2.4744773153686013e-08
+identity_status,CONFIRMED_SINGLE_PRECISION_ROUNDING
+small_ROI_inheritance,EXPERIMENT_FULL_FRAME_SOURCE floor inherited by fft400_corrected_small_roi.mat

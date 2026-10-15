@@ -1,11 +1,11 @@
 v088 independent readback (clean session):
-time_utc: 2026-10-15T10:05:50.164880Z
+time_utc: 2026-10-15T10:06:23.605589Z
 
 tables/v088_spectral_bins_corrected.csv                    rows=   8 expected=   8 cols=8 unique=True control=False -> CLEAN
 tables/v088_rank_fixtures_validated.csv                    rows=   4 expected=   4 cols=6 unique=True control=False -> CLEAN
 tables/v088_mask_scope_source_contract.csv                 rows=   2 expected=   2 cols=4 unique=True control=False -> CLEAN
 tables/v088_mask_prod_live_tests.csv                       rows=   8 expected=   8 cols=5 unique=True control=False -> CLEAN
-tables/v088_experimental_full_floor_identity.csv           rows=   6 expected=   6 cols=2 unique=False control=False -> FAIL
+tables/v088_experimental_full_floor_identity.csv           rows=   6 expected=   6 cols=2 unique=True control=False -> CLEAN
 tables/v088_cached_segment_spectra6.csv                    rows=   3 expected=   3 cols=13 unique=True control=False -> CLEAN
 tables/v088_cached_segment_summary3.csv                    rows=   3 expected=   3 cols=4 unique=True control=False -> CLEAN
 tables/v087_cached_frames_fft_operator_audit.csv           rows=1681 expected=1681 cols=16 unique=True control=False -> CLEAN
@@ -14,4 +14,4 @@ tables/v088_budget_ledger.csv                              rows=  10 expected=  
 tables/v088_parameter_readiness.csv                        rows=  19 expected=  19 cols=4 unique=True control=False -> CLEAN
 tables/v088_p0_status.csv                                  rows=   2 expected=   2 cols=7 unique=True control=False -> CLEAN
 numeric/v088_cached_segment_maps.npz                       maps=6 shape=(41,41) -> CLEAN
-SOME_FAILED
+ALL_CLEAN
