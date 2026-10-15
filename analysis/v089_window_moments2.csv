@@ -1,0 +1,4 @@
+window,j_range,N_w,mean_Imean_w,median_Imean_w,pixels_below_fullfloor,pixels_nonfinite,window_mask_valid,note
+W1,0..999,1000,0.051239946363689934,0.056649240076541901,0,0,1681,per-window Imean uses the window samples; floor = sourced full-frame threshold
+W2,1000..2000,1001,0.051351949569988405,0.057411354053746928,0,0,1681,per-window Imean uses the window samples; floor = sourced full-frame threshold
+FIXED_INTERSECTION,both windows,-,-,-,-,-,1681,v088 full-record mask=1681; changed=False

@@ -1,0 +1,7 @@
+v089 execution record
+time_utc: 2026-10-15T10:59:00.893437Z
+host: DESKTOP-RN9651M | python 3.11.7 | numpy 1.26.4
+parent_commit: 35080811161004c381532852cf99c61150bbf60c (branch v088)
+commands: python source/run_v089_A_metadata.py; python source/run_v089_B_fixtures.py; python source/run_v089_C_D_estimators.py; python source/run_v089_assembly_tables.py
+phases: A metadata PASS | B fixtures 8/8 | C recheck 6/6 + moments | D 12 estimator rows | E closure 12/12
+session sign convention corrections logged (cos(wt+phi) -> A=amp*exp(+i*phi))

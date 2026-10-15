@@ -1,13 +1,16 @@
-# v088 Review
+# v089 Review
 
-## Verdict on v087
-- RETAINED: the independent cached-video FFT (1681/1681 OR-gate), probe results, orientation anchoring, crop identity, 24-map and 276-pair inheritance.
-- RETRACTED/CORRECTED: (X1) 8 neighbour frequency labels were one bin high - corrected to f=(k_matlab-1)*Fs/N, matching the v073 historical table; (X2) the ranking JSON interpretation text contradicted its own argmin result - now templated from booleans; FIX2 was not truly touching - now Fraction-exact and executed; (X3) the experiment full-frame floor was applied to a DEMO map - mask scopes now separated in the real production loader.
+## Verdict on v088
+- RETAINED: the 6 secondary demodulation maps, the paired statistics, the spectral corrections, mask scopes, ranking decision, and all inherited evidence.
+- CORRECTED (reproducibility, zero FFT): R1 - frequency labels now stored at %.17g with an explicit 1e-10 Hz roundtrip check; R2 - a 6-row per-window/per-frequency list supplements the 3 paired rows; the NPZ now stores per-window Imean and raw X numerators (previously missing); the ranking min_other_lo is auto-derived.
+- SCOPE HONESTY: the normalized inner product is renamed a spatial complex-map normalized inner product (insensitive to a single global phase); the v088 400 Hz coherence 0.2494 is retained as reported.
 
-## What v088 establishes
-1. **Phase A/B**: published-CSV re-audit (1681/1681 OR-gate with 4/1 boundary counts honestly noted); 8 corrected spectral bins matching v073 history; ranking audit with 4 truly-executed Fraction fixtures (swap / exact touch / separated / overlap) - observed_rank_same=YES, RANK_CERTIFIED=NO.
-2. **Phase C**: DEMO_ROI_LOCAL vs EXPERIMENT_FULL_FRAME_SOURCE mask scopes implemented in the real loader; full-frame floor identity confirmed to 2.47e-8 relative; 8/8 live tests with scope-misuse and tamper rejections.
-3. **Phase D**: the single authorised segmented diagnostic - 6 secondary within-record demodulation maps (2 pre-registered windows x {200,400,420} Hz, global time origin). Window-to-window coherences 0.044/0.249/0.071 reported as descriptive within-record consistency only - they are neither magnetic causality nor independent repeats, and 420 Hz is an empirical control, not a proven noise distribution.
+## What v089 establishes
+1. **Phase A**: full-precision spectral roundtrip 8/8; floor identity 6 rows; lineage 4 objects.
+2. **Phase B**: 8/8 fixtures through the real estimator functions - amplitude/phase recovery <1e-11 for a pure tone and a 200/400/420+trend mixture; the clock-reset negative (start 1003) is detected; complex closure holds with an off-model 300 Hz component landing in the residual; inner-product invariance to gain/phase; NaN/degenerate-axis/zero-norm guards. (Sign-convention corrections during the session are honestly logged.)
+3. **Phase C**: the 6 v088 maps reproduce at rF<1e-10 in one shared session; window moments show neither window dips below the full-frame floor; the fixed intersection mask equals the v088 full-record mask (1681/1681).
+4. **Phase D (the answer)**: over the four pre-registered estimators the 400 Hz two-window complex difference L2 moves only 0.3360 -> 0.3361 -> 0.3120 -> 0.3111. Local-vs-common denominator: negligible. Joint-basis LS: removes measurable cross-frequency coupling (inner product 0.2494 -> 0.0715). Trend: minor. A ~0.31 difference persists in every tested estimator, so it cannot be attributed to these estimator choices alone - and equally cannot be attributed to magnetism, noise type, or particle presence by this analysis.
+5. **Phase E**: all 12 complex closures PASS.
 
 ## Not claimed
-No magnetic causality, diameter, Bias/RMSE, detectability, FPR, identifiability, or noise-model claims. Frozen states unchanged.
+No magnetic causality, diameter, Bias/RMSE, detectability, identifiability, or noise-model determination. All within-record quantities remain secondary diagnostics. Frozen states unchanged.

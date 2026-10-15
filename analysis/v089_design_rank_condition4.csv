@@ -1,0 +1,5 @@
+record_key,window,model,n_columns,rank,condition,columns,gate,status
+W1|D2_joint7,W1,D2_joint7,7,7,1.4142135623730965,intercept|cos200|sin200|cos400|sin400|cos420|sin420,"rank=cols, cond<1e6",PASS
+W1|D3_joint8_trend,W1,D3_joint8_trend,8,8,1.7317944325867733,intercept|cos200|sin200|cos400|sin400|cos420|sin420|trend,"rank=cols, cond<1e6",PASS
+W2|D2_joint7,W2,D2_joint7,7,7,1.4149247499591762,intercept|cos200|sin200|cos400|sin400|cos420|sin420,"rank=cols, cond<1e6",PASS
+W2|D3_joint8_trend,W2,D3_joint8_trend,8,8,1.7317532415851649,intercept|cos200|sin200|cos400|sin400|cos420|sin420|trend,"rank=cols, cond<1e6",PASS

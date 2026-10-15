@@ -1,0 +1,78 @@
+{
+  "source_sha256": "49c10f1b24c6798f745dd8b7f1409b0472912761ac639b71566f9c1e800582be",
+  "windows": [
+    [
+      "W1",
+      0,
+      1000
+    ],
+    [
+      "W2",
+      1000,
+      2001
+    ]
+  ],
+  "freqs": [
+    200.0,
+    400.0,
+    420.0
+  ],
+  "recheck_ok": true,
+  "mask_changed_vs_v088": false,
+  "n_common_mask_pixels": 1681,
+  "design_matrices": [
+    {
+      "record_key": "W1|D2_joint7",
+      "window": "W1",
+      "model": "D2_joint7",
+      "n_columns": 7,
+      "rank": 7,
+      "condition": "1.4142135623730965",
+      "columns": "intercept|cos200|sin200|cos400|sin400|cos420|sin420",
+      "gate": "rank=cols, cond<1e6",
+      "status": "PASS"
+    },
+    {
+      "record_key": "W1|D3_joint8_trend",
+      "window": "W1",
+      "model": "D3_joint8_trend",
+      "n_columns": 8,
+      "rank": 8,
+      "condition": "1.7317944325867733",
+      "columns": "intercept|cos200|sin200|cos400|sin400|cos420|sin420|trend",
+      "gate": "rank=cols, cond<1e6",
+      "status": "PASS"
+    },
+    {
+      "record_key": "W2|D2_joint7",
+      "window": "W2",
+      "model": "D2_joint7",
+      "n_columns": 7,
+      "rank": 7,
+      "condition": "1.4149247499591762",
+      "columns": "intercept|cos200|sin200|cos400|sin400|cos420|sin420",
+      "gate": "rank=cols, cond<1e6",
+      "status": "PASS"
+    },
+    {
+      "record_key": "W2|D3_joint8_trend",
+      "window": "W2",
+      "model": "D3_joint8_trend",
+      "n_columns": 8,
+      "rank": 8,
+      "condition": "1.7317532415851649",
+      "columns": "intercept|cos200|sin200|cos400|sin400|cos420|sin420|trend",
+      "gate": "rank=cols, cond<1e6",
+      "status": "PASS"
+    }
+  ],
+  "closure_rows": 12,
+  "estimator_rows": 12,
+  "budget": {
+    "cached_video_sessions": 1,
+    "design_matrix_entries": 4,
+    "new_simulations": 0,
+    "new_BEM": 0,
+    "new_renders": 0
+  }
+}

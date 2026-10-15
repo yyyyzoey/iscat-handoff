@@ -1,0 +1,9 @@
+fixture_id,description,status,observed
+F1,pure 400 Hz arbitrary phase: joint-fit amplitude/phase recovery,PASS,|A_fit - A_true|=2.34e-15 (gate 1e-11)
+F2,mixture 200/400/420 + linear trend: recovery with trend column,PASS,max |A_err|=1.1e-15 over 3 freqs
+F3,clock-reset negative (window start 1003): reset clock must differ from global,PASS,|X_global - X_reset|=34.2 > 1e-6 detected
+F4,off-model 300 Hz component: complex closure X_obs=X_model+X_res holds; off-mode in residual,PASS,"closure modes: {200.0: 'RELATIVE', 400.0: 'RELATIVE', 420.0: 'RELATIVE'}"
+F5,normalized inner product invariant to common gain and global phase,PASS,|r0-r1|=5.55e-17 (r0=0.235873)
+F6,NaN input rejected,PASS,EstimatorError: non-finite samples in series (NaN/Inf rejected)
+F7,degenerate (constant) time axis rejected,PASS,EstimatorError: design matrix rank 1 != 7 columns
+F8,zero-norm relative quantity -> UNDEFINED_ZERO_NORM,PASS,returned None

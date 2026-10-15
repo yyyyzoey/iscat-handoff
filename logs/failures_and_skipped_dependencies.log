@@ -1,5 +1,6 @@
-v088 failures and skipped dependencies
+v089 failures and skipped dependencies
 transient (resolved before final tables):
-  run_v087_C -> v088: F2 fixture initially not touching (binary fp) -> Fraction arithmetic; MS-05 missing-floor check added to guard; MS-06 premise corrected (below-floor pixel injected)
+  run_v089_B_fixtures.py: F1/F2 expected-sign convention errors and F6 NaN guard gap -> fixed, 8/8
+  run_v089_A_metadata.py: record_key uniqueness for windows6 -> fixed
 persistent failures: none
-skipped by design: P0 hook (resource-gated); no MATLAB native run; GPT handoff-package tools not used (equivalent logic implemented and SHA-recorded in-repo)
+skipped by design: P0 hook (resource-gated); no MATLAB native run; GPT handoff tools not present on workstation - equivalent logic implemented in-repo (v089_estimators.py, run_v089_*.py) with session SHAs recorded

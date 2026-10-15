@@ -1,0 +1,7 @@
+record_key,window,freq_Hz,map_key,relFrobenius_recompute_vs_v088,gate,status
+W1|200,W1,200.0,C_W1_200Hz,0,rF < 1e-10 (abs 1e-12 if norm<=1e-12),SAME_OPERATOR_VERIFIED
+W1|400,W1,400.0,C_W1_400Hz,0,rF < 1e-10 (abs 1e-12 if norm<=1e-12),SAME_OPERATOR_VERIFIED
+W1|420,W1,420.0,C_W1_420Hz,0,rF < 1e-10 (abs 1e-12 if norm<=1e-12),SAME_OPERATOR_VERIFIED
+W2|200,W2,200.0,C_W2_200Hz,0,rF < 1e-10 (abs 1e-12 if norm<=1e-12),SAME_OPERATOR_VERIFIED
+W2|400,W2,400.0,C_W2_400Hz,0,rF < 1e-10 (abs 1e-12 if norm<=1e-12),SAME_OPERATOR_VERIFIED
+W2|420,W2,420.0,C_W2_420Hz,0,rF < 1e-10 (abs 1e-12 if norm<=1e-12),SAME_OPERATOR_VERIFIED
