@@ -1,17 +1,17 @@
-v087 independent readback (clean session):
-time_utc: 2026-10-15T09:24:50.847385Z
+v088 independent readback (clean session):
+time_utc: 2026-10-15T10:04:59.512476Z
 
-tables/v087_rank_logic_fixtures.csv                        rows=   3 expected=   3 cols=7 unique=True control=False -> CLEAN
-tables/v087_rank_actual_argmins.csv                        rows=   4 expected=   4 cols=5 unique=True control=False -> CLEAN
-tables/v087_mask_guard_live_tests.csv                      rows=   8 expected=   8 cols=7 unique=True control=False -> CLEAN
-tables/v087_geometry_source_contract.csv                   rows=   7 expected=   7 cols=3 unique=True control=False -> CLEAN
-tables/v087_experiment_roi_schema_and_hash.csv             rows=   9 expected=   9 cols=3 unique=True control=False -> CLEAN
+tables/v088_spectral_bins_corrected.csv                    rows=   8 expected=   8 cols=8 unique=True control=False -> CLEAN
+tables/v088_rank_fixtures_validated.csv                    rows=   4 expected=   4 cols=6 unique=True control=False -> CLEAN
+tables/v088_mask_scope_source_contract.csv                 rows=   2 expected=   2 cols=4 unique=True control=False -> CLEAN
+tables/v088_mask_prod_live_tests.csv                       rows=   8 expected=   8 cols=5 unique=True control=False -> CLEAN
+tables/v088_experimental_full_floor_identity.csv           rows=   6 expected=   6 cols=2 unique=False control=False -> FAIL
+tables/v088_cached_segment_spectra6.csv                    rows=   3 expected=   3 cols=13 unique=True control=False -> CLEAN
+tables/v088_cached_segment_summary3.csv                    rows=   3 expected=   3 cols=4 unique=True control=False -> CLEAN
 tables/v087_cached_frames_fft_operator_audit.csv           rows=1681 expected=1681 cols=16 unique=True control=False -> CLEAN
-tables/v087_cached_frames_fft_probes12.csv                 rows=  12 expected=  12 cols=15 unique=True control=False -> CLEAN
-tables/v087_full_small_crop_identity.csv                   rows=   4 expected=   4 cols=2 unique=True control=False -> CLEAN
 tables/v087_spectral_neighbors_fixed.csv                   rows=   8 expected=   8 cols=5 unique=True control=False -> CLEAN
-tables/v087_experimental_parameter_readiness.csv           rows=  20 expected=  20 cols=4 unique=True control=False -> CLEAN
-tables/v087_budget_ledger.csv                              rows=  10 expected=  10 cols=5 unique=True control=False -> CLEAN
-tables/v087_p0_status.csv                                  rows=   2 expected=   2 cols=7 unique=True control=False -> CLEAN
-numeric/v087_cached_experimental_pixels.npz                series=2001 X160A_vs_stored=8.114e-09 -> CLEAN
-ALL_CLEAN
+tables/v088_budget_ledger.csv                              rows=  10 expected=  10 cols=5 unique=True control=False -> CLEAN
+tables/v088_parameter_readiness.csv                        rows=  19 expected=  19 cols=4 unique=True control=False -> CLEAN
+tables/v088_p0_status.csv                                  rows=   2 expected=   2 cols=7 unique=True control=False -> CLEAN
+numeric/v088_cached_segment_maps.npz                       maps=6 shape=(41,41) -> CLEAN
+SOME_FAILED

@@ -1,0 +1,11 @@
+item,budget,used,status,note
+new_BEM_solve / new_position_render,0 / 0,0 / 0,RESPECTED,
+A source SHA freeze + published-CSV re-audit,read-only,1681-row re-audit,COMPLETED,OR-gate 1681/1681; boundary counts 4/1 noted
+B1 spectral index correction,zero FFT,8 rows,COMPLETED,v087 one-bin-high labels corrected; v073 history matched
+B2 ranking audit + executed fixtures,pure algebra,4 fixtures (Fraction),COMPLETED,"observed=YES, certified=NO templated from booleans"
+C mask scopes in production entry + live tests,max 8 fixtures,8,COMPLETED,2 disk positives + 6 rejections; full-floor identity 2.47e-8
+D segmented diagnostic (cached video),"1 read, 6 maps",6 maps,COMPLETED,"2 windows x {200,400,420} Hz; secondary diagnostic only"
+new synthetic 2001-frame computations,0,0,RESPECTED,
+original 7.29 BMP rereads,0,0,RESPECTED,
+P0 passive hook,1 (inherited),0,NOT_RUN_RESOURCE_GATED,
+rule7 large reference,0,0,RESPECTED,

@@ -1,0 +1,9 @@
+test_id,description,expected,observed,status
+MS-01,"demo disk map via real loader, DEMO_ROI_LOCAL scope",accept,accepted,PASS
+MS-02,"experimental small ROI via real loader, EXPERIMENT_FULL_FRAME_SOURCE (sourced floor)",accept,accepted,PASS
+MS-03,load_double_map without explicit mask_scope contract,reject,"GuardError: mask_scope 'SOME_UNDEFINED_SCOPE' missing or unknown; must be one of ('DEMO_ROI_LOCAL', 'EXPERIMENT_FULL_FRAME_SOURCE')",PASS
+MS-04,EXPERIMENT floor passed while DEMO_ROI_LOCAL scope derives its own,reject,GuardError: scope/floor mismatch: DEMO_ROI_LOCAL derives floor 5.41128e-05 but 0.000117616 was supplied (experiment thresholds must not be applied to de,PASS
+MS-05,EXPERIMENT_FULL_FRAME_SOURCE without sourced floor,reject,GuardError: EXPERIMENT_FULL_FRAME_SOURCE requires a sourced full-frame mean_floor,PASS
+MS-06,demo map with all-True stored mask while rule excludes below-floor pixels,reject,"MaskError: mask rule disagrees with stored mask under scope DEMO_ROI_LOCAL: {'mean_floor': 5.41128234865851e-05, 'n_stored_valid': 1681, 'n_rule_valid'",PASS
+MS-07,demo map with NaN inside Imean,reject,MaskError: Imean_map not strictly positive/finite on the valid mask,PASS
+MS-08,"claimed SHA != actual file bytes (real loader, ledger arg)",reject,SourceHashError: file SHA not in frozen ledger for C400_double_D60_zf550_M400_a5.mat,PASS

@@ -1,0 +1,5 @@
+fixture_id,description,executed,observed,correct_verdict,status
+F1,argmin swap while both per-pair |d_d-d_s|<=b hold,YES,argmin_single=A argmin_double=B bounds_hold=True,OBSERVED_SAME=NO (swap),PASS
+F2,exact endpoint touching (nearest_hi == other_lo exactly),YES,touching=True certified=False,RANK_CERTIFIED=NO (strict < required),PASS
+F3,genuinely separated intervals,YES,certified=True,RANK_CERTIFIED=YES,PASS
+F4,overlapping intervals (real-data-like geometry),YES,certified=False,RANK_CERTIFIED=NO,PASS

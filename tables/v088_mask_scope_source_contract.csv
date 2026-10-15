@@ -1,0 +1,3 @@
+scope,floor_source,applies_to,notes
+DEMO_ROI_LOCAL,the map itself: 0.01*median(positive finite Imean_map) per extract_fft_v073 on the demo ROI,v085/v086 24 demo double maps,external floor must match derived; mismatch rejected
+EXPERIMENT_FULL_FRAME_SOURCE,"full-frame floor from v073 extractor (0.01*median positive full Imean), inherited by the small ROI",fft400_corrected_small_roi.mat / fft400_corrected_full.mat,sourced floor REQUIRED; never the demo-derived value

@@ -1,0 +1,15 @@
+{
+  "source_table": "d92651efa4d8bb437c9efec7e571376108bc6c02e4a4a786e3c904de532eec2b",
+  "n_cross_D_candidates": 192,
+  "argmin_single_pair": "D30_zf550_M400_a20__vs__D60_zf450_M400_a20",
+  "argmin_single_distance": "0.13326472532638595",
+  "argmin_double_pair": "D30_zf550_M400_a20__vs__D60_zf450_M400_a20",
+  "argmin_double_distance": "0.13326434264817294",
+  "observed_rank_same_between_two_paths": "YES",
+  "certification_criterion": "nearest_hi < min(other_lo), strict (Fraction-exact fixture F2)",
+  "triangle_interval_certified": "NO",
+  "nearest_hi": "0.13329432462420726",
+  "min_other_lo": "0.13324433560969901",
+  "fixtures_all_pass": true,
+  "interpretation": "Both numerical paths select the SAME nearest cross-D pair (D30_zf550_M400_a20__vs__D60_zf450_M400_a20), but the conservative triangle intervals overlap, so the ranking is NOT certified by the reported intervals; this is a numerical-path statement, not physics."
+}

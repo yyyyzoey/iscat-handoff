@@ -1,0 +1,6 @@
+v088 execution record
+time_utc: 2026-10-15T10:04:13.347439Z
+host: DESKTOP-RN9651M | python 3.11.7 | numpy 1.26.4
+parent_commit: 900417f2cdcdec45097ea1f8c766f58d9548ac0f (branch v087)
+commands: python source/v088_spectral_index_correction.py; python source/v088_ranking_decision_audit.py; python source/v088_mask_scope_and_prod_guard.py; python source/v088_cached_roi_segment_diagnostic.py; python source/run_v088_assembly_tables.py
+phases: B1 8/8 bins corrected | B2 4/4 fixtures (Fraction) | C 8/8 mask-scope live | D 6 secondary maps

@@ -18,6 +18,7 @@ import os
 import re
 import hashlib
 import numpy as np
+import h5py
 
 Q = 5
 H = 41                      # ROI physical pixels per side
@@ -196,3 +197,90 @@ def check_mask_rule(Imean, stored_mask, mean_floor, tolerance_pixels=0):
     details = {'mean_floor': float(mean_floor), 'n_stored_valid': int(sm.sum()),
                'n_rule_valid': int(expected.sum()), 'n_disagree': n_diff}
     return (n_diff <= tolerance_pixels), n_diff, details
+
+# ---------------- v088 mask-scope production integration ----------------
+MASK_SCOPES = ('DEMO_ROI_LOCAL', 'EXPERIMENT_FULL_FRAME_SOURCE')
+
+
+def derive_demo_roi_floor(Imean_map):
+    """DEMO_ROI_LOCAL rule (extract_fft_v073 applied to the demo ROI itself):
+    floor = 0.01 * median(positive, finite Imean of THIS map)."""
+    Im = np.asarray(Imean_map, dtype=np.float64)
+    pos = Im[np.isfinite(Im) & (Im > 0)]
+    if pos.size == 0:
+        raise MaskError('no positive finite Imean values - cannot derive DEMO_ROI_LOCAL floor')
+    return 0.01 * float(np.median(pos))
+
+
+def validate_mask_scope(mask_scope, mean_floor=None, derived_floor=None):
+    """Scope/floor source contract:
+    - scope must be one of MASK_SCOPES (missing/unknown -> reject);
+    - DEMO_ROI_LOCAL uses the map's own derived floor; an externally supplied
+      floor that DISAGREES with the derived one is a scope/floor mismatch;
+    - EXPERIMENT_FULL_FRAME_SOURCE requires a SOURCED full-frame floor
+      (missing -> reject)."""
+    if mask_scope not in MASK_SCOPES:
+        raise GuardError('mask_scope %r missing or unknown; must be one of %s' % (mask_scope, MASK_SCOPES))
+    if mask_scope == 'EXPERIMENT_FULL_FRAME_SOURCE':
+        if mean_floor is None:
+            raise GuardError('EXPERIMENT_FULL_FRAME_SOURCE requires a sourced full-frame mean_floor')
+    if mask_scope == 'DEMO_ROI_LOCAL' and mean_floor is not None and derived_floor is not None:
+        if abs(float(mean_floor) - derived_floor) > 1e-12 * max(1.0, abs(derived_floor)):
+            raise GuardError('scope/floor mismatch: DEMO_ROI_LOCAL derives floor %g but %g was supplied '
+                             '(experiment thresholds must not be applied to demo maps)' % (derived_floor, float(mean_floor)))
+    return True
+
+
+def load_double_map(path, expected_case_id, sha_ledger=None, mask_scope='DEMO_ROI_LOCAL',
+                    mean_floor=None):
+    """Real map-loading entry point (v086) now WITH the mask-rule recheck and
+    explicit mask scope (v088). Rejections raise specific GuardErrors."""
+    from scipy.io import loadmat
+    m = loadmat(path)
+    arrays = {'C400_double': m.get('C400_double'),
+              'Imean_map': m.get('Imean_map'),
+              'valid_mask': m.get('valid_mask'),
+              'case_id': m.get('case_id')}
+    meta = validate_map_metadata(arrays, expected_case_id, source_path=path, sha_ledger=sha_ledger)
+    Im = np.asarray(arrays['Imean_map'], dtype=np.float64)
+    maskb = np.asarray(arrays['valid_mask']).astype(bool)
+    derived = derive_demo_roi_floor(Im) if mask_scope == 'DEMO_ROI_LOCAL' else None
+    validate_mask_scope(mask_scope, mean_floor=mean_floor, derived_floor=derived)
+    floor = derived if mask_scope == 'DEMO_ROI_LOCAL' else float(mean_floor)
+    ok, n_diff, details = check_mask_rule(Im, maskb, floor)
+    if not ok:
+        raise MaskError('mask rule disagrees with stored mask under scope %s: %s' % (mask_scope, details))
+    meta['mask_scope'] = mask_scope
+    meta['mask_floor_used'] = floor
+    meta['mask_rule_disagreements'] = n_diff
+    meta['arrays'] = arrays
+    return meta
+
+
+def load_experiment_small_roi(path, mean_floor):
+    if mean_floor is None:
+        raise GuardError('EXPERIMENT_FULL_FRAME_SOURCE requires a sourced full-frame mean_floor')
+    """Production entry for the CACHED EXPERIMENTAL small-ROI object
+    (fft400_corrected_small_roi.mat, HDF5 keys X400/C400/Imean/validMask).
+    The mean_floor MUST be the sourced full-frame threshold."""
+    from scipy.io import loadmat  # noqa: F401 (symmetry)
+    with h5py.File(path, 'r') as f:
+        Cst = f['C400'][:]; Cst = Cst['real'].astype(np.float64) + 1j * Cst['imag'].astype(np.float64)
+        Im = np.asarray(f['Imean']).astype(np.float64)
+        mask = np.asarray(f['validMask']).astype(bool)
+        N_ = float(np.asarray(f['N']).flatten()[0])
+        Fs_ = float(np.asarray(f['Fs']).flatten()[0])
+        k_ = float(np.asarray(f['k']).flatten()[0])
+    if Cst.shape != (H, H) or Im.shape != (H, H) or mask.shape != (H, H):
+        raise ShapeError('experimental small-ROI arrays must be 41x41')
+    if N_ != N or Fs_ != FS or k_ not in (K0, K0 + 1):
+        raise IdentityError('experimental operator metadata N/Fs/k mismatch: %s/%s/%s' % (N_, Fs_, k_))
+    if not np.isfinite(Im[mask]).all() or not (Im[mask] > 0).all():
+        raise MaskError('experimental Imean not strictly positive/finite on the stored mask')
+    ok, n_diff, details = check_mask_rule(Im, mask, mean_floor)
+    if not ok:
+        raise MaskError('experimental mask rule disagrees with the sourced full-frame floor: %s' % details)
+    return {'case': 'EXPERIMENT_SMALL_ROI', 'sha256': sha256_file(path),
+            'n_valid': int(mask.sum()), 'mean_floor': float(mean_floor),
+            'mask_rule_disagreements': n_diff,
+            'N': N_, 'Fs': Fs_, 'k_matlab': k_}

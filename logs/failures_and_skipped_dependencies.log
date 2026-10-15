@@ -1,6 +1,5 @@
-v087 failures and skipped dependencies
+v088 failures and skipped dependencies
 transient (resolved before final tables):
-  run_v087_B_guard_and_mask.py: LIVE-03/LIVE-05 test logic initially inverted -> fixed, 8/8
-  run_v087_C_cached_experimental_fft.py: roiFrames 3D indexing fixed (time already sliced)
+  run_v087_C -> v088: F2 fixture initially not touching (binary fp) -> Fraction arithmetic; MS-05 missing-floor check added to guard; MS-06 premise corrected (below-floor pixel injected)
 persistent failures: none
-skipped by design: P0 hook (resource-gated); no MATLAB native run
+skipped by design: P0 hook (resource-gated); no MATLAB native run; GPT handoff-package tools not used (equivalent logic implemented and SHA-recorded in-repo)
