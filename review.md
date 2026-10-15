@@ -1,13 +1,13 @@
-# v091 Review
+# v092 Review
 
-## Verdict on v090
-- RETAINED: NPZ-based frequency-key recovery (4 rows corrected), W1/W2 identities, sparse QR, all inherited evidence.
-- CORRECTED: (2.1) the production aggregator accepted decimal-frequency aliasing (int(400.5)->400) - fixed with an explicit ContractError; (2.2) the v090 sparse closure used an absolute 1e-10 gate where the original contract requires the relative/near-zero rule - re-judged per point from SAVED evidence (144/144 PASS under the original gate, no refit); (2.3) the missing 12-row full-stats table, 6+6 identity relations, and per-window Imean/X numerators are now delivered.
+## Verdict on v091
+- RETAINED: leave-group algorithm, 216 counts, estimator branch seal, all inherited evidence.
+- CORRECTED: G03 duplicate-key now rejected (was accepted as "last-wins"); G06 NaN through real StrictStore.put; D1->D2 metric naming (relFrobenius was actually inf-norm ratio, true rel Frobenius 2.57e-14 confirms PASS).
 
-## What v091 establishes
-1. **Phase A (seal)**: 8/8 guard tests (including the real alias-gap fix); 12 identity relations 12/12; 144-point original-gate closure 144/144 from the SAVED v090 sparse evidence. The D0-D3 experimental estimator branch is CLOSED - no further window/frequency/model search.
-2. **Phase B (leave-group)**: 216 algebraic queries over the frozen 24-state demo library with three pre-registered scenarios and three fixed features. Honest confounding quantification: unit-magnitude shape survives amplitude changes (24/24) but is destroyed by motion-type changes (0/24); the symmetric magnitude pattern is the most focus-robust (22/24) but motion-fragile (8/24); log-ratio is amplitude-dominated (4/24). Count-based in-sample screens only.
-3. **Phase C**: parameter readiness with 4 blocking groups; P0 NOT_RUN_RESOURCE_GATED; rule7 0.
-
-## Not claimed
-No identification accuracy, detectability, FPR, diameter, Bias/RMSE, magnetic causality, or continuous-domain identifiability. Frozen states unchanged.
+## What v092 establishes
+1. **Phase A**: StrictStore with full-key contract rejects duplicate overwrite, decimal alias, NaN, unknown bin; 24/24 baseline identity.
+2. **Phase B**: 60 same-factor pairs with exact algebraic decomposition (0/60 fail); 7-subset leave-group 504 rows.
+3. **Phase C**: 3-bin bank (k0={80,160,320}) for all 24 endpoint states, bin-160 matches old C400 (rF<1e-10).
+4. **Phase D**: 24 intermediate-amplitude states (a={10,15} nm) built on the same anchors; no historical comparison (new prescribed states).
+5. **Phase E**: 1440 comparisons: three_bin_magnitude improves or maintains consistency in 10/12 endpoint scenarios; intermediate queries reach 24/24 (unknown policy) and 24/24 (known_motion); motion type remains the dominant confounder.
+6. **Closure**: the fixed estimator diagnostics are sealed (root cause UNDETERMINED); the leave-group study provides the next-physics prioritisation rules per contract.

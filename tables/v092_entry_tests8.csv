@@ -1,0 +1,9 @@
+test_id,description,status,observed
+T1,three bins coexist via strict store,PASS,accepted
+T2,duplicate key overwrite rejected,PASS,ContractError: duplicate key overwrite rejected: simulation|X|160bin
+T3,decimal bin 160.5 alias rejected,PASS,ContractError: non-integer bin alias 160.5 rejected
+T4,NaN map rejected through real entry,PASS,ContractError: map simulation|X|160bin contains NaN/Inf
+T5,"bin 161 (not in frozen {80,160,320}) rejected",PASS,"ContractError: bin 161 not in the frozen set (80, 160, 320)"
+T6,bin 160.5 non-integer rejected,PASS,ContractError: non-integer bin alias 160.5 rejected
+T7,experiment/simulation datasets separated,PASS,accepted
+T8,tuple key (v089 failure mode) rejected,PASS,ContractError: tuple key found in strict store

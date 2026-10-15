@@ -1,0 +1,10 @@
+{
+  "metric_naming_fix": "v089 identity_relations12.csv column relFrobenius actually contained maxabs_error/maxabs_reference (infinity-norm ratio); true relative Frobenius = 2.5729558146033724e-14, inf-norm ratio = 2.277215937187685e-14; both < 1e-10 so the PASS verdict is retained under either reading",
+  "inf_norm_ratio": "2.277215937187685e-14",
+  "true_rel_frobenius": "2.5729558146033724e-14",
+  "conservative_bound_41x_inf": "9.3365853424695093e-13",
+  "entry_fixes": "duplicate overwrite, decimal alias, NaN, unknown bin all rejected through StrictStore",
+  "all_entry_tests_pass": true,
+  "baseline_identity": "24/24 SHA + internal case_id verified",
+  "seal": "v088/v089 experimental estimator diagnostics SEALED; root cause UNDETERMINED"
+}

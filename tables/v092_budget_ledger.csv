@@ -1,0 +1,11 @@
+item,budget,used,status,note
+new_BEM_solve / new_position_render,0 / 0,0 / 0,RESPECTED,
+A entry fixes + baseline identity,8 tests + 24 readback,8 + 24,COMPLETED,
+B same-factor pairs + 7-subset leavegroup,60 pairs + 504 rows,60 + 504,COMPLETED,pure algebra
+C 3-bin bank for 24 endpoint states,24 evaluations,24,COMPLETED,incl. 2 pilots; bin-160 rF<1e-10
+D 24 intermediate-amplitude states,24 evaluations,24,COMPLETED,"a={10,15} nm"
+E 1440 comparisons + 60 summaries,1440 + 60,1440 + 60,COMPLETED,pure algebra
+failed retries,max 4,0,RESPECTED,
+original 7.29 BMP rereads,0,0,RESPECTED,
+P0 passive hook,1 (inherited),0,NOT_RUN_RESOURCE_GATED,
+rule7 large reference,0,0,RESPECTED,
