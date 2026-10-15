@@ -1,0 +1,15 @@
+{
+  "A_bank_verified": 48,
+  "B_probe_144": {
+    "pass": 576,
+    "fail": 0,
+    "note": "original 1e-11 gate; v093 used 1e-8"
+  },
+  "C_comparisons": 5040,
+  "C_summaries": 210,
+  "D_period_rows": 576,
+  "E_decomposition_pairs": 852,
+  "E_channel_rows": 2556,
+  "ablation_consistent": 2994,
+  "ablation_total": 5040
+}
