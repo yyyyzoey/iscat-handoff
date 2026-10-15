@@ -1,0 +1,20 @@
+parameter,status_category,value_or_state,blocking_note
+object_space_scale_nm_per_px,MISSING,UNDETERMINED,group1
+objective_model_NA_immersion_incidence_polarization_reference,MISSING,UNDETERMINED,group1
+true_exposure_gain_trigger_time_origin,MISSING,UNDETERMINED,group2
+magnetic_Bt_amplitude_vector_gradient_waveform_sync,MISSING,UNDETERMINED,group2
+particle_batch_core_coating_medium_fixation_height,MISSING_PARTIAL_HISTORICAL,nominal 100nm; batch unverified,group3
+independent_calibration_controls_noise_background,MISSING,UNDETERMINED,group4
+laser_vacuum_wavelength_nm,USER_CONFIRMED,520,
+camera_Fs_fps,EXPERIMENTAL_SCRIPT_RECORDED,5000,
+analysis_frames,EXPERIMENTAL_SCRIPT_RECORDED,2001 (1000:3000),
+dft_bin161_actual_Hz,EXPERIMENTAL_SCRIPT_RECORDED,399.800099950025,
+ac_magnetic_field_frequency_Hz,HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP,200,
+camera_sensor_pixel_um,HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP,14,
+objective_nominal_magnification,HISTORICAL_RECORDED_UNVERIFIED_FINAL_SETUP,50x,
+demo_object_pixel_nm,SIMULATION_ASSUMPTION,65,
+demo_translation_amplitudes_nm,SIMULATION_ASSUMPTION,"5, 20",
+demo_focus_planes_nm,SIMULATION_ASSUMPTION,"450, 550",
+demo_NA_gap_medium,SIMULATION_ASSUMPTION,1.3 / 5nm / glass-water,
+material_constants_source,SIMULATION_ASSUMPTION,Fe3O4 Querry 1985; Au 520nm measured,
+particle_diameter_nm,MISSING,NOT_ESTIMATED,

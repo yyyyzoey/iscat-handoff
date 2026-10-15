@@ -1,0 +1,9 @@
+fixture_id,description,expected_guard,observed,status
+FX-01,frequency-distinguished positive: 3 freqs coexist via full keys,ContractError,accepted,PASS
+FX-02,last-frequency overwrite (v089 defect) reproduced then rejected by aggregator,ContractError,accepted,PASS
+FX-03,W1 orthogonality: joint 7-col fit == direct common demodulation (exact integer cycles),ContractError,accepted,PASS
+FX-04,W2 Gram identity (cos/sin/cross blocks),ContractError,accepted,PASS
+FX-05,"D3 trend-model amplitude recovery (arbitrary phase, abs < 1e-11)",ContractError,accepted,PASS
+FX-06,denominator tamper detection (window vs full-record denominator),ContractError,accepted,PASS
+FX-07,CSV duplicate record keys rejected,ContractError,ContractError: duplicate record keys in CSV,PASS
+FX-08,experimental source SHA + NaN guard,ContractError,accepted,PASS

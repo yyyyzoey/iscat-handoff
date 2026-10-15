@@ -1,18 +1,15 @@
-v089 independent readback (clean session):
-time_utc: 2026-10-15T11:00:10.383060Z
+v090 independent readback (clean session):
+time_utc: 2026-10-15T11:58:02.185528Z
 
-analysis/v089_fixed_fixture_results8.csv                   rows=   8 expected=   8 cols=4 unique=True control=False -> CLEAN
-analysis/v089_v088_same_operator_recheck6.csv              rows=   6 expected=   6 cols=7 unique=True control=False -> CLEAN
-analysis/v089_window_moments2.csv                          rows=   3 expected=   3 cols=9 unique=True control=False -> CLEAN
-analysis/v089_design_rank_condition4.csv                   rows=   4 expected=   4 cols=9 unique=True control=False -> CLEAN
-analysis/v089_component_closure12.csv                      rows=  12 expected=  12 cols=9 unique=True control=False -> CLEAN
-analysis/v089_estimator_comparison12.csv                   rows=  12 expected=  12 cols=13 unique=True control=False -> CLEAN
-tables/v089_spectral_coordinates_roundtrip8.csv            rows=   8 expected=   8 cols=7 unique=True control=False -> CLEAN
-tables/v089_segment_windows6.csv                           rows=   6 expected=   6 cols=6 unique=True control=False -> CLEAN
-tables/v089_floor_identity_reproducible6.csv               rows=   6 expected=   6 cols=2 unique=True control=False -> CLEAN
-tables/v089_case_and_source_lineage.csv                    rows=   4 expected=   4 cols=4 unique=True control=False -> CLEAN
-tables/v089_parameter_readiness.csv                        rows=  19 expected=  19 cols=4 unique=True control=False -> CLEAN
-tables/v089_budget_ledger.csv                              rows=  10 expected=  10 cols=5 unique=True control=False -> CLEAN
-tables/v089_p0_status.csv                                  rows=   2 expected=   2 cols=7 unique=True control=False -> CLEAN
-analysis/v089_estimator_comparison_arrays.npz              arrays=24 Imean_full=(41,41) -> CLEAN
+analysis/v090_same_input_algebra12.csv                     rows=  3 expected=  3 cols=3 unique=True control=False -> CLEAN
+analysis/v090_w2_sufficient_statistic.csv                  rows=  3 expected=  3 cols=4 unique=True control=False -> CLEAN
+analysis/v090_legacy_vs_corrected12.csv                    rows= 12 expected= 12 cols=9 unique=True control=False -> CLEAN
+analysis/v090_probes12_frequency_identity.csv              rows= 12 expected= 12 cols=10 unique=True control=False -> CLEAN
+analysis/v090_probes12_complex_closure.csv                 rows= 12 expected= 12 cols=8 unique=True control=False -> CLEAN
+tables/v090_fixtures8.csv                                  rows=  8 expected=  8 cols=5 unique=True control=False -> CLEAN
+tables/v090_parameter_readiness.csv                        rows= 19 expected= 19 cols=4 unique=True control=False -> CLEAN
+tables/v090_budget_ledger.csv                              rows= 10 expected= 10 cols=5 unique=True control=False -> CLEAN
+tables/v090_p0_status.csv                                  rows=  2 expected=  2 cols=7 unique=True control=False -> CLEAN
+analysis/v090_sparse_probe_evidence.npz                    beta/resid/series present -> CLEAN
+analysis/v090_derived_X6.npz                               derived_X=6 -> CLEAN
 ALL_CLEAN

@@ -1,0 +1,19 @@
+{
+  "archive_path": "analysis/v089_estimator_comparison_arrays.npz",
+  "archive_sha256": "c75fd800ded350c848c69376bddf30689c8df8e0e57e009da1f238ea5eae10e7",
+  "n_map_keys": 24,
+  "key_contract": "model|window|<int(f)>Hz",
+  "video_source_sha256": "49c10f1b24c6798f745dd8b7f1409b0472912761ac639b71566f9c1e800582be",
+  "legacy_csv_sha256": "adf7a53cb07808c8f3b131547dc23b0fae03ae1f5f5df8d9bb8fa2307007a12b",
+  "mean_maps": [
+    "Imean_full",
+    "Imean_W1",
+    "Imean_W2"
+  ],
+  "mask": "common_mask",
+  "npz_does_not_contain": [
+    "raw X numerators",
+    "full-ROI beta/residual time series"
+  ],
+  "X_derived_policy": "X = Nw*Imean_w*D0/2 marked DERIVED, not independent"
+}

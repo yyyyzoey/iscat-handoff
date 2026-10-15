@@ -1,0 +1,13 @@
+record_key,window,model,freq_Hz,n_probes,max_abs_diff_qr_vs_lstsq,max_abs_diff_qr_vs_npz,max_abs_C_npz_probe,gate,status
+W1|D2_joint7|200,W1,D2_joint7,200.0,12,1.6653345369377348e-16,1.8365524948331529e-16,0.013113836566986408,abs < 1e-11 (same-input double precision),PASS
+W1|D2_joint7|400,W1,D2_joint7,400.0,12,1.6653345369377348e-16,1.7703590021319236e-16,0.027156860652408819,abs < 1e-11 (same-input double precision),PASS
+W1|D2_joint7|420,W1,D2_joint7,420.0,12,1.6653345369377348e-16,1.8787499982699706e-16,0.013618272882784402,abs < 1e-11 (same-input double precision),PASS
+W1|D3_joint8_trend|200,W1,D3_joint8_trend,200.0,12,1.6653345369377348e-16,1.8294370623261052e-16,0.013132198243703392,abs < 1e-11 (same-input double precision),PASS
+W1|D3_joint8_trend|400,W1,D3_joint8_trend,400.0,12,1.6653345369377348e-16,1.7349946112099882e-16,0.027091764336065294,abs < 1e-11 (same-input double precision),PASS
+W1|D3_joint8_trend|420,W1,D3_joint8_trend,420.0,12,1.6653345369377348e-16,1.9406164941676668e-16,0.013581899975190636,abs < 1e-11 (same-input double precision),PASS
+W2|D2_joint7|200,W2,D2_joint7,200.0,12,1.3183898417423734e-16,1.9933191839382464e-16,0.018944423994595932,abs < 1e-11 (same-input double precision),PASS
+W2|D2_joint7|400,W2,D2_joint7,400.0,12,1.3183898417423734e-16,1.9823866620030027e-16,0.021493368260915805,abs < 1e-11 (same-input double precision),PASS
+W2|D2_joint7|420,W2,D2_joint7,420.0,12,1.3183898417423734e-16,1.4754363024145675e-16,0.010678776411072528,abs < 1e-11 (same-input double precision),PASS
+W2|D3_joint8_trend|200,W2,D3_joint8_trend,200.0,12,1.3183898417423734e-16,1.9893060262920067e-16,0.018126558966192564,abs < 1e-11 (same-input double precision),PASS
+W2|D3_joint8_trend|400,W2,D3_joint8_trend,400.0,12,1.3183898417423734e-16,1.8344235585290647e-16,0.021519601920892504,abs < 1e-11 (same-input double precision),PASS
+W2|D3_joint8_trend|420,W2,D3_joint8_trend,420.0,12,1.3183898417423734e-16,1.4843956368727144e-16,0.011422199933146665,abs < 1e-11 (same-input double precision),PASS

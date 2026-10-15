@@ -1,0 +1,24 @@
+{
+  "observed_rank_same_between_two_paths": "YES",
+  "rank_certified_by_reported_triangle_intervals": "NO",
+  "estimator_diagnostics": "CLOSED_WITH_CORRECTED_FREQUENCIES_AND_SPARSE_QR_CONFIRMATION",
+  "400Hz_persistent_difference_L2": {
+    "D0_direct_local": 0.336012618264355,
+    "D1_direct_common": 0.3361021252078303,
+    "D2_joint7": 0.336067530269434,
+    "D3_joint8_trend": 0.33505072230789656
+  },
+  "root_cause_of_within_record_difference": "UNDETERMINED (not attributable to the tested estimator choices; no magnetism/noise claim)",
+  "fixtures_all_pass": true,
+  "w1_identity_confirmed": true,
+  "w2_sufficient_statistic_confirmed": true,
+  "conditional_full_roi_recovery_used": 0,
+  "sparse_12pixel_qr_verification": {
+    "frequency_identity_rows": 12,
+    "all_pass": true,
+    "complex_closure_rows": 12,
+    "closure_all_pass": true,
+    "gate": "abs < 1e-11 (identity) / abs < 1e-10 DFT count (closure)",
+    "scope": "12 pre-registered pixels only; one sparse HDF5 read session"
+  }
+}

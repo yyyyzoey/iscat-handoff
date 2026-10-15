@@ -1,0 +1,11 @@
+item,budget,used,status,note
+new_BEM_solve / new_position_render,0 / 0,0 / 0,RESPECTED,
+conditional full-ROI recovery (2 windows x 2 models),"max 4, conditional",0,NOT_USED_NPZ_INTACT,recovered from the original NPZ instead
+A archive identity freeze,read-only,24 keys,COMPLETED,SHA matches review value
+B aggregator fixtures,max 8,8,COMPLETED,incl. overwrite negative and Gram identity
+C correct 12 rows from NPZ + W1/W2 identities,pure algebra,12 rows,COMPLETED,exactly 4 legacy rows changed
+D sparse 12-pixel QR verification,"1 session, 4 entries",1 session / 4 entries,COMPLETED,12/12 identity + 12/12 closure PASS
+new synthetic 2001-frame computations,0,0,RESPECTED,
+original 7.29 BMP rereads,0,0,RESPECTED,
+P0 passive hook,1 (inherited),0,NOT_RUN_RESOURCE_GATED,
+rule7 large reference,0,0,RESPECTED,

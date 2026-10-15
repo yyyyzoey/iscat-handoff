@@ -1,0 +1,13 @@
+record_key,window,model,freq_Hz,n_probes,max_abs_closure_DFT_count,gate,status
+W1|D2_joint7|200,W1,D2_joint7,200.0,12,2.3077201854694104e-15,abs < 1e-10 DFT count (sparse 12-pixel check),PASS
+W1|D2_joint7|400,W1,D2_joint7,400.0,12,1.6836364929514159e-15,abs < 1e-10 DFT count (sparse 12-pixel check),PASS
+W1|D2_joint7|420,W1,D2_joint7,420.0,12,8.3090620344220414e-16,abs < 1e-10 DFT count (sparse 12-pixel check),PASS
+W1|D3_joint8_trend|200,W1,D3_joint8_trend,200.0,12,2.2083303481383262e-15,abs < 1e-10 DFT count (sparse 12-pixel check),PASS
+W1|D3_joint8_trend|400,W1,D3_joint8_trend,400.0,12,2.173446625352652e-15,abs < 1e-10 DFT count (sparse 12-pixel check),PASS
+W1|D3_joint8_trend|420,W1,D3_joint8_trend,420.0,12,6.1119256627271082e-16,abs < 1e-10 DFT count (sparse 12-pixel check),PASS
+W2|D2_joint7|200,W2,D2_joint7,200.0,12,1.1607721834701992e-15,abs < 1e-10 DFT count (sparse 12-pixel check),PASS
+W2|D2_joint7|400,W2,D2_joint7,400.0,12,1.0556897932417756e-15,abs < 1e-10 DFT count (sparse 12-pixel check),PASS
+W2|D2_joint7|420,W2,D2_joint7,420.0,12,5.6533424454597661e-16,abs < 1e-10 DFT count (sparse 12-pixel check),PASS
+W2|D3_joint8_trend|200,W2,D3_joint8_trend,200.0,12,9.0233055233912218e-16,abs < 1e-10 DFT count (sparse 12-pixel check),PASS
+W2|D3_joint8_trend|400,W2,D3_joint8_trend,400.0,12,5.4253429044391518e-16,abs < 1e-10 DFT count (sparse 12-pixel check),PASS
+W2|D3_joint8_trend|420,W2,D3_joint8_trend,420.0,12,5.4887004412345333e-16,abs < 1e-10 DFT count (sparse 12-pixel check),PASS
