@@ -20,6 +20,8 @@ class ContractError(Exception):
 
 
 def full_key(model, window, freq_hz):
+    if float(freq_hz) != int(freq_hz):
+        raise ContractError('non-integer frequency alias %r rejected (frozen set 200/400/420)' % (freq_hz,))
     return '%s|%s|%dHz' % (model, window, int(freq_hz))
 
 

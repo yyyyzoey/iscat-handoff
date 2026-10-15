@@ -1,15 +1,13 @@
-v090 independent readback (clean session):
-time_utc: 2026-10-15T11:58:02.185528Z
+v091 independent readback (clean session):
+time_utc: 2026-10-15T12:28:27.045270Z
 
-analysis/v090_same_input_algebra12.csv                     rows=  3 expected=  3 cols=3 unique=True control=False -> CLEAN
-analysis/v090_w2_sufficient_statistic.csv                  rows=  3 expected=  3 cols=4 unique=True control=False -> CLEAN
-analysis/v090_legacy_vs_corrected12.csv                    rows= 12 expected= 12 cols=9 unique=True control=False -> CLEAN
-analysis/v090_probes12_frequency_identity.csv              rows= 12 expected= 12 cols=10 unique=True control=False -> CLEAN
-analysis/v090_probes12_complex_closure.csv                 rows= 12 expected= 12 cols=8 unique=True control=False -> CLEAN
-tables/v090_fixtures8.csv                                  rows=  8 expected=  8 cols=5 unique=True control=False -> CLEAN
-tables/v090_parameter_readiness.csv                        rows= 19 expected= 19 cols=4 unique=True control=False -> CLEAN
-tables/v090_budget_ledger.csv                              rows= 10 expected= 10 cols=5 unique=True control=False -> CLEAN
-tables/v090_p0_status.csv                                  rows=  2 expected=  2 cols=7 unique=True control=False -> CLEAN
-analysis/v090_sparse_probe_evidence.npz                    beta/resid/series present -> CLEAN
-analysis/v090_derived_X6.npz                               derived_X=6 -> CLEAN
+tables/v091_guard_tests8.csv                               rows=   8 expected=   8 cols=5 unique=True control=False -> CLEAN
+tables/v091_leavegroup_216.csv                             rows= 216 expected= 216 cols=18 unique=True control=False -> CLEAN
+tables/v091_leavegroup_summary9.csv                        rows=   9 expected=   9 cols=8 unique=True control=False -> CLEAN
+tables/v091_parameter_readiness.csv                        rows=  19 expected=  19 cols=4 unique=True control=False -> CLEAN
+tables/v091_budget_ledger.csv                              rows=   8 expected=   8 cols=5 unique=True control=False -> CLEAN
+tables/v091_p0_status.csv                                  rows=   2 expected=   2 cols=7 unique=True control=False -> CLEAN
+analysis/v091_estimator_comparison12_full.csv              rows=  12 expected=  12 cols=14 unique=True control=False -> CLEAN
+analysis/v091_identity_relations12.csv                     rows=  12 expected=  12 cols=8 unique=True control=False -> CLEAN
+analysis/v091_closure144_original_gate.csv                 rows= 144 expected= 144 cols=10 unique=True control=False -> CLEAN
 ALL_CLEAN

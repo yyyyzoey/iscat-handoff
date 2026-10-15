@@ -1,0 +1,10 @@
+record_key,scenario,feature,n_queries,label_consistent_count,label_inconsistent_count,tie_across_D_count,reading
+amplitude|ROI_L2_log_ratio,amplitude,ROI_L2_log_ratio,24,4,20,0,in-sample geometry screen with leave-group references; NOT accuracy/detectability
+amplitude|magnitude_pattern_symmetric,amplitude,magnitude_pattern_symmetric,24,4,20,0,in-sample geometry screen with leave-group references; NOT accuracy/detectability
+amplitude|unit_magnitude_shape,amplitude,unit_magnitude_shape,24,24,0,0,in-sample geometry screen with leave-group references; NOT accuracy/detectability
+focus|ROI_L2_log_ratio,focus,ROI_L2_log_ratio,24,17,7,0,in-sample geometry screen with leave-group references; NOT accuracy/detectability
+focus|magnitude_pattern_symmetric,focus,magnitude_pattern_symmetric,24,22,2,0,in-sample geometry screen with leave-group references; NOT accuracy/detectability
+focus|unit_magnitude_shape,focus,unit_magnitude_shape,24,12,12,0,in-sample geometry screen with leave-group references; NOT accuracy/detectability
+motion|ROI_L2_log_ratio,motion,ROI_L2_log_ratio,24,8,16,0,in-sample geometry screen with leave-group references; NOT accuracy/detectability
+motion|magnitude_pattern_symmetric,motion,magnitude_pattern_symmetric,24,8,16,0,in-sample geometry screen with leave-group references; NOT accuracy/detectability
+motion|unit_magnitude_shape,motion,unit_magnitude_shape,24,0,24,0,in-sample geometry screen with leave-group references; NOT accuracy/detectability

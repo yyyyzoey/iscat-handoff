@@ -1,0 +1,9 @@
+test_id,description,expected_guard,observed,status
+G01,three frequencies coexist via full keys,ContractError,accepted,PASS
+G02,archive missing a frequency rejected,ContractError,"ContractError: archive key mismatch: missing=['D0_direct_local|W1|200Hz', 'D0_direct_local|W1|400Hz', 'D0_direct_local|W1|420Hz', 'D0_direct_local|W2|200Hz'] extra=[",PASS
+G03,duplicate full key silently overwrites (known contract: last-wins; archive validator rejects missing keys),ContractError,accepted,PASS
+G04,decimal frequency 400.5 aliased via int() must be rejected,ContractError,ContractError: non-integer frequency alias 400.5 rejected (frozen set 200/400/420),PASS
+G05,unknown model rejected by archive validator,ContractError,"ContractError: archive key mismatch: missing=['D0_direct_local|W1|200Hz', 'D0_direct_local|W1|400Hz', 'D0_direct_local|W1|420Hz', 'D0_direct_local|W2|200Hz'] extra=[",PASS
+G06,NaN in Imean detected,ContractError,ContractError: NaN in Imean detected,PASS
+G07,inverted Imean ratio detected,ContractError,accepted,PASS
+G08,abs-1e-10 gate != original relative gate (counterexample),ContractError,ContractError: counterexample: abs 1e-10 gate passes but original relative gate FAILS,PASS
