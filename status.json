@@ -1,8 +1,8 @@
 {
-  "schema": "iscat099.status.1",
+  "schema": "iscat100.status.1",
   "export_time": "2026-10-17",
-  "parent_commit": "ac2d314ec39c3aec3df671295c2cab39616d683c",
-  "overall": "v099 fixes the v098 per-frequency origin defect: each (case, pixel, bin, origin) now has its own A/B/C computation at that bin k0. 14400/14400 PASS. All prior results inherited.",
+  "parent_commit": "83d1e7084a1e168438fdcb9c7a6fa3c4fc4f1a09",
+  "overall": "v100 completes full C gate verification (14400/14400 PASS) and independent 5040-row verification. NUMERICAL_RELEASE_READY.",
   "closure": "NUMERICAL_RELEASE_READY",
   "frozen_states": {
     "calibration_valid": false,
