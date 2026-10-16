@@ -1,11 +1,9 @@
 {
-  "schema": "iscat097.status.1",
+  "schema": "iscat099.status.1",
   "export_time": "2026-10-17",
-  "parent_commit": "c244bdfcd50910de24c4d4e065482b5909c5c2d6",
-  "overall": "v097 completes the numerical research closure: correct 25-point origin extraction with three-way cross-verification (4800/4800 PASS), corrected 1680 radius with pool-wide tie logic (1126 POSITIVE, 554 label corrections), estimator diagnostics SEALED. Root cause UNDETERMINED.",
-  "closure": {
-    "status": "SEALED"
-  },
+  "parent_commit": "ac2d314ec39c3aec3df671295c2cab39616d683c",
+  "overall": "v099 fixes the v098 per-frequency origin defect: each (case, pixel, bin, origin) now has its own A/B/C computation at that bin k0. 14400/14400 PASS. All prior results inherited.",
+  "closure": "NUMERICAL_RELEASE_READY",
   "frozen_states": {
     "calibration_valid": false,
     "experimental_validation": false,
