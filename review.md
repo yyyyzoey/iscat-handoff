@@ -1,9 +1,8 @@
-# v096 Review
-## What v096 establishes
-1. 1680 complete radius rows (432 filled from v095 gap) + 70 summaries
-2. 1680 common perturbation budget rows (single-side, symmetric, unnormalized)
-3. 14400 period components + 96 motion pairs + endpoint verification
-4. 14400 discrete record origin results + 576 amplitude summaries
-5. All prior results preserved read-only
+# v097 Review
+## What v097 establishes
+1. Correct 25-point origin extraction (fixing v096 full-record circular shift error)
+2. Three-way cross-verification 4800/4800 PASS
+3. Corrected 1680 radius with pool-wide tie logic (554 label changes from v096)
+4. Numerical research SEALED
 ## Not claimed
 No diameter, causality, detectability, or identifiability claims.

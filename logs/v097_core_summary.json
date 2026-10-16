@@ -1,0 +1,8 @@
+{
+  "total": 4800,
+  "pass": 4800,
+  "path_A_pass": 4800,
+  "path_B_pass": 4800,
+  "path_C_pass": 4800,
+  "gate": "1e-11"
+}
