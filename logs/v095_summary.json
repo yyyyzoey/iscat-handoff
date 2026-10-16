@@ -1,0 +1,9 @@
+{
+  "A_bank_ok": 48,
+  "B_probe_pass": 576,
+  "B_probe_fail": 0,
+  "C_comparisons": 5040,
+  "D_pass": 852,
+  "D_fail": 0,
+  "E_radius_rows": 1248
+}
