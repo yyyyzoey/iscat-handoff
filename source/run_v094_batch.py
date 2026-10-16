@@ -110,31 +110,27 @@ def main():
     probe_rows = []
     n_probe_pass = n_probe_fail = 0
     for skey in series_keys:
-        # parse case and pixel from key like 'series_D30_zf450_M200_a5_h5_20_20'
         parts = skey.replace('series_', '').split('_h5_')
         case_id = parts[0]
-        pix = parts[1]  # e.g. '20_20'
+        pix = parts[1]
         s = zs[skey].astype(np.float64)
         Im = float(s.mean())
         for k0 in K0S:
             e = np.exp(-2j * np.pi * k0 * np.arange(N) / N)
             X_indep = complex(np.sum((s - Im) * e))
             C_indep = 2.0 * X_indep / (N * Im) if Im != 0 else complex(np.nan)
-            # bank values
             C_bank = bank_C[case_id][K0S.index(k0)].reshape(-1)
             X_bank = bank_X[case_id][K0S.index(k0)].reshape(-1)
             pix_idx = int(pix.split('_')[0]) * 41 + int(pix.split('_')[1])
             X_bp = X_bank[pix_idx]; C_bp = C_bank[pix_idx]
             d_X = abs(X_indep - X_bp)
             d_C = abs(C_indep - C_bp)
-            # ORIGINAL gate: per-item complex diff < 1e-11
             ok = d_X < 1e-11 and d_C < 1e-11
             n_probe_pass += int(ok); n_probe_fail += int(not ok)
             probe_rows.append({'record_key': '%s|bin%d|%s' % (case_id, k0, pix),
                                'case_id': case_id, 'k0': k0, 'pixel': pix,
                                'abs_dX_vs_bank': g17(d_X), 'abs_dC_vs_bank': g17(d_C),
-                               'original_gate_1e-11': 'PASS' if ok else 'FAIL',
-                               'v093_gate_1e-8': 'PASS' if (d_X < 1e-8 and d_C < 1e-8) else 'FAIL'})
+                               'original_gate_1e-11': 'PASS' if ok else 'FAIL'})
     wcsv(os.path.join(TAB, 'v094_probe_rejudgment576.csv'),
          list(probe_rows[0].keys()), probe_rows)
     print('  probes: %d PASS, %d FAIL (original 1e-11 gate)' % (n_probe_pass, n_probe_fail))
@@ -142,10 +138,8 @@ def main():
 
     # ==================== Phase C: 5040/210 unified comparisons ====================
     print('=== Phase C: 5040 unified comparisons ===')
-    # Build magnitude vectors for all 48 states, all 7 bin subsets
     BIN_SUBSETS = [(80,), (160,), (320,), (80, 160), (80, 320), (160, 320), (80, 160, 320)]
     meta = {k: parse(k) for k in ALL48}
-    # Pre-compute |C_k| vectors per state per bin
     abs_C = {}
     for key in ALL48:
         for ki, k0 in enumerate(K0S):
@@ -169,7 +163,6 @@ def main():
     eps64 = np.finfo(np.float64).eps
     for bins in BIN_SUBSETS:
         bins_key = '+'.join(str(b) for b in bins)
-        # endpoint leave-group (7 factor subsets)
         for S in FACTOR_SUBSETS:
             S = list(S)
             for qi in ALL24:
@@ -207,7 +200,6 @@ def main():
                         'tied_set_size': len(tied), 'tie_across_D': 'YES' if ambiguous else 'NO',
                         'model_label_consistent': 'YES' if consistent else ('AMBIGUOUS_CROSS_D' if ambiguous else 'NO'),
                         'status': 'EVALUATED'})
-        # intermediate queries (3 policies)
         for pname, pol in POLICIES:
             for qi in INTER24:
                 refs = [rj for rj in ALL24 if pol(qi, rj)]
@@ -243,7 +235,6 @@ def main():
                         'tied_set_size': len(tied), 'tie_across_D': 'YES' if ambiguous else 'NO',
                         'model_label_consistent': 'YES' if consistent else ('AMBIGUOUS_CROSS_D' if ambiguous else 'NO'),
                         'status': 'EVALUATED'})
-    # summaries
     for key in sorted({(r['bins'], r.get('subset_S', r.get('policy', '')), r['feature']) for r in comp}):
         bins, S, fname = key
         rs = [r for r in comp if r['bins'] == bins and
@@ -259,7 +250,6 @@ def main():
     wcsv(os.path.join(AN, 'v094_comparisons5040.csv'), all_f, comp)
     all_s = ['record_key'] + sorted({k for r in summ for k in r if k != 'record_key'})
     wcsv(os.path.join(AN, 'v094_summaries210.csv'), all_s, summ)
-    # 1440 subset check ({160} and {80,160,320})
     sub1440 = [r for r in comp if r['bins'] in ('160', '80+160+320')]
     wcsv(os.path.join(AN, 'v094_subset1440.csv'), all_f, sub1440)
     print('  comparisons: %d, summaries: %d' % (len(comp), len(summ)))
@@ -273,12 +263,10 @@ def main():
         case_id = parts[0]; pix = parts[1]
         s = zs[skey].astype(np.float64)
         g = s[:25]
-        # periodicity check
         max_dev = float(np.max(np.abs(s[:2000] - np.tile(g, 80))))
-        # h_r coefficients
+        last_dev = abs(s[2000] - g[0])
         n25 = np.arange(25)
         h = np.array([np.mean(g * np.exp(-2j * np.pi * r * n25 / 25)) for r in range(25)])
-        # T_kr projection and closure for 3 bins
         for k0 in K0S:
             T = np.zeros((25,), dtype=np.complex128)
             for r in range(25):
@@ -291,6 +279,7 @@ def main():
             per_rows.append({'record_key': '%s|bin%d|%s' % (case_id, k0, pix),
                              'case_id': case_id, 'k0': k0, 'pixel': pix,
                              'periodicity_max_dev_first_2000': g17(max_dev),
+                             'last_point_dev': g17(last_dev),
                              'abs_X_direct': g17(abs(X_direct)),
                              'abs_X_periodic_recon': g17(abs(X_recon)),
                              'abs_diff': g17(d),
@@ -301,7 +290,6 @@ def main():
 
     # ==================== Phase E: spectral decomposition (852 pairs) ====================
     print('=== Phase E: spectral decomposition ===')
-    # Build 852 pairs: 276 endpoint-endpoint + 576 endpoint-intermediate
     pairs_ee = list(itertools.combinations(ALL24, 2))
     pairs_ei = list(itertools.product(ALL24, INTER24))
     all_pairs = [(i, j, 'EE') for i, j in pairs_ee] + [(i, j, 'EI') for i, j in pairs_ei]
@@ -316,10 +304,8 @@ def main():
         Ar = float(np.sqrt(sum(a ** 2 for a in ar_bins)))
         if Aq == 0 or Ar == 0:
             continue
-        # spectral ratio term
         spec_term = sum((np.sqrt(aq / Aq) - np.sqrt(ar / Ar)) ** 2
                         for aq, ar in zip(aq_bins, ar_bins))
-        # spatial shape term per channel
         total_shape = 0.0
         for k0, vq_k, vr_k, aq_k, ar_k in zip(K0S, vq_bins, vr_bins, aq_bins, ar_bins):
             if aq_k == 0 or ar_k == 0:
