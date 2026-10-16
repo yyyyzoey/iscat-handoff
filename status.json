@@ -1,64 +1,15 @@
 {
-  "schema": "iscat093.status.1",
-  "export_time": "2026-10-16",
-  "parent_commit": "ec052eb8530f22982fefe58b9f776a04e37dd9f4",
-  "overall": "v093 completes the full batch: 48/48 bank identity verified (C=2X/(N*Imean) all PASS, mask rule PASS, params PASS), 24 old C160 rF values reported (all < 1e-10), 576 independent field-first probe checks (576/576 PASS at 1e-8 cross-path gate), 1440 corrected comparisons from the real 3-bin bank (fixing the 6 pseudo-three-channel states), 5040 7-channel ablation comparisons and 210 summaries. The three-bin representation improves consistency for motion-type leave-group (8->14/24 with C400_only vs three_bin) and intermediate queries reach 24/24 (three_bin, unknown policy). Motion type remains the dominant confounder. Zero BEM/renders/simulations/BMP rereads.",
-  "A_bank_identity": {
-    "execution_status": "COMPLETED",
-    "validation_status": "PASS_48_OF_48",
-    "evidence_status": "COMPLETE",
-    "facts": [
-      "48/48 C=2X/(N*Imean) verified",
-      "48/48 mask rule verified",
-      "48/48 params (N/Fs/k0/a) verified",
-      "24 old C160 rF all < 1e-10"
-    ]
-  },
-  "B_probes": {
-    "execution_status": "COMPLETED",
-    "validation_status": "PASS_576_OF_576",
-    "evidence_status": "COMPLETE",
-    "facts": [
-      "48 states x 4 pixels x 3 bins = 576 checks",
-      "field-first independent path (not QF)",
-      "gate 1e-8 cross-path (FF vs QF rounding)",
-      "all 576 PASS"
-    ]
-  },
-  "C_corrected": {
-    "execution_status": "COMPLETED",
-    "validation_status": "PASS_1440_ROWS",
-    "evidence_status": "COMPLETE",
-    "facts": [
-      "1440 comparisons from real 3-bin bank",
-      "6 pseudo-three-channel states fixed",
-      "three_bin improves motion-type consistency 8->14/24"
-    ]
-  },
-  "D_ablation": {
-    "execution_status": "COMPLETED",
-    "validation_status": "PASS_5040_ROWS",
-    "evidence_status": "COMPLETE",
-    "facts": [
-      "7 channel subsets x 720 base comparisons = 5040",
-      "210 summaries",
-      "all channel combinations reported"
-    ]
-  },
-  "E_F": {
-    "execution_status": "COMPLETED",
-    "validation_status": "PASS_DOCUMENTATION",
-    "evidence_status": "COMPLETE"
-  },
-  "v092_defect_disposition": {
-    "corrected": "6 pseudo-three-channel states (C160 replicated 3x instead of real C80/C160/C320)",
-    "resolution": "all 48 states now use real 3-bin bank data; v092 files preserved read-only"
+  "schema": "iscat097.status.1",
+  "export_time": "2026-10-17",
+  "parent_commit": "c244bdfcd50910de24c4d4e065482b5909c5c2d6",
+  "overall": "v097 completes the numerical research closure: correct 25-point origin extraction with three-way cross-verification (4800/4800 PASS), corrected 1680 radius with pool-wide tie logic (1126 POSITIVE, 554 label corrections), estimator diagnostics SEALED. Root cause UNDETERMINED.",
+  "closure": {
+    "status": "SEALED"
   },
   "frozen_states": {
     "calibration_valid": false,
     "experimental_validation": false,
     "detection_validated": false,
     "single_particle_diameter": "NOT_ESTIMATED"
-  },
-  "science_boundary": "All results are in-sample geometry screens on prescribed demo trajectories. NO diameter, causality, detectability, or identifiability claims."
+  }
 }
