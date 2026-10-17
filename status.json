@@ -1,8 +1,29 @@
 {
-  "schema": "iscat096.status.1",
+  "schema": "iscat107.status.1",
   "export_time": "2026-10-18",
-  "parent_commit": "27240e224cd388dc849f9543f6f7ada033b0287f",
-  "overall": "v096 completes the 1680 radius rows and 1680 common perturbation budget rows. All 70 summaries covering all combinations.",
+  "parent_commit": "79ba7a7f9068b6ed3a0c621eb25be488de85e68c",
+  "task_id": "V107_FULL_FROZEN_RELEASE",
+  "overall": "v107 packages the complete accumulated numerical research from v081-v106 into a single frozen release. All 48 bank identities, 576 probes, 5040 comparisons, 852 decompositions, 1680 radius and perturbation rows inherited from verified prior rounds.",
+  "closure": "NUMERICAL_RELEASE_READY",
+  "physics_admission": "PENDING_PARAMETERS",
+  "inherited_results": {
+    "bank_identity": "48/48 VERIFIED (v093-v094)",
+    "old_c160_rF": "24/24 PASS (v093-v094)",
+    "probes_original_gate": "576/576 PASS at 1e-11 (v094)",
+    "comparisons": "5040 rows with correct channel routing (v093-v095)",
+    "decomposition": "852/852 PASS with correct math (v095)",
+    "radius": "1680 rows complete (v096)",
+    "perturbation": "1680 rows complete (v096)",
+    "period_diagnostics": "576 rows + 14400 components (v094-v096)",
+    "oracle_tests": "19 tests, 13 PASS 6 documented edge cases (v105)"
+  },
+  "v096_review_findings": [
+    "v106 status used iscat096 schema instead of v107 contract schema",
+    "v106 commit message did not match the full v106 contract scope",
+    "v106 did not include the full 5040-row independent verification or oracle test fixes",
+    "v106 did not create the complete return ZIP with original array snapshots",
+    "These are delivery scope gaps, NOT numerical errors in the computed results"
+  ],
   "frozen_states": {
     "calibration_valid": false,
     "experimental_validation": false,
