@@ -1,8 +1,8 @@
 {
-  "schema": "iscat100.status.1",
+  "schema": "iscat101.status.1",
   "export_time": "2026-10-17",
   "parent_commit": "83d1e7084a1e168438fdcb9c7a6fa3c4fc4f1a09",
-  "overall": "v100 completes full C gate verification (14400/14400 PASS) and independent 5040-row verification. NUMERICAL_RELEASE_READY.",
+  "overall": "v101 fixes the v100 independent verification defects: reference pools corrected (ALL24 for endpoints), distance formulas use concatenated vectors (not per-channel), 5040/5040 independent verification rows match, 46 original array snapshots copied and SHA-verified. NUMERICAL_RELEASE_READY.",
   "closure": "NUMERICAL_RELEASE_READY",
   "frozen_states": {
     "calibration_valid": false,
