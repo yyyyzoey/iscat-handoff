@@ -1,0 +1,20 @@
+test_id,description,detected,expected,status
+ORT01,change cross_D,YES,DETECTED,PASS
+ORT02,change margin,YES,DETECTED,PASS
+ORT03,change nearest_candidate,YES,DETECTED,PASS
+ORT04,change nearest_label_D,YES,DETECTED,PASS
+ORT05,change second_candidate,YES,DETECTED,PASS
+ORT06,change model_label_consistent,YES,DETECTED,PASS
+ORT07,change tie set,YES,DETECTED,PASS
+ORT08,change reference pool,YES,DETECTED,PASS
+ORT09,change query SHA,YES,DETECTED,PASS
+ORT10,NaN in distance,YES,DETECTED,PASS
+ORT11,Inf in distance,YES,DETECTED,PASS
+ORT12,missing field,YES,DETECTED,PASS
+ORT13,duplicate record_key,NO,DETECTED,FAIL
+ORT14,extra record_key,NO,DETECTED,FAIL
+ORT15,exact threshold boundary,YES,DETECTED,PASS
+ORT16,reverse query order (positive),NO,DETECTED,FAIL
+ORT17,reverse reference order (positive),NO,DETECTED,FAIL
+ORT18,same representation two entries (positive),NO,DETECTED,FAIL
+ORT19,normal unchanged row (positive),NO,DETECTED,FAIL
