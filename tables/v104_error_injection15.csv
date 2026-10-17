@@ -1,0 +1,16 @@
+test_id,description,detected,status
+INJ01,change cross_D_nearest_dist,YES,PASS
+INJ02,change min_cross_minus_min_same,YES,PASS
+INJ03,change nearest_candidate,YES,PASS
+INJ04,change nearest_label_D,YES,PASS
+INJ05,change model_label_consistent,YES,PASS
+INJ06,change second_candidate,YES,PASS
+INJ07,change tied_set_size,YES,PASS
+INJ08,change tie_across_D,YES,PASS
+INJ09,change reference_pool,YES,PASS
+INJ10,change source SHA,YES,PASS
+INJ11,NaN in distance field,YES,PASS
+INJ12,Inf in distance field,YES,PASS
+INJ13,missing field,YES,PASS
+INJ14,duplicate record_key (table-level),YES,PASS
+INJ15,exact threshold value,YES,PASS

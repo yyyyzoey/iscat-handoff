@@ -1,0 +1,9 @@
+{
+  "independent_total": 5040,
+  "match": 5040,
+  "mismatch": 0,
+  "injection_tests": 15,
+  "injection_pass": 15,
+  "snapshots": 73,
+  "all_pass": true
+}

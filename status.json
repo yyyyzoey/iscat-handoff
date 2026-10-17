@@ -1,8 +1,8 @@
 {
-  "schema": "iscat103.status.1",
+  "schema": "iscat104.status.1",
   "export_time": "2026-10-17",
   "parent_commit": "f2a73c86725f72eddab3006a51246f86b83c3138",
-  "overall": "v103 completes full-field independent 5040/5040 verification (all decision fields compared) and 73-file core snapshot SHA-verified. NUMERICAL_RELEASE_READY.",
+  "overall": "v104 completes full-field 5040-row independent verification with ALL decision fields (5040/5040 match, 0 mismatch), 15/15 error injection tests PASS, 73-file core snapshot SHA-verified. NUMERICAL_RELEASE_READY. Physical access PENDING_PARAMETERS.",
   "closure": "NUMERICAL_RELEASE_READY",
   "frozen_states": {
     "calibration_valid": false,
