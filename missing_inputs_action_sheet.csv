@@ -1,0 +1,13 @@
+parameter,needed_record,how_to_obtain,blocked_route,status
+object_plane_nm_per_pixel_actual_with_error,stage calibration or certified ruler image with error budget,stage calibration or certified ruler image with error budget,route A/B blocking,OPEN
+exposure_time_per_frame,camera acquisition log / property readout per frame,camera acquisition log / property readout per frame,route A/B blocking,OPEN
+camera_gain_conversion,camera datasheet + measured conversion curve,camera datasheet + measured conversion curve,electron-count observation model,OPEN
+trigger_time_origin_convention,trigger log stating exposure-start vs exposure-center convention,trigger log stating exposure-start vs exposure-center convention,time-origin discipline,OPEN
+per_frame_timestamps,frame timestamp log (host or camera FIFO),frame timestamp log (host or camera FIFO),non-uniform timestamp handling,OPEN
+objective_NA_immersion_illumination_polarization,objective datasheet + illumination configuration record,objective datasheet + illumination configuration record,route A/B blocking,OPEN
+reference_field_path,optical layout record or interferometric characterization,optical layout record or interferometric characterization,route A/B blocking,OPEN
+magnetic_field_B_vector_gradient_waveform_sync,calibrated probe B(t) vector/gradient with camera sync record,calibrated probe B(t) vector/gradient with camera sync record,route B blocking,OPEN
+sample_medium_substrate_height_fixation,sample preparation record + profilometry/caliper of spacer,sample preparation record + profilometry/caliper of spacer,route A/B blocking,OPEN
+independent_trajectory_with_scale_and_timebase,independent tracking with certified scale and common timebase,independent tracking with certified scale and common timebase,route A blocking,OPEN
+unknown_axial_motion_and_orientation,defocused imaging / multi-view or explicit constrained assumption with bound,defocused imaging / multi-view or explicit constrained assumption with bound,route A/B blocking,OPEN
+independent_diameter_reference_and_blank_background,certified particle standard + particle-free blank capture,certified particle standard + particle-free blank capture,GO gate,OPEN

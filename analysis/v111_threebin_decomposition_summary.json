@@ -1,0 +1,8 @@
+{
+  "decomposition_rows": 30,
+  "identity_ok_all": true,
+  "total_diff_zero_groups": 2,
+  "total_diff_nonzero_groups": 28,
+  "note": "H-S = (H-M) + (M-S) count algebra; no causal or precision attribution; H-M reflects the two specified three-channel implementations (including the historical 6-cached-states C400 triple-copy defect, reproduced but NOT endorsed); M-S is the fixed-definition channel comparison",
+  "issues": []
+}

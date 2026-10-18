@@ -1,0 +1,76 @@
+{
+  "scripts": [
+    {
+      "extractor": "test.m",
+      "path": "C:\\Users\\PC\\Desktop\\\u8bfe\u9898\\test.m",
+      "found": true,
+      "sha_expected": "fdc918e691b13b33cbae8b32ecaacd1e63ec27be3e23b61b0701d0e595aea684",
+      "sha_observed": "fdc918e691b13b33cbae8b32ecaacd1e63ec27be3e23b61b0701d0e595aea684",
+      "sha_verified": true,
+      "role": "original gray FFT amplitude extractor (420 Hz, contrast input)",
+      "snippets": [
+        {
+          "extractor": "test.m",
+          "parameter_key": "Fs",
+          "needle": "Fs",
+          "line": 23,
+          "line_text": "Fs = 5000;"
+        },
+        {
+          "extractor": "test.m",
+          "parameter_key": "frames",
+          "needle": "1000",
+          "line": 20,
+          "line_text": "'E:\\xwechat_files\\wxid_f4m2x85t95eh22_9c77\\msg\\file\\2026-09\\7.29\\7.29\\BMP100053022-20260729-105610\\20260729_002739_371090-0.bmp';"
+        },
+        {
+          "extractor": "test.m",
+          "parameter_key": "normalization",
+          "needle": "2",
+          "line": 8,
+          "line_text": "% MATLAB R2019b \u53ef\u7528\u7684\u4e2d\u6587\u5b57\u4f53"
+        }
+      ]
+    },
+    {
+      "extractor": "test_with_contrast.m",
+      "path": "C:\\Users\\PC\\Downloads\\test_with_contrast.m",
+      "found": true,
+      "sha_expected": "d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa",
+      "sha_observed": "d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa",
+      "sha_verified": true,
+      "role": "normalized complex modulation contrast extractor (400 Hz, user formal version)",
+      "snippets": [
+        {
+          "extractor": "test_with_contrast.m",
+          "parameter_key": "Fs",
+          "needle": "5000",
+          "line": 39,
+          "line_text": "Fs = 5000;"
+        },
+        {
+          "extractor": "test_with_contrast.m",
+          "parameter_key": "frames",
+          "needle": "1000",
+          "line": 36,
+          "line_text": "'C:\\Users\\PC\\Desktop\\\u7487\u9e43\ufffd\u698e7.29\\7.29\\BMP100053022-20260729-105610';"
+        },
+        {
+          "extractor": "test_with_contrast.m",
+          "parameter_key": "normalization",
+          "needle": "Imean",
+          "line": "",
+          "line_text": ""
+        },
+        {
+          "extractor": "test_with_contrast.m",
+          "parameter_key": "mask_floor",
+          "needle": "0.01",
+          "line": 60,
+          "line_text": "meanFloorFraction = 0.01;"
+        }
+      ]
+    }
+  ],
+  "source_directness": "DIRECT_SCRIPT_HASH_VERIFIED"
+}

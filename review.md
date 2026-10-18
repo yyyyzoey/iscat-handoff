@@ -57,3 +57,17 @@ V110: v109 fixed-commit review, delta numerical evidence sealing, archive consis
 Final ZIP sha256 0c8a21116170c26cef59d2446f7fe2e9598babae97df18e171aa343585aadeb8; in-ZIP status explicitly PRE_ARCHIVE_VERIFICATION; external receipt + post_archive_summary.json (sha recorded in receipt) are the only post-verification credentials. Result: DELTA_EVIDENCE_SEALED, ARCHIVE_VERIFIED, exit 0.
 ## Not claimed
 0 new BEM/render/optical-time-series/physics-states/experiment-video reads; P0 remains OPEN; rule7 new authorizations 0; frozen states unchanged; no absolute single-particle diameter claim.
+
+# v111 Review
+## Scope
+V111_TARGETED_AUDIT_AND_REAL_INPUT_READINESS. Source frozen at v110 4aa76ac1204d1133e2d53f9631a2f3fb3db7015d (parent v109 3f894b9...). Production entry tools/run_v111_all.py; helpers tools/audit_attribution.py (real run, not transcription) and tools/validate_decisions.py (full-table released validation entry).
+## Machine gates (all PASS)
+- A: fixed HEAD/parent verified; 73/73 byte snapshots; probe blob 6b180147...; v110 ZIP bytes independently re-verified (0c8a2111...); source diff vs v110 saved; historical attribution revision via REAL audit_attribution.py run: 30-row algebraic decomposition H-S=(H-M)+(M-S) identity holds for all 30; 28 nonzero totals, 2 zero totals (1 both-zero + 1 cancellation); revised 60-row explanation replaces blanket claims (no single-precision attribution, no 'all identical' claim); historical 6-cached-states C400 triple-copy defect reproduced but NOT endorsed.
+- B: production table (5040 rows) audited through the FULL released validate_decisions.validate_table entry - 0 issues, both directions (worker cross-audited against frozen v110 records); duplicates/extra keys can no longer be masked by dict conversion; 23/23 injection tests via the same entry; 1440/210/60 subsets re-verified.
+- C: real metadata provenance - both original extractor scripts (test.m, test_with_contrast.m) FOUND on workstation with SHA-256 matching recorded inventory (DIRECT_SCRIPT_HASH_VERIFIED); Fs=5000/N=2001 located to real script lines; contract v111 has 19 items with source_directness levels; exposure/gain/trigger/timestamps split into independent sub-fields; axial/orientation kept PENDING_CONSTRAINT (never defaulted to 0); missing_inputs_action_sheet.csv lists 12 open items with acquisition methods and blocked routes.
+- D: observation operator interface (intensity-average model, explicit gain for electron counts, explicit time origin, non-uniform-timestamp refusal) + 8/8 pure-math fixtures pass; status SOFTWARE_INTERFACE_READY; REAL_PHYSICS_GO=false (separate from software readiness).
+- F: released v111 verifier selftest 12/12 (incl. wrong-source-commit negative and mechanical/gate-class criteria).
+## Archive
+Final ZIP sha256 40b9476dc9ba1a3190137737dd89616ded76b97e9335bb604f998de5ae01e46a; two-phase protocol retained (provisional fixture hash disclosed); in-ZIP status PRE_ARCHIVE_VERIFICATION; external receipt + post_archive_summary.json hashed. Result: TARGETED_AUDIT_SEALED, ARCHIVE_VERIFIED, exit 0.
+## Not claimed
+0 new BEM/render/optical-time-series/physics-states/experiment-video reads; P0 OPEN; rule7=0; frozen states unchanged; no absolute diameter claim; original 48-state model formally sealed pending unchanged-repair confirmation.

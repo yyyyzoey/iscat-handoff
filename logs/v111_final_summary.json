@@ -1,0 +1,50 @@
+{
+  "gates": {
+    "A_source_admission": true,
+    "B_full_validator_audit": true,
+    "C_metadata_provenance": true,
+    "D_observation_interface": true,
+    "F_verifier_selftest": true
+  },
+  "stage_logs": {
+    "A": {
+      "snapshots": 73,
+      "head": "4aa76ac1204d1133e2d53f9631a2f3fb3db7015d",
+      "v110_zip_verified": true,
+      "attribution_ok": true,
+      "issues": []
+    },
+    "B": {
+      "production_rows": 5040,
+      "production_issues": 0,
+      "worker_issues": 0,
+      "tests": "23/23",
+      "sub1440_bad": 0,
+      "summ_bad": 0,
+      "s60_dup": 0,
+      "issues": []
+    },
+    "C": {
+      "extractors_hash_verified": 2,
+      "items": 19,
+      "missing": 12,
+      "actions": 12,
+      "issues": []
+    },
+    "D": {
+      "fixtures": 8,
+      "all_pass": true,
+      "status": "SOFTWARE_INTERFACE_READY",
+      "real_physics_go": false
+    },
+    "F": {
+      "cases": 12,
+      "passed": 12,
+      "positive_control": true
+    }
+  },
+  "fail_keys": {},
+  "elapsed_seconds": null,
+  "pre_archive_note": "elapsed_seconds and zip_sha256 are null in the in-ZIP snapshot; external post_archive_summary.json carries final values",
+  "zip_sha256": null
+}

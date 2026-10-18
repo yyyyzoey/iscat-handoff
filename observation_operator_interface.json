@@ -1,0 +1,28 @@
+{
+  "schema": "iscat111.observation_operator_interface.1",
+  "units": "object-plane nm; seconds; normalized intensity (or explicit electron counts with gain)",
+  "model": "I[p,j] = 1/Tj * integral_{tj-Tj/2}^{tj+Tj/2} ( 1/Ap * integral_pixel_p |Eref(x,t)+Es(x,t;D,r(t),orientation,material)|^2 dA ) dt",
+  "rules": [
+    "average INTENSITY, never average complex field then square",
+    "electron-count mode requires explicit exposure + conversion gain + response coefficients",
+    "Tj=0 is the instantaneous math limit, not a camera default",
+    "timestamps given as exposure-start must be converted to center or integral bounds adjusted; no implicit time origin",
+    "non-uniform timestamps must NOT silently enter the uniform-FFT contract",
+    "unknown axial motion / orientation stay constrained-pending, never defaulted to 0"
+  ],
+  "inputs": [
+    "object coordinates unit",
+    "pixel mapping",
+    "exposure start/end/center + timebase",
+    "sample geometry",
+    "material",
+    "reference field",
+    "trajectory (route A) or dynamics (route B)",
+    "parameter sources"
+  ],
+  "routes": {
+    "A": "independently calibrated trajectory -> this operator (priority only when trajectory sufficient)",
+    "B": "measured B(t) vector/gradient/sync + constrained dynamics -> trajectory -> route A; 200Hz drive does not imply 400Hz translation"
+  },
+  "authorization": "pre-registration only; new BEM/noise/diameter-inversion remain 0; REAL_PHYSICS_GO=false"
+}

@@ -1,0 +1,9 @@
+fixture,pass,detail
+constant_intensity,True,average=3.25 == constant
+sinusoid_rectangular_average,True,trapezoid=1.49475281046 closed=a+b*sinc(pi f T)=1.49475281049
+intensity_avg_vs_field_avg_squared,True,<|E|^2>=2.23430637195 != |<E>|^2=2.23428440078 (must never average complex field)
+time_origin_convention,True,exposure-start window=0.539990956809 vs exposure-center window=1.49475281046: origin must be explicit
+zero_exposure_limit,True,"T->0 limit equals instantaneous value 1.5; T=0 is a math limit, not a camera default"
+unit_conversion_explicit_gain,True,electron counts = conversion_gain * average intensity (explicit gain; no unit mixing)
+missing_parameter_rejection,True,interface rejects missing exposure with MISSING_PARAMETER
+nonuniform_timestamp_rejection,True,non-uniform timestamps are refused; explicit new contract required

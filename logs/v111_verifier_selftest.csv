@@ -1,0 +1,13 @@
+case,exit_code,archive_valid,verdict,archive_integrity
+missing_zip,2,False,PASS,
+missing_bank_case,2,False,PASS,
+duplicate_member,2,False,PASS,
+corrupt_crc,2,False,PASS,
+manifest_path_traversal,2,False,PASS,
+status_missing,2,False,PASS,
+gates_string_bool,2,False,PASS,
+gates_missing,2,False,PASS,
+wrong_task_id,2,False,PASS,
+wrong_source_commit,2,False,PASS,
+wrong_status_sha,2,False,PASS,
+positive_control,2,,PASS,True

@@ -1,0 +1,47 @@
+{
+  "fixtures": [
+    {
+      "fixture": "constant_intensity",
+      "pass": true,
+      "detail": "average=3.25 == constant"
+    },
+    {
+      "fixture": "sinusoid_rectangular_average",
+      "pass": true,
+      "detail": "trapezoid=1.49475281046 closed=a+b*sinc(pi f T)=1.49475281049"
+    },
+    {
+      "fixture": "intensity_avg_vs_field_avg_squared",
+      "pass": true,
+      "detail": "<|E|^2>=2.23430637195 != |<E>|^2=2.23428440078 (must never average complex field)"
+    },
+    {
+      "fixture": "time_origin_convention",
+      "pass": true,
+      "detail": "exposure-start window=0.539990956809 vs exposure-center window=1.49475281046: origin must be explicit"
+    },
+    {
+      "fixture": "zero_exposure_limit",
+      "pass": true,
+      "detail": "T->0 limit equals instantaneous value 1.5; T=0 is a math limit, not a camera default"
+    },
+    {
+      "fixture": "unit_conversion_explicit_gain",
+      "pass": true,
+      "detail": "electron counts = conversion_gain * average intensity (explicit gain; no unit mixing)"
+    },
+    {
+      "fixture": "missing_parameter_rejection",
+      "pass": true,
+      "detail": "interface rejects missing exposure with MISSING_PARAMETER"
+    },
+    {
+      "fixture": "nonuniform_timestamp_rejection",
+      "pass": true,
+      "detail": "non-uniform timestamps are refused; explicit new contract required"
+    }
+  ],
+  "all_pass": true,
+  "status": "SOFTWARE_INTERFACE_READY",
+  "not_a_claim": "interface tests do NOT constitute physical GO or experimental validation"
+}

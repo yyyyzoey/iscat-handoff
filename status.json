@@ -1,119 +1,77 @@
 {
-  "schema": "iscat110.status.1",
-  "task_id": "V110",
-  "created_at": "2026-10-19T01:41:45",
-  "source_commit": "3f894b919d11dd2e8dead92b83ed7ec2d930d08c",
-  "parent_commit": "e377f8a11421a04bc3e6c1eaca9f435a46566784",
-  "tool_sha256": "c7b80baee25d5bae848409f45aa42dc943d81ef50efa305f28a48f97ce68f524",
+  "schema": "iscat111.status.1",
+  "task_id": "V111_TARGETED_AUDIT_AND_REAL_INPUT_READINESS",
+  "created_at": "2026-10-19T02:43:56",
+  "source_commit": "4aa76ac1204d1133e2d53f9631a2f3fb3db7015d",
+  "parent_commit": "3f894b919d11dd2e8dead92b83ed7ec2d930d08c",
+  "tool_sha256": "c26875345b12e11f9975a4ce2e25b5efed945c5b5b3c9cd1c44ef7f440c6c718",
   "required_gates": [
     "A_source_admission",
-    "B_independent_decisions",
-    "C_delta_repair",
-    "D_readback_audit",
-    "E_physics_admission",
+    "B_full_validator_audit",
+    "C_metadata_provenance",
+    "D_observation_interface",
     "F_verifier_selftest"
   ],
   "gates": {
     "A_source_admission": true,
-    "B_independent_decisions": true,
-    "C_delta_repair": true,
-    "D_readback_audit": true,
-    "E_physics_admission": true,
+    "B_full_validator_audit": true,
+    "C_metadata_provenance": true,
+    "D_observation_interface": true,
     "F_verifier_selftest": true
   },
   "states": {
     "execution": "COMPLETE",
-    "numerical": "DELTA_EVIDENCE_SEALED",
+    "numerical": "TARGETED_AUDIT_SEALED",
     "archive": "PRE_ARCHIVE_VERIFICATION",
-    "physics": "REAL_PHYSICS_PENDING_INPUTS"
+    "physics": "REAL_PHYSICS_PENDING_INPUTS_SOFTWARE_INTERFACE_READY"
   },
   "archive_protocol": {
-    "in_zip_status": "PRE_ARCHIVE_VERIFICATION (honest pre-state; the ZIP cannot verify itself)",
+    "in_zip_status": "PRE_ARCHIVE_VERIFICATION (honest pre-state)",
     "external_receipt": "the ONLY post-archive-verification credential",
-    "final_summary": "in-ZIP final_summary holds determined fields; elapsed and zip sha recorded as null with explicit pre_archive marker; external post_archive_summary.json carries the final values and its sha256 is written into the receipt"
+    "post_archive_summary": "external file with sha recorded in receipt"
   },
   "stage_logs": {
     "A": {
       "snapshots": 73,
-      "head": "3f894b919d11dd2e8dead92b83ed7ec2d930d08c",
-      "v109_zip_verified": true,
-      "v108_zip_verified": true,
-      "v107_fingerprint_ok": true,
-      "source_diff_bytes": 0,
+      "head": "4aa76ac1204d1133e2d53f9631a2f3fb3db7015d",
+      "v110_zip_verified": true,
+      "attribution_ok": true,
       "issues": []
     },
     "B": {
-      "worker_exit": 0,
-      "match_v109": 5040,
-      "mismatch_v109": 0,
-      "match_v108": 5040,
-      "mismatch_v108": 0,
-      "v108_fields_not_recorded": 0,
-      "summaries210": 210,
-      "summaries_vs_v109_bad": 0,
-      "sub1440_field_bad": 0,
-      "s60_duplicate_keys": 0,
-      "error_tests": "23/23",
+      "production_rows": 5040,
+      "production_issues": 0,
+      "worker_issues": 0,
+      "tests": "23/23",
+      "sub1440_bad": 0,
+      "summ_bad": 0,
+      "s60_dup": 0,
       "issues": []
     },
     "C": {
-      "count_control_verified": "180/180",
-      "count_tally": {
-        "INCREASED": 78,
-        "UNCHANGED": 95,
-        "DECREASED": 7
-      },
-      "d3_reconciled": "60/60",
-      "d12_unchanged": "120/120",
-      "s60_attribution_reproduced": "60/60",
+      "extractors_hash_verified": 2,
+      "items": 19,
+      "missing": 12,
+      "actions": 12,
       "issues": []
     },
     "D": {
-      "origin_readback": "14400/14400",
-      "fft_audit": "14400/14400",
-      "zerostart": "576/576",
-      "probes": "576/576",
-      "reuse": {
-        "tables/v108_period192.csv": {
-          "sha256": "6b3997c5d59d46402c3c04ed1ad3a86a16a9198858a7d534c23f698c79862a79",
-          "row_count_ok": true,
-          "gate_columns_ok": true
-        },
-        "tables/v108_motion_pairs24.csv": {
-          "sha256": "2f2c33219c73812db17f8eddc6f5e42d040d9770592b883fa0df904cba21aec0",
-          "row_count_ok": true,
-          "gate_columns_ok": true
-        },
-        "analysis/v108_period_components14400.csv": {
-          "sha256": "5868772e0c1af3f6e43879310c4db087a4d0e6345eeb2253fe61e34b06d5ca62",
-          "row_count_ok": true,
-          "gate_columns_ok": true
-        }
-      },
-      "decomposition": "852/852",
-      "radius": 1680,
-      "radius_vs_v109_bad": 0,
-      "budget_vs_v109_bad": 0,
-      "qualification_bad": 0,
-      "issues": []
-    },
-    "E": {
-      "items": 15,
-      "violations": [],
-      "source_verified": 7,
-      "no_source_declared": 8,
-      "go_status": "REAL_PHYSICS_PENDING_INPUTS"
+      "fixtures": 8,
+      "all_pass": true,
+      "status": "SOFTWARE_INTERFACE_READY",
+      "real_physics_go": false
     },
     "F": {
-      "cases": 11,
-      "passed": 11,
+      "cases": 12,
+      "passed": 12,
       "positive_control": true
     }
   },
   "environment": {
     "python": "3.11.7",
     "numpy": "1.26.4",
-    "scipy": "1.11.4"
+    "scipy": "1.11.4",
+    "pythondontwritebytecode": "1"
   },
   "frozen_states": {
     "calibration_valid": false,
@@ -122,7 +80,8 @@
     "single_particle_diameter": "NOT_ESTIMATED"
   },
   "physics_admission": "REAL_PHYSICS_PENDING_INPUTS",
+  "model_seal": "original 48-state model formally sealed (v110 repair verified unchanged; no further same-type acceptance rounds scheduled)",
   "p0_status": "OPEN (not upgraded)",
   "rule7_new_authorizations": 0,
-  "overall": "DELTA_EVIDENCE_SEALED"
+  "overall": "TARGETED_AUDIT_SEALED"
 }
