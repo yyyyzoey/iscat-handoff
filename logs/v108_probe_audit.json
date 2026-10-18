@@ -1,0 +1,9 @@
+{
+  "probe_npz_sha256": "83c7aa2325f1ed380f2a9f7dc0bd7ba03e11dd98faf047ec3b24cc2efc8d6fc4",
+  "probe_npz_git_blob_sha1": "6b180147f64847329375363d44c317b2d4df247b",
+  "expected_blob": "6b180147f64847329375363d44c317b2d4df247b",
+  "n_series": 192,
+  "keys_exact_48x4": true,
+  "all_float64_2001_finite_positive_mean": true,
+  "status": "VERIFIED"
+}

@@ -1,0 +1,17 @@
+{
+  "status_json_blob_sha1": "2594b2b7cffae6b9055700f91c86e2fc09eb8cdc",
+  "expected_status_blob_sha1": "bf16131fb31f7a82cc920d6544c9585de96c3035",
+  "status_json_file_sha256": "8007700d4d46405f255563f25dc34a740ad451ecabc0ca3b2185ba1e55991a39",
+  "v107_claimed_status_sha256": "0440f92937b60991f39cbcf43f7e3a715c739019a6a50434eb8f8b5a4bb7b2e7",
+  "status_sha_matches_prior_audit": false,
+  "receipt_blob_sha1": "5e2dbe05b83884459b76e60badf7806933514c0d",
+  "expected_receipt_blob_sha1": "fbeb413f08ac2356f81a176b0166909eb85b75a2",
+  "receipt_zip_status": "PENDING_CREATION",
+  "receipt_claimed_status_sha256": "8007700d4d46405f255563f25dc34a740ad451ecabc0ca3b2185ba1e55991a39",
+  "status_claim_mismatch": false,
+  "facts": [
+    "v107 delivery did not prove the full contract executed; inherited_results only",
+    "v107 receipt zip_status=PENDING_CREATION; no ZIP-level SHA/CRC/member verification existed",
+    "v105 oracle record 13/19 kept as historical fact; redone here through the corrected entry"
+  ]
+}

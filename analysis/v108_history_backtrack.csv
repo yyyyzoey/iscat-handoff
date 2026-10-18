@@ -1,0 +1,6 @@
+table,classification,note,sha256,n_rows,key_coverage,max_field_diff,status
+v103,REUSED_VALUES_AUDITED_CURRENTLY,decision fields re-audited against current independent run,6cb5f6df4f96c84047d6f4762248ef83752e557b2099ea0a34910733a5b5f9e8,5040,5040/5040,1.3322676295501878e-15,AUDIT_PASS
+v104,REUSED_VALUES_AUDITED_CURRENTLY,decision fields re-audited against current independent run,1cd561e8ebd816b2ab0e5f9fff85037e62ca694c45f5641ad832429cb374de18,5040,5040/5040,1.3322676295501878e-15,AUDIT_PASS
+v105,REUSED_VALUES_AUDITED_CURRENTLY,decision fields re-audited against current independent run,1cd561e8ebd816b2ab0e5f9fff85037e62ca694c45f5641ad832429cb374de18,5040,5040/5040,1.3322676295501878e-15,AUDIT_PASS
+v096_radius_complete1680,REUSED_VALUES_AUDITED_CURRENTLY,v106 rewrote v096 paths; regenerated values read at current fixed commit bc699b0932cf18f5abad10e09f1d1eae0f29446e,c3c177a5809e0e98c080e3a6c85125b629ce7a542ac185fe498b9d41e17f3a45,1680,1680/1680,,AUDIT_PASS
+v096_perturbation_budget1680,REUSED_VALUES_AUDITED_CURRENTLY,budget = f(radius); same audit basis as radius rows,30765a78d6a7e40fd52a858289ae8d948241fabe76e9794d68b05a4b8094eede,1680,1680/1680,,AUDIT_PASS

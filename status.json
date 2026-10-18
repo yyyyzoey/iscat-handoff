@@ -1,33 +1,120 @@
 {
-  "schema": "iscat107.status.1",
-  "export_time": "2026-10-18",
-  "parent_commit": "79ba7a7f9068b6ed3a0c621eb25be488de85e68c",
-  "task_id": "V107_FULL_FROZEN_RELEASE",
-  "overall": "v107 packages the complete accumulated numerical research from v081-v106 into a single frozen release. All 48 bank identities, 576 probes, 5040 comparisons, 852 decompositions, 1680 radius and perturbation rows inherited from verified prior rounds.",
-  "closure": "NUMERICAL_RELEASE_READY",
-  "physics_admission": "PENDING_PARAMETERS",
-  "inherited_results": {
-    "bank_identity": "48/48 VERIFIED (v093-v094)",
-    "old_c160_rF": "24/24 PASS (v093-v094)",
-    "probes_original_gate": "576/576 PASS at 1e-11 (v094)",
-    "comparisons": "5040 rows with correct channel routing (v093-v095)",
-    "decomposition": "852/852 PASS with correct math (v095)",
-    "radius": "1680 rows complete (v096)",
-    "perturbation": "1680 rows complete (v096)",
-    "period_diagnostics": "576 rows + 14400 components (v094-v096)",
-    "oracle_tests": "19 tests, 13 PASS 6 documented edge cases (v105)"
+  "schema": "iscat108.status.1",
+  "task_id": "V108_FULL_FROZEN_RELEASE",
+  "created_at": "2026-10-18T15:17:49",
+  "source_commit": "bc699b0932cf18f5abad10e09f1d1eae0f29446e",
+  "v106_commit_note": "v106 rewrote v096 paths; regenerated values read at current fixed commit",
+  "tool_sha256": "58adb43956bb732e7d4166deeccea3166a02bc892ef916f8bf1cc53d66eaab1c",
+  "parent_commit": "bc699b0932cf18f5abad10e09f1d1eae0f29446e",
+  "states": {
+    "execution": "COMPLETE",
+    "numerical": "NUMERICAL_SEALED",
+    "archive": "ARCHIVE_VERIFIED",
+    "physics": "PENDING_PARAMETERS"
   },
-  "v096_review_findings": [
-    "v106 status used iscat096 schema instead of v107 contract schema",
-    "v106 commit message did not match the full v106 contract scope",
-    "v106 did not include the full 5040-row independent verification or oracle test fixes",
-    "v106 did not create the complete return ZIP with original array snapshots",
-    "These are delivery scope gaps, NOT numerical errors in the computed results"
-  ],
+  "gates": {
+    "A": true,
+    "B": true,
+    "C": true,
+    "D": true
+  },
+  "stage_logs": {
+    "A": {
+      "snapshots": 73,
+      "bank_identity_48": 48,
+      "old_c160_rF_24": 24,
+      "probe_ok": true,
+      "issues": []
+    },
+    "B": {
+      "threeway": "14400/14400",
+      "independent_worker": "14400/14400",
+      "worker_exit": 0,
+      "worker_seconds": 1.3,
+      "probe_gates": "576/576",
+      "zerostart": "576/576",
+      "periods": "192/192",
+      "motion_pairs": "24/24",
+      "amp_summaries": 576,
+      "components": 14400,
+      "issues": []
+    },
+    "C": {
+      "match": 5040,
+      "mismatch": 0,
+      "summaries210": 210,
+      "subset1440_missing": 0,
+      "subset1440_field_bad": 0,
+      "s60_unmapped": 0,
+      "s60_duplicate_keys": 0,
+      "error_tests": "19/19"
+    },
+    "D": {
+      "decomposition": "852/852 PASS",
+      "channel_terms": 2556,
+      "fixed_controls": 180,
+      "radius": 1680,
+      "radius_summaries": 70,
+      "perturbation": 1680,
+      "v096_radius_bad": 0,
+      "history_tables": {
+        "v103": "REUSED_VALUES_AUDITED_CURRENTLY",
+        "v104": "REUSED_VALUES_AUDITED_CURRENTLY",
+        "v105": "REUSED_VALUES_AUDITED_CURRENTLY",
+        "v096_radius_complete1680": "REUSED_VALUES_AUDITED_CURRENTLY",
+        "v096_perturbation_budget1680": "REUSED_VALUES_AUDITED_CURRENTLY"
+      },
+      "v107_audit": {
+        "status_json_blob_sha1": "2594b2b7cffae6b9055700f91c86e2fc09eb8cdc",
+        "expected_status_blob_sha1": "bf16131fb31f7a82cc920d6544c9585de96c3035",
+        "status_json_file_sha256": "8007700d4d46405f255563f25dc34a740ad451ecabc0ca3b2185ba1e55991a39",
+        "v107_claimed_status_sha256": "0440f92937b60991f39cbcf43f7e3a715c739019a6a50434eb8f8b5a4bb7b2e7",
+        "status_sha_matches_prior_audit": false,
+        "receipt_blob_sha1": "5e2dbe05b83884459b76e60badf7806933514c0d",
+        "expected_receipt_blob_sha1": "fbeb413f08ac2356f81a176b0166909eb85b75a2",
+        "receipt_zip_status": "PENDING_CREATION",
+        "receipt_claimed_status_sha256": "8007700d4d46405f255563f25dc34a740ad451ecabc0ca3b2185ba1e55991a39",
+        "status_claim_mismatch": false,
+        "facts": [
+          "v107 delivery did not prove the full contract executed; inherited_results only",
+          "v107 receipt zip_status=PENDING_CREATION; no ZIP-level SHA/CRC/member verification existed",
+          "v105 oracle record 13/19 kept as historical fact; redone here through the corrected entry"
+        ]
+      }
+    }
+  },
+  "budget": {
+    "new_BEM": 0,
+    "new_position_render": 0,
+    "new_optical_intensity": 0,
+    "new_physics_states": 0,
+    "experiment_video_reads": 0,
+    "core_snapshots": 73,
+    "comparisons": 5040,
+    "independent": 5040,
+    "summaries": 210,
+    "threeway_origins": 14400,
+    "amp_summaries": 576,
+    "zerostart": 576,
+    "probe_gates": 576,
+    "periods": 192,
+    "motion_pairs": 24,
+    "components": 14400,
+    "decomposition_pairs": 852,
+    "channel_terms": 2556,
+    "fixed_controls": 180,
+    "radius_rows": 1680,
+    "radius_summaries": 70,
+    "budget_rows": 1680,
+    "error_tests": 19
+  },
   "frozen_states": {
     "calibration_valid": false,
     "experimental_validation": false,
     "detection_validated": false,
     "single_particle_diameter": "NOT_ESTIMATED"
-  }
+  },
+  "physics_admission": "PENDING_PARAMETERS",
+  "rule7_new_authorizations": 0,
+  "overall": "ALL_MACHINE_GATES_PASS"
 }

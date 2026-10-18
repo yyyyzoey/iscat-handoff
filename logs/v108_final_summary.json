@@ -1,0 +1,18 @@
+{
+  "gates": {
+    "A": true,
+    "B": true,
+    "C": true,
+    "D": true
+  },
+  "statuses": {
+    "execution": "COMPLETE",
+    "numerical": "NUMERICAL_SEALED",
+    "archive": "ARCHIVE_VERIFIED",
+    "physics": "PENDING_PARAMETERS"
+  },
+  "exit_code": 0,
+  "zip_sha256": "47ab8c14028997c56f180d44efeead0f22de2e7b54b3274b44b080b5938fcbab",
+  "status_json_sha256": "ae3d1d523ca387ca5b0e4d67a5021778158f6cdd918cfd1de5cc0eea9ea1e589",
+  "elapsed_seconds": 9.6
+}
