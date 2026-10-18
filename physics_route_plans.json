@@ -1,0 +1,5 @@
+{
+  "route_A": "calibrated trajectory -> intensity average over exposure -> pixel integration -> 2001-point complex DFT; never average complex field then square; unknown z/orientation never filled with 0; no self-referential trajectory inversion",
+  "route_B": "measured B(t) vector/amplitude/gradient/sync + sample magnetics/medium/fixation -> constrained dynamics -> trajectory -> route A; 200Hz drive does NOT license a 400Hz pure-sine displacement assumption",
+  "authorization": "pre-registration only; NO solves this round"
+}

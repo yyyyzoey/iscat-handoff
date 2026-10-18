@@ -1,0 +1,209 @@
+{
+  "schema": "iscat110.physics_input_contract.1",
+  "evidence_levels": [
+    "USER_CONFIRMED",
+    "EXPERIMENT_SCRIPT_RECORDED",
+    "ANALYSIS_CONTRACT",
+    "SIMULATION_ASSUMPTION",
+    "INSTRUMENT_MEASURED",
+    "MISSING"
+  ],
+  "rules": [
+    "MISSING -> value null + acquisition_method",
+    "k0 bins are ANALYSIS_CONTRACT indices, never INSTRUMENT_MEASURED",
+    "script-recorded Fs is NOT instrument-verified accuracy",
+    "520nm is USER_CONFIRMED, no instrument certificate recorded"
+  ],
+  "items": [
+    {
+      "parameter": "laser_vacuum_wavelength",
+      "value": 520.0,
+      "unit": "nm",
+      "evidence_level": "USER_CONFIRMED",
+      "source_file": "00_Codex_v108_v107审查与实证验收及数据归档指令.md",
+      "source_line": 41,
+      "source_snippet_expected": "520 nm",
+      "time_validity": "user confirmation 2026-10-12",
+      "uncertainty_or_bound": "no instrument calibration certificate recorded",
+      "note": "user confirmation is NOT an instrument measurement; certificate still required for metrology use"
+    },
+    {
+      "parameter": "n_frames_N",
+      "value": 2001,
+      "unit": "frames",
+      "evidence_level": "EXPERIMENT_SCRIPT_RECORDED",
+      "source_file": "00_Codex_v108_v107审查与实证验收及数据归档指令.md",
+      "source_line": 42,
+      "source_snippet_expected": "N=2001",
+      "time_validity": "current",
+      "uncertainty_or_bound": "recorded in extraction scripts and bank metadata",
+      "note": null
+    },
+    {
+      "parameter": "frame_rate_Fs",
+      "value": 5000.0,
+      "unit": "1/s",
+      "evidence_level": "EXPERIMENT_SCRIPT_RECORDED",
+      "source_file": "00_Codex_v108_v107审查与实证验收及数据归档指令.md",
+      "source_line": 42,
+      "source_snippet_expected": "Fs=5000",
+      "time_validity": "current",
+      "uncertainty_or_bound": "script-recorded; NO independent clock calibration, accuracy NOT instrument-verified",
+      "note": "must not be upgraded to measured accuracy without external clock calibration"
+    },
+    {
+      "parameter": "spectral_bins_k0",
+      "value": [
+        80,
+        160,
+        320
+      ],
+      "unit": "bin",
+      "evidence_level": "ANALYSIS_CONTRACT",
+      "source_file": "00_Codex_v108_v107审查与实证验收及数据归档指令.md",
+      "source_line": 42,
+      "source_snippet_expected": "bin={80,160,320}",
+      "time_validity": "current",
+      "uncertainty_or_bound": "software-selected analysis indices; real frequency = k0*Fs/N",
+      "note": "k0 bins are chosen analysis indices, NOT instrument measurements; INSTRUMENT_MEASURED is invalid here"
+    },
+    {
+      "parameter": "demo_pixel_size_object_plane",
+      "value": 65.0,
+      "unit": "nm",
+      "evidence_level": "SIMULATION_ASSUMPTION",
+      "source_file": "00_Codex_v110_v109审查与真实物理准入完整执行指令.md",
+      "source_line": 22,
+      "source_snippet_expected": "65nm",
+      "time_validity": "demo only",
+      "uncertainty_or_bound": "demo assumption; NOT measured",
+      "note": null
+    },
+    {
+      "parameter": "prescribed_displacement_amplitude_range",
+      "value": [
+        5.0,
+        20.0
+      ],
+      "unit": "nm",
+      "evidence_level": "SIMULATION_ASSUMPTION",
+      "source_file": "00_Codex_v108_v107审查与实证验收及数据归档指令.md",
+      "source_line": 106,
+      "source_snippet_expected": "20nm",
+      "time_validity": "demo only",
+      "uncertainty_or_bound": "prescribed; NOT measured",
+      "note": null
+    },
+    {
+      "parameter": "roi_size",
+      "value": [
+        41,
+        41
+      ],
+      "unit": "pixel",
+      "evidence_level": "SIMULATION_ASSUMPTION",
+      "source_file": "00_Codex_v108_v107审查与实证验收及数据归档指令.md",
+      "source_line": 42,
+      "source_snippet_expected": "41",
+      "time_validity": "current demo",
+      "uncertainty_or_bound": "analysis ROI convention",
+      "note": null
+    },
+    {
+      "parameter": "object_plane_nm_per_pixel_actual_with_error",
+      "value": null,
+      "unit": "nm/pixel",
+      "evidence_level": "MISSING",
+      "source_file": null,
+      "source_line": null,
+      "source_snippet_expected": null,
+      "time_validity": null,
+      "uncertainty_or_bound": null,
+      "acquisition_method": "stage calibration or certified ruler image with error budget"
+    },
+    {
+      "parameter": "objective_NA_immersion_illumination_polarization",
+      "value": null,
+      "unit": null,
+      "evidence_level": "MISSING",
+      "source_file": null,
+      "source_line": null,
+      "source_snippet_expected": null,
+      "time_validity": null,
+      "uncertainty_or_bound": null,
+      "acquisition_method": "objective datasheet + illumination configuration record"
+    },
+    {
+      "parameter": "reference_field_path",
+      "value": null,
+      "unit": null,
+      "evidence_level": "MISSING",
+      "source_file": null,
+      "source_line": null,
+      "source_snippet_expected": null,
+      "time_validity": null,
+      "uncertainty_or_bound": null,
+      "acquisition_method": "optical layout record or interferometric characterization"
+    },
+    {
+      "parameter": "exposure_gain_trigger_timestamps",
+      "value": null,
+      "unit": null,
+      "evidence_level": "MISSING",
+      "source_file": null,
+      "source_line": null,
+      "source_snippet_expected": null,
+      "time_validity": null,
+      "uncertainty_or_bound": null,
+      "acquisition_method": "camera acquisition log with exposure and trigger timestamps"
+    },
+    {
+      "parameter": "magnetic_field_B_vector_gradient_waveform_sync",
+      "value": null,
+      "unit": null,
+      "evidence_level": "MISSING",
+      "source_file": null,
+      "source_line": null,
+      "source_snippet_expected": null,
+      "time_validity": null,
+      "uncertainty_or_bound": null,
+      "acquisition_method": "calibrated probe measurement of B(t) vector/gradient with camera sync record"
+    },
+    {
+      "parameter": "particle_batch_coating_medium_substrate_fixation",
+      "value": null,
+      "unit": null,
+      "evidence_level": "MISSING",
+      "source_file": null,
+      "source_line": null,
+      "source_snippet_expected": null,
+      "time_validity": null,
+      "uncertainty_or_bound": null,
+      "acquisition_method": "sample batch record + preparation protocol"
+    },
+    {
+      "parameter": "independent_trajectory_with_scale_and_timebase",
+      "value": null,
+      "unit": null,
+      "evidence_level": "MISSING",
+      "source_file": null,
+      "source_line": null,
+      "source_snippet_expected": null,
+      "time_validity": null,
+      "uncertainty_or_bound": null,
+      "acquisition_method": "independent tracking with certified scale and common timebase"
+    },
+    {
+      "parameter": "independent_diameter_reference_and_blank_background",
+      "value": null,
+      "unit": null,
+      "evidence_level": "MISSING",
+      "source_file": null,
+      "source_line": null,
+      "source_snippet_expected": null,
+      "time_validity": null,
+      "uncertainty_or_bound": null,
+      "acquisition_method": "certified particle standard + particle-free blank capture"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "gates": {
+    "A_source_admission": true,
+    "B_independent_decisions": true,
+    "C_delta_repair": true,
+    "D_readback_audit": true,
+    "E_physics_admission": true,
+    "F_verifier_selftest": true
+  },
+  "stage_logs": {
+    "A": {
+      "snapshots": 73,
+      "head": "3f894b919d11dd2e8dead92b83ed7ec2d930d08c",
+      "v109_zip_verified": true,
+      "v108_zip_verified": true,
+      "v107_fingerprint_ok": true,
+      "source_diff_bytes": 0,
+      "issues": []
+    },
+    "B": {
+      "worker_exit": 0,
+      "match_v109": 5040,
+      "mismatch_v109": 0,
+      "match_v108": 5040,
+      "mismatch_v108": 0,
+      "v108_fields_not_recorded": 0,
+      "summaries210": 210,
+      "summaries_vs_v109_bad": 0,
+      "sub1440_field_bad": 0,
+      "s60_duplicate_keys": 0,
+      "error_tests": "23/23",
+      "issues": []
+    },
+    "C": {
+      "count_control_verified": "180/180",
+      "count_tally": {
+        "INCREASED": 78,
+        "UNCHANGED": 95,
+        "DECREASED": 7
+      },
+      "d3_reconciled": "60/60",
+      "d12_unchanged": "120/120",
+      "s60_attribution_reproduced": "60/60",
+      "issues": []
+    },
+    "D": {
+      "origin_readback": "14400/14400",
+      "fft_audit": "14400/14400",
+      "zerostart": "576/576",
+      "probes": "576/576",
+      "reuse": {
+        "tables/v108_period192.csv": {
+          "sha256": "6b3997c5d59d46402c3c04ed1ad3a86a16a9198858a7d534c23f698c79862a79",
+          "row_count_ok": true,
+          "gate_columns_ok": true
+        },
+        "tables/v108_motion_pairs24.csv": {
+          "sha256": "2f2c33219c73812db17f8eddc6f5e42d040d9770592b883fa0df904cba21aec0",
+          "row_count_ok": true,
+          "gate_columns_ok": true
+        },
+        "analysis/v108_period_components14400.csv": {
+          "sha256": "5868772e0c1af3f6e43879310c4db087a4d0e6345eeb2253fe61e34b06d5ca62",
+          "row_count_ok": true,
+          "gate_columns_ok": true
+        }
+      },
+      "decomposition": "852/852",
+      "radius": 1680,
+      "radius_vs_v109_bad": 0,
+      "budget_vs_v109_bad": 0,
+      "qualification_bad": 0,
+      "issues": []
+    },
+    "E": {
+      "items": 15,
+      "violations": [],
+      "source_verified": 7,
+      "no_source_declared": 8,
+      "go_status": "REAL_PHYSICS_PENDING_INPUTS"
+    },
+    "F": {
+      "cases": 11,
+      "passed": 11,
+      "positive_control": true
+    }
+  },
+  "fail_keys": {},
+  "elapsed_seconds": null,
+  "pre_archive_note": "elapsed_seconds and zip_sha256 are null in the in-ZIP snapshot; the external post_archive_summary.json carries final values",
+  "zip_sha256": null
+}

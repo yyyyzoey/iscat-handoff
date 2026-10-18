@@ -1,0 +1,41 @@
+{
+  "status": "REAL_PHYSICS_PENDING_INPUTS",
+  "route_A_GO": false,
+  "route_B_GO": false,
+  "prerequisites": [
+    {
+      "item": "object_plane_nm_per_pixel_with_error",
+      "evidence": "MISSING"
+    },
+    {
+      "item": "objective_and_reference_field_or_provable_prior",
+      "evidence": "MISSING"
+    },
+    {
+      "item": "exposure_and_clock_with_external_calibration",
+      "evidence": "MISSING"
+    },
+    {
+      "item": "independent_particle_free_blank",
+      "evidence": "MISSING"
+    },
+    {
+      "item": "diameter_standard_and_sample_batch",
+      "evidence": "MISSING"
+    },
+    {
+      "item": "route_A: independently calibrated trajectory",
+      "evidence": "MISSING"
+    },
+    {
+      "item": "route_B: measured B(t) vector/gradient/sync + mechanical boundaries",
+      "evidence": "MISSING"
+    },
+    {
+      "item": "camera time synchronization record",
+      "evidence": "MISSING"
+    }
+  ],
+  "rule": "any critical item without evidence -> GO=false; no absolute single-particle diameter claim",
+  "design_only": "bounded real-physics experiment and simulation matrix pre-registered; new BEM, noise simulation, and diameter inversion remain 0-authorized"
+}

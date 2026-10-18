@@ -1,0 +1,16 @@
+parameter,evidence_level,source_file,source_line,observed_snippet,source_verification,classification
+laser_vacuum_wavelength,USER_CONFIRMED,00_Codex_v108_v107审查与实证验收及数据归档指令.md,41,"- 用户已确认真实真空波长520 nm。当前处方库D={30,60,100}nm、zf={450,550}nm、type={M200,M400}、a={5,10,15,20}nm共48态；a5/a20的24态永远为参考，a10/a15只作查",VERIFIED,OK
+n_frames_N,EXPERIMENT_SCRIPT_RECORDED,00_Codex_v108_v107审查与实证验收及数据归档指令.md,42,"- N=2001，Fs=5000/s，零基bin={80,160,320}，真实频率k0*Fs/N；原实验主量k0=160/MATLAB161。瞬时曝光、65nm演示像元、q5、ROI41×41和原材料/照明/规定phi=0不变。",VERIFIED,OK
+frame_rate_Fs,EXPERIMENT_SCRIPT_RECORDED,00_Codex_v108_v107审查与实证验收及数据归档指令.md,42,"- N=2001，Fs=5000/s，零基bin={80,160,320}，真实频率k0*Fs/N；原实验主量k0=160/MATLAB161。瞬时曝光、65nm演示像元、q5、ROI41×41和原材料/照明/规定phi=0不变。",VERIFIED,OK
+spectral_bins_k0,ANALYSIS_CONTRACT,00_Codex_v108_v107审查与实证验收及数据归档指令.md,42,"- N=2001，Fs=5000/s，零基bin={80,160,320}，真实频率k0*Fs/N；原实验主量k0=160/MATLAB161。瞬时曝光、65nm演示像元、q5、ROI41×41和原材料/照明/规定phi=0不变。",VERIFIED,OK
+demo_pixel_size_object_plane,SIMULATION_ASSUMPTION,00_Codex_v110_v109审查与真实物理准入完整执行指令.md,22,"- 频点：N=2001，Fs=5000/s，零基`k0={80,160,320}`，实际频率`k0*Fs/N`，400目标零基160/MATLAB bin161。**禁止任何波长变更：用户确认520nm**。演示65nm/像元和位移振幅不得",VERIFIED,OK
+prescribed_displacement_amplitude_range,SIMULATION_ASSUMPTION,00_Codex_v108_v107审查与实证验收及数据归档指令.md,106,只形成条件、对照与有界新仿真设计。65nm演示像元和5—20nm规定振幅仍是假设。新实际光路或动力学求解需要单独准入，不随数值PASS自动启动。,VERIFIED,OK
+roi_size,SIMULATION_ASSUMPTION,00_Codex_v108_v107审查与实证验收及数据归档指令.md,42,"- N=2001，Fs=5000/s，零基bin={80,160,320}，真实频率k0*Fs/N；原实验主量k0=160/MATLAB161。瞬时曝光、65nm演示像元、q5、ROI41×41和原材料/照明/规定phi=0不变。",VERIFIED,OK
+object_plane_nm_per_pixel_actual_with_error,MISSING,,,,NO_SOURCE_AS_DECLARED,OK
+objective_NA_immersion_illumination_polarization,MISSING,,,,NO_SOURCE_AS_DECLARED,OK
+reference_field_path,MISSING,,,,NO_SOURCE_AS_DECLARED,OK
+exposure_gain_trigger_timestamps,MISSING,,,,NO_SOURCE_AS_DECLARED,OK
+magnetic_field_B_vector_gradient_waveform_sync,MISSING,,,,NO_SOURCE_AS_DECLARED,OK
+particle_batch_coating_medium_substrate_fixation,MISSING,,,,NO_SOURCE_AS_DECLARED,OK
+independent_trajectory_with_scale_and_timebase,MISSING,,,,NO_SOURCE_AS_DECLARED,OK
+independent_diameter_reference_and_blank_background,MISSING,,,,NO_SOURCE_AS_DECLARED,OK

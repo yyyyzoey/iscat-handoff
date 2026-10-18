@@ -1,0 +1,14 @@
+{
+  "v109": {
+    "zip_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-18\\files-mentioned-by-the-user-iscat\\work\\v109_final\\iscat_v109_return.zip",
+    "expected_sha256": "6d4535903f8a2f89c064e35f4c918810e13b9cc5fe0dc6d275a29ab7e10a7a2d",
+    "observed_sha256": "6d4535903f8a2f89c064e35f4c918810e13b9cc5fe0dc6d275a29ab7e10a7a2d",
+    "independently_verified_bytes": true
+  },
+  "v108": {
+    "zip_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-18\\files-mentioned-by-the-user-iscat\\work\\v108_run3\\iscat_v108_return.zip",
+    "expected_sha256": "47ab8c14028997c56f180d44efeead0f22de2e7b54b3274b44b080b5938fcbab",
+    "observed_sha256": "47ab8c14028997c56f180d44efeead0f22de2e7b54b3274b44b080b5938fcbab",
+    "independently_verified_bytes": true
+  }
+}

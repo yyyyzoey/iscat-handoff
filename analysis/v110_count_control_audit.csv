@@ -1,0 +1,2 @@
+total_rows,verified,increased,unchanged,decreased,groups_with_any_ambiguity,baseline,status
+180,180,78,95,7,0,single-160 counts from the accepted 210 summaries,AUDIT_PASS
