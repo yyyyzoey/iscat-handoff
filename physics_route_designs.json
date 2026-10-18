@@ -1,0 +1,34 @@
+{
+  "schema": "iscat109.physics_routes.1",
+  "rule": "design only; NO new solves this round; new BEM/nodes need separate authorization",
+  "routes": {
+    "route_A_trajectory_first": {
+      "priority": "preferred when an independently measured trajectory exists",
+      "pipeline": [
+        "measured trajectory (position+orientation, scale + common timebase)",
+        "intensity averaged over exposure (average INTENSITY, never complex field)",
+        "pixel integration",
+        "original 2001-point complex DFT"
+      ],
+      "constraints": [
+        "unknown axial/orientation must NOT be filled with 0 and called measured",
+        "trajectory must not be back-derived from amplitudes of the same unknown D",
+        "minimal holdout: held-out time windows + control particle-free background"
+      ],
+      "admission_gate": "all trajectory/scale/timebase items in physics_input_contract.json measured"
+    },
+    "route_B_field_first": {
+      "priority": "only when trajectory must be predicted from B(t)",
+      "pipeline": [
+        "B(t) vector + gradient + waveform + camera sync",
+        "magnetics/hydrodynamics/contact boundary consistent with fixation state",
+        "predicted trajectory -> optical forward as route A"
+      ],
+      "constraints": [
+        "200 Hz drive alone does NOT license a 400 Hz displacement assumption",
+        "minimal holdout: B-off control + independent B calibration"
+      ],
+      "admission_gate": "all B-field/boundary items in physics_input_contract.json measured"
+    }
+  }
+}

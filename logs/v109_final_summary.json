@@ -1,0 +1,83 @@
+{
+  "gates": {
+    "A_source_admission": true,
+    "B_independent_decisions": true,
+    "C_delta_repair": true,
+    "D_physics_contract": true
+  },
+  "stage_logs": {
+    "A": {
+      "snapshots": 73,
+      "origin_readback": "14400/14400",
+      "mean_identity": "4800/4800",
+      "fft_audit": "14400/14400",
+      "zerostart": "576/576",
+      "probe_readback": "576/576",
+      "v107_fingerprint_ok": true,
+      "v108_zip_verified": true,
+      "reuse": {
+        "tables/v108_period192.csv": {
+          "sha256": "6b3997c5d59d46402c3c04ed1ad3a86a16a9198858a7d534c23f698c79862a79",
+          "n_rows": 192,
+          "row_count_ok": true,
+          "gate_columns_ok": true
+        },
+        "tables/v108_motion_pairs24.csv": {
+          "sha256": "2f2c33219c73812db17f8eddc6f5e42d040d9770592b883fa0df904cba21aec0",
+          "n_rows": 24,
+          "row_count_ok": true,
+          "gate_columns_ok": true
+        },
+        "analysis/v108_period_components14400.csv": {
+          "sha256": "5868772e0c1af3f6e43879310c4db087a4d0e6345eeb2253fe61e34b06d5ca62",
+          "n_rows": 14400,
+          "row_count_ok": true,
+          "gate_columns_ok": true
+        }
+      },
+      "issues": []
+    },
+    "B": {
+      "worker_exit": 0,
+      "match": 5040,
+      "mismatch": 0,
+      "summaries210": 210,
+      "sub1440_missing": 0,
+      "sub1440_field_bad": 0,
+      "s60_duplicate_keys": 0,
+      "s60_unmapped": 0,
+      "s60_count_differences": 30,
+      "error_tests": "23/23",
+      "issues": []
+    },
+    "C": {
+      "decomposition": "852/852",
+      "count_control_rows": 180,
+      "count_rows_changed": 85,
+      "factor_pairs_repaired": 180,
+      "d3_changed": 60,
+      "d3_vs_decomposition_match": "60/60",
+      "d1d2_unchanged": "120/120",
+      "radius": 1680,
+      "budget": 1680,
+      "max_d3_delta": "3.1457747355933323",
+      "issues": []
+    },
+    "D": {
+      "contract_items": 15,
+      "measured": 4,
+      "assumed": 3,
+      "missing": 8,
+      "routes": [
+        "route_A_trajectory_first",
+        "route_B_field_first"
+      ]
+    }
+  },
+  "fail_keys": {},
+  "elapsed_seconds": 5.9,
+  "zip_sha256": "6d4535903f8a2f89c064e35f4c918810e13b9cc5fe0dc6d275a29ab7e10a7a2d",
+  "status_json_sha256": "f290bb71d78fba4cdfdb7362c8ce98de1f4333b5969efa6c0ae24f39cb488f4b",
+  "exit_code": 0,
+  "archive_integrity": true
+}

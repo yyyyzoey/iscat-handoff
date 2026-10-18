@@ -1,112 +1,115 @@
 {
-  "schema": "iscat108.status.1",
-  "task_id": "V108_FULL_FROZEN_RELEASE",
-  "created_at": "2026-10-18T15:17:49",
-  "source_commit": "bc699b0932cf18f5abad10e09f1d1eae0f29446e",
-  "v106_commit_note": "v106 rewrote v096 paths; regenerated values read at current fixed commit",
-  "tool_sha256": "58adb43956bb732e7d4166deeccea3166a02bc892ef916f8bf1cc53d66eaab1c",
+  "schema": "iscat109.status.1",
+  "task_id": "V109_DELTA_REPAIR_AND_PHYSICS_ADMISSION",
+  "created_at": "2026-10-18T18:13:22",
+  "source_commit": "e377f8a11421a04bc3e6c1eaca9f435a46566784",
   "parent_commit": "bc699b0932cf18f5abad10e09f1d1eae0f29446e",
+  "tool_sha256": "84543ad579da4dab704610850d9067ac7cab6126029067b90e9d6626ed801173",
+  "required_gates": [
+    "A_source_admission",
+    "B_independent_decisions",
+    "C_delta_repair",
+    "D_physics_contract"
+  ],
+  "gates": {
+    "A_source_admission": true,
+    "B_independent_decisions": true,
+    "C_delta_repair": true,
+    "D_physics_contract": true
+  },
   "states": {
     "execution": "COMPLETE",
-    "numerical": "NUMERICAL_SEALED",
-    "archive": "ARCHIVE_VERIFIED",
-    "physics": "PENDING_PARAMETERS"
-  },
-  "gates": {
-    "A": true,
-    "B": true,
-    "C": true,
-    "D": true
+    "numerical": "DELTA_VERIFIED",
+    "archive": "PENDING_EXTERNAL_ARCHIVE_CHECK",
+    "physics": "DESIGN_ONLY_NO_NEW_SOLVE"
   },
   "stage_logs": {
     "A": {
       "snapshots": 73,
-      "bank_identity_48": 48,
-      "old_c160_rF_24": 24,
-      "probe_ok": true,
+      "origin_readback": "14400/14400",
+      "mean_identity": "4800/4800",
+      "fft_audit": "14400/14400",
+      "zerostart": "576/576",
+      "probe_readback": "576/576",
+      "v107_fingerprint_ok": true,
+      "v108_zip_verified": true,
+      "reuse": {
+        "tables/v108_period192.csv": {
+          "sha256": "6b3997c5d59d46402c3c04ed1ad3a86a16a9198858a7d534c23f698c79862a79",
+          "n_rows": 192,
+          "row_count_ok": true,
+          "gate_columns_ok": true
+        },
+        "tables/v108_motion_pairs24.csv": {
+          "sha256": "2f2c33219c73812db17f8eddc6f5e42d040d9770592b883fa0df904cba21aec0",
+          "n_rows": 24,
+          "row_count_ok": true,
+          "gate_columns_ok": true
+        },
+        "analysis/v108_period_components14400.csv": {
+          "sha256": "5868772e0c1af3f6e43879310c4db087a4d0e6345eeb2253fe61e34b06d5ca62",
+          "n_rows": 14400,
+          "row_count_ok": true,
+          "gate_columns_ok": true
+        }
+      },
       "issues": []
     },
     "B": {
-      "threeway": "14400/14400",
-      "independent_worker": "14400/14400",
       "worker_exit": 0,
-      "worker_seconds": 1.3,
-      "probe_gates": "576/576",
-      "zerostart": "576/576",
-      "periods": "192/192",
-      "motion_pairs": "24/24",
-      "amp_summaries": 576,
-      "components": 14400,
-      "issues": []
-    },
-    "C": {
       "match": 5040,
       "mismatch": 0,
       "summaries210": 210,
-      "subset1440_missing": 0,
-      "subset1440_field_bad": 0,
-      "s60_unmapped": 0,
+      "sub1440_missing": 0,
+      "sub1440_field_bad": 0,
       "s60_duplicate_keys": 0,
-      "error_tests": "19/19"
+      "s60_unmapped": 0,
+      "s60_count_differences": 30,
+      "error_tests": "23/23",
+      "issues": []
+    },
+    "C": {
+      "decomposition": "852/852",
+      "count_control_rows": 180,
+      "count_rows_changed": 85,
+      "factor_pairs_repaired": 180,
+      "d3_changed": 60,
+      "d3_vs_decomposition_match": "60/60",
+      "d1d2_unchanged": "120/120",
+      "radius": 1680,
+      "budget": 1680,
+      "max_d3_delta": "3.1457747355933323",
+      "issues": []
     },
     "D": {
-      "decomposition": "852/852 PASS",
-      "channel_terms": 2556,
-      "fixed_controls": 180,
-      "radius": 1680,
-      "radius_summaries": 70,
-      "perturbation": 1680,
-      "v096_radius_bad": 0,
-      "history_tables": {
-        "v103": "REUSED_VALUES_AUDITED_CURRENTLY",
-        "v104": "REUSED_VALUES_AUDITED_CURRENTLY",
-        "v105": "REUSED_VALUES_AUDITED_CURRENTLY",
-        "v096_radius_complete1680": "REUSED_VALUES_AUDITED_CURRENTLY",
-        "v096_perturbation_budget1680": "REUSED_VALUES_AUDITED_CURRENTLY"
-      },
-      "v107_audit": {
-        "status_json_blob_sha1": "2594b2b7cffae6b9055700f91c86e2fc09eb8cdc",
-        "expected_status_blob_sha1": "bf16131fb31f7a82cc920d6544c9585de96c3035",
-        "status_json_file_sha256": "8007700d4d46405f255563f25dc34a740ad451ecabc0ca3b2185ba1e55991a39",
-        "v107_claimed_status_sha256": "0440f92937b60991f39cbcf43f7e3a715c739019a6a50434eb8f8b5a4bb7b2e7",
-        "status_sha_matches_prior_audit": false,
-        "receipt_blob_sha1": "5e2dbe05b83884459b76e60badf7806933514c0d",
-        "expected_receipt_blob_sha1": "fbeb413f08ac2356f81a176b0166909eb85b75a2",
-        "receipt_zip_status": "PENDING_CREATION",
-        "receipt_claimed_status_sha256": "8007700d4d46405f255563f25dc34a740ad451ecabc0ca3b2185ba1e55991a39",
-        "status_claim_mismatch": false,
-        "facts": [
-          "v107 delivery did not prove the full contract executed; inherited_results only",
-          "v107 receipt zip_status=PENDING_CREATION; no ZIP-level SHA/CRC/member verification existed",
-          "v105 oracle record 13/19 kept as historical fact; redone here through the corrected entry"
-        ]
-      }
+      "contract_items": 15,
+      "measured": 4,
+      "assumed": 3,
+      "missing": 8,
+      "routes": [
+        "route_A_trajectory_first",
+        "route_B_field_first"
+      ]
     }
   },
   "budget": {
     "new_BEM": 0,
     "new_position_render": 0,
-    "new_optical_intensity": 0,
+    "new_optical_time_series": 0,
     "new_physics_states": 0,
     "experiment_video_reads": 0,
     "core_snapshots": 73,
-    "comparisons": 5040,
-    "independent": 5040,
-    "summaries": 210,
-    "threeway_origins": 14400,
-    "amp_summaries": 576,
+    "origin_readback": 14400,
     "zerostart": 576,
-    "probe_gates": 576,
-    "periods": 192,
-    "motion_pairs": 24,
-    "components": 14400,
+    "probes_readback": 576,
+    "independent_decisions": 5040,
+    "summaries": 210,
+    "count_control_rows": 180,
+    "factor_pair_repair_rows": 180,
     "decomposition_pairs": 852,
-    "channel_terms": 2556,
-    "fixed_controls": 180,
     "radius_rows": 1680,
     "radius_summaries": 70,
-    "budget_rows": 1680,
-    "error_tests": 19
+    "budget_rows": 1680
   },
   "frozen_states": {
     "calibration_valid": false,
@@ -116,5 +119,5 @@
   },
   "physics_admission": "PENDING_PARAMETERS",
   "rule7_new_authorizations": 0,
-  "overall": "ALL_MACHINE_GATES_PASS"
+  "overall": "DELTA_VERIFIED"
 }

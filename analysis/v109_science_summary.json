@@ -1,0 +1,27 @@
+{
+  "preserved_without_change": [
+    "5040 decisions: independent subprocess matches v108 frozen table <1e-12 on all fields",
+    "852 decompositions: both identity residuals <1e-12 reproduced",
+    "14400 origin readbacks, 576 zero-start, 576 probes, 192 periods, 24 motion pairs, 14400 components (reuse by SHA/gates)",
+    "1680 radii / 70 summaries / 1680 budgets: qualification m>0 AND no cross-D tie (unchanged rule)"
+  ],
+  "changed_by_this_round": {
+    "factor_pair_d3_repair": {
+      "rows": 60,
+      "d3_values_changed": 60,
+      "max_abs_d3_delta": "3.1457747355933323",
+      "max_shape_residual_vs_decomposition": "6.6613381477509392e-16",
+      "classification": "old control-table formula/statistical-object correction; NOT a new multi-frequency gain"
+    },
+    "count_control_table_replacement": {
+      "rows": 180,
+      "definition": "6 channel subsets (excluding single-160) x 10 groups x 3 features; bin-160 counts as baseline",
+      "rows_with_count_change_vs_bin160": 85,
+      "note": "the old v108 180-row factor-distance table is kept separately as a historical diagnostic; the two tables measure different objects"
+    }
+  },
+  "not_claimed": [
+    "no new frequency/window/weight/exposure gains",
+    "no diameter, causality, or detectability claims"
+  ]
+}

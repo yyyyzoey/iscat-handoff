@@ -1,0 +1,24 @@
+test_id,description,detected,expected,status,sample_issue
+ORT01,change cross_D_nearest_dist,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: cross_D_nearest_dist diff 0.001 >= 1e-12
+ORT02,change margin min_cross_minus_min_same,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: min_cross_minus_min_same diff 0.001 >= 1e-12
+ORT03,change nearest_candidate,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: nearest_candidate mismatch: 'WRONG' vs 'D100_zf450_M400_a20'
+ORT04,change nearest_label_D,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: nearest_label_D diff 899 >= 1e-12
+ORT05,change second_candidate,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: second_candidate mismatch
+ORT06,change model_label_consistent,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: model_label_consistent mismatch: 'FLIPPED' vs 'NO'
+ORT07,change tied_set_size,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: tied_set_size mismatch
+ORT08,change reference_pool,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: reference pool mismatch
+ORT09,change source SHA,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: source_sha256 mismatch
+ORT10,NaN in distance field,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: non-finite same_D_nearest_dist
+ORT11,Inf in distance field,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: non-finite cross_D_nearest_dist
+ORT12,missing field,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: missing field same_D_nearest_dist
+ORT13,duplicate record_key,YES,DETECTED,PASS,duplicate record_key: 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio
+ORT14,extra record_key,YES,DETECTED,PASS,extra record_key: EXTRA|KEY|q=X|ROI_L2_log_ratio
+ORT15,EXACT threshold boundary (diff == 1e-12 must be rejected),YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: same_D_nearest_dist diff 1.00009e-12 >= 1e-12
+ORT16,change nearest_dist,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: nearest_dist mismatch
+ORT17,change second_dist,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: second_dist mismatch
+ORT18,change final_decision,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: final_decision mismatch
+ORT19,change tie_threshold,YES,DETECTED,PASS,row 80|a|q=D30_zf450_M200_a5|ROI_L2_log_ratio: tie_threshold mismatch
+ORT20,"reverse table row order (positive, per-key values unchanged)",NO,ACCEPTED,PASS,
+ORT21,reverse reference_pool order (positive),NO,ACCEPTED,PASS,
+ORT22,same representation metadata two entries (positive),NO,ACCEPTED,PASS,
+ORT23,normal unchanged table (positive),NO,ACCEPTED,PASS,
