@@ -1,0 +1,4 @@
+{
+  "note": "git blob SHA-1 (canonical bytes) and worktree SHA-256 are different hash domains; CRLF/LF text files are recorded in separate domains",
+  "snapshot_rows": 73
+}

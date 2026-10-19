@@ -136,3 +136,24 @@ LEGACY_SIMULATION_FROZEN | SOFTWARE_OPERATOR_CERTIFIED_FOR_FIXED_FIXTURES | REAL
 Final ZIP sha256 95eb681253afb54d2e846f341bce041f16f21293579f296f520050f7b03c5cab; two-phase protocol (provisional hash disclosed); Result: ROI_MODE_AND_BRIDGE_SEALED, ARCHIVE_VERIFIED, exit 0.
 ## Not claimed
 0 new BEM/render/optical-time-series/physics-states/experiment-video reads; 0 recomputation of legacy statistics; no absolute diameter/calibration/detection claims; P=1681 remains an interface shape requirement, not generated time series.
+
+# v116 Review
+## Scope
+v115 source forensics, production-boundary acceptance, saved-probe bridge re-verification, physics admission. Source frozen at v115 59800bae2a6b5c0b37531c09b6cc97158fad1d5f (v113 89a5b35... verified ancestor).
+## Stage A forensics (GATE PASS on the clean v116 worktree)
+- Raw git evidence saved (cat-file/rev-parse/merge-base/status/log + c1548ea8 fuller).
+- RESOLVED: 1548ea810b9870251dc57e37ddec32ad8be68e42 = the MAIN v114 commit; the delivered v114 tip 7a9102d is the red-evidence addendum on top - so HEAD^ of the v115 tip is 1548ea8, NOT v113.
+- ROOT CAUSE of the v115 A-gate failure: the first v115 driver checked HEAD^ == v113 directly (driver defect); the final v115 driver used the ancestor check. Same worktree, same HEAD 59800bae; Git history untouched.
+- historical_v115_source_failure.json permanently records the delivered v115 zip (d435ca98...) status A=false/UNSEALED_PARTIAL/exit2 + the later green run (95eb6812...) as separate evidence; the v115 historical status is NOT rewritten to PASS.
+- Three identities separated: fixed release branch / historical workstation run root / clean v116 re-verification worktree.
+- 73/73 snapshots with git blob SHA-1, worktree SHA-256 (separate domains), review_inputs historical-copy comparison, full MAT content checks (C/X complex128, Imean float64, mask formula, N2001/Fs5000/bins, C=2X/(N*Imean) <1e-10).
+## Stage B: 12 additional boundary tests, all PASS on the unmodified v115 module -> NO_PRODUCTION_PATCH_REQUIRED
+- exact one-(P,Q)-frame-per-node sampling with stateful counter (no probe call); multi-pixel synchronized rows; scalar vs P=1,Q=1 equality; P=2,Q=3 no-mixing; P=1681 dimension fixture (partial grid, no expensive solve); electron scalar/vector broadcast; dn per-pixel b/g; intensity mode needs no gain; T=0 count rejection; unified OperatorError static rejects at zero callbacks; fail-closed per-pixel spectral gates.
+- Legacy suite on the v116 module: 12/12 groups + 4/4 mutations.
+## Stage C: 576/576 saved-probe bridge re-run through production_fft + independent_dft vs bank X/C (gate <1e-11), fresh evidence.
+## Stage D: metadata 16 items (11 MISSING, prioritized optics/camera/sample_motion/count-diameter); five-layer admission: LEGACY_NUMERICAL_FROZEN | SOFTWARE_OPERATOR_FIXED_FIXTURES=CERTIFIED | REAL_DEVICE_RELATIVE_FORWARD_GO=false | ABSOLUTE_COUNT_GO=false | ABSOLUTE_DIAMETER_VALIDATION_GO=false; bounded pilot design (step 1: scale+exposure+B-off/blank/known-D standard; step 2: max 2 physics pilots only after inputs; v116 auto-physics-solves=0).
+## Stage F: verifier selftest 12/12.
+## Archive
+Final ZIP sha256 e8a4d8cbe327c503f8871b4750a11542fb97ee8ab68819a92f3589365f981f50; two-phase protocol; Result: SOURCE_FORENSICS_AND_ACCEPTANCE_SEALED, ARCHIVE_VERIFIED, exit 0.
+## Not claimed
+0 new BEM/render/optical-time-series/physics-states/experiment-video reads; no legacy recomputation; P0 OPEN; rule7=0; frozen states unchanged; no absolute diameter claim.

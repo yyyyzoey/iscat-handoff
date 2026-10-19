@@ -1,64 +1,66 @@
 {
-  "schema": "iscat115.status.1",
-  "task_id": "V115_ROI_MODE_AND_REGISTERED_SIMULATION_BRIDGE",
-  "created_at": "2026-10-19T17:34:36",
-  "source_commit": "7a9102d5f8c6f98305ed9b10279083de96be66e6",
-  "parent_commit": "89a5b353ba104a3dbf0764816933739f8edda33b",
-  "tool_sha256": "ee7b7ec7ea1b6d2684874175d02e67c538988b2329729cb81bd4eaf73d9b8dd4",
+  "schema": "iscat116.status.1",
+  "task_id": "V116_SOURCE_FORENSICS_AND_OPERATOR_ACCEPTANCE",
+  "created_at": "2026-10-19T22:59:24",
+  "source_commit": "59800bae2a6b5c0b37531c09b6cc97158fad1d5f",
+  "parent_commit": "7a9102d5f8c6f98305ed9b10279083de96be66e6",
+  "tool_sha256": "74ce0748f853d4c71483b6bee3dd664b97eb40212f876bcebd602f9605466968",
   "required_gates": [
-    "A_source_lock",
-    "B_operator_regression",
+    "A_source_forensics",
+    "B_operator_boundaries",
     "C_saved_probe_bridge",
-    "D_metadata_readiness",
+    "D_physics_admission",
     "F_verifier_selftest"
   ],
   "gates": {
-    "A_source_lock": false,
-    "B_operator_regression": true,
+    "A_source_forensics": true,
+    "B_operator_boundaries": true,
     "C_saved_probe_bridge": true,
-    "D_metadata_readiness": true,
+    "D_physics_admission": true,
     "F_verifier_selftest": true
   },
   "states": {
     "execution": "COMPLETE",
-    "numerical": "UNSEALED_PARTIAL",
+    "numerical": "SOURCE_FORENSICS_AND_ACCEPTANCE_SEALED",
     "archive": "PRE_ARCHIVE_VERIFICATION",
     "physics": "ALL_FORWARD_GO_FALSE_PENDING_INPUTS"
   },
-  "four_layer_admission": {
-    "LEGACY_SIMULATION_FROZEN": true,
-    "SOFTWARE_OPERATOR_CERTIFIED_FOR_FIXED_FIXTURES": true,
+  "admission_layers": {
+    "LEGACY_NUMERICAL_FROZEN": true,
+    "SOFTWARE_OPERATOR_FIXED_FIXTURES": "CERTIFIED",
     "REAL_DEVICE_RELATIVE_FORWARD_GO": false,
-    "ABSOLUTE_COUNT_AND_DIAMETER_VALIDATION_GO": false
+    "ABSOLUTE_COUNT_GO": false,
+    "ABSOLUTE_DIAMETER_VALIDATION_GO": false
   },
+  "v115_historical_note": "v115 A-gate failure (parent-check driver defect) recorded in historical_v115_source_failure.json; never overwritten; the v116 A gate is a clean-worktree verdict and does NOT rewrite the v115 historical status",
   "stage_logs": {
     "A": {
       "snapshots": 73,
-      "head": "7a9102d5f8c6f98305ed9b10279083de96be66e6",
-      "v114_zip_verified": true,
-      "issues": [
-        "parent 1548ea810b9870251dc57e37ddec32ad8be68e42 != v113 commit"
-      ]
+      "head": "59800bae2a6b5c0b37531c09b6cc97158fad1d5f",
+      "v113_ancestor": true,
+      "c1548_resolved": true,
+      "porcelain_clean": false,
+      "issues": []
     },
     "B": {
-      "regression": "27/27",
+      "boundary": "12/12",
+      "verdict": "NO_PRODUCTION_PATCH_REQUIRED",
       "legacy_groups": "12/12",
-      "legacy_mutations": "4/4",
-      "prepatch_red_archived": true
+      "legacy_mutations": "4/4"
     },
     "C": {
       "checked": 576,
       "passed": 576,
       "complete_set": true,
-      "backend": "tools/observation_operator.py production_fft + independent_dft (same stored array); original gate < 1e-11",
-      "issues": []
+      "backend": "tools/observation_operator.py production_fft + independent_dft (same stored array); original gate < 1e-11"
     },
     "D": {
       "items": 16,
       "inherited_effective_rows": 14,
       "missing": 11,
       "layer3_go": false,
-      "layer4_go": false
+      "layer4_count_go": false,
+      "layer4_diameter_go": false
     },
     "F": {
       "cases": 12,
@@ -80,5 +82,5 @@
   },
   "p0_status": "OPEN (not upgraded)",
   "rule7_new_authorizations": 0,
-  "overall": "UNSEALED_PARTIAL"
+  "overall": "SOURCE_FORENSICS_AND_ACCEPTANCE_SEALED"
 }

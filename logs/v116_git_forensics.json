@@ -1,0 +1,44 @@
+{
+  "cat_file_head": {
+    "cmd": "git -C C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff cat-file -p HEAD",
+    "returncode": 0,
+    "stdout": "tree d8b7caf5003f76a11428fd220505e35c509a54c1\nparent 7a9102d5f8c6f98305ed9b10279083de96be66e6\nauthor yyyyzoey <yyyyzoey@users.noreply.github.com> 1792402779 +0800\ncommitter yyyyzoey <yyyyzoey@users.noreply.github.com> 1792402779 +0800\n\nv115: V115_ROI_MODE_AND_REGISTERED_SIMULATION_BRIDGE - ROI electron/DN unit conversion, synchronized single-frame sampling, zero-callback pre-validation, production-module 576 bridge\n\n- v114 defects fixed: run_roi unit conversion missing; per-node double+probe callback calls; k0s=[] silent expansion; boundary exception hygiene\n- 27-item regression red(21/27)->green(27/27); legacy 12/12+4/4 on v115 module\n- 576/576 saved-probe bridge through production_fft+independent_dft vs bank (1e-11)\n- four-layer admission; verifier selftest 12/12; ARCHIVE_VERIFIED, exit 0\n",
+    "stderr": ""
+  },
+  "rev_parse": {
+    "cmd": "git -C C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff rev-parse HEAD HEAD^",
+    "returncode": 0,
+    "stdout": "59800bae2a6b5c0b37531c09b6cc97158fad1d5f\n7a9102d5f8c6f98305ed9b10279083de96be66e6\n",
+    "stderr": ""
+  },
+  "merge_base_v113": {
+    "cmd": "git -C C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff merge-base --is-ancestor 89a5b353ba104a3dbf0764816933739f8edda33b HEAD",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "merge_base_v114": {
+    "cmd": "git -C C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff merge-base --is-ancestor 7a9102d5f8c6f98305ed9b10279083de96be66e6 HEAD",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "status_porcelain": {
+    "cmd": "git -C C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff status --porcelain",
+    "returncode": 0,
+    "stdout": "?? tools/run_v116_all.py\n?? tools/v116_archive_check.py\n?? tools/v116_operator_boundary_tests.py\n",
+    "stderr": ""
+  },
+  "log3": {
+    "cmd": "git -C C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff log -3 --format=fuller",
+    "returncode": 0,
+    "stdout": "commit 59800bae2a6b5c0b37531c09b6cc97158fad1d5f\nAuthor:     yyyyzoey <yyyyzoey@users.noreply.github.com>\nAuthorDate: Mon Oct 19 17:39:39 2026 +0800\nCommit:     yyyyzoey <yyyyzoey@users.noreply.github.com>\nCommitDate: Mon Oct 19 17:39:39 2026 +0800\n\n    v115: V115_ROI_MODE_AND_REGISTERED_SIMULATION_BRIDGE - ROI electron/DN unit conversion, synchronized single-frame sampling, zero-callback pre-validation, production-module 576 bridge\n    \n    - v114 defects fixed: run_roi unit conversion missing; per-node double+probe callback calls; k0s=[] silent expansion; boundary exception hygiene\n    - 27-item regression red(21/27)->green(27/27); legacy 12/12+4/4 on v115 module\n    - 576/576 saved-probe bridge through production_fft+independent_dft vs bank (1e-11)\n    - four-layer admission; verifier selftest 12/12; ARCHIVE_VERIFIED, exit 0\n\ncommit 7a9102d5f8c6f98305ed9b10279083de96be66e6\nAuthor:     yyyyzoey <yyyyzoey@users.noreply.github.com>\nAuthorDate: Mon Oct 19 14:47:33 2026 +0800\nCommit:     yyyyzoey <yyyyzoey@users.noreply.github.com>\nCommitDate: Mon Oct 19 14:47:33 2026 +0800\n\n    v114: archive prepatch_red.json (unmodified v113 operator guardrail failures, 12/20) as red-side evidence of the red->green cycle\n\ncommit 1548ea810b9870251dc57e37ddec32ad8be68e42\nAuthor:     yyyyzoey <yyyyzoey@users.noreply.github.com>\nAuthorDate: Mon Oct 19 14:47:01 2026 +0800\nCommit:     yyyyzoey <yyyyzoey@users.noreply.github.com>\nCommitDate: Mon Oct 19 14:47:01 2026 +0800\n\n    v114: V114_OPERATOR_GUARDRAILS_AND_SAVED_PROBE_BRIDGE - 17-item guardrail red->green cycle, spatial run_roi, 576 saved-probe bridge, four-layer admission\n    \n    - Stage A: source lock, 73 snapshots, v113 ZIP bytes verified\n    - Stage B: prepatch_red 12/20 archived (v113 boundary gaps); operator guardrails fixed (anti-alias tolerance bound, quadrature [2,256], k0s=[], bool/NaN/Inf/overflow, fail-closed spectral gates, run_roi (N_time,N_detector,N_subpixel)); postpatch_green 20/20; v113 suite 12/12 + mutations 4/4 on v114 module\n    - Stage C: 576/576 saved-probe read-only bridge (numpy FFT vs fsum DFT vs bank, 1e-11)\n    - Stage D: 16-item metadata readiness, four-layer admission, all forward GO=false\n    - F: verifier selftest 12/12; GUARDRAILS_AND_BRIDGE_SEALED + ARCHIVE_VERIFIED, exit 0\n",
+    "stderr": ""
+  },
+  "c1548_fuller": {
+    "cmd": "git -C C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff show --no-patch --format=fuller 1548ea810b9870251dc57e37ddec32ad8be68e42",
+    "returncode": 0,
+    "stdout": "commit 1548ea810b9870251dc57e37ddec32ad8be68e42\nAuthor:     yyyyzoey <yyyyzoey@users.noreply.github.com>\nAuthorDate: Mon Oct 19 14:47:01 2026 +0800\nCommit:     yyyyzoey <yyyyzoey@users.noreply.github.com>\nCommitDate: Mon Oct 19 14:47:01 2026 +0800\n\n    v114: V114_OPERATOR_GUARDRAILS_AND_SAVED_PROBE_BRIDGE - 17-item guardrail red->green cycle, spatial run_roi, 576 saved-probe bridge, four-layer admission\n    \n    - Stage A: source lock, 73 snapshots, v113 ZIP bytes verified\n    - Stage B: prepatch_red 12/20 archived (v113 boundary gaps); operator guardrails fixed (anti-alias tolerance bound, quadrature [2,256], k0s=[], bool/NaN/Inf/overflow, fail-closed spectral gates, run_roi (N_time,N_detector,N_subpixel)); postpatch_green 20/20; v113 suite 12/12 + mutations 4/4 on v114 module\n    - Stage C: 576/576 saved-probe read-only bridge (numpy FFT vs fsum DFT vs bank, 1e-11)\n    - Stage D: 16-item metadata readiness, four-layer admission, all forward GO=false\n    - F: verifier selftest 12/12; GUARDRAILS_AND_BRIDGE_SEALED + ARCHIVE_VERIFIED, exit 0\n",
+    "stderr": ""
+  }
+}

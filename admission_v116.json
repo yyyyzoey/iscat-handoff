@@ -1,0 +1,29 @@
+{
+  "LEGACY_NUMERICAL_FROZEN": true,
+  "SOFTWARE_OPERATOR_FIXED_FIXTURES": "CERTIFIED",
+  "REAL_DEVICE_RELATIVE_FORWARD_GO": false,
+  "ABSOLUTE_COUNT_GO": false,
+  "ABSOLUTE_DIAMETER_VALIDATION_GO": false,
+  "layer3_blockers": [
+    "object_plane_nm_per_pixel_with_error",
+    "objective_NA_immersion_polarization_reference_path",
+    "exposure_time_per_frame",
+    "trigger_convention_and_per_frame_timestamps",
+    "sample_medium_substrate_fixation",
+    "independent_trajectory",
+    "magnetic_field_B_vector_gradient_sync"
+  ],
+  "layer4_blockers": [
+    "kappa_e_per_U_per_s",
+    "g_DN_per_e_and_offset_DN",
+    "independent_diameter_reference",
+    "particle_blank_Boff_control"
+  ],
+  "bounded_pilot_design": {
+    "step_1": "one instrument scale measurement + one camera exposure/timestamp characterization + one B-off/blank capture + one known-D standard capture",
+    "step_2": "only after ALL step-1 inputs: at most 2 physics-condition pilots with held-out experimental time windows, amplitude/phase/background/model and measurement uncertainty budgets, and a P0-convergence assessment",
+    "scaling": "further amplification needs separate authorization",
+    "v116_auto_physics_solves": 0,
+    "route_note": "route A (independent trajectory) preferred when available; route B needs B(t)/gradient/sync + mechanics; 200Hz drive does not imply 400Hz translation; unknown z/orientation keep bounded-uncertainty placeholders, never 0"
+  }
+}

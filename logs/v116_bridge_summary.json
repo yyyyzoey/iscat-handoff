@@ -1,0 +1,9 @@
+{
+  "checked": 576,
+  "passed": 576,
+  "failed": 0,
+  "complete_set_576_unique_and_expected": true,
+  "backend": "tools/observation_operator.py production_fft + independent_dft (same stored array); original gate < 1e-11",
+  "scope": "READ-ONLY regression of saved simulated probes through the production module; NOT new optical forwards and NOT 41x41 full-ROI validation",
+  "issues": []
+}

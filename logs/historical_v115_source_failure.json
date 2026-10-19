@@ -1,0 +1,22 @@
+{
+  "delivered_v115_zip_sha256": "d435ca98ab2328dca87a437df5707c2f6f63778deef4491f70b648757de5ba9a",
+  "delivered_status_gates": {
+    "A_source_lock": false,
+    "B_operator_regression": true,
+    "C_saved_probe_bridge": true,
+    "D_metadata_readiness": true,
+    "F_verifier_selftest": true
+  },
+  "delivered_overall": "UNSEALED_PARTIAL",
+  "historical_failure_record": {
+    "A_source_lock": false,
+    "error": "parent 1548ea810b9870251dc57e37ddec32ad8be68e42 != v113 commit",
+    "zip_sha256": "d435ca98ab2328dca87a437df5707c2f6f63778deef4491f70b648757de5ba9a",
+    "root_cause": "run-root/driver-version confusion: the first v115 driver checked HEAD^ == v113 directly; HEAD^ is the v114 addendum commit 1548ea8"
+  },
+  "later_green_zip_exists": {
+    "sha256": "95eb681253afb54d2e846f341bce041f16f21293579f296f520050f7b03c5cab",
+    "note": "a later same-worktree run with the corrected ancestor check passed (A=true); recorded as evidence WITHOUT overwriting the historical failure"
+  },
+  "resolution": "A=false was a driver check defect, NOT a repository/history defect; Git history untouched; this record is permanent"
+}
