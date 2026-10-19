@@ -1,0 +1,149 @@
+{
+  "tests": [
+    {
+      "id": "T01",
+      "description": "positive control: valid uniform grid accepted",
+      "expect": "accept",
+      "pass": true,
+      "error": ""
+    },
+    {
+      "id": "T02",
+      "description": "NaN Fs rejected",
+      "expect": "reject",
+      "pass": true,
+      "error": "INVALID_PARAMETER: Fs must be positive finite"
+    },
+    {
+      "id": "T03",
+      "description": "Inf Fs rejected",
+      "expect": "reject",
+      "pass": true,
+      "error": "INVALID_PARAMETER: Fs must be positive finite"
+    },
+    {
+      "id": "T04",
+      "description": "zero and negative Fs rejected",
+      "expect": "reject",
+      "pass": true,
+      "error": "INVALID_PARAMETER: Fs must be positive finite"
+    },
+    {
+      "id": "T05a",
+      "description": "invalid time tolerance rejected",
+      "expect": "reject",
+      "pass": true,
+      "error": "INVALID_PARAMETER: time_tolerance_s must be positive finite"
+    },
+    {
+      "id": "T05b",
+      "description": "invalid time tolerance rejected",
+      "expect": "reject",
+      "pass": true,
+      "error": "INVALID_PARAMETER: time_tolerance_s must be positive finite"
+    },
+    {
+      "id": "T06",
+      "description": "time tolerance >= 0.5/Fs rejected (software anti-alias bound)",
+      "expect": "reject",
+      "pass": true,
+      "error": "NON_UNIFORM_GRID: diff 0.00030000000000000003 vs ideal 0.00020000000000000001 (tol 0.0001 s)"
+    },
+    {
+      "id": "T07",
+      "description": "timestamps returned unmodified (no snapping)",
+      "expect": "accept",
+      "pass": true,
+      "error": ""
+    },
+    {
+      "id": "T08",
+      "description": "quadrature order 64.5 rejected (no silent int())",
+      "expect": "reject",
+      "pass": false,
+      "error": ""
+    },
+    {
+      "id": "T09a",
+      "description": "quadrature order 1 out of [2,256] rejected",
+      "expect": "reject",
+      "pass": true,
+      "error": "INVALID_QUADRATURE_ORDER: 1"
+    },
+    {
+      "id": "T09b",
+      "description": "quadrature order 300 out of [2,256] rejected",
+      "expect": "reject",
+      "pass": false,
+      "error": ""
+    },
+    {
+      "id": "T10",
+      "description": "empty k0s list rejected",
+      "expect": "reject",
+      "pass": true,
+      "error": "EMPTY_BIN_LIST"
+    },
+    {
+      "id": "T11",
+      "description": "bool exposure rejected",
+      "expect": "reject",
+      "pass": false,
+      "error": ""
+    },
+    {
+      "id": "T12",
+      "description": "missing kappa fails before multi-frame callback",
+      "expect": "reject",
+      "pass": true,
+      "error": "MISSING_PARAMETER: kappa_e_per_U_per_s"
+    },
+    {
+      "id": "T13",
+      "description": "negative intensity rejected before count conversion",
+      "expect": "reject",
+      "pass": true,
+      "error": "INVALID_INTENSITY: callback must return finite, real, non-negative pixel intensities (complex-field callbacks refused)"
+    },
+    {
+      "id": "T14a",
+      "description": "DN conversion rejects invalid mu_e (T14a)",
+      "expect": "reject",
+      "pass": false,
+      "error": ""
+    },
+    {
+      "id": "T14b",
+      "description": "DN conversion rejects invalid mu_e (T14b)",
+      "expect": "reject",
+      "pass": false,
+      "error": ""
+    },
+    {
+      "id": "T15",
+      "description": "non-finite electron expectation rejected",
+      "expect": "reject",
+      "pass": false,
+      "error": ""
+    },
+    {
+      "id": "T16",
+      "description": "spectral gate failure fails closed (no certified dft exposed)",
+      "expect": "reject",
+      "pass": false,
+      "error": "mutated production path still exposed a dft"
+    },
+    {
+      "id": "T17",
+      "description": "run_roi keeps independent detector pixels (P=2, Q=3, out-of-phase)",
+      "expect": "accept",
+      "pass": false,
+      "error": "AttributeError: module 'observation_operator' has no attribute 'run_roi'"
+    }
+  ],
+  "n_pass": 12,
+  "n_total": 20,
+  "all_pass": false,
+  "module": "tools/observation_operator.py in --root",
+  "note": "guardrail probe; fixed software cases only"
+}
