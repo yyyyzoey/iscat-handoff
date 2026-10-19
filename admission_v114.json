@@ -1,0 +1,32 @@
+{
+  "LEGACY_SIMULATION_FROZEN": true,
+  "SOFTWARE_OPERATOR_CERTIFIED_FOR_FIXED_FIXTURES": true,
+  "REAL_DEVICE_RELATIVE_FORWARD_GO": false,
+  "ABSOLUTE_COUNT_AND_DIAMETER_VALIDATION_GO": false,
+  "layer3_blockers": [
+    "exposure_time_per_frame",
+    "trigger_time_origin_convention",
+    "per_frame_timestamps",
+    "kappa_e_per_U_per_s",
+    "g_DN_per_e",
+    "offset_DN",
+    "objective_NA_immersion_illumination_polarization",
+    "sample_medium_substrate_height_fixation",
+    "independent_trajectory_with_scale_and_timebase",
+    "magnetic_field_B_vector_gradient_waveform_sync",
+    "reference_field_path"
+  ],
+  "layer4_blockers": [
+    "kappa_e_per_U_per_s",
+    "g_DN_per_e",
+    "offset_DN",
+    "independent diameter reference",
+    "blank/control",
+    "uncertainty chain and independent verification design"
+  ],
+  "next_physics_design_only": {
+    "route_A": "measured 3D position/orientation trajectory -> Eref+Escat -> per-frame real exposure and pixel intensity averaging -> this operator; known-diameter standard first, B-off/blank control, object-plane ruler, held-out windows",
+    "route_B": "measured B(t)/gradient/sync + medium/fixation mechanics -> trajectory -> route A",
+    "authorization": "pre-registration only; no new BEM, no diameter fitting this round"
+  }
+}

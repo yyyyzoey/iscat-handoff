@@ -1,60 +1,62 @@
 {
-  "schema": "iscat113.status.1",
-  "task_id": "V113_MEASUREMENT_OPERATOR_ORIGINAL_GATES_AND_INPUT_ADMISSION",
-  "created_at": "2026-10-19T13:55:18",
-  "source_commit": "d11814c2e286a2e6a2195308923adc81406fa537",
-  "parent_commit": "24fbd6bbfe8b2dd503efbf093a09fc3a60371a30",
-  "tool_sha256": "6f2c37d192c518f5ad4a5d29421d4abf5d2f249dbb132f19e9c54f49f560eec5",
+  "schema": "iscat114.status.1",
+  "task_id": "V114_OPERATOR_GUARDRAILS_AND_SAVED_PROBE_BRIDGE",
+  "created_at": "2026-10-19T14:46:28",
+  "source_commit": "89a5b353ba104a3dbf0764816933739f8edda33b",
+  "parent_commit": "d11814c2e286a2e6a2195308923adc81406fa537",
+  "tool_sha256": "f66014d1ce02d72aaf2763ba954b20d4dc18cea7c34039bbdcf31f40eec4c589",
   "required_gates": [
-    "A_minimal_inheritance",
-    "B_operator_original_gates",
-    "C_effective_assignments",
+    "A_source_lock",
+    "B_operator_guardrails",
+    "C_saved_probe_bridge",
+    "D_metadata_readiness",
     "F_verifier_selftest"
   ],
   "gates": {
-    "A_minimal_inheritance": true,
-    "B_operator_original_gates": true,
-    "C_effective_assignments": true,
+    "A_source_lock": true,
+    "B_operator_guardrails": true,
+    "C_saved_probe_bridge": true,
+    "D_metadata_readiness": true,
     "F_verifier_selftest": true
   },
   "states": {
     "execution": "COMPLETE",
-    "numerical": "ORIGINAL_GATES_RESTORED",
+    "numerical": "GUARDRAILS_AND_BRIDGE_SEALED",
     "archive": "PRE_ARCHIVE_VERIFICATION",
     "physics": "ALL_FORWARD_GO_FALSE_PENDING_INPUTS"
   },
   "four_layer_admission": {
-    "layer_1_legacy": "LEGACY_48_STATE_BASELINE_FROZEN",
-    "layer_2_software": "SOFTWARE_ORIGINAL_GATES_PASS",
-    "layer_3_real_device_relative_forward_go": false,
-    "layer_4_absolute_count_go": false,
-    "layer_4_absolute_diameter_validation_go": false
+    "LEGACY_SIMULATION_FROZEN": true,
+    "SOFTWARE_OPERATOR_CERTIFIED_FOR_FIXED_FIXTURES": true,
+    "REAL_DEVICE_RELATIVE_FORWARD_GO": false,
+    "ABSOLUTE_COUNT_AND_DIAMETER_VALIDATION_GO": false
   },
   "stage_logs": {
     "A": {
       "snapshots": 73,
-      "head": "d11814c2e286a2e6a2195308923adc81406fa537",
-      "v112_zip_verified": true,
+      "head": "89a5b353ba104a3dbf0764816933739f8edda33b",
+      "v113_zip_verified": true,
       "issues": []
     },
     "B": {
-      "groups": "12/12",
-      "mutations": "4/4",
-      "runs": 1
+      "probe": "20/20",
+      "v113_suite_groups": "12/12",
+      "v113_suite_mutations": "4/4",
+      "prepatch_red_archived": false
     },
     "C": {
-      "rows": 14,
-      "direct": 12,
-      "branch_known": 2,
-      "effective_for_this_run": 0,
-      "note": "N=2001 stays DERIVED/conditional: endpoints inclusive AND no frame truncation; EFFECTIVE_FOR_THIS_RUN requires actual batch run metadata",
+      "checked": 576,
+      "passed": 576,
+      "complete_set": true,
+      "scope": "READ-ONLY regression of saved simulated probes; NOT new optical forwards and NOT a 41x41 full-ROI independent time-domain validation",
       "issues": []
     },
     "D": {
-      "layer_2": "SOFTWARE_ORIGINAL_GATES_PASS",
-      "layer_3_go": false,
-      "layer_4_count_go": false,
-      "layer_4_diameter_go": false
+      "items": 16,
+      "inherited_effective_rows": 14,
+      "missing": 11,
+      "layer3_go": false,
+      "layer4_go": false
     },
     "F": {
       "cases": 12,
@@ -76,5 +78,5 @@
   },
   "p0_status": "OPEN (not upgraded)",
   "rule7_new_authorizations": 0,
-  "overall": "ORIGINAL_GATES_RESTORED"
+  "overall": "GUARDRAILS_AND_BRIDGE_SEALED"
 }

@@ -99,3 +99,19 @@ V113_MEASUREMENT_OPERATOR_ORIGINAL_GATES_AND_INPUT_ADMISSION. Source frozen at v
 Final ZIP sha256 4eda2aebe48aecc7c770bc7fb55a653db1e679278f4bf26e1d55a4d8dc77e0dd; in-ZIP status PRE_ARCHIVE_VERIFICATION; external receipt + post_archive_summary hashed. Result: ORIGINAL_GATES_RESTORED, ARCHIVE_VERIFIED, exit 0.
 ## Not claimed
 0 new BEM/render/optical-time-series/physics-states/experiment-video reads; legacy re-verification 0 (5040/852/14400/1680 untouched); P0 OPEN; rule7=0; frozen states unchanged; no absolute diameter claim; original 48-state model sealed pending no further same-type rounds without real inputs.
+
+# v114 Review
+## Scope
+V114_OPERATOR_GUARDRAILS_AND_SAVED_PROBE_BRIDGE. Source frozen at v113 89a5b353ba104a3dbf0764816933739f8edda33b (parent v112 d11814c...). Production entry tools/run_v114_all.py; new tools: v114_operator_gate_probe.py (17 guardrail tests), v114_saved_probe_bridge.py (576 read-only checks).
+## Machine gates (all PASS)
+- A: fixed HEAD/parent; 73/73 snapshots (git-manifest cross-check); probe blob 6b180147...; v113 ZIP bytes re-verified (4eda2aeb...); source diff vs v113 saved.
+- B: red->green guardrail cycle - prepatch_red.json (12/20 on unmodified v113: fractional quadrature order silently truncated, quadrature 300 accepted, bool exposure, DN negative/NaN mu_e, count overflow, spectral gate failure exposed a certified dft, missing run_roi) archived with all failure facts; targeted fixes to tools/observation_operator.py (bool rejection, tolerance >= 0.5/Fs anti-alias bound with explicit non-clock-calibration note, quadrature order integer [2,256], empty/duplicate/illegal bins, mu_e/kappa/DN validation, count overflow, fail-closed spectral gates via SPECTRAL_GATE_FAIL_UNSEALED_PARTIAL, NaN arrays rejected, real timestamps never snapped); postpatch_green.json 20/20; original 12 groups + 4 mutations re-run on the v114 module: 12/12 + 4/4; G11 raw float sample error (9.1e-14) still recorded separately, never masked.
+- C: 576/576 saved-probe read-only bridge: same stored float64 series through numpy FFT AND integer-remainder fsum direct DFT, both vs bank X[k,i,j]/C[k,i,j], all complex abs diffs < 1e-11; positive mean, dtype/finiteness, complete 192x3 unique key set; per-row source SHAs (probe NPZ + bank); scope honestly labeled (not 41x41 full-ROI validation, not new optical forwards).
+- D: metadata readiness 16 items (value/unit/evidence_class/direct_source/source_sha256/valid_dataset/bounds/missing_acquisition); 520nm USER_CONFIRMED; Fs=5000 EXPERIMENT_SCRIPT_RECORDED (not calibrated clock); k0 ANALYSIS_CONTRACT; nominal_D=100nm NOMINAL_LABEL (not a certificate); 11 MISSING organized optics/camera/sample_motion; v113 effective-assignment table (12 DIRECT + 2 BRANCH) inherited.
+- F: released v114 verifier selftest 12/12.
+## Four-layer admission
+LEGACY_SIMULATION_FROZEN | SOFTWARE_OPERATOR_CERTIFIED_FOR_FIXED_FIXTURES | REAL_DEVICE_RELATIVE_FORWARD_GO=false (11 listed blockers) | ABSOLUTE_COUNT_AND_DIAMETER_VALIDATION_GO=false. P0 OPEN; rule7=0; frozen states unchanged; next physics plans remain design-only (known-diameter standard first, B-off/blank control, ruler, held-out windows).
+## Archive
+Final ZIP sha256 a1e27cce70d44004393c83fa0efbaf42378c99caeea54e915468952a71b54aa4; two-phase protocol (provisional hash disclosed); in-ZIP status PRE_ARCHIVE_VERIFICATION; external receipt + post_archive_summary hashed. Result: GUARDRAILS_AND_BRIDGE_SEALED, ARCHIVE_VERIFIED, exit 0.
+## Not claimed
+0 new BEM/render/optical-time-series/physics-states/experiment-video reads; no 5040/852/14400/1680 recomputation; no absolute diameter, calibration curve, detection accuracy, or causal mechanism claims.

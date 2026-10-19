@@ -1,0 +1,8 @@
+{
+  "checked": 576,
+  "passed": 576,
+  "failed": 0,
+  "complete_set_576_unique": true,
+  "scope": "READ-ONLY regression of saved simulated probes; NOT new optical forwards and NOT a 41x41 full-ROI independent time-domain validation",
+  "issues": []
+}

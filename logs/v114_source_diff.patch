@@ -1,0 +1,228 @@
+diff --git a/tools/__pycache__/observation_operator.cpython-311.pyc b/tools/__pycache__/observation_operator.cpython-311.pyc
+index 56746f4..d273662 100644
+Binary files a/tools/__pycache__/observation_operator.cpython-311.pyc and b/tools/__pycache__/observation_operator.cpython-311.pyc differ
+diff --git a/tools/observation_operator.py b/tools/observation_operator.py
+index 16d7d7a..8354db0 100644
+--- a/tools/observation_operator.py
++++ b/tools/observation_operator.py
+@@ -62,8 +62,8 @@ _QUAD_CACHE = {}
+ 
+ 
+ def _quad(n):
+-    if not isinstance(n, int) or n < 2 or n > 1024:
+-        raise OperatorError('INVALID_QUADRATURE_ORDER: %r' % n)
++    if isinstance(n, bool) or not isinstance(n, int) or n < 2 or n > 256:
++        raise OperatorError('INVALID_QUADRATURE_ORDER: %r (must be an integer in [2, 256])' % (n,))
+     if n not in _QUAD_CACHE:
+         _QUAD_CACHE[n] = _legendre_nodes(n)
+     return _QUAD_CACHE[n]
+@@ -74,6 +74,11 @@ def validate_timestamps(timestamps, exposure_s, meaning='center', fs=DEFAULT_FS,
+     """Full static pre-validation. Raises before any intensity callback runs."""
+     _finite_pos(fs, 'Fs')
+     _finite_pos(time_tolerance_s, 'time_tolerance_s')
++    if time_tolerance_s >= 0.5 / float(fs):
++        raise OperatorError('TIME_TOLERANCE_TOO_LARGE: %.17g >= 0.5/Fs=%.17g; this software '
++                            'anti-alias bound prevents clearly non-uniform series from passing as '
++                            'uniform (NOT an independent clock calibration)' %
++                            (time_tolerance_s, 0.5 / float(fs)))
+     if meaning not in ('start', 'center', 'end'):
+         raise OperatorError('TIME_MEANING: must be start, center or end')
+     if timestamps is None:
+@@ -97,8 +102,9 @@ def validate_timestamps(timestamps, exposure_s, meaning='center', fs=DEFAULT_FS,
+     else:
+         if exposure_s is None:
+             raise OperatorError('MISSING_PARAMETER: exposure_time_per_frame')
+-        if not math.isfinite(exposure_s) or exposure_s <= 0:
+-            raise OperatorError('INVALID_EXPOSURE: must be finite and positive '
++        if isinstance(exposure_s, bool) or not isinstance(exposure_s, (int, float)) \
++                or not math.isfinite(exposure_s) or exposure_s <= 0:
++            raise OperatorError('INVALID_EXPOSURE: must be a non-bool finite positive number '
+                                 '(T=0 only with instantaneous_limit flag)')
+     diffs = [b - a for a, b in zip(ts, ts[1:])]
+     ideal = 1.0 / float(fs)
+@@ -143,14 +149,17 @@ def weighted_pixel_average(vals, weights=None):
+ def exposure_average(J_p, t_center, T, quadrature_nodes=64, instantaneous_limit=False):
+     """(1/T) * integral of J_p over the exposure window (Gauss-Legendre).
+     instantaneous_limit requires T == 0 and returns J_p(t_center)."""
+-    _finite_pos(quadrature_nodes, 'quadrature_nodes')
++    if isinstance(quadrature_nodes, bool) or not isinstance(quadrature_nodes, int) \
++            or not 2 <= quadrature_nodes <= 256:
++        raise OperatorError('INVALID_QUADRATURE_ORDER: %r (must be an integer in [2, 256]; '
++                            'fractional orders are rejected, never silently truncated)' % (quadrature_nodes,))
+     if instantaneous_limit:
+         if T != 0:
+             raise OperatorError('INSTANTANEOUS_FLAG_CONFLICT: requires T == 0')
+         return J_p(t_center)
+     if T is None or not math.isfinite(T) or T <= 0:
+         raise OperatorError('INVALID_EXPOSURE: positive exposure required')
+-    xs, ws = _quad(int(quadrature_nodes))
++    xs, ws = _quad(quadrature_nodes)
+     half = T / 2
+     vals = [J_p(t_center + half * x) for x in xs]
+     total = math.fsum(w * v for w, v in zip(ws, vals))
+@@ -158,22 +167,34 @@ def exposure_average(J_p, t_center, T, quadrature_nodes=64, instantaneous_limit=
+ 
+ 
+ def electron_counts(Ibar, kappa_e_per_U_per_s, T):
+-    if kappa_e_per_U_per_s is None or not math.isfinite(kappa_e_per_U_per_s) \
+-            or kappa_e_per_U_per_s <= 0:
++    if kappa_e_per_U_per_s is None or isinstance(kappa_e_per_U_per_s, bool) \
++            or not isinstance(kappa_e_per_U_per_s, (int, float)) \
++            or not math.isfinite(kappa_e_per_U_per_s) or kappa_e_per_U_per_s <= 0:
+         raise OperatorError('INVALID_RESPONSE_COEFFICIENT: kappa must be positive finite')
+-    if T is None or not math.isfinite(T) or T <= 0:
++    if T is None or isinstance(T, bool) or not math.isfinite(T) or T <= 0:
+         raise OperatorError('INVALID_EXPOSURE: count modes require positive exposure')
+     if not math.isfinite(Ibar) or Ibar < 0:
+         raise OperatorError('INVALID_INTENSITY for count conversion')
+-    return kappa_e_per_U_per_s * T * Ibar
++    mu_e = kappa_e_per_U_per_s * T * Ibar
++    if not math.isfinite(mu_e):
++        raise OperatorError('COUNT_OVERFLOW: electron expectation is not finite')
++    if mu_e < 0:
++        raise OperatorError('NEGATIVE_ELECTRON_EXPECTATION')
++    return mu_e
+ 
+ 
+ def dn_counts(mu_e, g_DN_per_e, offset_DN):
++    if mu_e is None or isinstance(mu_e, bool) or not isinstance(mu_e, (int, float)) \
++            or not math.isfinite(mu_e) or mu_e < 0:
++        raise OperatorError('INVALID_MU_E: electron expectation must be finite and non-negative')
+     if g_DN_per_e is None or not math.isfinite(g_DN_per_e) or g_DN_per_e <= 0:
+         raise OperatorError('INVALID_CONVERSION_GAIN: g_DN_per_e must be positive finite')
+     if offset_DN is None or not math.isfinite(offset_DN):
+         raise OperatorError('INVALID_OFFSET_DN')
+-    return offset_DN + g_DN_per_e * mu_e
++    mu_DN = offset_DN + g_DN_per_e * mu_e
++    if not math.isfinite(mu_DN):
++        raise OperatorError('DN_OVERFLOW: digital count expectation is not finite')
++    return mu_DN
+ 
+ 
+ def _validate_bins(k0s):
+@@ -194,10 +215,12 @@ def production_fft(series, mean, k0s=None):
+     k0s = _validate_bins(k0s)
+     if len(series) != N:
+         raise OperatorError('SERIES_LENGTH: expected N=%d, got %d' % (N, len(series)))
+-    _finite_pos(mean, 'mean') if False else None
+-    if mean is None or not math.isfinite(mean) or mean == 0:
+-        raise OperatorError('INVALID_MEAN for normalization')
+-    spec = np.fft.fft(np.asarray(series, dtype=np.float64) - mean)
++    if mean is None or isinstance(mean, bool) or not math.isfinite(mean) or mean <= 0:
++        raise OperatorError('INVALID_MEAN: normalization mean must be positive finite')
++    arr = np.asarray(series, dtype=np.float64)
++    if not np.isfinite(arr).all():
++        raise OperatorError('NON_FINITE_SERIES: stored intensity array contains NaN/Inf')
++    spec = np.fft.fft(arr - mean)
+     out = {}
+     for k0 in k0s:
+         if k0 not in K0S:
+@@ -213,9 +236,12 @@ def independent_dft(series, mean, k0s=None):
+     k0s = _validate_bins(k0s)
+     if len(series) != N:
+         raise OperatorError('SERIES_LENGTH: expected N=%d, got %d' % (N, len(series)))
+-    if mean is None or not math.isfinite(mean) or mean == 0:
+-        raise OperatorError('INVALID_MEAN for normalization')
++    if mean is None or isinstance(mean, bool) or not math.isfinite(mean) or mean <= 0:
++        raise OperatorError('INVALID_MEAN: normalization mean must be positive finite')
+     centered = [v - mean for v in series]
++    for v in centered:
++        if not math.isfinite(v):
++            raise OperatorError('NON_FINITE_SERIES: stored intensity array contains NaN/Inf')
+     out = {}
+     for k0 in k0s:
+         if k0 not in K0S:
+@@ -290,9 +316,93 @@ def run_pipeline(intensity_callback, timestamps, exposure_s, mode='intensity',
+     mean_all = math.fsum(series) / len(series)
+     if len(series) == N:
+         fft_ok, cmp_rows, meta = compare_paths(series, mean_all, k0s=k0s)
++        if not fft_ok:
++            err = OperatorError('SPECTRAL_GATE_FAIL_UNSEALED_PARTIAL: same-array X/C failed the '
++                                'original gates; no certified dft is exposed')
++            err.comparison_rows = cmp_rows
++            err.comparison_meta = meta
++            raise err
+         dft = production_fft(series, mean_all, k0s=k0s)
+     else:
+         fft_ok, cmp_rows, meta = None, [], {'note': 'partial pipeline: DFT requires full N grid'}
+         dft = None
+     return {'centers': centers, 'series': series, 'mean': mean_all, 'dft': dft,
+             'fft_vs_dft_ok': fft_ok, 'comparison_rows': cmp_rows, 'comparison_meta': meta}
++
++
++def run_roi(intensity_callback, timestamps, exposure_s, *, spatial_weights,
++            mode='intensity', k0s=None, fs=DEFAULT_FS, time_tolerance_s=1e-12,
++            time_meaning='center', quadrature_nodes=64,
++            kappa_e_per_U_per_s=None, g_DN_per_e=None, offset_DN=None,
++            instantaneous_limit=False):
++    """Spatial detector-pixel interface: callback returns a (P, Q) real intensity
++    frame (P detector pixels x Q sub-pixel samples); spatial_weights is (P, Q),
++    normalized ROW-WISE inside each detector pixel (adjacent camera pixels are
++    never mixed). Returns series shape (N, P) and dft[k] = (X[P], C[P])."""
++    centers = validate_timestamps(timestamps, exposure_s, meaning=time_meaning,
++                                  fs=fs, time_tolerance_s=time_tolerance_s,
++                                  instantaneous_limit=instantaneous_limit)
++    if mode not in ('intensity', 'electron', 'dn'):
++        raise OperatorError('UNKNOWN_OUTPUT_MODE: %r' % mode)
++    if mode in ('electron', 'dn'):
++        if instantaneous_limit or exposure_s is None or exposure_s <= 0:
++            raise OperatorError('INVALID_EXPOSURE: count modes require positive exposure')
++        if kappa_e_per_U_per_s is None:
++            raise OperatorError('MISSING_PARAMETER: kappa_e_per_U_per_s')
++    if spatial_weights is None:
++        raise OperatorError('MISSING_PARAMETER: spatial_weights')
++    W = [list(row) for row in spatial_weights]
++    P = len(W)
++    if P == 0:
++        raise OperatorError('EMPTY_DETECTOR_AXIS')
++    Q = len(W[0])
++    if Q == 0 or any(len(row) != Q for row in W):
++        raise OperatorError('SPATIAL_WEIGHT_SHAPE: all rows must have length Q')
++    for row in W:
++        for w in row:
++            if isinstance(w, bool) or not isinstance(w, (int, float)) \
++                    or not math.isfinite(w) or w < 0:
++                raise OperatorError('INVALID_SPATIAL_WEIGHT: weights must be finite and non-negative')
++        if math.fsum(row) <= 0:
++            raise OperatorError('INVALID_SPATIAL_WEIGHT: each detector pixel needs a positive '
++                                'sub-pixel weight sum')
++    probe = intensity_callback(centers[0])
++    if not hasattr(probe, '__len__') or len(probe) != P:
++        raise OperatorError('CALLBACK_SHAPE: callback must return (P, Q) = (%d, %d) frames' % (P, Q))
++    if len(probe[0]) != Q:
++        raise OperatorError('CALLBACK_SHAPE: sub-pixel axis length mismatch')
++    k0s = _validate_bins(k0s)
++
++    def make_J(p):
++        def J(t):
++            fr = intensity_callback(t)
++            return weighted_pixel_average(fr[p], W[p])
++        return J
++
++    series = []
++    for tc in centers:
++        row_out = [exposure_average(make_J(p), tc, exposure_s,
++                                    quadrature_nodes=quadrature_nodes,
++                                    instantaneous_limit=instantaneous_limit)
++                   for p in range(P)]
++        series.append(row_out)
++    mean_all = [math.fsum(row[p] for row in series) / len(series) for p in range(P)]
++    arr = np.asarray(series, dtype=np.float64)  # shape (N, P) - interface contract
++    if arr.shape[0] != N:
++        return {'centers': centers, 'series': arr, 'mean': mean_all, 'dft': None,
++                'note': 'partial pipeline: DFT requires full N grid'}
++    dft = {}
++    for k0 in k0s:
++        Xs, Cs = [], []
++        for p in range(P):
++            sp = arr[:, p]
++            ok_p, _, _ = compare_paths(sp, mean_all[p], k0s=[k0])
++            if not ok_p:
++                raise OperatorError('SPECTRAL_GATE_FAIL_UNSEALED_PARTIAL: pixel %d failed the '
++                                    'same-array gates for k0=%d; no certified dft exposed' % (p, k0))
++            Xp, Cp = production_fft(sp, mean_all[p], k0s=[k0])[k0]
++            Xs.append(Xp)
++            Cs.append(Cp)
++        dft[k0] = (np.asarray(Xs, dtype=np.complex128), np.asarray(Cs, dtype=np.complex128))
++    return {'centers': centers, 'series': arr, 'mean': np.asarray(mean_all), 'dft': dft,
++            'shape': (N, P)}
