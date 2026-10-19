@@ -1,0 +1,18 @@
+{
+  "scripts": [
+    {
+      "name": "test_with_contrast.m",
+      "path": "C:\\Users\\PC\\Downloads\\test_with_contrast.m",
+      "sha_verified": true,
+      "role": "normalized complex modulation contrast extractor (400 Hz, user formal version)"
+    },
+    {
+      "name": "test.m",
+      "path": "C:\\Users\\PC\\Desktop\\\u8bfe\u9898\\test.m",
+      "sha_verified": true,
+      "role": "original gray FFT amplitude extractor (420 Hz, contrast input only)"
+    }
+  ],
+  "rule": "variable-level: actual assignments with context and classification; comments/paths/dead branches excluded; multiple hits keep order",
+  "derived_note": "N=2001 is DERIVED from frames 1000..3000 inclusive (startFrame/endFrame assignments); N itself is not a direct variable assignment, so DIRECT_VARIABLE_VERIFIED applies to start/endFrame, while N stays DERIVED/ANALYSIS_CONTRACT"
+}

@@ -1,0 +1,7 @@
+{
+  "legacy_48_state_baseline_frozen": true,
+  "scan_rows": 5040,
+  "scan_issues": 0,
+  "scope": "field self-consistency only; no new distance solving; if issues existed, only affected keys and dependents would be flagged",
+  "record": "LEGACY_48_STATE_BASELINE_FROZEN"
+}

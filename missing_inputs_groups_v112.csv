@@ -1,0 +1,13 @@
+group,parameter,needed,blocks
+optics,object_plane_nm_per_pixel_with_error,stage calibration or certified ruler image with error budget,route A+B
+optics,objective_NA_immersion_illumination_polarization,objective datasheet + illumination configuration record,route A+B
+optics,reference_field_path,optical layout record or interferometric characterization,route A+B
+camera,exposure_time_per_frame,camera acquisition log / property readout per frame,route A+B
+camera,trigger_time_origin_convention,trigger log stating exposure-start vs exposure-center convention,route A+B
+camera,per_frame_timestamps,frame timestamp log (host or camera FIFO),uniform-FFT route
+camera,kappa_e_per_U_per_s (intensity-to-electron-rate response),responsivity calibration (W/cm2 -> e-/s) for the actual wavelength,electron-count mode
+camera,g_DN_per_e (DN/e- conversion gain),photon-transfer curve or datasheet,DN mode
+camera,offset_DN,dark-frame offset measurement,DN mode offset handling
+sample_motion,sample_medium_substrate_height_fixation,sample preparation record + spacer metrology,route A+B
+sample_motion,independent_trajectory_with_scale_and_timebase,independent tracking with certified scale and common timebase,route A
+sample_motion,magnetic_field_B_vector_gradient_waveform_sync,calibrated probe B(t) vector/gradient with camera sync record,route B

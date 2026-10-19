@@ -1,0 +1,6 @@
+{
+  "zip_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-18\\files-mentioned-by-the-user-iscat\\work\\v111_final\\iscat_v111_return.zip",
+  "expected_sha256": "40b9476dc9ba1a3190137737dd89616ded76b97e9335bb604f998de5ae01e46a",
+  "independently_verified_bytes": true,
+  "note": "PRE_ARCHIVE_VERIFICATION design itself is correct; the external receipt is the post-verification credential"
+}

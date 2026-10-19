@@ -1,0 +1,239 @@
+{
+  "groups": [
+    {
+      "group": "G1_timestamp_grid",
+      "pass": true,
+      "cases": [
+        {
+          "case": "normal_5000Hz_grid",
+          "pass": true,
+          "detail": "accepted=True err="
+        },
+        {
+          "case": "duplicates",
+          "pass": true,
+          "detail": "accepted=False err=NON_STRICTLY_INCREASING_TIMESTAMPS: duplicates or reversal"
+        },
+        {
+          "case": "reversed",
+          "pass": true,
+          "detail": "accepted=False err=NON_STRICTLY_INCREASING_TIMESTAMPS: duplicates or reversal"
+        },
+        {
+          "case": "non_uniform",
+          "pass": true,
+          "detail": "accepted=False err=NON_UNIFORM_GRID: diff 0.00030000000000000003 vs ideal 0.00020000000000000001 (t"
+        },
+        {
+          "case": "fs_mismatch",
+          "pass": true,
+          "detail": "accepted=False err=NON_UNIFORM_GRID: diff 0.00040000000000000002 vs ideal 0.00020000000000000001 (t"
+        },
+        {
+          "case": "reject_before_callback",
+          "pass": true,
+          "detail": "callback invocations=0 (must be 0)"
+        }
+      ]
+    },
+    {
+      "group": "G2_constant_intensity",
+      "pass": true,
+      "cases": [
+        {
+          "case": "two_windows_constant",
+          "pass": true,
+          "detail": "Ibar(T=1e-4)=2.4999999999999987 Ibar(T=3e-4)=2.4999999999999991"
+        }
+      ]
+    },
+    {
+      "group": "G3_time_origin_equivalence",
+      "pass": true,
+      "cases": [
+        {
+          "case": "start_center_same_window",
+          "pass": true,
+          "detail": "identical centers [0.001, 0.0012]; max series diff 0"
+        }
+      ]
+    },
+    {
+      "group": "G4_analytic_bins",
+      "pass": true,
+      "cases": [
+        {
+          "case": "bin80_analytic",
+          "pass": true,
+          "detail": "f=199.900049975Hz |X|=399.936993947/399.936993947 argX=0.7/0.7"
+        },
+        {
+          "case": "bin160_analytic",
+          "pass": true,
+          "detail": "f=399.800099950Hz |X|=399.14859798/399.14859798 argX=0.7/0.7"
+        },
+        {
+          "case": "bin320_analytic",
+          "pass": true,
+          "detail": "f=799.600199900Hz |X|=396.004332976/396.004332976 argX=0.7/0.7"
+        }
+      ]
+    },
+    {
+      "group": "G5_intensity_vs_field",
+      "pass": true,
+      "cases": [
+        {
+          "case": "not_equal",
+          "pass": true,
+          "detail": "<|E|^2>=0.356332415158 vs |<E>|^2=0.355878272936"
+        },
+        {
+          "case": "complex_callback_rejected",
+          "pass": true,
+          "detail": "complex field callback refused as intensity input"
+        }
+      ]
+    },
+    {
+      "group": "G6_zero_exposure",
+      "pass": true,
+      "cases": [
+        {
+          "case": "instantaneous_limit_mode",
+          "pass": true,
+          "detail": "T=0 in instantaneous_limit mode returns the instantaneous value"
+        },
+        {
+          "case": "T0_default_rejected",
+          "pass": true,
+          "detail": "T=0 without instantaneous_limit mode is rejected (not a camera default)"
+        },
+        {
+          "case": "count_mode_zero_exposure_rejected",
+          "pass": true,
+          "detail": "electron-count mode refuses zero exposure"
+        }
+      ]
+    },
+    {
+      "group": "G7_units_scaling",
+      "pass": true,
+      "cases": [
+        {
+          "case": "mu_e_linear_in_T",
+          "pass": true,
+          "detail": "mu_e(1e-4)=0.000544 mu_e(2e-4)=0.001088 ratio=2"
+        },
+        {
+          "case": "DN_offset_separate",
+          "pass": true,
+          "detail": "mu_DN = offset + g*mu_e; offset stays fixed while counts scale linearly"
+        }
+      ]
+    },
+    {
+      "group": "G8_interface_rejections",
+      "pass": true,
+      "cases": [
+        {
+          "case": "missing_exposure",
+          "pass": true,
+          "detail": "MISSING_PARAMETER: exposure_time_per_frame"
+        },
+        {
+          "case": "negative_exposure",
+          "pass": true,
+          "detail": "INVALID_EXPOSURE: must be finite and positive (T=0 only allowed in instantaneous_limit mode)"
+        },
+        {
+          "case": "inf_exposure",
+          "pass": true,
+          "detail": "INVALID_EXPOSURE: must be finite and positive (T=0 only allowed in instantaneous_limit mode)"
+        },
+        {
+          "case": "illegal_bin",
+          "pass": true,
+          "detail": "ILLEGAL_BIN: 1600 not in [80, 160, 320]"
+        },
+        {
+          "case": "missing_kappa",
+          "pass": true,
+          "detail": "MISSING_PARAMETER: kappa_e_per_U_per_s (no predicted electron counts without response data)"
+        },
+        {
+          "case": "missing_gain",
+          "pass": true,
+          "detail": "MISSING_PARAMETER: g_DN_per_e"
+        }
+      ]
+    },
+    {
+      "group": "G9_pixel_weights",
+      "pass": true,
+      "cases": [
+        {
+          "case": "weighted_pixel_average",
+          "pass": true,
+          "detail": "exposure-averaged series[0]=2.349540668710222 manual=2.349540668710222"
+        },
+        {
+          "case": "same_dft_entry",
+          "pass": true,
+          "detail": "|C|=0.0443276803798 expected B_w_eff/mean=0.0443276803798 (mean=2.25)"
+        }
+      ]
+    },
+    {
+      "group": "G10_offbin_400Hz",
+      "pass": true,
+      "cases": [
+        {
+          "case": "fft_vs_independent_dft",
+          "pass": true,
+          "detail": "X_module=383.671470019+98.4587255558j X_direct=383.671470019+98.4587255558j (leakage retained)"
+        },
+        {
+          "case": "off_bin_leakage_magnitude",
+          "pass": true,
+          "detail": "|C_160|=0.1979329491 at f=400.0Hz vs bin 399.800099950Hz (finite-window leakage)"
+        }
+      ]
+    },
+    {
+      "group": "G11_relative_phase",
+      "pass": true,
+      "cases": [
+        {
+          "case": "joint_shift_phase_invariant",
+          "pass": true,
+          "detail": "shifting signal and time coordinates together leaves the sampled series (and X) invariant: dX=1.64e-11"
+        }
+      ]
+    },
+    {
+      "group": "G12_gain_offset_quadrature",
+      "pass": true,
+      "cases": [
+        {
+          "case": "constant_gain_cancels",
+          "pass": true,
+          "detail": "C unchanged under constant gain (zero-offset linear model): dC=0"
+        },
+        {
+          "case": "offset_does_not_cancel",
+          "pass": true,
+          "detail": "nonzero offset changes normalized C: |dC|=0.00488 (algebraic fact, not an instrument linearity claim)"
+        },
+        {
+          "case": "quadrature_32_vs_64",
+          "pass": true,
+          "detail": "32-node=0.7579331717362584 64-node=0.75793317173625863"
+        }
+      ]
+    }
+  ],
+  "all_pass": true,
+  "status": "OBSERVATION_OPERATOR_TESTED_ON_FIXED_FIXTURES",
+  "note": "fixed software fixtures only; NOT a validation of arbitrary physical inputs"
+}

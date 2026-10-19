@@ -1,0 +1,10 @@
+{
+  "status": "OBSERVATION_OPERATOR_TESTED_ON_FIXED_FIXTURES",
+  "module": "tools/observation_operator.py (importable; all fixtures drive it)",
+  "groups_pass": "12/12",
+  "scope": "fixed software fixtures only; NOT a validation of arbitrary physical inputs",
+  "real_device_forward_go": false,
+  "absolute_diameter_validation_go": false,
+  "go_gates_note": "REAL_DEVICE_FORWARD_GO=false: scale/optics/exposure-timing/sample-motion and route trajectory-or-field inputs insufficient (see missing_inputs_groups_v112.csv); ABSOLUTE_DIAMETER_VALIDATION_GO=false: independent diameter reference, blank/control and uncertainty chain not established",
+  "route_note": "route A (independent trajectory) vs route B (field-driven dynamics) depends on real evidence; 200Hz drive does not imply 400Hz translation"
+}
