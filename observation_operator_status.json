@@ -1,10 +1,17 @@
 {
-  "status": "OBSERVATION_OPERATOR_TESTED_ON_FIXED_FIXTURES",
-  "module": "tools/observation_operator.py (importable; all fixtures drive it)",
+  "status": "SOFTWARE_ORIGINAL_GATES_PASS",
+  "gates": {
+    "X": 1e-11,
+    "C": 1e-11,
+    "mean": 1e-12
+  },
   "groups_pass": "12/12",
+  "mutations_detected": "4/4",
+  "backend": "production=numpy.fft; independent=direct DFT ((j*k)%%N, math.fsum) on the SAME stored array",
   "scope": "fixed software fixtures only; NOT a validation of arbitrary physical inputs",
-  "real_device_forward_go": false,
-  "absolute_diameter_validation_go": false,
-  "go_gates_note": "REAL_DEVICE_FORWARD_GO=false: scale/optics/exposure-timing/sample-motion and route trajectory-or-field inputs insufficient (see missing_inputs_groups_v112.csv); ABSOLUTE_DIAMETER_VALIDATION_GO=false: independent diameter reference, blank/control and uncertainty chain not established",
-  "route_note": "route A (independent trajectory) vs route B (field-driven dynamics) depends on real evidence; 200Hz drive does not imply 400Hz translation"
+  "environment": {
+    "python": "3.11.7",
+    "numpy": "1.26.4",
+    "platform": "win32"
+  }
 }

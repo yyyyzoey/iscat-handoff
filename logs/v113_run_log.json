@@ -1,0 +1,11 @@
+{
+  "runs": [
+    {
+      "run": 1,
+      "exit": 0,
+      "reason": "main run (passed on first attempt)"
+    }
+  ],
+  "max_regression_budget": 2,
+  "expectation_changes": 0
+}

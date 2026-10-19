@@ -1,0 +1,15 @@
+extractor,variable,line,observed_text,expectation_matched,classification,effective_line,effective_text,verdict,source_file_sha256,encoding
+test_with_contrast.m,Fs,39,Fs = 5000;,True,DIRECT,,,,d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa,utf-8
+test_with_contrast.m,targetFreq,42,targetFreq = 400;,True,DIRECT,,,,d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa,utf-8
+test_with_contrast.m,startFrame,45,startFrame = 1000;,True,DIRECT,,,,d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa,utf-8
+test_with_contrast.m,endFrame,46,endFrame   = 3000;,True,DIRECT,,,,d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa,utf-8
+test_with_contrast.m,endFrame_override_condition,93,if isinf(endFrame),True,BRANCH_CONDITION_KNOWN,94,endFrame = totalFrames;,branch NOT taken for this configuration (endFrame=3000 is finite),d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa,utf-8
+test_with_contrast.m,meanFloorFraction,60,meanFloorFraction = 0.01;,True,DIRECT,,,,d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa,utf-8
+test_with_contrast.m,timeMean,218,"timeMean = mean(imageStack, 4);",True,DIRECT,,,,d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa,utf-8
+test_with_contrast.m,fftCall,230,"fftResult = fft(signalStack, [], 4);",True,DIRECT,,,,d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa,utf-8
+test_with_contrast.m,oneSidedScale_condition,266,if ~isDC && ~isNyquist,True,BRANCH_CONDITION_KNOWN,267,oneSidedScale = 2;,isDC=false (targetIndex!=1); isNyquist requires even numFrames and targetIndex=numFrames/2+1; both false under odd 2001-frame selection -> scale=2; EFFECTIVE_FOR_THIS_RUN only with actual batch run metadata,d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa,utf-8
+test_with_contrast.m,validContrastMask,289,validContrastMask = isfinite(timeMean) & timeMean > meanFloor;,True,DIRECT,,,,d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa,utf-8
+test.m,Fs,23,Fs = 5000;,True,DIRECT,,,,fdc918e691b13b33cbae8b32ecaacd1e63ec27be3e23b61b0701d0e595aea684,gbk
+test.m,targetFreq,26,targetFreq = 420;,True,DIRECT,,,,fdc918e691b13b33cbae8b32ecaacd1e63ec27be3e23b61b0701d0e595aea684,gbk
+test.m,startFrame,30,startFrame = 1000;,True,DIRECT,,,,fdc918e691b13b33cbae8b32ecaacd1e63ec27be3e23b61b0701d0e595aea684,gbk
+test.m,endFrame,31,endFrame   = 3000;,True,DIRECT,,,,fdc918e691b13b33cbae8b32ecaacd1e63ec27be3e23b61b0701d0e595aea684,gbk

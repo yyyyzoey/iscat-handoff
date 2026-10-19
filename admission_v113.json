@@ -1,0 +1,45 @@
+{
+  "layer_1_legacy": "LEGACY_48_STATE_BASELINE_FROZEN (inherited; this round's operator work does not change it)",
+  "layer_2_software": "SOFTWARE_ORIGINAL_GATES_PASS",
+  "layer_3_real_device_relative_forward_go": false,
+  "layer_3_requirements": [
+    "object-plane scale with error (MISSING)",
+    "NA/immersion/reference path/polarization (MISSING)",
+    "material and sample geometry (MISSING)",
+    "real exposure and time base (MISSING)",
+    "route A: independently calibrated trajectory (MISSING) OR route B: field/dynamics constraints (MISSING)",
+    "permitted limited case: normalized-C forward under explicit fixed-exposure, linear, zero-offset assumptions - assumptions must be declared, never presented as measured"
+  ],
+  "layer_4_absolute_count_go": false,
+  "layer_4_absolute_count_requirements": [
+    "photon/electron response kappa (MISSING)",
+    "DN/e- conversion gain (MISSING)",
+    "offset_DN (MISSING)"
+  ],
+  "layer_4_absolute_diameter_validation_go": false,
+  "layer_4_diameter_requirements": [
+    "independent diameter reference (MISSING)",
+    "blank/control (MISSING)",
+    "uncertainty chain and independent verification design (MISSING)"
+  ],
+  "user_request_groups": {
+    "optics": [
+      "object-plane nm/px with error",
+      "NA/immersion/reference path/polarization"
+    ],
+    "camera": [
+      "exposure time",
+      "time-origin convention",
+      "per-frame timestamps",
+      "kappa_e_per_U_per_s",
+      "g_DN_per_e",
+      "offset_DN"
+    ],
+    "sample_motion": [
+      "medium/substrate/fixation",
+      "trajectory with scale+timebase (route A)",
+      "B(t) vector/gradient/sync + dynamics constraints (route B)"
+    ]
+  },
+  "rule": "REAL_DEVICE_RELATIVE_FORWARD_GO stays false until its listed inputs exist; software PASS never implies physical GO; no new BEM, no diameter fitting"
+}

@@ -1,0 +1,341 @@
+{
+  "groups": [
+    {
+      "group": "G1_static_prevalidation",
+      "pass": true,
+      "cases": [
+        {
+          "case": "normal_grid",
+          "pass": true,
+          "detail": "accepted=True err="
+        },
+        {
+          "case": "duplicates",
+          "pass": true,
+          "detail": "accepted=False err=NON_STRICTLY_INCREASING_TIMESTAMPS: duplicates or reversal"
+        },
+        {
+          "case": "reversed",
+          "pass": true,
+          "detail": "accepted=False err=NON_STRICTLY_INCREASING_TIMESTAMPS: duplicates or reversal"
+        },
+        {
+          "case": "non_uniform",
+          "pass": true,
+          "detail": "accepted=False err=NON_UNIFORM_GRID: diff 0.00030000000000000003 vs ideal 0.00020000000000000001 (tol 1e-12 s"
+        },
+        {
+          "case": "nan_fs",
+          "pass": true,
+          "detail": "accepted=False err=INVALID_PARAMETER: Fs must be positive finite"
+        },
+        {
+          "case": "nan_tolerance",
+          "pass": true,
+          "detail": "accepted=False err=INVALID_PARAMETER: time_tolerance_s must be positive finite"
+        },
+        {
+          "case": "negative_tolerance",
+          "pass": true,
+          "detail": "accepted=False err=INVALID_PARAMETER: time_tolerance_s must be positive finite"
+        },
+        {
+          "case": "reject_before_callback",
+          "pass": true,
+          "detail": "callback invocations=0 (must be 0 on static rejection)"
+        }
+      ]
+    },
+    {
+      "group": "G2_constant_intensity",
+      "pass": true,
+      "cases": [
+        {
+          "case": "constant_T=0.0001",
+          "pass": true,
+          "detail": "Ibar==2.5 exactly; mean identity vs gate 1e-12"
+        },
+        {
+          "case": "constant_T=0.0003",
+          "pass": true,
+          "detail": "Ibar==2.5 exactly; mean identity vs gate 1e-12"
+        }
+      ]
+    },
+    {
+      "group": "G3_time_origin_equivalence",
+      "pass": true,
+      "cases": [
+        {
+          "case": "start_center_end_equivalence",
+          "pass": true,
+          "detail": "identical centers; identical series (exact)"
+        }
+      ]
+    },
+    {
+      "group": "G4_analytic_bins_original_gates",
+      "pass": true,
+      "cases": [
+        {
+          "case": "bin80",
+          "pass": true,
+          "detail": "same-array dX=1.2710574864626038e-13 dC=6.2063353831181828e-17 (gate X<1e-11 C<1e-11); analytic residual dX=6.7221999475600932e-12 dC=3.3477412582782145e-15 (reported separately); mean_err=0"
+        },
+        {
+          "case": "bin160",
+          "pass": true,
+          "detail": "same-array dX=5.6843418860808015e-14 dC=5.5511151231257827e-17 (gate X<1e-11 C<1e-11); analytic residual dX=2.6924946073647714e-11 dC=1.3451263734062844e-14 (reported separately); mean_err=0"
+        },
+        {
+          "case": "bin320",
+          "pass": true,
+          "detail": "same-array dX=6.3552874323130192e-14 dC=3.9252311467094379e-17 (gate X<1e-11 C<1e-11); analytic residual dX=5.1694995565661671e-11 dC=2.5848310239067169e-14 (reported separately); mean_err=0"
+        }
+      ]
+    },
+    {
+      "group": "G5_intensity_contract",
+      "pass": true,
+      "cases": [
+        {
+          "case": "intensity_vs_field_inequality",
+          "pass": true,
+          "detail": "<|E|^2>=0.356332415158 vs |<E>|^2=0.355878272936"
+        },
+        {
+          "case": "complex_callback",
+          "pass": true,
+          "detail": "COMPLEX_FIELD_CALLBACK: the intensity callback must return pixel-averaged INTENSITY, never a complex"
+        },
+        {
+          "case": "nan_intensity",
+          "pass": true,
+          "detail": "INVALID_INTENSITY: callback must return finite, real, non-negative pixel intensities (complex-field "
+        },
+        {
+          "case": "negative_intensity",
+          "pass": true,
+          "detail": "INVALID_INTENSITY: callback must return finite, real, non-negative pixel intensities (complex-field "
+        },
+        {
+          "case": "inf_intensity",
+          "pass": true,
+          "detail": "INVALID_INTENSITY: callback must return finite, real, non-negative pixel intensities (complex-field "
+        }
+      ]
+    },
+    {
+      "group": "G6_exposure_contract",
+      "pass": true,
+      "cases": [
+        {
+          "case": "instantaneous_limit",
+          "pass": true,
+          "detail": "flag + T==0 returns instantaneous value"
+        },
+        {
+          "case": "flag_with_negative_exposure",
+          "pass": true,
+          "detail": "INSTANTANEOUS_FLAG_CONFLICT: instantaneous_limit requires exposure exactly 0; negative exposure is never allow"
+        },
+        {
+          "case": "T0_without_flag",
+          "pass": true,
+          "detail": "INVALID_EXPOSURE: must be finite and positive (T=0 only with instantaneous_limit flag)"
+        },
+        {
+          "case": "count_mode_zero_exposure",
+          "pass": true,
+          "detail": "INVALID_EXPOSURE: must be finite and positive (T=0 only with instantaneous_limit flag)"
+        }
+      ]
+    },
+    {
+      "group": "G7_units_scaling",
+      "pass": true,
+      "cases": [
+        {
+          "case": "mu_e_linear_in_T",
+          "pass": true,
+          "detail": "mu_e=0.00054399999999999978, 2T=0.0010879999999999996"
+        },
+        {
+          "case": "DN_offset_separate",
+          "pass": true,
+          "detail": "mu_DN = offset + g*mu_e"
+        }
+      ]
+    },
+    {
+      "group": "G8_rejections",
+      "pass": true,
+      "cases": [
+        {
+          "case": "missing_exposure",
+          "pass": true,
+          "detail": "MISSING_PARAMETER: exposure_time_per_frame"
+        },
+        {
+          "case": "negative_exposure",
+          "pass": true,
+          "detail": "INVALID_EXPOSURE: must be finite and positive (T=0 only with instantaneous_limit flag)"
+        },
+        {
+          "case": "inf_exposure",
+          "pass": true,
+          "detail": "INVALID_EXPOSURE: must be finite and positive (T=0 only with instantaneous_limit flag)"
+        },
+        {
+          "case": "nan_kappa",
+          "pass": true,
+          "detail": "INVALID_RESPONSE_COEFFICIENT: kappa must be positive finite"
+        },
+        {
+          "case": "negative_kappa",
+          "pass": true,
+          "detail": "INVALID_RESPONSE_COEFFICIENT: kappa must be positive finite"
+        },
+        {
+          "case": "negative_gain",
+          "pass": true,
+          "detail": "INVALID_CONVERSION_GAIN: g_DN_per_e must be positive finite"
+        },
+        {
+          "case": "illegal_bin",
+          "pass": true,
+          "detail": "ILLEGAL_BIN: 1600 not in [80, 160, 320]"
+        },
+        {
+          "case": "duplicate_bin",
+          "pass": true,
+          "detail": "DUPLICATE_BINS"
+        },
+        {
+          "case": "empty_bin",
+          "pass": true,
+          "detail": "EMPTY_BIN_LIST"
+        },
+        {
+          "case": "invalid_quadrature",
+          "pass": true,
+          "detail": "INVALID_QUADRATURE_ORDER: 1"
+        }
+      ]
+    },
+    {
+      "group": "G9_pixel_weights",
+      "pass": true,
+      "cases": [
+        {
+          "case": "weighted_pixel_average",
+          "pass": true,
+          "detail": "series[0]=2.3495406687102225 manual=2.3495406687102225"
+        },
+        {
+          "case": "modulation_retained",
+          "pass": true,
+          "detail": "|C|=0.0443276803798 expected 0.0443276803798 (mean=2.25)"
+        },
+        {
+          "case": "negative_weights",
+          "pass": true,
+          "detail": "INVALID_PIXEL_WEIGHT: weights must be finite and non-negative"
+        },
+        {
+          "case": "zero_sum_weights",
+          "pass": true,
+          "detail": "INVALID_PIXEL_WEIGHT: weight sum must be positive"
+        },
+        {
+          "case": "nonfinite_weights",
+          "pass": true,
+          "detail": "INVALID_PIXEL_WEIGHT: weights must be finite and non-negative"
+        }
+      ]
+    },
+    {
+      "group": "G10_offbin_400Hz_real_fft",
+      "pass": true,
+      "cases": [
+        {
+          "case": "fft_vs_independent_dft_all_bins",
+          "pass": true,
+          "detail": "backend=production numpy.fft vs direct fsum DFT (same stored array); dX/dC per bin: 80:1.3048338608099938e-14/6.4843460859744396e-18; 160:5.6843418860808015e-14/2.7755575615628914e-17; 320:2.4640402086168887e-15/1.2310067108277732e-18"
+        },
+        {
+          "case": "leakage_retained",
+          "pass": true,
+          "detail": "|C_160|=0.191720702588 for exact 400 Hz (bin = 399.800099950 Hz); backend=real FFT"
+        }
+      ]
+    },
+    {
+      "group": "G11_time_shift_semantics",
+      "pass": true,
+      "cases": [
+        {
+          "case": "raw_float_time_sample_error_recorded",
+          "pass": true,
+          "detail": "uncompensated callbacks differ by 9.10383e-14 in samples (float time representation; recorded, NOT masked)"
+        },
+        {
+          "case": "declared_shift_equivalence",
+          "pass": true,
+          "detail": "phase origin = first exposure center (module metadata); joint shift leaves X invariant up to raw float sample error: dX=1.64e-11 (raw sample diff 9.1e-14)"
+        }
+      ]
+    },
+    {
+      "group": "G12_gain_offset_quadrature",
+      "pass": true,
+      "cases": [
+        {
+          "case": "zero_offset_constant_gain_cancels",
+          "pass": true,
+          "detail": "dC=0 (zero-offset linear model)"
+        },
+        {
+          "case": "offset_effect_formula",
+          "pass": true,
+          "detail": "offset shifts mean by +0.05 -> |dC|=0.00488 (formula-consistent, not an instrument claim)"
+        },
+        {
+          "case": "quadrature_32_vs_64",
+          "pass": true,
+          "detail": "32=0.75793317173625863 64=0.75793317173625874"
+        }
+      ]
+    }
+  ],
+  "mutations": [
+    {
+      "mutation": "M1_skip_time_precheck",
+      "detected": true,
+      "detail": "mutated module now accepts duplicate timestamps; real test requires rejection"
+    },
+    {
+      "mutation": "M2_omit_exposure_factor",
+      "detected": true,
+      "detail": "mutated mu_e ignores T: G7 linearity check fails"
+    },
+    {
+      "mutation": "M3_copy_wrong_bin",
+      "detected": true,
+      "detail": "mutated production path reads bin 161; same-array gate breaks (dX=400.19999999999965)"
+    },
+    {
+      "mutation": "M4_fold_pixel_axis",
+      "detected": true,
+      "detail": "mutated module returns 2; explicit-weight answer is 2.25"
+    }
+  ],
+  "all_pass": true,
+  "gates": {
+    "X": 1e-11,
+    "C": 1e-11,
+    "mean": 1e-12
+  },
+  "status": "SOFTWARE_ORIGINAL_GATES_PASS",
+  "note": "fixed software fixtures only; NOT a validation of arbitrary physical inputs"
+}

@@ -1,55 +1,60 @@
 {
-  "schema": "iscat112.status.1",
-  "task_id": "V112_EXECUTABLE_OBSERVATION_OPERATOR_AND_SOURCE_ALIGNMENT",
-  "created_at": "2026-10-19T13:02:39",
-  "source_commit": "24fbd6bbfe8b2dd503efbf093a09fc3a60371a30",
-  "parent_commit": "4aa76ac1204d1133e2d53f9631a2f3fb3db7015d",
-  "tool_sha256": "c95b5e8ffcf322c0b5f42febe39c9aa11205ec649a68ba5e4eac4fb2debac78d",
+  "schema": "iscat113.status.1",
+  "task_id": "V113_MEASUREMENT_OPERATOR_ORIGINAL_GATES_AND_INPUT_ADMISSION",
+  "created_at": "2026-10-19T13:55:18",
+  "source_commit": "d11814c2e286a2e6a2195308923adc81406fa537",
+  "parent_commit": "24fbd6bbfe8b2dd503efbf093a09fc3a60371a30",
+  "tool_sha256": "6f2c37d192c518f5ad4a5d29421d4abf5d2f249dbb132f19e9c54f49f560eec5",
   "required_gates": [
-    "A_legacy_scan_and_freeze",
-    "B_metadata_variables",
-    "C_observation_operator",
+    "A_minimal_inheritance",
+    "B_operator_original_gates",
+    "C_effective_assignments",
     "F_verifier_selftest"
   ],
   "gates": {
-    "A_legacy_scan_and_freeze": true,
-    "B_metadata_variables": true,
-    "C_observation_operator": true,
+    "A_minimal_inheritance": true,
+    "B_operator_original_gates": true,
+    "C_effective_assignments": true,
     "F_verifier_selftest": true
   },
   "states": {
     "execution": "COMPLETE",
-    "numerical": "OBSERVATION_OPERATOR_SEALED",
+    "numerical": "ORIGINAL_GATES_RESTORED",
     "archive": "PRE_ARCHIVE_VERIFICATION",
-    "physics": "REAL_DEVICE_FORWARD_GO_FALSE"
+    "physics": "ALL_FORWARD_GO_FALSE_PENDING_INPUTS"
   },
-  "three_statuses": {
-    "legacy": "LEGACY_48_STATE_BASELINE_FROZEN",
-    "operator": "OBSERVATION_OPERATOR_TESTED_ON_FIXED_FIXTURES",
-    "real_device_forward_go": false,
-    "absolute_diameter_validation_go": false
+  "four_layer_admission": {
+    "layer_1_legacy": "LEGACY_48_STATE_BASELINE_FROZEN",
+    "layer_2_software": "SOFTWARE_ORIGINAL_GATES_PASS",
+    "layer_3_real_device_relative_forward_go": false,
+    "layer_4_absolute_count_go": false,
+    "layer_4_absolute_diameter_validation_go": false
   },
   "stage_logs": {
     "A": {
       "snapshots": 73,
-      "scan_rows": 5040,
-      "scan_issues": 0,
-      "legacy_frozen": true,
-      "c400_components_fixed": 90,
-      "v111_zip_verified": true,
+      "head": "d11814c2e286a2e6a2195308923adc81406fa537",
+      "v112_zip_verified": true,
       "issues": []
     },
     "B": {
-      "scripts_sha_verified": 2,
-      "variable_rows": 15,
-      "missing_inputs": 12,
-      "issues": []
+      "groups": "12/12",
+      "mutations": "4/4",
+      "runs": 1
     },
     "C": {
-      "status": "OBSERVATION_OPERATOR_TESTED_ON_FIXED_FIXTURES",
-      "groups": "12/12",
-      "real_device_forward_go": false,
-      "absolute_diameter_validation_go": false
+      "rows": 14,
+      "direct": 12,
+      "branch_known": 2,
+      "effective_for_this_run": 0,
+      "note": "N=2001 stays DERIVED/conditional: endpoints inclusive AND no frame truncation; EFFECTIVE_FOR_THIS_RUN requires actual batch run metadata",
+      "issues": []
+    },
+    "D": {
+      "layer_2": "SOFTWARE_ORIGINAL_GATES_PASS",
+      "layer_3_go": false,
+      "layer_4_count_go": false,
+      "layer_4_diameter_go": false
     },
     "F": {
       "cases": 12,
@@ -69,7 +74,7 @@
     "detection_validated": false,
     "single_particle_diameter": "NOT_ESTIMATED"
   },
-  "p0_status": "OPEN (block/unblock consistency item; not a model failure verdict)",
+  "p0_status": "OPEN (not upgraded)",
   "rule7_new_authorizations": 0,
-  "overall": "OBSERVATION_OPERATOR_SEALED"
+  "overall": "ORIGINAL_GATES_RESTORED"
 }
