@@ -1,0 +1,19 @@
+id,parameter,value,unit,evidence_class,evidence_reference,source_sha_if_applicable,valid_dataset,valid_time,run_effective,uncertainty_or_bounds,required_for,missing_acquisition
+WAVELENGTH_520,laser_vacuum_wavelength,520.0,nm,USER_CONFIRMED,"user statement, no certificate",,all,since 2026-10-12 confirmation,,no instrument certificate; value not invalidated,all optical forwards,
+FS_5000,frame_rate_Fs,5000.0,fps,EXPERIMENT_SCRIPT_RECORDED,test_with_contrast.m L39 (hash-verified),d08575b1e860e09f29c74652442a77b721039c6e32368fe76d2c5c63143ea3aa,7.29 batch,batch acquisition,,script constant; NOT a calibrated clock,DFT sampling contract,external clock calibration
+D_DEMO_BANK,demo_bank_D_labels,"[30, 60, 100]",nm,ANALYSIS_CONTRACT,v092 bank case naming,,48-state demo bank,demo,,"simulation labels (diameter, not core/shell/hydrodynamic)",legacy bank only,
+D_NOMINAL_729,sample_nominal_D_729,100.0,nm,NOMINAL_LABEL,batch naming,,7.29 nominal,,,NOT an independent absolute diameter certificate,,independent characterization of the batch
+D_INDEP_REF,independent_diameter_reference,,nm,MISSING,,,,,,,ABSOLUTE_DIAMETER_VALIDATION_GO,certified particle standard with stated diameter definition
+OPT_SCALE_001,object_plane_nm_per_pixel_with_error,,nm/px,MISSING,,,,,,,REAL_DEVICE_RELATIVE_FORWARD_GO,stage calibration or certified ruler image
+OPT_NA_001,objective_NA_immersion_polarization,,,MISSING,,,,,,,REAL_DEVICE_RELATIVE_FORWARD_GO,objective datasheet + illumination record
+OPT_REF_001,reference_field_path,,,MISSING,,,,,,,REAL_DEVICE_RELATIVE_FORWARD_GO,optical layout record or interferometric characterization
+CAM_EXP_001,exposure_time_per_frame,,s,MISSING,,,,,,,REAL_DEVICE_RELATIVE_FORWARD_GO,camera acquisition log per frame
+CAM_TRIG_001,trigger_time_origin_convention,,,MISSING,,,,,,,time-origin discipline,trigger log (exposure-start vs center)
+CAM_TS_001,per_frame_timestamps,,s,MISSING,,,,,,,non-uniform timestamp handling,frame timestamp log
+CAM_KAPPA_001,kappa_e_per_U_per_s,,e-/(U*s),MISSING,,,,,,,ABSOLUTE_COUNT_GO,responsivity calibration
+CAM_GAIN_001,g_DN_per_e,,DN/e-,MISSING,,,,,,,DN mode,photon-transfer curve
+CAM_OFFSET_001,offset_DN,,DN,MISSING,,,,,,,DN mode,dark-frame measurement
+SMP_BATCH_001,sample_batch_coating_medium_substrate_fixation,,,MISSING,,,,,,,REAL_DEVICE_RELATIVE_FORWARD_GO,sample record + spacer metrology
+MOT_TRAJ_001,independent_trajectory_route_A,,,MISSING,,,,,,"z/orientation keep bounded placeholders, never 0",route A,independent tracking with scale+timebase
+MOT_FIELD_001,magnetic_field_B_gradient_sync_route_B,,,MISSING,,,,,,,route B,calibrated B(t) probe + sync + mechanics
+BLANK_BOFF_001,particle_blank_and_Boff_control,,,MISSING,,,,,,,ABSOLUTE_DIAMETER_VALIDATION_GO,particle-free blank + B-off captures

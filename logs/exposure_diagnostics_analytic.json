@@ -1,0 +1,23 @@
+{
+  "note": "H_T(f) = sin(pi f T)/(pi f T); analytic math only, T values are ASSUMPTIONS not camera settings; correct order: integrate intensity over the exposure window FIRST, then the frozen-sampling DFT",
+  "rows": [
+    {
+      "assumed_exposure_s": 5e-05,
+      "H_200Hz": "0.9998355147",
+      "H_400Hz": "0.9993421562",
+      "H_800Hz": "0.9973701828"
+    },
+    {
+      "assumed_exposure_s": 0.0001,
+      "H_200Hz": "0.9993421562",
+      "H_400Hz": "0.9973701828",
+      "H_800Hz": "0.989505621"
+    },
+    {
+      "assumed_exposure_s": 0.0002,
+      "H_200Hz": "0.9973701828",
+      "H_400Hz": "0.989505621",
+      "H_800Hz": "0.9584184823"
+    }
+  ]
+}

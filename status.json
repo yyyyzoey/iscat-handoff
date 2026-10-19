@@ -1,71 +1,152 @@
 {
-  "schema": "iscat116.status.1",
-  "task_id": "V116_SOURCE_FORENSICS_AND_OPERATOR_ACCEPTANCE",
-  "created_at": "2026-10-19T22:59:24",
-  "source_commit": "59800bae2a6b5c0b37531c09b6cc97158fad1d5f",
-  "parent_commit": "7a9102d5f8c6f98305ed9b10279083de96be66e6",
-  "tool_sha256": "74ce0748f853d4c71483b6bee3dd664b97eb40212f876bcebd602f9605466968",
+  "schema": "iscat117.status.1",
+  "task_id": "V117_TARGETED_ACCEPTANCE_REPAIR_AND_PHYSICAL_INPUT_CONTRACT",
+  "created_at": "2026-10-20T00:23:24",
+  "source_commit": "ae7f479775910654eb10b984ec7076b544ab0a61",
+  "parent_commit": "59800bae2a6b5c0b37531c09b6cc97158fad1d5f",
+  "tool_sha256": "9a23bf7890b3cb58f49cf145950caadaaec171fb4cd1c20ac4d96ba2b38a8ad8",
   "required_gates": [
-    "A_source_forensics",
-    "B_operator_boundaries",
+    "A_source_acceptance",
+    "B_operator_regression",
     "C_saved_probe_bridge",
-    "D_physics_admission",
+    "D_metadata_semantic_admission",
     "F_verifier_selftest"
   ],
   "gates": {
-    "A_source_forensics": true,
-    "B_operator_boundaries": true,
+    "A_source_acceptance": true,
+    "B_operator_regression": true,
     "C_saved_probe_bridge": true,
-    "D_physics_admission": true,
+    "D_metadata_semantic_admission": true,
     "F_verifier_selftest": true
   },
   "states": {
     "execution": "COMPLETE",
-    "numerical": "SOURCE_FORENSICS_AND_ACCEPTANCE_SEALED",
+    "numerical": "TARGETED_REPAIR_AND_ADMISSION_SEALED",
     "archive": "PRE_ARCHIVE_VERIFICATION",
     "physics": "ALL_FORWARD_GO_FALSE_PENDING_INPUTS"
   },
   "admission_layers": {
     "LEGACY_NUMERICAL_FROZEN": true,
-    "SOFTWARE_OPERATOR_FIXED_FIXTURES": "CERTIFIED",
+    "METADATA_SCHEMA_VALID": true,
+    "CONDITIONAL_MODEL_DESIGN_READY": true,
     "REAL_DEVICE_RELATIVE_FORWARD_GO": false,
     "ABSOLUTE_COUNT_GO": false,
     "ABSOLUTE_DIAMETER_VALIDATION_GO": false
   },
-  "v115_historical_note": "v115 A-gate failure (parent-check driver defect) recorded in historical_v115_source_failure.json; never overwritten; the v116 A gate is a clean-worktree verdict and does NOT rewrite the v115 historical status",
   "stage_logs": {
-    "A": {
-      "snapshots": 73,
-      "head": "59800bae2a6b5c0b37531c09b6cc97158fad1d5f",
-      "v113_ancestor": true,
-      "c1548_resolved": true,
-      "porcelain_clean": false,
-      "issues": []
+    "S0": {
+      "head": "ae7f479775910654eb10b984ec7076b544ab0a61",
+      "porcelain_lines": 0
     },
-    "B": {
-      "boundary": "12/12",
-      "verdict": "NO_PRODUCTION_PATCH_REQUIRED",
+    "S1": {
+      "gate": true,
+      "issues": 0,
+      "negatives": [
+        {
+          "fault": "wrong_bytes",
+          "gate": false,
+          "detected": true,
+          "issues": [
+            "sha mismatch vs manifest: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
+            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
+            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a20.mat"
+          ]
+        },
+        {
+          "fault": "copy_mismatch",
+          "gate": false,
+          "detected": true,
+          "issues": [
+            "review_inputs copy mismatch: analysis/bank/v092_bank_D30_zf450_M200_a20.mat",
+            "missing source: numeric/C400_double_D30_zf450_M200_a5.mat",
+            "missing source: numeric/C400_double_D30_zf450_M200_a20.mat"
+          ]
+        },
+        {
+          "fault": "wrong_mask",
+          "gate": false,
+          "detected": true,
+          "issues": [
+            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
+            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a20.mat",
+            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M400_a5.mat"
+          ]
+        },
+        {
+          "fault": "wrong_dtype",
+          "gate": false,
+          "detected": true,
+          "issues": [
+            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
+            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a20.mat",
+            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M400_a5.mat"
+          ]
+        },
+        {
+          "fault": "wrong_case",
+          "gate": false,
+          "detected": true,
+          "issues": [
+            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
+            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a20.mat",
+            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M400_a5.mat"
+          ]
+        }
+      ],
+      "negatives_all_detected": true
+    },
+    "S2": {
+      "regression27": "27/27",
       "legacy_groups": "12/12",
-      "legacy_mutations": "4/4"
+      "legacy_mutations": "4/4",
+      "boundary": "14/14",
+      "boundary_verdict": "NO_PRODUCTION_PATCH_REQUIRED",
+      "runs": [
+        {
+          "suite": "27-item production regression",
+          "script": "v115_operator_regression.py",
+          "exit": 0,
+          "report": "v115_regression27.json"
+        },
+        {
+          "suite": "legacy 12 groups + 4 mutations",
+          "script": "observation_integration_tests_v113.py",
+          "exit": 0,
+          "report": "v113_suite.json"
+        },
+        {
+          "suite": "12 v116 boundary tests + 2 mutations",
+          "script": "v116_operator_boundary_tests.py",
+          "exit": 0,
+          "report": "v116_boundary12.json"
+        }
+      ]
     },
-    "C": {
+    "S3": {
       "checked": 576,
       "passed": 576,
-      "complete_set": true,
       "backend": "tools/observation_operator.py production_fft + independent_dft (same stored array); original gate < 1e-11"
     },
-    "D": {
-      "items": 16,
-      "inherited_effective_rows": 14,
-      "missing": 11,
-      "layer3_go": false,
-      "layer4_count_go": false,
-      "layer4_diameter_go": false
+    "S4": {
+      "items": 18,
+      "missing": 14,
+      "statuses": {
+        "METADATA_SCHEMA_VALID": true,
+        "CONDITIONAL_MODEL_DESIGN_READY": true,
+        "REAL_DEVICE_RELATIVE_FORWARD_GO": false,
+        "ABSOLUTE_COUNT_GO": false,
+        "ABSOLUTE_DIAMETER_VALIDATION_GO": false
+      }
+    },
+    "S5pre": {
+      "exposure_rows": 3,
+      "pilots": 2,
+      "auto_solves": 0
     },
     "F": {
       "cases": 12,
       "passed": 12,
-      "positive_control": true
+      "v116_archive": "VERIFIED"
     }
   },
   "environment": {
@@ -82,5 +163,5 @@
   },
   "p0_status": "OPEN (not upgraded)",
   "rule7_new_authorizations": 0,
-  "overall": "SOURCE_FORENSICS_AND_ACCEPTANCE_SEALED"
+  "overall": "TARGETED_REPAIR_AND_ADMISSION_SEALED"
 }

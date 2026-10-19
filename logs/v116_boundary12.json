@@ -1,0 +1,92 @@
+{
+  "tests": [
+    {
+      "id": "T01",
+      "description": "run_roi callback count exactly N x nodes (stateful counter)",
+      "pass": true,
+      "detail": "calls=12800 expected=12800"
+    },
+    {
+      "id": "T02",
+      "description": "multi-pixel rows read the SAME synchronized frame (no per-pixel skew)",
+      "pass": true,
+      "detail": "per-center window means match series rows"
+    },
+    {
+      "id": "T03",
+      "description": "scalar pipeline vs P=1,Q=1 run_roi strict equality",
+      "pass": true,
+      "detail": "max diff=1.11e-15 over 2001 samples"
+    },
+    {
+      "id": "T04",
+      "description": "P=2,Q=3 independent pixels keep their own frequencies only",
+      "pass": true,
+      "detail": "pixel0: |C160|=0.09974 |C320|=9.9e-17; pixel1: |C160|=8.2e-17 |C320|=0.04948 (no cross-pixel mixing; per-row sub-pixel amplitudes respected)"
+    },
+    {
+      "id": "T05",
+      "description": "P=1681 shape accepted without expensive full solve (partial grid)",
+      "pass": true,
+      "detail": "partial-grid series shape=(50, 1681) (dimension fixture; no full time-domain solve)"
+    },
+    {
+      "id": "T06",
+      "description": "electron scalar kappa broadcast per pixel",
+      "pass": true,
+      "detail": "e-row=[0.0006399999999999999, 0.0012799999999999999]"
+    },
+    {
+      "id": "T07",
+      "description": "electron vector kappa per pixel",
+      "pass": true,
+      "detail": "e-row=[0.0006399999999999999, 0.0025599999999999998]"
+    },
+    {
+      "id": "T08",
+      "description": "dn per-pixel b and g broadcast",
+      "pass": true,
+      "detail": "dn-row=[100.0016, 200.0128]"
+    },
+    {
+      "id": "T09",
+      "description": "intensity mode needs no gain; outputs finite",
+      "pass": true,
+      "detail": "intensity mode runs without any gain/kappa demand; finite outputs"
+    },
+    {
+      "id": "T10",
+      "description": "T=0 rejected in count mode",
+      "pass": true,
+      "detail": "INVALID_EXPOSURE: must be a non-bool finite positive number (T=0 only with instantaneous_limit flag)"
+    },
+    {
+      "id": "T11",
+      "description": "static rejects unified OperatorError at zero callbacks",
+      "pass": true,
+      "detail": "[{\"label\": \"k0s_empty\", \"rejected\": true, \"error_type\": \"OperatorError\", \"error\": \"EMPTY_BIN_LIST\", \"callback_calls\": 0}, {\"label\": \"duplicate_bin\", \"rejected\": true, \"error_type\": \"OperatorError\", \"e"
+    },
+    {
+      "id": "T12",
+      "description": "run_roi per-pixel spectral gate failure fails closed",
+      "pass": true,
+      "detail": "fail-closed raised: SPECTRAL_GATE_FAIL_UNSEALED_PARTIAL: pixel 0 failed the same-array gates for k0=160; no certified dft exposed"
+    },
+    {
+      "id": "MUT_silent_return",
+      "description": "silently-returning run_roi must be caught by the T11 battery",
+      "pass": true,
+      "detail": "[{\"label\": \"k0s_empty\", \"rejected\": false, \"error_type\": null, \"callback_calls\": 0}, {\"label\": \"nan_fs\", \"rejected\": false, \"error_type\": null, \"callback_calls\""
+    },
+    {
+      "id": "MUT_typeerror_leak",
+      "description": "TypeError-leaking run_roi must be caught by the T11 battery (not counted as compliant rejection)",
+      "pass": true,
+      "detail": "[{\"label\": \"k0s_empty\", \"rejected\": true, \"error_type\": \"TypeError\", \"callback_calls\": 0}, {\"label\": \"nan_fs\", \"rejected\": true, \"error_type\": \"TypeError\", \"cal"
+    }
+  ],
+  "n_pass": 14,
+  "n_total": 14,
+  "all_pass": true,
+  "verdict": "NO_PRODUCTION_PATCH_REQUIRED"
+}

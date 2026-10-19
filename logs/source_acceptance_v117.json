@@ -1,0 +1,62 @@
+{
+  "gate": true,
+  "issues": [],
+  "checks": {
+    "files_ok": "73/73",
+    "bank_content_ok": "48/48",
+    "probe_blob_ok": true
+  },
+  "negative_controls": [
+    {
+      "fault": "wrong_bytes",
+      "gate": false,
+      "detected": true,
+      "issues": [
+        "sha mismatch vs manifest: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
+        "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
+        "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a20.mat"
+      ]
+    },
+    {
+      "fault": "copy_mismatch",
+      "gate": false,
+      "detected": true,
+      "issues": [
+        "review_inputs copy mismatch: analysis/bank/v092_bank_D30_zf450_M200_a20.mat",
+        "missing source: numeric/C400_double_D30_zf450_M200_a5.mat",
+        "missing source: numeric/C400_double_D30_zf450_M200_a20.mat"
+      ]
+    },
+    {
+      "fault": "wrong_mask",
+      "gate": false,
+      "detected": true,
+      "issues": [
+        "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
+        "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a20.mat",
+        "snapshot missing: analysis/bank/v092_bank_D30_zf450_M400_a5.mat"
+      ]
+    },
+    {
+      "fault": "wrong_dtype",
+      "gate": false,
+      "detected": true,
+      "issues": [
+        "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
+        "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a20.mat",
+        "snapshot missing: analysis/bank/v092_bank_D30_zf450_M400_a5.mat"
+      ]
+    },
+    {
+      "fault": "wrong_case",
+      "gate": false,
+      "detected": true,
+      "issues": [
+        "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
+        "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a20.mat",
+        "snapshot missing: analysis/bank/v092_bank_D30_zf450_M400_a5.mat"
+      ]
+    }
+  ],
+  "negatives_all_detected": true
+}

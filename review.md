@@ -157,3 +157,22 @@ v115 source forensics, production-boundary acceptance, saved-probe bridge re-ver
 Final ZIP sha256 e8a4d8cbe327c503f8871b4750a11542fb97ee8ab68819a92f3589365f981f50; two-phase protocol; Result: SOURCE_FORENSICS_AND_ACCEPTANCE_SEALED, ARCHIVE_VERIFIED, exit 0.
 ## Not claimed
 0 new BEM/render/optical-time-series/physics-states/experiment-video reads; no legacy recomputation; P0 OPEN; rule7=0; frozen states unchanged; no absolute diameter claim.
+
+# v117 Review
+## Scope
+V117_TARGETED_ACCEPTANCE_REPAIR_AND_PHYSICAL_INPUT_CONTRACT per the independent V116 review. Three identities separated: base source commit ae7f4797... (clean tree, porcelain empty during execution), execution code OUTSIDE the source tree (execution_code_manifest.json), release commit recorded on branch v117.
+## S1 source acceptance (GATE PASS + 5/5 negative controls detected)
+- Clean tree required and verified; all git commands succeed; exact 73 roles/cases; per-file worktree SHA-256 + git blob + length vs fixed tree; review_inputs mapping mismatches are FAILURES; full BANK content checks (dtypes, shapes, finite, N/Fs/bins/case, rebuilt 1%-median mask EXACT match, C identity <1e-10 with full-precision residual = 0); unreadable/corrupt bank files yield gate=false with reason (never crash).
+- Negative controls (small source-tree-outside replicas, all DETECTED): wrong bytes, review_inputs copy mismatch, wrong mask, wrong dtype, wrong case identity.
+## S2 operator repairs and regression (GATE PASS)
+- T11 boolean-unpack bug fixed (per-case entry/error-type/callback-count records; aggregate over real booleans); two mandatory mutations (silent return, TypeError leak) DETECTED.
+- Shared static pre-validation in BOTH entries: kappa/g/b/exposure/bins/time/weights validated with unified real-number rules (bool/complex/str/non-finite rejected; numpy reals accepted) BEFORE the first callback; callback exceptions wrapped in stable OperatorError with raise-from and time/stage; finiteness/non-negativity of converted series/mean verified before ANY partial/full return; ROI spatial_weights shape errors unified; overflow explicit.
+- Regression on the repaired execution module: 27/27 production regression, legacy 12/12 groups + 4/4 mutations, v116 boundary 12/12 + 2/2 mutations. G11 float-time residual still recorded separately from same-array gates.
+## S3 bridge (GATE PASS)
+576/576 through production_fft + independent_dft on the SAME stored arrays vs bank X/C (<1e-11 each) PLUS the two NEW explicit gates folded into row PASS: same-array FFT-DFT <1e-11 and saved-series mean vs bank Imean_map <1e-12.
+## S4 semantic admission (GATE PASS)
+18 items with stable IDs and explicit fields; three D concepts separated (demo bank labels / 7.29 nominal 100nm / independent reference); route logic A OR B; relative-C branch not blocked solely by missing absolute kappa/g (bias/nonlinearity declared); statuses: METADATA_SCHEMA_VALID=true, CONDITIONAL_MODEL_DESIGN_READY=true, REAL_DEVICE_RELATIVE_FORWARD_GO=false, ABSOLUTE_COUNT_GO=false, ABSOLUTE_DIAMETER_VALIDATION_GO=false. missing_inputs_action_sheet.csv lists 14 missing records with acquisition methods.
+## S5 archive + V116 verification
+V116 original final ZIP (e8a4d8cb...) FOUND and hash-verified on this workstation -> V116_ARCHIVE_VERIFIED (clears the earlier UNVERIFIED flag without rebuilding anything). Final v117 ZIP sha256 a56eea50eb6e2b1787ec4f18ea2fc28ff998c6626bcfebc0bca01d80247eec0d; two-phase protocol; archive_integrity/numerical_accepted/archive_valid read separately from the checker JSON.
+## Not claimed
+0 new BEM/render/optical-time-series/physics-states/experiment-video reads; 0 legacy recomputation; P0 OPEN; rule7=0; two physics pilots are DESIGN_ONLY with auto_physics_solves=0; no absolute diameter claim; same-type acceptance loops end here - next progress comes from real inputs and the bounded pilots.

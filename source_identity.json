@@ -1,0 +1,38 @@
+{
+  "identities": {
+    "base_source_commit": "ae7f479775910654eb10b984ec7076b544ab0a61",
+    "execution_code_identity": {
+      "execution_root": "C:\\Users\\PC\\Documents\\Codex\\2026-10-18\\files-mentioned-by-the-user-iscat\\work\\v117_execution",
+      "tools": {
+        "observation_integration_tests_v113.py": "3319278ad6c2731781056d28d335193d0fe4e336a45ea1155e0f2287db5bf3b1",
+        "observation_operator.py": "480775fe94739cad9b59028387a6dc61dce3b0b094213aac98495420ffb4ef70",
+        "run_v116_all.py": "74ce0748f853d4c71483b6bee3dd664b97eb40212f876bcebd602f9605466968",
+        "run_v117_all.py": "9a23bf7890b3cb58f49cf145950caadaaec171fb4cd1c20ac4d96ba2b38a8ad8",
+        "v115_operator_regression.py": "1265fa5999da64d2639e2e02221cde57c8ab64d4bd70925042ff28fb27d6def0",
+        "v115_saved_probe_bridge.py": "01d8c6effff310269c8fb31ad7d2502b110711151cebabb9a1946bace6aa6682",
+        "v116_operator_boundary_tests.py": "f2859f6d6fc6580cf255c8467a66804007b88082faf2022df1361b6d285b2c00",
+        "v117_archive_check.py": "a5189e2f1d9d45aeae4f3078b0e430fa28b150f654cabdb1176a0e180520b719",
+        "v117_saved_probe_bridge.py": "9932faf24a351c9d7ef618d40d73868389db0c279c1c51178424200d8f561857",
+        "v117_source_acceptance.py": "c2a30094d470f9c2088bd759ed680ac528c9b1245de16bb7ff893dd375a3133d"
+      },
+      "note": "execution tools run OUTSIDE the frozen source tree; the frozen tree stays clean during execution"
+    },
+    "release_commit": "recorded after the run when the v117 branch commit exists",
+    "run_head_at_start": "ae7f479775910654eb10b984ec7076b544ab0a61",
+    "porcelain_lines": 0
+  },
+  "historical": {
+    "v115": {
+      "failed_run_HEAD": "7a9102d5f8c6f98305ed9b10279083de96be66e6",
+      "failed_run_zip_sha256": "d435ca98ab2328dca87a437df5707c2f6f63778deef4491f70b648757de5ba9a",
+      "failure": "A_source_lock=false; parent HEAD^==v113 direct-parent driver defect",
+      "release_commit": "59800bae2a6b5c0b37531c09b6cc97158fad1d5f"
+    },
+    "v116": {
+      "run_HEAD": "59800bae2a6b5c0b37531c09b6cc97158fad1d5f",
+      "release_commit": "ae7f479775910654eb10b984ec7076b544ab0a61",
+      "delivered_zip_sha256": "e8a4d8cbe327c503f8871b4750a11542fb97ee8ab68819a92f3589365f981f50",
+      "archive_review": "PENDING -> verified in this run (S5)"
+    }
+  }
+}

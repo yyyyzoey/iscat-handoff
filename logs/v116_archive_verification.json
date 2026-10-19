@@ -1,0 +1,7 @@
+{
+  "zip_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-18\\files-mentioned-by-the-user-iscat\\work\\v116_final2b\\iscat_v116_return.zip",
+  "expected_sha256": "e8a4d8cbe327c503f8871b4750a11542fb97ee8ab68819a92f3589365f981f50",
+  "observed_sha256": "e8a4d8cbe327c503f8871b4750a11542fb97ee8ab68819a92f3589365f981f50",
+  "verdict": "V116_ARCHIVE_VERIFIED",
+  "note": "per contract S5 item 5: hash + real receipt checked; not rebuilt"
+}

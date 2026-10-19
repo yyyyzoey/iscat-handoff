@@ -1,0 +1,33 @@
+{
+  "schema": "iscat117.physics_pilot_preregistration.1",
+  "auto_physics_solves": 0,
+  "budget_table_note": "BEM call count, geometry/material changes, trajectory support points, exposure quadrature nodes, detector pixels/sub-pixels, peak memory, wall time and retries MUST be filled before any physics run",
+  "pilot_1": {
+    "name": "known-D standard + B-off/blank + object-plane ruler + held-out windows",
+    "prerequisites": [
+      "OPT_SCALE_001",
+      "OPT_NA_001",
+      "OPT_REF_001",
+      "CAM_EXP_001",
+      "CAM_TRIG_001",
+      "CAM_TS_001",
+      "SMP_BATCH_001",
+      "D_INDEP_REF",
+      "BLANK_BOFF_001"
+    ],
+    "design": "r(t),orientation(t) with independent scale/timebase -> Eref+Escat -> intensity exposure average -> per-pixel spatial average -> frozen-sampling complex DFT; compare against held-out experimental windows",
+    "uncertainties": "amplitude/phase/background/model and measurement budgets recorded before estimation; P0 convergence assessed on the actual call path",
+    "status": "DESIGN_ONLY"
+  },
+  "pilot_2": {
+    "name": "second physics condition (B-driven constrained trajectory) for model comparison",
+    "prerequisites": [
+      "MOT_FIELD_001",
+      "route B mechanics boundaries confirmed",
+      "pilot_1 completed without unexplained residuals"
+    ],
+    "design": "constrained dynamics from measured B(t)/gradient/sync -> trajectory -> same optical chain as pilot 1; independent held-out windows",
+    "status": "DESIGN_ONLY"
+  },
+  "identifiability_note": "if allowed-parameter changes can offset D changes within experimental error, report feasible ranges/conditional model conclusions instead of a unique absolute D; no D-node expansion is authorized by this registration"
+}

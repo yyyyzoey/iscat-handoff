@@ -1,13 +1,15 @@
-parameter,needed_record,how_to_obtain,blocked_route,status
-object_plane_nm_per_pixel_actual_with_error,stage calibration or certified ruler image with error budget,stage calibration or certified ruler image with error budget,route A/B blocking,OPEN
-exposure_time_per_frame,camera acquisition log / property readout per frame,camera acquisition log / property readout per frame,route A/B blocking,OPEN
-camera_gain_conversion,camera datasheet + measured conversion curve,camera datasheet + measured conversion curve,electron-count observation model,OPEN
-trigger_time_origin_convention,trigger log stating exposure-start vs exposure-center convention,trigger log stating exposure-start vs exposure-center convention,time-origin discipline,OPEN
-per_frame_timestamps,frame timestamp log (host or camera FIFO),frame timestamp log (host or camera FIFO),non-uniform timestamp handling,OPEN
-objective_NA_immersion_illumination_polarization,objective datasheet + illumination configuration record,objective datasheet + illumination configuration record,route A/B blocking,OPEN
-reference_field_path,optical layout record or interferometric characterization,optical layout record or interferometric characterization,route A/B blocking,OPEN
-magnetic_field_B_vector_gradient_waveform_sync,calibrated probe B(t) vector/gradient with camera sync record,calibrated probe B(t) vector/gradient with camera sync record,route B blocking,OPEN
-sample_medium_substrate_height_fixation,sample preparation record + profilometry/caliper of spacer,sample preparation record + profilometry/caliper of spacer,route A/B blocking,OPEN
-independent_trajectory_with_scale_and_timebase,independent tracking with certified scale and common timebase,independent tracking with certified scale and common timebase,route A blocking,OPEN
-unknown_axial_motion_and_orientation,defocused imaging / multi-view or explicit constrained assumption with bound,defocused imaging / multi-view or explicit constrained assumption with bound,route A/B blocking,OPEN
-independent_diameter_reference_and_blank_background,certified particle standard + particle-free blank capture,certified particle standard + particle-free blank capture,GO gate,OPEN
+id,parameter,needed_record,blocked_branch
+D_INDEP_REF,independent_diameter_reference,certified particle standard with stated diameter definition,ABSOLUTE_DIAMETER_VALIDATION_GO
+OPT_SCALE_001,object_plane_nm_per_pixel_with_error,stage calibration or certified ruler image,REAL_DEVICE_RELATIVE_FORWARD_GO
+OPT_NA_001,objective_NA_immersion_polarization,objective datasheet + illumination record,REAL_DEVICE_RELATIVE_FORWARD_GO
+OPT_REF_001,reference_field_path,optical layout record or interferometric characterization,REAL_DEVICE_RELATIVE_FORWARD_GO
+CAM_EXP_001,exposure_time_per_frame,camera acquisition log per frame,REAL_DEVICE_RELATIVE_FORWARD_GO
+CAM_TRIG_001,trigger_time_origin_convention,trigger log (exposure-start vs center),time-origin discipline
+CAM_TS_001,per_frame_timestamps,frame timestamp log,non-uniform timestamp handling
+CAM_KAPPA_001,kappa_e_per_U_per_s,responsivity calibration,ABSOLUTE_COUNT_GO
+CAM_GAIN_001,g_DN_per_e,photon-transfer curve,DN mode
+CAM_OFFSET_001,offset_DN,dark-frame measurement,DN mode
+SMP_BATCH_001,sample_batch_coating_medium_substrate_fixation,sample record + spacer metrology,REAL_DEVICE_RELATIVE_FORWARD_GO
+MOT_TRAJ_001,independent_trajectory_route_A,independent tracking with scale+timebase,route A
+MOT_FIELD_001,magnetic_field_B_gradient_sync_route_B,calibrated B(t) probe + sync + mechanics,route B
+BLANK_BOFF_001,particle_blank_and_Boff_control,particle-free blank + B-off captures,ABSOLUTE_DIAMETER_VALIDATION_GO

@@ -1,0 +1,10 @@
+{
+  "METADATA_SCHEMA_VALID": true,
+  "CONDITIONAL_MODEL_DESIGN_READY": true,
+  "REAL_DEVICE_RELATIVE_FORWARD_GO": false,
+  "ABSOLUTE_COUNT_GO": false,
+  "ABSOLUTE_DIAMETER_VALIDATION_GO": false,
+  "route_logic": "A_trajectory_ready OR B_field_mechanics_ready; route A does not require all B parameters; route B needs its own dynamics boundaries",
+  "relative_C_branch_note": "fixed-exposure linear zero-bias normalized-C forward is NOT blocked solely by missing absolute kappa/g; camera bias and nonlinearity must be handled first and declared",
+  "synthetic_values_policy": "any kappa/g/b used in software tests are SYNTHETIC_FIXTURE values"
+}
