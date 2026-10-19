@@ -2,148 +2,169 @@
   "tests": [
     {
       "id": "T01",
-      "description": "positive control: valid uniform grid accepted",
-      "expect": "accept",
+      "description": "valid uniform grid accepted, series values correct",
       "pass": true,
-      "error": ""
+      "detail": "series len=2001"
     },
     {
       "id": "T02",
       "description": "NaN Fs rejected",
-      "expect": "reject",
       "pass": true,
-      "error": "INVALID_PARAMETER: Fs must be positive finite"
+      "detail": "INVALID_PARAMETER: Fs must be positive finite"
     },
     {
       "id": "T03",
       "description": "Inf Fs rejected",
-      "expect": "reject",
       "pass": true,
-      "error": "INVALID_PARAMETER: Fs must be positive finite"
+      "detail": "INVALID_PARAMETER: Fs must be positive finite"
     },
     {
       "id": "T04",
       "description": "zero and negative Fs rejected",
-      "expect": "reject",
       "pass": true,
-      "error": "INVALID_PARAMETER: Fs must be positive finite"
+      "detail": "INVALID_PARAMETER: Fs must be positive finite"
     },
     {
-      "id": "T05a",
-      "description": "invalid time tolerance rejected",
-      "expect": "reject",
+      "id": "T05",
+      "description": "NaN and negative time tolerance rejected",
       "pass": true,
-      "error": "INVALID_PARAMETER: time_tolerance_s must be positive finite"
-    },
-    {
-      "id": "T05b",
-      "description": "invalid time tolerance rejected",
-      "expect": "reject",
-      "pass": true,
-      "error": "INVALID_PARAMETER: time_tolerance_s must be positive finite"
+      "detail": "INVALID_PARAMETER: time_tolerance_s must be positive finite"
     },
     {
       "id": "T06",
-      "description": "time tolerance >= 0.5/Fs rejected (software anti-alias bound)",
-      "expect": "reject",
+      "description": "tolerance >= 0.5/Fs rejected on a genuinely uniform grid",
       "pass": true,
-      "error": "NON_UNIFORM_GRID: diff 0.00030000000000000003 vs ideal 0.00020000000000000001 (tol 0.0001 s)"
+      "detail": "TIME_TOLERANCE_TOO_LARGE: 0.0001 >= 0.5/Fs=0.0001; this software anti-alias bound prevents clearly non-uniform series from passing as uniform (NOT an independent clock ca"
     },
     {
       "id": "T07",
       "description": "timestamps returned unmodified (no snapping)",
-      "expect": "accept",
       "pass": true,
-      "error": ""
+      "detail": "centers=[0.002, 0.0022000000005000003, 0.0024]"
     },
     {
       "id": "T08",
-      "description": "quadrature order 64.5 rejected (no silent int())",
-      "expect": "reject",
-      "pass": false,
-      "error": ""
-    },
-    {
-      "id": "T09a",
-      "description": "quadrature order 1 out of [2,256] rejected",
-      "expect": "reject",
+      "description": "fractional quadrature order 64.5 rejected",
       "pass": true,
-      "error": "INVALID_QUADRATURE_ORDER: 1"
+      "detail": "INVALID_QUADRATURE_ORDER: 64.5 (must be an integer in [2, 256]; fractional orders are rejected, never silently truncated)"
     },
     {
-      "id": "T09b",
-      "description": "quadrature order 300 out of [2,256] rejected",
-      "expect": "reject",
-      "pass": false,
-      "error": ""
+      "id": "T09",
+      "description": "quadrature order 1/300 rejected",
+      "pass": true,
+      "detail": "INVALID_QUADRATURE_ORDER: 1 (must be an integer in [2, 256]; fractional orders are rejected, never silently truncated)"
     },
     {
       "id": "T10",
-      "description": "empty k0s list rejected",
-      "expect": "reject",
+      "description": "k0s=[] rejected everywhere (production/independent/compare/scalar-partial/roi)",
       "pass": true,
-      "error": "EMPTY_BIN_LIST"
+      "detail": "EMPTY_BIN_LIST"
     },
     {
       "id": "T11",
       "description": "bool exposure rejected",
-      "expect": "reject",
-      "pass": false,
-      "error": ""
+      "pass": true,
+      "detail": "INVALID_EXPOSURE: must be a non-bool finite positive number (T=0 only with instantaneous_limit flag)"
     },
     {
       "id": "T12",
-      "description": "missing kappa fails before multi-frame callback",
-      "expect": "reject",
+      "description": "missing kappa rejected with ZERO callbacks",
       "pass": true,
-      "error": "MISSING_PARAMETER: kappa_e_per_U_per_s"
+      "detail": "error='MISSING_PARAMETER: kappa_e_per_U_per_s' callback_calls=0"
     },
     {
       "id": "T13",
       "description": "negative intensity rejected before count conversion",
-      "expect": "reject",
       "pass": true,
-      "error": "INVALID_INTENSITY: callback must return finite, real, non-negative pixel intensities (complex-field callbacks refused)"
+      "detail": "INVALID_INTENSITY: callback must return finite, real, non-negative pixel intensities (complex-field callbacks refused)"
     },
     {
-      "id": "T14a",
-      "description": "DN conversion rejects invalid mu_e (T14a)",
-      "expect": "reject",
-      "pass": false,
-      "error": ""
-    },
-    {
-      "id": "T14b",
-      "description": "DN conversion rejects invalid mu_e (T14b)",
-      "expect": "reject",
-      "pass": false,
-      "error": ""
+      "id": "T14",
+      "description": "DN conversion rejects negative/NaN mu_e and bool gain/offset",
+      "pass": true,
+      "detail": "INVALID_MU_E: electron expectation must be finite and non-negative"
     },
     {
       "id": "T15",
-      "description": "non-finite electron expectation rejected",
-      "expect": "reject",
-      "pass": false,
-      "error": ""
+      "description": "count overflow rejected",
+      "pass": true,
+      "detail": "COUNT_OVERFLOW: electron expectation is not finite"
     },
     {
       "id": "T16",
-      "description": "spectral gate failure fails closed (no certified dft exposed)",
-      "expect": "reject",
-      "pass": false,
-      "error": "mutated production path still exposed a dft"
+      "description": "forced spectral gate failure fails closed (no certified dft)",
+      "pass": true,
+      "detail": "SPECTRAL_GATE_FAIL raised: SPECTRAL_GATE_FAIL_UNSEALED_PARTIAL: same-array X/C failed the original gates; no certifie"
     },
     {
       "id": "T17",
-      "description": "run_roi keeps independent detector pixels (P=2, Q=3, out-of-phase)",
-      "expect": "accept",
+      "description": "run_roi independent detector pixels (P=2, Q=3, out-of-phase)",
+      "pass": true,
+      "detail": "shape=(2001, 2) X0=299.361 exp=299.361 X1=29.5609-295.528j exp=29.5609-295.528j"
+    },
+    {
+      "id": "T18",
+      "description": "run_roi electron mode = per-pixel kappa*T*Ibar (scalar broadcast)",
       "pass": false,
-      "error": "AttributeError: module 'observation_operator' has no attribute 'run_roi'"
+      "detail": "e-row=[0.9999999999999994, 1.999999999999999]"
+    },
+    {
+      "id": "T19",
+      "description": "run_roi dn mode = offset + g*mu_e per pixel",
+      "pass": false,
+      "detail": "dn-row=[0.9999999999999994, 1.999999999999999]"
+    },
+    {
+      "id": "T20",
+      "description": "run_roi missing count params rejected with ZERO callbacks",
+      "pass": true,
+      "detail": "error='MISSING_PARAMETER: kappa_e_per_U_per_s' callback_calls=0"
+    },
+    {
+      "id": "T21",
+      "description": "one full (P,Q) frame per quadrature node (exact callback count)",
+      "pass": false,
+      "detail": "callback_calls=25601 expected=12800 (one full frame per quadrature node)"
+    },
+    {
+      "id": "T22",
+      "description": "run_roi P=1 Q=1 strictly equals scalar run_pipeline",
+      "pass": true,
+      "detail": "max diff over 2001 samples"
+    },
+    {
+      "id": "T23",
+      "description": "weighted_pixel_average([]) raises OperatorError (no ZeroDivisionError)",
+      "pass": true,
+      "detail": "LEAKED ZeroDivisionError: division by zero"
+    },
+    {
+      "id": "T24",
+      "description": "illegal shapes/NaN/Inf weights rejected with OperatorError",
+      "pass": true,
+      "detail": "CALLBACK_SHAPE: sub-pixel axis length mismatch"
+    },
+    {
+      "id": "T25",
+      "description": "2001-pixel independent frequencies keep separate X/C",
+      "pass": false,
+      "detail": "LEAKED/BLOCKED: LEAKED TypeError: object of type 'float' has no len()"
+    },
+    {
+      "id": "T26",
+      "description": "partial-N scalar pipeline also rejects k0s=[]",
+      "pass": false,
+      "detail": "NOT REJECTED"
+    },
+    {
+      "id": "T27",
+      "description": "illegal/duplicate bins rejected through run_pipeline",
+      "pass": true,
+      "detail": "ILLEGAL_BIN: 1600 not in [80, 160, 320]"
     }
   ],
-  "n_pass": 12,
-  "n_total": 20,
+  "n_pass": 22,
+  "n_total": 27,
   "all_pass": false,
-  "module": "tools/observation_operator.py in --root",
-  "note": "guardrail probe; fixed software cases only"
+  "note": "fixed software fixtures only; negative cases accept ONLY the specified OperatorError"
 }

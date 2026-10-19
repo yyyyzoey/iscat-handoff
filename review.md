@@ -115,3 +115,24 @@ LEGACY_SIMULATION_FROZEN | SOFTWARE_OPERATOR_CERTIFIED_FOR_FIXED_FIXTURES | REAL
 Final ZIP sha256 a1e27cce70d44004393c83fa0efbaf42378c99caeea54e915468952a71b54aa4; two-phase protocol (provisional hash disclosed); in-ZIP status PRE_ARCHIVE_VERIFICATION; external receipt + post_archive_summary hashed. Result: GUARDRAILS_AND_BRIDGE_SEALED, ARCHIVE_VERIFIED, exit 0.
 ## Not claimed
 0 new BEM/render/optical-time-series/physics-states/experiment-video reads; no 5040/852/14400/1680 recomputation; no absolute diameter, calibration curve, detection accuracy, or causal mechanism claims.
+
+# v115 Review
+## Scope
+V115_ROI_MODE_AND_REGISTERED_SIMULATION_BRIDGE. Source frozen at v114 tip 7a9102d5f8c6f98305ed9b10279083de96be66e6 (v113 89a5b35... verified as ancestor). Production entry tools/run_v115_all.py; new tools: v115_operator_regression.py (27 tests, red->green), v115_saved_probe_bridge.py (576 checks through the production module).
+## v114 production defects found and fixed (evidence: prepatch_red.json 21/27 on the unmodified v114 module)
+- run_roi electron/dn modes silently emitted raw Ibar (unit conversion missing) -> fixed: mu_e = kappa_p*T*Ibar[p], mu_DN = offset_p + g_p*mu_e[p], scalar kappa/g/b broadcast to P (per-pixel calibration left for future explicit user data)
+- run_roi called the intensity callback 2x per node + 1 probe (25601 calls vs 12800 expected) -> fixed: exactly ONE (P,Q) frame per quadrature node, validated once, row-normalized per pixel; T21 exact count 12800/12800
+- static parameter errors leaked ordinary TypeError/ZeroDivisionError; k0s=[] silently expanded via `k0s or K0S` in compare_paths and bypassed in partial pipelines -> fixed: _validate_bins everywhere (None=default, explicit [] = EMPTY_BIN_LIST), zero-callback rejection for all statically checkable parameters, weighted_pixel_average([]) guarded, bool gain/offset rejected, NaN arrays rejected in both spectral paths
+- callbacks returning wrong shapes leaked TypeError -> now specific CALLBACK_SHAPE OperatorError
+## Machine gates (all PASS)
+- A: HEAD == frozen v114 tip; v113 verified as ancestor; 73/73 snapshots; v114 ZIP bytes re-verified (a1e27cce...)
+- B: 27/27 regression (postpatch_green); prepatch red 21/27 archived with all failure details; legacy suite on the v115 module 12/12 + mutations 4/4 (G11 raw float sample error still recorded separately)
+- C: 576/576 saved-probe bridge THROUGH production_fft + independent_dft of tools/observation_operator.py on the same stored arrays vs bank X/C, gate <1e-11, dtype/finite/mean_positive/key-set in row PASS
+- D: metadata readiness 16 items; four-layer admission; priority acquisition list (camera+optics -> sample+motion -> absolute counting/diameter)
+- F: verifier selftest 12/12 (mechanical + gate-class negatives, positive control)
+## Four-layer admission
+LEGACY_SIMULATION_FROZEN | SOFTWARE_OPERATOR_CERTIFIED_FOR_FIXED_FIXTURES | REAL_DEVICE_RELATIVE_FORWARD_GO=false (11 blockers) | ABSOLUTE_COUNT_AND_DIAMETER_VALIDATION_GO=false. P0 OPEN; rule7=0; v115 auto-start physics count = 0.
+## Archive
+Final ZIP sha256 95eb681253afb54d2e846f341bce041f16f21293579f296f520050f7b03c5cab; two-phase protocol (provisional hash disclosed); Result: ROI_MODE_AND_BRIDGE_SEALED, ARCHIVE_VERIFIED, exit 0.
+## Not claimed
+0 new BEM/render/optical-time-series/physics-states/experiment-video reads; 0 recomputation of legacy statistics; no absolute diameter/calibration/detection claims; P=1681 remains an interface shape requirement, not generated time series.

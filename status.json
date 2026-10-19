@@ -1,27 +1,27 @@
 {
-  "schema": "iscat114.status.1",
-  "task_id": "V114_OPERATOR_GUARDRAILS_AND_SAVED_PROBE_BRIDGE",
-  "created_at": "2026-10-19T14:46:28",
-  "source_commit": "89a5b353ba104a3dbf0764816933739f8edda33b",
-  "parent_commit": "d11814c2e286a2e6a2195308923adc81406fa537",
-  "tool_sha256": "f66014d1ce02d72aaf2763ba954b20d4dc18cea7c34039bbdcf31f40eec4c589",
+  "schema": "iscat115.status.1",
+  "task_id": "V115_ROI_MODE_AND_REGISTERED_SIMULATION_BRIDGE",
+  "created_at": "2026-10-19T17:34:36",
+  "source_commit": "7a9102d5f8c6f98305ed9b10279083de96be66e6",
+  "parent_commit": "89a5b353ba104a3dbf0764816933739f8edda33b",
+  "tool_sha256": "ee7b7ec7ea1b6d2684874175d02e67c538988b2329729cb81bd4eaf73d9b8dd4",
   "required_gates": [
     "A_source_lock",
-    "B_operator_guardrails",
+    "B_operator_regression",
     "C_saved_probe_bridge",
     "D_metadata_readiness",
     "F_verifier_selftest"
   ],
   "gates": {
-    "A_source_lock": true,
-    "B_operator_guardrails": true,
+    "A_source_lock": false,
+    "B_operator_regression": true,
     "C_saved_probe_bridge": true,
     "D_metadata_readiness": true,
     "F_verifier_selftest": true
   },
   "states": {
     "execution": "COMPLETE",
-    "numerical": "GUARDRAILS_AND_BRIDGE_SEALED",
+    "numerical": "UNSEALED_PARTIAL",
     "archive": "PRE_ARCHIVE_VERIFICATION",
     "physics": "ALL_FORWARD_GO_FALSE_PENDING_INPUTS"
   },
@@ -34,21 +34,23 @@
   "stage_logs": {
     "A": {
       "snapshots": 73,
-      "head": "89a5b353ba104a3dbf0764816933739f8edda33b",
-      "v113_zip_verified": true,
-      "issues": []
+      "head": "7a9102d5f8c6f98305ed9b10279083de96be66e6",
+      "v114_zip_verified": true,
+      "issues": [
+        "parent 1548ea810b9870251dc57e37ddec32ad8be68e42 != v113 commit"
+      ]
     },
     "B": {
-      "probe": "20/20",
-      "v113_suite_groups": "12/12",
-      "v113_suite_mutations": "4/4",
-      "prepatch_red_archived": false
+      "regression": "27/27",
+      "legacy_groups": "12/12",
+      "legacy_mutations": "4/4",
+      "prepatch_red_archived": true
     },
     "C": {
       "checked": 576,
       "passed": 576,
       "complete_set": true,
-      "scope": "READ-ONLY regression of saved simulated probes; NOT new optical forwards and NOT a 41x41 full-ROI independent time-domain validation",
+      "backend": "tools/observation_operator.py production_fft + independent_dft (same stored array); original gate < 1e-11",
       "issues": []
     },
     "D": {
@@ -78,5 +80,5 @@
   },
   "p0_status": "OPEN (not upgraded)",
   "rule7_new_authorizations": 0,
-  "overall": "GUARDRAILS_AND_BRIDGE_SEALED"
+  "overall": "UNSEALED_PARTIAL"
 }

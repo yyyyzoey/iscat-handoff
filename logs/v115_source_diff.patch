@@ -1,0 +1,184 @@
+diff --git a/tools/__pycache__/observation_operator.cpython-311.pyc b/tools/__pycache__/observation_operator.cpython-311.pyc
+index d273662..822be69 100644
+Binary files a/tools/__pycache__/observation_operator.cpython-311.pyc and b/tools/__pycache__/observation_operator.cpython-311.pyc differ
+diff --git a/tools/observation_operator.py b/tools/observation_operator.py
+index 8354db0..3d00cdb 100644
+--- a/tools/observation_operator.py
++++ b/tools/observation_operator.py
+@@ -124,6 +124,8 @@ def weighted_pixel_average(vals, weights=None):
+     """Explicit pixel-axis reduction. vals must be finite real NON-NEGATIVE
+     intensities; weights (when given) must be finite and non-negative with a
+     positive sum. A complex value is a complex-field callback and is refused."""
++    if vals is None or (hasattr(vals, '__len__') and len(vals) == 0):
++        raise OperatorError('EMPTY_PIXEL_SAMPLES: intensity callback returned no samples')
+     if isinstance(vals, complex):
+         raise OperatorError('COMPLEX_FIELD_CALLBACK: the intensity callback must return '
+                             'pixel-averaged INTENSITY, never a complex field')
+@@ -257,7 +259,7 @@ def independent_dft(series, mean, k0s=None):
+ 
+ def compare_paths(series, mean, k0s=None):
+     """Same-array FFT vs direct DFT against the ORIGINAL gates."""
+-    k0s = k0s or K0S
++    k0s = _validate_bins(k0s)
+     prod = production_fft(series, mean, k0s)
+     indep = independent_dft(series, mean, k0s)
+     rows = []
+@@ -298,6 +300,15 @@ def run_pipeline(intensity_callback, timestamps, exposure_s, mode='intensity',
+             raise OperatorError('INVALID_EXPOSURE: count modes require positive exposure')
+         if kappa_e_per_U_per_s is None:
+             raise OperatorError('MISSING_PARAMETER: kappa_e_per_U_per_s')
++    k0s = _validate_bins(k0s)
++    if pixel_weights is not None:
++        pw = list(pixel_weights)
++        for w in pw:
++            if isinstance(w, bool) or not isinstance(w, (int, float)) \
++                    or not math.isfinite(w) or w < 0:
++                raise OperatorError('INVALID_PIXEL_WEIGHT: weights must be finite and non-negative')
++        if math.fsum(pw) <= 0:
++            raise OperatorError('INVALID_PIXEL_WEIGHT: weight sum must be positive')
+ 
+     def J(t):
+         return weighted_pixel_average(intensity_callback(t), pixel_weights)
+@@ -335,10 +346,14 @@ def run_roi(intensity_callback, timestamps, exposure_s, *, spatial_weights,
+             time_meaning='center', quadrature_nodes=64,
+             kappa_e_per_U_per_s=None, g_DN_per_e=None, offset_DN=None,
+             instantaneous_limit=False):
+-    """Spatial detector-pixel interface: callback returns a (P, Q) real intensity
+-    frame (P detector pixels x Q sub-pixel samples); spatial_weights is (P, Q),
+-    normalized ROW-WISE inside each detector pixel (adjacent camera pixels are
+-    never mixed). Returns series shape (N, P) and dft[k] = (X[P], C[P])."""
++    """Spatial detector-pixel interface: the callback returns ONE (P, Q) real
++    intensity frame PER QUADRATURE TIME NODE (a single synchronized snapshot of
++    all detector pixels); spatial_weights is (P, Q), normalized row-wise inside
++    each detector pixel (adjacent camera pixels are never mixed). Units follow
++    mode: intensity -> Ibar[p]; electron -> mu_e = kappa_p * T * Ibar[p];
++    dn -> mu_DN = offset_p + g_p * mu_e[p]. series shape (N, P);
++    dft[k] = (X[P], C[P]). All static parameters are validated with ZERO
++    callback invocations."""
+     centers = validate_timestamps(timestamps, exposure_s, meaning=time_meaning,
+                                   fs=fs, time_tolerance_s=time_tolerance_s,
+                                   instantaneous_limit=instantaneous_limit)
+@@ -351,6 +366,7 @@ def run_roi(intensity_callback, timestamps, exposure_s, *, spatial_weights,
+             raise OperatorError('MISSING_PARAMETER: kappa_e_per_U_per_s')
+     if spatial_weights is None:
+         raise OperatorError('MISSING_PARAMETER: spatial_weights')
++    k0s = _validate_bins(k0s)
+     W = [list(row) for row in spatial_weights]
+     P = len(W)
+     if P == 0:
+@@ -366,28 +382,90 @@ def run_roi(intensity_callback, timestamps, exposure_s, *, spatial_weights,
+         if math.fsum(row) <= 0:
+             raise OperatorError('INVALID_SPATIAL_WEIGHT: each detector pixel needs a positive '
+                                 'sub-pixel weight sum')
+-    probe = intensity_callback(centers[0])
+-    if not hasattr(probe, '__len__') or len(probe) != P:
+-        raise OperatorError('CALLBACK_SHAPE: callback must return (P, Q) = (%d, %d) frames' % (P, Q))
+-    if len(probe[0]) != Q:
+-        raise OperatorError('CALLBACK_SHAPE: sub-pixel axis length mismatch')
+-    k0s = _validate_bins(k0s)
+-
+-    def make_J(p):
+-        def J(t):
+-            fr = intensity_callback(t)
+-            return weighted_pixel_average(fr[p], W[p])
+-        return J
++    Wn = [[w / math.fsum(row) for w in row] for row in W]  # row-normalized
++    if mode in ('electron', 'dn'):
++        def per_pixel(param, name, positive=True):
++            if param is None:
++                raise OperatorError('MISSING_PARAMETER: %s' % name)
++            if hasattr(param, '__len__'):
++                if len(param) != P:
++                    raise OperatorError('PARAMETER_LENGTH: %s must be scalar or length P' % name)
++                vals = list(param)
++            else:
++                if isinstance(param, bool) or not isinstance(param, (int, float)) \
++                        or not math.isfinite(param):
++                    raise OperatorError('INVALID_PARAMETER: %s' % name)
++                vals = [param] * P
++            for v in vals:
++                if not math.isfinite(v) or (positive and v <= 0):
++                    raise OperatorError('INVALID_PARAMETER: %s values must be positive finite' % name)
++            return vals
++        kappas = per_pixel(kappa_e_per_U_per_s, 'kappa_e_per_U_per_s') \
++            if mode in ('electron', 'dn') else None
++        kappa_arr = np.asarray(kappas, dtype=np.float64) if kappas is not None else None
++        gs = per_pixel(g_DN_per_e, 'g_DN_per_e') if mode == 'dn' else None
++        offs = per_pixel(offset_DN, 'offset_DN', positive=False) if mode == 'dn' else None
++
++    def frame_rows(frame):
++        """Validate and normalize one (P, Q) snapshot into P rows of Q values.
++        A scalar frame is only accepted for P == Q == 1."""
++        if not hasattr(frame, '__len__'):
++            if P == 1 and Q == 1:
++                return [[frame]]
++            raise OperatorError('CALLBACK_SHAPE: callback must return (P, Q) = (%d, %d) frames'
++                                % (P, Q))
++        rows = list(frame)
++        if len(rows) != P:
++            raise OperatorError('CALLBACK_SHAPE: detector axis length %d != P=%d'
++                                % (len(rows), P))
++        out = []
++        for r in rows:
++            if not hasattr(r, '__len__'):
++                if Q == 1:
++                    out.append([r])
++                else:
++                    raise OperatorError('CALLBACK_SHAPE: sub-pixel axis length mismatch')
++            else:
++                if len(r) != Q:
++                    raise OperatorError('CALLBACK_SHAPE: sub-pixel axis length %d != Q=%d'
++                                        % (len(r), Q))
++                out.append(list(r))
++        for row in out:
++            for v in row:
++                if isinstance(v, complex):
++                    raise OperatorError('COMPLEX_FIELD_CALLBACK: the intensity callback must '
++                                        'return real intensities, never a complex field')
++                if not math.isfinite(v) or v < 0:
++                    raise OperatorError('INVALID_INTENSITY: samples must be finite and non-negative')
++        return out
+ 
++    xs, ws = _quad(quadrature_nodes)
++    half = (exposure_s / 2) if not instantaneous_limit else 0.0
+     series = []
+     for tc in centers:
+-        row_out = [exposure_average(make_J(p), tc, exposure_s,
+-                                    quadrature_nodes=quadrature_nodes,
+-                                    instantaneous_limit=instantaneous_limit)
+-                   for p in range(P)]
+-        series.append(row_out)
++        if instantaneous_limit:
++            frame = frame_rows(intensity_callback(tc))
++            row = [weighted_pixel_average(frame[p], W[p]) for p in range(P)]
++        else:
++            acc = [0.0] * P
++            for x, wq in zip(xs, ws):
++                frame = frame_rows(intensity_callback(tc + half * x))  # ONE call per node
++                for p in range(P):
++                    acc[p] += wq * math.fsum(wv * v for wv, v in zip(Wn[p], frame[p]))
++            row = [a * half / exposure_s for a in acc]
++        series.append(row)
+     mean_all = [math.fsum(row[p] for row in series) / len(series) for p in range(P)]
+-    arr = np.asarray(series, dtype=np.float64)  # shape (N, P) - interface contract
++    arr = np.asarray(series, dtype=np.float64)  # shape (N, P)
++    if mode == 'electron':
++        arr = arr * (kappa_arr * exposure_s)  # mu_e = kappa_p * T * Ibar[p]
++        mean_all = [kappas[p] * exposure_s * mean_all[p] for p in range(P)]
++    elif mode == 'dn':
++        mu_e = arr * (kappa_arr * exposure_s)
++        mean_e = [kappas[p] * exposure_s * mean_all[p] for p in range(P)]
++        offs_arr = np.asarray(offs, dtype=np.float64)
++        g_arr = np.asarray(gs, dtype=np.float64)
++        arr = offs_arr[None, :] + g_arr[None, :] * mu_e
++        mean_all = [offs[p] + gs[p] * mean_e[p] for p in range(P)]
+     if arr.shape[0] != N:
+         return {'centers': centers, 'series': arr, 'mean': mean_all, 'dft': None,
+                 'note': 'partial pipeline: DFT requires full N grid'}
+@@ -404,5 +482,5 @@ def run_roi(intensity_callback, timestamps, exposure_s, *, spatial_weights,
+             Xs.append(Xp)
+             Cs.append(Cp)
+         dft[k0] = (np.asarray(Xs, dtype=np.complex128), np.asarray(Cs, dtype=np.complex128))
+-    return {'centers': centers, 'series': arr, 'mean': np.asarray(mean_all), 'dft': dft,
++    return {'centers': centers, 'series': arr, 'mean': mean_all, 'dft': dft,
+             'shape': (N, P)}

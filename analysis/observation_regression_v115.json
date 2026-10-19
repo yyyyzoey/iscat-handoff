@@ -1,0 +1,170 @@
+{
+  "tests": [
+    {
+      "id": "T01",
+      "description": "valid uniform grid accepted, series values correct",
+      "pass": true,
+      "detail": "series len=2001"
+    },
+    {
+      "id": "T02",
+      "description": "NaN Fs rejected",
+      "pass": true,
+      "detail": "INVALID_PARAMETER: Fs must be positive finite"
+    },
+    {
+      "id": "T03",
+      "description": "Inf Fs rejected",
+      "pass": true,
+      "detail": "INVALID_PARAMETER: Fs must be positive finite"
+    },
+    {
+      "id": "T04",
+      "description": "zero and negative Fs rejected",
+      "pass": true,
+      "detail": "INVALID_PARAMETER: Fs must be positive finite"
+    },
+    {
+      "id": "T05",
+      "description": "NaN and negative time tolerance rejected",
+      "pass": true,
+      "detail": "INVALID_PARAMETER: time_tolerance_s must be positive finite"
+    },
+    {
+      "id": "T06",
+      "description": "tolerance >= 0.5/Fs rejected on a genuinely uniform grid",
+      "pass": true,
+      "detail": "TIME_TOLERANCE_TOO_LARGE: 0.0001 >= 0.5/Fs=0.0001; this software anti-alias bound prevents clearly non-uniform series from passing as uniform (NOT an independent clock ca"
+    },
+    {
+      "id": "T07",
+      "description": "timestamps returned unmodified (no snapping)",
+      "pass": true,
+      "detail": "centers=[0.002, 0.0022000000005000003, 0.0024]"
+    },
+    {
+      "id": "T08",
+      "description": "fractional quadrature order 64.5 rejected",
+      "pass": true,
+      "detail": "INVALID_QUADRATURE_ORDER: 64.5 (must be an integer in [2, 256]; fractional orders are rejected, never silently truncated)"
+    },
+    {
+      "id": "T09",
+      "description": "quadrature order 1/300 rejected",
+      "pass": true,
+      "detail": "INVALID_QUADRATURE_ORDER: 1 (must be an integer in [2, 256]; fractional orders are rejected, never silently truncated)"
+    },
+    {
+      "id": "T10",
+      "description": "k0s=[] rejected everywhere (production/independent/compare/scalar-partial/roi)",
+      "pass": true,
+      "detail": "EMPTY_BIN_LIST"
+    },
+    {
+      "id": "T11",
+      "description": "bool exposure rejected",
+      "pass": true,
+      "detail": "INVALID_EXPOSURE: must be a non-bool finite positive number (T=0 only with instantaneous_limit flag)"
+    },
+    {
+      "id": "T12",
+      "description": "missing kappa rejected with ZERO callbacks",
+      "pass": true,
+      "detail": "error='MISSING_PARAMETER: kappa_e_per_U_per_s' callback_calls=0"
+    },
+    {
+      "id": "T13",
+      "description": "negative intensity rejected before count conversion",
+      "pass": true,
+      "detail": "INVALID_INTENSITY: callback must return finite, real, non-negative pixel intensities (complex-field callbacks refused)"
+    },
+    {
+      "id": "T14",
+      "description": "DN conversion rejects negative/NaN mu_e and bool gain/offset",
+      "pass": true,
+      "detail": "INVALID_MU_E: electron expectation must be finite and non-negative"
+    },
+    {
+      "id": "T15",
+      "description": "count overflow rejected",
+      "pass": true,
+      "detail": "COUNT_OVERFLOW: electron expectation is not finite"
+    },
+    {
+      "id": "T16",
+      "description": "forced spectral gate failure fails closed (no certified dft)",
+      "pass": true,
+      "detail": "SPECTRAL_GATE_FAIL raised: SPECTRAL_GATE_FAIL_UNSEALED_PARTIAL: same-array X/C failed the original gates; no certifie"
+    },
+    {
+      "id": "T17",
+      "description": "run_roi independent detector pixels (P=2, Q=3, out-of-phase)",
+      "pass": true,
+      "detail": "shape=(2001, 2) X0=299.361 exp=299.361 X1=29.5609-295.528j exp=29.5609-295.528j"
+    },
+    {
+      "id": "T18",
+      "description": "run_roi electron mode = per-pixel kappa*T*Ibar (scalar broadcast)",
+      "pass": true,
+      "detail": "e-row=[0.00031999999999999997, 0.0006399999999999999]"
+    },
+    {
+      "id": "T19",
+      "description": "run_roi dn mode = offset + g*mu_e per pixel",
+      "pass": true,
+      "detail": "dn-row=[100.0008, 200.0016]"
+    },
+    {
+      "id": "T20",
+      "description": "run_roi missing count params rejected with ZERO callbacks",
+      "pass": true,
+      "detail": "error='MISSING_PARAMETER: kappa_e_per_U_per_s' callback_calls=0"
+    },
+    {
+      "id": "T21",
+      "description": "one full (P,Q) frame per quadrature node (exact callback count)",
+      "pass": true,
+      "detail": "callback_calls=12800 expected=12800 (one full frame per quadrature node)"
+    },
+    {
+      "id": "T22",
+      "description": "run_roi P=1 Q=1 strictly equals scalar run_pipeline",
+      "pass": true,
+      "detail": "max diff over 2001 samples"
+    },
+    {
+      "id": "T23",
+      "description": "weighted_pixel_average([]) raises OperatorError (no ZeroDivisionError)",
+      "pass": true,
+      "detail": "EMPTY_PIXEL_SAMPLES: intensity callback returned no samples"
+    },
+    {
+      "id": "T24",
+      "description": "illegal shapes/NaN/Inf weights rejected with OperatorError",
+      "pass": true,
+      "detail": "CALLBACK_SHAPE: sub-pixel axis length 1 != Q=2"
+    },
+    {
+      "id": "T25",
+      "description": "2001-pixel independent frequencies keep separate X/C",
+      "pass": true,
+      "detail": "pixel0 |X_80|=200 pixel1 |X_80|=2.46e-14"
+    },
+    {
+      "id": "T26",
+      "description": "partial-N scalar pipeline also rejects k0s=[]",
+      "pass": true,
+      "detail": "EMPTY_BIN_LIST"
+    },
+    {
+      "id": "T27",
+      "description": "illegal/duplicate bins rejected through run_pipeline",
+      "pass": true,
+      "detail": "ILLEGAL_BIN: 1600 not in [80, 160, 320]"
+    }
+  ],
+  "n_pass": 27,
+  "n_total": 27,
+  "all_pass": true,
+  "note": "fixed software fixtures only; negative cases accept ONLY the specified OperatorError"
+}
