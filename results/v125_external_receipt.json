@@ -1,7 +1,7 @@
 {
  "schema": "iscat125.external_receipt.1",
  "zip": "iscat_v125_return.zip",
- "zip_sha256": "afc398b9c2be8af21b063b7b8a9ac2efb694d0e0e6a189b3b58dc35c2e9ad99b",
+ "zip_sha256": "362952241cb4d89bf84640009bfe50fc6d6c5b1c1b54ee79f1ef481fb25a5e66",
  "archive_verified": true,
  "note": "archive_verified is MECHANICAL only; science verdict is separate (v125_science_validation.json)",
  "checks": [
@@ -13,7 +13,7 @@
   {
    "check": "members_unique",
    "passed": true,
-   "detail": "47 members"
+   "detail": "50 members"
   },
   {
    "check": "paths_safe",
@@ -23,7 +23,7 @@
   {
    "check": "bundle_checker",
    "passed": true,
-   "detail": "failed=1,limit=240,cap=240\"\n    },\n    {\n      \"check\": \"budget_synthetic_exposure_events\",\n      \"passed\": true,\n      \"detail\": \"attempted=5958,failed=0,limit=6000,cap=6000\"\n    }\n  ],\n  \"errors\": [\n    \"required_base_members: missing=['logs/actual_commands_and_errors.txt', 'validation/numerical_qualification.csv']\",\n    \"budget_bem_system_attempts: attempted=105,failed=9,limit=64,cap=64\"\n  ]\n}\n"
+   "detail": "ed\": true,\n      \"detail\": \"attempted=161,failed=1,limit=240,cap=240\"\n    },\n    {\n      \"check\": \"budget_synthetic_exposure_events\",\n      \"passed\": true,\n      \"detail\": \"attempted=5958,failed=0,limit=6000,cap=6000\"\n    }\n  ],\n  \"errors\": [\n    \"required_base_members: missing=['logs/actual_commands_and_errors.txt']\",\n    \"budget_bem_system_attempts: attempted=105,failed=9,limit=64,cap=64\"\n  ]\n}\n"
   }
  ]
 }

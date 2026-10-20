@@ -1,0 +1,33 @@
+{
+ "schema": "iscat125.s1_red_green.1",
+ "red": [
+  "old_lossless_Qabs_D100"
+ ],
+ "green": [
+  "lossless_Qabs_D10",
+  "lossless_Qabs_D15",
+  "lossless_Qabs_D20",
+  "lossless_Qabs_D30",
+  "lossless_Qabs_D100",
+  "lossless_Qabs_D200",
+  "nmatch_Qsca_zero",
+  "smallx_rayleigh_D10",
+  "smallx_rayleigh_D20",
+  "F1_zero_shift_identity",
+  "F2_interp_vs_exact_shift_x28",
+  "F2_interp_vs_exact_shift_y28",
+  "F2_interp_vs_exact_shift_x140",
+  "F2_interp_vs_exact_shift_y140",
+  "F4_camera_shift_vs_particle_shift_x28",
+  "F4_camera_shift_vs_particle_shift_y28",
+  "F4_camera_shift_vs_particle_shift_x140",
+  "F4_camera_shift_vs_particle_shift_y140",
+  "unit_fix_sigma_nm",
+  "coarse_is_subsample_of_fine",
+  "h_support_rejection_not_clip",
+  "window_times_not_rounded",
+  "v124_holdout_even_median",
+  "mean_signed_not_called_MAE"
+ ],
+ "note": "RED = old-code fixture failures preserved as evidence (old Mie Qabs, old forward shift whole-scene semantics); GREEN = fixed modules"
+}

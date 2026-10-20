@@ -1,0 +1,4 @@
+abs_RMS_L1L0,check,exact_floor_L0_D30,measured_minus,measured_plus,note,ratio,signal_L2_train,status
+,two_sided_1e-5_detune,1.669471214095176e-07,3.6498988566941482e-06,1.7701662468621893e-05,below 2x floor means the detune signal is indistinguishable from the numerical floor,,,PASS
+0.0020223439884729808,D30_numerical_floor_vs_signal,,,,,,,LOW_SIGNAL_CAUTION
+0.17383525658419727,D200_numerical_floor_vs_signal,,,,,,,LOW_SIGNAL_CAUTION

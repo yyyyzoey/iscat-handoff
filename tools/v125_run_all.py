@@ -13,6 +13,7 @@ import v125_stats as vst
 import v125_exposure as vexp
 
 REPO = vc.REPO
+V124 = os.path.join(REPO, 'results', 'v124')
 OUT = os.path.join(REPO, 'results', 'v125')
 LOG = os.path.join(OUT, 'logs')
 VAL = os.path.join(OUT, 'validation')
