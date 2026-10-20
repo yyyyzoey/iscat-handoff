@@ -12,6 +12,11 @@ import h5py
 import v124_core as vc
 
 OUT = vc.OUT
+
+def open_library(path=None):
+    path = path or os.path.join(OUT, 'library', 'valid_physical_fields_or_coefficients.h5')
+    return h5py.File(path, 'r')
+
 KBT = 1.380649e-23 * 299.15          # J, 26 C
 ETA = 0.870e-3                       # Pa s, pure water 26 C (MODEL_ASSUMPTION)
 FS = 5000.0
@@ -182,10 +187,16 @@ def run_all(seed=20261020):
             for rep in range(5):
                 Cobs = static_noisy_observation(r['C'], B, rng)
                 est = invert_D(Cobs, Dg, T)
+                Ttruth = next(_template_at(Dg, T, m['D']) for _ in (0,))
+                res_at_truth = float(np.linalg.norm(Cobs - Ttruth) / max(np.linalg.norm(Cobs), 1e-30))
                 rows_noise.append(dict(study='static_noise', case=m['tag'], D_truth_nm=m['D'],
                                        background_e_per_pix=B, rep=rep,
                                        D_est_nm=est['D_est_lsq'], error_nm=est['D_est_lsq'] - m['D'],
-                                       rel_residual=est['rel_residual'], rejected=est['rejected'],
+                                       rel_residual=est['rel_residual'],
+                                       residual_at_truth=res_at_truth,
+                                       residual_excess_over_floor=float(est['rel_residual'] - res_at_truth),
+                                       rejected=est['rejected'],
+                                       reject_note='pre-registered clean-observation rule; noise floor shown by residual_at_truth',
                                        n_competing_minima=len(est['competing_minima'])))
     # ---- leave-one-out height inversion at D100 -------------------------
     for i, h_true in enumerate(hg):
@@ -207,7 +218,8 @@ def run_all(seed=20261020):
 
     # validation of the interpolation forward model against MATLAB shifted renders
     interp_check = {}
-    for variant, dxy in (('shift_x140', (140.0, 0.0)), ('shift_y140', (0.0, 140.0))):
+    for variant, dxy in (('shift_x28', (28.0, 0.0)), ('shift_y28', (0.0, 28.0)),
+                         ('shift_x140', (140.0, 0.0)), ('shift_y140', (0.0, 140.0))):
         p = glob.glob(os.path.join(OUT, 'renders', f'*main_D100*{variant}.mat'))[0]
         r = vc.load_render(p)
         C_interp = frame_C_shifted(fine_data, *dxy)
@@ -235,16 +247,27 @@ def run_all(seed=20261020):
                     if abs(pos[idx, 0]) > SUPPORT_LIMIT_NM or abs(pos[idx, 1]) > SUPPORT_LIMIT_NM:
                         rejected = True
                     subs.append(pos[idx])
+                # per-frame centroid recentering (standard iSCAT processing); in this
+                # synthetic setting the frame-mean position is exact, replacing a
+                # cross-correlation centroid estimate used on real data.
+                mx = float(np.mean([s[0] for s in subs])); my = float(np.mean([s[1] for s in subs]))
+                subs_rel = [(s[0] - mx, s[1] - my) for s in subs]
                 counts = exposure_frame_counts(lambda dx, dy: frame_C_shifted(fine_data, dx, dy),
-                                               B_e, rng, subs, Texp_us)
+                                               B_e, rng, subs_rel, Texp_us)
                 counts_acc.append(counts)
             Cobs = (np.mean(counts_acc, axis=0) - B_e) / B_e
             est = invert_D(Cobs, Dg, T)
             est_by_exp[Texp_us] = (est, rejected)
+            Ttruth100 = next(_template_at(Dg, T, 100.0) for _ in (0,))
+            res_at_truth = float(np.linalg.norm(Cobs - Ttruth100) / max(np.linalg.norm(Cobs), 1e-30))
             rows_motion.append(dict(study='lateral_motion_D100', traj=traj,
                                     exposure_us=Texp_us, background_e_per_pix=B_e,
                                     frames=n_frames, D_est_nm=est['D_est_lsq'],
-                                    rel_residual=est['rel_residual'], rejected=bool(est['rejected'] or rejected),
+                                    rel_residual=est['rel_residual'],
+                                    residual_at_truth=res_at_truth,
+                                    residual_excess_over_floor=float(est['rel_residual'] - res_at_truth),
+                                    rejected=bool(est['rejected'] or rejected),
+                                    reject_note='pre-registered clean rule; floor includes photon noise + intra-frame motion blur',
                                     domain_violation=rejected,
                                     n_competing_minima=len(est['competing_minima'])))
     # write CSVs
@@ -262,6 +285,10 @@ def run_all(seed=20261020):
                   Dt_m2_per_s=Dt,
                    n_motion_rows=len(rows_motion), n_noise_rows=len(rows_noise),
                    n_hloo_rows=len(rows_hloo))
+    import json as _json
+    os.makedirs(os.path.join(OUT, 'logs'), exist_ok=True)
+    with open(os.path.join(OUT, 'logs', 'invert_summary.json'), 'w') as _f:
+        _json.dump({k: v for k, v in summary.items() if k != 'holdout'}, _f, indent=1, default=str)
     return summary
 
 if __name__ == '__main__':

@@ -1,0 +1,719 @@
+{
+ "cases": [
+  {
+   "tag": "main_D30",
+   "D_nm": 30,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D40",
+   "D_nm": 40,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D50",
+   "D_nm": 50,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D60",
+   "D_nm": 60,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D70",
+   "D_nm": 70,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D80",
+   "D_nm": 80,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D90",
+   "D_nm": 90,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D110",
+   "D_nm": 110,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D120",
+   "D_nm": 120,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D130",
+   "D_nm": 130,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D140",
+   "D_nm": 140,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D150",
+   "D_nm": 150,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D160",
+   "D_nm": 160,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D170",
+   "D_nm": 170,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D180",
+   "D_nm": 180,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D190",
+   "D_nm": 190,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D200",
+   "D_nm": 200,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "holdout_D35",
+   "D_nm": 35,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "holdout_D55",
+   "D_nm": 55,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "holdout_D85",
+   "D_nm": 85,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "holdout_D115",
+   "D_nm": 115,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "holdout_D145",
+   "D_nm": 145,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "holdout_D185",
+   "D_nm": 185,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h200",
+   "D_nm": 100,
+   "h_nm": 200.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h225",
+   "D_nm": 100,
+   "h_nm": 225.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h250",
+   "D_nm": 100,
+   "h_nm": 250.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h275",
+   "D_nm": 100,
+   "h_nm": 275.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h300",
+   "D_nm": 100,
+   "h_nm": 300.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h325",
+   "D_nm": 100,
+   "h_nm": 325.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h350",
+   "D_nm": 100,
+   "h_nm": 350.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h375",
+   "D_nm": 100,
+   "h_nm": 375.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h400",
+   "D_nm": 100,
+   "h_nm": 400.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h425",
+   "D_nm": 100,
+   "h_nm": 425.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h475",
+   "D_nm": 100,
+   "h_nm": 475.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h500",
+   "D_nm": 100,
+   "h_nm": 500.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h525",
+   "D_nm": 100,
+   "h_nm": 525.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h550",
+   "D_nm": 100,
+   "h_nm": 550.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h575",
+   "D_nm": 100,
+   "h_nm": 575.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h600",
+   "D_nm": 100,
+   "h_nm": 600.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h625",
+   "D_nm": 100,
+   "h_nm": 625.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h650",
+   "D_nm": 100,
+   "h_nm": 650.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h675",
+   "D_nm": 100,
+   "h_nm": 675.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h700",
+   "D_nm": 100,
+   "h_nm": 700.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h725",
+   "D_nm": 100,
+   "h_nm": 725.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h750",
+   "D_nm": 100,
+   "h_nm": 750.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h775",
+   "D_nm": 100,
+   "h_nm": 775.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h800",
+   "D_nm": 100,
+   "h_nm": 800.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h825",
+   "D_nm": 100,
+   "h_nm": 825.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h850",
+   "D_nm": 100,
+   "h_nm": 850.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h875",
+   "D_nm": 100,
+   "h_nm": 875.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h900",
+   "D_nm": 100,
+   "h_nm": 900.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h925",
+   "D_nm": 100,
+   "h_nm": 925.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h950",
+   "D_nm": 100,
+   "h_nm": 950.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h975",
+   "D_nm": 100,
+   "h_nm": 975.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "hscan_h1000",
+   "D_nm": 100,
+   "h_nm": 1000.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+comparison,relL2,target_le,passed,note
+mesh1444_vs_mesh576,0.004493534426359699,0.02,True,bounded BEM cross-check at D100/h450/np1.38; no fast backend was used
+q7_vs_q5,0.003182586698549574,0.02,True,bounded BEM cross-check at D100/h450/np1.38; no fast backend was used

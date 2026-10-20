@@ -1,0 +1,28 @@
+{
+ "cases": [
+  {
+   "tag": "main_D100",
+   "D_nm": 100,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "shift_x28",
+     "shift_xy_nm": [
+      28.0,
+      0.0
+     ]
+    },
+    {
+     "variant": "shift_y28",
+     "shift_xy_nm": [
+      0.0,
+      28.0
+     ]
+    }
+   ]
+  }
+ ]
+}

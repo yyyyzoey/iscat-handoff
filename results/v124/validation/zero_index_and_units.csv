@@ -1,0 +1,11 @@
+Qsca_python,Qsca_rayleigh,gate,measured,measured_max_C_abs_err,measured_max_identity_err,measured_rel_diff_mie_vs_rayleigh,measured_rel_diff_python_vs_matlab,note,passed,pre_registered_target,ratio_detuned_over_exact
+,,zero_index_exact_np_eq_nwater,7.5083559564706605e-06,,,,,actual BEM numerical residual reported without relaxation,False,max|C|<=1e-10 (engineering ideal),
+,,zero_index_two_sided_convergence,0.00010193335123100981,,,,,scattering must vanish continuously as np->nwater,True,|C(np=nw+-1e-4)| converging toward 0 and >> exact residual,13.575988115369544
+,,er_es_to_intensity_to_C_replay,,3.443426099813962e-16,5.111371736070106e-16,,,independent Python replay of Er/Es -> pixel -> I -> C,True,identity err<1e-10 and C replay exact,
+,,object_pixel_280nm_conditional,280.0,,,,,"CONDITIONAL_DERIVED scale, not an experimentally calibrated ruler",True,1000*14um/(50x*1x)=280nm/px,
+,,q5_vs_q7_pixel_quadrature,0.003182586698549574,,,,,"17x17 pixels, 5x5 vs 7x7 intensity quadrature",True,relL2(C) small; discretization diagnostic,
+,,mesh_576_vs_1444_relL2,0.004493534426359699,,,,,BEM discretization reference check at D100/h450/np1.38,True,<=2% relL2 in full 17x17 ROI,
+5.546822782170318e-08,5.559995985610307e-08,mie_independent_D10,,,,0.002369282904894499,6.013501404777885e-11,"isolated-sphere scattering benchmark only, never an iSCAT C",True,Python vs MATLAB Mie agree; both near Rayleigh limit at small x,
+2.799765829068941e-07,2.8147479677152157e-07,mie_independent_D15,,,,0.005322728293303032,6.83282428466473e-10,"isolated-sphere scattering benchmark only, never an iSCAT C",True,Python vs MATLAB Mie agree; both near Rayleigh limit at small x,
+8.811994460421896e-07,8.895993576976491e-07,mie_independent_D20,,,,0.009442353552501552,3.823203303644595e-09,"isolated-sphere scattering benchmark only, never an iSCAT C",True,Python vs MATLAB Mie agree; both near Rayleigh limit at small x,
+4.408501499145875e-06,4.503596748344345e-06,mie_independent_D30,,,,0.021115400537010776,4.3031255314039313e-08,"isolated-sphere scattering benchmark only, never an iSCAT C",True,Python vs MATLAB Mie agree; both near Rayleigh limit at small x,

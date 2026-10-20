@@ -1,0 +1,6 @@
+resource,used,budget,failed,note
+bem_system_solves,60,64,0,each attempt counted; cache hits excluded
+optical_renders,66,240,,actual new render evaluations
+synthetic_frames,282,1600,,noise 90 + motion 192
+fast_direct_static_cases,0,5000,,fast backend not qualified within scope; bounded BEM used
+heavy_processes_concurrent,1,1,,"sequential MATLAB batches, never concurrent"

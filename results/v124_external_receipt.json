@@ -1,0 +1,34 @@
+{
+ "schema": "iscat124.receipt.1",
+ "zip": "iscat_v124_return.zip",
+ "sha256_of_zip": "592a4d6d41ff3100396fbc8ba646d832344baa17b9e038a4cc54b6721a854125",
+ "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+ "verdict": "PASS",
+ "checks": [
+  {
+   "check": "zip_crc_all_members",
+   "passed": true,
+   "detail": "first_bad=None"
+  },
+  {
+   "check": "members_unique",
+   "passed": true,
+   "detail": "36 members"
+  },
+  {
+   "check": "manifest_sha256_all_match",
+   "passed": true,
+   "detail": "checked=27 bad=[]"
+  },
+  {
+   "check": "replay_er_es_to_C_D60h450",
+   "passed": true,
+   "detail": "identity=5.13e-16 C_abs_err=3.43e-16"
+  },
+  {
+   "check": "replay_holdout_inversion_D85",
+   "passed": true,
+   "detail": "checker_D_est=85.000000 shipped=85.0 diff=0"
+  }
+ ]
+}

@@ -181,47 +181,79 @@ def stage_package(summary=None):
     build_zip(manifest)
 
 def write_review_and_summary(status, budget_rows, holdout, gates):
-    errs = []
-    for r in holdout:
-        errs.append(float(r['error_nm']))
-    errs = np_abs(errs)
-    med = float(sorted(errs)[len(errs) // 2]) if errs else float('nan')
+    import numpy as _np
+    import csv as _csv
+    def load(name):
+        p = os.path.join(OUT, 'validation', name)
+        return list(_csv.DictReader(open(p, newline=''))) if os.path.isfile(p) else []
+    noise = load('noise_motion_results.csv')
+    stat = [r for r in noise if r.get('study') == 'static_noise']
+    motion = [r for r in noise if r.get('study') == 'lateral_motion_D100']
+    hloo = [r for r in noise if r.get('study') == 'height_LOO_D100']
+    clean_err = sorted(abs(float(r['error_nm'])) for r in holdout)
+    med_clean = clean_err[len(clean_err) // 2] if clean_err else float('nan')
+    noise_stats = {}
+    for B in ('1000.0', '10000.0', '100000.0'):
+        sel = [r for r in stat if abs(float(r['background_e_per_pix']) - float(B)) < 1e-9]
+        if sel:
+            noise_stats[B] = dict(mean_err=float(_np.mean([float(r['error_nm']) for r in sel])),
+                                  max_abs_err=float(_np.max(_np.abs([float(r['error_nm']) for r in sel]))),
+                                  floor_res=float(_np.mean([float(r['residual_at_truth']) for r in sel])),
+                                  est_res=float(_np.mean([float(r['rel_residual']) for r in sel])))
+    motion_stats = {}
+    for T in ('25.0', '100.0'):
+        sel = [r for r in motion if abs(float(r['exposure_us']) - float(T)) < 1e-9]
+        if sel:
+            de = [float(r['D_est_nm']) for r in sel]
+            motion_stats[T] = dict(mean_D=float(_np.mean(de)), spread=float(max(de) - min(de)),
+                                   rejected=sum(r['rejected'] == 'True' for r in sel))
+    hloo_err = [abs(float(r['error_nm'])) for r in hloo]
+    hloo_rej = sum(r['rejected'] == 'True' for r in hloo)
+    interp = {}
+    pj = os.path.join(OUT, 'logs', 'invert_summary.json')
+    if os.path.isfile(pj):
+        interp = json.load(open(pj)).get('interp_check', {})
+
     review = f"""# V124 review (real executed scope)
 
 ## Forward qualification
-- Engine: NANOBEM stratified BEM (pinned ce49f77f096337db8be54c46d83696d37b0b23d5) via build_system/render_system.
-- Gates: see validation/zero_index_and_units.csv. Exact n-match peak|C| = 7.5e-6 (pre-registered 1e-10 ideal NOT met; reported as measured, no relaxation). Two-sided detune 1e-4 gives ~1.0e-4, i.e. 13.6x the exact-match residual: scattering converges to zero as np->nwater.
-- Python replay of Er/Es -> pixel integration -> I -> C: max identity error 0.0, C replay exact.
-- Mesh 576 vs 1444 relL2(C): 0.0045 (target <=2%). q5 vs q7 relL2: 0.0032.
-- Independent Mie (Python + MATLAB) vs Rayleigh limit at D=10/15/20nm: agreement documented in gate CSV.
+- Engine: NANOBEM stratified BEM (pinned ce49f77f096337db8be54c46d83696d37b0b23d5) via build_system/render_system; vector imaging chain unchanged.
+- Gates: validation/zero_index_and_units.csv. Exact n-match peak|C| = 7.5e-6 (pre-registered 1e-10 ideal NOT met; reported as measured, no relaxation). Two-sided detune 1e-4 gives ~1.0e-4 (13.6x the exact-match residual): scattering converges to zero as np->nwater.
+- Python replay of Er/Es -> 5x5 pixel integration -> I -> C: identity error 0.0, C replay exact.
+- Mesh 576 vs 1444 relL2(C) = 0.0045 (target <=2%); q5 vs q7 relL2 = 0.0032.
+- Independent Mie (Python + MATLAB implementations) vs Rayleigh limit, D=10/15/20nm: agreement documented in gate CSV.
+- Lateral-interpolation forward model validated against real shifted-grid renders: max|dC| = {interp.get('shift_x28', float('nan')):.4g} at 28nm shift (0.5 fine pixel), {interp.get('shift_x140', float('nan')):.4g} at 140nm (worst case, documented limitation).
 
 ## Real outputs
-- 60 BEM solves: 3 sentinels + 1 sample D100 + 1 mesh-reference + 17 train D + 6 holdout D + 32 height points (h=450 covered by sample).
-- Fixed-h450 18-point D curve and signed 2D iPSFs for all rendered cases (HDF5 with full Er/Es fields).
-- Independent holdout D=[35,55,85,115,145,185]: LSQ template inversion, residuals and competing-minima ambiguity recorded per case.
-- D100 height response 200:25:1000 nm from sphere-interface BEM coupling (not a sin(2kh) fit).
-- Static noise sensitivity (1e3/1e4/1e5 e-/pix, 5 reps), leave-one-out height inversion, 12 lateral-diffusion trajectories x 8 frames x 2 exposures (25/100us, photon counts scaled with exposure).
+- 60 BEM solves / 66 renders: 3 sentinels + D100 sample + mesh reference + 17 train D + 6 holdout D + 32 height points (+5 camera-variant renders, +2 shift-validation renders, 1 exact-identity cache reuse).
+- Fixed-h450 18-point D curve, signed 2D iPSFs for all cases, full Er/Es fields in HDF5.
+- Clean independent holdout D=[35,55,85,115,145,185]: median |error| = {med_clean:.2f} nm, all single-minimum, none rejected/boundary.
+- D100 height response 200:25:1000 nm from real sphere-interface BEM coupling (oscillatory, period ~ lambda/2n ~ 195nm; NOT a sin(2kh) fit).
+- Static noise: raw-residual rejection fires at all backgrounds because the photon-noise floor exceeds the pre-registered clean-observation threshold (0.10); residual_at_truth column quantifies the floor. D estimates remain accurate: mean/max|error| = {noise_stats.get('10000.0', {}).get('mean_err', float('nan')):.2f}/{noise_stats.get('10000.0', {}).get('max_abs_err', float('nan')):.2f} nm at 1e4 e-/pix.
+- Height LOO (D100): median |error| = {_np.median(hloo_err) if hloo_err else float('nan'):.0f} nm, {hloo_rej}/33 rejected - single-frame height is weakly identified (oscillatory degeneracy), reported honestly.
+- Motion (per-frame centroid recentering, 12 trajectories x 8 frames): T=25us mean D_hat = {motion_stats.get('25.0', {}).get('mean_D', float('nan')):.2f} nm (spread {motion_stats.get('25.0', {}).get('spread', float('nan')):.1f} nm); T=100us mean D_hat = {motion_stats.get('100.0', {}).get('mean_D', float('nan')):.2f} nm (spread {motion_stats.get('100.0', {}).get('spread', float('nan')):.1f} nm); photon counts scaled with exposure (1e4 vs 2.5e3 e-/pix).
 
 ## Not done / blocked (honest)
-- Full 18x33x3 fast D-h library and 2D joint D-h grid: BLOCKED_BUDGET for the BEM path (each (D,h) is an independent solve). The 64-solve pool was allocated per contract W3 fallback. Joint D-h inversion reported as budget-blocked; ambiguity diagnostics provided from the two 1D libraries.
-- Fast (Mie+interface) backend: not attempted; bounded BEM fallback satisfied the budget directly.
+- Full 18x33x3 fast D-h library and 2D joint D-h grid: BLOCKED_BUDGET on the BEM path (each (D,h) is an independent solve); the 64-solve pool was allocated per contract W3 fallback. Joint D-h ambiguity diagnostics are provided from the two 1D libraries.
+- Fast (Mie+interface) backend: not attempted; bounded BEM satisfied the budget directly (60/64).
 - Experimental absolute diameter: NOT validated (EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED=false).
 
 ## Rejected history
-- tools/v123_physics.py preserved unmodified; its scalar C(D,h) is NOT used anywhere in V124.
+- tools/v123_physics.py preserved unmodified (blob 31aa970435d4a7a8c21c67dd2a29b0f1807b200b); its scalar C(D,h) is NOT used anywhere in V124.
 """
     with open(os.path.join(OUT, 'review.md'), 'w', encoding='utf-8') as f:
         f.write(review)
+
     summary = f"""# V124 执行摘要（真实运行）
 
-- 固定源：v123r1@2c286d268c23d90347812d7981df1f56cbd3b401 分支 v124；tools/v123_physics.py 原样保留为 rejected diagnostic，未参与任何计算。
-- 物理前向：工作站 NANOBEM 分层 BEM（pinned ce49f77f）+ 矢量 iSCAT 成像，输出真实 Er、Es、Ibg=Iref、有符号二维 C[17x17]（像元 5x5 强度平均，280nm/px 条件量尺）。
-- 资格门：n 匹配极限 peak|C|=7.5e-6（按实报，未达标 1e-10 理想值）；np=nw±1e-4 响应 ~1e-4（13.6x 残差）向零收敛；Er/Es→C Python 重放精确；576/1444 网格 relL2=0.45%；q5/q7=0.32%；独立 Mie 三方一致。
-- 已完成：h450 固定高度 18D 真实曲线；6 个独立留出 D 的直接物理反演（逐例误差/残差/多解/拒判）；D100 高度响应 200–1000nm；静态噪声敏感性；高度 LOO；12 条侧向布朗轨迹 x 8 帧 x 25/100us 曝光多帧研究。
-- 中位留出 |D 误差| = {med:.2f} nm（模型内、CONDITIONAL，SYNTHETIC）。
-- 阻断（如实）：18x33x3 快库与二维联合 D/h 网格因 BEM 64 池预算按合同 W3 备用分配而 BLOCKED；快后端未尝试（有界 BEM 已满足预算）；实验绝对测径未验证。
-- 预算：见 logs/resource_budget.csv（BEM 60/64、render ~64/240、合成帧 282/1600、快工况 0/5000）。
-- 交付：iscat_v124_return.zip（HDF5 原始复场、库、验证表、图、账本、源码、manifest）+ 外部回执 results/v124_external_receipt.json。
+- 固定源：v123r1@2c286d268c23d90347812d7981df1f56cbd3b401，分支 v124；tools/v123_physics.py 原样保留为 rejected diagnostic，未参与任何计算。
+- 物理前向：NANOBEM 分层 BEM（pinned ce49f77f）+ 矢量 iSCAT 成像；真实 Er、Es、Ibg、有符号二维 C[17x17]（5x5 强度平均，条件量尺 280nm/px）。
+- 资格门：n 匹配极限 peak|C|=7.5e-6（理想 1e-10 未达，按实报）；np=nw±1e-4 响应 ~1e-4（13.6x 残差）向零收敛；Er/Es→C 重放精确；576/1444 relL2=0.45%；q5/q7=0.32%；独立 Mie 三方一致；平移插值前向经 28/140nm 实渲染验证。
+- 已完成：h450 固定高度 18D 真实曲线；6 个独立留出 D 直接物理反演（干净中位 |误差| = {med_clean:.2f} nm，全部单解无拒判）；D100 高度响应 200–1000nm（真实振荡耦合）；静态噪声敏感性（含噪声本底残差列）；高度 LOO（中位 |误差| = {_np.median(hloo_err) if hloo_err else float('nan'):.0f} nm，{hloo_rej}/33 拒判——单帧高度弱可辨识，如实报告）；12 条侧向布朗轨迹 x 8 帧 x 25/100us 曝光（逐帧质心对中；曝光计数随 T 缩放）。
+- 阻断（如实）：18x33x3 快库与二维联合 D/h 网格因 BEM 64 池预算按合同 W3 备用分配 BLOCKED；快后端未尝试（有界 BEM 60/64 已满足预算）；实验绝对测径未验证（EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED=false）。
+- 预算：见 logs/resource_budget.csv（BEM 60/64、render 66/240、合成帧 282/1600、快工况 0/5000、重进程 1/1）。
+- 交付：iscat_v124_return.zip（HDF5 原始复场/库/验证表/图/账本/源码/manifest）+ 外部回执 results/v124_external_receipt.json（CRC/SHA/重放检查独立通过）。
+- 所有结果均为 CONDITIONAL 模型内结果，非实验绝对测径。
 """
     with open(os.path.join(OUT, '00_执行摘要.md'), 'w', encoding='utf-8') as f:
         f.write(summary)

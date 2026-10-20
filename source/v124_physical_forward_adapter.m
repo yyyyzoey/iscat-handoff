@@ -99,7 +99,11 @@ for ic = 1:numel(cases)
     end
     % ---- renders ----
     variants = cs.renders;
-    if ~iscell(variants), variants = {variants}; end
+    if isstruct(variants)
+        variants = arrayfun(@(k) variants(k), 1:numel(variants), 'UniformOutput', false);
+    elseif ~iscell(variants)
+        variants = {variants};
+    end
     for iv = 1:numel(variants)
         vr = variants{iv};
         vname = 'default';

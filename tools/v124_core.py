@@ -40,12 +40,15 @@ def load_render(path):
         out['subpixels'] = int(r['subpixels'][0, 0])
         out['id_err'] = float(r['intensity_identity_relative_error'][0, 0])
         out['effective_magnification'] = float(r['effective_magnification'][0, 0])
-        out['cfg_D'] = float(r['cfg/particle/diameter_nm'][0, 0])
-        out['cfg_gap'] = float(r['cfg/particle/gap_nm'][0, 0])
-        out['cfg_mesh'] = int(r['cfg/numerics/mesh_request'][0, 0])
-        out['cfg_NA'] = float(r['cfg/objective/NA'][0, 0])
-        out['cfg_nwater'] = float(r['cfg/layers/n'][1, 0])
-        out['focus_z'] = float(r['cfg/focus_nm'][2, 0])
+        # NOTE: variant renders (custom r struct) carry no cfg group; authoritative
+        # case identity (D, h, np, mesh) comes from the render file name/ledger.
+        out['cfg_D'] = float(r['cfg/particle/diameter_nm'][0, 0]) if 'cfg/particle/diameter_nm' in r else None
+        out['cfg_gap'] = float(r['cfg/particle/gap_nm'][0, 0]) if 'cfg/particle/gap_nm' in r else None
+        out['cfg_mesh'] = int(r['cfg/numerics/mesh_request'][0, 0]) if 'cfg/numerics/mesh_request' in r else None
+        out['cfg_NA'] = float(r['cfg/objective/NA'][0, 0]) if 'cfg/objective/NA' in r else None
+        out['cfg_nwater'] = float(r['cfg/layers/n'][1, 0]) if 'cfg/layers/n' in r else None
+        out['focus_z'] = float(r['cfg/focus_nm'][2, 0]) if 'cfg/focus_nm' in r else (
+            float(r['focus_nm'][2, 0]) if 'focus_nm' in r else None)
         out['grid_shift'] = r['grid_shift_xy_nm'][:, 0] if 'grid_shift_xy_nm' in r else np.array([0.0, 0.0])
     out['path'] = path
     return out

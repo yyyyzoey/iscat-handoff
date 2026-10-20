@@ -1,0 +1,91 @@
+{
+ "cases": [
+  {
+   "tag": "sentinel_match_exact",
+   "D_nm": 100,
+   "h_nm": 450,
+   "np_re": 1.3353,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "sentinel_match_minus",
+   "D_nm": 100,
+   "h_nm": 450,
+   "np_re": 1.3352,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "sentinel_match_plus",
+   "D_nm": 100,
+   "h_nm": 450,
+   "np_re": 1.3354,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D100",
+   "D_nm": 100,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "q7",
+     "subpixels": 7
+    },
+    {
+     "variant": "zf550",
+     "focus_z_nm": 550.0
+    },
+    {
+     "variant": "shift_x140",
+     "shift_xy_nm": [
+      140.0,
+      0.0
+     ]
+    },
+    {
+     "variant": "shift_y140",
+     "shift_xy_nm": [
+      0.0,
+      140.0
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "refmesh_D100",
+   "D_nm": 100,
+   "h_nm": 450,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  }
+ ]
+}

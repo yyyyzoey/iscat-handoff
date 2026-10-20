@@ -1,0 +1,26 @@
+{
+ "schema": "iscat124.status.1",
+ "task": "V124_PHYSICAL_IPSF_CALIBRATION_AND_BLIND_INVERSION",
+ "generated_utc": "2026-10-20T11:04:50.113749Z",
+ "execution": "COMPLETED_WITHIN_BUDGET",
+ "forward_qualification": {
+  "engine": "NANOBEM stratified BEM ce49f77f + build_system/render_system vector imaging",
+  "gates_csv": "validation/zero_index_and_units.csv",
+  "all_pre_registered_gates_passed": false,
+  "zero_index_exact_note": "pre-registered 1e-10 ideal not met; measured BEM residual peak|C|=7.5e-6 reported, two-sided detune 1e-4 gives ~1e-4 (13.6x above residual), convergence to zero demonstrated",
+  "v123r1_scalar_formula_used": false
+ },
+ "inverse": {
+  "fixed_height_calibration": "CONDITIONAL_FIXED_HEIGHT_CALIBRATION",
+  "holdout_cases": 6,
+  "holdout_all_accepted": true,
+  "diameter_type": "UNIFORM_SPHERE_OPTICAL_EQUIVALENT",
+  "joint_Dh_library": "BLOCKED_BUDGET (each (D,h) is an independent BEM solve; 64-solve pool allocated per contract W3 fallback)"
+ },
+ "archive": "results/v124/iscat_v124_return.zip + results/v124_external_receipt.json",
+ "experiment": {
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "reason": "no independent size standard, no measured particle material, no calibrated optical ruler; all results CONDITIONAL"
+ },
+ "fast_backend": "NOT_ATTEMPTED_BOUNDED_BEM_FALLBACK (90-min window avoided; bounded BEM within budget)"
+}
