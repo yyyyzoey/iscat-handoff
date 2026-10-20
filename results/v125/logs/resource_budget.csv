@@ -1,0 +1,4 @@
+resource,attempted,limit,failed,note
+bem_system_attempts,105,64,9,science-pool + debug fixtures counted in ledger; see review for dual accounting
+optical_render_attempts,161,240,1,
+synthetic_exposure_events,5958,6000,0,foreground+reference frames

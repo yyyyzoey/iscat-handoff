@@ -100,7 +100,7 @@ for ic = 1:numel(cases)
     if ~imported
         if isfile(sfile)
             t0=tic; tmp=load(sfile,'s','meta'); s=tmp.s; clear tmp; dt=toc(t0);
-            assert(abs(meta.D_nm-D)<1e-12 && abs(meta.h_nm-h)<1e-12 && abs(meta.np_re-real(np))<1e-12, 'cache identity mismatch %s', skey);
+            if ~(abs(meta.D_nm-D)<1e-12 && abs(meta.h_nm-h)<1e-12 && abs(meta.np_re-real(np))<1e-12), fprintf('MISMATCH meta: %g %g %.10g vs case: %g %g %.10g\n', meta.D_nm, meta.h_nm, meta.np_re, D, h, real(np)); error('cache identity mismatch %s', skey); end
             v125_ledger_row(ledgerFile,'cache_hit',tag,skey,D,h,np,mesh,true,dt,'',sfile);
             ledger.n_cache_hits = ledger.n_cache_hits+1;
             fprintf('[v125] CACHE HIT %s (%.2fs)\n',skey,dt);

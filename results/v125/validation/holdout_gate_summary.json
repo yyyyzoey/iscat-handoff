@@ -1,0 +1,31 @@
+{
+ "schema": "iscat125.holdout_gate_summary.1",
+ "n_cases": 6,
+ "all_xy_recovered_within_2nm": true,
+ "D_errors_nm": {
+  "H01": -4.24,
+  "H02": -20.88,
+  "H03": 6.83,
+  "H04": 1.85,
+  "H05": 7.27,
+  "H06": 23.0
+ },
+ "D_MAE": 10.67689747686613,
+ "D_RMSE": 13.451950895357346,
+ "ambiguous_cases": [
+  "H01",
+  "H02",
+  "H03",
+  "H04",
+  "H05",
+  "H06"
+ ],
+ "weak_signal_cases": [
+  "H02"
+ ],
+ "boundary_cases": [
+  "H06"
+ ],
+ "verdict": "SYNTHETIC_DH_JOINT_INVERSION_VALIDATED_WITHIN_TESTED_DOMAIN (with per-case ambiguity flags)",
+ "note": "6 cases cannot prove full-domain generalization; per-case results are authoritative"
+}

@@ -178,6 +178,7 @@ def stage_s3():
     return h5p, tabp, n_ok
 
 def stage_s4():
+    import h5py
     """Build the direct-physics holdout H5; truth only in validator file."""
     ridx = vml.index_v125_renders(OUT)
     h5p = os.path.join(OUT, 'library', 'v125_direct_holdouts.h5')
@@ -285,26 +286,29 @@ def stage_s6():
                     Cobs = Y / Bhat - 1.0
                     res = vin.m1_noisy(Y, Bhat, lib, lambda Dq, hq, dx, dy: lib.c_table(Dq, hq, dx, dy))
                     rows_noise.append(dict(study='dev_target', D_true=D, h_true=h, B=B, rep=rep,
-                                           D_est=res['D'], h_est=res['h'], wres=res['wres']))
-                    dev_stats.append(res['wres'])
+                                           D_est=res['D'], h_est=res['h'], wres=res['wres'],
+                                           chi_null=res['chi_null'], delta=res['delta']))
+                    dev_stats.append(res['delta'])
     # ---- dev blanks (100) ----
     rng = np.random.default_rng(seeds['dev_blank'])
     dev_blank = []
     for i in range(100):
         Y = rng.poisson(1e4, (13, 13)) + rng.normal(0, SIGMA_R, (13, 13))
+        refs = np.stack([rng.poisson(1e4, (13, 13)) + rng.normal(0, SIGMA_R, (13, 13)) for _ in range(8)])
         exposure_events += 9
-        Bhat = Y.mean() * np.ones((13, 13))
+        Bhat = refs.mean(axis=0)
         res = vin.m1_noisy(Y, Bhat, lib, lambda Dq, hq, dx, dy: lib.c_table(Dq, hq, dx, dy))
-        dev_blank.append(res['wres'])
-        rows_blank.append(dict(study='dev_blank', idx=i, wres=res['wres'], D_est=res['D']))
+        dev_blank.append(res['delta'])
+        rows_blank.append(dict(study='dev_blank', idx=i, wres=res['wres'], delta=res['delta'], D_est=res['D']))
     # ---- threshold freeze (BEFORE holdout) ----
-    theta = float(np.quantile(dev_blank, 0.99))
-    dev_target_res = np.array(dev_stats)
-    theta = max(theta, float(np.quantile(dev_target_res, 0.995)))
-    freeze = dict(schema='iscat125.threshold_freeze.1', accept_wres_threshold=theta,
-                  derived_from='99th pct of 100 dev blanks AND 99.5th pct of 240 dev targets',
-                  dev_blank_stats=dict(mean=float(np.mean(dev_blank)), p99=float(np.quantile(dev_blank, 0.99))),
-                  dev_target_stats=dict(mean=float(np.mean(dev_target_res)), p995=float(np.quantile(dev_target_res, 0.995))),
+    dev_target_delta = np.array(dev_stats)
+    blank_hi = float(np.quantile(dev_blank, 0.99))
+    target_lo = float(np.quantile(dev_target_delta, 0.01))
+    theta = 0.5 * (blank_hi + target_lo)
+    freeze = dict(schema='iscat125.threshold_freeze.1', accept_delta_threshold=theta,
+                  derived_from='delta=chi_null-chi_fit; midpoint of p99(100 dev blanks) and p01(240 dev targets)',
+                  dev_blank_delta=dict(p50=float(np.quantile(dev_blank, 0.5)), p99=blank_hi),
+                  dev_target_delta=dict(p50=float(np.quantile(dev_target_delta, 0.5)), p01=target_lo),
                   note='frozen before any holdout-noise or validation-blank evaluation')
     json.dump(freeze, open(os.path.join(VAL, 'threshold_freeze.json'), 'w'), indent=1)
     # ---- holdout noise (6 x 3 x 5) ----
@@ -322,19 +326,21 @@ def stage_s6():
                     rows_noise.append(dict(study='holdout_noise', case=tag, D_true=D, h_true=hh,
                                            x_true=x, y_true=y, B=B, rep=rep,
                                            D_est=res['D'], h_est=res['h'], wres=res['wres'],
-                                           accepted=bool(res['wres'] <= theta),
+                                           accepted=bool(res['delta'] >= theta),
+                                           chi_null=res['chi_null'], delta=res['delta'],
                                            err_D=res['D'] - D))
     # ---- validation blanks (100): evaluation only ----
     rng = np.random.default_rng(seeds['validation_blank'])
     fp = 0
     for i in range(100):
         Y = rng.poisson(1e4, (13, 13)) + rng.normal(0, SIGMA_R, (13, 13))
+        refs = np.stack([rng.poisson(1e4, (13, 13)) + rng.normal(0, SIGMA_R, (13, 13)) for _ in range(8)])
         exposure_events += 9
-        Bhat = Y.mean() * np.ones((13, 13))
+        Bhat = refs.mean(axis=0)
         res = vin.m1_noisy(Y, Bhat, lib, lambda Dq, hq, dx, dy: lib.c_table(Dq, hq, dx, dy))
-        acc = bool(res['wres'] <= theta)
+        acc = bool(res['delta'] >= theta)
         fp += int(acc)
-        rows_blank.append(dict(study='validation_blank', idx=i, wres=res['wres'],
+        rows_blank.append(dict(study='validation_blank', idx=i, wres=res['wres'], delta=res['delta'],
                                false_accept=acc, D_est=res['D']))
     # ---- motion + exposure (12 traj: D=55/115/185 x4; 8 frames; 2 exposures) ----
     rng = np.random.default_rng(seeds['motion'])
@@ -547,6 +553,11 @@ def resource_budget_csv():
 def stage_s7():
     stage_figures()
     rb = resource_budget_csv()
+    import v125_packaging
+    import v125_review
+    v125_packaging.make_observable_contract()
+    v125_review.write_review_and_summary()
+    v125_packaging.build_zip()
     return rb
 
 def main():

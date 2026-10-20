@@ -1,0 +1,48 @@
+{
+ "schema": "iscat125.holdout_truth.1",
+ "access": "VALIDATOR_ONLY; optimizer must not read",
+ "cases": [
+  {
+   "case": "H01",
+   "D_true_nm": 37.0,
+   "h_true_nm": 362.5,
+   "x_true_nm": 56.0,
+   "y_true_nm": -84.0
+  },
+  {
+   "case": "H02",
+   "D_true_nm": 63.0,
+   "h_true_nm": 387.5,
+   "x_true_nm": -112.0,
+   "y_true_nm": 28.0
+  },
+  {
+   "case": "H03",
+   "D_true_nm": 93.0,
+   "h_true_nm": 412.5,
+   "x_true_nm": 84.0,
+   "y_true_nm": 112.0
+  },
+  {
+   "case": "H04",
+   "D_true_nm": 117.0,
+   "h_true_nm": 462.5,
+   "x_true_nm": -56.0,
+   "y_true_nm": -112.0
+  },
+  {
+   "case": "H05",
+   "D_true_nm": 147.0,
+   "h_true_nm": 487.5,
+   "x_true_nm": 112.0,
+   "y_true_nm": -56.0
+  },
+  {
+   "case": "H06",
+   "D_true_nm": 177.0,
+   "h_true_nm": 537.5,
+   "x_true_nm": -84.0,
+   "y_true_nm": 84.0
+  }
+ ]
+}

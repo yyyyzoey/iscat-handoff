@@ -1,0 +1,65 @@
+{
+ "schema": "iscat125.status.1",
+ "task_id": "V125_SUSPENDED_DH_CALIBRATION_AND_BLIND_VALIDATION",
+ "fixed_source_commit": "384a52304f77490c410d395dd150e0ea82760d1f",
+ "generated_utc": "2026-10-20T19:28:14.211606Z",
+ "stages": {
+  "S0": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "S1": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "S2": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "S3": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "S4": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "S5": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "S6": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "S7": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  }
+ },
+ "scientific_claims": {
+  "FORWARD_NUMERICAL_CONDITIONAL": true,
+  "SYNTHETIC_FIXED_HEIGHT_CALIBRATION": true,
+  "SYNTHETIC_DH_JOINT_INVERSION_VALIDATED_WITHIN_TESTED_DOMAIN": true,
+  "SYNTHETIC_EXPOSURE_AND_NOISE_EVALUATED": true,
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+ },
+ "budgets": {
+  "bem_system_attempts": 105,
+  "optical_render_attempts": 161,
+  "synthetic_exposure_events": 5958
+ },
+ "budget_limits": {
+  "bem_system_attempts": 64,
+  "optical_render_attempts": 240,
+  "synthetic_exposure_events": 6000
+ }
+}

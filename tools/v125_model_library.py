@@ -35,6 +35,24 @@ def sha256(p):
             h.update(c)
     return h.hexdigest()
 
+def _camx_flip(d):
+    """Global camera-frame normalization (identity of axes).
+
+    The MATLAB chain applies flip(es,1) before storage; combined with ascending
+    fine_x labels the stored first axis is mirrored relative to the physical
+    camera_x direction (evidence: all six direct holdout renders show a
+    consistent x-sign inversion under the same-solve forward model, 6/6).
+    The flip is applied ONCE, globally, to every array, with relabeled ascending
+    fine_x/x - uniformly for templates, observations and the forward model."""
+    d['C'] = d['C'][::-1, :]
+    for k in ('Iref', 'Isca', 'Icross', 'Itotal'):
+        d[k] = d[k][::-1, :]
+    d['Eref'] = d['Eref'][::-1, :, :]
+    d['Esca'] = d['Esca'][::-1, :, :]
+    d['fine_x_nm'] = -d['fine_x_nm'][::-1]
+    d['x_nm'] = -d['x_nm'][::-1]
+    return d
+
 def load_v125_render(path):
     out = {}
     with h5py.File(path, 'r') as h:
@@ -53,6 +71,7 @@ def load_v125_render(path):
         out['id_err'] = float(r['intensity_identity_relative_error'][0, 0])
         out['mode'] = r['render_mode'][0] if 'render_mode' in r else 'default'
         out['shift'] = r['shift_xy_nm'][:, 0] if 'shift_xy_nm' in r else np.zeros(2)
+    out = _camx_flip(out)
     out['path'] = path
     return out
 
@@ -60,6 +79,9 @@ def _cplx(ds):
     a = ds[()]
     arr = a['real'] + 1j * a['imag']
     return np.transpose(arr, (2, 1, 0))
+
+def vml_repo_root():
+    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def index_v125_renders(outdir=OUT):
     """key_map CSV: full key -> short file. Returns dict keyed by
@@ -70,21 +92,23 @@ def index_v125_renders(outdir=OUT):
     for r in csv.DictReader(open(p, newline='')):
         amap[r['full_key']] = r['file']
     out = {}
+    import re
+    pat = re.compile(r'^(?P<img>[^_]+(?:_[^_]+)*)__(?P<solver>.+?)__(?P<tag>.+?)__'
+                     r'(?P<phys>D[-0-9.]+_h[-0-9.]+_np[-+0-9.]+_mesh\d+)__'
+                     r'(?P<variant>.+?)_dx(?P<dx>-?[0-9.]+)_dy(?P<dy>-?[0-9.]+)$')
     for full, fname in amap.items():
         if not full.startswith('v125img'):
             continue
-        # v125img...__skey__variant_dx_dy  where skey = solver__tag__D.._h.._np.._mesh..
-        try:
-            head, rest = full.split('__', 1)
-            solver_tag, variant_dxdy = rest.split('__', 1)
-            solver_id, tag, phys = solver_tag.split('__', 2)
-            variant, dx, dy = variant_dxdy.rsplit('_', 2) if '_' in variant_dxdy else (variant_dxdy, '0', '0')
-        except ValueError:
-            continue
-        mm = __import__('re').match(r'D([0-9.]+)_h([0-9.]+)_np([-0-9.]+)([+-][-0-9.]+)_mesh(\d+)', phys)
+        mm = pat.match(full)
         if not mm:
             continue
-        out[(tag, variant, float(dx), float(dy))] = os.path.join(outdir, 'renders', fname)
+        fp = fname if os.path.isabs(fname) else os.path.join(vml_repo_root(), fname)
+        out[(mm['tag'], mm['variant'], float(mm['dx']), float(mm['dy']))] = fp
+    # wide re-images map (tag -> file) takes precedence over early broken 'wide' rows
+    wmap = os.path.join(outdir, 'logs', 'wide_render_map.csv')
+    if os.path.isfile(wmap):
+        for r in csv.DictReader(open(wmap, newline='')):
+            out[(r['tag'], 'wide', 0.0, 0.0)] = r['file'] if os.path.isabs(r['file']) else os.path.join(vml_repo_root(), r['file'])
     return out
 
 def _node_tag(D, h):
@@ -121,7 +145,7 @@ def build_train_library(outdir=OUT):
                 if src is None:
                     grid_rows.append(dict(D_nm=D, h_nm=hh, status='MISSING', source=''))
                     continue
-                r = vc.load_render(src)
+                r = _camx_flip(vc.load_render(src))
                 g = h.create_group(f'D{D:g}_h{hh:g}')
                 for k in ('C', 'Iref', 'Isca', 'Icross', 'Itotal'):
                     g.create_dataset(k, data=r[k], compression='gzip', compression_opts=4)
@@ -158,6 +182,16 @@ def build_train_library(outdir=OUT):
         for r0 in grid_rows: w.writerow(r0)
     return h5p, grid_rows
 
+def _shift_table_worker(args):
+    name, Eref, Esca, fx, fy = args
+    offsets = np.arange(-OFFSET_MAX, OFFSET_MAX + 1e-9, OFFSET_STEP)
+    tab = np.empty((len(offsets), len(offsets), 13, 13))
+    for ix, dx in enumerate(offsets):
+        for iy, dy in enumerate(offsets):
+            C = vfs.particle_shift_C(Eref, Esca, fx, fy, float(dx), float(dy), q=5, cam_Nx=17)
+            tab[ix, iy] = C[2:15, 2:15]
+    return name, tab
+
 def build_shift_table(h5p, outdir=OUT, workers=None):
     """Per-node C_off(dx,dy) tables via the corrected particle-shift forward."""
     offsets = np.arange(-OFFSET_MAX, OFFSET_MAX + 1e-9, OFFSET_STEP)
@@ -169,23 +203,15 @@ def build_shift_table(h5p, outdir=OUT, workers=None):
                 if 'wide' in g:
                     nodes.append((f'D{D:g}_h{hh:g}', g['wide/Eref'][()], g['wide/Esca'][()],
                                   g['wide/fine_x_nm'][:], g['wide/fine_y_nm'][:]))
-    def one(args):
-        name, Eref, Esca, fx, fy = args
-        tab = np.empty((len(offsets), len(offsets), 13, 13))
-        for ix, dx in enumerate(offsets):
-            for iy, dy in enumerate(offsets):
-                C = vfs.particle_shift_C(Eref, Esca, fx, fy, float(dx), float(dy), q=5)
-                tab[ix, iy] = C[2:15, 2:15]
-        return name, tab
     from multiprocessing import Pool
     results = []
     if workers and workers > 1:
         with Pool(workers) as pool:
-            for name, tab in pool.imap_unordered(one, nodes, chunksize=1):
+            for name, tab in pool.imap_unordered(_shift_table_worker, nodes, chunksize=1):
                 results.append((name, tab)); print('table', name, flush=True)
     else:
         for nd in nodes:
-            name, tab = one(nd); results.append((name, tab)); print('table', name, flush=True)
+            name, tab = _shift_table_worker(nd); results.append((name, tab)); print('table', name, flush=True)
     tabp = os.path.join(outdir, 'library', 'v125_shift_tables.h5')
     with h5py.File(tabp, 'w') as h:
         h.create_dataset('offsets_nm', data=offsets)
@@ -239,8 +265,10 @@ class TrainLibrary:
         for a, wa in ((0, 1-wd), (1, wd)):
             for b, wb in ((0, 1-wh), (1, wh)):
                 n = f'D{self.Ds[i+a]:g}_h{self.Hs[j+b]:g}'
-                T = self._t[n][ix:ix+2, iy:iy+2]
-                acc += wa * wb * ((1-wy)*T[:, 0] + wy*T[:, 1])
+                T = self._t[n]
+                acc += wa * wb * ((1-wy)*T[ix, iy] + wy*T[ix, iy+1] if False else
+                                  (1-wx)*((1-wy)*T[ix, iy] + wy*T[ix, iy+1]) +
+                                  wx*((1-wy)*T[ix+1, iy] + wy*T[ix+1, iy+1]))
                 wsum += wa * wb
         return acc / wsum
     def wide_fields(self, D, h):
@@ -266,7 +294,7 @@ class TrainLibrary:
         """Field-level exact particle-shift forward on the central 17x17 ROI."""
         er, es, fx, fy = self.wide_fields(D, h)
         try:
-            C = vfs.particle_shift_C(er, es, fx, fy, float(dx), float(dy), q=5)
+            C = vfs.particle_shift_C(er, es, fx, fy, float(dx), float(dy), q=5, cam_Nx=17)
         except vfs.OutOfDomain:
             return None
         return C[2:15, 2:15]

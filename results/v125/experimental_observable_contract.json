@@ -1,0 +1,13 @@
+{
+ "schema": "iscat125.observable_contract.1",
+ "static_c": {
+  "definition": "C_p=(I_p-I_bg_p)/I_bg_p on 17x17 camera pixels (score on central 13x13)",
+  "use": "single-frame D-h-xy calibration and inversion"
+ },
+ "fft_400hz": {
+  "definition": "C_k = 2 X_k / (N I_mean), N=2001, Fs=5000 (script-recorded), k0=160 -> 399.80009995 Hz",
+  "note": "NOT equal to static C nor sinc-weighted static C; dynamic D-Ck calibration requires real trajectories + same FFT extraction",
+  "status": "INTERFACE_ONLY_THIS_ROUND"
+ },
+ "separation": "two independent entry points; never mix static templates with FFT amplitudes"
+}

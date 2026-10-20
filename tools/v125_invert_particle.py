@@ -141,6 +141,7 @@ def electron_objective(Y, B_hat, C_model, sigma_r=2.0, K_blank=8):
     return float(np.sqrt(np.mean(w ** 2)))
 
 def m1_noisy(Y, B_hat, model, C_of, sigma_r=2.0, K_blank=8):
+    chi_null = electron_objective(Y, B_hat, np.zeros_like(Y), sigma_r, K_blank)
     """M1 with the electron-domain objective; C_of(D,h,x,y) -> 13x13 model C."""
     calls = {'n': 0}
     def f(p):
@@ -157,7 +158,7 @@ def m1_noisy(Y, B_hat, model, C_of, sigma_r=2.0, K_blank=8):
     for D in model.Ds:
         for h in model.Hs:
             for (dx, dy) in ((0, 0), (112, -112), (-112, 112), (112, 112), (-112, -112)):
-                scan.append((residual_L2((Y / B_hat - 1.0)[2:15, 2:15], model.c_table(D, h, dx, dy)), D, h, dx, dy))
+                scan.append((residual_L2(Y / B_hat - 1.0, model.c_table(D, h, dx, dy)), D, h, dx, dy))
     scan.sort(key=lambda r0: r0[0])
     basins = []
     for v, D, h, dx, dy in scan:
@@ -169,8 +170,9 @@ def m1_noisy(Y, B_hat, model, C_of, sigma_r=2.0, K_blank=8):
     for v0, D0, h0, dx0, dy0 in basins:
         r = minimize(f, x0=np.array([D0, h0, dx0, dy0]), method='Nelder-Mead',
                      bounds=[(30, 200), (350, 550), (-500, 500), (-500, 500)],
-                     options=dict(maxfev=350, xatol=0.5, fatol=1e-8))
+                     options=dict(maxfev=150, xatol=0.5, fatol=1e-8))
         if best is None or r.fun < best.fun:
             best = r
     return dict(D=float(best.x[0]), h=float(best.x[1]), x=float(best.x[2]), y=float(best.x[3]),
-                wres=float(best.fun), nfev=calls['n'])
+                wres=float(best.fun), chi_null=chi_null,
+                delta=chi_null - float(best.fun), nfev=calls['n'])

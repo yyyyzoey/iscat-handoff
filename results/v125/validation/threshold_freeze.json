@@ -1,0 +1,14 @@
+{
+ "schema": "iscat125.threshold_freeze.1",
+ "accept_delta_threshold": 0.019740601011691648,
+ "derived_from": "delta=chi_null-chi_fit; midpoint of p99(100 dev blanks) and p01(240 dev targets)",
+ "dev_blank_delta": {
+  "p50": 0.012817938214746527,
+  "p99": 0.03407398991519223
+ },
+ "dev_target_delta": {
+  "p50": 0.0653759394537704,
+  "p01": 0.005407212108191061
+ },
+ "note": "frozen before any holdout-noise or validation-blank evaluation"
+}

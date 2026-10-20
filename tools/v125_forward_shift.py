@@ -22,7 +22,7 @@ def _interp_complex(E, xs, ys, query_x, query_y):
                                     fill_value=None) for c in range(E.shape[2])]
     X, Y = np.meshgrid(query_x, query_y, indexing='ij')
     pts = np.stack([X, Y], axis=-1)
-    out = np.empty_like(E)
+    out = np.empty(X.shape + (E.shape[2],), dtype=E.dtype)
     for c, itp in enumerate(itps):
         out[:, :, c] = itp(pts)
     return out
@@ -31,8 +31,27 @@ def pixel_mean(A, q):
     Nx, Ny = A.shape[0] // q, A.shape[1] // q
     return A.reshape(Nx, q, Ny, q).mean(axis=(1, 3))
 
-def particle_shift_C(Eref, Es, fine_x, fine_y, dx, dy, q=5):
-    """Signed C image for a particle translated by (dx,dy), camera fixed."""
+def particle_shift_C(Eref, Es, fine_x, fine_y, dx, dy, q=5, cam_Nx=None):
+    """Signed C image for a particle translated by (dx,dy), camera fixed.
+
+    cam_Nx: when the fine grid is WIDER than the camera ROI (wide renders),
+    interpolate over the FULL grid but evaluate/pixel-average only the central
+    cam_Nx x cam_Ny camera pixels; query points stay inside the full support."""
+    if cam_Nx is not None:
+        N = len(fine_x)
+        need = cam_Nx * q
+        if N > need:
+            c0 = (N - need) // 2
+            qxs = fine_x[c0:c0 + need] - dx
+            qys = fine_y[c0:c0 + need] - dy
+            if (qxs[0] < fine_x[0] - 1e-9 or qxs[-1] > fine_x[-1] + 1e-9 or
+                    qys[0] < fine_y[0] - 1e-9 or qys[-1] > fine_y[-1] + 1e-9):
+                raise OutOfDomain(f'shift ({dx},{dy}) leaves fine-grid support')
+            Es_shift = _interp_complex(Es, fine_x, fine_y, qxs, qys)
+            Eref_c = Eref[c0:c0 + need, c0:c0 + need]
+            It = pixel_mean(np.sum(np.abs(Eref_c + Es_shift) ** 2, axis=2), q)
+            I0 = pixel_mean(np.sum(np.abs(Eref_c) ** 2, axis=2), q)
+            return (It - I0) / I0
     sx, sy = fine_x - dx, fine_y - dy
     if (sx[0] < fine_x[0] - 1e-9 or sx[-1] > fine_x[-1] + 1e-9 or
             sy[0] < fine_y[0] - 1e-9 or sy[-1] > fine_y[-1] + 1e-9):

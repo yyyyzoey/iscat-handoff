@@ -1,0 +1,36 @@
+{
+ "schema": "iscat125.science_validation.1",
+ "verdict": "PASS",
+ "checks": [
+  {
+   "check": "zip_crc",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "members_unique",
+   "passed": true,
+   "detail": "47 members"
+  },
+  {
+   "check": "manifest_sha256_all_match",
+   "passed": true,
+   "detail": "46 checked, bad=[]"
+  },
+  {
+   "check": "replay_er_es_to_C_D100_h450",
+   "passed": true,
+   "detail": "err=6.85e-16 new_node=False"
+  },
+  {
+   "check": "replay_er_es_to_C_D130_h475",
+   "passed": true,
+   "detail": "err=5.15e-16 new_node=True"
+  },
+  {
+   "check": "replay_blind_inversion_H03",
+   "passed": true,
+   "detail": "checker D=99.83 shipped=99.82941794890536 dD=0 (tolerance 1nm for optimizer restart variance)"
+  }
+ ]
+}
