@@ -1,0 +1,21 @@
+{
+  "task_id": "V121_CORRECT_DETECTOR_EXPOSURE_AND_CONTINUOUS_LOCAL_RESPONSE",
+  "elapsed_s": 9.2,
+  "D_nm": 100,
+  "zf_nm": 450,
+  "roi_shape": [
+    41,
+    41
+  ],
+  "sub_samples_Q": 25,
+  "n_time_samples": 2001,
+  "scope": "INSTANTANEOUS_FINE_MAPPING_DEMO (no exposure averaging yet)",
+  "Imean_range": [
+    0.03297647935001723,
+    0.34412407601655004
+  ],
+  "C160_abs_range": [
+    2.2123064378714203e-07,
+    0.0035010015670337794
+  ]
+}
