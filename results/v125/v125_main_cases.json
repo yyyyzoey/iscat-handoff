@@ -1,0 +1,1055 @@
+{
+ "cases": [
+  {
+   "tag": "match_D30_L0",
+   "D_nm": 30,
+   "h_nm": 450.0,
+   "np_re": 1.3353,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "match_D200_L0",
+   "D_nm": 200,
+   "h_nm": 450.0,
+   "np_re": 1.3353,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "match_D100_L1",
+   "D_nm": 100,
+   "h_nm": 450.0,
+   "np_re": 1.3353,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "near_match_D100_minus_L0",
+   "D_nm": 100,
+   "h_nm": 450.0,
+   "np_re": 1.3352899999999999,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "near_match_D100_plus_L0",
+   "D_nm": 100,
+   "h_nm": 450.0,
+   "np_re": 1.33531,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D30_L1",
+   "D_nm": 30,
+   "h_nm": 450.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "main_D200_L1",
+   "D_nm": 200,
+   "h_nm": 450.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    }
+   ]
+  },
+  {
+   "tag": "train_D30_h350",
+   "D_nm": 30,
+   "h_nm": 350.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D30_h375",
+   "D_nm": 30,
+   "h_nm": 375.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D30_h400",
+   "D_nm": 30,
+   "h_nm": 400.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D30_h425",
+   "D_nm": 30,
+   "h_nm": 425.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D30_h475",
+   "D_nm": 30,
+   "h_nm": 475.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D30_h500",
+   "D_nm": 30,
+   "h_nm": 500.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D30_h525",
+   "D_nm": 30,
+   "h_nm": 525.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D30_h550",
+   "D_nm": 30,
+   "h_nm": 550.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D50_h350",
+   "D_nm": 50,
+   "h_nm": 350.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D50_h375",
+   "D_nm": 50,
+   "h_nm": 375.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D50_h400",
+   "D_nm": 50,
+   "h_nm": 400.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D50_h425",
+   "D_nm": 50,
+   "h_nm": 425.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D50_h475",
+   "D_nm": 50,
+   "h_nm": 475.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D50_h500",
+   "D_nm": 50,
+   "h_nm": 500.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D50_h525",
+   "D_nm": 50,
+   "h_nm": 525.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D50_h550",
+   "D_nm": 50,
+   "h_nm": 550.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D70_h350",
+   "D_nm": 70,
+   "h_nm": 350.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D70_h375",
+   "D_nm": 70,
+   "h_nm": 375.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D70_h400",
+   "D_nm": 70,
+   "h_nm": 400.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D70_h425",
+   "D_nm": 70,
+   "h_nm": 425.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D70_h475",
+   "D_nm": 70,
+   "h_nm": 475.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D70_h500",
+   "D_nm": 70,
+   "h_nm": 500.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D70_h525",
+   "D_nm": 70,
+   "h_nm": 525.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D70_h550",
+   "D_nm": 70,
+   "h_nm": 550.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D130_h350",
+   "D_nm": 130,
+   "h_nm": 350.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D130_h375",
+   "D_nm": 130,
+   "h_nm": 375.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D130_h400",
+   "D_nm": 130,
+   "h_nm": 400.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D130_h425",
+   "D_nm": 130,
+   "h_nm": 425.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D130_h475",
+   "D_nm": 130,
+   "h_nm": 475.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D130_h500",
+   "D_nm": 130,
+   "h_nm": 500.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D130_h525",
+   "D_nm": 130,
+   "h_nm": 525.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D130_h550",
+   "D_nm": 130,
+   "h_nm": 550.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D160_h350",
+   "D_nm": 160,
+   "h_nm": 350.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D160_h375",
+   "D_nm": 160,
+   "h_nm": 375.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D160_h400",
+   "D_nm": 160,
+   "h_nm": 400.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D160_h425",
+   "D_nm": 160,
+   "h_nm": 425.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D160_h475",
+   "D_nm": 160,
+   "h_nm": 475.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D160_h500",
+   "D_nm": 160,
+   "h_nm": 500.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D160_h525",
+   "D_nm": 160,
+   "h_nm": 525.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D160_h550",
+   "D_nm": 160,
+   "h_nm": 550.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D200_h350",
+   "D_nm": 200,
+   "h_nm": 350.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D200_h375",
+   "D_nm": 200,
+   "h_nm": 375.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D200_h400",
+   "D_nm": 200,
+   "h_nm": 400.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D200_h425",
+   "D_nm": 200,
+   "h_nm": 425.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D200_h475",
+   "D_nm": 200,
+   "h_nm": 475.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D200_h500",
+   "D_nm": 200,
+   "h_nm": 500.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D200_h525",
+   "D_nm": 200,
+   "h_nm": 525.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D200_h550",
+   "D_nm": 200,
+   "h_nm": 550.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "train_D100_h450",
+   "D_nm": 100,
+   "h_nm": 450.0,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    },
+    {
+     "variant": "ps_x28",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      28.0,
+      0.0
+     ]
+    },
+    {
+     "variant": "ps_mx28",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      -28.0,
+      0.0
+     ]
+    },
+    {
+     "variant": "ps_x140",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      140.0,
+      0.0
+     ]
+    },
+    {
+     "variant": "ps_y140",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      0.0,
+      140.0
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_H01",
+   "D_nm": 37.0,
+   "h_nm": 362.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      56.0,
+      -84.0
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_H02",
+   "D_nm": 63.0,
+   "h_nm": 387.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      -112.0,
+      28.0
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_H03",
+   "D_nm": 93.0,
+   "h_nm": 412.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      84.0,
+      112.0
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_H04",
+   "D_nm": 117.0,
+   "h_nm": 462.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      -56.0,
+      -112.0
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_H05",
+   "D_nm": 147.0,
+   "h_nm": 487.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      112.0,
+      -56.0
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_H06",
+   "D_nm": 177.0,
+   "h_nm": 537.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      -84.0,
+      84.0
+     ]
+    }
+   ]
+  }
+ ]
+}

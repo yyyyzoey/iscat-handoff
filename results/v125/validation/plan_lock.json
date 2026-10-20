@@ -1,0 +1,30 @@
+{
+ "schema": "iscat125.plan_lock.1",
+ "selected_plan": "MAIN_7x9",
+ "training_D_nm": [
+  30,
+  50,
+  70,
+  100,
+  130,
+  160,
+  200
+ ],
+ "training_h_nm": [
+  350,
+  375,
+  400,
+  425,
+  450,
+  475,
+  500,
+  525,
+  550
+ ],
+ "new_training_solves": 48,
+ "reusable_v124_nodes": 15,
+ "selection_basis": "15/15 reusable V124 nodes verified at S0 intake; selected BEFORE any V125 holdout response existed",
+ "fallback_plan_not_triggered": true,
+ "lock_source_sha": "v125_intake.py@S0",
+ "note": "holdout D/h/x/y truth was fixed by contract config before this lock; no V125 holdout field has been computed"
+}

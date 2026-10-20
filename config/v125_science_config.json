@@ -1,0 +1,307 @@
+{
+  "schema": "iscat125.proposed_config.1",
+  "task_id": "V125_SUSPENDED_DH_CALIBRATION_AND_BLIND_VALIDATION",
+  "fixed_source": {
+    "repo": "yyyyzoey/iscat-handoff",
+    "branch": "v124",
+    "commit_sha": "384a52304f77490c410d395dd150e0ea82760d1f",
+    "nanobem_upstream_sha": "ce49f77f096337db8be54c46d83696d37b0b23d5",
+    "v124_original_exact_index_gate": "FAIL",
+    "original_match_threshold": 1e-10,
+    "original_match_actual_peak_abs_C": 7.5083559564706605e-06,
+    "v124_old_holdout_D_nm": [
+      35,
+      55,
+      85,
+      115,
+      145,
+      185
+    ]
+  },
+  "user_reported": {
+    "particle_state": "suspended",
+    "medium": "pure_water",
+    "temperature_C": 26,
+    "wavelength_nm": 520,
+    "camera_pixel_um_xy": [
+      14,
+      14
+    ],
+    "objective_nominal_mag": 50,
+    "slide_present": false
+  },
+  "user_estimates": {
+    "coverslip_n": 1.5,
+    "particle_n_close_to_water": true
+  },
+  "assumed": {
+    "n_water": 1.3353,
+    "n_glass": 1.5,
+    "primary_particle_n_re_im": [
+      1.38,
+      0
+    ],
+    "diagnostic_particle_n_re_im": [
+      [
+        1.35,
+        0
+      ],
+      [
+        1.45,
+        0
+      ]
+    ],
+    "model_particle_structure": "uniform optical-effective sphere, not established magnetite core",
+    "collection_NA": 0.8,
+    "illumination": "normal x-polarized from glass side",
+    "reference": "glass-water interface",
+    "complex_time_convention": "exp(-i_omega_t), verify actual source chain",
+    "relay_mag": 1,
+    "object_pixel_nm": 280,
+    "object_pixel_formula": "1000*pixel_um/(objective_mag*relay_mag)",
+    "focus_nm": 450,
+    "detector_roi_xy": [
+      17,
+      17
+    ],
+    "pixel_subsamples_xy": [
+      5,
+      5
+    ],
+    "score_roi_xy": [
+      13,
+      13
+    ],
+    "score_slice_start_end": [
+      2,
+      15
+    ],
+    "min_surface_gap_nm": 100,
+    "water_viscosity_mPa_s": 0.87,
+    "read_noise_e": 2,
+    "background_e_at_100us_per_pix": [
+      1000,
+      10000,
+      100000
+    ],
+    "blank_frames_per_measurement": 8,
+    "exposure_us": [
+      25,
+      100
+    ],
+    "frame_rate_hz": 5000,
+    "fine_trajectory_step_us": 1.25,
+    "coarse_trajectory_step_us": 2.5,
+    "hydrodynamic_D_equals_optical_D": "synthetic generation only, NOT inversion input"
+  },
+  "plans": {
+    "main": {
+      "id": "MAIN_7x9",
+      "training_D_nm": [
+        30,
+        50,
+        70,
+        100,
+        130,
+        160,
+        200
+      ],
+      "training_h_nm": [
+        350,
+        375,
+        400,
+        425,
+        450,
+        475,
+        500,
+        525,
+        550
+      ],
+      "total_grid_nodes": 63,
+      "reusable_v124_nodes_if_SHA_verified": 15,
+      "new_training_solves": 48,
+      "holdout_h_nm": [
+        362.5,
+        387.5,
+        412.5,
+        462.5,
+        487.5,
+        537.5
+      ]
+    },
+    "fallback": {
+      "id": "FALLBACK_7x7",
+      "training_D_nm": [
+        30,
+        50,
+        70,
+        100,
+        130,
+        160,
+        200
+      ],
+      "training_h_nm": [
+        375,
+        400,
+        425,
+        450,
+        475,
+        500,
+        525
+      ],
+      "total_grid_nodes": 49,
+      "reusable_v124_nodes_assumed": 0,
+      "new_training_solves": 49,
+      "holdout_h_nm": [
+        387.5,
+        412.5,
+        437.5,
+        462.5,
+        487.5,
+        512.5
+      ]
+    },
+    "selection_policy": "Select and freeze a single plan before inspecting V125 holdout responses; no outcome-based plan choice"
+  },
+  "six_new_holdouts": [
+    {
+      "case": "H01",
+      "D_nm": 37,
+      "x_nm": 56,
+      "y_nm": -84
+    },
+    {
+      "case": "H02",
+      "D_nm": 63,
+      "x_nm": -112,
+      "y_nm": 28
+    },
+    {
+      "case": "H03",
+      "D_nm": 93,
+      "x_nm": 84,
+      "y_nm": 112
+    },
+    {
+      "case": "H04",
+      "D_nm": 117,
+      "x_nm": -56,
+      "y_nm": -112
+    },
+    {
+      "case": "H05",
+      "D_nm": 147,
+      "x_nm": 112,
+      "y_nm": -56
+    },
+    {
+      "case": "H06",
+      "D_nm": 177,
+      "x_nm": -84,
+      "y_nm": 84
+    }
+  ],
+  "new_qualification_cases": [
+    {
+      "name": "match_D30_L0",
+      "D_nm": 30,
+      "h_nm": 450,
+      "n_ref": "nwater",
+      "mesh": 576
+    },
+    {
+      "name": "match_D200_L0",
+      "D_nm": 200,
+      "h_nm": 450,
+      "n_ref": "nwater",
+      "mesh": 576
+    },
+    {
+      "name": "match_D100_L1",
+      "D_nm": 100,
+      "h_nm": 450,
+      "n_ref": "nwater",
+      "mesh": 1444
+    },
+    {
+      "name": "near_match_D100_minus_L0",
+      "D_nm": 100,
+      "h_nm": 450,
+      "n_ref": "nwater-1e-5",
+      "mesh": 576
+    },
+    {
+      "name": "near_match_D100_plus_L0",
+      "D_nm": 100,
+      "h_nm": 450,
+      "n_ref": "nwater+1e-5",
+      "mesh": 576
+    },
+    {
+      "name": "main_D30_L1",
+      "D_nm": 30,
+      "h_nm": 450,
+      "n_ref": 1.38,
+      "mesh": 1444
+    },
+    {
+      "name": "main_D200_L1",
+      "D_nm": 200,
+      "h_nm": 450,
+      "n_ref": 1.38,
+      "mesh": 1444
+    }
+  ],
+  "noise": {
+    "dev_D_nm": [
+      50,
+      100,
+      160,
+      200
+    ],
+    "dev_h_nm": [
+      375,
+      425,
+      475,
+      525
+    ],
+    "backgrounds_e_at_100us": [
+      1000,
+      10000,
+      100000
+    ],
+    "replicates_per_background": 5,
+    "dev_blank_trials": 100,
+    "independent_validation_blank_trials": 100,
+    "holdout_replicates_per_background": 5,
+    "trajectory_D_nm": [
+      55,
+      115,
+      185
+    ],
+    "trajectories_per_D": 4,
+    "frames_per_trajectory": 8,
+    "exposure_versions_per_trajectory": 2,
+    "seeds": {
+      "dev": 125100,
+      "dev_blank": 125200,
+      "holdout": 125300,
+      "validation_blank": 125400,
+      "motion": 125500
+    },
+    "planned_exposure_count_including_foreground_and_reference": 5154
+  },
+  "budget": {
+    "bem_system_attempts_max": 64,
+    "optical_render_attempts_max": 240,
+    "synthetic_exposure_events_max": 6000,
+    "heavy_physics_process_max": 1,
+    "wall_clock_hours_max": 12,
+    "archive_reserve_minutes": 30
+  },
+  "scientific_claims": {
+    "diameter_type": "UNIFORM_SPHERE_OPTICAL_EQUIVALENT",
+    "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+  },
+  "contract_authority": "01_V125_Codex_完整执行合同.md; this JSON is a machine-readable proposed config, not executed values"
+}

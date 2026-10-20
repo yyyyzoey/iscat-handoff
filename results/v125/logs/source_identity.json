@@ -1,0 +1,84 @@
+{
+ "schema": "iscat125.source_identity.1",
+ "fixed_v124_commit": "384a52304f77490c410d395dd150e0ea82760d1f",
+ "current_head": "384a52304f77490c410d395dd150e0ea82760d1f",
+ "nanobem_upstream_sha": "ce49f77f096337db8be54c46d83696d37b0b23d5",
+ "python": "3.11.7",
+ "platform": "Windows-10-10.0.26200-SP0",
+ "numpy": "1.26.4",
+ "scipy": "1.11.4",
+ "h5py": "3.9.0",
+ "v124_h5_sha256": "3a97c6c5f5fe399dc6893184a781e300ad5e0794feb331f59861b037dbf613a6",
+ "v124_zip_sha256": "6ce1a94e92fad868da937b4118d2358b74217036e233880c57d28725413670da",
+ "tool_blobs": {
+  "tools/v124_core.py": "5523e2b450a683a9a737ed5511878d5859628f67",
+  "tools/invert_v124_particle.py": "40baacfb20e22c2ce44416415afa355e20e13952",
+  "source/v124_physical_forward_adapter.m": "464000f6f07db8cef5b3c8e76235d178ce4c2ffa",
+  "source/v125_physical_forward_adapter.m": "HEAD:source/v125_physical_forward_adapter.m",
+  "tools/v125_intake.py": "HEAD:tools/v125_intake.py"
+ },
+ "reusable_nodes_verified": [
+  [
+   30.0,
+   450.0
+  ],
+  [
+   50.0,
+   450.0
+  ],
+  [
+   70.0,
+   450.0
+  ],
+  [
+   100.0,
+   450.0
+  ],
+  [
+   130.0,
+   450.0
+  ],
+  [
+   160.0,
+   450.0
+  ],
+  [
+   200.0,
+   450.0
+  ],
+  [
+   100.0,
+   350.0
+  ],
+  [
+   100.0,
+   375.0
+  ],
+  [
+   100.0,
+   400.0
+  ],
+  [
+   100.0,
+   425.0
+  ],
+  [
+   100.0,
+   475.0
+  ],
+  [
+   100.0,
+   500.0
+  ],
+  [
+   100.0,
+   525.0
+  ],
+  [
+   100.0,
+   550.0
+  ]
+ ],
+ "n_reusable_verified": 15,
+ "reusable_plan": "MAIN_7x9"
+}
