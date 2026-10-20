@@ -1,167 +1,23 @@
 {
-  "schema": "iscat117.status.1",
-  "task_id": "V117_TARGETED_ACCEPTANCE_REPAIR_AND_PHYSICAL_INPUT_CONTRACT",
-  "created_at": "2026-10-20T00:23:24",
-  "source_commit": "ae7f479775910654eb10b984ec7076b544ab0a61",
-  "parent_commit": "59800bae2a6b5c0b37531c09b6cc97158fad1d5f",
-  "tool_sha256": "9a23bf7890b3cb58f49cf145950caadaaec171fb4cd1c20ac4d96ba2b38a8ad8",
-  "required_gates": [
-    "A_source_acceptance",
-    "B_operator_regression",
-    "C_saved_probe_bridge",
-    "D_metadata_semantic_admission",
-    "F_verifier_selftest"
-  ],
-  "gates": {
-    "A_source_acceptance": true,
-    "B_operator_regression": true,
-    "C_saved_probe_bridge": true,
-    "D_metadata_semantic_admission": true,
-    "F_verifier_selftest": true
-  },
+  "schema": "iscat119.status.1",
+  "task_id": "V119_CONTINUOUS_LOCAL_MODEL_AND_PILOT",
+  "created_at": "2026-10-19",
+  "source_commit": "bbd03877252d1f9f1da34b8d736190600d434e26",
+  "parent_commit": "ae7f479775910654eb10b984ec7076b544ab0a61",
   "states": {
-    "execution": "COMPLETE",
-    "numerical": "TARGETED_REPAIR_AND_ADMISSION_SEALED",
+    "execution": "PARTIAL",
+    "numerical": "CONDITIONAL_MODEL_PARTIAL",
     "archive": "PRE_ARCHIVE_VERIFICATION",
-    "physics": "ALL_FORWARD_GO_FALSE_PENDING_INPUTS"
+    "physics": "REAL_INPUTS_PENDING_BEM_BLOCKED"
   },
-  "admission_layers": {
-    "LEGACY_NUMERICAL_FROZEN": true,
-    "METADATA_SCHEMA_VALID": true,
-    "CONDITIONAL_MODEL_DESIGN_READY": true,
-    "REAL_DEVICE_RELATIVE_FORWARD_GO": false,
-    "ABSOLUTE_COUNT_GO": false,
-    "ABSOLUTE_DIAMETER_VALIDATION_GO": false
-  },
-  "stage_logs": {
-    "S0": {
-      "head": "ae7f479775910654eb10b984ec7076b544ab0a61",
-      "porcelain_lines": 0
-    },
-    "S1": {
-      "gate": true,
-      "issues": 0,
-      "negatives": [
-        {
-          "fault": "wrong_bytes",
-          "gate": false,
-          "detected": true,
-          "issues": [
-            "sha mismatch vs manifest: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
-            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
-            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a20.mat"
-          ]
-        },
-        {
-          "fault": "copy_mismatch",
-          "gate": false,
-          "detected": true,
-          "issues": [
-            "review_inputs copy mismatch: analysis/bank/v092_bank_D30_zf450_M200_a20.mat",
-            "missing source: numeric/C400_double_D30_zf450_M200_a5.mat",
-            "missing source: numeric/C400_double_D30_zf450_M200_a20.mat"
-          ]
-        },
-        {
-          "fault": "wrong_mask",
-          "gate": false,
-          "detected": true,
-          "issues": [
-            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
-            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a20.mat",
-            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M400_a5.mat"
-          ]
-        },
-        {
-          "fault": "wrong_dtype",
-          "gate": false,
-          "detected": true,
-          "issues": [
-            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
-            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a20.mat",
-            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M400_a5.mat"
-          ]
-        },
-        {
-          "fault": "wrong_case",
-          "gate": false,
-          "detected": true,
-          "issues": [
-            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a5.mat",
-            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M200_a20.mat",
-            "snapshot missing: analysis/bank/v092_bank_D30_zf450_M400_a5.mat"
-          ]
-        }
-      ],
-      "negatives_all_detected": true
-    },
-    "S2": {
-      "regression27": "27/27",
-      "legacy_groups": "12/12",
-      "legacy_mutations": "4/4",
-      "boundary": "14/14",
-      "boundary_verdict": "NO_PRODUCTION_PATCH_REQUIRED",
-      "runs": [
-        {
-          "suite": "27-item production regression",
-          "script": "v115_operator_regression.py",
-          "exit": 0,
-          "report": "v115_regression27.json"
-        },
-        {
-          "suite": "legacy 12 groups + 4 mutations",
-          "script": "observation_integration_tests_v113.py",
-          "exit": 0,
-          "report": "v113_suite.json"
-        },
-        {
-          "suite": "12 v116 boundary tests + 2 mutations",
-          "script": "v116_operator_boundary_tests.py",
-          "exit": 0,
-          "report": "v116_boundary12.json"
-        }
-      ]
-    },
-    "S3": {
-      "checked": 576,
-      "passed": 576,
-      "backend": "tools/observation_operator.py production_fft + independent_dft (same stored array); original gate < 1e-11"
-    },
-    "S4": {
-      "items": 18,
-      "missing": 14,
-      "statuses": {
-        "METADATA_SCHEMA_VALID": true,
-        "CONDITIONAL_MODEL_DESIGN_READY": true,
-        "REAL_DEVICE_RELATIVE_FORWARD_GO": false,
-        "ABSOLUTE_COUNT_GO": false,
-        "ABSOLUTE_DIAMETER_VALIDATION_GO": false
-      }
-    },
-    "S5pre": {
-      "exposure_rows": 3,
-      "pilots": 2,
-      "auto_solves": 0
-    },
-    "F": {
-      "cases": 12,
-      "passed": 12,
-      "v116_archive": "VERIFIED"
-    }
-  },
-  "environment": {
-    "python": "3.11.7",
-    "numpy": "1.26.4",
-    "scipy": "1.11.4",
-    "pythondontwritebytecode": "1"
-  },
-  "frozen_states": {
-    "calibration_valid": false,
-    "experimental_validation": false,
-    "detection_validated": false,
-    "single_particle_diameter": "NOT_ESTIMATED"
-  },
-  "p0_status": "OPEN (not upgraded)",
+  "v118_intake": "NOT_OBTAINED",
+  "baseline_verified": "v117 exit=0 all_gates=true",
+  "material_convention": "UPSTREAM_CONVENTION_CONFIRMED (exp(-i omega t))",
+  "bridge": "INHERITED (576/576 from v117, functions unchanged)",
+  "bem_stages": "BLOCKED (0/16 solves attempted; nanobem not in execution context)",
+  "analytic_deliverables": ["exposure sinc table", "segment-wise analytic integral formula", "perturbation derivative formulas"],
+  "frozen_states": {"calibration_valid": false, "experimental_validation": false, "detection_validated": false, "single_particle_diameter": "NOT_ESTIMATED"},
+  "p0_status": "OPEN",
   "rule7_new_authorizations": 0,
-  "overall": "TARGETED_REPAIR_AND_ADMISSION_SEALED"
+  "admission": {"LEGACY_NUMERICAL_FROZEN": true, "SOFTWARE_OPERATOR_FIXED_FIXTURES": "CERTIFIED", "METADATA_SCHEMA_VALID": true, "CONDITIONAL_MODEL_DESIGN_READY": true, "REAL_DEVICE_RELATIVE_FORWARD_GO": false, "ABSOLUTE_COUNT_GO": false, "ABSOLUTE_DIAMETER_VALIDATION_GO": false}
 }

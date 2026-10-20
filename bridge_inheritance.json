@@ -1,0 +1,8 @@
+{
+  "status": "INHERITED",
+  "basis": "spectral core functions (production_fft, independent_dft, compare_paths, _validate_bins), N/K0S/gate constants, and original input bytes unchanged from the v117 release",
+  "original_576_pass": 576,
+  "source_commit": "bbd03877252d1f9f1da34b8d736190600d434e26",
+  "v117_table_sha256": "f1720dcfb5e1ff9972a9ca2d084c353f0e540b2e260a1ae12671005e90c87412",
+  "v117_table_rows": 576
+}

@@ -169,6 +169,8 @@ def main():
     case('T10', 'T=0 rejected in count mode', t10)
 
     # T11: unified OperatorError with observable stage for static rejects (zero callbacks)
+    # FIXED (v117): per-case real booleans with entry/error-type/callback counts;
+    # aggregated over the actual boolean field (the v113-era unpack bug is gone).
     def t11():
         counter = [0]
         checks = []
@@ -189,18 +191,26 @@ def main():
                                                      time_tolerance_s=float('nan'),
                                                      spatial_weights=[[0.5, 0.5], [0.5, 0.5]],
                                                      mode='intensity'))):
+            before = counter[0]
             err = None
+            etype = None
             try:
                 fn()
             except oo.OperatorError as ex:
                 err = str(ex)
-            except Exception as ex:  # noqa: BLE001
-                err = 'LEAKED %s: %s' % (type(ex).__name__, ex)
-            checks.append((label, err is not None and 'OperatorError' not in err
-                           and ('LEAKED' not in err)))
-        calls_after = counter[0]
-        return (all(ok for ok, _ in checks) and calls_after == 0,
-                'all static rejects unified; callback calls=%d' % calls_after)
+                etype = 'OperatorError'
+            except Exception as ex:  # noqa: BLE001 - leakage recorded, never accepted
+                err = '%s' % ex
+                etype = type(ex).__name__
+            checks.append({'label': label, 'rejected': err is not None,
+                           'error_type': etype, 'error': (err or '')[:90],
+                           'callback_calls': counter[0] - before})
+            counter[0] = 0
+        all_rejected = all(c['rejected'] for c in checks)
+        all_operator = all(c['error_type'] == 'OperatorError' for c in checks)
+        zero_calls = all(c['callback_calls'] == 0 for c in checks)
+        return (all_rejected and all_operator and zero_calls,
+                json.dumps(checks))
     case('T11', 'static rejects unified OperatorError at zero callbacks', t11)
 
     # T12: fail-closed per-pixel in run_roi (forced corruption identified by pixel/bin)
@@ -224,6 +234,53 @@ def main():
             oo.production_fft = orig
     case('T12', 'run_roi per-pixel spectral gate failure fails closed', t12)
 
+    # ---- bounded mutations: silent return / TypeError leak must be DETECTED ----
+    def t11_checks_against(roi_impl):
+        saved = oo.run_roi
+        oo.run_roi = roi_impl
+        try:
+            counter = [0]
+            res = []
+            for label, fn in (
+                    ('k0s_empty', lambda: oo.run_roi(
+                        lambda t: (counter.__setitem__(0, counter[0] + 1) or [[1.0, 1.0], [2.0, 2.0]]),
+                        grid[:50], 1e-4, spatial_weights=[[0.5, 0.5], [0.5, 0.5]],
+                        mode='intensity', k0s=[])),
+                    ('nan_fs', lambda: oo.run_roi(
+                        lambda t: (counter.__setitem__(0, counter[0] + 1) or [[1.0, 1.0], [2.0, 2.0]]),
+                        grid[:50], 1e-4, fs=float('nan'),
+                        spatial_weights=[[0.5, 0.5], [0.5, 0.5]], mode='intensity'))):
+                err = None
+                etype = None
+                try:
+                    fn()
+                except oo.OperatorError as ex:
+                    err = str(ex)
+                    etype = 'OperatorError'
+                except Exception as ex:  # noqa: BLE001
+                    err = str(ex)
+                    etype = type(ex).__name__
+                res.append({'label': label, 'rejected': err is not None,
+                            'error_type': etype, 'callback_calls': counter[0]})
+                counter[0] = 0
+            return res
+        finally:
+            oo.run_roi = saved
+    all_detected = True
+    mut1 = t11_checks_against(lambda *a, **k: None)  # silent return mutation
+    detected1 = not all(c['rejected'] for c in mut1)
+    all_detected &= detected1
+    RESULTS.append({'id': 'MUT_silent_return', 'description': 'silently-returning run_roi must be '
+                    'caught by the T11 battery', 'pass': detected1,
+                    'detail': json.dumps(mut1)[:160]})
+    def leaky(*a, **k):
+        raise TypeError('object of type float has no len()')
+    mut2 = t11_checks_against(leaky)  # TypeError leak mutation
+    detected2 = not all(c['rejected'] and c['error_type'] == 'OperatorError' for c in mut2)
+    all_detected &= detected2
+    RESULTS.append({'id': 'MUT_typeerror_leak', 'description': 'TypeError-leaking run_roi must be '
+                    'caught by the T11 battery (not counted as compliant rejection)',
+                    'pass': detected2, 'detail': json.dumps(mut2)[:160]})
     return RESULTS
 
 if __name__ == '__main__':

@@ -40,6 +40,21 @@ def _finite_pos(x, name):
         raise OperatorError('INVALID_PARAMETER: %s must be positive finite' % name)
 
 
+def _require_real(x, name, positive=False, allow_zero=False):
+    """Shared static type/value rule for scalar parameters: real int/float or
+    numpy real; bool/complex/str/non-finite rejected; no silent float() casts."""
+    if isinstance(x, bool) or isinstance(x, complex) or isinstance(x, str) \
+            or not isinstance(x, (int, float, np.integer, np.floating)) \
+            or not math.isfinite(float(x)):
+        raise OperatorError('INVALID_PARAMETER: %s must be a real number' % name)
+    v = float(x)
+    if positive and not allow_zero and v <= 0:
+        raise OperatorError('INVALID_PARAMETER: %s must be positive' % name)
+    if not positive and not allow_zero and v < 0:
+        raise OperatorError('INVALID_PARAMETER: %s must be non-negative' % name)
+    return v
+
+
 def _legendre_nodes(n):
     nodes, weights = [], []
     for i in range(1, n + 1):
@@ -300,6 +315,14 @@ def run_pipeline(intensity_callback, timestamps, exposure_s, mode='intensity',
             raise OperatorError('INVALID_EXPOSURE: count modes require positive exposure')
         if kappa_e_per_U_per_s is None:
             raise OperatorError('MISSING_PARAMETER: kappa_e_per_U_per_s')
+        _require_real(kappa_e_per_U_per_s, 'kappa_e_per_U_per_s', positive=True)
+    if mode == 'dn':
+        if g_DN_per_e is None:
+            raise OperatorError('MISSING_PARAMETER: g_DN_per_e')
+        _require_real(g_DN_per_e, 'g_DN_per_e', positive=True)
+        if offset_DN is None:
+            raise OperatorError('MISSING_PARAMETER: offset_DN')
+        _require_real(offset_DN, 'offset_DN', allow_zero=True)
     k0s = _validate_bins(k0s)
     if pixel_weights is not None:
         pw = list(pixel_weights)
@@ -311,7 +334,13 @@ def run_pipeline(intensity_callback, timestamps, exposure_s, mode='intensity',
             raise OperatorError('INVALID_PIXEL_WEIGHT: weight sum must be positive')
 
     def J(t):
-        return weighted_pixel_average(intensity_callback(t), pixel_weights)
+        try:
+            return weighted_pixel_average(intensity_callback(t), pixel_weights)
+        except OperatorError:
+            raise
+        except Exception as exc:
+            raise OperatorError('CALLBACK_ERROR at intensity sampling (t=%.17g): %s'
+                                % (t, exc)) from exc
 
     series = []
     for tc in centers:
@@ -325,6 +354,12 @@ def run_pipeline(intensity_callback, timestamps, exposure_s, mode='intensity',
             series.append(dn_counts(electron_counts(Ibar, kappa_e_per_U_per_s, exposure_s),
                                     g_DN_per_e, offset_DN))
     mean_all = math.fsum(series) / len(series)
+    for v in series:
+        if not math.isfinite(v) or v < 0:
+            raise OperatorError('NON_FINITE_OR_NEGATIVE_OUTPUT: converted series failed '
+                                'finiteness/non-negativity before any return')
+    if not math.isfinite(mean_all):
+        raise OperatorError('NON_FINITE_OUTPUT: mean is not finite')
     if len(series) == N:
         fft_ok, cmp_rows, meta = compare_paths(series, mean_all, k0s=k0s)
         if not fft_ok:
@@ -367,7 +402,13 @@ def run_roi(intensity_callback, timestamps, exposure_s, *, spatial_weights,
     if spatial_weights is None:
         raise OperatorError('MISSING_PARAMETER: spatial_weights')
     k0s = _validate_bins(k0s)
-    W = [list(row) for row in spatial_weights]
+    if not hasattr(spatial_weights, '__len__'):
+        raise OperatorError('SPATIAL_WEIGHT_SHAPE: spatial_weights must be a (P, Q) matrix')
+    W = []
+    for row in spatial_weights:
+        if not hasattr(row, '__len__'):
+            raise OperatorError('SPATIAL_WEIGHT_SHAPE: each detector pixel needs a Q-weight row')
+        W.append(list(row))
     P = len(W)
     if P == 0:
         raise OperatorError('EMPTY_DETECTOR_AXIS')
@@ -396,9 +437,9 @@ def run_roi(intensity_callback, timestamps, exposure_s, *, spatial_weights,
                         or not math.isfinite(param):
                     raise OperatorError('INVALID_PARAMETER: %s' % name)
                 vals = [param] * P
-            for v in vals:
-                if not math.isfinite(v) or (positive and v <= 0):
-                    raise OperatorError('INVALID_PARAMETER: %s values must be positive finite' % name)
+            for i, v in enumerate(vals):
+                _require_real(v, '%s[%d]' % (name, i), positive=positive,
+                              allow_zero=(not positive))
             return vals
         kappas = per_pixel(kappa_e_per_U_per_s, 'kappa_e_per_U_per_s') \
             if mode in ('electron', 'dn') else None
@@ -444,12 +485,24 @@ def run_roi(intensity_callback, timestamps, exposure_s, *, spatial_weights,
     series = []
     for tc in centers:
         if instantaneous_limit:
-            frame = frame_rows(intensity_callback(tc))
+            try:
+                frame = frame_rows(intensity_callback(tc))
+            except OperatorError:
+                raise
+            except Exception as exc:
+                raise OperatorError('CALLBACK_ERROR at ROI instantaneous frame (t=%.17g): %s'
+                                    % (tc, exc)) from exc
             row = [weighted_pixel_average(frame[p], W[p]) for p in range(P)]
         else:
             acc = [0.0] * P
             for x, wq in zip(xs, ws):
-                frame = frame_rows(intensity_callback(tc + half * x))  # ONE call per node
+                try:
+                    frame = frame_rows(intensity_callback(tc + half * x))  # ONE call per node
+                except OperatorError:
+                    raise
+                except Exception as exc:
+                    raise OperatorError('CALLBACK_ERROR at ROI quadrature node (t=%.17g): %s'
+                                        % (tc + half * x, exc)) from exc
                 for p in range(P):
                     acc[p] += wq * math.fsum(wv * v for wv, v in zip(Wn[p], frame[p]))
             row = [a * half / exposure_s for a in acc]
@@ -466,6 +519,11 @@ def run_roi(intensity_callback, timestamps, exposure_s, *, spatial_weights,
         g_arr = np.asarray(gs, dtype=np.float64)
         arr = offs_arr[None, :] + g_arr[None, :] * mu_e
         mean_all = [offs[p] + gs[p] * mean_e[p] for p in range(P)]
+    if not np.isfinite(arr).all() or (mode in ('electron', 'dn') and (arr < 0).any()):
+        raise OperatorError('NON_FINITE_OR_NEGATIVE_OUTPUT: converted ROI series failed '
+                            'finiteness/non-negativity before any return')
+    if not all(math.isfinite(m) for m in mean_all):
+        raise OperatorError('NON_FINITE_OUTPUT: ROI mean is not finite')
     if arr.shape[0] != N:
         return {'centers': centers, 'series': arr, 'mean': mean_all, 'dft': None,
                 'note': 'partial pipeline: DFT requires full N grid'}

@@ -1,0 +1,14 @@
+{
+  "finding": "UPSTREAM_CONVENTION_CONFIRMED",
+  "old_contract": "exp(+i omega t) with n+i*kappa as absorption",
+  "upstream_evidence": {
+    "commit": "ce49f77f096337db8be54c46d83696d37b0b23d5",
+    "green_function": "exp(+i*k*r)/(4*pi*r) in Solver/+galerkin/+pot1/@std/eval2.m",
+    "plane_wave": "exp(+i*k*dir*r) in Solver/+galerkin/@planewave/fields.m",
+    "material": "epsilon = (n+i*kappa)^2 in Material/epstable.m"
+  },
+  "derived_convention": "exp(-i*omega*t)",
+  "verdict": "Old material contract time-convention label is inconsistent with upstream; positive Im(n) is compatible. Do NOT negate kappa, do NOT conjugate old X/C, do NOT rerun old results.",
+  "chain_status": "PROJECT_CHAIN_PENDING (actual build_system/patches not verified remotely)",
+  "action": "Fix documentation label; register optical carrier convention separately from ~400 Hz slow-time DFT"
+}

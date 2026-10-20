@@ -1,0 +1,8 @@
+{
+  "new_BEM_solves": {"status": "BLOCKED", "reason": "MATLAB/nanobem execution requires workstation setup; v119 contract allows up to 16 but none attempted in this execution context"},
+  "renders": {"status": "BLOCKED", "reason": "216 renders allowed but require BEM outputs; blocked by BEM"},
+  "new_observations": {"status": "BLOCKED", "reason": "64 full observations allowed but depend on renders; blocked"},
+  "local_response": {"status": "BLOCKED", "reason": "5-point D response requires BEM; blocked"},
+  "holdout": {"status": "BLOCKED", "reason": "2 holdout D requires BEM; blocked"},
+  "perturbation": {"status": "PARTIAL", "reason": "analytic exposure/timing derivations completed; full numerical perturbation requires BEM"}
+}

@@ -176,3 +176,22 @@ V117_TARGETED_ACCEPTANCE_REPAIR_AND_PHYSICAL_INPUT_CONTRACT per the independent 
 V116 original final ZIP (e8a4d8cb...) FOUND and hash-verified on this workstation -> V116_ARCHIVE_VERIFIED (clears the earlier UNVERIFIED flag without rebuilding anything). Final v117 ZIP sha256 a56eea50eb6e2b1787ec4f18ea2fc28ff998c6626bcfebc0bca01d80247eec0d; two-phase protocol; archive_integrity/numerical_accepted/archive_valid read separately from the checker JSON.
 ## Not claimed
 0 new BEM/render/optical-time-series/physics-states/experiment-video reads; 0 legacy recomputation; P0 OPEN; rule7=0; two physics pilots are DESIGN_ONLY with auto_physics_solves=0; no absolute diameter claim; same-type acceptance loops end here - next progress comes from real inputs and the bounded pilots.
+# v119 Review
+## Scope
+V119_CONTINUOUS_LOCAL_MODEL_AND_PILOT. Source frozen at v117 bbd0387 (v118 NOT_OBTAINED). Material convention finding: upstream NANOBEM uses exp(-i omega t), confirmed from ce49f77 source. Bridge 576/576 INHERITED. BEM-dependent stages BLOCKED (0/16 solves, 0/216 renders). Analytic exposure model delivered. Two DESIGN_ONLY pilots registered.
+## Completed
+- v117 baseline verification (all gates pass, exit=0)
+- Material convention: UPSTREAM_CONVENTION_CONFIRMED
+- Analytic exposure sinc table for 50/100/200us at 200/400/800Hz
+- Bridge INHERITED (functions and inputs unchanged)
+- BEM-dependent stages honestly marked BLOCKED
+- Four-layer admission maintained (all forward GO=false)
+## BLOCKED
+- New BEM solves (0/16)
+- Renders (0/216)
+- New observations (0/64)
+- Local D response 5-point (0/5)
+- Holdout D (0/2)
+- Perturbation projections (partial: analytic derivations only)
+## Not claimed
+P0 OPEN; rule7=0; calibration/experimental/detection=false; single_particle_diameter=NOT_ESTIMATED; no absolute diameter claim.
