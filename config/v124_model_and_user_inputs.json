@@ -1,0 +1,72 @@
+{
+  "schema": "iscat124.config.1",
+  "task": "V124_PHYSICAL_IPSF_CALIBRATION_AND_BLIND_INVERSION",
+  "source_repo_head": "v124 branch from v123r1@2c286d268c23d90347812d7981df1f56cbd3b401",
+  "rejected_history": {
+    "file": "tools/v123_physics.py",
+    "blob_at_v123r1": "31aa970435d4a7a8c21c67dd2a29b0f1807b200b",
+    "disposition": "PRESERVED_UNMODIFIED_AS_REJECTED_DIAGNOSTIC",
+    "reason": "scalar C(D,h) dimensionally invalid, x=0.5 discontinuous, n->nwater divergent; not used anywhere in V124"
+  },
+  "user_confirmed": {
+    "particle_state": {"value": "suspended", "source_class": "USER_CONFIRMED", "unit": "-"},
+    "medium": {"value": "pure_water", "source_class": "USER_CONFIRMED", "unit": "-"},
+    "temperature_C": {"value": 26.0, "source_class": "USER_CONFIRMED", "unit": "degC"},
+    "wavelength_nm": {"value": 520.0, "source_class": "USER_CONFIRMED", "unit": "nm"},
+    "camera_pixel_um": {"value": [14.0, 14.0], "source_class": "USER_CONFIRMED", "unit": "um"},
+    "objective_magnification": {"value": 50.0, "source_class": "USER_CONFIRMED", "unit": "x"},
+    "slide_present": {"value": false, "source_class": "USER_CONFIRMED", "unit": "-"}
+  },
+  "user_estimated": {
+    "glass_refractive_index": {"value": 1.5, "source_class": "USER_ESTIMATE", "unit": "-"},
+    "particle_index_close_to_water": {"value": true, "source_class": "USER_ESTIMATE", "unit": "-"}
+  },
+  "assumed": {
+    "n_water": {"value": 1.3353, "source_class": "MODEL_ASSUMPTION", "unit": "-", "note": "520nm, 26C"},
+    "n_glass": {"value": 1.5, "source_class": "MODEL_ASSUMPTION", "unit": "-"},
+    "particle_complex_n_scenarios": {"value": [[1.38, 0.0], [1.35, 0.0], [1.45, 0.0]], "source_class": "ASSUMED_SCENARIO", "unit": "-"},
+    "primary_particle_n": {"value": [1.38, 0.0], "source_class": "ASSUMED_SCENARIO", "unit": "-"},
+    "relay_magnification": {"value": 1.0, "source_class": "MODEL_ASSUMPTION", "unit": "x"},
+    "physical_pixel_nm": {"value": 280.0, "source_class": "CONDITIONAL_DERIVED", "unit": "nm/px", "check": "1000*camera_pixel_um/(objective_magnification*relay_magnification)"},
+    "collection_NA": {"value": 0.8, "source_class": "MODEL_ASSUMPTION", "unit": "-"},
+    "illumination": {"value": "normal_linear_x_from_glass", "source_class": "MODEL_ASSUMPTION", "unit": "-"},
+    "reference": {"value": "glass_water_interface_reflection", "source_class": "MODEL_ASSUMPTION", "unit": "-"},
+    "focus_nm": {"value": 450.0, "source_class": "MODEL_ASSUMPTION", "unit": "nm"},
+    "h_center_nm": {"value": [200.0, 1000.0], "source_class": "MODEL_ASSUMPTION", "unit": "nm"},
+    "min_gap_nm": {"value": 100.0, "source_class": "MODEL_ASSUMPTION", "unit": "nm"},
+    "exposure_us": {"value": 100.0, "source_class": "MODEL_ASSUMPTION", "unit": "us"},
+    "exposure_control_us": {"value": 25.0, "source_class": "MODEL_ASSUMPTION", "unit": "us"},
+    "synthetic_fs_hz": {"value": 5000.0, "source_class": "ANALYSIS_ASSUMPTION", "unit": "Hz"},
+    "roi_pixels": {"value": [17, 17], "source_class": "MODEL_DISCRETIZATION", "unit": "px"},
+    "subpixel_quadrature": {"value": [5, 5], "source_class": "MODEL_DISCRETIZATION", "unit": "subpx/px"},
+    "dynamic_viscosity_mPa_s": {"value": 0.870, "source_class": "MODEL_ASSUMPTION", "unit": "mPa.s"},
+    "noise_background_e_per_pix": {"value": 10000.0, "source_class": "MODEL_ASSUMPTION", "unit": "e-/pix"},
+    "noise_read_e": {"value": 2.0, "source_class": "MODEL_ASSUMPTION", "unit": "e-"}
+  },
+  "grid": {
+    "train_D_nm": [30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200],
+    "train_h_nm_start_step_end": [200,25,1000],
+    "holdout_D_nm": [35,55,85,115,145,185],
+    "holdout_h_nm": [237.5,512.5,887.5],
+    "holdout_h_note": "BEM-only path: each (D,h) pair is an independent BEM solve; holdout-h joint grid is budget-blocked, reported as such"
+  },
+  "forward": {
+    "engine": "NANOBEM stratified BEM + vector iSCAT imaging (build_system/render_system)",
+    "nanobem_commit": "ce49f77f096337db8be54c46d83696d37b0b23d5",
+    "mesh_train": 576,
+    "mesh_reference": 1444,
+    "ntheta": 50,
+    "nphi": 51,
+    "bessel_table_points": 2001,
+    "time_convention": "exp(-iomega t)"
+  },
+  "budget": {
+    "bem_system_max": 64,
+    "render_max": 240,
+    "fast_direct_cases_max": 5000,
+    "synthetic_frames_max": 1600,
+    "wall_clock_hours_max": 12,
+    "heavy_process_concurrent_max": 1
+  },
+  "scientific_status_initial": "UNVALIDATED_CONDITIONAL_MODEL"
+}
