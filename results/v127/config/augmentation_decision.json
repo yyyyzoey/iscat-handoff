@@ -1,0 +1,19 @@
+{
+ "schema": "iscat127.augmentation_decision.1",
+ "decision": "ONE_FULL_H_ROW_AT_387.5nm",
+ "basis": "P2 LOO interval scores: max h-interval normalized error 0.01117 in [375,400] dominates max D-interval 0.00097 by 11x; rule=pick interval class with max reducible normalized error, midpoint of worst interval",
+ "new_h_nm": 387.5,
+ "new_D_nm": [
+  30,
+  50,
+  70,
+  100,
+  130,
+  160,
+  200
+ ],
+ "new_systems": 7,
+ "budget_after": "13/16 with K6",
+ "selected_before_K": true,
+ "note": "no K observation opened at decision time"
+}

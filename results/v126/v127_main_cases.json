@@ -1,0 +1,273 @@
+{
+ "cases": [
+  {
+   "tag": "hrow_D30",
+   "D_nm": 30.0,
+   "h_nm": 387.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "hrow_D50",
+   "D_nm": 50.0,
+   "h_nm": 387.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "hrow_D70",
+   "D_nm": 70.0,
+   "h_nm": 387.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "hrow_D100",
+   "D_nm": 100.0,
+   "h_nm": 387.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "hrow_D130",
+   "D_nm": 130.0,
+   "h_nm": 387.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "hrow_D160",
+   "D_nm": 160.0,
+   "h_nm": 387.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "hrow_D200",
+   "D_nm": 200.0,
+   "h_nm": 387.5,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 576,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    }
+   ]
+  },
+  {
+   "tag": "holdout_K01",
+   "D_nm": 47.0,
+   "h_nm": 381.25,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      84.0,
+      -56.0
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_K02",
+   "D_nm": 73.0,
+   "h_nm": 406.25,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      -98.0,
+      70.0
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_K03",
+   "D_nm": 107.0,
+   "h_nm": 431.25,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      56.0,
+      112.0
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_K04",
+   "D_nm": 137.0,
+   "h_nm": 456.25,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      -70.0,
+      -98.0
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_K05",
+   "D_nm": 163.0,
+   "h_nm": 481.25,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      112.0,
+      -70.0
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_K06",
+   "D_nm": 193.0,
+   "h_nm": 518.75,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      -84.0,
+      98.0
+     ]
+    }
+   ]
+  }
+ ]
+}

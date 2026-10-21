@@ -1,0 +1,9 @@
+file,node,verified,note
+v126_Dh_train_fields.h5,FILE,True,63 nodes sha256=5062eb0a7fdbbb33
+"new_holdout_images.h5 (V126, dev)",J01,True,
+"new_holdout_images.h5 (V126, dev)",J02,True,
+"new_holdout_images.h5 (V126, dev)",J03,True,
+"new_holdout_images.h5 (V126, dev)",J04,True,
+"new_holdout_images.h5 (V126, dev)",J05,True,
+"new_holdout_images.h5 (V126, dev)",J06,True,
+config,pixel_scale,True,object=280.0 fine=56.0

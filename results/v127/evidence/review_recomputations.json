@@ -1,0 +1,364 @@
+{
+  "review_scope": "Recomputed from explicitly transcribed published six-row table; source-equivalent small fixtures, not H5/BEM replay",
+  "v126_commit": "b546d80beb0dc4789effac8c192896e5f45876e9",
+  "local_received_v126_contract": {
+    "bytes": 42267,
+    "sha256": "2be5fb28f3a38d6a36475b6090c9410ff080338104d599fe4fc6bdb60951a536",
+    "git_blob_sha1": "f7a47b0c3b607e2fd814185dbaf09fccc87221fb"
+  },
+  "holdout_rows": [
+    {
+      "case": "J01",
+      "D_true_nm": 41.0,
+      "D_est_nm": 33.93322283462359,
+      "error_nm": -7.066777165376408,
+      "contract_error_goal_nm": 5.0,
+      "error_only_meets_goal": false
+    },
+    {
+      "case": "J02",
+      "D_true_nm": 67.0,
+      "D_est_nm": 67.48123236405084,
+      "error_nm": 0.4812323640508396,
+      "contract_error_goal_nm": 6.7,
+      "error_only_meets_goal": true
+    },
+    {
+      "case": "J03",
+      "D_true_nm": 89.0,
+      "D_est_nm": 90.83028724479271,
+      "error_nm": 1.8302872447927143,
+      "contract_error_goal_nm": 8.9,
+      "error_only_meets_goal": true
+    },
+    {
+      "case": "J04",
+      "D_true_nm": 123.0,
+      "D_est_nm": 126.6535642093631,
+      "error_nm": 3.653564209363097,
+      "contract_error_goal_nm": 12.3,
+      "error_only_meets_goal": true
+    },
+    {
+      "case": "J05",
+      "D_true_nm": 151.0,
+      "D_est_nm": 159.00091654016853,
+      "error_nm": 8.000916540168532,
+      "contract_error_goal_nm": 15.100000000000001,
+      "error_only_meets_goal": true
+    },
+    {
+      "case": "J06",
+      "D_true_nm": 183.0,
+      "D_est_nm": 199.99999999999974,
+      "error_nm": 16.999999999999744,
+      "contract_error_goal_nm": 18.3,
+      "error_only_meets_goal": true
+    }
+  ],
+  "summary": {
+    "n": 6,
+    "bias_nm": 3.9832038654997532,
+    "mae_nm": 6.338796253958556,
+    "rmse_nm": 8.365445519182057,
+    "median_absolute_nm": 5.360170687369752,
+    "max_absolute_nm": 16.999999999999744,
+    "within_8nm": 4,
+    "error_only_contract_goal_count": 5
+  },
+  "profile_grid": {
+    "code": "np.arange(30.,200.+1e-9,4.)",
+    "last_D": 198.0,
+    "contains_200": false
+  },
+  "M2_resolution": {
+    "method": "source exposes 2nm fixed grid near a single winning D node, not continuous optimization",
+    "max_support_examples": {
+      "30.0": [
+        30.0,
+        32.0,
+        34.0,
+        36.0,
+        38.0,
+        40.0,
+        42.0
+      ],
+      "50.0": [
+        38.0,
+        40.0,
+        42.0,
+        44.0,
+        46.0,
+        48.0,
+        50.0,
+        52.0,
+        54.0,
+        56.0,
+        58.0,
+        60.0,
+        62.0
+      ],
+      "70.0": [
+        58.0,
+        60.0,
+        62.0,
+        64.0,
+        66.0,
+        68.0,
+        70.0,
+        72.0,
+        74.0,
+        76.0,
+        78.0,
+        80.0,
+        82.0
+      ],
+      "100.0": [
+        88.0,
+        90.0,
+        92.0,
+        94.0,
+        96.0,
+        98.0,
+        100.0,
+        102.0,
+        104.0,
+        106.0,
+        108.0,
+        110.0,
+        112.0
+      ],
+      "130.0": [
+        118.0,
+        120.0,
+        122.0,
+        124.0,
+        126.0,
+        128.0,
+        130.0,
+        132.0,
+        134.0,
+        136.0,
+        138.0,
+        140.0,
+        142.0
+      ],
+      "160.0": [
+        148.0,
+        150.0,
+        152.0,
+        154.0,
+        156.0,
+        158.0,
+        160.0,
+        162.0,
+        164.0,
+        166.0,
+        168.0,
+        170.0,
+        172.0
+      ],
+      "200.0": [
+        188.0,
+        190.0,
+        192.0,
+        194.0,
+        196.0,
+        198.0,
+        200.0
+      ]
+    }
+  },
+  "binomial_3_of_60": {
+    "published_code_beta_4_58": 0.12223140113067367,
+    "exact_CP_beta_4_57": 0.12418721047743608,
+    "zero_of_60_upper": 0.04870291331009746
+  },
+  "optical_agnostic_gtol_fixture": {
+    "truth": 83.7,
+    "default_gtol_result": 100.0,
+    "default_status": 1,
+    "default_nfev": 1,
+    "scaled_result": 83.7,
+    "scaled_status": 1,
+    "important": "Demonstrates success flag insufficiency, not proof of the cause of a particular optical case"
+  },
+  "source_equivalent_trajectory_support": [
+    {
+      "D": 55.0,
+      "track": 0,
+      "exposure_us": 25.0,
+      "height_outside_frames": 0,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 55.0,
+      "track": 0,
+      "exposure_us": 100.0,
+      "height_outside_frames": 1,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 55.0,
+      "track": 1,
+      "exposure_us": 25.0,
+      "height_outside_frames": 0,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 55.0,
+      "track": 1,
+      "exposure_us": 100.0,
+      "height_outside_frames": 1,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 55.0,
+      "track": 2,
+      "exposure_us": 25.0,
+      "height_outside_frames": 4,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 55.0,
+      "track": 2,
+      "exposure_us": 100.0,
+      "height_outside_frames": 4,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 55.0,
+      "track": 3,
+      "exposure_us": 25.0,
+      "height_outside_frames": 2,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 55.0,
+      "track": 3,
+      "exposure_us": 100.0,
+      "height_outside_frames": 2,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 115.0,
+      "track": 0,
+      "exposure_us": 25.0,
+      "height_outside_frames": 4,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 115.0,
+      "track": 0,
+      "exposure_us": 100.0,
+      "height_outside_frames": 4,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 115.0,
+      "track": 1,
+      "exposure_us": 25.0,
+      "height_outside_frames": 3,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 115.0,
+      "track": 1,
+      "exposure_us": 100.0,
+      "height_outside_frames": 3,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 115.0,
+      "track": 2,
+      "exposure_us": 25.0,
+      "height_outside_frames": 2,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 115.0,
+      "track": 2,
+      "exposure_us": 100.0,
+      "height_outside_frames": 3,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 115.0,
+      "track": 3,
+      "exposure_us": 25.0,
+      "height_outside_frames": 1,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 115.0,
+      "track": 3,
+      "exposure_us": 100.0,
+      "height_outside_frames": 1,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 185.0,
+      "track": 0,
+      "exposure_us": 25.0,
+      "height_outside_frames": 2,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 185.0,
+      "track": 0,
+      "exposure_us": 100.0,
+      "height_outside_frames": 3,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 185.0,
+      "track": 1,
+      "exposure_us": 25.0,
+      "height_outside_frames": 0,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 185.0,
+      "track": 1,
+      "exposure_us": 100.0,
+      "height_outside_frames": 0,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 185.0,
+      "track": 2,
+      "exposure_us": 25.0,
+      "height_outside_frames": 0,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 185.0,
+      "track": 2,
+      "exposure_us": 100.0,
+      "height_outside_frames": 0,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 185.0,
+      "track": 3,
+      "exposure_us": 25.0,
+      "height_outside_frames": 0,
+      "xy_outside_frames": 0
+    },
+    {
+      "D": 185.0,
+      "track": 3,
+      "exposure_us": 100.0,
+      "height_outside_frames": 0,
+      "xy_outside_frames": 0
+    }
+  ],
+  "support_violations_frames_out_of_192": 40,
+  "camera_events_single_complete_code_execution": {
+    "E": 5454,
+    "F_if_192_frames": 1728,
+    "sum": 7182,
+    "published_resource_csv": 5670,
+    "not_actual_run_audit": true
+  }
+}

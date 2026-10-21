@@ -1,0 +1,46 @@
+{
+ "schema": "iscat127.status.1",
+ "task_id": "V127_CANONICAL_CALIBRATION_ACCEPTANCE_AND_SUSPENDED_PARTICLE_SIZING",
+ "fixed_source_commit": "b546d80beb0dc4789effac8c192896e5f45876e9",
+ "stages": {
+  "P0": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "P1": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "P2": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "P3": {
+   "execution": "COMPLETED",
+   "validation": "PARTIAL",
+   "evidence": "COMPLETE"
+  },
+  "P4": {
+   "execution": "COMPLETED",
+   "validation": "PARTIAL",
+   "evidence": "COMPLETE"
+  },
+  "P5": {
+   "execution": "NOT_EVALUATED",
+   "validation": "NOT_EVALUATED",
+   "evidence": "MISSING"
+  }
+ },
+ "budget": {
+  "bem": 13,
+  "renders": 32,
+  "exposure": 5454
+ },
+ "scientific_claims": {
+  "C_MAP_FORWARD_INSUFFICIENT_FOR_BLIND_INVERSION": true,
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+ }
+}

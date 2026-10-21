@@ -1,0 +1,8 @@
+{
+  "scope": "Unit tests of supplied general-purpose helpers; NOT tests of the remote optical model or future V127 scientific results",
+  "timestamp_utc": "2026-10-21T07:45:37.794875+00:00",
+  "returncode": 0,
+  "tests_executed": 14,
+  "stdout": "",
+  "stderr": "test_budget_failure_counted_and_reservation_hard (test_contract_core.TestCore.test_budget_failure_counted_and_reservation_hard) ... ok\ntest_coarse_uses_own_grid (test_contract_core.TestCore.test_coarse_uses_own_grid) ... ok\ntest_complex_before_cast (test_contract_core.TestCore.test_complex_before_cast) ... ok\ntest_continuous_scalar_fixture_not_lattice (test_contract_core.TestCore.test_continuous_scalar_fixture_not_lattice) ... ok\ntest_cp_exact (test_contract_core.TestCore.test_cp_exact) ... ok\ntest_default_gtol_false_precision_fixture (test_contract_core.TestCore.test_default_gtol_false_precision_fixture) ... ok\ntest_domain_inside (test_contract_core.TestCore.test_domain_inside) ... ok\ntest_domain_reject_not_clip (test_contract_core.TestCore.test_domain_reject_not_clip) ... ok\ntest_exact_window_endpoints (test_contract_core.TestCore.test_exact_window_endpoints) ... ok\ntest_partial_window_refused (test_contract_core.TestCore.test_partial_window_refused) ... ok\ntest_path_physical_support (test_contract_core.TestCore.test_path_physical_support) ... ok\ntest_profile_endpoints_witness (test_contract_core.TestCore.test_profile_endpoints_witness) ... ok\ntest_reportable_requires_identifiability (test_contract_core.TestCore.test_reportable_requires_identifiability) ... ok\ntest_unknown_not_pass (test_contract_core.TestCore.test_unknown_not_pass) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.026s\n\nOK\n"
+}

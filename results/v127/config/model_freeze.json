@@ -1,0 +1,7 @@
+{
+ "schema": "iscat127.model_freeze.1",
+ "selected_candidate": "F1",
+ "frozen_before_K_inversion": true,
+ "forward": "canonical F1: complex-field D/h bilinear, Es shifted, Eref fixed",
+ "augmentation": "one_full_h_row_at_387.5nm (7 new systems, LOO-selected)"
+}

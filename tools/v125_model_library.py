@@ -80,6 +80,28 @@ def _cplx(ds):
     arr = a['real'] + 1j * a['imag']
     return np.transpose(arr, (2, 1, 0))
 
+def index_v126_renders(outdir):
+    """Index V126 renders from the v126 cache_key_map (short hashed names)."""
+    import csv as _csv, re as _re
+    amap = {}
+    p = os.path.join(outdir, 'logs', 'cache_key_map.csv')
+    if not os.path.isfile(p):
+        return {}
+    for r in _csv.DictReader(open(p, newline='')):
+        amap[r['full_key']] = r['file']
+    out = {}
+    pat = _re.compile(r'^(?P<img>.+?)__(?P<solver>.+?)__(?P<tag>.+?)__'
+                     + r'(?P<phys>D[-0-9.]+_h[-0-9.]+_np[-+0-9.]+_mesh[0-9]+)__'
+                     + r'(?P<variant>.+?)(?:_dx(?P<dx>-?[0-9.]+))?(?:_dy(?P<dy>-?[0-9.]+))?$')
+    for full, fname in amap.items():
+        mm = pat.match(full)
+        if not mm: continue
+        dx = float(mm['dx']) if mm['dx'] else 0.0
+        dy = float(mm['dy']) if mm['dy'] else 0.0
+        fp = fname if os.path.isabs(fname) else os.path.join(vml_repo_root(), fname)
+        out[(mm['tag'], mm['variant'], dx, dy)] = fp
+    return out
+
 def vml_repo_root():
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -117,6 +139,7 @@ def _node_tag(D, h):
 def build_train_library(outdir=OUT):
     """Assemble v125_Dh_train_fields.h5 from V124-verified + new V125 renders."""
     rend = index_v125_renders(outdir)
+    rend.update(index_v126_renders(outdir))
     # V124 fallback for the 15 reusable nodes (identity verified at intake)
     v124_idx = {}
     for m, p in vc.iter_renders(V124):

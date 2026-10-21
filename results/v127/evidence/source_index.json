@@ -1,0 +1,98 @@
+{
+  "R01": {
+    "path": "results/v126/status.json",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/status.json"
+  },
+  "R02": {
+    "path": "results/v126/review.md",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/review.md"
+  },
+  "R03": {
+    "path": "results/v126/validation/holdout_per_particle.csv",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/validation/holdout_per_particle.csv"
+  },
+  "R04": {
+    "path": "results/v126/validation/holdout_truth_validator_only.json",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/validation/holdout_truth_validator_only.json"
+  },
+  "R05": {
+    "path": "tools/v126_invert_particle.py",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/tools/v126_invert_particle.py"
+  },
+  "R06": {
+    "path": "tools/v126_forward_model.py",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/tools/v126_forward_model.py"
+  },
+  "R07": {
+    "path": "tools/v126_camera_and_thresholds.py",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/tools/v126_camera_and_thresholds.py"
+  },
+  "R08": {
+    "path": "tools/v126_exposure.py",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/tools/v126_exposure.py"
+  },
+  "R09": {
+    "path": "tools/v126_error_separation.py",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/tools/v126_error_separation.py"
+  },
+  "R10": {
+    "path": "results/v126/diagnostics/error_separation_I1.csv",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/diagnostics/error_separation_I1.csv"
+  },
+  "R11": {
+    "path": "results/v126/diagnostics/error_separation_I2.csv",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/diagnostics/error_separation_I2.csv"
+  },
+  "R12": {
+    "path": "results/v126/config/model_freeze.json",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/config/model_freeze.json"
+  },
+  "R13": {
+    "path": "results/v126/qualification/corrected_pairwise_numerics.csv",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/qualification/corrected_pairwise_numerics.csv"
+  },
+  "R14": {
+    "path": "results/v126/qualification/axis_and_nonzero_shift.csv",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/qualification/axis_and_nonzero_shift.csv"
+  },
+  "R15": {
+    "path": "results/v126/validation/fine_coarse_integral.csv",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/validation/fine_coarse_integral.csv"
+  },
+  "R16": {
+    "path": "results/v126/logs/resource_budget.csv",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/logs/resource_budget.csv"
+  },
+  "R17": {
+    "path": "tools/v126_intake_and_budget.py",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/tools/v126_intake_and_budget.py"
+  },
+  "R18": {
+    "path": "tools/v126_packaging.py",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/tools/v126_packaging.py"
+  },
+  "R19": {
+    "path": "results/v126_external_receipt.json",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126_external_receipt.json"
+  },
+  "R20": {
+    "path": "results/v126_science_validation.json",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126_science_validation.json"
+  },
+  "R21": {
+    "path": "results/v126/contract/01_V126_执行合同.md",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/contract/01_V126_执行合同.md"
+  },
+  "R22": {
+    "path": "results/v126/validation/motion_per_track.csv",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/results/v126/validation/motion_per_track.csv"
+  },
+  "R23": {
+    "path": "tools/v126_run_holdouts.py",
+    "url": "https://github.com/yyyyzoey/iscat-handoff/blob/b546d80beb0dc4789effac8c192896e5f45876e9/tools/v126_run_holdouts.py"
+  },
+  "X01": {
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html",
+    "scope": "Primary documentation for least_squares/x_scale/gtol; do not require upgrading workstation SciPy or use newly added callback APIs."
+  }
+}

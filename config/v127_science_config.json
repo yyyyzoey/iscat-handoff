@@ -1,0 +1,374 @@
+{
+  "schema": "iscat127.plan.1",
+  "task_id": "V127_CANONICAL_CALIBRATION_ACCEPTANCE_AND_SUSPENDED_PARTICLE_SIZING",
+  "plan_not_executed": true,
+  "repo": "yyyyzoey/iscat-handoff",
+  "source_commit": "b546d80beb0dc4789effac8c192896e5f45876e9",
+  "authority": "01_V126审查与V127完整执行合同.md; cases/config and manuscript generated from this JSON, no script-local duplicated truth",
+  "user_confirmed": {
+    "particle_state": "suspended",
+    "medium": "pure_water",
+    "temperature_C": 26,
+    "wavelength_nm": 520,
+    "camera_pixel_um": [
+      14,
+      14
+    ],
+    "objective_nominal_magnification": 50,
+    "slide_present": false
+  },
+  "user_estimates": {
+    "glass_index": 1.5,
+    "particle_index_close_to_water": true
+  },
+  "assumptions": {
+    "n_water": 1.3353,
+    "n_glass": 1.5,
+    "particle_n_re_im": [
+      1.38,
+      0.0
+    ],
+    "diameter_type": "UNIFORM_SPHERE_OPTICAL_EQUIVALENT",
+    "NA": 0.8,
+    "relay_magnification": 1.0,
+    "object_pixel_nm": 280.0,
+    "focus_nm": 450.0,
+    "reference": "glass_water_interface",
+    "illumination": "normal_linear_x_from_glass",
+    "time_convention": "exp(-iomega_t)",
+    "viscosity_mPa_s": 0.87,
+    "hydrodynamic_diameter_equals_optical": "generation_only_assumption",
+    "read_noise_e": 2.0
+  },
+  "domain": {
+    "D_nm": [
+      30.0,
+      200.0
+    ],
+    "h_nm": [
+      350.0,
+      550.0
+    ],
+    "x_nm": [
+      -500.0,
+      500.0
+    ],
+    "y_nm": [
+      -500.0,
+      500.0
+    ],
+    "min_gap_nm": 100.0,
+    "policy": "RAISE_OUT_OF_DOMAIN; no clipping; applied to every public forward and every exposure node"
+  },
+  "imaging": {
+    "camera_axes": [
+      "camera_x",
+      "camera_y"
+    ],
+    "native_camera_pixels": [
+      17,
+      17
+    ],
+    "wide_camera_pixels": [
+      25,
+      25
+    ],
+    "subpixels": [
+      5,
+      5
+    ],
+    "score_slice": [
+      [
+        2,
+        15
+      ],
+      [
+        2,
+        15
+      ]
+    ],
+    "native_pixel_nm": 280.0,
+    "fine_grid_step_nm": 56.0,
+    "image_domain_shift_step": "native 280nm; never use fine 56nm for camera image shift"
+  },
+  "reuse": {
+    "train_D_nm": [
+      30.0,
+      50.0,
+      70.0,
+      100.0,
+      130.0,
+      160.0,
+      200.0
+    ],
+    "train_h_nm": [
+      350.0,
+      375.0,
+      400.0,
+      425.0,
+      450.0,
+      475.0,
+      500.0,
+      525.0,
+      550.0
+    ],
+    "nodes": 63,
+    "H_and_J_role": "DEVELOPMENT_DIAGNOSTIC_ONLY",
+    "old_match_gate": {
+      "threshold": 1e-10,
+      "status": "RETAIN_HISTORICAL_FAIL_UNLESS_SAME_GATE_TRULY_PASSES"
+    }
+  },
+  "forward_candidates": [
+    "F1_COMPLEX_BILINEAR_BASELINE",
+    "F2_COMPLEX_TENSOR_CUBIC",
+    "F3_D3_SCALED_COMPLEX_TENSOR_CUBIC"
+  ],
+  "forward_selection": {
+    "max_candidates": 3,
+    "D_reference_nm": 100.0,
+    "cubic_boundary": "not-a-knot fixed",
+    "complex_parts": "real/imag separately, shared physical phase; no per-node arbitrary phase alignment",
+    "reference_field": "check equal reference first; do not average incompatible paths",
+    "selection": "qualify domain/axes/nodes/closure, then rank old development max relative field-image discrepancy and D error; freeze before K",
+    "node_same_array_abs_C_tol": 1e-12,
+    "wide_vs_standard": "separate imaging discretization diagnostic, never label same-array exactness"
+  },
+  "optimization": {
+    "method": "least_squares_trf",
+    "loss": "linear",
+    "x_scale": [
+      50.0,
+      50.0,
+      140.0,
+      140.0
+    ],
+    "clean_residual_scale": "max(norm(Y),1e-6), fixed per observation; both data and prediction residual divided by same constant; not a fitted amplitude",
+    "gtol": 1e-12,
+    "ftol": 1e-12,
+    "xtol": 1e-10,
+    "single_starts": 6,
+    "single_nfev_per_start": 800,
+    "single_forward_cap": 20000,
+    "profile_step_nm": 2.0,
+    "profile_include_D": [
+      30.0,
+      200.0
+    ],
+    "profile_include_joint_solutions": true,
+    "profile_starts_per_D": 4,
+    "profile_nfev_per_start": 200,
+    "profile_forward_cap": 300000,
+    "profile_loss_guard": "at same D, optimum may not exceed any actually evaluated valid witness; exact witness on each profile row saved",
+    "multiframe_continuous_D": true,
+    "multiframe_parameters": "1+3*K; concatenated residual or equivalent properly profiled squared objective",
+    "multiframe_starts": 3,
+    "multiframe_forward_cap": 150000,
+    "budget_stop": "exception and PARTIAL, no artificial loss; keep independent per-start actual best",
+    "complex_step_jacobian": false
+  },
+  "augmentation": {
+    "default": "none",
+    "trigger": "only after reproducible optimizer closure; finite old-data forward error remains dominant; freeze before K",
+    "options": [
+      "one_full_D_row_at_midpoint_of_selected_old_D_cell",
+      "one_full_h_row_at_midpoint_of_selected_old_h_cell"
+    ],
+    "max_new_systems": 9,
+    "at_most_one_row": true,
+    "complete_rectangle_required": true,
+    "allow_extra_qualification_new_systems": 1,
+    "never_use_K_for_selection": true
+  },
+  "new_holdouts_validator_only": [
+    {
+      "case": "K01",
+      "D_nm": 47.0,
+      "h_nm": 381.25,
+      "x_nm": 84.0,
+      "y_nm": -56.0,
+      "mesh_request": 1444
+    },
+    {
+      "case": "K02",
+      "D_nm": 73.0,
+      "h_nm": 406.25,
+      "x_nm": -98.0,
+      "y_nm": 70.0,
+      "mesh_request": 1444
+    },
+    {
+      "case": "K03",
+      "D_nm": 107.0,
+      "h_nm": 431.25,
+      "x_nm": 56.0,
+      "y_nm": 112.0,
+      "mesh_request": 1444
+    },
+    {
+      "case": "K04",
+      "D_nm": 137.0,
+      "h_nm": 456.25,
+      "x_nm": -70.0,
+      "y_nm": -98.0,
+      "mesh_request": 1444
+    },
+    {
+      "case": "K05",
+      "D_nm": 163.0,
+      "h_nm": 481.25,
+      "x_nm": 112.0,
+      "y_nm": -70.0,
+      "mesh_request": 1444
+    },
+    {
+      "case": "K06",
+      "D_nm": 193.0,
+      "h_nm": 518.75,
+      "x_nm": -84.0,
+      "y_nm": 98.0,
+      "mesh_request": 1444
+    }
+  ],
+  "reportability": {
+    "clean_error_target_nm": "max(5,0.1*D_true); validator only, not target-selected fitting",
+    "need": [
+      "detected_if_detection_assessed",
+      "converged_and_restart_stable",
+      "forward_qualified_at_conditions",
+      "in_domain",
+      "all_competing_profiles_evaluated",
+      "diameter_identifiable",
+      "no_unresolved_boundary_dependence"
+    ],
+    "clean_compatibility": "Qcut=(sqrt(Qmin)+epsilon_dev)^2; old dev only; empirical not certified bound",
+    "noise_compatibility": "Qcut=Qmin+per_B_dev_p95(Qtrue-Qbest), forbid negative deltas beyond floating tolerance",
+    "width_max_nm": "2*max(5,0.1*Dhat)",
+    "candidate_D_retained_if_finite": true,
+    "reportable_D_on_fail": null,
+    "claim": "conditional optical equivalent only"
+  },
+  "noise": {
+    "background_e_at_100us": [
+      1000.0,
+      10000.0,
+      100000.0
+    ],
+    "read_noise_e": 2.0,
+    "reference_frames": 8,
+    "dev_D_nm": [
+      50.0,
+      100.0,
+      160.0,
+      200.0
+    ],
+    "dev_h_nm": [
+      375.0,
+      425.0,
+      475.0,
+      525.0
+    ],
+    "dev_target_reps_per_B": 2,
+    "dev_blank_per_B": 80,
+    "validation_blank_per_B": 60,
+    "holdout_reps_per_B": 5,
+    "threshold_rule": "T=Qnull-Qfit; per-B max of dev blanks, strict greater; no target-based lowering",
+    "fpr_one_sided_confidence": 0.95,
+    "fpr_upper_target": 0.05,
+    "cp_formula": "k<n: Beta.ppf(.95,k+1,n-k); k=n:1; k=0 use stable exact expression",
+    "primary_fit": "fixed low-contrast GLS using estimated background; multi-frame shared-reference rank-one covariance",
+    "raw_arrays_required": true,
+    "seeds": {
+      "dev_target": 127110,
+      "dev_blank": 127220,
+      "validation_blank": 127330,
+      "holdout_noise": 127440,
+      "motion_path": 127550,
+      "motion_noise": 127660
+    }
+  },
+  "motion": {
+    "D_nm": [
+      55.0,
+      115.0,
+      185.0
+    ],
+    "tracks_per_D": 4,
+    "frames_per_track": 8,
+    "min_valid_frames": 4,
+    "Fs_Hz": 5000.0,
+    "exposures_us": [
+      25.0,
+      100.0
+    ],
+    "fine_dt_us": 1.25,
+    "coarse_dt_us": 2.5,
+    "substep_refine_us_if_needed": 0.625,
+    "path_refinement": "Brownian bridge conditioned on saved fine increments with fixed auxiliary seed; do not redraw old points",
+    "time_endpoints": "insert exact endpoints; reject partial temporal coverage; nonuniform trapezoid weights",
+    "support": "each exposure separately checked on physical and model domains before forward call",
+    "reference_per_track_per_exposure": 8,
+    "frame_reference_common": true,
+    "template_scope": "INSTANTANEOUS_TEMPLATE_UNDER_BLUR unless a separately validated exposure-aware inverse is used",
+    "model_evidence": "SHARED_SURROGATE_DIAGNOSTIC",
+    "refine_rel_C_target": 0.005,
+    "absolute_C_error_also_report": true,
+    "paired_valid_frames_required_for_comparison": true
+  },
+  "budgets": {
+    "new_bem_attempts": 16,
+    "qualification_max": 1,
+    "augmentation_max": 9,
+    "blind_L1": 6,
+    "new_render_attempts": 128,
+    "synthetic_exposure_events": 6000,
+    "nominal_exposure_events": 5838,
+    "heavy_concurrent": 1,
+    "wall_clock_hours": 12,
+    "archive_reserve_minutes": 30,
+    "reserve_before_dispatch": true,
+    "all_failures_count": true,
+    "cache_reads_not_solves": true,
+    "never_refund_executed_attempts": true
+  },
+  "expected_artifacts": {
+    "stage0": [
+      "logs/source_identity.json",
+      "logs/cache_identity.csv",
+      "validation/contract_conformance.json"
+    ],
+    "stage1": [
+      "diagnostics/old_HJ_recomputed.csv",
+      "diagnostics/canonical_closure.csv",
+      "config/model_freeze.json"
+    ],
+    "stage2": [
+      "validation/holdout_per_particle.csv",
+      "validation/holdout_images.h5",
+      "validation/profile_results.h5"
+    ],
+    "stage3": [
+      "validation/noise_per_trial.csv",
+      "validation/blank_per_trial.csv",
+      "validation/raw_camera_data.h5"
+    ],
+    "stage4": [
+      "validation/motion_per_track.csv",
+      "validation/trajectories_and_exposure.h5"
+    ],
+    "always": [
+      "status.json",
+      "review.md",
+      "config/effective_config.json",
+      "logs/event_ledger.jsonl",
+      "logs/actual_commands_and_errors.txt",
+      "logs/resource_budget.csv",
+      "source/source_manifest.csv"
+    ]
+  },
+  "initial_state": {
+    "execution": "NOT_STARTED",
+    "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+    "science_validated": false
+  }
+}
