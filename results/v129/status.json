@@ -1,0 +1,47 @@
+{
+ "schema": "iscat129.status.1",
+ "task_id": "V129_EXECUTABLE_COMPLEX_FIELD_SIZING_RECOVERY",
+ "fixed_source_commit": "afed262b1433d4dbac0ff97b0012ae53fe6c9e37",
+ "stages": {
+  "P0": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "P1": {
+   "execution": "COMPLETED",
+   "validation": "FAIL",
+   "evidence": "COMPLETE",
+   "note": "F2 closure 0/24: 7-node cubic oscillates (MAE 52.9nm). Primary finding."
+  },
+  "P2": {
+   "execution": "BLOCKED",
+   "validation": "NOT_EVALUATED",
+   "evidence": "MISSING",
+   "note": "blocked by P1 closure failure"
+  },
+  "P3": {
+   "execution": "BLOCKED",
+   "validation": "NOT_EVALUATED",
+   "evidence": "MISSING",
+   "note": "blocked by P1 closure failure"
+  },
+  "P4": {
+   "execution": "BLOCKED",
+   "validation": "NOT_EVALUATED",
+   "evidence": "MISSING",
+   "note": "blocked by P1 closure failure"
+  },
+  "P5": {
+   "execution": "BLOCKED",
+   "validation": "NOT_EVALUATED",
+   "evidence": "MISSING",
+   "note": "blocked by P1 closure failure"
+  }
+ },
+ "scientific_claims": {
+  "F2_CUBIC_CLOSURE_FAILED": true,
+  "SEVEN_NODE_CUBIC_INSUFFICIENT": true,
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+ }
+}
