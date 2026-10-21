@@ -10,12 +10,12 @@
   {
    "check": "members_unique",
    "passed": true,
-   "detail": "37 members"
+   "detail": "38 members"
   },
   {
    "check": "manifest_sha256_all_match",
    "passed": true,
-   "detail": "36 checked, bad=[]"
+   "detail": "37 checked, bad=[]"
   },
   {
    "check": "replay_er_es_to_C_D100_h450",

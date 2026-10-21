@@ -1,7 +1,7 @@
 {
  "schema": "iscat126.external_receipt.1",
  "zip": "iscat_v126_return.zip",
- "zip_sha256": "8320f4d9d2a6121abfdd5bdffd797d67defecee4a93beb229b7f40ecbb1e140d",
+ "zip_sha256": "46929a8ef22dfd8c250bdb133f2fa38c935a1979a1853dae963c1f6caeb83e11",
  "archive_verified": true,
  "note": "archive_verified is MECHANICAL only; science verdict is separate (v126_science_validation.json)",
  "checks": [
@@ -13,7 +13,7 @@
   {
    "check": "members_unique",
    "passed": true,
-   "detail": "37 members"
+   "detail": "38 members"
   },
   {
    "check": "paths_safe",
