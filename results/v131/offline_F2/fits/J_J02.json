@@ -1,0 +1,173 @@
+{
+  "candidate_D": 72.15291021799182,
+  "theta": [
+    72.15291021799182,
+    400.0497954963842,
+    -126.0333398196253,
+    55.89521396022493
+  ],
+  "loss": 4.552993868468594e-05,
+  "optimizer_converged": true,
+  "loss_guard_fallback": false,
+  "search_complete": true,
+  "boundary_flags": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "starts": [
+    {
+      "theta": [
+        72.15291127828128,
+        400.04979504170615,
+        -126.03333982268552,
+        55.895213942083174
+      ],
+      "loss": 4.552993868480849e-05,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 3.6173442903513962e-12,
+      "nfev": 22,
+      "njev": 20,
+      "canonical_calls": 182,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        51.15609514880748,
+        423.10910256450404,
+        -126.05323986589922,
+        56.16306108688351
+      ],
+      "loss": 5.960186314297688e-05,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 3.756249075569713e-11,
+      "nfev": 19,
+      "njev": 16,
+      "canonical_calls": 147,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        51.15609515418821,
+        423.109102546872,
+        -126.0532398652698,
+        56.16306108542904
+      ],
+      "loss": 5.960186314323802e-05,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 5.778485982518352e-11,
+      "nfev": 20,
+      "njev": 18,
+      "canonical_calls": 164,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        52.84317921942623,
+        489.76881388744323,
+        499.99999999999994,
+        -499.99999999999994
+      ],
+      "loss": 0.00858830372782821,
+      "success": true,
+      "status": 4,
+      "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+      "optimality": 2.167359255267766e-11,
+      "nfev": 15,
+      "njev": 14,
+      "canonical_calls": 127,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "theta": [
+        72.15291021799182,
+        400.0497954963842,
+        -126.0333398196253,
+        55.89521396022493
+      ],
+      "loss": 4.552993868468594e-05,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 2.8550252427627918e-11,
+      "nfev": 19,
+      "njev": 14,
+      "canonical_calls": 131,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        72.15290606844134,
+        400.0497972757349,
+        -126.03333980709478,
+        55.89521403107301
+      ],
+      "loss": 4.5529938685018865e-05,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 2.1918829075366243e-10,
+      "nfev": 17,
+      "njev": 13,
+      "canonical_calls": 121,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "canonical_calls": 872,
+  "bank_id": "07f25edb0b0d284b0a191dbbc17542da803fe718408ee5fcdc3338a0e05dd97d",
+  "scan_best_loss": 0.0022581927847394267,
+  "bank_calls_separate_global": 2223,
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "reportable_D": null,
+  "diameter_reportable": false,
+  "reason_codes": [
+    "NEEDS_PHYSICAL_QUALIFICATION_COMPLETE_PROFILE_AND_REPORTABILITY"
+  ],
+  "case": "J02",
+  "data_set": "J",
+  "scope": "DEVELOPMENT_NO_SIZE_CERTIFICATION",
+  "run_id": "31228948458c479e1c0ba81b4013e9a86373234975a89a2f51ba9ce41478aa94"
+}

@@ -1,0 +1,175 @@
+{
+  "candidate_D": 199.8919235769284,
+  "theta": [
+    199.8919235769284,
+    519.3130507663327,
+    -84.00470798141934,
+    97.87199406497919
+  ],
+  "loss": 0.00026697643531346966,
+  "optimizer_converged": true,
+  "loss_guard_fallback": false,
+  "search_complete": true,
+  "boundary_flags": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "starts": [
+    {
+      "theta": [
+        170.01842728945275,
+        353.4833858468352,
+        -83.97255480138865,
+        97.44937436555388
+      ],
+      "loss": 0.007833842390317149,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 1.584509341129655e-09,
+      "nfev": 25,
+      "njev": 14,
+      "canonical_calls": 137,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        40.01085944158054,
+        350.00000000000006,
+        499.99999999999994,
+        -499.99999999999994
+      ],
+      "loss": 0.15640257842050223,
+      "success": true,
+      "status": 1,
+      "message": "`gtol` termination condition is satisfied.",
+      "optimality": 9.720377727734676e-14,
+      "nfev": 8,
+      "njev": 8,
+      "canonical_calls": 72,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "theta": [
+        199.8919235769284,
+        519.3130507663327,
+        -84.00470798141934,
+        97.87199406497919
+      ],
+      "loss": 0.00026697643531346966,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 2.7288534318852516e-11,
+      "nfev": 16,
+      "njev": 14,
+      "canonical_calls": 128,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        174.44663236593706,
+        523.0850920397605,
+        -83.9612582319385,
+        97.83116971253409
+      ],
+      "loss": 0.00035153963520402517,
+      "success": true,
+      "status": 1,
+      "message": "`gtol` termination condition is satisfied.",
+      "optimality": 2.2446352917031767e-13,
+      "nfev": 11,
+      "njev": 11,
+      "canonical_calls": 99,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        174.44663241811196,
+        523.0850920229998,
+        -83.96125823198466,
+        97.83116971320557
+      ],
+      "loss": 0.0003515396352040264,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 3.305791424255323e-12,
+      "nfev": 10,
+      "njev": 9,
+      "canonical_calls": 82,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        170.01843523521077,
+        353.4833889270728,
+        -83.97255482991484,
+        97.4493744082343
+      ],
+      "loss": 0.007833842390317211,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 2.957457064479778e-10,
+      "nfev": 29,
+      "njev": 20,
+      "canonical_calls": 189,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "canonical_calls": 707,
+  "bank_id": "07f25edb0b0d284b0a191dbbc17542da803fe718408ee5fcdc3338a0e05dd97d",
+  "scan_best_loss": 0.022640018448552186,
+  "bank_calls_separate_global": 2223,
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "reportable_D": null,
+  "diameter_reportable": false,
+  "reason_codes": [
+    "NEEDS_PHYSICAL_QUALIFICATION_COMPLETE_PROFILE_AND_REPORTABILITY"
+  ],
+  "case": "K06",
+  "data_set": "K",
+  "scope": "DEVELOPMENT_NO_SIZE_CERTIFICATION",
+  "run_id": "31228948458c479e1c0ba81b4013e9a86373234975a89a2f51ba9ce41478aa94",
+  "profile_complete": false,
+  "profile_updates_joint": false
+}

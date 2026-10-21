@@ -1,0 +1,2687 @@
+{
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "rows": [
+    {
+      "D": 30.0,
+      "theta": [
+        30.0,
+        440.0678098923536,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.1050132542149861,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 363
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 498
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 377
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 76
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 25
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 363
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 498
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 377
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 76
+        }
+      ]
+    },
+    {
+      "D": 35.0,
+      "theta": [
+        35.0,
+        440.0478098923536,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.10384449579937644,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 32
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 138
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 168
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 90
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 124
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 25
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 138
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 168
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 90
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 124
+        }
+      ]
+    },
+    {
+      "D": 40.0,
+      "theta": [
+        40.0,
+        440.0478098923536,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.10226503957967979,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 25
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 126
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 314
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 102
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 111
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 25
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 126
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 314
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 102
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 111
+        }
+      ]
+    },
+    {
+      "D": 45.0,
+      "theta": [
+        45.0,
+        440.0478098923536,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.10025537648123833,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 25
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 103
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 106
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 189
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 104
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 25
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 103
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 106
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 189
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 104
+        }
+      ]
+    },
+    {
+      "D": 50.0,
+      "theta": [
+        50.0,
+        440.0478098923536,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.09779629776163855,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 481
+        },
+        {
+          "status": "BUDGET_EXHAUSTED",
+          "success": false,
+          "budget_exhausted": true,
+          "canonical_calls": 900
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 103
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 108
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 481
+        },
+        {
+          "status": "BUDGET_EXHAUSTED",
+          "success": false,
+          "budget_exhausted": true,
+          "canonical_calls": 900
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 103
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 108
+        }
+      ]
+    },
+    {
+      "D": 55.0,
+      "theta": [
+        55.0,
+        440.0478098923536,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.09486895593252012,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 406
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 533
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 481
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 438
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 25
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 406
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 533
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 481
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 438
+        }
+      ]
+    },
+    {
+      "D": 60.0,
+      "theta": [
+        60.0,
+        440.0278098923536,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.09145494270350799,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 96
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 819
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 96
+        },
+        {
+          "status": "BUDGET_EXHAUSTED",
+          "success": false,
+          "budget_exhausted": true,
+          "canonical_calls": 900
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 96
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 819
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 96
+        },
+        {
+          "status": "BUDGET_EXHAUSTED",
+          "success": false,
+          "budget_exhausted": true,
+          "canonical_calls": 900
+        }
+      ]
+    },
+    {
+      "D": 65.0,
+      "theta": [
+        65.0,
+        440.0278098923536,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.08753640080880809,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 418
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 625
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 86
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 153
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 418
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 625
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 86
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 153
+        }
+      ]
+    },
+    {
+      "D": 70.0,
+      "theta": [
+        70.0,
+        440.00780989235363,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.08309617767815639,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 95
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 303
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 115
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 167
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 95
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 303
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 115
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 167
+        }
+      ]
+    },
+    {
+      "D": 75.0,
+      "theta": [
+        75.0,
+        439.98780989235365,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.07812538815883985,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 104
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 145
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 64
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 263
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 104
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 145
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 64
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 263
+        }
+      ]
+    },
+    {
+      "D": 80.0,
+      "theta": [
+        80.0,
+        439.98780989235365,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.07264555920670815,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 148
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 713
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 135
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 264
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 148
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 713
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 135
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 264
+        }
+      ]
+    },
+    {
+      "D": 85.0,
+      "theta": [
+        85.0,
+        439.96780989235367,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.06668687919822153,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 81
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 83
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 116
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 154
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 81
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 83
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 116
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 154
+        }
+      ]
+    },
+    {
+      "D": 90.0,
+      "theta": [
+        90.0,
+        439.9478098923537,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.06028161757635391,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 97
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 111
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 61
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 161
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 97
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 111
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 61
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 161
+        }
+      ]
+    },
+    {
+      "D": 95.0,
+      "theta": [
+        95.0,
+        439.9278098923537,
+        -56.009627796996234,
+        -111.9996430185827
+      ],
+      "loss": 0.05346562166921139,
+      "witness_only": true,
+      "attempts": [
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 24
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 101
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 97
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 104
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 53
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 101
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 97
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 104
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 100.0,
+      "theta": [
+        100.0,
+        439.91050199989695,
+        -59.419931455101974,
+        -109.27334063686273
+      ],
+      "loss": 0.04626544904158031,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 156
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 229
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 226
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 211
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 161
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 229
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 226
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 211
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 105.0,
+      "theta": [
+        105.0,
+        439.90264696469893,
+        -62.10402776572362,
+        -106.47426805242962
+      ],
+      "loss": 0.038706474528360686,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 147
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 162
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 205
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 198
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 107
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 162
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 205
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 198
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 110.0,
+      "theta": [
+        110.0,
+        439.90748383306493,
+        -64.33167944018943,
+        -104.14050979219222
+      ],
+      "loss": 0.030863180879627795,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 123
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 162
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 165
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 175
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 139
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 162
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 165
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 175
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 115.0,
+      "theta": [
+        115.0,
+        439.9429297994917,
+        -66.18981558920062,
+        -102.18282090893513
+      ],
+      "loss": 0.02283421689722414,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 109
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 157
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 129
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 173
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 141
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 157
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 129
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 173
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 120.0,
+      "theta": [
+        120.0,
+        440.07201402977336,
+        -67.74826260884937,
+        -100.52976482370859
+      ],
+      "loss": 0.014781214287716345,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 94
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 126
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 116
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 116
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 95
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 126
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 116
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 116
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 125.0,
+      "theta": [
+        125.0,
+        440.7399953550891,
+        -69.0607426733401,
+        -99.12626208196556
+      ],
+      "loss": 0.007268776173200896,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 113
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 115
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 121
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 82
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 99
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 115
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 121
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 82
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 130.0,
+      "theta": [
+        130.0,
+        447.87423859498136,
+        -69.81324065892396,
+        -98.29335072199244
+      ],
+      "loss": 0.0033568853027140517,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 65
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 59
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 63
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 56
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 59
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 63
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 135.0,
+      "theta": [
+        135.0,
+        453.7868999260034,
+        -69.97743944562937,
+        -98.06712474183593
+      ],
+      "loss": 0.0016955416085991384,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 58
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 58
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 140.0,
+      "theta": [
+        140.0,
+        457.48036589236824,
+        -70.08775879206777,
+        -97.89458765083079
+      ],
+      "loss": 0.00032348016666727017,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 29
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 57
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 57
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 141.22191474920663,
+      "theta": [
+        141.22191474920663,
+        458.2083573397906,
+        -70.11158968637734,
+        -97.85526172334261
+      ],
+      "loss": 6.856994251557356e-05,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 7
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 58
+        },
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 30
+        },
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 7
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 58
+        },
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 145.0,
+      "theta": [
+        145.0,
+        460.16051147821594,
+        -70.18023701800035,
+        -97.73800454271432
+      ],
+      "loss": 0.00094350673363789,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 59
+        },
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 59
+        },
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 150.0,
+      "theta": [
+        150.0,
+        462.2163468305769,
+        -70.26216714916268,
+        -97.59050961625546
+      ],
+      "loss": 0.00211772773469946,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 36
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 36
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 64
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 36
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 64
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 155.0,
+      "theta": [
+        155.0,
+        463.8335721898722,
+        -70.33633066805554,
+        -97.4502479920317
+      ],
+      "loss": 0.003224657625294628,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 36
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 57
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 43
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 36
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 57
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 43
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 160.0,
+      "theta": [
+        160.0,
+        465.11841617508003,
+        -70.40409993033062,
+        -97.3170097281607
+      ],
+      "loss": 0.004267339686647886,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 36
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 57
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 44
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 36
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 57
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 44
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 165.0,
+      "theta": [
+        165.0,
+        466.13781952155097,
+        -70.4662633389232,
+        -97.19131128700872
+      ],
+      "loss": 0.005245237208313046,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 43
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 56
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 43
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 56
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 170.0,
+      "theta": [
+        170.0,
+        410.4523246235887,
+        -69.59020772141075,
+        -98.17005671526061
+      ],
+      "loss": 0.005060088670786349,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 36
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 43
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 56
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 50
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 30
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 43
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 56
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 50
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 175.0,
+      "theta": [
+        175.0,
+        409.626319732885,
+        -69.59357291092671,
+        -98.12431061846861
+      ],
+      "loss": 0.004808862977825044,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 36
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 51
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 44
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 51
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 44
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 180.0,
+      "theta": [
+        180.0,
+        408.9546669600947,
+        -69.60095289717417,
+        -98.07841628333472
+      ],
+      "loss": 0.004541718760191996,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 56
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 36
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 56
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 185.0,
+      "theta": [
+        185.0,
+        408.4217999658749,
+        -69.61272185956396,
+        -98.03291105331115
+      ],
+      "loss": 0.0042577484610185215,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 37
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 56
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 37
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 56
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 190.0,
+      "theta": [
+        190.0,
+        408.0181931195981,
+        -69.62934854500868,
+        -97.98821530915274
+      ],
+      "loss": 0.0039546887211620784,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 44
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 50
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 44
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 29
+        },
+        {
+          "status": 4,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 44
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 50
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 44
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 195.0,
+      "theta": [
+        195.0,
+        407.7397761162259,
+        -69.65141120624884,
+        -97.94461400122889
+      ],
+      "loss": 0.0036288000346300533,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 35
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 56
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 44
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 28
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 1,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 56
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 44
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    },
+    {
+      "D": 200.0,
+      "theta": [
+        200.0,
+        407.58801665270556,
+        -69.67962635543243,
+        -97.9022201954691
+      ],
+      "loss": 0.003274654789989409,
+      "witness_only": false,
+      "attempts": [
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 28
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 38
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 50
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 38
+        },
+        {
+          "status": 3,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 50
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 49
+        },
+        {
+          "status": 2,
+          "success": true,
+          "budget_exhausted": false,
+          "canonical_calls": 42
+        }
+      ]
+    }
+  ],
+  "canonical_calls": 42415,
+  "profile_complete": false,
+  "best_profile": {
+    "D": 141.22191474920663,
+    "theta": [
+      141.22191474920663,
+      458.2083573397906,
+      -70.11158968637734,
+      -97.85526172334261
+    ],
+    "loss": 6.856994251557356e-05,
+    "witness_only": false,
+    "attempts": [
+      {
+        "status": 1,
+        "success": true,
+        "budget_exhausted": false,
+        "canonical_calls": 35
+      },
+      {
+        "status": 1,
+        "success": true,
+        "budget_exhausted": false,
+        "canonical_calls": 7
+      },
+      {
+        "status": 3,
+        "success": true,
+        "budget_exhausted": false,
+        "canonical_calls": 58
+      },
+      {
+        "status": 1,
+        "success": true,
+        "budget_exhausted": false,
+        "canonical_calls": 42
+      },
+      {
+        "status": 2,
+        "success": true,
+        "budget_exhausted": false,
+        "canonical_calls": 42
+      },
+      {
+        "status": 3,
+        "success": true,
+        "budget_exhausted": false,
+        "canonical_calls": 30
+      },
+      {
+        "status": 1,
+        "success": true,
+        "budget_exhausted": false,
+        "canonical_calls": 7
+      },
+      {
+        "status": 3,
+        "success": true,
+        "budget_exhausted": false,
+        "canonical_calls": 58
+      },
+      {
+        "status": 1,
+        "success": true,
+        "budget_exhausted": false,
+        "canonical_calls": 42
+      },
+      {
+        "status": 2,
+        "success": true,
+        "budget_exhausted": false,
+        "canonical_calls": 42
+      }
+    ]
+  },
+  "update_joint_required": false,
+  "reportable_D": null,
+  "scope": "finite prescribed multi-start empirical profile; requires adaptive refinement and model-error envelope"
+}

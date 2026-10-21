@@ -1,0 +1,175 @@
+{
+  "candidate_D": 165.42842912461506,
+  "theta": [
+    165.42842912461506,
+    481.2609884993987,
+    111.81502856311684,
+    -70.07928276312089
+  ],
+  "loss": 0.0002927695928961599,
+  "optimizer_converged": true,
+  "loss_guard_fallback": false,
+  "search_complete": true,
+  "boundary_flags": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "starts": [
+    {
+      "theta": [
+        199.99999999358454,
+        394.73492072467275,
+        112.00040134808937,
+        -67.07147625257889
+      ],
+      "loss": 0.012813070864247371,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 0.001122236609939547,
+      "nfev": 33,
+      "njev": 16,
+      "canonical_calls": 161,
+      "budget_exhausted": false,
+      "active_mask": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        199.65873447234054,
+        394.74573120400134,
+        112.00021011489372,
+        -67.11706842813662
+      ],
+      "loss": 0.01282088521931198,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 0.0012926291533127035,
+      "nfev": 36,
+      "njev": 18,
+      "canonical_calls": 180,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        165.42842913882106,
+        481.2609884998372,
+        111.81502855776125,
+        -70.07928276735774
+      ],
+      "loss": 0.0002927695928962084,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 3.8991325544249534e-12,
+      "nfev": 12,
+      "njev": 10,
+      "canonical_calls": 92,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        112.20375645723955,
+        488.8550763393645,
+        -483.30334749129065,
+        499.99999999999994
+      ],
+      "loss": 0.04144284218419881,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 2.8027679077632403e-07,
+      "nfev": 22,
+      "njev": 20,
+      "canonical_calls": 182,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "theta": [
+        165.42842912461506,
+        481.2609884993987,
+        111.81502856311684,
+        -70.07928276312089
+      ],
+      "loss": 0.0002927695928961599,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 7.1268061872199e-11,
+      "nfev": 16,
+      "njev": 13,
+      "canonical_calls": 120,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        100.71934410988561,
+        411.14734399654037,
+        112.00038878227537,
+        -66.73604571548717
+      ],
+      "loss": 0.015280385930019067,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 0.004817244338277721,
+      "nfev": 55,
+      "njev": 31,
+      "canonical_calls": 303,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "canonical_calls": 1038,
+  "bank_id": "07f25edb0b0d284b0a191dbbc17542da803fe718408ee5fcdc3338a0e05dd97d",
+  "scan_best_loss": 0.01233798120390616,
+  "bank_calls_separate_global": 2223,
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "reportable_D": null,
+  "diameter_reportable": false,
+  "reason_codes": [
+    "NEEDS_PHYSICAL_QUALIFICATION_COMPLETE_PROFILE_AND_REPORTABILITY"
+  ],
+  "case": "K05",
+  "data_set": "K",
+  "scope": "DEVELOPMENT_NO_SIZE_CERTIFICATION",
+  "run_id": "31228948458c479e1c0ba81b4013e9a86373234975a89a2f51ba9ce41478aa94",
+  "profile_complete": false,
+  "profile_updates_joint": false
+}

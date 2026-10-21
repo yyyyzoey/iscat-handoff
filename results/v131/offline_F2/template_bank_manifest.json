@@ -1,0 +1,13 @@
+{
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "bank_id": "07f25edb0b0d284b0a191dbbc17542da803fe718408ee5fcdc3338a0e05dd97d",
+  "n_templates": 2223,
+  "canonical_precomputation_queries": 2223,
+  "score_shape": [
+    13,
+    13
+  ],
+  "role": "PUBLIC_INITIALIZATION_CACHE_ONLY",
+  "uses_true_case_file": false,
+  "h_strata": 4
+}

@@ -1,0 +1,533 @@
+{
+  "schema": "iscat131.plan.1",
+  "task_id": "V131_VALIDATED_PROFILES_AND_END_TO_END_PARTICLE_SIZING",
+  "fixed_source": {
+    "repository": "yyyyzoey/iscat-handoff",
+    "reviewed_v129_commit": "1e025eb47bfd17a8e27f0a7a41b3cdfdb54c1da6",
+    "prior_v128_commit": "fe4e354b2ffae06a42fec85eac3036728dd0f96f",
+    "v125_recovery_commit": "36a231ec8319ae47906664bdc8b54c166727af5a",
+    "reviewed_v130_commit": "3fd1bb479f7e41b4d5d21c1c61cac859deb501b7"
+  },
+  "execution_authorized": true,
+  "inputs": {
+    "train": "results/v128/library/v128_Dh_train_fields.h5",
+    "train_csv": "results/v128/library/train_grid_index.csv",
+    "opened_L": "results/v128/validation/new_L_direct_images.h5",
+    "opened_L_truth_validator_only": "results/v128/validation/new_L_truth_validator_only.json",
+    "observation_dataset": "at_offset/C",
+    "observable": "STATIC_SIGNED_CONTRAST",
+    "library_versions": {
+      "at_v129_git_blob": "21d5ac5ea939a180137786df53cd3882a51cb03c",
+      "at_v129_bytes": 53434093,
+      "at_v128_git_blob": "8d2153b117c5023b912315deafdd019895a67bba",
+      "at_v128_bytes": 49957243,
+      "instruction": "Preserve both; compare datasets and actual provenance. Do not assume change is corruption or zero-copy inheritance."
+    }
+  },
+  "user_confirmed": {
+    "particle_state": "suspended",
+    "medium": "pure_water",
+    "temperature_C": 26,
+    "vacuum_wavelength_nm": 520,
+    "sensor_pixel_um": [
+      14,
+      14
+    ],
+    "objective_magnification": 50,
+    "slide_present": false
+  },
+  "user_estimates": {
+    "coverslip_refractive_index": 1.5,
+    "particle_index_close_to_water": true
+  },
+  "conditional_model": {
+    "n_water": 1.3353,
+    "n_glass": 1.5,
+    "particle_n_re_im": [
+      1.38,
+      0
+    ],
+    "particle_shape": "uniform_effective_sphere",
+    "NA": 0.8,
+    "relay_magnification": 1,
+    "object_pixel_nm": 280,
+    "focus_nm": 450,
+    "camera_n": 17,
+    "score_n": 13,
+    "q": 5,
+    "xy_limit_nm": 500,
+    "min_surface_gap_nm": 100,
+    "illumination": "normal_x_polarized_from_glass",
+    "reference": "glass_water_interface",
+    "diameter_type": "UNIFORM_SPHERE_OPTICAL_EQUIVALENT",
+    "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+  },
+  "model_selection": {
+    "initial_kind": "F2",
+    "allowed_candidates": [
+      "F1",
+      "F2",
+      "F3"
+    ],
+    "data_roles": {
+      "H": "development",
+      "J": "development",
+      "K": "development",
+      "L": "development"
+    },
+    "allow_C_map_substitution": false,
+    "read_actual_Ds_Hs": true,
+    "truth_is_validator_only": true,
+    "policy": "Continue repaired V130 F2 provisionally; compare the precomputed reference to fixed V130 at identical legal queries before calling it the same model. F1 remains a controlled baseline, not an automatic reset. No F3 until optimization is qualified.",
+    "initial_same_model_tests": "6-point smoke then remaining 18 only if numerical entrance valid; repaired deterministic residual at truth must be recorded"
+  },
+  "fit": {
+    "x_scale": [
+      50,
+      50,
+      140,
+      140
+    ],
+    "maximum_starts": 6,
+    "residual_scale": "max(norm(Y),1e-6)",
+    "single_total_canonical_calls": 20000,
+    "per_start_max_nfev": 500,
+    "per_start_canonical_calls": 2500,
+    "absolute_jacobian_steps_nm": [
+      0.02,
+      0.02,
+      0.05,
+      0.05
+    ],
+    "profile_initial_step_nm": 5,
+    "profile_refinement_step_nm": 0.5,
+    "profile_total_canonical_calls": 120000,
+    "shared_D_total_canonical_calls": 150000,
+    "require_continuous_D": true
+  },
+  "new_physics": {
+    "enabled_only_after_gates": true,
+    "required_gates": [
+      "physical_source_mapping",
+      "single_entry_consistency",
+      "direct_render_coordinate_checks",
+      "same_model_closure",
+      "old_L_diagnostics_complete",
+      "model_freeze"
+    ],
+    "maximum_missing_source_or_qualification_solves": 2,
+    "holdout_prefix": "M",
+    "holdouts": [
+      {
+        "case": "M01",
+        "D_nm": 53,
+        "h_nm": 365.625,
+        "x_nm": 42,
+        "y_nm": -70,
+        "mesh": 1444
+      },
+      {
+        "case": "M02",
+        "D_nm": 81,
+        "h_nm": 415.625,
+        "x_nm": -112,
+        "y_nm": 56,
+        "mesh": 1444
+      },
+      {
+        "case": "M03",
+        "D_nm": 119,
+        "h_nm": 446.875,
+        "x_nm": 84,
+        "y_nm": 98,
+        "mesh": 1444
+      },
+      {
+        "case": "M04",
+        "D_nm": 149,
+        "h_nm": 471.875,
+        "x_nm": -70,
+        "y_nm": -112,
+        "mesh": 1444
+      },
+      {
+        "case": "M05",
+        "D_nm": 171,
+        "h_nm": 509.375,
+        "x_nm": 126,
+        "y_nm": -42,
+        "mesh": 1444
+      },
+      {
+        "case": "M06",
+        "D_nm": 187,
+        "h_nm": 540.625,
+        "x_nm": -98,
+        "y_nm": 70,
+        "mesh": 1444
+      }
+    ],
+    "diameter_error_target": "abs(Dhat-Dtrue)<=max(5nm,0.1*Dtrue); separate from reportability",
+    "holdout_policy": "Carry forward unchanged M pre-registration, audit whether local M has been generated or opened. Never silently replace true cases. Default zero new BEM."
+  },
+  "camera": {
+    "background_e_100us": [
+      1000,
+      10000,
+      100000
+    ],
+    "read_noise_e": 2,
+    "refs_per_measurement": 8,
+    "dev_D_nm": [
+      50,
+      100,
+      160,
+      200
+    ],
+    "dev_h_nm": [
+      375,
+      425,
+      475
+    ],
+    "dev_target_repeats": 1,
+    "dev_blanks_per_B": 80,
+    "validation_blanks_per_B": 60,
+    "new_holdout_noise_repeats_per_B": 3,
+    "threshold": "T>max(dev_blank_T) per B, before validation",
+    "validation_confidence": 0.95,
+    "max_one_sided_false_accept_upper": 0.05,
+    "seed_dev": 131100,
+    "seed_dev_blank": 131200,
+    "seed_holdout_noise": 131300,
+    "seed_val_blank": 131400,
+    "run_only_after_gates": [
+      "single_entry_consistency",
+      "direct_render_coordinate_checks",
+      "same_model_closure",
+      "old_L_diagnostics_complete"
+    ],
+    "reportability_without_complete_profile": false
+  },
+  "motion": {
+    "D_generation_nm": [
+      55,
+      115,
+      185
+    ],
+    "tracks_per_D": 2,
+    "frames_per_track": 8,
+    "frame_rate_hz": 5000,
+    "exposure_us": [
+      25,
+      100
+    ],
+    "fine_step_us": 0.625,
+    "coarse_step_us": [
+      1.25,
+      2.5
+    ],
+    "shared_reference_frames_per_track_and_exposure": 8,
+    "seed": 131500,
+    "generation_only_Dh_equals_D": true,
+    "label": "SHARED_SURROGATE_METHOD_DIAGNOSTIC"
+  },
+  "budget": {
+    "new_bem_attempts_max": 8,
+    "new_render_attempts_max": 96,
+    "synthetic_camera_exposure_events_max": 6000,
+    "new_bem_before_gates": 0,
+    "heavy_concurrency_max": 1,
+    "wall_clock_hours_max": 12,
+    "reserve_for_archive_minutes": 30,
+    "planned_static_exposures": 4590,
+    "planned_motion_exposures": 192,
+    "planned_total_exposures": 4782
+  },
+  "package_code_scope": "Offline recovery and profile initializer implemented; project physical readback, all inference quality gates, MATLAB new M, count/noise, motion and science archive must be integrated and executed by Codex. Provided scripts never certify diameter reportability alone.",
+  "initial_determinism": {
+    "absolute_C_tolerance": 1e-12,
+    "repeats": 3,
+    "points": [
+      [
+        100,
+        450,
+        0,
+        0
+      ],
+      [
+        100,
+        450,
+        28,
+        -28
+      ],
+      [
+        70,
+        400,
+        140,
+        0
+      ],
+      [
+        160,
+        500,
+        0,
+        -140
+      ],
+      [
+        50,
+        375,
+        70,
+        -98
+      ],
+      [
+        183.7,
+        518.75,
+        -84,
+        70
+      ]
+    ]
+  },
+  "closure": {
+    "smoke_first_n": 6,
+    "full_count": 24,
+    "tolerance": "max(1e-12,1e-6*norm(Y))",
+    "samples": [
+      [
+        33,
+        362.5,
+        40,
+        -30
+      ],
+      [
+        33,
+        537.5,
+        -60,
+        45
+      ],
+      [
+        39,
+        387.5,
+        -80,
+        20
+      ],
+      [
+        39,
+        512.5,
+        30,
+        -70
+      ],
+      [
+        45,
+        412.5,
+        0,
+        0
+      ],
+      [
+        45,
+        487.5,
+        70,
+        60
+      ],
+      [
+        58,
+        362.5,
+        -40,
+        80
+      ],
+      [
+        58,
+        537.5,
+        90,
+        -40
+      ],
+      [
+        67,
+        437.5,
+        -110,
+        -60
+      ],
+      [
+        67,
+        462.5,
+        55,
+        95
+      ],
+      [
+        83,
+        387.5,
+        25,
+        -85
+      ],
+      [
+        83,
+        512.5,
+        -65,
+        35
+      ],
+      [
+        95,
+        412.5,
+        100,
+        40
+      ],
+      [
+        95,
+        487.5,
+        -95,
+        -95
+      ],
+      [
+        112,
+        362.5,
+        -30,
+        65
+      ],
+      [
+        112,
+        537.5,
+        45,
+        -25
+      ],
+      [
+        135,
+        437.5,
+        80,
+        -110
+      ],
+      [
+        135,
+        462.5,
+        -55,
+        75
+      ],
+      [
+        152,
+        412.5,
+        -120,
+        30
+      ],
+      [
+        152,
+        487.5,
+        65,
+        110
+      ],
+      [
+        176,
+        437.5,
+        35,
+        -55
+      ],
+      [
+        176,
+        462.5,
+        -45,
+        -115
+      ],
+      [
+        193,
+        412.5,
+        90,
+        20
+      ],
+      [
+        193,
+        487.5,
+        -75,
+        -40
+      ]
+    ],
+    "truth_role": "diagnostic generator and scorer only; public starts only"
+  },
+  "offline_batch": {
+    "sets_order": [
+      "K",
+      "L",
+      "H",
+      "J"
+    ],
+    "sets": {
+      "L": "results/v128/validation/new_L_direct_images.h5",
+      "H": "results/v125/library/v125_direct_holdouts.h5",
+      "J": "results/v126/validation/new_holdout_images.h5",
+      "K": "results/v127/validation/holdout_images.h5"
+    },
+    "profile_sets": [
+      "K",
+      "L"
+    ],
+    "require_oldL_candidates_before_new_physics": true,
+    "missing_other_sets": "record missing, do not fabricate",
+    "profile_priority": [
+      "K_K01",
+      "K_K02",
+      "K_K06",
+      "L_L01",
+      "L_L03",
+      "L_L06"
+    ],
+    "compute_all_candidates_before_profiles": true
+  },
+  "template_bank": {
+    "include_axis_midpoints": true,
+    "offsets_nm": [
+      [
+        0,
+        0
+      ],
+      [
+        140,
+        0
+      ],
+      [
+        -140,
+        0
+      ],
+      [
+        0,
+        140
+      ],
+      [
+        0,
+        -140
+      ],
+      [
+        112,
+        112
+      ],
+      [
+        -112,
+        112
+      ],
+      [
+        112,
+        -112
+      ],
+      [
+        -112,
+        -112
+      ]
+    ],
+    "height_strata_count": 4,
+    "max_starts": 6,
+    "separation_nm": [
+      15,
+      25,
+      80,
+      80
+    ],
+    "observed_data_and_truth_forbidden_in_bank": true,
+    "max_templates_for_7x10_axes": 2223,
+    "role": "Initialization only, final residual always canonical_forward; not an added training library"
+  },
+  "required_entry_artifacts": [
+    "source_identity.json",
+    "library_array_checks.json",
+    "actual_entry_determinism.json",
+    "template_bank_manifest.json",
+    "calibration_nodes.csv",
+    "closure_summary.csv",
+    "old_per_particle_candidates.csv",
+    "status.json"
+  ],
+  "method_scope": "Conditioned optical-effective sphere, single-frame signed static contrast; FFT amplitude is not accepted"
+}

@@ -1,0 +1,22 @@
+{
+  "task_id": "V131_VALIDATED_PROFILES_AND_END_TO_END_PARTICLE_SIZING",
+  "run_id": "31228948458c479e1c0ba81b4013e9a86373234975a89a2f51ba9ce41478aa94",
+  "execution": "OFFLINE_RECOVERY_COMPLETE",
+  "stages": {
+    "intake": "ARRAY_CHECKS_ONLY_REQUIRES_SOLVE_IDENTITY",
+    "determinism": "PASS",
+    "closure": "PASS_SAME_MODEL_ONLY",
+    "all_old_candidates": "COMPLETED",
+    "physical_qualification": "REQUIRES_PROJECT_DIRECT_RENDER_AND_SOURCE_CHECK",
+    "formal_reportability": "NOT_CERTIFIED"
+  },
+  "errors": [],
+  "bem_new": 0,
+  "render_new": 0,
+  "camera_exposures": 0,
+  "experimental_absolute_validated": false,
+  "reportable_size_validation": "NOT_CERTIFIED",
+  "elapsed_seconds": 3156.7810000000754,
+  "canonical_calls_this_invocation": 675393,
+  "note": "OFFLINE component only. Codex must continue project physical checks, adaptive complete profiles, inference gates, conditional M/camera/motion and final archive."
+}

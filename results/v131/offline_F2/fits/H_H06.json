@@ -1,0 +1,173 @@
+{
+  "candidate_D": 178.20960140322902,
+  "theta": [
+    178.20960140322902,
+    540.3307865308503,
+    -84.0061849893476,
+    84.00454536347584
+  ],
+  "loss": 5.983442685357385e-05,
+  "optimizer_converged": true,
+  "loss_guard_fallback": false,
+  "search_complete": true,
+  "boundary_flags": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "starts": [
+    {
+      "theta": [
+        195.07905403936923,
+        350.00000000000006,
+        -84.00450766795488,
+        84.00665409866046
+      ],
+      "loss": 0.008328097969055995,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 1.0132953759688218e-09,
+      "nfev": 28,
+      "njev": 19,
+      "canonical_calls": 180,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        44.256570607783736,
+        350.0000000000707,
+        499.99999999999994,
+        -499.99999999999994
+      ],
+      "loss": 0.18523198330351068,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 9.832433202872269e-11,
+      "nfev": 11,
+      "njev": 9,
+      "canonical_calls": 83,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "theta": [
+        199.99999999999997,
+        531.467961246705,
+        -84.02755990011937,
+        84.02934667928334
+      ],
+      "loss": 0.0036921783537036197,
+      "success": true,
+      "status": 4,
+      "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+      "optimality": 2.8572872825993297e-10,
+      "nfev": 19,
+      "njev": 16,
+      "canonical_calls": 147,
+      "budget_exhausted": false,
+      "active_mask": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        178.20960140322902,
+        540.3307865308503,
+        -84.0061849893476,
+        84.00454536347584
+      ],
+      "loss": 5.983442685357385e-05,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 2.0589036247839905e-12,
+      "nfev": 8,
+      "njev": 7,
+      "canonical_calls": 64,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        199.99999999999997,
+        531.4679614213361,
+        -84.02755990118635,
+        84.02934668070021
+      ],
+      "loss": 0.0036921783537036254,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 4.052297100047345e-11,
+      "nfev": 11,
+      "njev": 11,
+      "canonical_calls": 99,
+      "budget_exhausted": false,
+      "active_mask": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        195.0790550915901,
+        350.00000000000006,
+        -84.00450766897742,
+        84.00665410013245
+      ],
+      "loss": 0.00832809796905631,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 3.1860390475816618e-09,
+      "nfev": 26,
+      "njev": 17,
+      "canonical_calls": 162,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        -1,
+        0,
+        0
+      ]
+    }
+  ],
+  "canonical_calls": 735,
+  "bank_id": "07f25edb0b0d284b0a191dbbc17542da803fe718408ee5fcdc3338a0e05dd97d",
+  "scan_best_loss": 0.03353435065747903,
+  "bank_calls_separate_global": 2223,
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "reportable_D": null,
+  "diameter_reportable": false,
+  "reason_codes": [
+    "NEEDS_PHYSICAL_QUALIFICATION_COMPLETE_PROFILE_AND_REPORTABILITY"
+  ],
+  "case": "H06",
+  "data_set": "H",
+  "scope": "DEVELOPMENT_NO_SIZE_CERTIFICATION",
+  "run_id": "31228948458c479e1c0ba81b4013e9a86373234975a89a2f51ba9ce41478aa94"
+}

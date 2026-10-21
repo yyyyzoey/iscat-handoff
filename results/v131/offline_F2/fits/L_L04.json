@@ -1,0 +1,175 @@
+{
+  "candidate_D": 141.46775606747678,
+  "theta": [
+    141.46775606747678,
+    466.19865781724565,
+    -55.855242403349905,
+    -126.0623015641676
+  ],
+  "loss": 0.0004780932447617171,
+  "optimizer_converged": true,
+  "loss_guard_fallback": false,
+  "search_complete": true,
+  "boundary_flags": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "starts": [
+    {
+      "theta": [
+        199.99999999930898,
+        403.354766112942,
+        -55.995810427680965,
+        -125.39732784758301
+      ],
+      "loss": 0.005513613739360474,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 0.0006490856828104743,
+      "nfev": 24,
+      "njev": 10,
+      "canonical_calls": 104,
+      "budget_exhausted": false,
+      "active_mask": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        141.45932613252273,
+        466.19606358978797,
+        -56.13017891887443,
+        -126.0620702523791
+      ],
+      "loss": 0.00047875254539260856,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 1.286259372108493e-12,
+      "nfev": 18,
+      "njev": 14,
+      "canonical_calls": 130,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        141.46775606747678,
+        466.19865781724565,
+        -55.855242403349905,
+        -126.0623015641676
+      ],
+      "loss": 0.0004780932447617171,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 1.9382878811489296e-11,
+      "nfev": 9,
+      "njev": 8,
+      "canonical_calls": 73,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        137.50860319591732,
+        488.4408943831332,
+        499.99999999999994,
+        499.99999999999994
+      ],
+      "loss": 0.08615122937935478,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 4.978704484165143e-10,
+      "nfev": 22,
+      "njev": 18,
+      "canonical_calls": 166,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "theta": [
+        141.4593261340443,
+        466.19606359030814,
+        -56.13017891903671,
+        -126.06207025248226
+      ],
+      "loss": 0.0004787525453925658,
+      "success": true,
+      "status": 1,
+      "message": "`gtol` termination condition is satisfied.",
+      "optimality": 3.845040505971035e-13,
+      "nfev": 8,
+      "njev": 8,
+      "canonical_calls": 72,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        199.97808550783097,
+        403.35553839072696,
+        -55.99728947772668,
+        -125.39708798989048
+      ],
+      "loss": 0.005514899689295507,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 0.0010029612803788969,
+      "nfev": 37,
+      "njev": 19,
+      "canonical_calls": 189,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "canonical_calls": 734,
+  "bank_id": "07f25edb0b0d284b0a191dbbc17542da803fe718408ee5fcdc3338a0e05dd97d",
+  "scan_best_loss": 0.022805235981954813,
+  "bank_calls_separate_global": 2223,
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "reportable_D": null,
+  "diameter_reportable": false,
+  "reason_codes": [
+    "NEEDS_PHYSICAL_QUALIFICATION_COMPLETE_PROFILE_AND_REPORTABILITY"
+  ],
+  "case": "L04",
+  "data_set": "L",
+  "scope": "DEVELOPMENT_NO_SIZE_CERTIFICATION",
+  "run_id": "31228948458c479e1c0ba81b4013e9a86373234975a89a2f51ba9ce41478aa94",
+  "profile_complete": false,
+  "profile_updates_joint": false
+}
