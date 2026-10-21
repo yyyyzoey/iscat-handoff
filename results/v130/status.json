@@ -1,0 +1,22 @@
+{
+ "schema": "iscat130.status.1",
+ "task_id": "V130_UNINITIALIZED_ACCUMULATION_FIX_AND_K_SIZING",
+ "fixed_source_commit": "afed262b1433d4dbac0ff97b0012ae53fe6c9e37",
+ "stages": {
+  "fix": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "K_reinversion": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  }
+ },
+ "scientific_claims": {
+  "F2_FORWARD_AFTER_FIX_MAE_7_5NM": true,
+  "V129_CLOSURE_FAILURE_ATTRIBUTED_TO_UNINITIALIZED_ACCUMULATION": true,
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+ }
+}

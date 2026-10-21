@@ -122,13 +122,13 @@ class ComplexFieldForward:
         if (sx[0] > -cam_half or sx[-1] < cam_half or
             sy[0] > -cam_half or sy[-1] < cam_half):
             raise OutOfDomain((D,h,dx,dy), 'shift_out')
-        es_s = np.empty_like(es)
+        es_s = np.zeros_like(es)
         for c in range(3):
             for attr in ('real', 'imag'):
                 arr = getattr(es[:,:,c], attr)
                 itp = RGI((self.fine_x, self.fine_y), arr, bounds_error=False, fill_value=None)
                 X, Y = np.meshgrid(sx, sy, indexing='ij')
-                es_s[:,:,c] += (itp(np.stack([X,Y],axis=-1)) * (1 if attr=='real' else 1j))
+                es_s[:,:,c] = es_s[:,:,c] + (itp(np.stack([X,Y],axis=-1)) * (1 if attr=='real' else 1j))
         # pixel average on full 25x25
         q = 5
         Ibg25 = _pixel_mean(np.sum(np.abs(er)**2, 2), q)
