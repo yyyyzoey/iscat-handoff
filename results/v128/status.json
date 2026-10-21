@@ -1,0 +1,41 @@
+{
+ "schema": "iscat128.status.1",
+ "task_id": "V128_PROVENANCE_RESTORATION_AND_END_TO_END_PARTICLE_SIZING",
+ "fixed_source_commit": "b546d80beb0dc4789effac8c192896e5f45876e9",
+ "stages": {
+  "A": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "B": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE"
+  },
+  "C": {
+   "execution": "COMPLETED",
+   "validation": "PARTIAL",
+   "evidence": "COMPLETE"
+  },
+  "D": {
+   "execution": "COMPLETED",
+   "validation": "PARTIAL",
+   "evidence": "COMPLETE"
+  },
+  "E": {
+   "execution": "COMPLETED",
+   "validation": "PARTIAL",
+   "evidence": "COMPLETE"
+  },
+  "F": {
+   "execution": "NOT_EVALUATED",
+   "validation": "NOT_EVALUATED",
+   "evidence": "MISSING"
+  }
+ },
+ "scientific_claims": {
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "C_MAP_FORWARD_LIMITATION_DOCUMENTED": true
+ }
+}
