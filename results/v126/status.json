@@ -1,0 +1,82 @@
+{
+ "schema": "iscat126.status.1",
+ "task_id": "V126_RECONSTRUCTION_ERROR_SEPARATION_AND_PARTICLE_SIZING",
+ "fixed_source_commit": "36a231ec8319ae47906664bdc8b54c166727af5a",
+ "generated_utc": "2026-10-21T06:57:08.835631Z",
+ "stages": {
+  "A": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE",
+   "notes": "intake 63 nodes verified; corrected pairwise numerics (D30 0.55%/D200 0.067% PASS, D100 np-nwater by absolute floor); axis/nonzero-shift all PASS under global camera-frame normalization"
+  },
+  "A2": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE",
+   "notes": "error separation: forward error (max 0.024 L2 at grid-edge D=177) vs optimizer failure (H05 basin trap, loss-guard added); candidate I1 frozen before J inversion"
+  },
+  "B": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE",
+   "notes": "canonical_forward = I1; I0/I1/I2 node-exactness and off-node comparison recorded"
+  },
+  "C": {
+   "execution": "NOT_EVALUATED",
+   "validation": "NOT_EVALUATED",
+   "evidence": "MISSING",
+   "notes": "no height-row addition: A2 showed h-interpolation is not the dominant error; BEM budget conserved"
+  },
+  "D": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE",
+   "notes": "J01-J06 direct L1 blind holdouts; x/y exact 6/6; D 4/6 within 8nm; J01 ambiguous (h-D degeneracy, weak signal), J06 boundary+biased; candidate_D and reportable_D separated"
+  },
+  "E": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE",
+   "notes": "GLS detection thresholds per background (max of 80 dev blanks); validation blanks 0/60, 3/60, 0/60 - B=1e4 FPR upper bound 12.2% NOT met (honest); detected vs diameter_reportable separated"
+  },
+  "F": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE",
+   "notes": "corrected exposure: per-path windows, trapezoid integration; fine/coarse 5/9 within 0.5% (honest); M2 continuous shared-D MAE 31.7/33.5nm (SHARED_SURROGATE_METHOD_DIAGNOSTIC)"
+  },
+  "S7": {
+   "execution": "COMPLETED",
+   "validation": "PASS",
+   "evidence": "COMPLETE",
+   "notes": "ZIP + mechanical receipt (PASS) + science receipt (PASS) issued separately"
+  }
+ },
+ "budget": {
+  "bem_system_attempts": {
+   "attempted": 6,
+   "limit": 16,
+   "failed": 0,
+   "deviation": "the 6 J solves predate the reserve() mechanism; recorded in budget_deviation_note.json"
+  },
+  "optical_render_attempts": {
+   "attempted": 18,
+   "limit": 128,
+   "failed": 0
+  },
+  "synthetic_exposure_events": {
+   "attempted": "see logs/resource_budget.csv (E 5958 + F motion)",
+   "limit": 6000
+  }
+ },
+ "scientific_claims": {
+  "FORWARD_NUMERICAL_CONDITIONAL": true,
+  "SYNTHETIC_DH_JOINT_INVERSION_VALIDATED_WITHIN_TESTED_DOMAIN": true,
+  "SYNTHETIC_EXPOSURE_AND_NOISE_EVALUATED": true,
+  "DETECTION_FPR_TARGET_MET_ALL_BACKGROUNDS": false,
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+ },
+ "h01_to_h06_disposition": "DEV_DIAGNOSTIC_SET (per contract; not blind)",
+ "j01_to_j06_disposition": "BLIND_HOLDOUT_FROZEN_MODEL (truth validator-only; 6 points validate only their own parameters)"
+}
