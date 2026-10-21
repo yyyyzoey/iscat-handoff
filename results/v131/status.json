@@ -1,0 +1,20 @@
+{
+ "schema": "iscat131.status.1",
+ "task_id": "V131_VALIDATED_PROFILES_AND_END_TO_END_PARTICLE_SIZING",
+ "fixed_source_commit": "3fd1bb479f7e41b4d5d21c1c61cac859deb501b7",
+ "execution": "OFFLINE_RECOVERY_COMPLETE",
+ "stages": {
+  "intake": "COMPLETED",
+  "determinism": "PASS",
+  "closure": "PASS_SAME_MODEL_ONLY",
+  "all_old_candidates": "COMPLETED",
+  "physical_qualification": "REQUIRES_PROJECT_DIRECT_RENDER_AND_SOURCE_CHECK",
+  "formal_reportability": "NOT_CERTIFIED"
+ },
+ "canonical_calls": 675393,
+ "scientific_claims": {
+  "F2_COMPLEX_FIELD_FORWARD_VALIDATED": true,
+  "CANDIDATES_WITHIN_TARGET": "20/24",
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+ }
+}
