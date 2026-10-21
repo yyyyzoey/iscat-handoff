@@ -1,0 +1,10 @@
+{
+ "schema": "iscat126.source_identity.1",
+ "fixed_v125_commit": "36a231ec8319ae47906664bdc8b54c166727af5a",
+ "current_head": "36a231ec8319ae47906664bdc8b54c166727af5a",
+ "platform": "Windows-10-10.0.26200-SP0",
+ "python": "3.11.7",
+ "numpy": "1.26.4",
+ "train_h5_sha256": "5062eb0a7fdbbb33",
+ "n_train_nodes": 63
+}

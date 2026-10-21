@@ -1,0 +1,33 @@
+{
+ "schema": "iscat126.threshold_freeze.1",
+ "rule": "T > max(dev blank T) per background",
+ "thresholds": {
+  "1000.0": 16.63761308657729,
+  "10000.0": 14.036710196024757,
+  "100000.0": 15.05074841454956
+ },
+ "validation_blank_fpr": {
+  "1000.0": {
+   "fp": 0,
+   "n": 60,
+   "rate": 0.0,
+   "binom95_upper": 0.04870291331009746,
+   "target_met": true
+  },
+  "10000.0": {
+   "fp": 3,
+   "n": 60,
+   "rate": 0.05,
+   "binom95_upper": 0.12223140113067367,
+   "target_met": false
+  },
+  "100000.0": {
+   "fp": 0,
+   "n": 60,
+   "rate": 0.0,
+   "binom95_upper": 0.04870291331009746,
+   "target_met": true
+  }
+ },
+ "note": "frozen before J-noise evaluation; 60-validation-blank FPR is evaluation-only"
+}

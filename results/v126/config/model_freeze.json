@@ -1,0 +1,15 @@
+{
+ "schema": "iscat126.model_freeze.1",
+ "selected_candidate": "I1",
+ "selection_evidence": {
+  "sum_fwd_err_I1": 0.0324044614230526,
+  "sum_fwd_err_I2": 0.026416141671730935,
+  "I2_dev_full_fit_failure": "H06 errH=-145.5 (boundary); I1 H06 errH=+2.7",
+  "node_exactness": "all 63 nodes pass for I1 and I2 (<1e-12)",
+  "domain_safety": "both reject out-of-support; no extrapolation"
+ },
+ "frozen_before": "any J01-J06 inversion",
+ "forward": "canonical_forward = I1: complex-field D/h bilinear, Es shifted at (x-dx,y-dy), Eref fixed",
+ "score_roi": "central 13x13",
+ "note": "H01-H06 remain DEV diagnostics; J01-J06 are the only blind holdouts"
+}

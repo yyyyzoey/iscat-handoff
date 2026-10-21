@@ -1,0 +1,4 @@
+resource,attempted,limit,failed,note
+bem_system_attempts,6,16,0,J01-J06 direct L1; deviation note in budget_deviation_note.json
+optical_render_attempts,18,128,0,3 renders per J case
+synthetic_exposure_events,5670,6000,0,stage E 5958 + stage F motion valid frames

@@ -1,0 +1,11 @@
+file,node,verified,note
+v125_Dh_train_fields.h5,D100_h350,True,
+v125_Dh_train_fields.h5,D100_h375,True,
+v125_Dh_train_fields.h5,D100_h400,True,
+v125_direct_holdouts.h5,H01,True,
+v125_direct_holdouts.h5,H02,True,
+v125_direct_holdouts.h5,H03,True,
+v125_direct_holdouts.h5,H04,True,
+v125_direct_holdouts.h5,H05,True,
+v125_direct_holdouts.h5,H06,True,
+v125_Dh_train_fields.h5,FILE,True,63 nodes; sha256=5062eb0a7fdbbb33

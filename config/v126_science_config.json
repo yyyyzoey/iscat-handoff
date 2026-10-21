@@ -1,0 +1,96 @@
+{
+ "schema": "iscat126.science_config.1",
+ "task_id": "V126_RECONSTRUCTION_ERROR_SEPARATION_AND_PARTICLE_SIZING",
+ "fixed_source": {
+  "branch": "v125",
+  "commit_sha": "36a231ec8319ae47906664bdc8b54c166727af5a",
+  "nanobem_sha": "ce49f77f096337db8be54c46d83696d37b0b23d5"
+ },
+ "user_reported": {
+  "particle_state": "suspended",
+  "medium": "pure_water",
+  "temperature_C": 26,
+  "wavelength_nm": 520,
+  "camera_pixel_um_xy": [
+   14,
+   14
+  ],
+  "objective_nominal_mag": 50,
+  "slide_present": false
+ },
+ "user_estimates": {
+  "coverslip_n": 1.5,
+  "particle_n_close_to_water": true
+ },
+ "assumed": {
+  "n_water": 1.3353,
+  "n_glass": 1.5,
+  "primary_particle_n_re_im": [
+   1.38,
+   0
+  ],
+  "model_particle_structure": "uniform optical-effective sphere",
+  "collection_NA": 0.8,
+  "illumination": "normal x-polarized from glass side",
+  "reference": "glass-water interface",
+  "complex_time_convention": "exp(-i_omega_t)",
+  "relay_mag": 1,
+  "object_pixel_nm": 280,
+  "focus_nm": 450,
+  "detector_roi_xy": [
+   17,
+   17
+  ],
+  "pixel_subsamples_xy": [
+   5,
+   5
+  ],
+  "score_roi_xy": [
+   13,
+   13
+  ],
+  "score_slice_start_end": [
+   2,
+   15
+  ],
+  "min_surface_gap_nm": 100,
+  "water_viscosity_mPa_s": 0.87,
+  "read_noise_e": 2,
+  "background_e_at_100us_per_pix": [
+   1000,
+   10000,
+   100000
+  ],
+  "blank_frames_per_measurement": 8,
+  "exposure_us": [
+   25,
+   100
+  ],
+  "frame_rate_hz": 5000,
+  "fine_trajectory_step_us": 1.25,
+  "coarse_trajectory_step_us": 2.5,
+  "h_support_nm": [
+   350,
+   550
+  ],
+  "lateral_support_nm": 500,
+  "hydrodynamic_D_equals_optical_D": "synthetic generation only, NOT inversion input"
+ },
+ "budget": {
+  "bem_system_attempts_max": 16,
+  "optical_render_attempts_max": 128,
+  "synthetic_exposure_events_max": 6000,
+  "heavy_physics_process_max": 1,
+  "wall_clock_hours_max": 12,
+  "archive_reserve_minutes": 30
+ },
+ "interpolation_candidates": {
+  "I0": "C-map multilinear (inherited baseline)",
+  "I1": "complex-field D/h bilinear, Es shifted, Eref fixed",
+  "I2": "scaled complex-field: interp Es/s(D) real+imag with s=(D/100nm)^3, cubic in D/h"
+ },
+ "scientific_claims": {
+  "diameter_type": "UNIFORM_SPHERE_OPTICAL_EQUIVALENT",
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+ }
+}

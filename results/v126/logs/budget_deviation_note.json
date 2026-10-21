@@ -1,0 +1,5 @@
+{
+ "note": "PROCESS_DEVIATION: the 6 J-holdout solves were launched before the atomic reserve() mechanism was implemented; counted honestly here. All later budgeted steps use reserve() prior to execution.",
+ "bem_solves_executed": 6,
+ "renders_executed": 18
+}
