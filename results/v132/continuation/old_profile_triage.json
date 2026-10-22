@@ -1,0 +1,655 @@
+{
+  "K_K01": {
+    "n_rows": 36,
+    "legacy_profile_complete": true,
+    "repair_points": [],
+    "coarse_attempts_have_no_known_failure": true,
+    "min_finite_loss": 1.3314949740864387e-05,
+    "requires_adaptive_compatibility_refinement": true,
+    "scientific_reportability_certified": false,
+    "note": "A finished finite coarse search is not complete sizing uncertainty or proof of global uniqueness."
+  },
+  "K_K02": {
+    "n_rows": 36,
+    "legacy_profile_complete": false,
+    "repair_points": [
+      {
+        "D": 30.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      }
+    ],
+    "coarse_attempts_have_no_known_failure": false,
+    "min_finite_loss": 5.365708263828995e-05,
+    "requires_adaptive_compatibility_refinement": true,
+    "scientific_reportability_certified": false,
+    "note": "A finished finite coarse search is not complete sizing uncertainty or proof of global uniqueness."
+  },
+  "K_K03": {
+    "n_rows": 36,
+    "legacy_profile_complete": false,
+    "repair_points": [
+      {
+        "D": 30.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 35.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 40.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 45.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 50.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 55.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 60.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 65.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 70.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 90.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 95.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      }
+    ],
+    "coarse_attempts_have_no_known_failure": false,
+    "min_finite_loss": 4.172960076873424e-06,
+    "requires_adaptive_compatibility_refinement": true,
+    "scientific_reportability_certified": false,
+    "note": "A finished finite coarse search is not complete sizing uncertainty or proof of global uniqueness."
+  },
+  "K_K04": {
+    "n_rows": 36,
+    "legacy_profile_complete": false,
+    "repair_points": [
+      {
+        "D": 50.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 60.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      }
+    ],
+    "coarse_attempts_have_no_known_failure": false,
+    "min_finite_loss": 6.856994251557356e-05,
+    "requires_adaptive_compatibility_refinement": true,
+    "scientific_reportability_certified": false,
+    "note": "A finished finite coarse search is not complete sizing uncertainty or proof of global uniqueness."
+  },
+  "K_K05": {
+    "n_rows": 36,
+    "legacy_profile_complete": false,
+    "repair_points": [
+      {
+        "D": 30.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 40.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 55.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 60.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 65.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 70.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 75.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 80.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 85.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      }
+    ],
+    "coarse_attempts_have_no_known_failure": false,
+    "min_finite_loss": 0.00029276959289611785,
+    "requires_adaptive_compatibility_refinement": true,
+    "scientific_reportability_certified": false,
+    "note": "A finished finite coarse search is not complete sizing uncertainty or proof of global uniqueness."
+  },
+  "K_K06": {
+    "n_rows": 36,
+    "legacy_profile_complete": false,
+    "repair_points": [
+      {
+        "D": 55.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      }
+    ],
+    "coarse_attempts_have_no_known_failure": false,
+    "min_finite_loss": 0.0002669764353133176,
+    "requires_adaptive_compatibility_refinement": true,
+    "scientific_reportability_certified": false,
+    "note": "A finished finite coarse search is not complete sizing uncertainty or proof of global uniqueness."
+  },
+  "L_L01": {
+    "n_rows": 36,
+    "legacy_profile_complete": true,
+    "repair_points": [],
+    "coarse_attempts_have_no_known_failure": true,
+    "min_finite_loss": 6.407990440488057e-06,
+    "requires_adaptive_compatibility_refinement": true,
+    "scientific_reportability_certified": false,
+    "note": "A finished finite coarse search is not complete sizing uncertainty or proof of global uniqueness."
+  },
+  "L_L02": {
+    "n_rows": 36,
+    "legacy_profile_complete": true,
+    "repair_points": [],
+    "coarse_attempts_have_no_known_failure": true,
+    "min_finite_loss": 6.170738957247244e-05,
+    "requires_adaptive_compatibility_refinement": true,
+    "scientific_reportability_certified": false,
+    "note": "A finished finite coarse search is not complete sizing uncertainty or proof of global uniqueness."
+  },
+  "L_L03": {
+    "n_rows": 36,
+    "legacy_profile_complete": false,
+    "repair_points": [
+      {
+        "D": 30.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 35.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 40.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 45.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 50.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 55.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 60.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 65.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 70.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 75.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 80.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 85.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 90.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 95.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      }
+    ],
+    "coarse_attempts_have_no_known_failure": false,
+    "min_finite_loss": 0.00038222870177430834,
+    "requires_adaptive_compatibility_refinement": true,
+    "scientific_reportability_certified": false,
+    "note": "A finished finite coarse search is not complete sizing uncertainty or proof of global uniqueness."
+  },
+  "L_L04": {
+    "n_rows": 36,
+    "legacy_profile_complete": false,
+    "repair_points": [
+      {
+        "D": 35.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 45.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 50.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 55.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 70.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 75.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 80.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 85.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 90.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      }
+    ],
+    "coarse_attempts_have_no_known_failure": false,
+    "min_finite_loss": 0.00047809324476156195,
+    "requires_adaptive_compatibility_refinement": true,
+    "scientific_reportability_certified": false,
+    "note": "A finished finite coarse search is not complete sizing uncertainty or proof of global uniqueness."
+  },
+  "L_L05": {
+    "n_rows": 36,
+    "legacy_profile_complete": true,
+    "repair_points": [],
+    "coarse_attempts_have_no_known_failure": true,
+    "min_finite_loss": 0.00011305820002625935,
+    "requires_adaptive_compatibility_refinement": true,
+    "scientific_reportability_certified": false,
+    "note": "A finished finite coarse search is not complete sizing uncertainty or proof of global uniqueness."
+  },
+  "L_L06": {
+    "n_rows": 36,
+    "legacy_profile_complete": false,
+    "repair_points": [
+      {
+        "D": 30.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 35.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 40.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 45.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 50.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 55.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 60.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 65.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 70.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 75.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 80.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 85.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 90.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 95.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 100.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 105.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 110.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 115.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 120.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 125.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 130.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 135.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 140.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 145.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 150.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 155.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 160.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      },
+      {
+        "D": 165.0,
+        "reasons": [
+          "UNRESOLVED_OPTIMIZER_EXIT",
+          "UNRESOLVED_START_BUDGET"
+        ]
+      }
+    ],
+    "coarse_attempts_have_no_known_failure": false,
+    "min_finite_loss": 0.000934955394467712,
+    "requires_adaptive_compatibility_refinement": true,
+    "scientific_reportability_certified": false,
+    "note": "A finished finite coarse search is not complete sizing uncertainty or proof of global uniqueness."
+  }
+}

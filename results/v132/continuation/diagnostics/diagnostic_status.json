@@ -1,0 +1,38 @@
+{
+  "computed": 18,
+  "failures": [
+    {
+      "data_set": "L",
+      "case": "L01",
+      "error": "KeyError: \"Unable to open object (object 'fine_x_nm' doesn't exist)\""
+    },
+    {
+      "data_set": "L",
+      "case": "L02",
+      "error": "KeyError: \"Unable to open object (object 'fine_x_nm' doesn't exist)\""
+    },
+    {
+      "data_set": "L",
+      "case": "L03",
+      "error": "KeyError: \"Unable to open object (object 'fine_x_nm' doesn't exist)\""
+    },
+    {
+      "data_set": "L",
+      "case": "L04",
+      "error": "KeyError: \"Unable to open object (object 'fine_x_nm' doesn't exist)\""
+    },
+    {
+      "data_set": "L",
+      "case": "L05",
+      "error": "KeyError: \"Unable to open object (object 'fine_x_nm' doesn't exist)\""
+    },
+    {
+      "data_set": "L",
+      "case": "L06",
+      "error": "KeyError: \"Unable to open object (object 'fine_x_nm' doesn't exist)\""
+    }
+  ],
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "physical_qualified": false,
+  "reportable_certified": false
+}

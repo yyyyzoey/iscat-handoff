@@ -1,0 +1,181 @@
+{
+  "sample": 20,
+  "theta_generator": [
+    176.0,
+    437.5,
+    35.0,
+    -55.0
+  ],
+  "tolerance": 1.7544650901797188e-07,
+  "witness_residual": 0.0,
+  "closed": true,
+  "fit": {
+    "candidate_D": 176.00000000000009,
+    "theta": [
+      176.00000000000009,
+      437.49999999999994,
+      34.99999999999978,
+      -54.99999999999998
+    ],
+    "loss": 7.905947321499836e-16,
+    "optimizer_converged": true,
+    "loss_guard_fallback": false,
+    "search_complete": true,
+    "boundary_flags": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "starts": [
+      {
+        "theta": [
+          192.25727623210273,
+          428.0296888866458,
+          34.979874513536046,
+          -54.95462598542883
+        ],
+        "loss": 0.0002826342110842926,
+        "success": true,
+        "status": 1,
+        "message": "`gtol` termination condition is satisfied.",
+        "optimality": 7.024983490456913e-13,
+        "nfev": 14,
+        "njev": 13,
+        "canonical_calls": 118,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "theta": [
+          176.00000000000009,
+          437.49999999999994,
+          34.99999999999978,
+          -54.99999999999998
+        ],
+        "loss": 7.905947321499836e-16,
+        "success": true,
+        "status": 1,
+        "message": "`gtol` termination condition is satisfied.",
+        "optimality": 1.8740544169472445e-15,
+        "nfev": 10,
+        "njev": 10,
+        "canonical_calls": 90,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "theta": [
+          175.9999999999998,
+          437.500000000001,
+          35.00000000000001,
+          -55.00000000000011
+        ],
+        "loss": 1.2951597627636205e-15,
+        "success": true,
+        "status": 1,
+        "message": "`gtol` termination condition is satisfied.",
+        "optimality": 4.691178741025689e-15,
+        "nfev": 11,
+        "njev": 11,
+        "canonical_calls": 99,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "theta": [
+          67.68459153103994,
+          350.0017653399821,
+          -141.57743412735212,
+          448.0026150738653
+        ],
+        "loss": 0.17424037956216648,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "optimality": 0.0013027511843436488,
+        "nfev": 221,
+        "njev": 189,
+        "canonical_calls": 1733,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "theta": [
+          175.99999999991195,
+          437.50000000011283,
+          35.000000000000135,
+          -55.0000000000014
+        ],
+        "loss": 5.733942904495552e-14,
+        "success": true,
+        "status": 1,
+        "message": "`gtol` termination condition is satisfied.",
+        "optimality": 5.567464528851743e-14,
+        "nfev": 10,
+        "njev": 10,
+        "canonical_calls": 90,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "theta": [
+          175.99999999999994,
+          437.5000000000005,
+          34.99999999999963,
+          -55.000000000000256
+        ],
+        "loss": 9.238953539265628e-16,
+        "success": true,
+        "status": 1,
+        "message": "`gtol` termination condition is satisfied.",
+        "optimality": 2.4696583251379945e-15,
+        "nfev": 10,
+        "njev": 10,
+        "canonical_calls": 90,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "canonical_calls": 2220,
+    "bank_id": "07f25edb0b0d284b0a191dbbc17542da803fe718408ee5fcdc3338a0e05dd97d",
+    "scan_best_loss": 0.05260519119819483,
+    "bank_calls_separate_global": 2223,
+    "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+    "reportable_D": null,
+    "diameter_reportable": false,
+    "reason_codes": [
+      "NEEDS_PHYSICAL_QUALIFICATION_COMPLETE_PROFILE_AND_REPORTABILITY"
+    ]
+  }
+}

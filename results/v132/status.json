@@ -1,0 +1,18 @@
+{
+ "schema": "iscat132.status.1",
+ "task_id": "V132_QUALIFIED_PROFILES_AND_EXPERIMENT_READY_PARTICLE_SIZING",
+ "fixed_source_commit": "b546d80beb0dc4789effac8c192896e5f45876e9",
+ "stages": {
+  "S0": "COMPLETED",
+  "S1": "COMPLETED",
+  "S2": "COMPLETED",
+  "S3": "COMPLETED",
+  "S4": "PARTIAL",
+  "F": "NOT_EVALUATED"
+ },
+ "scientific_claims": {
+  "DEV_21_OF_24_WITHIN_TARGET": true,
+  "C_MAP_LIMITATION_CONFIRMED_FOR_M": true,
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+ }
+}

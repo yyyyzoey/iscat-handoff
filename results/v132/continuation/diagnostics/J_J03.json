@@ -1,0 +1,259 @@
+{
+  "case": "J03",
+  "data_set": "J",
+  "truth": {
+    "dataset": "J",
+    "case": "J03",
+    "D_nm": 89.0,
+    "h_nm": 437.5,
+    "x_nm": 70.0,
+    "y_nm": 126.0,
+    "source_sha256": "71ca0ebabd399d45aba9275d285dd0757244a1a273a2d74090765d13d5095546",
+    "scope": "PUBLISHED_RECORD_NOT_SOLVE_VERIFIED"
+  },
+  "theta_candidate": [
+    89.69342668012001,
+    443.1333331348337,
+    70.11224166652808,
+    126.12771625697287
+  ],
+  "observation_array_sha256": "5fe7f6878b758fbc6a33ba8371cf110fa5a019ca485b9c9bfc6287ee32c56275",
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "source_checks": "H5 identity verified; original solve geometry still separate",
+  "model_at_truth_error_L2": 0.0008587027706976033,
+  "candidate_residual_L2": 2.6259482787449515e-05,
+  "signal_L2": 0.04605176320095055,
+  "relative_model_error": 0.01864646890827144,
+  "local_projection": [
+    {
+      "rank_cutoff": 1e-06,
+      "nuisance_rank": 3,
+      "nuisance_column_norms": [
+        0.00011209092034075859,
+        0.00019897514729324352,
+        0.00021164814194971006
+      ],
+      "singular_values": [
+        1.0522200965963042,
+        0.9986167444608,
+        0.9463601143335343
+      ],
+      "diameter_direction_norm": 0.0013086935261961453,
+      "projected_D_norm": 0.0006148272673796534,
+      "q_fraction": 0.4698023296307679,
+      "predicted_delta_D_local_nm": 0.108989680827439,
+      "scope": "LOCAL_LINEARIZATION_NOT_ACCURACY_OR_CRLB"
+    },
+    {
+      "rank_cutoff": 1e-08,
+      "nuisance_rank": 3,
+      "nuisance_column_norms": [
+        0.00011209092034075859,
+        0.00019897514729324352,
+        0.00021164814194971006
+      ],
+      "singular_values": [
+        1.0522200965963042,
+        0.9986167444608,
+        0.9463601143335343
+      ],
+      "diameter_direction_norm": 0.0013086935261961453,
+      "projected_D_norm": 0.0006148272673796534,
+      "q_fraction": 0.4698023296307679,
+      "predicted_delta_D_local_nm": 0.108989680827439,
+      "scope": "LOCAL_LINEARIZATION_NOT_ACCURACY_OR_CRLB"
+    },
+    {
+      "rank_cutoff": 1e-10,
+      "nuisance_rank": 3,
+      "nuisance_column_norms": [
+        0.00011209092034075859,
+        0.00019897514729324352,
+        0.00021164814194971006
+      ],
+      "singular_values": [
+        1.0522200965963042,
+        0.9986167444608,
+        0.9463601143335343
+      ],
+      "diameter_direction_norm": 0.0013086935261961453,
+      "projected_D_norm": 0.0006148272673796534,
+      "q_fraction": 0.4698023296307679,
+      "predicted_delta_D_local_nm": 0.108989680827439,
+      "scope": "LOCAL_LINEARIZATION_NOT_ACCURACY_OR_CRLB"
+    }
+  ],
+  "derivative_half_abs_norms": [
+    1.044637242246997e-11,
+    5.130618894605965e-12,
+    4.7273126510416207e-14,
+    4.301939940503942e-14
+  ],
+  "derivative_double_abs_norms": [
+    4.1795342836497846e-11,
+    2.0551135378613406e-11,
+    2.2009198701892094e-14,
+    2.3118497390514717e-14
+  ],
+  "same_direct_field_shift": {
+    "status": "COMPUTED",
+    "abs_L2": 0.0006509740814938272,
+    "max_abs": 0.00030544462660266405,
+    "signal_L2": 0.04605176320095055,
+    "rel_L2": 0.014135703743920721,
+    "scope": "SAME_DIRECT_FIELD_SHIFT_COMPARISON_NOT_SOLVE_GEOMETRY_CERTIFICATE"
+  },
+  "oracle_D": {
+    "best_witness": {
+      "theta": [
+        89.5984360701377,
+        437.5,
+        70.0,
+        126.0
+      ],
+      "loss": 0.0003451536763461801
+    },
+    "starts": [
+      {
+        "theta": [
+          89.59843607193066,
+          437.5,
+          70.0,
+          126.0
+        ],
+        "loss": 0.0003451536763462087,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "optimality": 8.76090637200543e-11,
+        "nfev": 7,
+        "njev": 6,
+        "canonical_calls": 19,
+        "budget_exhausted": false,
+        "active_mask": [
+          0
+        ]
+      },
+      {
+        "theta": [
+          89.59843607014083,
+          437.5,
+          70.0,
+          126.0
+        ],
+        "loss": 0.00034515367634628964,
+        "success": true,
+        "status": 1,
+        "message": "`gtol` termination condition is satisfied.",
+        "optimality": 1.4801032869142107e-13,
+        "nfev": 6,
+        "njev": 6,
+        "canonical_calls": 18,
+        "budget_exhausted": false,
+        "active_mask": [
+          0
+        ]
+      },
+      {
+        "theta": [
+          89.5984360701377,
+          437.5,
+          70.0,
+          126.0
+        ],
+        "loss": 0.0003451536763461801,
+        "success": true,
+        "status": 1,
+        "message": "`gtol` termination condition is satisfied.",
+        "optimality": 2.5376210806520576e-15,
+        "nfev": 8,
+        "njev": 8,
+        "canonical_calls": 24,
+        "budget_exhausted": false,
+        "active_mask": [
+          0
+        ]
+      }
+    ],
+    "calls": 61,
+    "role": "ORACLE_DIAGNOSTIC_NOT_FORMAL_ESTIMATOR"
+  },
+  "oracle_Dh": {
+    "best_witness": {
+      "theta": [
+        89.68782699088551,
+        443.1042960303503,
+        70.0,
+        126.0
+      ],
+      "loss": 4.431423275866995e-05
+    },
+    "starts": [
+      {
+        "theta": [
+          89.68782698983381,
+          443.1042960206999,
+          70.0,
+          126.0
+        ],
+        "loss": 4.431423275881312e-05,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "optimality": 2.2684244903378587e-12,
+        "nfev": 26,
+        "njev": 18,
+        "canonical_calls": 98,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0
+        ]
+      },
+      {
+        "theta": [
+          89.68782699088551,
+          443.1042960303503,
+          70.0,
+          126.0
+        ],
+        "loss": 4.431423275866995e-05,
+        "success": true,
+        "status": 1,
+        "message": "`gtol` termination condition is satisfied.",
+        "optimality": 2.196092962201057e-14,
+        "nfev": 9,
+        "njev": 9,
+        "canonical_calls": 45,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0
+        ]
+      },
+      {
+        "theta": [
+          89.68782699162826,
+          443.1042960372132,
+          70.0,
+          126.0
+        ],
+        "loss": 4.4314232758831024e-05,
+        "success": true,
+        "status": 3,
+        "message": "`xtol` termination condition is satisfied.",
+        "optimality": 1.5012308351740185e-12,
+        "nfev": 15,
+        "njev": 13,
+        "canonical_calls": 67,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0
+        ]
+      }
+    ],
+    "calls": 210,
+    "role": "ORACLE_DIAGNOSTIC_NOT_FORMAL_ESTIMATOR"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "H": {
+    "n": 6,
+    "size_error_target_met": 5,
+    "MAE_nm": 2.4583624544120704,
+    "RMSE_nm": 4.414395821926724,
+    "bias_nm": -1.8938368577219056,
+    "median_abs_nm": 0.9460499259400663,
+    "max_abs_nm": 10.564024002130353
+  },
+  "J": {
+    "n": 6,
+    "size_error_target_met": 6,
+    "MAE_nm": 2.564303573452598,
+    "RMSE_nm": 3.0675795848733,
+    "bias_nm": 0.7118872473697522,
+    "median_abs_nm": 2.241334424508949,
+    "max_abs_nm": 5.152910217991817
+  },
+  "K": {
+    "n": 6,
+    "size_error_target_met": 5,
+    "MAE_nm": 5.309414429803393,
+    "RMSE_nm": 6.965390414156449,
+    "bias_nm": -0.7137767339234777,
+    "median_abs_nm": 3.969287368771777,
+    "max_abs_nm": 14.352913502843691
+  },
+  "L": {
+    "n": 6,
+    "size_error_target_met": 5,
+    "MAE_nm": 4.83514169551403,
+    "RMSE_nm": 6.418320983465538,
+    "bias_nm": -0.004110493692408568,
+    "median_abs_nm": 2.3923947649703905,
+    "max_abs_nm": 12.200723105155319
+  },
+  "ALL": {
+    "n": 24,
+    "size_error_target_met": 21,
+    "MAE_nm": 3.7918055382955225,
+    "RMSE_nm": 5.445375167300049,
+    "bias_nm": -0.4749592094920099,
+    "median_abs_nm": 2.3727312935395304,
+    "max_abs_nm": 14.352913502843691
+  },
+  "not_within_target": [
+    "K_K02",
+    "L_L02",
+    "H_H03"
+  ],
+  "scientific_limit": "Development record scoring; does not certify source geometry, uniqueness, reportability, or experimental accuracy."
+}

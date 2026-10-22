@@ -1,0 +1,171 @@
+{
+  "sample": 18,
+  "theta_generator": [
+    152.0,
+    412.5,
+    -120.0,
+    30.0
+  ],
+  "tolerance": 9.821087157549985e-08,
+  "witness_residual": 0.0,
+  "closed": true,
+  "fit": {
+    "candidate_D": 152.00000000001003,
+    "theta": [
+      152.00000000001003,
+      412.49999999999676,
+      -119.99999999999989,
+      30.0000000000003
+    ],
+    "loss": 1.6883791783905796e-15,
+    "optimizer_converged": true,
+    "loss_guard_fallback": false,
+    "search_complete": false,
+    "boundary_flags": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "starts": [
+      {
+        "theta": [
+          152.00000000013608,
+          412.49999999995595,
+          -120.0000000000005,
+          29.999999999999435
+        ],
+        "loss": 8.341587939169312e-15,
+        "success": true,
+        "status": 1,
+        "message": "`gtol` termination condition is satisfied.",
+        "optimality": 2.6557341476562033e-13,
+        "nfev": 27,
+        "njev": 22,
+        "canonical_calls": 203,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "theta": [
+          151.99999999992943,
+          412.5000000000216,
+          -120.00000000000009,
+          30.000000000000657
+        ],
+        "loss": 3.549257086771526e-15,
+        "success": true,
+        "status": 1,
+        "message": "`gtol` termination condition is satisfied.",
+        "optimality": 5.73531257452836e-14,
+        "nfev": 27,
+        "njev": 24,
+        "canonical_calls": 219,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "theta": [
+          126.92264895145317,
+          428.0175842008613,
+          -120.01905852884342,
+          30.094419575586215
+        ],
+        "loss": 0.0006144762697744017,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "optimality": 8.576482152057197e-11,
+        "nfev": 32,
+        "njev": 31,
+        "canonical_calls": 280,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "theta": [
+          30.0,
+          500.0,
+          112.0,
+          -112.0
+        ],
+        "loss": null,
+        "success": false,
+        "status": "BUDGET_EXHAUSTED",
+        "canonical_calls": 2500,
+        "budget_exhausted": true
+      },
+      {
+        "theta": [
+          152.00000000001003,
+          412.49999999999676,
+          -119.99999999999989,
+          30.0000000000003
+        ],
+        "loss": 1.6883791783905796e-15,
+        "success": true,
+        "status": 1,
+        "message": "`gtol` termination condition is satisfied.",
+        "optimality": 1.3460004624214116e-14,
+        "nfev": 11,
+        "njev": 10,
+        "canonical_calls": 91,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "theta": [
+          126.92264686754397,
+          428.0175871741654,
+          -120.01905855266683,
+          30.094419580169046
+        ],
+        "loss": 0.0006144762697745825,
+        "success": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "optimality": 1.1682590220344983e-10,
+        "nfev": 41,
+        "njev": 37,
+        "canonical_calls": 337,
+        "budget_exhausted": false,
+        "active_mask": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "canonical_calls": 3630,
+    "bank_id": "07f25edb0b0d284b0a191dbbc17542da803fe718408ee5fcdc3338a0e05dd97d",
+    "scan_best_loss": 0.016423311239680764,
+    "bank_calls_separate_global": 2223,
+    "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+    "reportable_D": null,
+    "diameter_reportable": false,
+    "reason_codes": [
+      "NEEDS_PHYSICAL_QUALIFICATION_COMPLETE_PROFILE_AND_REPORTABILITY"
+    ]
+  }
+}

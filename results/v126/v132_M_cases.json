@@ -1,0 +1,154 @@
+{
+ "cases": [
+  {
+   "tag": "holdout_M01",
+   "D_nm": 53,
+   "h_nm": 365.625,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      42,
+      -70
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_M02",
+   "D_nm": 81,
+   "h_nm": 415.625,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      -112,
+      56
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_M03",
+   "D_nm": 119,
+   "h_nm": 446.875,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      84,
+      98
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_M04",
+   "D_nm": 149,
+   "h_nm": 471.875,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      -70,
+      -112
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_M05",
+   "D_nm": 171,
+   "h_nm": 509.375,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      126,
+      -42
+     ]
+    }
+   ]
+  },
+  {
+   "tag": "holdout_M06",
+   "D_nm": 187,
+   "h_nm": 540.625,
+   "np_re": 1.38,
+   "np_im": 0.0,
+   "mesh": 1444,
+   "renders": [
+    {
+     "variant": "default"
+    },
+    {
+     "variant": "wide",
+     "mode": "wide"
+    },
+    {
+     "variant": "at_offset",
+     "mode": "particle_shift",
+     "shift_xy_nm": [
+      -98,
+      70
+     ]
+    }
+   ]
+  }
+ ]
+}

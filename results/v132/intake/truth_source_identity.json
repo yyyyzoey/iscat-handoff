@@ -1,0 +1,22 @@
+{
+  "H": {
+    "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v125\\config_effective.json",
+    "sha256": "71b7434f5294056838d76174a4ff6916a0005dc35e57a759d7d737e67003f0e2",
+    "scope": "PUBLISHED_RECORD_NOT_SOLVE_VERIFIED"
+  },
+  "J": {
+    "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\validation\\holdout_truth_validator_only.json",
+    "sha256": "71ca0ebabd399d45aba9275d285dd0757244a1a273a2d74090765d13d5095546",
+    "scope": "PUBLISHED_RECORD_NOT_SOLVE_VERIFIED"
+  },
+  "K": {
+    "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v127\\validation\\holdout_truth_validator_only.json",
+    "sha256": "7eb3ee6a30ad3e9f5996cbcef3028bb9cea71f2dbe6f3ac4d619cb7602be3401",
+    "scope": "PUBLISHED_RECORD_NOT_SOLVE_VERIFIED"
+  },
+  "L": {
+    "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v128\\validation\\new_L_truth_validator_only.json",
+    "sha256": "cd345d86d5664a43700876f45fc86391866fe84086a511c104b208e1decf3846",
+    "scope": "PUBLISHED_RECORD_NOT_SOLVE_VERIFIED"
+  }
+}
