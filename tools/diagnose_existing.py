@@ -70,9 +70,14 @@ def oracle_control(model,Y,true,free):
     return dict(best_witness=obj.best,starts=records,calls=obj.calls,role='ORACLE_DIAGNOSTIC_NOT_FORMAL_ESTIMATOR')
 
 
-def direct_field_shift(group,model,theta):
+def _direct_field_shift_checked(group,model,theta):
     if 'wide' not in group:return dict(status='MISSING_WIDE',qualified=False)
-    w=group['wide'];er=complex_array(w['Eref']);es=complex_array(w['Esca'])
+    w=group['wide']
+    missing=[k for k in ('Eref','Esca','fine_x_nm','fine_y_nm') if k not in w]
+    if missing:
+        return dict(status='MISSING_WIDE_METADATA',qualified=False,missing=missing,
+                    action='Recover coordinates from the SAME original render; do not guess or borrow training axes')
+    er=complex_array(w['Eref']);es=complex_array(w['Esca'])
     fx=np.asarray(w['fine_x_nm'][()],float);fy=np.asarray(w['fine_y_nm'][()],float)
     if er.shape!=(len(fx),len(fy),3) or es.shape!=er.shape:raise ValueError('Bad raw wide field axes; no guessed transpose')
     # Direct holdout arrays already use the audited camera coordinate convention.
@@ -85,6 +90,16 @@ def direct_field_shift(group,model,theta):
     e=float(np.linalg.norm(pred-Y));signal=float(np.linalg.norm(Y))
     return dict(status='COMPUTED',abs_L2=e,max_abs=float(np.max(abs(pred-Y))),signal_L2=signal,rel_L2=e/signal if signal>0 else None,
                 scope='SAME_DIRECT_FIELD_SHIFT_COMPARISON_NOT_SOLVE_GEOMETRY_CERTIFICATE')
+
+
+def direct_field_shift(group,model,theta):
+    """Optional source-field test: failure is explicit, never destroys valid image diagnostics."""
+    try:
+        return _direct_field_shift_checked(group,model,theta)
+    except Exception as exc:
+        return dict(status='DIRECT_FIELD_COMPARISON_FAILED',qualified=False,
+                    error=f'{type(exc).__name__}: {exc}',
+                    scope='ONLY_THIS_CHECK_BLOCKED; not a pass and not a substitute for source repair')
 
 
 def run(repo,cfg,out,sets=None,oracle=False):

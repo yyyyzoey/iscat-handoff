@@ -89,13 +89,15 @@ class Tests(unittest.TestCase):
     def test_physical_finite_difference(self):
         J=local_jacobian(Linear(),[83.7,420.,0,0]);np.testing.assert_allclose(J,np.diag([.01,.002,.005,.005]),atol=1e-12)
     def test_budget_plan(self):
-        c=json.loads((ROOT/'config/v132_science_config.json').read_text());p=c['camera'];m=c['motion']
-        s=(len(p['dev_D_nm'])*len(p['dev_h_nm'])*3*p['dev_target_repeats']+3*p['dev_blanks_per_B']+3*p['validation_blanks_per_B']+6*3*p['new_holdout_noise_repeats_per_B'])*(1+p['refs_per_measurement'])
-        motion=len(m['D_generation_nm'])*m['tracks_per_D']*len(m['exposure_us'])*(m['frames_per_track']+m['shared_reference_frames_per_track_and_exposure'])
-        self.assertEqual(s+motion,4782);self.assertLessEqual(s+motion,c['budget']['synthetic_camera_exposure_events_max'])
+        c=json.loads((ROOT/'config/v133_science_config.json').read_text());p=c['camera'];m=c['motion']
+        s=(len(p['dev_D_nm'])*len(p['dev_h_nm'])*3*p['dev_target_repeats'] +3*p['dev_blanks_per_background']+3*p['validation_blanks_per_background']+6*3*p['M_development_repeats_per_background'])*(1+p['reference_frames_per_trial'])
+        motion=len(m['D_nm'])*m['tracks_per_D']*len(m['exposure_us'])*(m['frames_per_track']+m['shared_reference_frames'])
+        self.assertEqual(s,4590);self.assertEqual(motion,192);self.assertEqual(s+motion,4782)
+        self.assertLessEqual(s+motion,c['budget']['camera_exposure_events']);self.assertEqual(c['budget']['new_bem_systems'],0)
     def test_inherited_core_unchanged(self):
         import hashlib
-        c=json.loads((ROOT/'config/v132_science_config.json').read_text())
-        for n,h in c['inherited_core_sha256'].items():self.assertEqual(hashlib.sha256((ROOT/'tools'/n).read_bytes()).hexdigest(),h)
+        c=json.loads((ROOT/'config/v133_science_config.json').read_text())
+        for name,sha in c['model_lock']['numerical_source_sha256'].items():
+            self.assertEqual(hashlib.sha256((ROOT/'tools'/name).read_bytes()).hexdigest(),sha)
 
 if __name__=='__main__':unittest.main()

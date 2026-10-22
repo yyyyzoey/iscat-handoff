@@ -1,0 +1,24 @@
+{
+  "task_id": "V133_LOCKED_F2_RECOVERY_AND_MEASUREMENT_COMPLETION",
+  "component": "F2_M_RECOVERY",
+  "full_task_complete": false,
+  "stages": {
+    "locked_F2": "NUMERICALLY_BOUND_PHYSICAL_QUALIFICATION_SEPARATE"
+  },
+  "errors": [],
+  "new_BEM": 0,
+  "new_render": 0,
+  "new_camera_exposures": 0,
+  "execution": "F2_M_CANDIDATES_COMPUTED_NOT_TASK_COMPLETE",
+  "required_next": [
+    "RAW_SOURCE_AND_SAME_SOLVE_SHIFT_CHECK",
+    "L_OPTIONAL_METADATA_RECOVERY_AND_DIAGNOSTICS",
+    "PROFILE_AND_JOINT_RECONCILIATION",
+    "CAMERA_EXPOSURE_SHARED_D_WITH_SAME_F2",
+    "EXPERIMENT_INTERFACE_AND_CHECKED_RETURN"
+  ],
+  "elapsed_seconds": 27.421999999904074,
+  "canonical_calls": 5434,
+  "candidate_rows_saved": 6,
+  "experimental_absolute_validated": false
+}

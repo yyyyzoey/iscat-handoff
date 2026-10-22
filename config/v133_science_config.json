@@ -1,0 +1,434 @@
+{
+ "task_id": "V133_LOCKED_F2_RECOVERY_AND_MEASUREMENT_COMPLETION",
+ "execution_authorized": true,
+ "inputs": {
+  "train": "results/v128/library/v128_Dh_train_fields.h5",
+  "train_csv": "results/v128/library/train_grid_index.csv",
+  "opened_L": "results/v128/validation/new_L_direct_images.h5",
+  "opened_L_truth_validator_only": "results/v128/validation/new_L_truth_validator_only.json",
+  "observation_dataset": "at_offset/C",
+  "observable": "STATIC_SIGNED_CONTRAST",
+  "library_versions": {
+   "at_v129_git_blob": "21d5ac5ea939a180137786df53cd3882a51cb03c",
+   "at_v129_bytes": 53434093,
+   "at_v128_git_blob": "8d2153b117c5023b912315deafdd019895a67bba",
+   "at_v128_bytes": 49957243,
+   "instruction": "Preserve both; compare datasets and actual provenance. Do not assume change is corruption or zero-copy inheritance."
+  }
+ },
+ "user_confirmed": {
+  "particle_state": "suspended",
+  "medium": "pure_water",
+  "temperature_C": 26,
+  "vacuum_wavelength_nm": 520,
+  "sensor_pixel_um": [
+   14,
+   14
+  ],
+  "objective_magnification": 50,
+  "slide_present": false
+ },
+ "user_estimates": {
+  "coverslip_refractive_index": 1.5,
+  "particle_index_close_to_water": true
+ },
+ "conditional_model": {
+  "n_water": 1.3353,
+  "n_glass": 1.5,
+  "particle_n_re_im": [
+   1.38,
+   0
+  ],
+  "particle_shape": "uniform_effective_sphere",
+  "NA": 0.8,
+  "relay_magnification": 1,
+  "object_pixel_nm": 280,
+  "focus_nm": 450,
+  "camera_n": 17,
+  "score_n": 13,
+  "q": 5,
+  "xy_limit_nm": 500,
+  "min_surface_gap_nm": 100,
+  "illumination": "normal_x_polarized_from_glass",
+  "reference": "glass_water_interface",
+  "diameter_type": "UNIFORM_SPHERE_OPTICAL_EQUIVALENT",
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+ },
+ "fit": {
+  "x_scale": [
+   50,
+   50,
+   140,
+   140
+  ],
+  "maximum_starts": 6,
+  "residual_scale": "max(norm(Y),1e-6)",
+  "single_total_canonical_calls": 20000,
+  "per_start_max_nfev": 500,
+  "per_start_canonical_calls": 2500,
+  "absolute_jacobian_steps_nm": [
+   0.02,
+   0.02,
+   0.05,
+   0.05
+  ],
+  "profile_initial_step_nm": 5,
+  "profile_refinement_step_nm": 0.5,
+  "profile_total_canonical_calls": 120000,
+  "shared_D_total_canonical_calls": 150000,
+  "require_continuous_D": true
+ },
+ "template_bank": {
+  "include_axis_midpoints": true,
+  "offsets_nm": [
+   [
+    0,
+    0
+   ],
+   [
+    140,
+    0
+   ],
+   [
+    -140,
+    0
+   ],
+   [
+    0,
+    140
+   ],
+   [
+    0,
+    -140
+   ],
+   [
+    112,
+    112
+   ],
+   [
+    -112,
+    112
+   ],
+   [
+    112,
+    -112
+   ],
+   [
+    -112,
+    -112
+   ]
+  ],
+  "height_strata_count": 4,
+  "max_starts": 6,
+  "separation_nm": [
+   15,
+   25,
+   80,
+   80
+  ],
+  "observed_data_and_truth_forbidden_in_bank": true,
+  "max_templates_for_7x10_axes": 2223,
+  "role": "Initialization only, final residual always canonical_forward; not an added training library"
+ },
+ "inheritance": {
+  "v131_out": "results/v131/offline_F2",
+  "expected_library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+  "expected_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "do_not_rerun_complete_template_bank_or_24_closure": true,
+  "truth_in_estimator_forbidden": true,
+  "resume_bindings": [
+   "model_id",
+   "observation_sha256",
+   "estimator_id",
+   "profile_config_sha256"
+  ]
+ },
+ "truth_sources": {
+  "H": {
+   "path": "results/v125/config_effective.json",
+   "format": "v125_config",
+   "note": "read plan_selection and holdout_h_nm; pair by unique case, never borrow H values for J",
+   "expected_git_blob": "843c97fe671b1e54e917ab6e3f69dde7171a2961"
+  },
+  "J": {
+   "path": "results/v126/validation/holdout_truth_validator_only.json",
+   "format": "cases_json",
+   "expected_git_blob": "3e3d0f93993ba0242d3eb695c7d962cc173223ef"
+  },
+  "K": {
+   "path": "results/v127/validation/holdout_truth_validator_only.json",
+   "format": "cases_json",
+   "expected_git_blob": "8e67edeeab8196102bb3367af5ddba21eb2595a1"
+  },
+  "L": {
+   "path": "results/v128/validation/new_L_truth_validator_only.json",
+   "format": "cases_json",
+   "expected_git_blob": "6848450435cb1e625205c093cc169ff237852e08"
+  }
+ },
+ "profiles_v132": {
+  "priority": [
+   "K_K02",
+   "L_L02",
+   "H_H03",
+   "K_K06",
+   "L_L06",
+   "K_K01",
+   "L_L01"
+  ],
+  "coarse_step_nm": 5.0,
+  "screening_step_nm": 2.5,
+  "refinement_step_nm": 0.5,
+  "per_point_calls": 20000,
+  "per_start_calls": 2500,
+  "max_nfev": 500,
+  "total_calls_per_case": 120000,
+  "max_repair_rounds": 2,
+  "compatibility_envelope": "global maximum of frozen DEVELOPMENT direct-image error + separately recorded numerical allowance; empirical only",
+  "complete_requires_task_success": true,
+  "keep_legacy_failure_flags": true,
+  "auto_accept_from_truth_error": false
+ },
+ "diagnostics_v132": {
+  "sets": [
+   "K",
+   "L",
+   "H",
+   "J"
+  ],
+  "focus": [
+   "K_K02",
+   "L_L02",
+   "H_H03"
+  ],
+  "controls": [
+   "K_K03",
+   "H_H02",
+   "J_J02",
+   "J_J03"
+  ],
+  "include_svd_projection": true,
+  "solve_at_truth_allowed_only_in_validator": true,
+  "allow_new_interpolation_only_after_diagnostics": false
+ },
+ "physical_qualification_v132": {
+  "existing_solve_only_by_default": true,
+  "D_nm": [
+   30,
+   100,
+   200
+  ],
+  "h_nm": 450,
+  "offsets_nm": [
+   [
+    0,
+    0
+   ],
+   [
+    28,
+    0
+   ],
+   [
+    -28,
+    0
+   ],
+   [
+    140,
+    0
+   ],
+   [
+    0,
+    140
+   ],
+   [
+    70,
+    -98
+   ]
+  ],
+  "same_field_replay_atol": 1e-12,
+  "shift_rel_L2_target": 0.01,
+  "near_zero_report_absolute_and_size_impact": true,
+  "old_global_P0_match_gate_not_closed_by_software_tests": true
+ },
+ "fixed_source_commit": "cc8722bba7af19e2296665fe562f24ab2afcb077",
+ "model_lock": {
+  "kind": "F2",
+  "library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "numerical_source_sha256": {
+   "field_forward_reference.py": "4c064031682e4c3c48130848708bd83958aab4630c3da71adf275c231a1c3520",
+   "load_field_library.py": "d42d638378be3efbdcb9e8ff643b75485dbac618d404c92a1b3090cb9bd7a746",
+   "fit_reference.py": "c4fc509d5d52f3f0dd101787f55b627df3db59943fdbc942c31dbf3c7e4f9656",
+   "template_bank.py": "13144e2184b84a8cbc84ef5490d5061000068c65e512778998d0a7de2b0c3d11"
+  },
+  "sentinel_theta_nm": [
+   [
+    30,
+    350,
+    0,
+    0
+   ],
+   [
+    100,
+    450,
+    140,
+    0
+   ],
+   [
+    200,
+    550,
+    0,
+    -140
+   ],
+   [
+    50,
+    375,
+    70,
+    -98
+   ],
+   [
+    183.7,
+    518.75,
+    -84,
+    70
+   ],
+   [
+    83.7,
+    412.5,
+    56,
+    -84
+   ]
+  ]
+ },
+ "M_observations": {
+  "path": "results/v132/validation/new_M_images.h5",
+  "dataset": "at_offset/C",
+  "cases": [
+   "M01",
+   "M02",
+   "M03",
+   "M04",
+   "M05",
+   "M06"
+  ],
+  "scope": "OPENED_DIRECT_DEVELOPMENT_NOT_NEW_BLIND",
+  "declared_static_image_role": "Existing direct L1 offset image per published v132_M_cases; compare original MAT before physical qualification"
+ },
+ "reuse": {
+  "public_bank": "results/v131/offline_F2/public_initialization_bank.h5",
+  "expected_bank_id": "07f25edb0b0d284b0a191dbbc17542da803fe718408ee5fcdc3338a0e05dd97d"
+ },
+ "component_limits": {
+  "wall_minutes": 150,
+  "canonical_calls": 300000
+ },
+ "budget": {
+  "new_bem_systems": 0,
+  "render_attempts": 96,
+  "camera_exposure_events": 6000,
+  "canonical_calls_max": 5000000,
+  "wall_clock_hours_max": 12,
+  "reserve_for_archive_minutes": 30,
+  "physical_concurrency": 1
+ },
+ "schema": "iscat133.execution_config.1",
+ "fixed_source": {
+  "repository": "yyyyzoey/iscat-handoff",
+  "branch": "v132",
+  "commit": "cc8722bba7af19e2296665fe562f24ab2afcb077"
+ },
+ "new_physics": {
+  "new_bem_enabled": false,
+  "new_bem_limit": 0,
+  "new_holdouts": [],
+  "renders_from_existing_solves_only": true
+ },
+ "camera": {
+  "background_electrons_per_pixel": [
+   1000,
+   10000,
+   100000
+  ],
+  "read_noise_electrons": 2,
+  "reference_frames_per_trial": 8,
+  "dev_D_nm": [
+   50,
+   100,
+   160,
+   200
+  ],
+  "dev_h_nm": [
+   375,
+   425,
+   475
+  ],
+  "dev_target_repeats": 1,
+  "dev_blanks_per_background": 80,
+  "validation_blanks_per_background": 60,
+  "M_development_repeats_per_background": 3,
+  "static_exposures_nominal": 4590,
+  "M_status": "OPENED_DEVELOPMENT_NOT_BLIND",
+  "seed": 133100,
+  "detector": "T=Qnull-Qbest; cutoff=max(development blank T) per B; strictly greater",
+  "blank_upper_bound_confidence": 0.95,
+  "false_positive_upper_target": 0.05
+ },
+ "motion": {
+  "D_nm": [
+   55,
+   115,
+   185
+  ],
+  "tracks_per_D": 2,
+  "frames_per_track": 8,
+  "fps": 5000,
+  "exposure_us": [
+   25,
+   100
+  ],
+  "finest_path_step_us": 0.625,
+  "coarse_steps_us": [
+   1.25,
+   2.5
+  ],
+  "shared_reference_frames": 8,
+  "electrons_per_pixel_at_100us": 10000,
+  "reference_shared_per_track_and_exposure": true,
+  "nominal_camera_exposures": 192,
+  "scope": "SHARED_SURROGATE_METHOD_DIAGNOSTIC",
+  "inversion_must_not_receive_generator_path": true,
+  "static_template_blur_fit_is_misspecification_baseline": true
+ },
+ "scope": "CONDITIONAL_UNIFORM_SPHERE_OPTICAL_EQUIVALENT; no absolute experiment certification",
+ "offline_batch": {
+  "sets_order": [
+   "K",
+   "L",
+   "H",
+   "J"
+  ],
+  "sets": {
+   "L": "results/v128/validation/new_L_direct_images.h5",
+   "H": "results/v125/library/v125_direct_holdouts.h5",
+   "J": "results/v126/validation/new_holdout_images.h5",
+   "K": "results/v127/validation/holdout_images.h5"
+  },
+  "profile_sets": [
+   "K",
+   "L"
+  ],
+  "require_oldL_candidates_before_new_physics": true,
+  "missing_other_sets": "record missing, do not fabricate",
+  "profile_priority": [
+   "K_K02",
+   "L_L02",
+   "H_H03",
+   "K_K06",
+   "L_L06",
+   "K_K01",
+   "L_L01"
+  ],
+  "compute_all_candidates_before_profiles": true,
+  "note": "Paths used only for already-opened H/J/K/L diagnostics; do not rerun the old complete batch"
+ }
+}

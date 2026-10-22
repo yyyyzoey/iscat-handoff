@@ -1,0 +1,186 @@
+{
+  "candidate_D": 48.421809635083875,
+  "theta": [
+    48.421809635083875,
+    354.5925885679087,
+    41.878947502044745,
+    -70.10345241084902
+  ],
+  "loss": 1.015566469475251e-05,
+  "optimizer_converged": true,
+  "loss_guard_fallback": false,
+  "search_complete": true,
+  "boundary_flags": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "starts": [
+    {
+      "theta": [
+        48.42180940089726,
+        354.59258772063146,
+        41.87894749369598,
+        -70.10345241877842
+      ],
+      "loss": 1.0155664694830822e-05,
+      "success": true,
+      "status": 1,
+      "message": "`gtol` termination condition is satisfied.",
+      "optimality": 2.872846936638274e-13,
+      "nfev": 24,
+      "njev": 21,
+      "canonical_calls": 192,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        194.14997894403115,
+        388.2233970954448,
+        -84.43594815648422,
+        396.1812786730682
+      ],
+      "loss": 0.006876350275443891,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 5.096100024461317e-06,
+      "nfev": 58,
+      "njev": 44,
+      "canonical_calls": 410,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        46.4186293639282,
+        537.89864879973,
+        41.86881723147626,
+        -70.09741467824013
+      ],
+      "loss": 7.217789252029925e-05,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 5.067061970131319e-12,
+      "nfev": 17,
+      "njev": 14,
+      "canonical_calls": 129,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        46.41862936390846,
+        537.8986488000415,
+        41.86881723132572,
+        -70.09741467831464
+      ],
+      "loss": 7.217789252035909e-05,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 4.516323906833733e-12,
+      "nfev": 11,
+      "njev": 10,
+      "canonical_calls": 91,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        48.421809635083875,
+        354.5925885679087,
+        41.878947502044745,
+        -70.10345241084902
+      ],
+      "loss": 1.015566469475251e-05,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 2.0824124189730965e-11,
+      "nfev": 25,
+      "njev": 19,
+      "canonical_calls": 177,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        48.42180953327221,
+        354.5925881995182,
+        41.8789474984842,
+        -70.10345241426877
+      ],
+      "loss": 1.0155664694876106e-05,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 1.0415103697862412e-11,
+      "nfev": 26,
+      "njev": 22,
+      "canonical_calls": 202,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "canonical_calls": 1201,
+  "bank_id": "07f25edb0b0d284b0a191dbbc17542da803fe718408ee5fcdc3338a0e05dd97d",
+  "scan_best_loss": 0.0025937341093985673,
+  "bank_calls_separate_global": 0,
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "reportable_D": null,
+  "diameter_reportable": false,
+  "reason_codes": [
+    "PHYSICAL_QUALIFICATION_PROFILE_AND_REPORTABILITY_PENDING"
+  ],
+  "case": "M01",
+  "data_set": "M",
+  "run_id": "80f85cbb7aa33e22c5711d205a8d207c154381a61292bb760344093b449c1fab",
+  "observation_binding": {
+    "case": "M01",
+    "source_dataset": "M01/at_offset/C",
+    "source_file_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+    "source_array_sha256": "48573aabe0a506448550676e350ca841d83bf6cf89363b9c7f3f14cad5a82e02",
+    "score_array_sha256": "af3d66c1e93c11d76ba94e9c3a4de94193067a86e3c059ccd0b080aecac606ea",
+    "transform": "CENTRAL_13_FROM_17_NO_FLIP_NO_SCALE",
+    "observation": "STATIC_SIGNED_C",
+    "physical_role": "DECLARED_DIRECT_IMAGE_REQUIRES_RAW_RENDER_COMPARISON",
+    "missing_optional_wide": [
+      "wide"
+    ]
+  },
+  "scope": "OPENED_DIRECT_DEVELOPMENT_NOT_NEW_BLIND"
+}

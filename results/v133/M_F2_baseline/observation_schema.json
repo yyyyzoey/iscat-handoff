@@ -1,0 +1,102 @@
+{
+  "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v132\\validation\\new_M_images.h5",
+  "sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+  "datasets": [
+    {
+      "path": "M01/C",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "float64"
+    },
+    {
+      "path": "M01/at_offset/C",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "float64"
+    },
+    {
+      "path": "M02/C",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "float64"
+    },
+    {
+      "path": "M02/at_offset/C",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "float64"
+    },
+    {
+      "path": "M03/C",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "float64"
+    },
+    {
+      "path": "M03/at_offset/C",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "float64"
+    },
+    {
+      "path": "M04/C",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "float64"
+    },
+    {
+      "path": "M04/at_offset/C",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "float64"
+    },
+    {
+      "path": "M05/C",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "float64"
+    },
+    {
+      "path": "M05/at_offset/C",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "float64"
+    },
+    {
+      "path": "M06/C",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "float64"
+    },
+    {
+      "path": "M06/at_offset/C",
+      "shape": [
+        17,
+        17
+      ],
+      "dtype": "float64"
+    }
+  ]
+}

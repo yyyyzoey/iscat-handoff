@@ -1,0 +1,80 @@
+[
+  {
+    "case": "M01",
+    "source_dataset": "M01/at_offset/C",
+    "source_file_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+    "source_array_sha256": "48573aabe0a506448550676e350ca841d83bf6cf89363b9c7f3f14cad5a82e02",
+    "score_array_sha256": "af3d66c1e93c11d76ba94e9c3a4de94193067a86e3c059ccd0b080aecac606ea",
+    "transform": "CENTRAL_13_FROM_17_NO_FLIP_NO_SCALE",
+    "observation": "STATIC_SIGNED_C",
+    "physical_role": "DECLARED_DIRECT_IMAGE_REQUIRES_RAW_RENDER_COMPARISON",
+    "missing_optional_wide": [
+      "wide"
+    ]
+  },
+  {
+    "case": "M02",
+    "source_dataset": "M02/at_offset/C",
+    "source_file_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+    "source_array_sha256": "08fa7fdc63fdfea420b6042e3e168441de09c7ef7700441d226efa6f693589a5",
+    "score_array_sha256": "9dc4eafadd7c759495dc78190a280e1f95f24e3cd7da7ab7468eac07f942ac3a",
+    "transform": "CENTRAL_13_FROM_17_NO_FLIP_NO_SCALE",
+    "observation": "STATIC_SIGNED_C",
+    "physical_role": "DECLARED_DIRECT_IMAGE_REQUIRES_RAW_RENDER_COMPARISON",
+    "missing_optional_wide": [
+      "wide"
+    ]
+  },
+  {
+    "case": "M03",
+    "source_dataset": "M03/at_offset/C",
+    "source_file_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+    "source_array_sha256": "cd6d0df5502f112e07beb023d9d41c18cacc69548a60e981b878d44cdf0e41b4",
+    "score_array_sha256": "9828a5a6e6440a724393078ac0805aeb008801400ae47f7b2fda08f0b295a5c9",
+    "transform": "CENTRAL_13_FROM_17_NO_FLIP_NO_SCALE",
+    "observation": "STATIC_SIGNED_C",
+    "physical_role": "DECLARED_DIRECT_IMAGE_REQUIRES_RAW_RENDER_COMPARISON",
+    "missing_optional_wide": [
+      "wide"
+    ]
+  },
+  {
+    "case": "M04",
+    "source_dataset": "M04/at_offset/C",
+    "source_file_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+    "source_array_sha256": "e4f09d92b5c6773bdcab708da8fed0c8a8978988ff0e1818f774e8a96867d9e6",
+    "score_array_sha256": "e4b1322a16eef8184f23065b8d8090f3f30f8c6909f777dd2ead43266724f4f9",
+    "transform": "CENTRAL_13_FROM_17_NO_FLIP_NO_SCALE",
+    "observation": "STATIC_SIGNED_C",
+    "physical_role": "DECLARED_DIRECT_IMAGE_REQUIRES_RAW_RENDER_COMPARISON",
+    "missing_optional_wide": [
+      "wide"
+    ]
+  },
+  {
+    "case": "M05",
+    "source_dataset": "M05/at_offset/C",
+    "source_file_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+    "source_array_sha256": "6deb8e14bc9621a654c75872b28c3ba143bbff6c1dd55aac70a12233d7b7ac8d",
+    "score_array_sha256": "965d094de3b32ddc39fa3f59c8b1242a583932066324dca0bf75b07b1ec572cd",
+    "transform": "CENTRAL_13_FROM_17_NO_FLIP_NO_SCALE",
+    "observation": "STATIC_SIGNED_C",
+    "physical_role": "DECLARED_DIRECT_IMAGE_REQUIRES_RAW_RENDER_COMPARISON",
+    "missing_optional_wide": [
+      "wide"
+    ]
+  },
+  {
+    "case": "M06",
+    "source_dataset": "M06/at_offset/C",
+    "source_file_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+    "source_array_sha256": "881e02e85596168ca52d91716a3e1b563ed3a6673bda0c4a222a60024cc020ee",
+    "score_array_sha256": "5d55247c370339732b04715cfa6e956d83e6165c543fdbc4439fd81903a357e2",
+    "transform": "CENTRAL_13_FROM_17_NO_FLIP_NO_SCALE",
+    "observation": "STATIC_SIGNED_C",
+    "physical_role": "DECLARED_DIRECT_IMAGE_REQUIRES_RAW_RENDER_COMPARISON",
+    "missing_optional_wide": [
+      "wide"
+    ]
+  }
+]

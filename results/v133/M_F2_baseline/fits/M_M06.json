@@ -1,0 +1,186 @@
+{
+  "candidate_D": 190.29730590514112,
+  "theta": [
+    190.29730590514112,
+    542.3895770670467,
+    -97.89445739621361,
+    70.13386855503057
+  ],
+  "loss": 8.455877073644359e-05,
+  "optimizer_converged": true,
+  "loss_guard_fallback": false,
+  "search_complete": true,
+  "boundary_flags": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "starts": [
+    {
+      "theta": [
+        195.48245326051813,
+        350.00000000000557,
+        -99.21012692659649,
+        68.69618015948255
+      ],
+      "loss": 0.01540334652442395,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 1.3275511762416194e-08,
+      "nfev": 21,
+      "njev": 10,
+      "canonical_calls": 101,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        45.58527153318636,
+        350.00000000000006,
+        499.99999999999994,
+        -499.99999999999994
+      ],
+      "loss": 0.1928302308752268,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 5.3077927165324626e-11,
+      "nfev": 9,
+      "njev": 9,
+      "canonical_calls": 81,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "theta": [
+        199.99999999999997,
+        540.8734003516856,
+        -97.80450046885011,
+        70.2520322911985
+      ],
+      "loss": 0.0012414674435992205,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 4.553465629539539e-11,
+      "nfev": 27,
+      "njev": 26,
+      "canonical_calls": 235,
+      "budget_exhausted": false,
+      "active_mask": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        190.29730590514112,
+        542.3895770670467,
+        -97.89445739621361,
+        70.13386855503057
+      ],
+      "loss": 8.455877073644359e-05,
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "optimality": 2.3787868331523714e-10,
+      "nfev": 11,
+      "njev": 8,
+      "canonical_calls": 75,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        199.99999999999997,
+        540.8733997670695,
+        -97.80450047723717,
+        70.252032279671
+      ],
+      "loss": 0.001241467443599378,
+      "success": true,
+      "status": 4,
+      "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+      "optimality": 1.0540215685918286e-10,
+      "nfev": 23,
+      "njev": 21,
+      "canonical_calls": 191,
+      "budget_exhausted": false,
+      "active_mask": [
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "theta": [
+        195.4824594424142,
+        350.00000000000006,
+        -99.21012692417415,
+        68.69618018867122
+      ],
+      "loss": 0.015403346524413773,
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "optimality": 3.4449930036874625e-08,
+      "nfev": 27,
+      "njev": 17,
+      "canonical_calls": 163,
+      "budget_exhausted": false,
+      "active_mask": [
+        0,
+        -1,
+        0,
+        0
+      ]
+    }
+  ],
+  "canonical_calls": 846,
+  "bank_id": "07f25edb0b0d284b0a191dbbc17542da803fe718408ee5fcdc3338a0e05dd97d",
+  "scan_best_loss": 0.03995985942148327,
+  "bank_calls_separate_global": 0,
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "reportable_D": null,
+  "diameter_reportable": false,
+  "reason_codes": [
+    "PHYSICAL_QUALIFICATION_PROFILE_AND_REPORTABILITY_PENDING"
+  ],
+  "case": "M06",
+  "data_set": "M",
+  "run_id": "80f85cbb7aa33e22c5711d205a8d207c154381a61292bb760344093b449c1fab",
+  "observation_binding": {
+    "case": "M06",
+    "source_dataset": "M06/at_offset/C",
+    "source_file_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+    "source_array_sha256": "881e02e85596168ca52d91716a3e1b563ed3a6673bda0c4a222a60024cc020ee",
+    "score_array_sha256": "5d55247c370339732b04715cfa6e956d83e6165c543fdbc4439fd81903a357e2",
+    "transform": "CENTRAL_13_FROM_17_NO_FLIP_NO_SCALE",
+    "observation": "STATIC_SIGNED_C",
+    "physical_role": "DECLARED_DIRECT_IMAGE_REQUIRES_RAW_RENDER_COMPARISON",
+    "missing_optional_wide": [
+      "wide"
+    ]
+  },
+  "scope": "OPENED_DIRECT_DEVELOPMENT_NOT_NEW_BLIND"
+}

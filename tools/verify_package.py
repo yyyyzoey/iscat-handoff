@@ -16,11 +16,11 @@ def main():
         if len(b)!=int(r['bytes']) or hashlib.sha256(b).hexdigest()!=r['sha256']:errors.append('content mismatch '+rel)
     actual={p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name!='HANDOFF_SHA256.csv'}
     if actual!=seen:errors.append('manifest membership mismatch '+str(sorted(actual.symmetric_difference(seen))))
-    for rel in ['01_V131审查与V132完整执行合同.md','config/v132_science_config.json','tools/v132_continue_existing.py','tools/field_forward_reference.py','evidence/recomputed.json']:
+    for rel in ['01_V132审查与V133完整执行合同.md','config/v133_science_config.json','tools/v133_recover_M.py','tools/field_forward_reference.py','evidence/recomputed.json']:
         if rel not in seen:errors.append('required missing '+rel)
     try:
-        c=json.loads((root/'config/v132_science_config.json').read_text(encoding='utf-8'))
-        if c['task_id']!='V132_QUALIFIED_PROFILES_AND_EXPERIMENT_READY_PARTICLE_SIZING':errors.append('wrong task')
+        c=json.loads((root/'config/v133_science_config.json').read_text(encoding='utf-8'))
+        if c['task_id']!='V133_LOCKED_F2_RECOVERY_AND_MEASUREMENT_COMPLETION':errors.append('wrong task')
     except Exception as e:errors.append('invalid config '+str(e))
     print(json.dumps(dict(scope='handoff bytes only; no scientific acceptance',files=len(rows),integrity_passed=not errors,errors=errors),ensure_ascii=False,indent=2))
     return 2 if errors else 0
