@@ -151,7 +151,8 @@ def main():
     members=[]
     base=out.parent
     for p in sorted(base.rglob('*')):
-        if p.is_file() and 'iscat_v137_return.zip' not in p.name and '__pycache__' not in p.parts:
+        if (p.is_file() and 'iscat_v137_return.zip' not in p.name and '__pycache__' not in p.parts
+                and p.name!='manifest_sha256.csv'):
             members.append(p)
     import zipfile
     zp=Path(a.zip)
