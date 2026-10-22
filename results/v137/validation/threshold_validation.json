@@ -1,0 +1,47 @@
+{
+  "schema": "iscat137.threshold_freeze.1",
+  "thresholds": {
+    "1000.0": 0.0987480841958643,
+    "10000.0": 0.030947783677971498,
+    "100000.0": 0.007933396782455417
+  },
+  "rule": "T = max over 80 development blanks per B of abs max projection statistic; frozen BEFORE independent validation",
+  "independent_validation": {
+    "1000.0": {
+      "n": 60,
+      "k": 0,
+      "threshold": 0.0987480841958643,
+      "fpr_point": 0.0,
+      "cp95_upper_one_sided": 0.04870291331009749,
+      "qualifies_0_of_60": true
+    },
+    "10000.0": {
+      "n": 60,
+      "k": 0,
+      "threshold": 0.030947783677971498,
+      "fpr_point": 0.0,
+      "cp95_upper_one_sided": 0.04870291331009749,
+      "qualifies_0_of_60": true
+    },
+    "100000.0": {
+      "n": 60,
+      "k": 2,
+      "threshold": 0.007933396782455417,
+      "fpr_point": 0.03333333333333333,
+      "cp95_upper_one_sided": 0.10123589492416163,
+      "qualifies_0_of_60": false
+    }
+  },
+  "camera_exposure_events": {
+    "dev": 324,
+    "dev_blanks": 2160,
+    "val_blanks": 1620,
+    "M": 486,
+    "motion_fg": 96,
+    "motion_refs": 96,
+    "total": 4782,
+    "limit": 6000
+  },
+  "detected_vs_reportable": "DETECTION DOES NOT MAKE reportable_D; physics gate is separate and currently failing",
+  "scope": "SYNTHETIC_IDEALIZED_CAMERA_ONLY_NOT_EXPERIMENTAL_CAMERA_QUALIFICATION"
+}

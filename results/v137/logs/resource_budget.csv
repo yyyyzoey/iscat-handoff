@@ -1,0 +1,15 @@
+event,f2_canonical_calls,camera_exposure_events,note
+coarse_profiles_M01_M06,601227,0,profile_resume_f2.py run (canonical F2 calls)
+joint_reconcile_M02,33,0,4D joint refit of legal lower witness
+forward_parity_matrix,44,0,6 exact thetas + 26 sentinels + OOD/FD
+dev_error_envelope_oracles,3129,0,"W4 oracle D / D-h fits, 24 cases"
+camera_motion_W5W6_run1,34898,4830,"camera+motion, pre-Ibg-fix (superseded, counted)"
+camera_motion_W5W6_run2,34912,4782,"Ibg fixed, aborted at h5 lock before write (counted)"
+camera_motion_W5W6_run3,34912,4782,"hash() seeds, superseded (counted)"
+camera_motion_W5W6_run4,34912,4782,"deterministic seeds, time-average bug (counted)"
+camera_motion_W5W6_run5,43816,4782,FINAL authoritative camera+motion data
+multiframe_refit_partial,29000,0,"aborted mid-run, counted"
+multiframe_refit_run1,78161,0,"completed, superseded by rejection criteria"
+multiframe_refit_run2,78161,0,"completed, reject_reason_codes column missing"
+multiframe_refit_run3,78161,0,FINAL authoritative multiframe
+TOTAL,1051366,23958,ALL REPEATS COUNTED

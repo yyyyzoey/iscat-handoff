@@ -1,0 +1,11 @@
+python -m unittest discover -s tests -v  # PASS 29
+python tools/validate_handoff.py --root . --zip <V137 zip>  # PASS 12 members
+python tools/audit_v136.py --repo <repo> --out <repo>/results/v137/preflight/v136_audit.json
+python tools/profile_resume_f2.py --repo <repo> --config <handoff>/config/v137_science_config.json --out <repo>/results/v137/offline_F2_profiles --cases M01..M06 --max-wall-minutes 240 --resume  # component done
+python tools/v137_forward_parity.py --repo <repo> --out <repo>/results/v137/validation
+python tools/v137_reconcile_joint.py ...
+python tools/v137_w2_same_solve.py --renders-root <original renders> --v132-images <v132 new_M_images.h5>
+python tools/v137_w4_dev_envelope.py ...
+python tools/v137_w5_w6_camera_motion.py ...  # x5 runs, repeats counted
+python tools/v137_w6_multiframe_refit.py ...  # x3 complete + 1 partial, repeats counted
+python tools/v137_w7_assemble.py ... ; python tools/v137_w7_pack.py ...

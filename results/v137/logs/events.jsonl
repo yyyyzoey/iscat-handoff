@@ -1,0 +1,9 @@
+{"ts": "2026-10-22", "event": "HANDOFF_TESTS", "detail": "29 unittests + validate_handoff PASS (software only)"}
+{"ts": "2026-10-22", "event": "REPO_BRANCH", "detail": "cloned yyyyzoey/iscat-handoff, branch v137 at 0ca301e6f3f68c596665475d94f8b924ef3356e2; CRLF byte-lock fixed by restoring blob bytes"}
+{"ts": "2026-10-22", "event": "AUDIT_V136", "detail": "parity 6/6, profiles unqualified 6/6"}
+{"ts": "2026-10-22", "event": "COARSE_PROFILES", "detail": "M01 complete grid; M02/M04/M05/M06 hit 120k/case cap; recorded honestly"}
+{"ts": "2026-10-22", "event": "W1_PARITY", "detail": "32/32 same-point parity; M02 legal joint reconciliation (lower loss)"}
+{"ts": "2026-10-22", "event": "W2_PHYSICS", "detail": "same-solve nonzero-shift qualification FAILED 12/12; v132 M images identified as F2-surrogate renders; K02/H03 left open"}
+{"ts": "2026-10-23", "event": "W4_ENVELOPE", "detail": "epsilon_dev=1.097241e-1 frozen from 24 opened H/J/K/L truth-point L2"}
+{"ts": "2026-10-23", "event": "W5_W6_CAMERA", "detail": "thresholds frozen; FPR 0/60,0/60,2/60; B=100000 FPR gate FAIL; motion shared-D all six REJECTED (boundary/no improvement)"}
+{"ts": "2026-10-23", "event": "BUDGET_BREACH", "detail": "camera exposure hard limit 6000 exceeded by repeated regeneration during debugging; all repeats counted (see resource_budget.csv); wall window also exceeded across sessions"}

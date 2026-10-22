@@ -1,0 +1,46 @@
+{
+  "task": "V137_PROVENANCE_BOUND_F2_PROFILE_AND_CONDITIONAL_PARTICLE_SIZING",
+  "execution": "COMPLETED_WITH_DOCUMENTED_BUDGET_BREACH",
+  "source_qualification": {
+    "v136_parity": "ACCEPTED_6POINT_NUMERIC_ONLY",
+    "same_solve_shift": "FAILED_FOR_F2_SURROGATE",
+    "k02_h03": "NOT_EVALUATED"
+  },
+  "array_replay": {
+    "six_theta": "PASS",
+    "m02_joint_updated": true
+  },
+  "F2_profile_quality": {
+    "grid": "M01_COMPLETE_OTHERS_BUDGET_CAPPED",
+    "adaptive": "NOT_RUN_WITHIN_PER_CASE_CAP",
+    "profile_scientific_complete": false
+  },
+  "sizing_performance": {
+    "reportable_D_all_null": true,
+    "reason": "FAIL_CLOSED: physics + adaptive + detection gates unmet"
+  },
+  "camera_FPR": {
+    "B1000": "0/60 QUALIFIED",
+    "B10000": "0/60 QUALIFIED",
+    "B100000": "2/60 NOT_QUALIFIED"
+  },
+  "motion_exposure": {
+    "shared_D": "ALL_SIX_REJECTED",
+    "reasons": [
+      "SHARED_D_AT_DOMAIN_BOUNDARY",
+      "NO_SIGNIFICANT_IMPROVEMENT_OVER_PUBLIC_INIT"
+    ]
+  },
+  "experiment_interface": "IMPLEMENTED_AND_TYPE_REJECTION_DEMONSTRATED",
+  "archive_integrity": "SEE manifest_sha256.csv + v137_check_return",
+  "evidence_completeness": "ALL_LISTED_ARTIFACTS_REAL_EXCEPT_ADAPTIVE_REFINEMENT_AND_PHYSICAL_PASS_WHICH_ARE_HONEST_NEGATIVES",
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget_breach": {
+    "camera_exposure_limit": 6000,
+    "camera_exposure_executed_including_repeats": 23958,
+    "f2_limit": 5000000,
+    "f2_executed": 1051366,
+    "wall_window_hours": 12,
+    "wall_window_exceeded": true
+  }
+}

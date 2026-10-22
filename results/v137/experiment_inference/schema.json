@@ -1,0 +1,27 @@
+{
+  "schema": "iscat137.experiment_input.1",
+  "required_fields": [
+    "observation_type",
+    "particle_ROI_linear_intensity",
+    "background_linear_intensity",
+    "exposure_s",
+    "total_magnification",
+    "camera_pixel_um",
+    "material_version"
+  ],
+  "accepted_observation_type": "LINEAR_PARTICLE_ROI_WITH_MATCHED_BACKGROUND",
+  "forbidden_encodings": [
+    "8BIT_DISPLAY_BMP",
+    "NONLINEAR_DISPLAY",
+    "FFT_400HZ_AMPLITUDE",
+    "FFT_DEMODULATED_MAGNITUDE"
+  ],
+  "output_contract": [
+    "candidate_D",
+    "reportable_D",
+    "reason_codes",
+    "compatible_D_components"
+  ],
+  "fail_closed": true,
+  "absolute_diameter_validated": false
+}
