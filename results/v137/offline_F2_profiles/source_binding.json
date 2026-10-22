@@ -1,0 +1,22 @@
+{
+  "run_id": "910f214888ed908a17542128d380e5fd0c004d889af97590b2bc9cbc5d0cb8fd",
+  "source": {
+    "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+    "library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "prior_observations_sha256": "c1d57223fc102ca92f899388c4e2ecd3fcae609f12632f93f62906bb7dfdee33",
+    "locked_code_sha256": {
+      "field_forward_reference.py": "4c064031682e4c3c48130848708bd83958aab4630c3da71adf275c231a1c3520",
+      "load_field_library.py": "d42d638378be3efbdcb9e8ff643b75485dbac618d404c92a1b3090cb9bd7a746",
+      "fit_reference.py": "c4fc509d5d52f3f0dd101787f55b627df3db59943fdbc942c31dbf3c7e4f9656",
+      "template_bank.py": "13144e2184b84a8cbc84ef5490d5061000068c65e512778998d0a7de2b0c3d11"
+    },
+    "runner_sha256": "5a086ec818835dac7d18d63ed9b99de916fe10a951f507cc841f51948be063e8",
+    "config_sha256": "b1f4d218ec4b74d730bd87ffdd1701826eceae28a5de39904bd9295240995b08",
+    "score_shape": [
+      13,
+      13
+    ],
+    "loss_type": "UNSCALED_L2_ON_CENTRAL13_SIGNED_STATIC_C"
+  },
+  "scope": "STARTER_GRID_PROFILE_COMPONENT_NOT_PHYSCIAL_QUALIFICATION"
+}

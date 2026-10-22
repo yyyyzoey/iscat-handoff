@@ -1,0 +1,227 @@
+{
+  "schema": "iscat137.v136_readonly_audit.1",
+  "audit_source": "REPO_PUBLISHED_ARTIFACTS_ONLY",
+  "reviewed_v136_sha": "0ca301e6f3f68c596665475d94f8b924ef3356e2",
+  "frozen_V133_sha": "b522894725f159a2a585eafe27c73dd6275894f3",
+  "parity": [
+    {
+      "case": "M01",
+      "stored_f2_candidate_D": 48.421809635083875,
+      "stored_loss_L2": 1.015566469475251e-05,
+      "reported_official_loss_L2": 1.0155664694752508e-05,
+      "reported_max_old_vs_official_C_abs": 5.178149575790769e-16,
+      "six_point_parity": true,
+      "size_error_target_only": true
+    },
+    {
+      "case": "M02",
+      "stored_f2_candidate_D": 81.27358906303667,
+      "stored_loss_L2": 1.8267013462691716e-06,
+      "reported_official_loss_L2": 1.8267013462691719e-06,
+      "reported_max_old_vs_official_C_abs": 6.860289246402029e-16,
+      "six_point_parity": true,
+      "size_error_target_only": true
+    },
+    {
+      "case": "M03",
+      "stored_f2_candidate_D": 122.11998103353119,
+      "stored_loss_L2": 0.0001606883504167027,
+      "reported_official_loss_L2": 0.00016068835041670268,
+      "reported_max_old_vs_official_C_abs": 5.143455106271233e-16,
+      "six_point_parity": true,
+      "size_error_target_only": true
+    },
+    {
+      "case": "M04",
+      "stored_f2_candidate_D": 151.07969710737842,
+      "stored_loss_L2": 0.00043443902197943103,
+      "reported_official_loss_L2": 0.0004344390219794311,
+      "reported_max_old_vs_official_C_abs": 5.143455106271233e-16,
+      "six_point_parity": true,
+      "size_error_target_only": true
+    },
+    {
+      "case": "M05",
+      "stored_f2_candidate_D": 167.83725685498712,
+      "stored_loss_L2": 0.00016526920948238687,
+      "reported_official_loss_L2": 0.00016526920948238687,
+      "reported_max_old_vs_official_C_abs": 6.895525817007808e-16,
+      "six_point_parity": true,
+      "size_error_target_only": true
+    },
+    {
+      "case": "M06",
+      "stored_f2_candidate_D": 190.29730590514112,
+      "stored_loss_L2": 8.455877073644359e-05,
+      "reported_official_loss_L2": 8.455877073644359e-05,
+      "reported_max_old_vs_official_C_abs": 5.143455106271233e-16,
+      "six_point_parity": true,
+      "size_error_target_only": true
+    }
+  ],
+  "parity_numerical_pass": 6,
+  "published_profiles": [
+    {
+      "case": "M01",
+      "profile_sha256": "e7513e27970ee1ca3cf62ab73d6b8c01d05381db97e462cfdcab7cf078a9cdca",
+      "rows": 41,
+      "profile_min_D": 48.4,
+      "profile_min_L2": 0.0003436191016942108,
+      "near_prior_best_D": 48.4,
+      "near_prior_best_L2": 0.0003436191016942108,
+      "prior_known_best_D": 48.421809635083875,
+      "prior_known_best_L2": 1.015566469475251e-05,
+      "model_id_bound": false,
+      "observation_sha_bound": false,
+      "includes_exact_prior_best_D": false,
+      "complete_real_optimizer_status": false,
+      "formally_qualified": false,
+      "scope": "UNQUALIFIED_NO_SCENTIFIC_PROFILE_CERTIFICATION"
+    },
+    {
+      "case": "M02",
+      "profile_sha256": "57c182e7367a5e7e8903a7e386e6c514caac19d3ad5928f29c3cf0de890a2f80",
+      "rows": 41,
+      "profile_min_D": 75.0,
+      "profile_min_L2": 0.0011371130401375948,
+      "near_prior_best_D": 81.3,
+      "near_prior_best_L2": 0.0020596405274516285,
+      "prior_known_best_D": 81.27358906303667,
+      "prior_known_best_L2": 1.8267013462691716e-06,
+      "model_id_bound": false,
+      "observation_sha_bound": false,
+      "includes_exact_prior_best_D": false,
+      "complete_real_optimizer_status": false,
+      "formally_qualified": false,
+      "scope": "UNQUALIFIED_NO_SCENTIFIC_PROFILE_CERTIFICATION"
+    },
+    {
+      "case": "M03",
+      "profile_sha256": "ba5695465c6b1c285b487a138ceb4dd9ec6f2a326b01d8d1190a457a3a3a5b9b",
+      "rows": 41,
+      "profile_min_D": 122.1,
+      "profile_min_L2": 0.00016081800597198684,
+      "near_prior_best_D": 122.1,
+      "near_prior_best_L2": 0.00016081800597198684,
+      "prior_known_best_D": 122.11998103353119,
+      "prior_known_best_L2": 0.0001606883504167027,
+      "model_id_bound": false,
+      "observation_sha_bound": false,
+      "includes_exact_prior_best_D": false,
+      "complete_real_optimizer_status": false,
+      "formally_qualified": false,
+      "scope": "UNQUALIFIED_NO_SCENTIFIC_PROFILE_CERTIFICATION"
+    },
+    {
+      "case": "M04",
+      "profile_sha256": "cd1580f4930d1c873258db89dc682fd110bdfbfc945687dab872cc0b67cdef4a",
+      "rows": 41,
+      "profile_min_D": 151.1,
+      "profile_min_L2": 0.00043445646649635685,
+      "near_prior_best_D": 151.1,
+      "near_prior_best_L2": 0.00043445646649635685,
+      "prior_known_best_D": 151.07969710737842,
+      "prior_known_best_L2": 0.00043443902197943103,
+      "model_id_bound": false,
+      "observation_sha_bound": false,
+      "includes_exact_prior_best_D": false,
+      "complete_real_optimizer_status": false,
+      "formally_qualified": false,
+      "scope": "UNQUALIFIED_NO_SCENTIFIC_PROFILE_CERTIFICATION"
+    },
+    {
+      "case": "M05",
+      "profile_sha256": "3da73f0626702aa23ef77c83e16489e52693b2a1ce37fdf007ab6ffe5259b166",
+      "rows": 41,
+      "profile_min_D": 30.0,
+      "profile_min_L2": 0.10633428620095994,
+      "near_prior_best_D": 167.8,
+      "near_prior_best_L2": 0.19547921194470658,
+      "prior_known_best_D": 167.83725685498712,
+      "prior_known_best_L2": 0.00016526920948238687,
+      "model_id_bound": false,
+      "observation_sha_bound": false,
+      "includes_exact_prior_best_D": false,
+      "complete_real_optimizer_status": false,
+      "formally_qualified": false,
+      "scope": "UNQUALIFIED_NO_SCENTIFIC_PROFILE_CERTIFICATION"
+    },
+    {
+      "case": "M06",
+      "profile_sha256": "46fc466b6606cf327210411ceed1c153297316095228ee2bb8a2bd7e14ec1af9",
+      "rows": 41,
+      "profile_min_D": 48.4,
+      "profile_min_L2": 0.19279997506957489,
+      "near_prior_best_D": 190.3,
+      "near_prior_best_L2": 0.26070195344395186,
+      "prior_known_best_D": 190.29730590514112,
+      "prior_known_best_L2": 8.455877073644359e-05,
+      "model_id_bound": false,
+      "observation_sha_bound": false,
+      "includes_exact_prior_best_D": false,
+      "complete_real_optimizer_status": false,
+      "formally_qualified": false,
+      "scope": "UNQUALIFIED_NO_SCENTIFIC_PROFILE_CERTIFICATION"
+    }
+  ],
+  "unqualified_profile_count": 6,
+  "existence": {
+    "parity": {
+      "path": "results/v136/preflight/implementation_parity.csv",
+      "present": true,
+      "sha256": "6277cbac8d0745e3c364b470acd58253d669c9ce5148bc0c1087de4601081c08"
+    },
+    "obs_bind": {
+      "path": "results/v133/M_F2_baseline/observation_binding.json",
+      "present": true,
+      "sha256": "ee64831a7ea5793cd27c5d7db8735b050c29d0041d9b27188fcd3ea067568d7f"
+    },
+    "task_truth": {
+      "path": "results/v126/v132_M_cases.json",
+      "present": true,
+      "sha256": "5d65daf4b4673f69a7b62d59e91f24ae73c1eb0b894d756fdae0af70127e86c4"
+    },
+    "old_profile_script": {
+      "path": "tools/v135_run_profiles.py",
+      "present": true,
+      "sha256": "807c4a22746ab3f0f43ca671f5c5bb890616eb02881c1a755e771a32e4902ad1"
+    },
+    "new_profile_script": {
+      "path": "tools/v136_run_profiles.py",
+      "present": false,
+      "sha256": null
+    },
+    "v136_status": {
+      "path": "results/v136/status.json",
+      "present": false,
+      "sha256": null
+    },
+    "v136_return": {
+      "path": "results/v136/iscat_v136_return.zip",
+      "present": false,
+      "sha256": null
+    },
+    "v136_camera": {
+      "path": "results/v136/validation/raw_camera_data.h5",
+      "present": false,
+      "sha256": null
+    },
+    "v136_motion": {
+      "path": "results/v136/validation/motion_paths_intensities.h5",
+      "present": false,
+      "sha256": null
+    },
+    "v136_physics": {
+      "path": "results/v136/validation/same_solve_shift.csv",
+      "present": false,
+      "sha256": null
+    }
+  },
+  "scientific_verdict": "PRELIMINARY_NUMERIC_6POINT_PARITY_ACCEPTED__PHYSICAL_AND_PROFILE_NOT_ACCEPTED",
+  "limitations": [
+    "Six-point equality does not prove full-domain forward equality",
+    "Raw MATLAB solve/render and original HDF5 binary not independently replayed by this audit",
+    "Published profile files are not certified as constrained nuisance minima",
+    "True D used only in this read-only validator for error scoring"
+  ]
+}
