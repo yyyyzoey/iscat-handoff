@@ -1,0 +1,185 @@
+{
+  "schema": "iscat136.v134_v135_audit.1",
+  "basis": "PUBLISHED_TEXT_AND_REPO_OBJECTS_NOT_ORIGINAL_BINARY_FIELD_REPLAY",
+  "old_commit": "d62682b783b6b6666dd4d267221195ff2706cddd",
+  "current_commit": "e68a1082e21bf15fa7639bb2af171dcf4829a141",
+  "v133_locked_F2_candidate_statistics": {
+    "n": 6,
+    "MAE_nm": 2.751917769836067,
+    "RMSE_nm": 3.0542121224701333,
+    "bias_nm": 0.17160659985973106,
+    "max_abs_nm": 4.578190364916125,
+    "target_pass_cases": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06"
+    ],
+    "errors_nm": {
+      "M01": -4.578190364916125,
+      "M02": 0.27358906303666686,
+      "M03": 3.1199810335311895,
+      "M04": 2.079697107378422,
+      "M05": -3.1627431450128825,
+      "M06": 3.2973059051411155
+    }
+  },
+  "v134_coarse_Cmap_statistics": {
+    "n": 6,
+    "MAE_nm": 36.333333333333336,
+    "RMSE_nm": 45.66545010544989,
+    "bias_nm": 30.0,
+    "max_abs_nm": 81.0,
+    "target_pass_cases": [
+      "M01",
+      "M05",
+      "M06"
+    ],
+    "errors_nm": {
+      "M01": -3.0,
+      "M02": 54.0,
+      "M03": 81.0,
+      "M04": 51.0,
+      "M05": -16.0,
+      "M06": 13.0
+    }
+  },
+  "v134_published_reportable_true": [
+    "M01",
+    "M02",
+    "M05"
+  ],
+  "v134_unsafe_acceptance": [
+    {
+      "case": "M01",
+      "published_accepted": true,
+      "components": [
+        [
+          30.0,
+          200.0
+        ]
+      ],
+      "touches_domain_boundary": true,
+      "width_nm": 170.0,
+      "reason": "PUBLISHED_ACCEPTANCE_WITH_FULL_DOMAIN_COMPATIBILITY"
+    },
+    {
+      "case": "M02",
+      "published_accepted": true,
+      "components": [
+        [
+          30.0,
+          200.0
+        ]
+      ],
+      "touches_domain_boundary": true,
+      "width_nm": 170.0,
+      "reason": "PUBLISHED_ACCEPTANCE_WITH_FULL_DOMAIN_COMPATIBILITY"
+    },
+    {
+      "case": "M05",
+      "published_accepted": true,
+      "components": [
+        [
+          30.0,
+          200.0
+        ]
+      ],
+      "touches_domain_boundary": true,
+      "width_nm": 170.0,
+      "reason": "PUBLISHED_ACCEPTANCE_WITH_FULL_DOMAIN_COMPATIBILITY"
+    }
+  ],
+  "v135_new_profiles": {
+    "M01": {
+      "five_nm_grid_min_D": 50.0,
+      "five_nm_grid_min_L2": 0.0004962781224922203,
+      "has_locked_model_id": false,
+      "has_observation_sha256": false,
+      "contains_v133_exact_candidate_D": false,
+      "has_per_D_optimizer_status": false,
+      "source_role": "UNQUALIFIED_GRID_DIAGNOSTIC"
+    },
+    "M02": {
+      "five_nm_grid_min_D": 75.0,
+      "five_nm_grid_min_L2": 0.0011377636050653652,
+      "has_locked_model_id": false,
+      "has_observation_sha256": false,
+      "contains_v133_exact_candidate_D": false,
+      "has_per_D_optimizer_status": false,
+      "source_role": "UNQUALIFIED_GRID_DIAGNOSTIC"
+    },
+    "M03": {
+      "five_nm_grid_min_D": 120.0,
+      "five_nm_grid_min_L2": 0.000778713432228915,
+      "has_locked_model_id": false,
+      "has_observation_sha256": false,
+      "contains_v133_exact_candidate_D": false,
+      "has_per_D_optimizer_status": false,
+      "source_role": "UNQUALIFIED_GRID_DIAGNOSTIC"
+    },
+    "M04": {
+      "five_nm_grid_min_D": 150.0,
+      "five_nm_grid_min_L2": 0.00048196931942877565,
+      "has_locked_model_id": false,
+      "has_observation_sha256": false,
+      "contains_v133_exact_candidate_D": false,
+      "has_per_D_optimizer_status": false,
+      "source_role": "UNQUALIFIED_GRID_DIAGNOSTIC"
+    },
+    "M05": {
+      "five_nm_grid_min_D": 30.0,
+      "five_nm_grid_min_L2": 0.10633428620095994,
+      "has_locked_model_id": false,
+      "has_observation_sha256": false,
+      "contains_v133_exact_candidate_D": false,
+      "has_per_D_optimizer_status": false,
+      "source_role": "UNQUALIFIED_GRID_DIAGNOSTIC"
+    },
+    "M06": {
+      "five_nm_grid_min_D": 45.0,
+      "five_nm_grid_min_L2": 0.1928013528135575,
+      "has_locked_model_id": false,
+      "has_observation_sha256": false,
+      "contains_v133_exact_candidate_D": false,
+      "has_per_D_optimizer_status": false,
+      "source_role": "UNQUALIFIED_GRID_DIAGNOSTIC"
+    }
+  },
+  "v135_script_risk_flags": {
+    "uses_v129_field_forward_instead_of_locked_v133": true,
+    "reads_true_D_in_estimator_script": true,
+    "penalizes_unhandled_exceptions_in_objective": true,
+    "single_forward_warm_D_scan": true,
+    "pre_registered_locked_import_missing": true
+  },
+  "v134_historical_zip_changed_in_descendant": true,
+  "v134_historical_status_changed_in_descendant": true,
+  "v134_zip_git_blobs": {
+    "old": "9615685f6322f27bbf2b0de7b5b4ffef5e3dba5a",
+    "current": "f3ee02d998d82c6affa88aa95ce7f21f576a26bc"
+  },
+  "v134_status_git_blobs": {
+    "old": "3a477d45fabcc907822b6e143403b79bb2f226ea",
+    "current": "2235d07f1e1e7e8520b950b3f0e6e673bf66048e"
+  },
+  "v134_current_status_fixed_v133_commit": "cc8722bba7af19e2296665fe562f24ab2afcb077",
+  "v134_current_status_fixed_v133_commit_wrong": true,
+  "missing_expected_files": [
+    "evidence/published_values.json",
+    "results/v135/status.json",
+    "results/v135/validation/physical_gate.json",
+    "results/v135/validation/F2_reportability.json",
+    "results/v135/validation/raw_camera_data.h5",
+    "results/v135/validation/motion_paths_intensities.h5",
+    "results/v135/iscat_v135_return.zip"
+  ],
+  "science_verdict": "PARTIAL_UNQUALIFIED__NO_REPORTABLE_SIZE_CERTIFIED",
+  "notes": [
+    "New v135 profiles use a separate function, identity unknown: cross-implementation residuals are not same-objective proofs.",
+    "V133 six F2 candidate values remain reusable only after runtime/model/observation replays.",
+    "Truth labels are for external scoring only and must not reach formal estimator."
+  ]
+}
