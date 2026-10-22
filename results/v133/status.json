@@ -1,0 +1,11 @@
+{
+ "schema": "iscat133.status.1",
+ "task_id": "V133_LOCKED_F2_RECOVERY_AND_MEASUREMENT_COMPLETION",
+ "fixed_source_commit": "cc8722bba7af19e2296665fe562f24ab2afcb077",
+ "F2_M_recovery": {
+  "MAE_nm": 2.8,
+  "all_within_target": true,
+  "n": 6
+ },
+ "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+}
