@@ -1,0 +1,121 @@
+{
+  "schema": "iscat137.v137_joint_reconcile.1",
+  "details": [
+    {
+      "case": "M01",
+      "old_joint_D": 48.421809635083875,
+      "old_joint_loss": 1.0155664694752508e-05,
+      "best_profile_D": 48.421809635083875,
+      "best_profile_loss": 1.0155664694745375e-05,
+      "beat_tolerance": 1.0155664694752509e-12,
+      "triggered": false
+    },
+    {
+      "case": "M02",
+      "old_joint_D": 81.27358906303667,
+      "old_joint_loss": 1.8267013462691719e-06,
+      "best_profile_D": 81.27358906303667,
+      "best_profile_loss": 1.8261696043568766e-06,
+      "beat_tolerance": 1e-12,
+      "triggered": true,
+      "reconciled_theta": [
+        81.27358906303667,
+        415.4777033969802,
+        -112.00187658411967,
+        56.00780656427795
+      ],
+      "reconciled_loss": 1.8261696043568766e-06,
+      "improvement": 5.31741912295229e-10,
+      "reconciled": true,
+      "starts": [
+        {
+          "theta": [
+            81.27358906303667,
+            415.4777033969802,
+            -112.00187658411967,
+            56.00780656427795
+          ],
+          "loss": 1.8261696043568766e-06,
+          "success": true,
+          "status": 3,
+          "message": "`xtol` termination condition is satisfied.",
+          "optimality": 5.055959638784539e-07,
+          "nfev": 9,
+          "njev": 1,
+          "canonical_calls": 17,
+          "budget_exhausted": false,
+          "active_mask": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "seed": "BEAT_POINT"
+        },
+        {
+          "theta": [
+            81.27358906303667,
+            415.47770369924564,
+            -112.0018295289447,
+            56.00778886815336
+          ],
+          "loss": 1.8267013462691716e-06,
+          "success": true,
+          "status": 3,
+          "message": "`xtol` termination condition is satisfied.",
+          "optimality": 3.849482653543596e-08,
+          "nfev": 8,
+          "njev": 1,
+          "canonical_calls": 16,
+          "budget_exhausted": false,
+          "active_mask": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "seed": "OLD_JOINT"
+        }
+      ],
+      "canonical_calls_this_component": 33
+    },
+    {
+      "case": "M03",
+      "old_joint_D": 122.11998103353119,
+      "old_joint_loss": 0.00016068835041670268,
+      "best_profile_D": 122.11998103353119,
+      "best_profile_loss": 0.00016068835041648723,
+      "beat_tolerance": 1.606883504167027e-11,
+      "triggered": false
+    },
+    {
+      "case": "M04",
+      "old_joint_D": 151.07969710737842,
+      "old_joint_loss": 0.0004344390219794311,
+      "best_profile_D": 151.07969710737842,
+      "best_profile_loss": 0.00043443902197935465,
+      "beat_tolerance": 4.3443902197943103e-11,
+      "triggered": false
+    },
+    {
+      "case": "M05",
+      "old_joint_D": 167.83725685498712,
+      "old_joint_loss": 0.00016526920948238687,
+      "best_profile_D": 167.83725685498712,
+      "best_profile_loss": 0.00016526920948238687,
+      "beat_tolerance": 1.6526920948238685e-11,
+      "triggered": false
+    },
+    {
+      "case": "M06",
+      "old_joint_D": 190.29730590514112,
+      "old_joint_loss": 8.455877073644359e-05,
+      "best_profile_D": 190.29730590514112,
+      "best_profile_loss": 8.455877073639274e-05,
+      "beat_tolerance": 8.455877073644359e-12,
+      "triggered": false
+    }
+  ],
+  "total_canonical_calls": 33,
+  "scope": "JOINT_RECONCILIATION_NUMERIC_ONLY_NOT_PHYSICS"
+}

@@ -1,0 +1,76 @@
+{
+  "out_of_domain": [
+    {
+      "label": "D_below",
+      "theta": "[25.0, 450.0, 0.0, 0.0]",
+      "official": "REJECT",
+      "legacy": "REJECT"
+    },
+    {
+      "label": "D_above",
+      "theta": "[205.0, 450.0, 0.0, 0.0]",
+      "official": "REJECT",
+      "legacy": "REJECT"
+    },
+    {
+      "label": "h_below",
+      "theta": "[100.0, 340.0, 0.0, 0.0]",
+      "official": "REJECT",
+      "legacy": "REJECT"
+    },
+    {
+      "label": "h_above",
+      "theta": "[100.0, 560.0, 0.0, 0.0]",
+      "official": "REJECT",
+      "legacy": "REJECT"
+    },
+    {
+      "label": "x_out",
+      "theta": "[100.0, 450.0, 501.0, 0.0]",
+      "official": "REJECT",
+      "legacy": "REJECT"
+    },
+    {
+      "label": "y_out",
+      "theta": "[100.0, 450.0, 0.0, -501.0]",
+      "official": "REJECT",
+      "legacy": "REJECT"
+    },
+    {
+      "label": "gap_violation",
+      "theta": "[200.0, 450.0, 0.0, 0.0]",
+      "official": "NO_REJECT",
+      "legacy": "NO_REJECT"
+    },
+    {
+      "label": "nonfinite",
+      "theta": "[null, 450.0, 0.0, 0.0]",
+      "official": "REJECT",
+      "legacy": "REJECT"
+    }
+  ],
+  "finite_difference_diagnostic": [
+    {
+      "axis": "D",
+      "delta_nm": 0.001,
+      "official_fd_max": "1.833145105593903e-06",
+      "legacy_fd_max": "1.8331451051220582e-06",
+      "fd_max_abs_diff": "6.869504964868156e-16"
+    },
+    {
+      "axis": "D",
+      "delta_nm": 0.01,
+      "official_fd_max": "1.833145093629862e-05",
+      "legacy_fd_max": "1.833145093629862e-05",
+      "fd_max_abs_diff": "8.573870780015369e-16"
+    },
+    {
+      "axis": "D",
+      "delta_nm": 0.1,
+      "official_fd_max": "0.0001833143900779391",
+      "legacy_fd_max": "0.00018331439007779338",
+      "fd_max_abs_diff": "6.867336560523185e-16"
+    }
+  ],
+  "scope": "SOFTWARE_NUMERIC_BEHAVIOR_ONLY"
+}
