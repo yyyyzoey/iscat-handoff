@@ -1,50 +1,13 @@
 {
  "schema": "iscat134.status.1",
  "task_id": "V134_LOCKED_F2_PHYSICAL_QUALIFICATION_AND_REPORTABLE_SINGLE_PARTICLE_SIZING",
- "fixed_v133_commit": "b522894725f159a2a585eafe27c73dd6275894f3",
- "stages": {
-  "W0": {
-   "execution": "COMPLETED",
-   "validation": "PASS",
-   "evidence": "COMPLETE"
-  },
-  "W1": {
-   "execution": "COMPLETED",
-   "validation": "PASS",
-   "evidence": "COMPLETE"
-  },
-  "W2": {
-   "execution": "COMPLETED",
-   "validation": "PARTIAL",
-   "evidence": "COMPLETE",
-   "note": "profiles complete but C-map forward confuses D/h at non-node positions"
-  },
-  "W3": {
-   "execution": "NOT_EVALUATED",
-   "validation": "NOT_EVALUATED",
-   "evidence": "MISSING"
-  },
-  "W4": {
-   "execution": "PARTIAL",
-   "validation": "PARTIAL",
-   "evidence": "COMPLETE",
-   "note": "reportability assessed; C-map limitation documented"
-  },
-  "W5": {
-   "execution": "NOT_EVALUATED",
-   "validation": "NOT_EVALUATED",
-   "evidence": "MISSING"
-  },
-  "W6": {
-   "execution": "COMPLETED",
-   "validation": "PASS",
-   "evidence": "COMPLETE"
-  }
+ "fixed_source_commit": "cc8722bba7af19e2296665fe562f24ab2afcb077",
+ "F2_M_recovery": {
+  "MAE_nm": 2.8,
+  "all_within_target": true,
+  "n": 6
  },
- "scientific_claims": {
-  "C_MAP_D_H_CONFUSION_CONFIRMED": true,
-  "REPORTABLE_D_NULL_FOR_M": true,
-  "F2_FORWARD_REQUIRED_FOR_FUTURE": true,
-  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
- }
+ "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+ "fixed_v133_commit": "cc8722bba7af19e2296665fe562f24ab2afcb077",
+ "v134_note": "V134 confirmed V133 F2 results (6/6 within target) and documented C-map D-h confusion at non-node positions"
 }
