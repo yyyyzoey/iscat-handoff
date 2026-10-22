@@ -1,0 +1,104 @@
+[
+ {
+  "case": "M01",
+  "D_true": 53.0,
+  "best_D": 50.0,
+  "errD": -3.0,
+  "within_target": true,
+  "boundary": false,
+  "identifiable": true,
+  "reportable": true,
+  "n_components": 1,
+  "compatible": [
+   [
+    30.0,
+    200.0
+   ]
+  ]
+ },
+ {
+  "case": "M02",
+  "D_true": 81.0,
+  "best_D": 135.0,
+  "errD": 54.0,
+  "within_target": false,
+  "boundary": false,
+  "identifiable": true,
+  "reportable": true,
+  "n_components": 1,
+  "compatible": [
+   [
+    30.0,
+    200.0
+   ]
+  ]
+ },
+ {
+  "case": "M03",
+  "D_true": 119.0,
+  "best_D": 200.0,
+  "errD": 81.0,
+  "within_target": false,
+  "boundary": true,
+  "identifiable": true,
+  "reportable": false,
+  "n_components": 1,
+  "compatible": [
+   [
+    30.0,
+    200.0
+   ]
+  ]
+ },
+ {
+  "case": "M04",
+  "D_true": 149.0,
+  "best_D": 200.0,
+  "errD": 51.0,
+  "within_target": false,
+  "boundary": true,
+  "identifiable": true,
+  "reportable": false,
+  "n_components": 1,
+  "compatible": [
+   [
+    30.0,
+    200.0
+   ]
+  ]
+ },
+ {
+  "case": "M05",
+  "D_true": 171.0,
+  "best_D": 155.0,
+  "errD": -16.0,
+  "within_target": true,
+  "boundary": false,
+  "identifiable": true,
+  "reportable": true,
+  "n_components": 1,
+  "compatible": [
+   [
+    30.0,
+    200.0
+   ]
+  ]
+ },
+ {
+  "case": "M06",
+  "D_true": 187.0,
+  "best_D": 200.0,
+  "errD": 13.0,
+  "within_target": true,
+  "boundary": true,
+  "identifiable": true,
+  "reportable": false,
+  "n_components": 1,
+  "compatible": [
+   [
+    30.0,
+    200.0
+   ]
+  ]
+ }
+]

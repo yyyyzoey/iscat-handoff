@@ -1,0 +1,10 @@
+{
+  "cases": 6,
+  "bias_nm": 0.17160659985973106,
+  "MAE_nm": 2.751917769836067,
+  "RMSE_nm": 3.0542121224701333,
+  "max_abs_nm": 4.578190364916125,
+  "target_only_pass": 6,
+  "provenance": "published results/v133/M_F2_baseline/M_F2_candidates.csv + task v132_M_cases.json",
+  "not_qualified_for_experiment": true
+}

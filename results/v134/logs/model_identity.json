@@ -1,0 +1,52 @@
+{
+ "schema": "iscat134.model_identity.1",
+ "library_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v128\\library\\v128_Dh_train_fields.h5",
+ "library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+ "n_nodes": 70,
+ "all_finite": true,
+ "M_solves": {
+  "M01": {
+   "D": 53.0,
+   "h": 365.625,
+   "mesh": 1444,
+   "np_re": 1.38,
+   "seconds": 195.9403
+  },
+  "M02": {
+   "D": 81.0,
+   "h": 415.625,
+   "mesh": 1444,
+   "np_re": 1.38,
+   "seconds": 173.3758
+  },
+  "M03": {
+   "D": 119.0,
+   "h": 446.875,
+   "mesh": 1444,
+   "np_re": 1.38,
+   "seconds": 172.6607
+  },
+  "M04": {
+   "D": 149.0,
+   "h": 471.875,
+   "mesh": 1444,
+   "np_re": 1.38,
+   "seconds": 171.1539
+  },
+  "M05": {
+   "D": 171.0,
+   "h": 509.375,
+   "mesh": 1444,
+   "np_re": 1.38,
+   "seconds": 170.3325
+  },
+  "M06": {
+   "D": 187.0,
+   "h": 540.625,
+   "mesh": 1444,
+   "np_re": 1.38,
+   "seconds": 170.7234
+  }
+ },
+ "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+}

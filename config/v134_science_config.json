@@ -1,0 +1,22 @@
+{
+  "task_id": "V134_LOCKED_F2_PHYSICAL_QUALIFICATION_AND_REPORTABLE_SINGLE_PARTICLE_SIZING",
+  "fixed_v133_commit": "b522894725f159a2a585eafe27c73dd6275894f3",
+  "reuse": {
+    "v133_fit_dir": "results/v133/M_F2_baseline/fits",
+    "v133_candidates": "results/v133/M_F2_baseline/M_F2_candidates.csv",
+    "v133_observations": "results/v133/M_F2_baseline/anonymous_M_images.h5",
+    "source_M_direct_H5": "results/v132/validation/new_M_images.h5",
+    "train_H5": "results/v128/library/v128_Dh_train_fields.h5",
+    "expected_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+    "expected_train_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f"
+  },
+  "experiment_user_confirmed": {"particle_state":"suspended","medium":"pure_water","temperature_c":26,"wavelength_vacuum_nm":520,"camera_pixel_um":14,"objective_magnification":50,"no_microscope_slide":true},
+  "conditional_assumptions": {"particle_n_re_im":[1.38,0],"water_n":1.3353,"coverslip_n":1.5,"NA":0.8,"extra_magnification":1,"object_pixel_nm":280,"fine_q":5,"focus_nm":450,"read_noise_e":2,"reference_frames":8,"background_e":[1000,10000,100000]},
+  "boundaries": {"D_nm":[30,200],"h_center_nm":[350,550],"xy_nm":[-500,500],"min_surface_gap_nm":100},
+  "actual_reuse_M": ["M01","M02","M03","M04","M05","M06"],
+  "profile": {"initial_D_step_nm":5,"refine_D_step_nm":0.5,"max_canonical_calls_each":120000,"profile_not_global_proof":true},
+  "budget_hard_limits": {"new_bem_attempts":0,"new_optical_render_attempts":48,"synthetic_camera_exposure_events":6000,"canonical_forward_calls":5000000,"heavy_physics_concurrency":1,"wall_hours_including_finalize":12,"finalize_minutes_reserved":30},
+  "conditional_diameter_definition":"CONDITIONAL_UNIFORM_SPHERE_OPTICAL_EQUIVALENT",
+  "experiment_absolute_diameter_validated":false,
+  "no_new_blind_holdouts":true
+}
