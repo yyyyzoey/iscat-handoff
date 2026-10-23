@@ -1,6 +1,6 @@
 {
   "task": "V140_NATIVE_CANONICAL_SHIFT_RECONCILIATION_AND_SOURCE_LINKAGE",
-  "git_commit": "bf22ec3b3374f32f75d9c724d290494da3ec959b",
+  "git_commit": "2e0e27ee79418874f83cbf3e4c6109e6869e49f2",
   "science_gates": {
     "mechanical": "PASS (CRC+manifest via v140_check_return)",
     "numerical_replay": "PASS: 38 handoff tests; oracle residual decomposition; F2 cross-check reproduces V139 values",
