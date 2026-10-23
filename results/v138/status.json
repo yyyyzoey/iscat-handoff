@@ -1,6 +1,6 @@
 {
   "task": "V138_RAW_OBSERVATION_OPERATOR_FORENSICS_AND_QUALIFIED_SIZING",
-  "git_commit": "0b64405596a7b77ad48aec26db85ca0eee495654",
+  "git_commit": "425b93c551212bd073d94dcec9961d65ac77263a",
   "acceptance": {
     "raw_render_intensity_identity": "PASS 12/12 exact (per-file, cross-variant bug fixed)",
     "raw_vs_merged_identity": "PASS 12/12 bitwise under frozen convention OBS_MERGED_C=RAW.T[::-1,:]",
