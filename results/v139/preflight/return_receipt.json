@@ -3,7 +3,7 @@
   "mechanical": {
     "status": "PASS",
     "errors": [],
-    "archive_sha256": "843af1a9b237e1817d95e19941027ea287cb4d404482f27e8a5b51fe75a29252"
+    "archive_sha256": "e594fb9b3056c1dc9e5f77a1a0c37e5bde9f6934e3f983c8dd7fb31eb266aef0"
   },
   "published_science_gate_declarations": {
     "mechanical": "PASS (CRC+manifest, see check receipt)",

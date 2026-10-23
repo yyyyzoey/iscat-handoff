@@ -1,6 +1,6 @@
 {
   "task": "V139_RENDER_LINEAGE_SPATIAL_ORACLE_AND_CONDITIONAL_SIZING",
-  "git_commit": "ec2f9e81b0a43b7081e383e80361862e7ae200eb",
+  "git_commit": "034ab02c663c08e40c9a5268f9826c8b8ddbbe82",
   "science_gates": {
     "mechanical": "PASS (CRC+manifest, see check receipt)",
     "numerical_replay": "PASS: 12/12 render intensity identities (V138) + oracle residual-vector decomposition enforced",
