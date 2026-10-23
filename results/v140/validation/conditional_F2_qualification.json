@@ -1,0 +1,12 @@
+{
+  "F2_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "frozen_kind": "F2_TENSOR_NOT_A_KNOT_CUBIC_PHYSICAL_D_H_PLUS_SPATIAL_BILINEAR",
+  "vs_direct": {
+    "default": "6/6 <=1% (0.27-0.88%)",
+    "at_offset": "1/6 <=1% (M02 0.47%)",
+    "others": "M01 1.63%, M03 2.02%, M04 1.17%, M05 1.91%, M06 1.04% - NOT passed, no gate relaxation"
+  },
+  "vs_canonical_oracle": "agreement order consistent with fractional-grid bilinear error",
+  "qualification": "CONDITIONAL surrogate of the renderer family; NOT independent Maxwell validation",
+  "f2_calls_used_v140": 12
+}

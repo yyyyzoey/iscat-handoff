@@ -1,0 +1,37 @@
+{
+  "frozen_source": {
+    "source/v126_physical_forward_adapter.m": {
+      "git_blob": "3b60804ac5f604f40a5b2f5312ee59c277f255a8",
+      "sha256": "09571b64bc94df038d80416e0a59e7b6401950362100b70aebb3151ed98d77e9"
+    },
+    "tools/v125_model_library.py": {
+      "git_blob": "a81ef4d1d54721471f827a31ccac9c6b0b35bf8b",
+      "sha256": "fda680821f05f93475498bc07d78786f3399eebfcdb9f2ff7c12b61cd97e910d",
+      "note": "CONFIG_TYPO_41CHAR_PREFIX_MATCH"
+    },
+    "tools/v139_common.py": {
+      "git_blob": "c90589f5780af0ca947b3a62a75c873c4d67c36b",
+      "sha256": "503e886ee556fade4c1a2d407a7c866d60512cc3d5bc0f088a7be6510e25a784"
+    },
+    "tools/oracle_wide_vs_direct.py": {
+      "git_blob": "5310cff3a4780ccdd3ed8f720b2323c729a577bc",
+      "sha256": "aa5e43d54a96de04c18e3c1eb130580533c0d145d4eb2cb4eeb101ae4f2c48a9"
+    }
+  },
+  "n_rows": 12,
+  "new_BEM": 0,
+  "new_render": 0,
+  "new_camera": 0,
+  "results_by_variant": {
+    "default": {
+      "n": 6,
+      "oracle_pass_1pct": 6
+    },
+    "at_offset": {
+      "n": 6,
+      "oracle_pass_1pct": 2
+    }
+  },
+  "verdict": "NUMERIC_ORACLE_DIAGNOSTIC_ONLY__RENDER_SOLVE_LINEAGE_AND_INDEPENDENT_PHYSICS_SEPARATE",
+  "note": "Primary source-defined canonicalization frozen by V125 importer and MATLAB shift code; not chosen per case by residual."
+}

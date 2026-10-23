@@ -1,0 +1,15 @@
+{
+  "frozen_semantics": {
+    "H5_import": "E_h5.transpose(2,1,0) then E[::-1,:,:] (_camx_flip)",
+    "fine_x": "-fine_x_raw[::-1]",
+    "fine_y": "fine_y_raw",
+    "camera_C": "RAW_C.T[::-1,:]",
+    "F2_query": "canonical_fine_query-(dx,dy)"
+  },
+  "origins": [
+    "tools/v125_model_library.py::_cplx/_camx_flip (frozen blob a81ef4d1...)",
+    "source/v126_physical_forward_adapter.m::v125_render_variant es=flip(es0,1) (frozen blob 3b60804...)"
+  ],
+  "confirmation": "M02 integer-grid sentinel (dx,dy)=(-112,56)=(-2,1)*56nm reproduces direct render at 1.64e-5",
+  "per_case_fit_selection_forbidden": true
+}

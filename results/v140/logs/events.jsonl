@@ -1,0 +1,5 @@
+{"ts": "2026-10-23", "event": "V140_LINEAGE", "detail": "6 solves + 18 renders linked via cache-key pipeline + MATLAB ledger; not cryptographic"}
+{"ts": "2026-10-23", "event": "V140_CANONICAL_ORACLE", "detail": "M02 integer sentinel 1.64e-5 CONFIRMED; default 6/6; at_offset 2/6 <=1%"}
+{"ts": "2026-10-23", "event": "V140_CONFIG_TYPO", "detail": "fixed_source_blobs v125_model_library.py hash had 41-char typo; transparent 40-char prefix match recorded"}
+{"ts": "2026-10-23", "event": "V140_F2_CROSSCHECK", "detail": "F2_vs_A reproduces V139 published values exactly"}
+{"ts": "2026-10-23", "event": "V140_SIZING", "detail": "reportable_D=null all six; candidates + compat retained"}

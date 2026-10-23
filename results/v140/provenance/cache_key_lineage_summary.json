@@ -1,0 +1,7 @@
+{
+  "n_solve_cases": 6,
+  "n_render_rows": 18,
+  "source_link_status": "PIPELINE_KEY_AND_EXECUTION_LEDGER_LINKED",
+  "cryptographic_render_embedded_solve_sha": false,
+  "scope": "HISTORICAL_PIPELINE_EXECUTION_EVIDENCE_NOT_INDEPENDENT_MAXWELL_REDERIVATION"
+}

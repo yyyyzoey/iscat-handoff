@@ -1,0 +1,7 @@
+python -m unittest discover -s tests -v  # 38 PASS
+python tools/v140_verify_handoff.py --root . --zip <V140 zip>  # 16 members PASS
+python tools/v140_audit_v139.py --repo <repo> --out <repo>/results/v140/preflight/v139_audit.json --(no verify-arrays variant run)
+python tools/v140_trace_v126_lineage.py --repo <repo> --config <cfg> --out <repo>/results/v140/provenance
+python tools/v140_canonical_oracle.py --repo <repo> --config <cfg> --out <repo>/results/v140/validation
+python tools/v140_fourway.py --repo <repo> --out <repo>/results/v140 --config <cfg>
+python tools/v140_assemble.py ... ; python tools/v140_pack.py ...

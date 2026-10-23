@@ -1,0 +1,24 @@
+{
+  "inputs": {
+    "results/v132/validation/new_M_images.h5": {
+      "sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+      "bytes": 60246
+    },
+    "results/v126/logs/cache_key_map.csv": {
+      "sha256": "b220ab489568ce245347216addaebe013457ededb36332d3ae4b4fdf9c7da8c8",
+      "bytes": 23803
+    },
+    "results/v126/logs/v126_matlab_ledger.csv": {
+      "sha256": "375ea770ad1edd832da90e297ece9fecbe01e8de0979e3fec7e0857a706ab471",
+      "bytes": 31419
+    },
+    "results/v128/library/v128_Dh_train_fields.h5": {
+      "sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+      "bytes": 53435213
+    },
+    "source/v126_physical_forward_adapter.m": {
+      "sha256": "09571b64bc94df038d80416e0a59e7b6401950362100b70aebb3151ed98d77e9",
+      "bytes": 12122
+    }
+  }
+}

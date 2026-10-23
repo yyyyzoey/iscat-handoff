@@ -1,0 +1,54 @@
+{
+  "M02_integer_sentinel": {
+    "dx": -112,
+    "dy": 56,
+    "grid": [
+      -2.0,
+      1.0
+    ],
+    "oracle_rel_L2": 1.6436e-05,
+    "verdict": "EXACT_INTEGER_GRID_SHIFT_CONFIRMED"
+  },
+  "conclusion": "V139 77% oracle failure was the complex-field import convention: V139 used H5.transpose(1,2,0) without the frozen _cplx(2,1,0)+_camx_flip semantics. Under the frozen semantics the integer-grid sentinel M02 reproduces the direct render at 1.64e-5.",
+  "fractional_grid_cases": {
+    "M01": {
+      "dx": 42.0,
+      "dy": -70.0,
+      "rel": 0.013913180708594073,
+      "pass_1pct": false,
+      "grid_x": 0.75,
+      "grid_y": -1.25
+    },
+    "M03": {
+      "dx": 84.0,
+      "dy": 98.0,
+      "rel": 0.016829422089174272,
+      "pass_1pct": false,
+      "grid_x": 1.5,
+      "grid_y": 1.75
+    },
+    "M05": {
+      "dx": 126.0,
+      "dy": -42.0,
+      "rel": 0.012708129897194727,
+      "pass_1pct": false,
+      "grid_x": 2.25,
+      "grid_y": -0.75
+    },
+    "M06": {
+      "dx": -98.0,
+      "dy": 70.0,
+      "rel": 0.014750809712488879,
+      "pass_1pct": false,
+      "grid_x": -1.75,
+      "grid_y": 1.25
+    }
+  },
+  "fractional_error_interpretation": "remaining 0.94-1.68% rel L2 on fractional-grid displacements is the bilinear interpolation error of the 56nm-pitch sampled field, not an axis defect",
+  "f2_consistency": "F2_vs_A values reproduce V139 published numbers exactly (independent cross-check)",
+  "engineering_gate_status": {
+    "default": "6/6 <=1%",
+    "at_offset": "2/6 <=1% (M02 integer, M04 0.94%); no gate relaxation"
+  },
+  "lineage": "PIPELINE_KEY_AND_EXECUTION_LEDGER_LINKED (not cryptographic embedded proof); default<->wide bitwise same field (V139)"
+}

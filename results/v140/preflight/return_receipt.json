@@ -1,0 +1,20 @@
+{
+  "schema": "iscat140.external_return_receipt.1",
+  "mechanical": {
+    "status": "PASS",
+    "errors": []
+  },
+  "published_science_gate_declarations": {
+    "mechanical": "PASS (CRC+manifest via v140_check_return)",
+    "numerical_replay": "PASS: 38 handoff tests; oracle residual decomposition; F2 cross-check reproduces V139 values",
+    "source_lineage": "PIPELINE_KEY_AND_EXECUTION_LEDGER_LINKED (6 solves, 18 renders, SHA256 recorded); not cryptographic",
+    "coordinate": "CONFIRMED: frozen _cplx(2,1,0)+_camx_flip semantics; M02 integer-grid sentinel 1.64e-5",
+    "spatial_oracle": "default 6/6 <=1%; at_offset 2/6 <=1% (M02 exact, M04 0.94%); fractional-grid bilinear error 1.27-1.68% on M01/M03/M05/M06",
+    "F2_physical": "CONDITIONAL: F2-vs-direct default 6/6, at_offset 1/6 (M02)",
+    "sizing_reportability": "FAIL-CLOSED reportable_D=null all six; candidates + known_compatible_components retained",
+    "camera_motion": "HISTORICAL ONLY; 0/60,0/60,2/60 preserved; V137 breach 23958/6000 preserved",
+    "experimental_absolute": "NOT_VALIDATED"
+  },
+  "independent_science_verdict": "NOT_CERTIFIED_BY_MANIFEST_CHECKER_REQUIRES_ORIGINAL_FIELD_REPLAY",
+  "independent_experimental_absolute_diameter": "NOT_VALIDATED"
+}

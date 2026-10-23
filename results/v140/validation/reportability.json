@@ -1,0 +1,184 @@
+{
+  "cases": {
+    "M01": {
+      "candidate_D": 48.421809635083875,
+      "known_compatible_components": [
+        [
+          40.0,
+          200.0
+        ]
+      ],
+      "reportable_D": null,
+      "all_quality_evidence_confirmed": false,
+      "reason_codes": [
+        "PROFILE_NOT_COMPLETE",
+        "ADAPTIVE_COVERAGE_INCOMPLETE",
+        "DETECTION_GATE_NOT_QUALIFIED",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING",
+        "OFFSET_1PCT_GATE_PARTIAL(2/6)",
+        "FRACTIONAL_GRID_BILINEAR_ERROR_PRESENT"
+      ],
+      "source_identity": {
+        "solve_render_lineage": "PIPELINE_KEY_AND_EXECUTION_LEDGER_LINKED",
+        "raw_vs_merged": "BITWISE_FROZEN_CONVENTION (V138)"
+      },
+      "physics_qualification": {
+        "default_render": "6/6 <=1%",
+        "offset_render": "2/6 <=1%",
+        "integer_sentinel_M02": "1.64e-5 CONFIRMED"
+      },
+      "profile_status": "HISTORIC_R1_COARSE_ONLY; no new profile this round (forward qualification partial)",
+      "optimizer_status": "V133 joint candidate replayed in V137/R1; no new estimator run"
+    },
+    "M02": {
+      "candidate_D": 81.27358906303667,
+      "known_compatible_components": [
+        [
+          70.0,
+          200.0
+        ]
+      ],
+      "reportable_D": null,
+      "all_quality_evidence_confirmed": false,
+      "reason_codes": [
+        "PROFILE_NOT_COMPLETE",
+        "ADAPTIVE_COVERAGE_INCOMPLETE",
+        "DETECTION_GATE_NOT_QUALIFIED",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING",
+        "OFFSET_1PCT_GATE_PARTIAL(2/6)",
+        "FRACTIONAL_GRID_BILINEAR_ERROR_PRESENT"
+      ],
+      "source_identity": {
+        "solve_render_lineage": "PIPELINE_KEY_AND_EXECUTION_LEDGER_LINKED",
+        "raw_vs_merged": "BITWISE_FROZEN_CONVENTION (V138)"
+      },
+      "physics_qualification": {
+        "default_render": "6/6 <=1%",
+        "offset_render": "2/6 <=1%",
+        "integer_sentinel_M02": "1.64e-5 CONFIRMED"
+      },
+      "profile_status": "HISTORIC_R1_COARSE_ONLY; no new profile this round (forward qualification partial)",
+      "optimizer_status": "V133 joint candidate replayed in V137/R1; no new estimator run"
+    },
+    "M03": {
+      "candidate_D": 122.11998103353119,
+      "known_compatible_components": [
+        [
+          120.0,
+          200.0
+        ]
+      ],
+      "reportable_D": null,
+      "all_quality_evidence_confirmed": false,
+      "reason_codes": [
+        "PROFILE_NOT_COMPLETE",
+        "ADAPTIVE_COVERAGE_INCOMPLETE",
+        "DETECTION_GATE_NOT_QUALIFIED",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING",
+        "OFFSET_1PCT_GATE_PARTIAL(2/6)",
+        "FRACTIONAL_GRID_BILINEAR_ERROR_PRESENT"
+      ],
+      "source_identity": {
+        "solve_render_lineage": "PIPELINE_KEY_AND_EXECUTION_LEDGER_LINKED",
+        "raw_vs_merged": "BITWISE_FROZEN_CONVENTION (V138)"
+      },
+      "physics_qualification": {
+        "default_render": "6/6 <=1%",
+        "offset_render": "2/6 <=1%",
+        "integer_sentinel_M02": "1.64e-5 CONFIRMED"
+      },
+      "profile_status": "HISTORIC_R1_COARSE_ONLY; no new profile this round (forward qualification partial)",
+      "optimizer_status": "V133 joint candidate replayed in V137/R1; no new estimator run"
+    },
+    "M04": {
+      "candidate_D": 151.07969710737842,
+      "known_compatible_components": [
+        [
+          135.0,
+          170.0
+        ]
+      ],
+      "reportable_D": null,
+      "all_quality_evidence_confirmed": false,
+      "reason_codes": [
+        "PROFILE_NOT_COMPLETE",
+        "ADAPTIVE_COVERAGE_INCOMPLETE",
+        "DETECTION_GATE_NOT_QUALIFIED",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING",
+        "OFFSET_1PCT_GATE_PARTIAL(2/6)",
+        "FRACTIONAL_GRID_BILINEAR_ERROR_PRESENT"
+      ],
+      "source_identity": {
+        "solve_render_lineage": "PIPELINE_KEY_AND_EXECUTION_LEDGER_LINKED",
+        "raw_vs_merged": "BITWISE_FROZEN_CONVENTION (V138)"
+      },
+      "physics_qualification": {
+        "default_render": "6/6 <=1%",
+        "offset_render": "2/6 <=1%",
+        "integer_sentinel_M02": "1.64e-5 CONFIRMED"
+      },
+      "profile_status": "HISTORIC_R1_COARSE_ONLY; no new profile this round (forward qualification partial)",
+      "optimizer_status": "V133 joint candidate replayed in V137/R1; no new estimator run"
+    },
+    "M05": {
+      "candidate_D": 167.83725685498712,
+      "known_compatible_components": [
+        [
+          150.0,
+          200.0
+        ]
+      ],
+      "reportable_D": null,
+      "all_quality_evidence_confirmed": false,
+      "reason_codes": [
+        "PROFILE_NOT_COMPLETE",
+        "ADAPTIVE_COVERAGE_INCOMPLETE",
+        "DETECTION_GATE_NOT_QUALIFIED",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING",
+        "OFFSET_1PCT_GATE_PARTIAL(2/6)",
+        "FRACTIONAL_GRID_BILINEAR_ERROR_PRESENT"
+      ],
+      "source_identity": {
+        "solve_render_lineage": "PIPELINE_KEY_AND_EXECUTION_LEDGER_LINKED",
+        "raw_vs_merged": "BITWISE_FROZEN_CONVENTION (V138)"
+      },
+      "physics_qualification": {
+        "default_render": "6/6 <=1%",
+        "offset_render": "2/6 <=1%",
+        "integer_sentinel_M02": "1.64e-5 CONFIRMED"
+      },
+      "profile_status": "HISTORIC_R1_COARSE_ONLY; no new profile this round (forward qualification partial)",
+      "optimizer_status": "V133 joint candidate replayed in V137/R1; no new estimator run"
+    },
+    "M06": {
+      "candidate_D": 190.29730590514112,
+      "known_compatible_components": [
+        [
+          185.0,
+          200.0
+        ]
+      ],
+      "reportable_D": null,
+      "all_quality_evidence_confirmed": false,
+      "reason_codes": [
+        "PROFILE_NOT_COMPLETE",
+        "ADAPTIVE_COVERAGE_INCOMPLETE",
+        "DETECTION_GATE_NOT_QUALIFIED",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING",
+        "OFFSET_1PCT_GATE_PARTIAL(2/6)",
+        "FRACTIONAL_GRID_BILINEAR_ERROR_PRESENT"
+      ],
+      "source_identity": {
+        "solve_render_lineage": "PIPELINE_KEY_AND_EXECUTION_LEDGER_LINKED",
+        "raw_vs_merged": "BITWISE_FROZEN_CONVENTION (V138)"
+      },
+      "physics_qualification": {
+        "default_render": "6/6 <=1%",
+        "offset_render": "2/6 <=1%",
+        "integer_sentinel_M02": "1.64e-5 CONFIRMED"
+      },
+      "profile_status": "HISTORIC_R1_COARSE_ONLY; no new profile this round (forward qualification partial)",
+      "optimizer_status": "V133 joint candidate replayed in V137/R1; no new estimator run"
+    }
+  }
+}

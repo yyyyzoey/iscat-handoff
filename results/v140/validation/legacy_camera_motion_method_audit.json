@@ -1,0 +1,19 @@
+{
+  "new_camera_exposures": 0,
+  "new_motion_computation": 0,
+  "camera_fpr_preserved": "0/60,0/60,2/60; B=100000 FAIL",
+  "v137_camera_breach": "23958/6000 PRESERVED",
+  "v139_inherited_flags": {
+    "mechanical": "PASS (CRC+manifest, see check receipt)",
+    "numerical_replay": "PASS: 12/12 render intensity identities (V138) + oracle residual-vector decomposition enforced",
+    "source_lineage": "PARTIAL: default<->wide bitwise same field 6/6; at_offset same-solve evidenced by identical Eref+cfg+center h; byte-level render->solve link not fully proven",
+    "coordinate": "FROZEN RAW.T[::-1,:] from V138 export-chain; NOT independent experimental axis calibration",
+    "spatial_oracle": "FAIL: oracle-vs-direct 48.6-88.3% at_offset 6/6; displaced render is NOT a sampled-grid shift of the undisplaced render",
+    "F2_physical": "CONDITIONAL: F2-vs-direct default 6/6 <=1%; at_offset 1/6 (M02) only",
+    "sizing_reportability": "FAIL-CLOSED: reportable_D=null all six; candidates + known_compatible_components retained",
+    "camera_motion": "HISTORICAL ONLY: 0/60,0/60,2/60 preserved; V137 breach 23958/6000 preserved; no new samples",
+    "experimental_absolute": "NOT_VALIDATED"
+  },
+  "motion": "sinusoid generator + UNCORRELATED_OBJECTIVE_ONLY shared-D refit documented; six rejections are method+SNR outcomes",
+  "observation_isolation": "static signed C only; FFT amplitude / abs(C) / 8-bit BMP rejected"
+}

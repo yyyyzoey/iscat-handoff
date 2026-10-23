@@ -1,0 +1,16 @@
+{
+  "case": "M02",
+  "variant": "at_offset",
+  "dx": -112.0,
+  "dy": 56.0,
+  "default_render_sha256": "d55a2671d22750b5b31513877fe2b40648d3504ce54a0c3547818609c882902d",
+  "wide_render_sha256": "74509bf266c9d6530fd30ec3b077672c4da1453b82cca91b683813fde8b700b3",
+  "direct_render_sha256": "2333020966650100de532ae49fd2716d9e5c1c58db68ccd6fd2c58118d54479e",
+  "merged_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+  "npz_sha256": "0606786fa0a9aada67978cbd985db333877a22672c9a6d1f0d9cb77c064b59e4",
+  "relative_L2": 1.6436140009324402e-05,
+  "abs_L2": 4.3501326534775193e-07,
+  "max_abs": 1.5124308655467544e-07,
+  "pass_1pct": true,
+  "source_role": "SOURCE_DEFINED_CANONICAL_WIDE_ORACLE__NOT_INDEPENDENT_BEM_SOLVE_PROOF"
+}

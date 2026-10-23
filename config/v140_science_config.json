@@ -1,0 +1,83 @@
+{
+  "schema": "iscat140.science_config.1",
+  "task_id": "V140_NATIVE_CANONICAL_SHIFT_RECONCILIATION_AND_SOURCE_LINKAGE",
+  "repository": "yyyyzoey/iscat-handoff",
+  "fixed_review_commit": "bf22ec3b3374f32f75d9c724d290494da3ec959b",
+  "inherited_F2_commit": "b522894725f159a2a585eafe27c73dd6275894f3",
+  "locked_F2_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "library_h5": "results/v128/library/v128_Dh_train_fields.h5",
+  "library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+  "merged_M_h5": "results/v132/validation/new_M_images.h5",
+  "merged_M_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+  "original_render_index": "results/v134/provenance/M_raw_source_audit.csv",
+  "original_solve_geometry": "results/v138/provenance/raw_solve_geometry_audit.csv",
+  "original_cache_key_map": "results/v126/logs/cache_key_map.csv",
+  "original_matlab_ledger": "results/v126/logs/v126_matlab_ledger.csv",
+  "source_render_root": "results/v126/renders",
+  "source_solve_root": "results/v126/bem_cache",
+  "fixed_source_blobs": {
+    "source/v126_physical_forward_adapter.m": "3b60804ac5f604f40a5b2f5312ee59c277f255a8",
+    "tools/v125_model_library.py": "a81ef4d1d54721471f827a31ccac9c6b0b35bf8b8",
+    "tools/v139_common.py": "c90589f5780af0ca947b3a62a75c873c4d67c36b",
+    "tools/oracle_wide_vs_direct.py": "5310cff3a4780ccdd3ed8f720b2323c729a577bc"
+  },
+  "measurement_confirmed": {
+    "particle_state": "suspended", "medium": "pure_water", "temperature_C": 26.0,
+    "vacuum_wavelength_nm": 520.0, "camera_pixel_um": 14.0,
+    "objective_magnification": 50.0, "slide_present": false
+  },
+  "conditional_assumptions": {
+    "n_water": 1.3353, "n_glass": 1.5, "n_particle_complex": [1.38, 0.0],
+    "NA": 0.8, "extra_magnification": 1.0, "object_pixel_nm": 280.0,
+    "q": 5, "subpixel_pitch_nm": 56.0, "camera_N": 17,
+    "score_N": 13, "focus_z_nm": 450.0
+  },
+  "M_opened_development_cases": [
+    {"case": "M01", "D_nm": 53.0, "h_nm": 365.625, "dx_nm": 42.0, "dy_nm": -70.0},
+    {"case": "M02", "D_nm": 81.0, "h_nm": 415.625, "dx_nm": -112.0, "dy_nm": 56.0},
+    {"case": "M03", "D_nm": 119.0, "h_nm": 446.875, "dx_nm": 84.0, "dy_nm": 98.0},
+    {"case": "M04", "D_nm": 149.0, "h_nm": 471.875, "dx_nm": -70.0, "dy_nm": -112.0},
+    {"case": "M05", "D_nm": 171.0, "h_nm": 509.375, "dx_nm": 126.0, "dy_nm": -42.0},
+    {"case": "M06", "D_nm": 187.0, "h_nm": 540.625, "dx_nm": -98.0, "dy_nm": 70.0}
+  ],
+  "fixed_source_importer_semantics": {
+    "H5_MATLAB_COMPLEX_TO_MATLAB_PY_AXES": "H5_compound.transpose(2,1,0)",
+    "CAMERA_X_NORMALIZATION": "field[::-1,:,:]; fine_x=-fine_x[::-1]",
+    "CAMERA_OBSERVATION_NORMALIZATION": "RAW_C.T[::-1,:]",
+    "F2_PHYSICAL_QUERY": "canonical_fine_query - (dx,dy)",
+    "V139_UNQUALIFIED_ORACLE": "H5_compound.transpose(1,2,0); native field query -(dx,dy); post RAW.T[::-1,:]",
+    "transformation_origin": "original_v125_model_library.py + source_v126_physical_forward_adapter.m",
+    "per_case_fit_selected_transform_forbidden": true
+  },
+  "qualification": {
+    "same_render_C_from_own_I_max_abs": 1e-12,
+    "MAT_raw_to_merged_max_abs": 0.0,
+    "zero_shift_source_wide_rel_L2_engineering_goal": 0.01,
+    "nonzero_shift_source_wide_rel_L2_engineering_goal": 0.01,
+    "frozen_F2_vs_true_direct_rel_L2_engineering_goal": 0.01,
+    "near_zero_contrast": "must report absolute L2 and pixel floor, never divide by arbitrary epsilon",
+    "loss_observable": "CENTRAL13_STATIC_SIGNED_C_UNSCALED_L2",
+    "model_error_development_epsilon_unqualified": 0.0030038234921309446,
+    "profile": "ONLY_AFTER_SOURCE_AND_FORWARD_QUALIFICATION; REUSE_EXACT_JOINT_AND_PRIOR_CHECKPOINTS",
+    "reportable_D_requires": "full source/forward/profile/ambiguity/detection/noise/boundary gates; no truth leakage",
+    "new_blind_holdouts": false,
+    "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+  },
+  "hard_budget_new_v140": {
+    "BEM_attempts": 0,
+    "new_render_attempts_existing_solves_only": 12,
+    "new_camera_exposure_events": 0,
+    "all_new_F2_forward_queries": 120000,
+    "heavy_physics_concurrency": 1,
+    "wall_hours_including_finalize": 12,
+    "finalization_minutes_reserved": 30
+  },
+  "preserve_historical_budget": {
+    "v137_R1_camera_actual": 23958,
+    "v137_camera_limit": 6000,
+    "v137_R1_F2_actual": 1659953,
+    "v138_F2_actual": 60,
+    "v139_F2_published": 12,
+    "immutable_history": true
+  }
+}

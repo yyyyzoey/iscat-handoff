@@ -1,0 +1,102 @@
+{
+  "schema": "iscat140.v139_text_evidence_audit.1",
+  "source_scope": "PUBLISHED_CSV_JSON_AND_CODE_ONLY_NO_ORIGINAL_MAT_REPLAY",
+  "source_commit_claimed": "bf22ec3b3374f32f75d9c724d290494da3ec959b",
+  "n_oracle_rows": 12,
+  "oracle_direct": {
+    "default": {
+      "n": 6,
+      "min_relative_L2": 1.721169863889249e-05,
+      "max_relative_L2": 1.9295903249715234e-05,
+      "mean_relative_L2": 1.815381844978761e-05,
+      "passes_1pct": 6
+    },
+    "at_offset": {
+      "n": 6,
+      "min_relative_L2": 0.5128543871504716,
+      "max_relative_L2": 0.8354441236642365,
+      "mean_relative_L2": 0.7305755836102756,
+      "passes_1pct": 0
+    }
+  },
+  "F2_direct": {
+    "default": {
+      "n": 6,
+      "min_relative_L2": 0.0027364180256239123,
+      "max_relative_L2": 0.008838277456634394,
+      "mean_relative_L2": 0.005104325658871121,
+      "passes_1pct": 6
+    },
+    "at_offset": {
+      "n": 6,
+      "min_relative_L2": 0.004663209598504495,
+      "max_relative_L2": 0.02024563721642848,
+      "mean_relative_L2": 0.013745052728434577,
+      "passes_1pct": 1
+    }
+  },
+  "F2_oracle": {
+    "default": {
+      "n": 6,
+      "min_relative_L2": 0.0027242997047039444,
+      "max_relative_L2": 0.0088470366965735,
+      "mean_relative_L2": 0.0050962078325049774,
+      "passes_1pct": 6
+    },
+    "at_offset": {
+      "n": 6,
+      "min_relative_L2": 0.5130807559210546,
+      "max_relative_L2": 0.8350038080044992,
+      "mean_relative_L2": 0.7314115910956424,
+      "passes_1pct": 0
+    }
+  },
+  "reported_numeric_summary": {
+    "task": "V139_SOURCE_WIDE_ORACLE_DIAGNOSTIC",
+    "n_rows": 12,
+    "same_solve_render_proven": 0,
+    "by_variant": {
+      "default": {
+        "oracle_vs_direct_pass": 6,
+        "F2_vs_oracle_pass": 6,
+        "F2_vs_direct_pass": 6
+      },
+      "at_offset": {
+        "oracle_vs_direct_pass": 0,
+        "F2_vs_oracle_pass": 0,
+        "F2_vs_direct_pass": 1
+      }
+    },
+    "F2_queries_recorded": 12,
+    "scientific_verdict": "NOT_SCIENTIFICALLY_CERTIFIED_BY_THIS_SCRIPT__SOURCE_LINK_AND_AXIS_PROOF_REQUIRED",
+    "note": "Source native-to-canonical mapping inherited from V138 opened M, not a blind independent axis calibration."
+  },
+  "v139_status_gate_claims": {
+    "mechanical": "PASS (CRC+manifest, see check receipt)",
+    "numerical_replay": "PASS: 12/12 render intensity identities (V138) + oracle residual-vector decomposition enforced",
+    "source_lineage": "PARTIAL: default<->wide bitwise same field 6/6; at_offset same-solve evidenced by identical Eref+cfg+center h; byte-level render->solve link not fully proven",
+    "coordinate": "FROZEN RAW.T[::-1,:] from V138 export-chain; NOT independent experimental axis calibration",
+    "spatial_oracle": "FAIL: oracle-vs-direct 48.6-88.3% at_offset 6/6; displaced render is NOT a sampled-grid shift of the undisplaced render",
+    "F2_physical": "CONDITIONAL: F2-vs-direct default 6/6 <=1%; at_offset 1/6 (M02) only",
+    "sizing_reportability": "FAIL-CLOSED: reportable_D=null all six; candidates + known_compatible_components retained",
+    "camera_motion": "HISTORICAL ONLY: 0/60,0/60,2/60 preserved; V137 breach 23958/6000 preserved; no new samples",
+    "experimental_absolute": "NOT_VALIDATED"
+  },
+  "lineage_rows": 6,
+  "lineage_statuses": [
+    "LINEAGE_INCOMPLETE"
+  ],
+  "lineage_solve_filename_is_render_filename": true,
+  "lineage_default_wide_bitwise_false_rows": 6,
+  "reportable_D_all_null": true,
+  "new_f2_query_events_published": 12,
+  "v139_science_verdict": "PARTIAL_ASSETS_ACCEPTED_ORACLE_SHIFT_PHYSICS_NOT_CERTIFIED",
+  "material_issues": [
+    "same-solve wide oracle uses a complex-field transpose different from frozen v125 MATLAB-to-Python importer",
+    "MATLAB source efield(...x-dx,y-dy) then flip(es0,1) requires field-space shift coordinate mapping",
+    "6 M nonzero oracle/direct fail 1% but F2/direct has one passing case; do not infer universal physical non-translation",
+    "cache map+execution ledger available to trace solve->render without adding new BEM",
+    "lineage file solve_file contains ren_ filename and geometry_matches_registry assigned literally",
+    "current numeric source lineage and profile data insufficient for reportable diameter"
+  ]
+}
