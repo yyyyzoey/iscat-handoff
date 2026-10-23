@@ -1,0 +1,14 @@
+{
+  "schema": "iscat142.validator_only_forward.1",
+  "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "source": "OPENED_DEV_NOT_NEW_BLIND",
+  "n_rows": 30,
+  "m_pass_1pct": 6,
+  "m_max_relative_L2": 0.008832586749016453,
+  "dev_HJKL_new_loss_worse_by_more_than_point001": [],
+  "epsilon_dev_F2c_max_HJKL_unscaled_L2": 0.0015811481066672155,
+  "source_qualification": "DEV_SOURCES_REQUIRE_INDEPENDENT_SOLVE_RENDER_LINKAGE_BEFORE_FORMAL_BOUND",
+  "candidate_selection_numerical_proposal_pass": true,
+  "freeze_eligibility": "REQUIRES_ADDITIONAL_DOMAIN_AND_MODEL_ID_GATES; THIS_VERDICT_ALONE_NEVER_FREEZES_N",
+  "f2_and_f2c_calls_actual": 60
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "iscat142.model_freeze.1",
+  "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "parent_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "freeze_git_commit": "f9a3777c037faa05177fdb2fe2595ca1ce77c27e",
+  "source_code_sha256": {
+    "v142_model.py": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749",
+    "v142_field_reference.py": "9ae0c3e6086a65d6fca239c52f2ef4e928b6057b6689971993ec08114864b754",
+    "v142_gate.py": "8ab93a537f8e01371dc132764192a5e16e788f8f63b8234cf0034d889b1aacd5",
+    "v142_dev_fit.py": "58b7dcf31f834c640004abcac5b86d88f8983213eea23380b4116c4a27cf4840",
+    "v142_profile_dev.py": "52da4500db41d1ca41cb94101b2d90233630acb0d2b5f420d518d0403eb995df",
+    "v142_validator_only_forward.py": "8cfcc7fd2697a16edc834998c45e4c525b99f02cf1cd78b71f043a021a54d741"
+  },
+  "source_config_sha256": "a604d76e571b1f144f83c2592be32594c81a32bffe18478b0115556063ca5817",
+  "stability_sha256": "71bda605803a0615706ebb7ba47c0d006841593789cf589640e9692c2eb19468",
+  "dev_selection_sha256": "6d40dfeba81f3f82df23ae1c39f5120b79b0dec3b77a24db1cbcace8deab5d7e",
+  "dev_fit_sha256": "cfbf7803b1a16989e406adb9cfb49dfb92d63c3fc53bb0edcc564a9f8161badb",
+  "N_validator_spec_sha256": "0f069b71ec803a8e8e236357e21a151be4cf0996c70b05d6f49a622910943d08",
+  "blind_N_not_yet_generated": "CODEx_MUST_VERIFY_BEFORE_N",
+  "freeze_scope": "NUMERIC_DEVELOPMENT_FREEZE_NOT_INDEPENDENT_SCIENCE_PASS",
+  "all_future_N_method_changes_downgrade_N_to_opened_dev": true
+}

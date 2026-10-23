@@ -1,0 +1,67 @@
+{
+  "schema": "iscat142.science_config.1",
+  "task_id": "V142_SPATIAL_CUBIC_MODEL_QUALIFICATION_AND_BLINDED_PHYSICAL_SIZING",
+  "repository": "yyyyzoey/iscat-handoff",
+  "fixed_review_commit": "f9a3777c037faa05177fdb2fe2595ca1ce77c27e",
+  "baseline_F2_commit": "b522894725f159a2a585eafe27c73dd6275894f3",
+  "frozen_parent": {
+    "F2_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+    "D_h_interpolation": "PHYSICAL_COORDINATE_NOT_A_KNOT_TENSOR_CUBIC_OF_COMPLEX_Esca",
+    "spatial_sampling": "BILINEAR_COMPLEX_Esca_FIXED_Eref_17_CAMERA_Q5",
+    "observation": "STATIC_SIGNED_C_CENTRAL13_UNSCALED_L2"
+  },
+  "candidate_F2c": {
+    "spatial_kernel_id": "S2_RECT_BIVARIATE_SPLINE_REAL_IMAG_K3_S0",
+    "model_kind": "F2c_DH_CUBIC_SPATIAL_CUBIC",
+    "D_h_interpolation": "IDENTICAL_TO_FROZEN_PARENT_F2",
+    "source_spline": "RectBivariateSpline(x=fine_x,y=fine_y,kx=3,ky=3,s=0) PER_COMPLEX_COMPONENT_REAL_AND_IMAG",
+    "reference": "FROZEN_CAMERA_Eref_NO_FITTED_AMPLITUDE_OR_PHASE",
+    "model_identity": "SHA256_LIB_PLUS_PARENT_MODEL_PLUS_KERNEL_CODE_PLUS_EFFECTIVE_CONFIG",
+    "must_not_reuse_old_F2_profiles_or_acceptance": true
+  },
+  "frozen_inputs": {
+    "training_library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "M_observation_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b"
+  },
+  "inputs": {
+    "training_library": "results/v128/library/v128_Dh_train_fields.h5",
+    "M_observation_h5": "results/v132/validation/new_M_images.h5",
+    "M_observation_binding": "results/v133/M_F2_baseline/observation_binding.json",
+    "M_prior_fits": "results/v133/M_F2_baseline/fits",
+    "opened_dev_H": "results/v125/library/v125_direct_holdouts.h5",
+    "opened_dev_J": "results/v126/validation/new_holdout_images.h5",
+    "opened_dev_K": "results/v127/validation/holdout_images.h5",
+    "opened_dev_L": "results/v128/validation/new_L_direct_images.h5",
+    "v141_field_csv": "results/v141/validation/field_level_error_separation.csv",
+    "v141_field_summary": "results/v141/validation/field_level_summary.json",
+    "v141_status": "results/v141/status.json"
+  },
+  "opened_development_cases": ["M01","M02","M03","M04","M05","M06"],
+  "observation": {"kind":"SIGNED_STATIC_C","camera_n":17,"score_n":13,"q":5,"pixel_object_nm":280.0,"fine_pitch_nm":56.0,"signed":true},
+  "measurement_confirmed": {"suspended":true,"medium":"pure_water","temperature_C":26.0,"vacuum_lambda_nm":520.0,"camera_pixel_um":14.0,"nominal_objective_magnification":50.0,"glass_slide_present":false},
+  "conditional_unmeasured_parameters": {"nwater":1.3353,"nglass":1.5,"nparticle_complex":[1.38,0.0],"NA":0.8,"effective_extra_magnification":1.0,"focus_nm":450.0},
+  "preregistered_selection": {
+    "use_opened_M_only_for_development": true,
+    "legacy_Source_wide_S1_offset_image_pass_1pct":2,
+    "published_Source_wide_S2_offset_image_pass_1pct":6,
+    "require_F2c_model_identity_and_no_source_byte_changes":true,
+    "require_domain_sentinels_and_node_continuity_and_finite_outputs":true,
+    "new_F2c_direct_M_offset_pass_1pct_at_least":5,
+    "new_F2c_direct_M_offset_max_relative_L2_at_most":0.015,
+    "old_HJKL_dev_negative_control": "NEW_MODEL_MUST_NOT_SHOW_UNEXPLAINED_CATASTROPHIC_DEGRADATION_ON_MATCHED_SAME_SOURCE_DEV; ALWAYS_REPORT_OLD_AND_NEW_METRICS",
+    "no_extra_truth_tuned_gain_phase_or_xy_transform":true,
+    "no_per_particle_kernel_switch":true,
+    "if_gate_fails":"RETAIN_OLD_F2_NO_NEW_N_BLIND_SOLVES; REPORT_PARTIAL_DIAGNOSTIC",
+    "freeze_before_generating_N":"SAVE_MODEL_ID_KERNEL_SHA_LIB_SHA_OPTIMIZER_SHA_PROFILE_RULE_REPORTABILITY_RULE_CONFIG_SHA_GIT_COMMIT"
+  },
+  "developer_profile": {"coarse_D_nm_grid_step":10.0,"include_training_D_nodes":true,"include_exact_joint_D":true,"height_basins_nm":[350,400,450,500,550],"require_profile_optimize_hxy_at_each_D":true,"adaptive_required_before_reportable":true,"no_global_optimum_claim_from_multistart":true},
+  "new_blind_N_validator_spec_file":"config/v142_new_N_validator_only.json",
+  "new_N_only_after_all_model_freeze_gates":true,
+  "new_N_scientific_target":"abs(Dhat-Dtrue)<=max(5 nm,0.10*Dtrue) used ONLY in independent evaluator; reportability separate",
+  "budget_limits":{"BEM":4,"RENDER":12,"CAMERA":0,"FORWARD":350000},
+  "heavy_physics_concurrency":1,
+  "wall_hours_including_finalize":12,
+  "finalize_minutes_reserved":30,
+  "prior_historical_failure_preserved":{"v137_camera_total":23958,"v137_camera_limit":6000,"v140_F2_calls":12,"v141_F2_calls_published":6},
+  "explicit_boundaries":{"EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED":false,"no_auto_adoption_from_source_wide_only":true,"observables_separated":"STATIC_SIGNED_C_NOT_HISTORICAL_400HZ_FFT","no_blind_claim_on_H_J_K_L_M":true}
+}

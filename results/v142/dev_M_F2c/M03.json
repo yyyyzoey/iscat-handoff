@@ -1,0 +1,78 @@
+{
+  "case": "M03",
+  "input_signature": "f6376898dda171cc9e729e620d3e2d31c7202e333d6d1780f7d061c909ec5eb5",
+  "old_F2_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "new_F2c_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "observation_sha256": "9828a5a6e6440a724393078ac0805aeb008801400ae47f7b2fda08f0b295a5c9",
+  "old_theta": [
+    122.11998103353119,
+    450.9334091865813,
+    83.9887906121465,
+    97.85628619873987
+  ],
+  "old_F2_L2": 0.00016068835041670268,
+  "new_F2c_at_old_theta_L2": 0.0015334549387949442,
+  "best": {
+    "seed": "PUBLIC_LARGE",
+    "theta": [
+      119.22526143674465,
+      446.88667767430513,
+      83.99430461971872,
+      98.00586080431648
+    ],
+    "L2": 4.940025881889271e-06,
+    "success": true,
+    "status": 1,
+    "message": "`gtol` termination condition is satisfied.",
+    "nfev": 12
+  },
+  "trials": [
+    {
+      "seed": "INHERITED_DEV_THETA",
+      "theta": [
+        119.22526280894175,
+        446.8866868549747,
+        83.99430460612462,
+        98.00586078034515
+      ],
+      "L2": 4.940027484882231e-06,
+      "success": true,
+      "status": 1,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 5
+    },
+    {
+      "seed": "PUBLIC_CENTER",
+      "theta": [
+        119.22526128215172,
+        446.88667728199124,
+        83.99430461557134,
+        98.00586079909849
+      ],
+      "L2": 4.940025882599846e-06,
+      "success": true,
+      "status": 1,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 7
+    },
+    {
+      "seed": "PUBLIC_LARGE",
+      "theta": [
+        119.22526143674465,
+        446.88667767430513,
+        83.99430461971872,
+        98.00586080431648
+      ],
+      "L2": 4.940025881889271e-06,
+      "success": true,
+      "status": 1,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 12
+    }
+  ],
+  "candidate_D": 119.22526143674465,
+  "reportable_D": null,
+  "profile_complete": false,
+  "model_qualified": false,
+  "status": "DEV_NUMERIC_ONLY_NO_PHYSICAL_MODEL_OR_PROFILE_CERTIFICATION"
+}

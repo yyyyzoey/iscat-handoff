@@ -1,0 +1,257 @@
+{
+  "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "n_sentinels": 12,
+  "sentinels": [
+    {
+      "theta": [
+        30,
+        350,
+        0,
+        0
+      ],
+      "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+      "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "max_abs_repeat": 0.0,
+      "old_vs_new_max_abs_C": 0.0,
+      "old_C_norm": 0.0019790040902801327,
+      "new_C_norm": 0.0019790040902801327,
+      "image_valid": true
+    },
+    {
+      "theta": [
+        50,
+        375,
+        0,
+        0
+      ],
+      "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+      "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "max_abs_repeat": 0.0,
+      "old_vs_new_max_abs_C": 0.0,
+      "old_C_norm": 0.004003809962560613,
+      "new_C_norm": 0.004003809962560613,
+      "image_valid": true
+    },
+    {
+      "theta": [
+        100,
+        450,
+        -112,
+        56
+      ],
+      "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+      "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "max_abs_repeat": 0.0,
+      "old_vs_new_max_abs_C": 0.0,
+      "old_C_norm": 0.05870116336270139,
+      "new_C_norm": 0.05870116336270139,
+      "image_valid": true
+    },
+    {
+      "theta": [
+        130,
+        450,
+        56,
+        112
+      ],
+      "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+      "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "max_abs_repeat": 0.0,
+      "old_vs_new_max_abs_C": 1.713039432527097e-16,
+      "old_C_norm": 0.10583669724130589,
+      "new_C_norm": 0.10583669724130589,
+      "image_valid": true
+    },
+    {
+      "theta": [
+        200,
+        550,
+        0,
+        0
+      ],
+      "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+      "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "max_abs_repeat": 0.0,
+      "old_vs_new_max_abs_C": 0.0,
+      "old_C_norm": 0.186653707143536,
+      "new_C_norm": 0.186653707143536,
+      "image_valid": true
+    },
+    {
+      "theta": [
+        47.5,
+        381.25,
+        42,
+        -70
+      ],
+      "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+      "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "max_abs_repeat": 0.0,
+      "old_vs_new_max_abs_C": 1.7154592051020533e-05,
+      "old_C_norm": 0.0019489552015147522,
+      "new_C_norm": 0.0019715327053035515,
+      "image_valid": true
+    },
+    {
+      "theta": [
+        73.3,
+        406.25,
+        -98,
+        70
+      ],
+      "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+      "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "max_abs_repeat": 0.0,
+      "old_vs_new_max_abs_C": 0.00010730209037554742,
+      "old_C_norm": 0.013727267012356777,
+      "new_C_norm": 0.013888513188617403,
+      "image_valid": true
+    },
+    {
+      "theta": [
+        109.5,
+        442.5,
+        84,
+        98
+      ],
+      "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+      "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "max_abs_repeat": 0.0,
+      "old_vs_new_max_abs_C": 0.0006833610049650773,
+      "old_C_norm": 0.07542968796889388,
+      "new_C_norm": 0.07649529098663736,
+      "image_valid": true
+    },
+    {
+      "theta": [
+        143.3,
+        468.75,
+        126,
+        -42
+      ],
+      "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+      "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "max_abs_repeat": 0.0,
+      "old_vs_new_max_abs_C": 0.0006137720779012326,
+      "old_C_norm": 0.08065884154007058,
+      "new_C_norm": 0.08174722239095672,
+      "image_valid": true
+    },
+    {
+      "theta": [
+        183.3,
+        531.25,
+        -70,
+        98
+      ],
+      "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+      "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "max_abs_repeat": 0.0,
+      "old_vs_new_max_abs_C": 0.0015198692836062566,
+      "old_C_norm": 0.1829525372452343,
+      "new_C_norm": 0.1851996481006484,
+      "image_valid": true
+    },
+    {
+      "theta": [
+        199.9,
+        549.9,
+        -499.0,
+        499.0
+      ],
+      "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+      "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "max_abs_repeat": 0.0,
+      "old_vs_new_max_abs_C": 0.0007522580507719756,
+      "old_C_norm": 0.18559197080955994,
+      "new_C_norm": 0.18668594309561182,
+      "image_valid": true
+    },
+    {
+      "theta": [
+        30.1,
+        350.1,
+        499.0,
+        -499.0
+      ],
+      "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+      "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "max_abs_repeat": 0.0,
+      "old_vs_new_max_abs_C": 7.2231195811542186e-06,
+      "old_C_norm": 0.0019852973287591462,
+      "new_C_norm": 0.0019954665090869414,
+      "image_valid": true
+    }
+  ],
+  "domain_rejection": [
+    {
+      "theta": [
+        25,
+        450,
+        0,
+        0
+      ],
+      "status": "REJECT"
+    },
+    {
+      "theta": [
+        205,
+        450,
+        0,
+        0
+      ],
+      "status": "REJECT"
+    },
+    {
+      "theta": [
+        100,
+        340,
+        0,
+        0
+      ],
+      "status": "REJECT"
+    },
+    {
+      "theta": [
+        100,
+        560,
+        0,
+        0
+      ],
+      "status": "REJECT"
+    },
+    {
+      "theta": [
+        100,
+        450,
+        501,
+        0
+      ],
+      "status": "REJECT"
+    },
+    {
+      "theta": [
+        100,
+        450,
+        0,
+        -501
+      ],
+      "status": "REJECT"
+    },
+    {
+      "theta": [
+        null,
+        450,
+        0,
+        0
+      ],
+      "status": "REJECT"
+    }
+  ],
+  "software_stability_pass": true,
+  "source_scope": "NUMERICAL_SENTINELS_NOT_PHYSICAL_SOURCE",
+  "numeric_overshoot_extra_metrics": "NOT_ESTIMATED_BY_THIS_TOOL; Codex should calculate source-grid local overshoot separately",
+  "forward_actual_calls": 36,
+  "experimental_absolute_diameter_validated": false
+}

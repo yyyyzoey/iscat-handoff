@@ -1,0 +1,38 @@
+{
+  "new_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "old_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "dev_cases": 6,
+  "candidate_results": [
+    {
+      "case": "M01",
+      "candidate_D": 52.743060819785946,
+      "reportable_D": null
+    },
+    {
+      "case": "M02",
+      "candidate_D": 81.28076269425519,
+      "reportable_D": null
+    },
+    {
+      "case": "M03",
+      "candidate_D": 119.22526143674465,
+      "reportable_D": null
+    },
+    {
+      "case": "M04",
+      "candidate_D": 149.2585476311477,
+      "reportable_D": null
+    },
+    {
+      "case": "M05",
+      "candidate_D": 172.36815415453196,
+      "reportable_D": null
+    },
+    {
+      "case": "M06",
+      "candidate_D": 184.34673932132725,
+      "reportable_D": null
+    }
+  ],
+  "boundary": "DEVELOPMENT_ONLY__NOT_NEW_BLIND__NOT_SCIENTIFIC_PASS"
+}

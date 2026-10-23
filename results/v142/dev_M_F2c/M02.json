@@ -1,0 +1,78 @@
+{
+  "case": "M02",
+  "input_signature": "ffb6a06436cad140191c45b3def311cff9ad248e861e91e56e55ecd0d9ee16ec",
+  "old_F2_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "new_F2c_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "observation_sha256": "9dc4eafadd7c759495dc78190a280e1f95f24e3cd7da7ab7468eac07f942ac3a",
+  "old_theta": [
+    81.27358906303667,
+    415.47770369924564,
+    -112.0018295289447,
+    56.00778886815336
+  ],
+  "old_F2_L2": 1.8267013462691719e-06,
+  "new_F2c_at_old_theta_L2": 1.826622356074396e-06,
+  "best": {
+    "seed": "PUBLIC_CENTER",
+    "theta": [
+      81.28076269425519,
+      415.4695016313691,
+      -112.00170187341698,
+      56.00766140076317
+    ],
+    "L2": 1.8197843308977489e-06,
+    "success": true,
+    "status": 1,
+    "message": "`gtol` termination condition is satisfied.",
+    "nfev": 30
+  },
+  "trials": [
+    {
+      "seed": "INHERITED_DEV_THETA",
+      "theta": [
+        81.28050544156348,
+        415.4697869158611,
+        -112.00170240806167,
+        56.00766249981974
+      ],
+      "L2": 1.819786621740993e-06,
+      "success": true,
+      "status": 1,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 2
+    },
+    {
+      "seed": "PUBLIC_CENTER",
+      "theta": [
+        81.28076269425519,
+        415.4695016313691,
+        -112.00170187341698,
+        56.00766140076317
+      ],
+      "L2": 1.8197843308977489e-06,
+      "success": true,
+      "status": 1,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 30
+    },
+    {
+      "seed": "PUBLIC_LARGE",
+      "theta": [
+        81.28089765676566,
+        415.4693501445633,
+        -112.00170155326376,
+        56.00766077178784
+      ],
+      "L2": 1.819784716720631e-06,
+      "success": true,
+      "status": 1,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 35
+    }
+  ],
+  "candidate_D": 81.28076269425519,
+  "reportable_D": null,
+  "profile_complete": false,
+  "model_qualified": false,
+  "status": "DEV_NUMERIC_ONLY_NO_PHYSICAL_MODEL_OR_PROFILE_CERTIFICATION"
+}

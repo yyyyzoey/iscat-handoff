@@ -1,0 +1,59 @@
+{
+  "fixed_source_scope": "PUBLISHED_CSV_AND_SOURCE_AUDIT_NO_RAW_MAT_REPLAY",
+  "n_published_rows": 24,
+  "per_kernel": {
+    "S1_BILINEAR": {
+      "n": 6,
+      "n_image_at_or_below_1pct": 2,
+      "image_rel_L2_by_case": {
+        "M01": 0.013913180708594073,
+        "M02": 1.6436140009324402e-05,
+        "M03": 0.016829422089174272,
+        "M04": 0.009367555090120798,
+        "M05": 0.012708129897194727,
+        "M06": 0.014750809712488879
+      },
+      "field_rel_L2_by_case": {
+        "M01": 0.015434243993406153,
+        "M02": 1.9769164889015605e-05,
+        "M03": 0.01804408358491428,
+        "M04": 0.00910883167125245,
+        "M05": 0.015771654777136126,
+        "M06": 0.01588053392904539
+      },
+      "image_rel_L2_max": 0.016829422089174272,
+      "field_rel_L2_max": 0.01804408358491428,
+      "image_error_max_percent": 1.6829422089174273,
+      "field_error_max_percent": 1.8044083584914279
+    },
+    "S2_CUBIC": {
+      "n": 6,
+      "n_image_at_or_below_1pct": 6,
+      "image_rel_L2_by_case": {
+        "M01": 5.246245967996692e-05,
+        "M02": 1.6436140009324402e-05,
+        "M03": 6.961011497976352e-05,
+        "M04": 4.299191218071691e-05,
+        "M05": 4.517083868265399e-05,
+        "M06": 5.466810475916088e-05
+      },
+      "field_rel_L2_by_case": {
+        "M01": 6.004763906915856e-05,
+        "M02": 1.976916488902184e-05,
+        "M03": 7.600139420133089e-05,
+        "M04": 4.235262542898657e-05,
+        "M05": 6.0941782761418906e-05,
+        "M06": 6.146559812641879e-05
+      },
+      "image_rel_L2_max": 6.961011497976352e-05,
+      "field_rel_L2_max": 7.600139420133089e-05,
+      "image_error_max_percent": 0.0069610114979763524,
+      "field_error_max_percent": 0.007600139420133089
+    }
+  },
+  "claim_600_to_760_percent_ringing_in_status": true,
+  "cubic_max_field_relative_error_percent": 0.007600139420133089,
+  "ringing_metric_independently_published": false,
+  "conclusion": "PUBLISHED_600_TO_760_PERCENT_RINGING_NOT_SUPPORTED_BY_FIELD_L2_CSV; NEED_SEPARATE_OVERSHOOT_STABILITY_TEST",
+  "model_identity": "V141_CUBIC_IS_SOURCE_WIDE_SPATIAL_DEV_ONLY_NOT_FULL_DH_F2C_SIZING"
+}
