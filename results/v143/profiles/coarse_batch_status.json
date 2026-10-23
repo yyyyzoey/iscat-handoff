@@ -1,0 +1,29 @@
+{
+  "stage": "COMPLETED_OR_PARTIAL_NOT_FULL_SCIENCE_PASS",
+  "rows": [
+    {
+      "case": "M02",
+      "status": "SCAN_CANDIDATE_SET_COMPLETED_NOT_SCIENTIFIC_CERTIFICATION"
+    },
+    {
+      "case": "M06",
+      "status": "SCAN_CANDIDATE_SET_COMPLETED_NOT_SCIENTIFIC_CERTIFICATION"
+    },
+    {
+      "case": "M05",
+      "status": "SCAN_CANDIDATE_SET_COMPLETED_NOT_SCIENTIFIC_CERTIFICATION"
+    },
+    {
+      "case": "M01",
+      "status": "SCAN_CANDIDATE_SET_COMPLETED_NOT_SCIENTIFIC_CERTIFICATION"
+    },
+    {
+      "case": "M03",
+      "status": "SCAN_CANDIDATE_SET_COMPLETED_NOT_SCIENTIFIC_CERTIFICATION"
+    },
+    {
+      "case": "M04",
+      "status": "SCAN_CANDIDATE_SET_COMPLETED_NOT_SCIENTIFIC_CERTIFICATION"
+    }
+  ]
+}

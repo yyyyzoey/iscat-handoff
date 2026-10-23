@@ -1,0 +1,352 @@
+{
+  "schema": "iscat143.N.source_audit.1",
+  "same_camera_operator_identity": "V138 FROZEN RAW.T[::-1,:]; no flip selected by fit",
+  "cases": {
+    "ANON_01": {
+      "variants": [
+        {
+          "variant": "default",
+          "path": "results/v142/validation/new_N_render_mats/ANON_01_default.mat",
+          "file_exists": true,
+          "source_mat_sha256": "96068dae622a10b1a53fab1ca04a96a192e2beb43cdc5bca39ab6850d496f22b",
+          "source_camera_valid": true,
+          "score_matches_anonymous_observation": null,
+          "source_provenance": null,
+          "native_camera_shape": [
+            17,
+            17
+          ],
+          "max_abs_contrast_from_own_I_Iref": 0.0,
+          "rmeta_dx": 0.0,
+          "rmeta_dy": 0.0,
+          "rmeta_q": 5.0,
+          "rmeta_focus_z": 450.0,
+          "render_center_nm": [
+            0.0,
+            0.0,
+            391.25
+          ]
+        },
+        {
+          "variant": "wide",
+          "path": "results/v142/validation/new_N_render_mats/ANON_01_wide.mat",
+          "file_exists": true,
+          "source_mat_sha256": "4a2c259b55dcc7a726f8058a38b90cc22084cff4bfaf565396d7ee0646b581e0",
+          "source_camera_valid": true,
+          "score_matches_anonymous_observation": null,
+          "source_provenance": null,
+          "native_camera_shape": [
+            25,
+            25
+          ],
+          "max_abs_contrast_from_own_I_Iref": 0.0,
+          "rmeta_dx": 0.0,
+          "rmeta_dy": 0.0,
+          "rmeta_q": 5.0,
+          "rmeta_focus_z": 450.0,
+          "render_center_nm": [
+            0.0,
+            0.0,
+            391.25
+          ]
+        },
+        {
+          "variant": "at_offset",
+          "path": "results/v142/validation/new_N_render_mats/ANON_01_at_offset.mat",
+          "file_exists": true,
+          "source_mat_sha256": "73e04e620467d45f60558e4b921445d2edf8b807eddd995b6be878fc56119e60",
+          "source_camera_valid": true,
+          "score_matches_anonymous_observation": true,
+          "source_provenance": null,
+          "native_camera_shape": [
+            17,
+            17
+          ],
+          "max_abs_contrast_from_own_I_Iref": 0.0,
+          "score_max_abs_difference": 0.0,
+          "score_L2_difference": 0.0,
+          "rmeta_dx": 77.0,
+          "rmeta_dy": -35.0,
+          "rmeta_q": 5.0,
+          "rmeta_focus_z": 450.0,
+          "render_center_nm": [
+            0.0,
+            0.0,
+            391.25
+          ]
+        }
+      ],
+      "anon_observation_sha256": "33cf029a866d42de773c2664caf775e388ee1a065849ce55c51b9be7d49ebf4c"
+    },
+    "ANON_02": {
+      "variants": [
+        {
+          "variant": "default",
+          "path": "results/v142/validation/new_N_render_mats/ANON_02_default.mat",
+          "file_exists": true,
+          "source_mat_sha256": "6831d29c93a4c355a72981e8412e82f0ea2358742322b6cbd05d98b1b3e643f0",
+          "source_camera_valid": true,
+          "score_matches_anonymous_observation": null,
+          "source_provenance": null,
+          "native_camera_shape": [
+            17,
+            17
+          ],
+          "max_abs_contrast_from_own_I_Iref": 0.0,
+          "rmeta_dx": 0.0,
+          "rmeta_dy": 0.0,
+          "rmeta_q": 5.0,
+          "rmeta_focus_z": 450.0,
+          "render_center_nm": [
+            0.0,
+            0.0,
+            432.5
+          ]
+        },
+        {
+          "variant": "wide",
+          "path": "results/v142/validation/new_N_render_mats/ANON_02_wide.mat",
+          "file_exists": true,
+          "source_mat_sha256": "e8740fd63a7fa76fec980c051d9f88a193d88bade183ca080e1d3878123526fa",
+          "source_camera_valid": true,
+          "score_matches_anonymous_observation": null,
+          "source_provenance": null,
+          "native_camera_shape": [
+            25,
+            25
+          ],
+          "max_abs_contrast_from_own_I_Iref": 0.0,
+          "rmeta_dx": 0.0,
+          "rmeta_dy": 0.0,
+          "rmeta_q": 5.0,
+          "rmeta_focus_z": 450.0,
+          "render_center_nm": [
+            0.0,
+            0.0,
+            432.5
+          ]
+        },
+        {
+          "variant": "at_offset",
+          "path": "results/v142/validation/new_N_render_mats/ANON_02_at_offset.mat",
+          "file_exists": true,
+          "source_mat_sha256": "649705527939706a9dcedd562519f30a834fa3d65e986312a9c0dad8626a8b03",
+          "source_camera_valid": true,
+          "score_matches_anonymous_observation": true,
+          "source_provenance": null,
+          "native_camera_shape": [
+            17,
+            17
+          ],
+          "max_abs_contrast_from_own_I_Iref": 0.0,
+          "score_max_abs_difference": 0.0,
+          "score_L2_difference": 0.0,
+          "rmeta_dx": -91.0,
+          "rmeta_dy": 105.0,
+          "rmeta_q": 5.0,
+          "rmeta_focus_z": 450.0,
+          "render_center_nm": [
+            0.0,
+            0.0,
+            432.5
+          ]
+        }
+      ],
+      "anon_observation_sha256": "0ac6be36096f29aa77a399d0ca304f3a07f9503890461086116ece00064db9cd"
+    },
+    "ANON_03": {
+      "variants": [
+        {
+          "variant": "default",
+          "path": "results/v142/validation/new_N_render_mats/ANON_03_default.mat",
+          "file_exists": true,
+          "source_mat_sha256": "d889c1ae0d22e9f193a29c462308da84363982cbceb8e8255e0ac6deca367b39",
+          "source_camera_valid": true,
+          "score_matches_anonymous_observation": null,
+          "source_provenance": null,
+          "native_camera_shape": [
+            17,
+            17
+          ],
+          "max_abs_contrast_from_own_I_Iref": 0.0,
+          "rmeta_dx": 0.0,
+          "rmeta_dy": 0.0,
+          "rmeta_q": 5.0,
+          "rmeta_focus_z": 450.0,
+          "render_center_nm": [
+            0.0,
+            0.0,
+            478.75
+          ]
+        },
+        {
+          "variant": "wide",
+          "path": "results/v142/validation/new_N_render_mats/ANON_03_wide.mat",
+          "file_exists": true,
+          "source_mat_sha256": "4ee82c01022248f1eb8970f53a3efc05324d6307f1e372b8b6b53809c7e2f38a",
+          "source_camera_valid": true,
+          "score_matches_anonymous_observation": null,
+          "source_provenance": null,
+          "native_camera_shape": [
+            25,
+            25
+          ],
+          "max_abs_contrast_from_own_I_Iref": 0.0,
+          "rmeta_dx": 0.0,
+          "rmeta_dy": 0.0,
+          "rmeta_q": 5.0,
+          "rmeta_focus_z": 450.0,
+          "render_center_nm": [
+            0.0,
+            0.0,
+            478.75
+          ]
+        },
+        {
+          "variant": "at_offset",
+          "path": "results/v142/validation/new_N_render_mats/ANON_03_at_offset.mat",
+          "file_exists": true,
+          "source_mat_sha256": "10a5dcf60f68663a4f911927a50e80b693aac54a4e692f80eb347120deeb08ad",
+          "source_camera_valid": true,
+          "score_matches_anonymous_observation": true,
+          "source_provenance": null,
+          "native_camera_shape": [
+            17,
+            17
+          ],
+          "max_abs_contrast_from_own_I_Iref": 0.0,
+          "score_max_abs_difference": 0.0,
+          "score_L2_difference": 0.0,
+          "rmeta_dx": 35.0,
+          "rmeta_dy": 119.0,
+          "rmeta_q": 5.0,
+          "rmeta_focus_z": 450.0,
+          "render_center_nm": [
+            0.0,
+            0.0,
+            478.75
+          ]
+        }
+      ],
+      "anon_observation_sha256": "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba"
+    },
+    "ANON_04": {
+      "variants": [
+        {
+          "variant": "default",
+          "path": "results/v142/validation/new_N_render_mats/ANON_04_default.mat",
+          "file_exists": true,
+          "source_mat_sha256": "4b83f9a448384f3e884bc04c20f9681358694916c0a97712d0d66dbb8ad68f5e",
+          "source_camera_valid": true,
+          "score_matches_anonymous_observation": null,
+          "source_provenance": null,
+          "native_camera_shape": [
+            17,
+            17
+          ],
+          "max_abs_contrast_from_own_I_Iref": 0.0,
+          "rmeta_dx": 0.0,
+          "rmeta_dy": 0.0,
+          "rmeta_q": 5.0,
+          "rmeta_focus_z": 450.0,
+          "render_center_nm": [
+            0.0,
+            0.0,
+            526.25
+          ]
+        },
+        {
+          "variant": "wide",
+          "path": "results/v142/validation/new_N_render_mats/ANON_04_wide.mat",
+          "file_exists": true,
+          "source_mat_sha256": "264b1f86ae629b60d502e1064f7399136a1b56b8107852bebbb77d6dff2d3994",
+          "source_camera_valid": true,
+          "score_matches_anonymous_observation": null,
+          "source_provenance": null,
+          "native_camera_shape": [
+            25,
+            25
+          ],
+          "max_abs_contrast_from_own_I_Iref": 0.0,
+          "rmeta_dx": 0.0,
+          "rmeta_dy": 0.0,
+          "rmeta_q": 5.0,
+          "rmeta_focus_z": 450.0,
+          "render_center_nm": [
+            0.0,
+            0.0,
+            526.25
+          ]
+        },
+        {
+          "variant": "at_offset",
+          "path": "results/v142/validation/new_N_render_mats/ANON_04_at_offset.mat",
+          "file_exists": true,
+          "source_mat_sha256": "e9c9ecd169ab06c194c51134c86a3c8874c9e498e55a858223395e3eb8c519e6",
+          "source_camera_valid": true,
+          "score_matches_anonymous_observation": true,
+          "source_provenance": null,
+          "native_camera_shape": [
+            17,
+            17
+          ],
+          "max_abs_contrast_from_own_I_Iref": 0.0,
+          "score_max_abs_difference": 0.0,
+          "score_L2_difference": 0.0,
+          "rmeta_dx": -119.0,
+          "rmeta_dy": -77.0,
+          "rmeta_q": 5.0,
+          "rmeta_focus_z": 450.0,
+          "render_center_nm": [
+            0.0,
+            0.0,
+            526.25
+          ]
+        }
+      ],
+      "anon_observation_sha256": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e"
+    }
+  },
+  "all_origins_proven": false,
+  "external_solve_root_provided": true,
+  "not_a_new_solve": true,
+  "separation": "VALIDATOR_ONLY_NO_ESTIMATOR_ACCESS",
+  "anonymous_h5_sha256": "524baf145701ba67c6f96a4ab912fa06774d6f85020184f2dad79348e3098875",
+  "raw_camera_and_offset_obs_qualified": true,
+  "available_original_N_solver_candidates": [
+    {
+      "file": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v142_N\\bem_cache\\sol_00a0a1a478bffb623195a39c7f5968e133d767fa.mat",
+      "sha256": "b312028783a17b7223dc33dfad696ea872ab2c80ca061a1a22819cb016401b34",
+      "meta_readable": true,
+      "D_nm": 59.0,
+      "h_nm": 391.25,
+      "mesh": 1444
+    },
+    {
+      "file": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v142_N\\bem_cache\\sol_1d8a7e7b266a04cd646c36a962d58310042b1ade.mat",
+      "sha256": "e43891a85ace6c09b7307e5e4484bb49185e35f9b2ace00c35ff73893badb01a",
+      "meta_readable": true,
+      "D_nm": 101.0,
+      "h_nm": 432.5,
+      "mesh": 1444
+    },
+    {
+      "file": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v142_N\\bem_cache\\sol_304fdc65a3d84ed1fc7de3c74f7eb106224b6a40.mat",
+      "sha256": "32eee7d7e953712fa7fe8e594a702aad1f108b93e1d602e6b6d7f51edc71dbc2",
+      "meta_readable": true,
+      "D_nm": 181.0,
+      "h_nm": 526.25,
+      "mesh": 1444
+    },
+    {
+      "file": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v142_N\\bem_cache\\sol_bfde8c4d7c59e0aa4d5319b22a85c9ebb25ec796.mat",
+      "sha256": "f2b2d6eaf5a564aa47c5a70639dfacffcdbfd94debf5885c6cae1b2a0895f04c",
+      "meta_readable": true,
+      "D_nm": 143.0,
+      "h_nm": 478.75,
+      "mesh": 1444
+    }
+  ],
+  "solve_to_render_linkage": "NOT_PROVEN_BY_THIS_TOOL__MUST_VERIFY_RENDER_CACHE_KEY_LEDGER_AND_SOLVE_CONTENT_HASH",
+  "scientific_disposition": "PARTIAL_PROVENANCE_ONLY; use candidates for conditional analysis, not independent Maxwell pass"
+}

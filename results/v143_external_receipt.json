@@ -1,0 +1,11 @@
+{
+  "schema": "iscat143.external_receipt.1",
+  "mechanical": {
+    "status": "PASS",
+    "errors": []
+  },
+  "published_science_claims": {},
+  "independent_science_verdict": "NOT_CERTIFIED_BY_THIS_ARCHIVE_CHECKER",
+  "real_experimental_absolute_validated": false,
+  "zip_sha256": "5b85de49d70f0f0bb9899d61f5480950765c68f4bb62a734b3eeade3a86f00b7"
+}

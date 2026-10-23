@@ -1,0 +1,108 @@
+{
+  "binding_hash": "58e143e967b68c702b6ece7670eca448da45fdfbe78cf52a70ea243faeecbf08",
+  "event_key": "PROFILE_coarse_M04_40.0000000000000_58e143e967b68c70_revision0",
+  "status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+  "result": {
+    "D": 40.0,
+    "best": {
+      "theta": [
+        40.0,
+        440.18559180300093,
+        -70.23244064177868,
+        -112.17361496384672
+      ],
+      "loss_L2": 0.07071367453708609,
+      "source": "PUBLIC_H_350"
+    },
+    "attempts": [
+      {
+        "start": "JOINT_NUISANCE",
+        "theta": [
+          40.0,
+          440.18848346577374,
+          -70.20745400054,
+          -112.1552916827849
+        ],
+        "loss_L2": 0.07071367455024259,
+        "success": true,
+        "status": 2,
+        "nfev": 15,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_350",
+        "theta": [
+          40.0,
+          440.18559180300093,
+          -70.23244064177868,
+          -112.17361496384672
+        ],
+        "loss_L2": 0.07071367453708609,
+        "success": true,
+        "status": 2,
+        "nfev": 19,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_400",
+        "theta": [
+          40.0,
+          440.185010958439,
+          -70.20956437834066,
+          -112.15649817097133
+        ],
+        "loss_L2": 0.07071367456667334,
+        "success": true,
+        "status": 2,
+        "nfev": 15,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_450",
+        "theta": [
+          40.0,
+          440.18666064375253,
+          -70.21380585671484,
+          -112.16016739086017
+        ],
+        "loss_L2": 0.07071367453766697,
+        "success": true,
+        "status": 2,
+        "nfev": 15,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_500",
+        "theta": [
+          40.0,
+          440.19195942609673,
+          -70.20823421689285,
+          -112.15563371275431
+        ],
+        "loss_L2": 0.07071367457950135,
+        "success": true,
+        "status": 2,
+        "nfev": 22,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_550",
+        "theta": [
+          40.0,
+          549.9999999999999,
+          -38.81675945167426,
+          410.89141525578253
+        ],
+        "loss_L2": 0.07488683436661636,
+        "success": false,
+        "status": 0,
+        "nfev": 35,
+        "message": "The maximum number of function evaluations is exceeded."
+      }
+    ],
+    "exact_joint_witness": null,
+    "point_search_complete": false,
+    "not_globally_certified": true,
+    "forward_calls": 373
+  }
+}

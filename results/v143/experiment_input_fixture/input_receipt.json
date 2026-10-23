@@ -1,0 +1,11 @@
+{
+  "status": "SIGNED_STATIC_C_CREATED_NOT_SIZING_CERTIFIED",
+  "input_npz_sha256": "ddbcb9c3335b2e08855f79a1d574623adcd3648b7a774337c87940257df7c515",
+  "camera_shape": [
+    13,
+    13
+  ],
+  "output_sha256": "5a04ef7340294c05c4f5dd8be50360b3b1bf40144b332428158ec16789e65543",
+  "needs_actual_calibrated_material_optics_and_noise": "TRUE",
+  "experimental_absolute_diameter_validated": false
+}

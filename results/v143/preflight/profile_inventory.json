@@ -1,0 +1,139 @@
+{
+  "schema": "iscat143.profile_inventory.1",
+  "cases": {
+    "M01": {
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "n_D_points": 19,
+      "n_incomplete_D_points": 10,
+      "n_exact_joint_witnesses": 1,
+      "first_D": 30.0,
+      "last_D": 200.0,
+      "score_min_L2": 6.271345413398365e-07,
+      "actual_calls_recorded": 9116,
+      "charged_allocation": 45000,
+      "completed_scientifically": false,
+      "issues": [
+        "ADAPTIVE_COVERAGE_INCOMPLETE",
+        "GRID_COVERAGE_INCOMPLETE",
+        "NOT_ALL_D_POINTS_SEARCH_COMPLETE",
+        "SCIENTIFIC_PROFILE_INCOMPLETE"
+      ]
+    },
+    "M02": {
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "n_D_points": 19,
+      "n_incomplete_D_points": 19,
+      "n_exact_joint_witnesses": 1,
+      "first_D": 30.0,
+      "last_D": 200.0,
+      "score_min_L2": 1.8197843073556063e-06,
+      "actual_calls_recorded": 8292,
+      "charged_allocation": 45000,
+      "completed_scientifically": false,
+      "issues": [
+        "ADAPTIVE_COVERAGE_INCOMPLETE",
+        "GRID_COVERAGE_INCOMPLETE",
+        "NOT_ALL_D_POINTS_SEARCH_COMPLETE",
+        "SCIENTIFIC_PROFILE_INCOMPLETE"
+      ]
+    },
+    "M03": {
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "n_D_points": 19,
+      "n_incomplete_D_points": 18,
+      "n_exact_joint_witnesses": 1,
+      "first_D": 30.0,
+      "last_D": 200.0,
+      "score_min_L2": 4.9400258816746595e-06,
+      "actual_calls_recorded": 8592,
+      "charged_allocation": 45000,
+      "completed_scientifically": false,
+      "issues": [
+        "ADAPTIVE_COVERAGE_INCOMPLETE",
+        "GRID_COVERAGE_INCOMPLETE",
+        "NOT_ALL_D_POINTS_SEARCH_COMPLETE",
+        "SCIENTIFIC_PROFILE_INCOMPLETE"
+      ]
+    },
+    "M04": {
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "n_D_points": 19,
+      "n_incomplete_D_points": 18,
+      "n_exact_joint_witnesses": 1,
+      "first_D": 30.0,
+      "last_D": 200.0,
+      "score_min_L2": 5.517308464309678e-06,
+      "actual_calls_recorded": 8436,
+      "charged_allocation": 45000,
+      "completed_scientifically": false,
+      "issues": [
+        "ADAPTIVE_COVERAGE_INCOMPLETE",
+        "GRID_COVERAGE_INCOMPLETE",
+        "NOT_ALL_D_POINTS_SEARCH_COMPLETE",
+        "SCIENTIFIC_PROFILE_INCOMPLETE"
+      ]
+    },
+    "M05": {
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "n_D_points": 19,
+      "n_incomplete_D_points": 1,
+      "n_exact_joint_witnesses": 1,
+      "first_D": 30.0,
+      "last_D": 200.0,
+      "score_min_L2": 1.5487991631941165e-05,
+      "actual_calls_recorded": 5675,
+      "charged_allocation": 45000,
+      "completed_scientifically": false,
+      "issues": [
+        "ADAPTIVE_COVERAGE_INCOMPLETE",
+        "GRID_COVERAGE_INCOMPLETE",
+        "NOT_ALL_D_POINTS_SEARCH_COMPLETE",
+        "SCIENTIFIC_PROFILE_INCOMPLETE"
+      ]
+    },
+    "M06": {
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "n_D_points": 19,
+      "n_incomplete_D_points": 6,
+      "n_exact_joint_witnesses": 1,
+      "first_D": 30.0,
+      "last_D": 200.0,
+      "score_min_L2": 4.239303359111329e-05,
+      "actual_calls_recorded": 7249,
+      "charged_allocation": 45000,
+      "completed_scientifically": false,
+      "issues": [
+        "ADAPTIVE_COVERAGE_INCOMPLETE",
+        "GRID_COVERAGE_INCOMPLETE",
+        "NOT_ALL_D_POINTS_SEARCH_COMPLETE",
+        "SCIENTIFIC_PROFILE_INCOMPLETE"
+      ]
+    },
+    "ANON_01": {
+      "completed_scientifically": false,
+      "issues": [
+        "NO_N_SAME_MODEL_PROFILE_PUBLISHED"
+      ]
+    },
+    "ANON_02": {
+      "completed_scientifically": false,
+      "issues": [
+        "NO_N_SAME_MODEL_PROFILE_PUBLISHED"
+      ]
+    },
+    "ANON_03": {
+      "completed_scientifically": false,
+      "issues": [
+        "NO_N_SAME_MODEL_PROFILE_PUBLISHED"
+      ]
+    },
+    "ANON_04": {
+      "completed_scientifically": false,
+      "issues": [
+        "NO_N_SAME_MODEL_PROFILE_PUBLISHED"
+      ]
+    }
+  },
+  "n_scientifically_complete": 0,
+  "note": "a finite multistart profile is a candidate LOWER-LOSS UPPER-BOUND envelope, not proof of global nuisance minimization"
+}

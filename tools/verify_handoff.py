@@ -1,36 +1,39 @@
-"""Strict package-byte and ZIP checker. Does NOT evaluate BEM or sizing science."""
+#!/usr/bin/env python3
+"""Check ONLY the handoff ZIP bytes, manifest and safe membership."""
 from __future__ import annotations
-import argparse,csv,hashlib,sys,zipfile
-from pathlib import Path
+import argparse,csv,hashlib,io,json,zipfile
+from pathlib import Path,PurePosixPath
 
-def check(root:Path, archive=None):
-    root=root.resolve();manifest=root/'HANDOFF_SHA256.csv'
-    rows=list(csv.DictReader(manifest.open(encoding='utf-8-sig',newline='')))
-    if not rows:raise ValueError('Empty handoff manifest')
-    expected=set()
-    for r in rows:
-        rel=r['path'];size=int(r['bytes']);digest=r['sha256']
-        parts=Path(rel).parts
-        if rel in expected or rel.startswith('/') or '\\' in rel or '..' in parts or rel=='HANDOFF_SHA256.csv':
-            raise ValueError('Unsafe/duplicated member: '+rel)
-        expected.add(rel)
-        p=root/rel
-        if not p.is_file():raise FileNotFoundError(rel)
-        b=p.read_bytes()
-        if len(b)!=size or hashlib.sha256(b).hexdigest()!=digest:raise ValueError('Bad SHA/size: '+rel)
-    actual={p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file() and '__pycache__' not in p.parts}
-    if actual-{'HANDOFF_SHA256.csv'}!=expected:raise ValueError('Unexpected or missing package member(s): '+str((actual-{'HANDOFF_SHA256.csv'})^expected))
-    if archive:
-        with zipfile.ZipFile(archive) as z:
-            if z.testzip() is not None:raise ValueError('ZIP CRC failed')
-            names=z.namelist()
-            if len(names)!=len(set(names)) or set(names)!=actual:raise ValueError('ZIP member mismatch')
-            for n in names:
-                if z.read(n)!=(root/n).read_bytes():raise ValueError('ZIP bytes differ from source: '+n)
-    return len(expected)
+def verify(root,zippath):
+    errors=[];root=Path(root);zippath=Path(zippath)
+    with zipfile.ZipFile(zippath,'r') as z:
+        names=z.namelist()
+        if z.testzip():errors.append('ZIP_CRC_FAILURE')
+        if len(names)!=len(set(names)):errors.append('DUPLICATE_ZIP_MEMBERS')
+        for name in names:
+            p=PurePosixPath(name)
+            if not name or name.startswith('/') or '\\' in name or '..' in p.parts or p.as_posix()!=name:
+                errors.append('UNSAFE_MEMBER:'+name)
+        if 'HANDOFF_SHA256.csv' not in names:errors.append('MISSING_HASH_MANIFEST');return errors
+        man=list(csv.DictReader(io.StringIO(z.read('HANDOFF_SHA256.csv').decode('utf-8'))))
+        if not man or set(man[0])!={'path','bytes','sha256'}:errors.append('INVALID_HASH_MANIFEST');return errors
+        expected=set()
+        for r in man:
+            n=r['path'];expected.add(n)
+            if n not in names:errors.append('MEMBER_MISSING:'+n);continue
+            b=z.read(n)
+            if len(b)!=int(r['bytes']) or hashlib.sha256(b).hexdigest()!=r['sha256']:
+                errors.append('ARCHIVE_MEMBER_SHA_MISMATCH:'+n)
+            local=root/n
+            if not local.is_file() or local.stat().st_size!=len(b) or hashlib.sha256(local.read_bytes()).hexdigest()!=r['sha256']:
+                errors.append('ON_DISK_BYTES_DIFFER:'+n)
+        if len(expected)!=len(man) or set(names)!=expected|{'HANDOFF_SHA256.csv'}:
+            errors.append('ZIP_EXTRA_OR_UNMANIFESTED_MEMBERS')
+    return errors
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--root',default='.');p.add_argument('--zip',dest='archive');a=p.parse_args()
-    n=check(Path(a.root),a.archive)
-    print(f'HANDOFF_PACKAGE_ONLY_PASS: {n} members; NOT a BEM/physics/particle-sizing verdict')
-if __name__=='__main__':main()
+    p=argparse.ArgumentParser();p.add_argument('--root',required=True);p.add_argument('--zip',required=True)
+    a=p.parse_args();errs=verify(a.root,a.zip)
+    print(json.dumps({'artifact':'V143_HANDOFF_ONLY','status':'PASS' if not errs else 'FAIL','errors':errs},ensure_ascii=False))
+    return 0 if not errs else 2
+if __name__=='__main__':raise SystemExit(main())

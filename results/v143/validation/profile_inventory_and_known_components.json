@@ -1,0 +1,287 @@
+{
+  "schema": "iscat143.profile_summary.1",
+  "cases": {
+    "ANON_01": {
+      "case": "ANON_01",
+      "source_bound_identity": [
+        "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "33cf029a866d42de773c2664caf775e388ee1a065849ce55c51b9be7d49ebf4c",
+        "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      ],
+      "n_unique_D_sampled": 19,
+      "n_fully_completed_D": 1,
+      "n_incomplete_or_unknown_attempts": 18,
+      "observed_compatible_components_ONLY": [
+        [
+          30.0,
+          30.0
+        ]
+      ],
+      "has_D30": true,
+      "has_D200": true,
+      "scientific_profile_certified": false,
+      "reasons": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "EMPIRICAL_DEV_ERROR_NOT_STATISTICAL_95PCT_CI"
+      ]
+    },
+    "ANON_02": {
+      "case": "ANON_02",
+      "source_bound_identity": [
+        "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "0ac6be36096f29aa77a399d0ca304f3a07f9503890461086116ece00064db9cd",
+        "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      ],
+      "n_unique_D_sampled": 22,
+      "n_fully_completed_D": 10,
+      "n_incomplete_or_unknown_attempts": 12,
+      "observed_compatible_components_ONLY": [
+        [
+          100.0,
+          110.0
+        ]
+      ],
+      "has_D30": true,
+      "has_D200": true,
+      "scientific_profile_certified": false,
+      "reasons": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "EMPIRICAL_DEV_ERROR_NOT_STATISTICAL_95PCT_CI"
+      ]
+    },
+    "ANON_03": {
+      "case": "ANON_03",
+      "source_bound_identity": [
+        "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba",
+        "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      ],
+      "n_unique_D_sampled": 19,
+      "n_fully_completed_D": 0,
+      "n_incomplete_or_unknown_attempts": 19,
+      "observed_compatible_components_ONLY": [],
+      "has_D30": true,
+      "has_D200": true,
+      "scientific_profile_certified": false,
+      "reasons": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "EMPIRICAL_DEV_ERROR_NOT_STATISTICAL_95PCT_CI"
+      ]
+    },
+    "ANON_04": {
+      "case": "ANON_04",
+      "source_bound_identity": [
+        "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+        "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      ],
+      "n_unique_D_sampled": 23,
+      "n_fully_completed_D": 23,
+      "n_incomplete_or_unknown_attempts": 0,
+      "observed_compatible_components_ONLY": [
+        [
+          175.0,
+          200.0
+        ]
+      ],
+      "has_D30": true,
+      "has_D200": true,
+      "scientific_profile_certified": false,
+      "reasons": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "EMPIRICAL_DEV_ERROR_NOT_STATISTICAL_95PCT_CI"
+      ]
+    },
+    "M01": {
+      "case": "M01",
+      "source_bound_identity": [
+        "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "ff2e3aeb62de7ff46242846e95e34e357e2a5813d781d8cbe6b63b789c95fded",
+        "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      ],
+      "n_unique_D_sampled": 19,
+      "n_fully_completed_D": 9,
+      "n_incomplete_or_unknown_attempts": 10,
+      "observed_compatible_components_ONLY": [
+        [
+          50.0,
+          52.743060819785946
+        ],
+        [
+          60.0,
+          60.0
+        ],
+        [
+          70.0,
+          70.0
+        ],
+        [
+          80.0,
+          80.0
+        ],
+        [
+          90.0,
+          90.0
+        ],
+        [
+          100.0,
+          100.0
+        ]
+      ],
+      "has_D30": true,
+      "has_D200": true,
+      "scientific_profile_certified": false,
+      "reasons": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "EMPIRICAL_DEV_ERROR_NOT_STATISTICAL_95PCT_CI"
+      ]
+    },
+    "M02": {
+      "case": "M02",
+      "source_bound_identity": [
+        "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "8be84898ed8d6b1033a6d4b8e8bb178aee499aa504d3b6b354ff8f2017fdef98",
+        "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      ],
+      "n_unique_D_sampled": 19,
+      "n_fully_completed_D": 4,
+      "n_incomplete_or_unknown_attempts": 15,
+      "observed_compatible_components_ONLY": [
+        [
+          60.0,
+          60.0
+        ]
+      ],
+      "has_D30": true,
+      "has_D200": true,
+      "scientific_profile_certified": false,
+      "reasons": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "EMPIRICAL_DEV_ERROR_NOT_STATISTICAL_95PCT_CI"
+      ]
+    },
+    "M03": {
+      "case": "M03",
+      "source_bound_identity": [
+        "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "8f76cd7134062ae5b5e0f646a058bd7f29b2f9d71fa55e732839af4b8dc33772",
+        "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      ],
+      "n_unique_D_sampled": 19,
+      "n_fully_completed_D": 4,
+      "n_incomplete_or_unknown_attempts": 15,
+      "observed_compatible_components_ONLY": [
+        [
+          100.0,
+          100.0
+        ]
+      ],
+      "has_D30": true,
+      "has_D200": true,
+      "scientific_profile_certified": false,
+      "reasons": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "EMPIRICAL_DEV_ERROR_NOT_STATISTICAL_95PCT_CI"
+      ]
+    },
+    "M04": {
+      "case": "M04",
+      "source_bound_identity": [
+        "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "18e52d15d6ed13a0bf1a3801caa70dc8adbdac6a755169c5b9f95ab89c5e196a",
+        "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      ],
+      "n_unique_D_sampled": 19,
+      "n_fully_completed_D": 1,
+      "n_incomplete_or_unknown_attempts": 18,
+      "observed_compatible_components_ONLY": [
+        [
+          30.0,
+          30.0
+        ]
+      ],
+      "has_D30": true,
+      "has_D200": true,
+      "scientific_profile_certified": false,
+      "reasons": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "EMPIRICAL_DEV_ERROR_NOT_STATISTICAL_95PCT_CI"
+      ]
+    },
+    "M05": {
+      "case": "M05",
+      "source_bound_identity": [
+        "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "67e78663ea15a8707c039d06a66619042cc609057d896114410f0dfc4095e086",
+        "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      ],
+      "n_unique_D_sampled": 19,
+      "n_fully_completed_D": 19,
+      "n_incomplete_or_unknown_attempts": 0,
+      "observed_compatible_components_ONLY": [
+        [
+          160.0,
+          160.0
+        ],
+        [
+          170.0,
+          172.36815415453196
+        ],
+        [
+          180.0,
+          180.0
+        ],
+        [
+          190.0,
+          190.0
+        ],
+        [
+          200.0,
+          200.0
+        ]
+      ],
+      "has_D30": true,
+      "has_D200": true,
+      "scientific_profile_certified": false,
+      "reasons": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "EMPIRICAL_DEV_ERROR_NOT_STATISTICAL_95PCT_CI"
+      ]
+    },
+    "M06": {
+      "case": "M06",
+      "source_bound_identity": [
+        "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "5be586e4c62a40d7e27850f2a79f062c22f3787287f51f9059c9d262b415668a",
+        "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      ],
+      "n_unique_D_sampled": 19,
+      "n_fully_completed_D": 19,
+      "n_incomplete_or_unknown_attempts": 0,
+      "observed_compatible_components_ONLY": [
+        [
+          184.34673932132725,
+          184.34673932132725
+        ]
+      ],
+      "has_D30": true,
+      "has_D200": true,
+      "scientific_profile_certified": false,
+      "reasons": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "EMPIRICAL_DEV_ERROR_NOT_STATISTICAL_95PCT_CI"
+      ]
+    }
+  },
+  "epsilon_scope": "PREVIOUS_HJKL_OPENED_DEV_ONLY_NOT_CONFIDENCE_LEVEL"
+}

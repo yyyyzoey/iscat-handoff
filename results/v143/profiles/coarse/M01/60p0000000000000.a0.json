@@ -1,0 +1,21 @@
+{
+  "binding_hash": "ceff875d3217f8362d0e176343cb938638c927efbcd65b7968429014b2d7026f",
+  "event_key": null,
+  "status": "INHERITED_V142_VALID_POINT",
+  "original_source_sha256": "8d31d3ff6de3ea88092fd3fa1f901afb3228cbb981b4e2a73d60cd77aa790bd2",
+  "result": {
+    "D": 60.0,
+    "best": {
+      "theta": [
+        60.0,
+        373.37307106301887,
+        42.014771504446124,
+        -70.02427341321932
+      ],
+      "loss_L2": 3.8434195149618224e-05,
+      "source": "PREVIOUS_VERIFIED_F2C_POINT"
+    },
+    "point_search_complete": true,
+    "not_globally_certified": true
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "binding_hash": "58e143e967b68c702b6ece7670eca448da45fdfbe78cf52a70ea243faeecbf08",
+  "event_key": "PROFILE_coarse_M04_200.0000000000000_58e143e967b68c70_revision0",
+  "status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+  "result": {
+    "D": 200.0,
+    "best": {
+      "theta": [
+        200.0,
+        474.84740725482914,
+        -69.695858070588,
+        -111.77152377962746
+      ],
+      "loss_L2": 0.006936725852525439,
+      "source": "PUBLIC_H_450"
+    },
+    "attempts": [
+      {
+        "start": "JOINT_NUISANCE",
+        "theta": [
+          200.0,
+          474.84740720337265,
+          -69.69588744846273,
+          -111.77155318964233
+        ],
+        "loss_L2": 0.006936725852528868,
+        "success": true,
+        "status": 1,
+        "nfev": 5,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_350",
+        "theta": [
+          200.0,
+          401.0111764878404,
+          -69.93886699086298,
+          -111.8900240830444
+        ],
+        "loss_L2": 0.00817151860136958,
+        "success": true,
+        "status": 1,
+        "nfev": 6,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_400",
+        "theta": [
+          200.0,
+          401.0111765002093,
+          -69.93890602280777,
+          -111.89004546646015
+        ],
+        "loss_L2": 0.008171518601345951,
+        "success": true,
+        "status": 1,
+        "nfev": 4,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_450",
+        "theta": [
+          200.0,
+          474.84740725482914,
+          -69.695858070588,
+          -111.77152377962746
+        ],
+        "loss_L2": 0.006936725852525439,
+        "success": true,
+        "status": 1,
+        "nfev": 6,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_500",
+        "theta": [
+          200.0,
+          474.847407206923,
+          -69.69584090835377,
+          -111.7715088655772
+        ],
+        "loss_L2": 0.006936725852538392,
+        "success": true,
+        "status": 1,
+        "nfev": 6,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_550",
+        "theta": [
+          200.0,
+          549.9999999999999,
+          -474.70202696382125,
+          -455.6922908739551
+        ],
+        "loss_L2": 0.18995854937433193,
+        "success": false,
+        "status": 0,
+        "nfev": 35,
+        "message": "The maximum number of function evaluations is exceeded."
+      }
+    ],
+    "exact_joint_witness": null,
+    "point_search_complete": false,
+    "not_globally_certified": true,
+    "forward_calls": 248
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "binding_hash": "7b4c90b4515112a51e1cb2a3b5847ca0209a4d051ce6272679fe2339484d0811",
+  "event_key": "PROFILE_coarse_ANON_01_170.0000000000000_7b4c90b4515112a5_revision0",
+  "status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+  "result": {
+    "D": 170.0,
+    "best": {
+      "theta": [
+        170.0,
+        388.8534410054931,
+        133.84629179355855,
+        -125.85858472768666
+      ],
+      "loss_L2": 0.001936293144129565,
+      "source": "PUBLIC_H_400"
+    },
+    "attempts": [
+      {
+        "start": "JOINT_NUISANCE",
+        "theta": [
+          170.0,
+          388.8534425691627,
+          133.84577099402406,
+          -125.85672475644138
+        ],
+        "loss_L2": 0.0019362931462804309,
+        "success": true,
+        "status": 1,
+        "nfev": 19,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_350",
+        "theta": [
+          170.0,
+          388.8534450437321,
+          133.8453005976361,
+          -125.85512568760434
+        ],
+        "loss_L2": 0.0019362931484457901,
+        "success": true,
+        "status": 1,
+        "nfev": 21,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_400",
+        "theta": [
+          170.0,
+          388.8534410054931,
+          133.84629179355855,
+          -125.85858472768666
+        ],
+        "loss_L2": 0.001936293144129565,
+        "success": true,
+        "status": 1,
+        "nfev": 20,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_450",
+        "theta": [
+          170.0,
+          488.57363158593955,
+          22.115739931241734,
+          -8.860186584633347
+        ],
+        "loss_L2": 0.01603727844432845,
+        "success": false,
+        "status": 0,
+        "nfev": 35,
+        "message": "The maximum number of function evaluations is exceeded."
+      },
+      {
+        "start": "PUBLIC_H_500",
+        "theta": [
+          170.0,
+          488.5736354681347,
+          21.952280198823477,
+          -8.82695519498874
+        ],
+        "loss_L2": 0.016037266370450012,
+        "success": false,
+        "status": 0,
+        "nfev": 35,
+        "message": "The maximum number of function evaluations is exceeded."
+      },
+      {
+        "start": "PUBLIC_H_550",
+        "theta": [
+          170.0,
+          549.9999999999999,
+          100.39466138510699,
+          -62.01569575393508
+        ],
+        "loss_L2": 0.17184924178775046,
+        "success": false,
+        "status": 0,
+        "nfev": 35,
+        "message": "The maximum number of function evaluations is exceeded."
+      }
+    ],
+    "exact_joint_witness": null,
+    "point_search_complete": false,
+    "not_globally_certified": true,
+    "forward_calls": 660
+  }
+}

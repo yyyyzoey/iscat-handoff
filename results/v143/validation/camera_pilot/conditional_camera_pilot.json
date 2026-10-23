@@ -1,0 +1,53 @@
+{
+  "schema": "iscat143.conditional_camera_pilot.1",
+  "n_new_exposures_recorded": 912,
+  "events_are_foreground_and_matched_reference": true,
+  "run_seed_per_B": [
+    1431001,
+    1431002,
+    1431003
+  ],
+  "background_assumption": "COUNT_LEVELS_CONDITIONAL_FULL_WELL_UNMEASURED",
+  "results": [
+    {
+      "B_electrons_per_pixel": 1000,
+      "threshold_from_dev_only": 0.19298508667733985,
+      "dev_null_n": 80,
+      "independent_null_n": 60,
+      "val_false_positives": 0,
+      "one_sided95_cp_upper": 0.04870291331009749,
+      "FPR_qualified": true,
+      "target_n": 12,
+      "target_detected": 1,
+      "camera_diameter_reportability": "NOT_EVALUATED",
+      "scope": "ASSUMED_COUNTS__NOT_REAL_CAMERA_FULL_WELL_OR_ABSOLUTE_DIAMETER"
+    },
+    {
+      "B_electrons_per_pixel": 10000,
+      "threshold_from_dev_only": 0.060632856589714075,
+      "dev_null_n": 80,
+      "independent_null_n": 60,
+      "val_false_positives": 0,
+      "one_sided95_cp_upper": 0.04870291331009749,
+      "FPR_qualified": true,
+      "target_n": 12,
+      "target_detected": 3,
+      "camera_diameter_reportability": "NOT_EVALUATED",
+      "scope": "ASSUMED_COUNTS__NOT_REAL_CAMERA_FULL_WELL_OR_ABSOLUTE_DIAMETER"
+    },
+    {
+      "B_electrons_per_pixel": 100000,
+      "threshold_from_dev_only": 0.02077529446326721,
+      "dev_null_n": 80,
+      "independent_null_n": 60,
+      "val_false_positives": 0,
+      "one_sided95_cp_upper": 0.04870291331009749,
+      "FPR_qualified": true,
+      "target_n": 12,
+      "target_detected": 9,
+      "camera_diameter_reportability": "NOT_EVALUATED",
+      "scope": "ASSUMED_COUNTS__NOT_REAL_CAMERA_FULL_WELL_OR_ABSOLUTE_DIAMETER"
+    }
+  ],
+  "no_experimental_absolute_validation": true
+}

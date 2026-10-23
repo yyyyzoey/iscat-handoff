@@ -1,0 +1,17 @@
+{
+ "schema": "iscat143.budget_summary.1",
+ "forward_events": 155,
+ "forward_reserved": 155000,
+ "forward_actual": 49390,
+ "camera_events": 456,
+ "camera_exposures": 912,
+ "limit": {
+  "f2c": 300000,
+  "camera": 1100,
+  "bem": 0,
+  "render": 0
+ },
+ "all_states": [
+  "COMPLETED"
+ ]
+}

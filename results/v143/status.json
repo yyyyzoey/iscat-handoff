@@ -1,0 +1,33 @@
+{
+  "task": "V143_F2C_HOLDOUT_PROVENANCE_AND_DIAMETER_IDENTIFIABILITY",
+  "git_commit_at_pack": "ddd6db13b5603470072a28e6356cdf35b75f5990",
+  "stage_states": {
+    "SOURCE_LINEAGE": "N01-N04: original BEM solves recovered from workstation, cache-key+ledger+geometry linked 4/4; solves shipped in provenance/n_solve_source",
+    "FREEZE_PROTOCOL": "V142 freeze verified (model_freeze at f9a3777c before N)",
+    "NUMERIC_REPLAY": "field-level + forward decomposition + profiles all SHA-bound",
+    "DIRECT_RENDER_PHYSICS": "F2c at truth on N: 0.08-0.53% 4/4 <=1%; old F2 1.41-1.93% 0/4; SourceWide shift 53-86% both kernels (documented renderer-property)",
+    "NOISELESS_CONDITIONAL_IDENTIFIABILITY": "PARTIAL: candidates recovered; compatibility components broad under empirical epsilon; not certified unique",
+    "CAMERA_DETECTION_FPR": "CONDITIONAL PILOT: 0/60 all three B levels, CP95 upper 4.87% <=5% (912 exposures, new independent budget)",
+    "CAMERA_DIAMETER_REPORTABILITY": "NOT_EVALUATED (detection only; reportability gates incomplete)",
+    "EXPERIMENTAL_ABSOLUTE_VALIDATION": "NOT_VALIDATED"
+  },
+  "reportability": {
+    "all_reportable_D_null": true
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "forward_actual": 49390,
+    "forward_reserved": 155000,
+    "camera_exposures": 912,
+    "bem": 0,
+    "render": 0,
+    "historical_preserved": {
+      "v137_camera": "23958/6000",
+      "v137_R1_f2": 1659953,
+      "v138_f2": 60,
+      "v139_f2": 12,
+      "v140_f2": 12,
+      "v142_f2c_actual": 48874
+    }
+  }
+}

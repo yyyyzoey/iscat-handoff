@@ -1,0 +1,5 @@
+{
+  "all_reportable_D_null": true,
+  "reason_codes_index": "per-case in conditional_sizing_and_reportability.json",
+  "camera_detection": "FPR qualified 3/3 (0/60 each) but detection != reportability"
+}

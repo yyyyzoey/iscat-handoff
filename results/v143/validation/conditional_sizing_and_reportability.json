@@ -1,0 +1,239 @@
+{
+  "cases": {
+    "ANON_01": {
+      "known_compatible_components": [
+        [
+          30.0,
+          30.0
+        ]
+      ],
+      "n_fully_completed_D": 1,
+      "n_sampled_D": 19,
+      "scientific_profile_certified": false,
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "reason_codes": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "DETECTION_GATE_CONDITIONAL_ONLY",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING",
+        "COMPONENTS_WIDER_THAN_ENGINEERING_TARGET"
+      ],
+      "conditional_noiseless_identifiability": "PARTIAL: candidate basins recovered but compatibility components broad under empirical epsilon"
+    },
+    "ANON_02": {
+      "known_compatible_components": [
+        [
+          100.0,
+          110.0
+        ]
+      ],
+      "n_fully_completed_D": 10,
+      "n_sampled_D": 22,
+      "scientific_profile_certified": false,
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "reason_codes": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "DETECTION_GATE_CONDITIONAL_ONLY",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING",
+        "COMPONENTS_WIDER_THAN_ENGINEERING_TARGET"
+      ],
+      "conditional_noiseless_identifiability": "PARTIAL: candidate basins recovered but compatibility components broad under empirical epsilon"
+    },
+    "ANON_03": {
+      "known_compatible_components": [],
+      "n_fully_completed_D": 0,
+      "n_sampled_D": 19,
+      "scientific_profile_certified": false,
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "reason_codes": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "DETECTION_GATE_CONDITIONAL_ONLY",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING",
+        "COMPONENTS_WIDER_THAN_ENGINEERING_TARGET"
+      ],
+      "conditional_noiseless_identifiability": "PARTIAL: candidate basins recovered but compatibility components broad under empirical epsilon"
+    },
+    "ANON_04": {
+      "known_compatible_components": [
+        [
+          175.0,
+          200.0
+        ]
+      ],
+      "n_fully_completed_D": 23,
+      "n_sampled_D": 23,
+      "scientific_profile_certified": false,
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "reason_codes": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "DETECTION_GATE_CONDITIONAL_ONLY",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING",
+        "COMPONENTS_WIDER_THAN_ENGINEERING_TARGET"
+      ],
+      "conditional_noiseless_identifiability": "PARTIAL: candidate basins recovered but compatibility components broad under empirical epsilon"
+    },
+    "M01": {
+      "known_compatible_components": [
+        [
+          50.0,
+          52.743060819785946
+        ],
+        [
+          60.0,
+          60.0
+        ],
+        [
+          70.0,
+          70.0
+        ],
+        [
+          80.0,
+          80.0
+        ],
+        [
+          90.0,
+          90.0
+        ],
+        [
+          100.0,
+          100.0
+        ]
+      ],
+      "n_fully_completed_D": 9,
+      "n_sampled_D": 19,
+      "scientific_profile_certified": false,
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "reason_codes": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "DETECTION_GATE_CONDITIONAL_ONLY",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING"
+      ],
+      "conditional_noiseless_identifiability": "PARTIAL: candidate basins recovered but compatibility components broad under empirical epsilon"
+    },
+    "M02": {
+      "known_compatible_components": [
+        [
+          60.0,
+          60.0
+        ]
+      ],
+      "n_fully_completed_D": 4,
+      "n_sampled_D": 19,
+      "scientific_profile_certified": false,
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "reason_codes": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "DETECTION_GATE_CONDITIONAL_ONLY",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING"
+      ],
+      "conditional_noiseless_identifiability": "PARTIAL: candidate basins recovered but compatibility components broad under empirical epsilon"
+    },
+    "M03": {
+      "known_compatible_components": [
+        [
+          100.0,
+          100.0
+        ]
+      ],
+      "n_fully_completed_D": 4,
+      "n_sampled_D": 19,
+      "scientific_profile_certified": false,
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "reason_codes": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "DETECTION_GATE_CONDITIONAL_ONLY",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING"
+      ],
+      "conditional_noiseless_identifiability": "PARTIAL: candidate basins recovered but compatibility components broad under empirical epsilon"
+    },
+    "M04": {
+      "known_compatible_components": [
+        [
+          30.0,
+          30.0
+        ]
+      ],
+      "n_fully_completed_D": 1,
+      "n_sampled_D": 19,
+      "scientific_profile_certified": false,
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "reason_codes": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "DETECTION_GATE_CONDITIONAL_ONLY",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING"
+      ],
+      "conditional_noiseless_identifiability": "PARTIAL: candidate basins recovered but compatibility components broad under empirical epsilon"
+    },
+    "M05": {
+      "known_compatible_components": [
+        [
+          160.0,
+          160.0
+        ],
+        [
+          170.0,
+          172.36815415453196
+        ],
+        [
+          180.0,
+          180.0
+        ],
+        [
+          190.0,
+          190.0
+        ],
+        [
+          200.0,
+          200.0
+        ]
+      ],
+      "n_fully_completed_D": 19,
+      "n_sampled_D": 19,
+      "scientific_profile_certified": false,
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "reason_codes": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "DETECTION_GATE_CONDITIONAL_ONLY",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING"
+      ],
+      "conditional_noiseless_identifiability": "PARTIAL: candidate basins recovered but compatibility components broad under empirical epsilon"
+    },
+    "M06": {
+      "known_compatible_components": [
+        [
+          184.34673932132725,
+          184.34673932132725
+        ]
+      ],
+      "n_fully_completed_D": 19,
+      "n_sampled_D": 19,
+      "scientific_profile_certified": false,
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "reason_codes": [
+        "FINITE_LOCAL_MULTISTART_NOT_GLOBAL_PROOF",
+        "UNSAMPLED_D_REGIONS_NOT_EXCLUDED",
+        "DETECTION_GATE_CONDITIONAL_ONLY",
+        "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING"
+      ],
+      "conditional_noiseless_identifiability": "PARTIAL: candidate basins recovered but compatibility components broad under empirical epsilon"
+    }
+  }
+}

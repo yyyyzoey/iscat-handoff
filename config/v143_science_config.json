@@ -1,0 +1,191 @@
+{
+  "schema": "iscat143.science_config.1",
+  "task_id": "V143_F2C_HOLDOUT_PROVENANCE_AND_DIAMETER_IDENTIFIABILITY",
+  "repository": "yyyyzoey/iscat-handoff",
+  "fixed_v142_commit": "ddd6db13b5603470072a28e6356cdf35b75f5990",
+  "actual_v142_preN_git_commit": "841df9b37a387a87ee192062b6411ed9719a114f",
+  "N_data_git_commit": "677920ae83009532f5c300bfce0837ef5b0e5bd7",
+  "frozen_claim_git_commit": "f9a3777c037faa05177fdb2fe2595ca1ce77c27e",
+  "frozen_f2c_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "parent_f2_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "source_files": {
+    "frozen_model": "results/v142/config/model_freeze.json",
+    "v142_status": "results/v142/status.json",
+    "model": "tools/v142_model.py",
+    "kernel": "tools/v142_field_reference.py",
+    "estimator": "tools/v142_n_estimate.py",
+    "reporting_gate": "tools/v142_gate.py",
+    "model_library": "results/v128/library/v128_Dh_train_fields.h5",
+    "N_anonymous_obs": "results/v142/validation/new_N_independent_images.h5",
+    "N_original_mats": "results/v142/validation/new_N_render_mats",
+    "N_estimates": "results/v142/validation/new_N_candidate_estimates.csv",
+    "N_scores": "results/v142/validation/new_N_validator_score.csv",
+    "N_validator_truth": "results/v142/validation/new_N_validator_only_truth.json",
+    "N_anon_manifest": "results/v142/validation/new_N_anon_manifest.json",
+    "M_observation": "results/v132/validation/new_M_images.h5",
+    "M_truth_registry": "results/v126/v132_M_cases.json",
+    "M_new_fits": "results/v142/dev_M_F2c",
+    "M_old_fits": "results/v133/M_F2_baseline/fits",
+    "M_coarse_profiles": "results/v142/dev_M_profiles",
+    "dev_error_f2c": "results/v142/dev_model_forward/developer_model_selection_proposal.json",
+    "legacy_v142_budget": "results/v142/logs/v142_budget.sqlite",
+    "legacy_v142_summary": "results/v142/logs/resource_budget.csv"
+  },
+  "sha256_inputs": {
+    "library_h5": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "M_observation_h5": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b"
+  },
+  "M_opened_dev_cases": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06"
+  ],
+  "N_opened_scored_cases": [
+    "ANON_01",
+    "ANON_02",
+    "ANON_03",
+    "ANON_04"
+  ],
+  "conditional_setup": {
+    "particle_state": "suspended",
+    "water_temperature_C": 26,
+    "laser_vacuum_nm": 520,
+    "camera_pixel_um": 14,
+    "objective_magnification_nominal": 50,
+    "np_complex": [
+      1.38,
+      0
+    ],
+    "nwater": 1.3353,
+    "nglass": 1.5,
+    "NA_assumed": 0.8,
+    "extra_magnification_assumed": 1.0,
+    "object_pixel_nm_assumed": 280,
+    "subpixels_per_camera_pixel": 5,
+    "focus_z_nm_assumed": 450,
+    "camera_shape": [
+      17,
+      17
+    ],
+    "score_shape": [
+      13,
+      13
+    ],
+    "supported_D_nm": [
+      30,
+      200
+    ],
+    "supported_h_nm": [
+      350,
+      550
+    ],
+    "observable": "SIGNED_STATIC_C"
+  },
+  "validation": {
+    "matched_direct_render_relative_L2_engineering_max": 0.01,
+    "dev_model_error_max_HJKL_L2_unqualified": 0.0015811481066672155,
+    "model_error_status": "DEVELOPER_EMPIRICAL_NOT_CALIBRATED_95PCT_CI",
+    "engineering_size_goal_external_only": "abs(Dhat-Dtrue)<=max(5nm,0.1*Dtrue)",
+    "heldout_N_not_new_in_v143": true,
+    "truth_in_estimator": false,
+    "experimental_absolute_diameter_validated": false
+  },
+  "profiles": {
+    "priority": [
+      "ANON_04",
+      "ANON_01",
+      "ANON_02",
+      "ANON_03",
+      "M02",
+      "M06",
+      "M05",
+      "M01",
+      "M03",
+      "M04"
+    ],
+    "public_height_seeds_nm": [
+      350,
+      400,
+      450,
+      500,
+      550
+    ],
+    "coarse_D_nodes_nm": [
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200
+    ],
+    "include_training_knots": true,
+    "include_exact_joint_witness": true,
+    "adaptive_step_nm": [
+      2.5,
+      1.25,
+      0.5
+    ],
+    "max_calls_per_D_operation": 1200,
+    "max_nfev_per_start": 45,
+    "first_phase_priority_N": true,
+    "unknown_profile_regions_not_high_loss": true,
+    "deviation_reason_required": true
+  },
+  "camera_optional_pilot": {
+    "enabled_only_after_physics_profile_qualification": true,
+    "B_electrons_per_pixel_per_100us": [
+      1000,
+      10000,
+      100000
+    ],
+    "read_noise_electrons": 2.0,
+    "dev_null_per_B": 80,
+    "independent_null_per_B": 60,
+    "N_opened_developer_conditions": 4,
+    "target_repetitions_per_condition_per_B": 3,
+    "foreground_and_reference_events_each": 2,
+    "nominal_blank_and_reference_events": 840,
+    "nominal_target_and_reference_events": 72,
+    "nominal_total_events": 912,
+    "max_all_new_camera_events": 1100,
+    "rng_seeds_by_B": [
+      1431001,
+      1431002,
+      1431003
+    ],
+    "false_positive_95pct_one_sided_upper_at_most": 0.05,
+    "mark_fullwell_unknown": true,
+    "not_real_camera_certification": true
+  },
+  "hard_budget_new_v143": {
+    "new_BEM_attempts": 0,
+    "new_render_attempts": 0,
+    "new_camera_exposure_events": 1100,
+    "total_oldF2_and_F2c_forward_queries": 300000,
+    "heavy_physics_concurrency": 1,
+    "max_wall_hours_including_finalize": 12,
+    "finalization_minutes_reserved": 30
+  },
+  "historical_preserve": {
+    "v137_camera_exposures": 23958,
+    "v137_limit": 6000,
+    "v142_published_charged_forward": 277260,
+    "v142_published_reported_actual": 48874,
+    "legacy_budget_rebuilt_not_raw_event_log": true
+  }
+}

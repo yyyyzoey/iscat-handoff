@@ -1,0 +1,8 @@
+{
+  "threshold": 0.060632856589714075,
+  "method": "MAX_80_DEV_NULL",
+  "seed": 1431002,
+  "B": 10000,
+  "n_dev": 80,
+  "not_tuned_using_independent_val": true
+}

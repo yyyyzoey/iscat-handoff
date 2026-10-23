@@ -1,0 +1,134 @@
+{
+  "rows": [
+    {
+      "case": "N01",
+      "anon": "ANON_01",
+      "solve_filename": "sol_00a0a1a478bffb623195a39c7f5968e133d767fa.mat",
+      "solve_sha256": "b312028783a17b7223dc33dfad696ea872ab2c80ca061a1a22819cb016401b34",
+      "solver_id": "v125.1_nanobem_ce49f77f_adapter_7fa705606033aa0d4aa33e4b6fd9d8e6425a6eca",
+      "D_nm": 59.0,
+      "h_center_nm": 391.25,
+      "gap_nm": 361.75,
+      "mesh": 1444,
+      "n_particle": "1.38+0.0j",
+      "lambda_nm": 520.0,
+      "NA": 0.8,
+      "geometry_matches_registry": true,
+      "ledger_execution_ok": true,
+      "renders": {
+        "default": {
+          "render_sha256": "96068dae622a10b1a53fab1ca04a96a192e2beb43cdc5bca39ab6850d496f22b",
+          "file": "work\\repo\\results\\v142\\validation\\new_N_render_mats\\ANON_01_default.mat"
+        },
+        "wide": {
+          "render_sha256": "4a2c259b55dcc7a726f8058a38b90cc22084cff4bfaf565396d7ee0646b581e0",
+          "file": "work\\repo\\results\\v142\\validation\\new_N_render_mats\\ANON_01_wide.mat"
+        },
+        "at_offset": {
+          "render_sha256": "73e04e620467d45f60558e4b921445d2edf8b807eddd995b6be878fc56119e60",
+          "file": "work\\repo\\results\\v142\\validation\\new_N_render_mats\\ANON_01_at_offset.mat"
+        }
+      },
+      "lineage": "CACHE_KEY_PLUS_LEDGER_PLUS_GEOMETRY_LINKED",
+      "limitation": "render-to-solve via generation pipeline identity, not embedded content SHA"
+    },
+    {
+      "case": "N02",
+      "anon": "ANON_02",
+      "solve_filename": "sol_1d8a7e7b266a04cd646c36a962d58310042b1ade.mat",
+      "solve_sha256": "e43891a85ace6c09b7307e5e4484bb49185e35f9b2ace00c35ff73893badb01a",
+      "solver_id": "v125.1_nanobem_ce49f77f_adapter_7fa705606033aa0d4aa33e4b6fd9d8e6425a6eca",
+      "D_nm": 101.0,
+      "h_center_nm": 432.5,
+      "gap_nm": 382.0,
+      "mesh": 1444,
+      "n_particle": "1.38+0.0j",
+      "lambda_nm": 520.0,
+      "NA": 0.8,
+      "geometry_matches_registry": true,
+      "ledger_execution_ok": true,
+      "renders": {
+        "default": {
+          "render_sha256": "6831d29c93a4c355a72981e8412e82f0ea2358742322b6cbd05d98b1b3e643f0",
+          "file": "work\\repo\\results\\v142\\validation\\new_N_render_mats\\ANON_02_default.mat"
+        },
+        "wide": {
+          "render_sha256": "e8740fd63a7fa76fec980c051d9f88a193d88bade183ca080e1d3878123526fa",
+          "file": "work\\repo\\results\\v142\\validation\\new_N_render_mats\\ANON_02_wide.mat"
+        },
+        "at_offset": {
+          "render_sha256": "649705527939706a9dcedd562519f30a834fa3d65e986312a9c0dad8626a8b03",
+          "file": "work\\repo\\results\\v142\\validation\\new_N_render_mats\\ANON_02_at_offset.mat"
+        }
+      },
+      "lineage": "CACHE_KEY_PLUS_LEDGER_PLUS_GEOMETRY_LINKED",
+      "limitation": "render-to-solve via generation pipeline identity, not embedded content SHA"
+    },
+    {
+      "case": "N03",
+      "anon": "ANON_03",
+      "solve_filename": "sol_bfde8c4d7c59e0aa4d5319b22a85c9ebb25ec796.mat",
+      "solve_sha256": "f2b2d6eaf5a564aa47c5a70639dfacffcdbfd94debf5885c6cae1b2a0895f04c",
+      "solver_id": "v125.1_nanobem_ce49f77f_adapter_7fa705606033aa0d4aa33e4b6fd9d8e6425a6eca",
+      "D_nm": 143.0,
+      "h_center_nm": 478.75,
+      "gap_nm": 407.25,
+      "mesh": 1444,
+      "n_particle": "1.38+0.0j",
+      "lambda_nm": 520.0,
+      "NA": 0.8,
+      "geometry_matches_registry": true,
+      "ledger_execution_ok": true,
+      "renders": {
+        "default": {
+          "render_sha256": "d889c1ae0d22e9f193a29c462308da84363982cbceb8e8255e0ac6deca367b39",
+          "file": "work\\repo\\results\\v142\\validation\\new_N_render_mats\\ANON_03_default.mat"
+        },
+        "wide": {
+          "render_sha256": "4ee82c01022248f1eb8970f53a3efc05324d6307f1e372b8b6b53809c7e2f38a",
+          "file": "work\\repo\\results\\v142\\validation\\new_N_render_mats\\ANON_03_wide.mat"
+        },
+        "at_offset": {
+          "render_sha256": "10a5dcf60f68663a4f911927a50e80b693aac54a4e692f80eb347120deeb08ad",
+          "file": "work\\repo\\results\\v142\\validation\\new_N_render_mats\\ANON_03_at_offset.mat"
+        }
+      },
+      "lineage": "CACHE_KEY_PLUS_LEDGER_PLUS_GEOMETRY_LINKED",
+      "limitation": "render-to-solve via generation pipeline identity, not embedded content SHA"
+    },
+    {
+      "case": "N04",
+      "anon": "ANON_04",
+      "solve_filename": "sol_304fdc65a3d84ed1fc7de3c74f7eb106224b6a40.mat",
+      "solve_sha256": "32eee7d7e953712fa7fe8e594a702aad1f108b93e1d602e6b6d7f51edc71dbc2",
+      "solver_id": "v125.1_nanobem_ce49f77f_adapter_7fa705606033aa0d4aa33e4b6fd9d8e6425a6eca",
+      "D_nm": 181.0,
+      "h_center_nm": 526.25,
+      "gap_nm": 435.75,
+      "mesh": 1444,
+      "n_particle": "1.38+0.0j",
+      "lambda_nm": 520.0,
+      "NA": 0.8,
+      "geometry_matches_registry": true,
+      "ledger_execution_ok": true,
+      "renders": {
+        "default": {
+          "render_sha256": "4b83f9a448384f3e884bc04c20f9681358694916c0a97712d0d66dbb8ad68f5e",
+          "file": "work\\repo\\results\\v142\\validation\\new_N_render_mats\\ANON_04_default.mat"
+        },
+        "wide": {
+          "render_sha256": "264b1f86ae629b60d502e1064f7399136a1b56b8107852bebbb77d6dff2d3994",
+          "file": "work\\repo\\results\\v142\\validation\\new_N_render_mats\\ANON_04_wide.mat"
+        },
+        "at_offset": {
+          "render_sha256": "e9c9ecd169ab06c194c51134c86a3c8874c9e498e55a858223395e3eb8c519e6",
+          "file": "work\\repo\\results\\v142\\validation\\new_N_render_mats\\ANON_04_at_offset.mat"
+        }
+      },
+      "lineage": "CACHE_KEY_PLUS_LEDGER_PLUS_GEOMETRY_LINKED",
+      "limitation": "render-to-solve via generation pipeline identity, not embedded content SHA"
+    }
+  ],
+  "status": "N_SOLVE_LINEAGE_RECONSTRUCTED_FROM_GENERATION_TIME_CACHE_KEYS_AND_LEDGER",
+  "new_bem_attempts": 0
+}

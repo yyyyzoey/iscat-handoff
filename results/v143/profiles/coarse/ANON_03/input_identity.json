@@ -1,0 +1,12 @@
+{
+  "case": "ANON_03",
+  "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "observation_sha": "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba",
+  "estimator_source_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749",
+  "optimizer": "TRF_BOUNDED_LINEAR_V143_4PUBLIC_HEIGHTS",
+  "max_nfev": 35,
+  "phase": "coarse",
+  "per_D_budget": 1000,
+  "binding_hash": "46a6cb19317db563485a4f9a4e039bd8a9050a3956be159919b24418eaffca9d",
+  "truth_used": false
+}

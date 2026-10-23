@@ -1,0 +1,12 @@
+{
+  "case": "M04",
+  "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "observation_sha": "18e52d15d6ed13a0bf1a3801caa70dc8adbdac6a755169c5b9f95ab89c5e196a",
+  "estimator_source_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749",
+  "optimizer": "TRF_BOUNDED_LINEAR_V143_4PUBLIC_HEIGHTS",
+  "max_nfev": 35,
+  "phase": "coarse",
+  "per_D_budget": 1000,
+  "binding_hash": "58e143e967b68c702b6ece7670eca448da45fdfbe78cf52a70ea243faeecbf08",
+  "truth_used": false
+}

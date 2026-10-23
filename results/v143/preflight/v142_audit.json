@@ -1,0 +1,393 @@
+{
+  "schema": "iscat143.published_v142_audit.1",
+  "source_commit_required": "ddd6db13b5603470072a28e6356cdf35b75f5990",
+  "audit_success_does_not_imply_science_pass": true,
+  "git": {
+    "branch_v142": {
+      "ok": true,
+      "code": 0,
+      "stdout": "ddd6db13b5603470072a28e6356cdf35b75f5990",
+      "stderr": ""
+    },
+    "HEAD": {
+      "ok": true,
+      "code": 0,
+      "stdout": "ddd6db13b5603470072a28e6356cdf35b75f5990",
+      "stderr": ""
+    },
+    "review_commit_exists": true,
+    "preN_is_ancestor_of_N": true,
+    "N_is_ancestor_of_final": true
+  },
+  "freeze": {
+    "claimed_git_commit": "f9a3777c037faa05177fdb2fe2595ca1ce77c27e",
+    "declared_source_sha_check": {
+      "v142_model.py": {
+        "source_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\tools\\v142_model.py",
+        "exists": true,
+        "match": true
+      },
+      "v142_field_reference.py": {
+        "source_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\tools\\v142_field_reference.py",
+        "exists": true,
+        "match": true
+      },
+      "v142_gate.py": {
+        "source_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\tools\\v142_gate.py",
+        "exists": true,
+        "match": true
+      },
+      "v142_dev_fit.py": {
+        "source_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\tools\\v142_dev_fit.py",
+        "exists": true,
+        "match": true
+      },
+      "v142_profile_dev.py": {
+        "source_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\tools\\v142_profile_dev.py",
+        "exists": true,
+        "match": true
+      },
+      "v142_validator_only_forward.py": {
+        "source_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\tools\\v142_validator_only_forward.py",
+        "exists": true,
+        "match": true
+      }
+    },
+    "claimed_commit_contains_f2c_model": false,
+    "preN_commit_contains_f2c_model": true,
+    "preN_commit_contains_N_estimator": false,
+    "N_estimator_sha_pinned_in_freeze": false,
+    "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+    "N_spec_sha_matches": true,
+    "freeze_sha_of_pinned_inputs_not_committed_at_claimed_sha": true
+  },
+  "N": {
+    "candidate_stats": {
+      "count": 4,
+      "MAE_nm": 0.30841921647878934,
+      "RMSE_nm": 0.3652364905060381,
+      "max_abs_error_nm": 0.6291458953954248,
+      "signed_errors_nm": [
+        0.0992656942853074,
+        0.24109919653004397,
+        0.2641660797043812,
+        -0.6291458953954248
+      ],
+      "engineer_goal_pass": 4
+    },
+    "candidates_model_id_matches": true,
+    "old_published_score_summary": {
+      "schema": "iscat142.n_validator_score.1",
+      "n": 4,
+      "pass_engineering": 4,
+      "MAE_nm": 0.30841921647878934,
+      "RMSE_nm": 0.3652364905060381,
+      "max_err_nm": 0.6291458953954248,
+      "note": "candidate_accuracy measured; eligible_reportability still null per incomplete profile/adaptive/detection gates",
+      "rows": [
+        {
+          "anon_case": "ANON_01",
+          "case": "N01",
+          "D_true": 59.0,
+          "D_hat": 59.09926569428531,
+          "abs_err_nm": 0.0992656942853074,
+          "engineering_target_nm": 5.9,
+          "pass_engineering": true,
+          "fit_h": 391.24453331179836,
+          "h_true": 391.25,
+          "abs_err_h_nm": 0.005466688201636316,
+          "scope": "INDEPENDENT_VALIDATOR_ONLY; 4 cases sparse stress test not domain guarantee"
+        },
+        {
+          "anon_case": "ANON_02",
+          "case": "N02",
+          "D_true": 101.0,
+          "D_hat": 101.24109919653004,
+          "abs_err_nm": 0.24109919653004397,
+          "engineering_target_nm": 10.100000000000001,
+          "pass_engineering": true,
+          "fit_h": 432.42453125289455,
+          "h_true": 432.5,
+          "abs_err_h_nm": 0.07546874710544671,
+          "scope": "INDEPENDENT_VALIDATOR_ONLY; 4 cases sparse stress test not domain guarantee"
+        },
+        {
+          "anon_case": "ANON_03",
+          "case": "N03",
+          "D_true": 143.0,
+          "D_hat": 143.26416607970438,
+          "abs_err_nm": 0.2641660797043812,
+          "engineering_target_nm": 14.3,
+          "pass_engineering": true,
+          "fit_h": 478.7407140713144,
+          "h_true": 478.75,
+          "abs_err_h_nm": 0.009285928685585532,
+          "scope": "INDEPENDENT_VALIDATOR_ONLY; 4 cases sparse stress test not domain guarantee"
+        },
+        {
+          "anon_case": "ANON_04",
+          "case": "N04",
+          "D_true": 181.0,
+          "D_hat": 180.37085410460458,
+          "abs_err_nm": 0.6291458953954248,
+          "engineering_target_nm": 18.1,
+          "pass_engineering": true,
+          "fit_h": 526.4818227695525,
+          "h_true": 526.25,
+          "abs_err_h_nm": 0.23182276955253656,
+          "scope": "INDEPENDENT_VALIDATOR_ONLY; 4 cases sparse stress test not domain guarantee"
+        }
+      ]
+    },
+    "anon_names": [
+      "ANON_01",
+      "ANON_02",
+      "ANON_03",
+      "ANON_04"
+    ],
+    "render_mat_files": [
+      "ANON_01_at_offset.mat",
+      "ANON_01_default.mat",
+      "ANON_01_wide.mat",
+      "ANON_02_at_offset.mat",
+      "ANON_02_default.mat",
+      "ANON_02_wide.mat",
+      "ANON_03_at_offset.mat",
+      "ANON_03_default.mat",
+      "ANON_03_wide.mat",
+      "ANON_04_at_offset.mat",
+      "ANON_04_default.mat",
+      "ANON_04_wide.mat"
+    ],
+    "n_render_mats": 12,
+    "n_original_solver_mat_under_v142_results": 0
+  },
+  "M": {
+    "F2_old_stats": {
+      "count": 6,
+      "MAE_nm": 2.751917769836067,
+      "RMSE_nm": 3.0542121224701333,
+      "max_abs_error_nm": 4.578190364916125,
+      "signed_errors_nm": [
+        -4.578190364916125,
+        0.27358906303666686,
+        3.1199810335311895,
+        2.079697107378422,
+        -3.1627431450128825,
+        3.2973059051411155
+      ],
+      "engineer_goal_pass": 6
+    },
+    "F2c_new_stats": {
+      "count": 6,
+      "MAE_nm": 0.8404876292610517,
+      "RMSE_nm": 1.2365323182745716,
+      "max_abs_error_nm": 2.6532606786727513,
+      "signed_errors_nm": [
+        -0.2569391802140544,
+        0.28076269425518774,
+        0.2252614367446455,
+        0.2585476311477066,
+        1.3681541545319647,
+        -2.6532606786727513
+      ],
+      "engineer_goal_pass": 6
+    }
+  },
+  "profiles": {
+    "M": {
+      "M01": {
+        "n_D_points": 19,
+        "first_D": 30.0,
+        "last_D": 200.0,
+        "grid_coverage_complete": false,
+        "adaptive_coverage_complete": false,
+        "scientifically_complete": false,
+        "n_points_incomplete": 10,
+        "exact_joint_witnesses": 1,
+        "profile_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "forward_calls_from_checkpoint": 9116,
+        "charged_allocation": 45000
+      },
+      "M02": {
+        "n_D_points": 19,
+        "first_D": 30.0,
+        "last_D": 200.0,
+        "grid_coverage_complete": false,
+        "adaptive_coverage_complete": false,
+        "scientifically_complete": false,
+        "n_points_incomplete": 19,
+        "exact_joint_witnesses": 1,
+        "profile_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "forward_calls_from_checkpoint": 8292,
+        "charged_allocation": 45000
+      },
+      "M03": {
+        "n_D_points": 19,
+        "first_D": 30.0,
+        "last_D": 200.0,
+        "grid_coverage_complete": false,
+        "adaptive_coverage_complete": false,
+        "scientifically_complete": false,
+        "n_points_incomplete": 18,
+        "exact_joint_witnesses": 1,
+        "profile_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "forward_calls_from_checkpoint": 8592,
+        "charged_allocation": 45000
+      },
+      "M04": {
+        "n_D_points": 19,
+        "first_D": 30.0,
+        "last_D": 200.0,
+        "grid_coverage_complete": false,
+        "adaptive_coverage_complete": false,
+        "scientifically_complete": false,
+        "n_points_incomplete": 18,
+        "exact_joint_witnesses": 1,
+        "profile_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "forward_calls_from_checkpoint": 8436,
+        "charged_allocation": 45000
+      },
+      "M05": {
+        "n_D_points": 19,
+        "first_D": 30.0,
+        "last_D": 200.0,
+        "grid_coverage_complete": false,
+        "adaptive_coverage_complete": false,
+        "scientifically_complete": false,
+        "n_points_incomplete": 1,
+        "exact_joint_witnesses": 1,
+        "profile_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "forward_calls_from_checkpoint": 5675,
+        "charged_allocation": 45000
+      },
+      "M06": {
+        "n_D_points": 19,
+        "first_D": 30.0,
+        "last_D": 200.0,
+        "grid_coverage_complete": false,
+        "adaptive_coverage_complete": false,
+        "scientifically_complete": false,
+        "n_points_incomplete": 6,
+        "exact_joint_witnesses": 1,
+        "profile_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "forward_calls_from_checkpoint": 7249,
+        "charged_allocation": 45000
+      }
+    },
+    "N_files_already_published": [],
+    "all_M_science_complete": false
+  },
+  "budget": {
+    "published_csv_records": [
+      {
+        "event": "dev_model_forward",
+        "f2c_calls_actual": "60",
+        "f2c_calls_charged": "60",
+        "new_renders": "0",
+        "new_bem": "0",
+        "status": "COMPLETED(30 rows x old+new models)"
+      },
+      {
+        "event": "dev_M_F2c_fit",
+        "f2c_calls_actual": "238",
+        "f2c_calls_charged": "1200",
+        "new_renders": "0",
+        "new_bem": "0",
+        "status": "COMPLETED(nfev 238; numeric-jac forwards est 1200 charged)"
+      },
+      {
+        "event": "dev_M_profiles",
+        "f2c_calls_actual": "47360",
+        "f2c_calls_charged": "270000",
+        "new_renders": "0",
+        "new_bem": "0",
+        "status": "COMPLETED(6 cases x 19 pts coarse)"
+      },
+      {
+        "event": "N_estimation",
+        "f2c_calls_actual": "1216",
+        "f2c_calls_charged": "6000",
+        "new_renders": "0",
+        "new_bem": "0",
+        "status": "COMPLETED(4 anon cases multi-start)"
+      },
+      {
+        "event": "S3_F2_decomposition_v141_carry",
+        "f2c_calls_actual": "0",
+        "f2c_calls_charged": "0",
+        "new_renders": "0",
+        "new_bem": "0",
+        "status": "V141 event listed for continuity only"
+      }
+    ],
+    "source_csv_reported_total_actual": {
+      "event": "TOTAL_V141+V142_actual",
+      "f2c_calls_actual": "48874",
+      "f2c_calls_charged": "277260",
+      "new_renders": "0",
+      "new_bem": "0",
+      "status": "ACTUAL_COUNTS; charged reserves included; nothing hardcoded"
+    },
+    "rows_bem_total": 0,
+    "rows_render_total": 0,
+    "sqlite_sha256": "35693c4271f36a734ba25bae0b4fdcaa667c45b52c3b8fec5379d3de97393b16",
+    "sqlite_tables": [
+      "budget"
+    ],
+    "original_events_table_published": false,
+    "assembled_budget_rows": [
+      {
+        "event": "dev_model_forward",
+        "f2c_calls": 60,
+        "charged": 60,
+        "new_renders": 0,
+        "new_bem": 0,
+        "status": "COMPLETED(30 rows x old+new models)"
+      },
+      {
+        "event": "dev_M_F2c_fit",
+        "f2c_calls": 238,
+        "charged": 1200,
+        "new_renders": 0,
+        "new_bem": 0,
+        "status": "COMPLETED(nfev 238; numeric-jac forwards est 1200 charged)"
+      },
+      {
+        "event": "dev_M_profiles",
+        "f2c_calls": 47360,
+        "charged": 270000,
+        "new_renders": 0,
+        "new_bem": 0,
+        "status": "COMPLETED(6 cases x 19 pts coarse)"
+      },
+      {
+        "event": "N_estimation",
+        "f2c_calls": 1216,
+        "charged": 6000,
+        "new_renders": 0,
+        "new_bem": 0,
+        "status": "COMPLETED(4 anon cases multi-start)"
+      },
+      {
+        "event": "S3_F2_decomposition_v141_carry",
+        "f2c_calls": 0,
+        "charged": 0,
+        "new_renders": 0,
+        "new_bem": 0,
+        "status": "V141 event listed for continuity only"
+      }
+    ]
+  },
+  "issues": [
+    "R01_MODEL_CODE_NOT_AT_RECORDED_FREEZE_GIT_COMMIT",
+    "R01_ANON_ESTIMATOR_NOT_HASHED_IN_FREEZE",
+    "R02_N_ORIGINAL_BEM_SOLVE_NOT_PUBLISHED_UNDER_RESULTS_V142",
+    "R05_ALL_M_PROFILES_STILL_INCOMPLETE",
+    "R03_ORIGINAL_ATOMIC_EVENT_TABLE_NOT_IN_PUBLISHED_BUDGET_SQLITE",
+    "R02_PUBLISHED_BUDGET_CSV_HAS_ZERO_BEM_EVENTS_WHILE_STATUS_CLAIMS_4",
+    "R02_PUBLISHED_BUDGET_CSV_HAS_ZERO_RENDER_EVENTS_WHILE_STATUS_CLAIMS_12"
+  ],
+  "source_evidence_level": "PUBLISHED_SOURCE_TEXT_AND_SUMMARIES_RECOMPUTED__NO_ORIGINAL_MAXWELL_SOLVE_REDERIVATION",
+  "scientific_verdict": "PARTIAL_ACCEPTED__CANNOT_CERTIFY_BLIND_PROTOCOL_OR_UNIQUE_DIAMETER"
+}
