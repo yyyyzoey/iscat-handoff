@@ -1,6 +1,6 @@
 {
   "task": "V141_SUBPIXEL_COMPLEX_FIELD_ERROR_SEPARATION_AND_QUALIFIED_SIZING",
-  "git_commit": "81dc2dca28a5b49ea78c8fed03800565a0302fb4",
+  "git_commit": "a49f1242d08188dfe013a71bb43101fba0661f5f",
   "stage_states": {
     "SOURCE_IDENTITY": "PARTIAL_PASS: pipeline-key+ledger linked; solve content SHA verified per file; no embedded cryptographic proof",
     "SOURCE_FIELD_REPLAY": "PASS: direct-field C replay max_abs 5.17e-16-6.86e-16 across 12 variants",
