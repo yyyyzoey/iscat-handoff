@@ -1,0 +1,14 @@
+{
+  "schema": "iscat141.return_receipt.1",
+  "mechanical_and_saved_array_replay": "PASS",
+  "errors": [],
+  "arithmetic_replay_from_archive": {
+    "M02_S1_BILINEAR": 1.6436140009324402e-05,
+    "M02_S2_CUBIC": 1.6436140009324402e-05,
+    "M05_S1_BILINEAR": 0.012708129897194727,
+    "M05_S2_CUBIC": 4.517083868265399e-05
+  },
+  "independent_maxwell_physics": "NOT_CERTIFIED_BY_ARCHIVE_REPLAY",
+  "real_experimental_absolute_sizing": "NOT_VALIDATED",
+  "archive_sha256": "a1d5542a483fbc95ad0b681593a2516961851f3cff12414779e868e5d3b088b0"
+}

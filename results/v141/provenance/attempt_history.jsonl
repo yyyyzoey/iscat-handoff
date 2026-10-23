@@ -1,0 +1,4 @@
+{"revision": "v140", "attempt": "canonical_oracle first run", "status": "BLOCKED", "reason": "config 41-char blob typo"}
+{"revision": "v140", "attempt": "canonical_oracle after prefix-match patch", "status": "COMPLETED", "note": "transparent CONFIG_TYPO_PREFIX_MATCH"}
+{"revision": "v141", "attempt": "field_level separation", "status": "COMPLETED", "detail": "24 rows, 0 errors; S1 bilinear 2/6, S2 cubic 6/6 image-level, cubic field ringing 600-760% recorded"}
+{"revision": "v141", "attempt": "S3 F2 decomposition", "status": "COMPLETED", "detail": "6 F2 calls; identity enforced"}

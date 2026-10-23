@@ -1,0 +1,19 @@
+{
+  "schema": "iscat141.budget_reconciliation.1",
+  "v140_new_budget_sqlite_rows": [
+    [
+      "P2b_fourway_F2",
+      6,
+      0,
+      0
+    ],
+    [
+      "P2b_fourway_F2",
+      6,
+      0,
+      0
+    ]
+  ],
+  "explanation": "v140_fourway.py ran twice: first run completed 6 real F2 forwards then crashed on a closed-connection SELECT (calls real, counted); second run completed 6 more. 6+6=12 matches published TOTAL_V140=12.",
+  "verdict": "BUDGET_RECONCILIATION_CONFIRMED"
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "iscat141.v140_publication_review.1",
+  "reviewed_fixed_commit": "81dc2dca28a5b49ea78c8fed03800565a0302fb4",
+  "frozen_sources_exact_40hex": {
+    "tools/v125_model_library.py": {
+      "git_blob": "a81ef4d1d54721471f827a31ccac9c6b0b35bf8b",
+      "sha256": "fda680821f05f93475498bc07d78786f3399eebfcdb9f2ff7c12b61cd97e910d",
+      "bytes": 15855
+    },
+    "source/v126_physical_forward_adapter.m": {
+      "git_blob": "3b60804ac5f604f40a5b2f5312ee59c277f255a8",
+      "sha256": "09571b64bc94df038d80416e0a59e7b6401950362100b70aebb3151ed98d77e9",
+      "bytes": 12122
+    },
+    "tools/v140_canonical_oracle.py": {
+      "git_blob": "267d18ab86495f1e71adb1c1cc85c6b8a977d141",
+      "sha256": "147b7c25c76680d4cad743d2459e6a7c4bed19b0ad3930a73710381bd407baf7",
+      "bytes": 14254
+    }
+  },
+  "comparison": {
+    "default": {
+      "n": 6,
+      "pass_1pct": 6,
+      "min_relative_L2": 1.7211698639091313e-05,
+      "max_relative_L2": 1.9295903251953194e-05
+    },
+    "at_offset": {
+      "n": 6,
+      "pass_1pct": 2,
+      "min_relative_L2": 1.6436140009324402e-05,
+      "max_relative_L2": 0.016829422089174272
+    }
+  },
+  "final_oracle_report_exists": true,
+  "earlier_failure_record": {
+    "status": "BLOCKED_NOT_EVALUATED",
+    "error": "ValueError('Frozen source Git blob mismatch: tools/v125_model_library.py a81ef4d1d54721471f827a31ccac9c6b0b35bf8b')"
+  },
+  "earlier_failure_disposition": "HISTORICAL_ATTEMPT_PRESENT_SUCCESS_REPORT_REQUIRES_SEPARATE_RUN_PROOF",
+  "v140_config_invalid_source_sha_length": {
+    "tools/v125_model_library.py": {
+      "value": "a81ef4d1d54721471f827a31ccac9c6b0b35bf8b8",
+      "length": 41
+    }
+  },
+  "lineage_count": 18,
+  "lineage_level": "CACHE_KEY_AND_LEDGER_LINK_NOT_EMBEDDED_SOLVE_SHA",
+  "six_reportable_D_all_null": true,
+  "old_v137_camera_breach_events": 23958,
+  "old_v137_camera_hard_limit": 6000,
+  "science_verdict": "NOT_INDEPENDENTLY_PHYSICS_QUALIFIED_BY_TEXT_RECORDS_ALONE"
+}

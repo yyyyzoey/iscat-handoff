@@ -1,0 +1,36 @@
+{
+  "task": "V141_SUBPIXEL_COMPLEX_FIELD_ERROR_SEPARATION_AND_QUALIFIED_SIZING",
+  "git_commit": "81dc2dca28a5b49ea78c8fed03800565a0302fb4",
+  "stage_states": {
+    "SOURCE_IDENTITY": "PARTIAL_PASS: pipeline-key+ledger linked; solve content SHA verified per file; no embedded cryptographic proof",
+    "SOURCE_FIELD_REPLAY": "PASS: direct-field C replay max_abs 5.17e-16-6.86e-16 across 12 variants",
+    "SPATIAL_INTERPOLATION": "DIAGNOSED: bilinear fractional-grid error 0.94-1.68% (M02 integer exact 1.6e-5); S2 cubic kernel passes image gate 6/6 BUT field-level ringing 600-760% -> NOT adopted; new spatial_kernel_id+model_id required for formal use",
+    "D_H_MODEL": "CONDITIONAL: frozen F2 vs direct default 6/6<=1%, at_offset 1/6 (M02); three-way residual identity exact",
+    "SIZING_PROFILE": "NOT_EXTENDED this round (forward qualification partial); historic R1 profiles retained",
+    "DETECTION_FPR": "HISTORICAL 0/60,0/60,2/60 preserved (B=100000 FAIL); no new samples",
+    "EXPERIMENTAL_ABSOLUTE": "NOT_VALIDATED"
+  },
+  "reportability": {
+    "all_six_reportable_D_null": true,
+    "note": "candidates + known_compatible_components retained; dev epsilon 0.003004 still lineage-unqualified"
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "v141": {
+      "f2_calls": 6,
+      "limit": 120000,
+      "new_renders": 0,
+      "render_limit": 12,
+      "new_camera_exposures": 0,
+      "new_bem": 0
+    },
+    "v140_budget_reconciliation": "BUDGET_RECONCILIATION_CONFIRMED (6+6=12 actual calls; failed first run counted)",
+    "historical_preserved": {
+      "v137_camera": "23958/6000",
+      "v137_R1_f2": 1659953,
+      "v138_f2": 60,
+      "v139_f2": 12,
+      "v140_f2": 12
+    }
+  }
+}

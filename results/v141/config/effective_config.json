@@ -1,0 +1,101 @@
+{
+  "schema": "iscat141.science_config.1",
+  "task_id": "V141_SUBPIXEL_COMPLEX_FIELD_ERROR_SEPARATION_AND_QUALIFIED_SIZING",
+  "repository": "yyyyzoey/iscat-handoff",
+  "fixed_review_commit": "81dc2dca28a5b49ea78c8fed03800565a0302fb4",
+  "locked_F2_commit": "b522894725f159a2a585eafe27c73dd6275894f3",
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "locked_model_kind": "F2_not_a_knot_tensor_cubic_physical_D_h__spatial_bilinear",
+  "primary_observable": "SIGNED_STATIC_C_FROM_LINEAR_INTENSITY",
+  "mat_to_canonical": {
+    "complex_field": "transpose_H5_compound_2_1_0_then_flip_axis_0",
+    "fine_x": "-fine_x_raw[::-1]",
+    "fine_y": "fine_y_raw",
+    "camera_C": "RAW_C.T[::-1,:]",
+    "offset": "canonical_query_minus_dx_dy",
+    "source": "tools/v125_model_library.py::_cplx/_camx_flip and source/v126_physical_forward_adapter.m",
+    "per_case_transform_optimization": false
+  },
+  "frozen_source_git_blobs_full_sha1": {
+    "tools/v125_model_library.py": "a81ef4d1d54721471f827a31ccac9c6b0b35bf8b",
+    "source/v126_physical_forward_adapter.m": "3b60804ac5f604f40a5b2f5312ee59c277f255a8",
+    "tools/v140_canonical_oracle.py": "267d18ab86495f1e71adb1c1cc85c6b8a977d141"
+  },
+  "inputs": {
+    "lineage_csv": "results/v140/provenance/cache_key_lineage.csv",
+    "v140_canonical_comparison": "results/v140/validation/canonical_oracle_comparison.csv",
+    "v140_failure": "results/v140/validation/canonical_oracle_error.json",
+    "v140_summary": "results/v140/validation/canonical_oracle_summary.json",
+    "v140_source_fields": "results/v126/renders",
+    "v140_camera_h5": "results/v132/validation/new_M_images.h5",
+    "v133_model_passport": "results/v133/M_F2_baseline/model_passport.json",
+    "v133_library": "results/v128/library/v128_Dh_train_fields.h5",
+    "dev_envelope": "results/v138/validation/development_envelope_frozen.json",
+    "previous_profiles": "results/v137_r1/profiles"
+  },
+  "expected_sha256": {
+    "library_h5": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "merged_M_h5": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b"
+  },
+  "confirmed_conditions": {
+    "suspended": true,
+    "pure_water_temperature_C": 26,
+    "lambda_vac_nm": 520,
+    "camera_pixel_um": 14,
+    "nominal_objective_magnification": 50,
+    "glass_slide": false
+  },
+  "conditional_assumptions": {
+    "nwater": 1.3353,
+    "nglass": 1.5,
+    "nparticle_real_imag": [1.38, 0],
+    "NA": 0.8,
+    "extra_magnification": 1,
+    "camera_pixel_object_nm": 280,
+    "subsamples_per_pixel": 5,
+    "fine_pitch_nm": 56,
+    "camera_n": 17,
+    "score_n": 13,
+    "focus_z_nm": 450
+  },
+  "M_opened_development_cases": [
+    {"case": "M01", "D_nm": 53, "h_nm": 365.625, "dx_nm": 42, "dy_nm": -70},
+    {"case": "M02", "D_nm": 81, "h_nm": 415.625, "dx_nm": -112, "dy_nm": 56},
+    {"case": "M03", "D_nm": 119, "h_nm": 446.875, "dx_nm": 84, "dy_nm": 98},
+    {"case": "M04", "D_nm": 149, "h_nm": 471.875, "dx_nm": -70, "dy_nm": -112},
+    {"case": "M05", "D_nm": 171, "h_nm": 509.375, "dx_nm": 126, "dy_nm": -42},
+    {"case": "M06", "D_nm": 187, "h_nm": 540.625, "dx_nm": -98, "dy_nm": 70}
+  ],
+  "space_interpolation_candidates": [
+    {"id": "S1_BILINEAR", "method": "source_complex_bilinear", "legacy_frozen_spatial": true},
+    {"id": "S2_CUBIC", "method": "source_complex_real_imag_RectBivariateSpline_k3_s0", "legacy_frozen_spatial": false}
+  ],
+  "qualification": {
+    "same_file_C_from_I_maxabs": 1e-12,
+    "raw_MAT_to_merged_C_maxabs": 0,
+    "space_oracle_vs_direct_relative_L2_max": 0.01,
+    "frozen_F2_vs_direct_relative_L2_max": 0.01,
+    "return_for_near_zero_norm": "ABSOLUTE_ONLY_RELATIVE_UNDEFINED",
+    "frozen_dev_epsilon_L2_historical_unqualified": 0.0030038234921309446,
+    "reportable_requires_complete_profile_source_model_camera_and_nonambiguous_D": true,
+    "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+  },
+  "hard_budget_new_v141": {
+    "new_BEM_solver_attempts": 0,
+    "new_render_from_existing_solve_attempts": 12,
+    "new_camera_exposure_events": 0,
+    "new_F2_forward_calls": 120000,
+    "heavy_physics_concurrency": 1,
+    "wall_hours_including_finalize": 12,
+    "finalize_minutes": 30
+  },
+  "historical_failures_immutable": {
+    "v137_camera_exposures": 23958,
+    "v137_camera_limit": 6000,
+    "v137_R1_f2_calls": 1659953,
+    "v138_f2_calls": 60,
+    "v139_f2_calls": 12,
+    "v140_reported_f2_calls": 12,
+    "v140_recorded_failed_frozen_source_attempt": true
+  }
+}

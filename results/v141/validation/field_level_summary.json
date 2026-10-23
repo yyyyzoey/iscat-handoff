@@ -1,0 +1,66 @@
+{
+  "schema": "iscat141.field-level.1",
+  "frozen_source_verified": {
+    "tools/v125_model_library.py": {
+      "git_blob": "a81ef4d1d54721471f827a31ccac9c6b0b35bf8b",
+      "sha256": "fda680821f05f93475498bc07d78786f3399eebfcdb9f2ff7c12b61cd97e910d",
+      "bytes": 15855
+    },
+    "source/v126_physical_forward_adapter.m": {
+      "git_blob": "3b60804ac5f604f40a5b2f5312ee59c277f255a8",
+      "sha256": "09571b64bc94df038d80416e0a59e7b6401950362100b70aebb3151ed98d77e9",
+      "bytes": 12122
+    },
+    "tools/v140_canonical_oracle.py": {
+      "git_blob": "267d18ab86495f1e71adb1c1cc85c6b8a977d141",
+      "sha256": "147b7c25c76680d4cad743d2459e6a7c4bed19b0ad3930a73710381bd407baf7",
+      "bytes": 14254
+    }
+  },
+  "source_solve_checks": {
+    "M01": {
+      "source_solve_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v126\\bem_cache\\sol_ae92748129e4047a0c71a937b92eb53d3ef322e7.mat",
+      "sha256": "83cc42b9d22e71ea84cfb14e391003474252b1d40f3f61934db9f298c25db641",
+      "source_linkage": "PIPELINE_CACHE_KEY_LEDGER_LINKED_NOT_EMBEDDED_SOLVE_CONTENT_SHA"
+    },
+    "M02": {
+      "source_solve_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v126\\bem_cache\\sol_ef5d8d443a82b27a20ad1b79e7f931d81eed96e4.mat",
+      "sha256": "b261eb29f4118f927edc4ccb9a2fcb6efc894dd2e6dea14caa9dec2aadfaef85",
+      "source_linkage": "PIPELINE_CACHE_KEY_LEDGER_LINKED_NOT_EMBEDDED_SOLVE_CONTENT_SHA"
+    },
+    "M03": {
+      "source_solve_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v126\\bem_cache\\sol_36c967d79caed60854486d3412cede142b978585.mat",
+      "sha256": "2a37d06d28ac7ff5282089f29992e79d9ef86c338ae03413064c430ce9af6d6a",
+      "source_linkage": "PIPELINE_CACHE_KEY_LEDGER_LINKED_NOT_EMBEDDED_SOLVE_CONTENT_SHA"
+    },
+    "M04": {
+      "source_solve_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v126\\bem_cache\\sol_f7aafb7cd97347efd64449df7c701d5d70620aa8.mat",
+      "sha256": "3a70f500b462adde037fd74bf51fca3afef0e638394b2ceac9356cb0768de1bd",
+      "source_linkage": "PIPELINE_CACHE_KEY_LEDGER_LINKED_NOT_EMBEDDED_SOLVE_CONTENT_SHA"
+    },
+    "M05": {
+      "source_solve_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v126\\bem_cache\\sol_fe2ac21012b35361a67d53c01d7a136269924f3f.mat",
+      "sha256": "b3c3969c3ccf13d4e8bb6391b9cb503558e5f199747224be925dd18d5c1ae5ec",
+      "source_linkage": "PIPELINE_CACHE_KEY_LEDGER_LINKED_NOT_EMBEDDED_SOLVE_CONTENT_SHA"
+    },
+    "M06": {
+      "source_solve_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v126\\bem_cache\\sol_1a6084af235d44da19c62557233b8f4fa9698698.mat",
+      "sha256": "14d3d9489a4f1d0a8b369fb4c30a7128a99b61bb33b8bc79081dd5b05d3ad217",
+      "source_linkage": "PIPELINE_CACHE_KEY_LEDGER_LINKED_NOT_EMBEDDED_SOLVE_CONTENT_SHA"
+    }
+  },
+  "n_rows": 24,
+  "n_expected_rows": 24,
+  "errors": [],
+  "per_kernel_offset": {
+    "S1_BILINEAR": {
+      "n": 6,
+      "n_below_1pct": 2
+    },
+    "S2_CUBIC": {
+      "n": 6,
+      "n_below_1pct": 6
+    }
+  },
+  "science_verdict": "DIAGNOSTIC_ONLY_REQUIRES_INDEPENDENT_GATE_AND_SIZING_CHECKS"
+}

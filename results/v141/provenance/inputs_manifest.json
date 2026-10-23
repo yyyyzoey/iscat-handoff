@@ -1,0 +1,20 @@
+{
+  "inputs": {
+    "results/v128/library/v128_Dh_train_fields.h5": {
+      "sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+      "bytes": 53435213
+    },
+    "results/v132/validation/new_M_images.h5": {
+      "sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+      "bytes": 60246
+    },
+    "results/v140/provenance/cache_key_lineage.csv": {
+      "sha256": "227f2b456a53907a7d1cdfdb526f45a94ee1dc9a857321d63d09beb312bffd3e",
+      "bytes": 10998
+    },
+    "results/v126/logs/v126_matlab_ledger.csv": {
+      "sha256": "375ea770ad1edd832da90e297ece9fecbe01e8de0979e3fec7e0857a706ab471",
+      "bytes": 31419
+    }
+  }
+}
