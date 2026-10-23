@@ -1,0 +1,378 @@
+{
+  "cases": {
+    "ANON_01": {
+      "candidate_D": 59.0,
+      "conditional_compatible_components": "SEE profile_witness_audit epsilon_witness_D (empirical, unqualified)",
+      "observed_competing_D_witnesses": [
+        [
+          30.0,
+          5.089790622273166e-05
+        ],
+        [
+          150.0,
+          0.001465427265955942
+        ]
+      ],
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "refinement_action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES",
+      "boundary_flags": "h/x/y interior in all recorded witnesses (no boundary flags recorded)",
+      "model_identity": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "source_identity": "V143 N_solve_lineage / V138 M mapping",
+      "optimizer_coverage": {
+        "refine_points": 0,
+        "plan_action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES"
+      },
+      "camera_detection_status": "FPR qualified 0/60 (conditional pilot); detection != reportability",
+      "reason_codes": [
+        "COMPETING_DISTANT_WITNESSES_UNDER_UNQUALIFIED_DEV_EPS",
+        "ADAPTIVE_PROFILE_NOT_COMPLETE",
+        "DETECTION_NOT_QUALIFIED_FOR_REAL_CAMERA",
+        "EXPERIMENTAL_ABSOLUTE_NOT_VALIDATED"
+      ]
+    },
+    "ANON_02": {
+      "candidate_D": 101.0,
+      "conditional_compatible_components": "SEE profile_witness_audit epsilon_witness_D (empirical, unqualified)",
+      "observed_competing_D_witnesses": [
+        [
+          100.0,
+          0.0005153869888547684
+        ],
+        [
+          160.0,
+          0.0012967729888161872
+        ]
+      ],
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "refinement_action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES",
+      "boundary_flags": "h/x/y interior in all recorded witnesses (no boundary flags recorded)",
+      "model_identity": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "source_identity": "V143 N_solve_lineage / V138 M mapping",
+      "optimizer_coverage": {
+        "refine_points": 0,
+        "plan_action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES"
+      },
+      "camera_detection_status": "FPR qualified 0/60 (conditional pilot); detection != reportability",
+      "reason_codes": [
+        "COMPETING_DISTANT_WITNESSES_UNDER_UNQUALIFIED_DEV_EPS",
+        "ADAPTIVE_PROFILE_NOT_COMPLETE",
+        "DETECTION_NOT_QUALIFIED_FOR_REAL_CAMERA",
+        "EXPERIMENTAL_ABSOLUTE_NOT_VALIDATED"
+      ]
+    },
+    "ANON_03": {
+      "candidate_D": 143.0,
+      "conditional_compatible_components": "SEE profile_witness_audit epsilon_witness_D (empirical, unqualified)",
+      "observed_competing_D_witnesses": [
+        [
+          120.0,
+          2.8438580954278437e-06
+        ],
+        [
+          130.0,
+          2.843858091725256e-06
+        ],
+        [
+          140.0,
+          2.843858091747453e-06
+        ],
+        [
+          143.26416607970438,
+          2.844025739539947e-06
+        ],
+        [
+          150.0,
+          2.8438676179405633e-06
+        ],
+        [
+          160.0,
+          2.843858159556784e-06
+        ]
+      ],
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "refinement_action": "TARGETED_FIXED_D_NUISANCE_REFINEMENT",
+      "boundary_flags": "h/x/y interior in all recorded witnesses (no boundary flags recorded)",
+      "model_identity": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "source_identity": "V143 N_solve_lineage / V138 M mapping",
+      "optimizer_coverage": {
+        "refine_points": 6,
+        "plan_action": "TARGETED_FIXED_D_NUISANCE_REFINEMENT"
+      },
+      "camera_detection_status": "FPR qualified 0/60 (conditional pilot); detection != reportability",
+      "reason_codes": [
+        "D_H_COMPENSATION_FLAT_VALLEY_OBSERVED",
+        "ADAPTIVE_PROFILE_NOT_COMPLETE",
+        "DETECTION_NOT_QUALIFIED_FOR_REAL_CAMERA",
+        "EXPERIMENTAL_ABSOLUTE_NOT_VALIDATED"
+      ]
+    },
+    "ANON_04": {
+      "candidate_D": 181.0,
+      "conditional_compatible_components": "SEE profile_witness_audit epsilon_witness_D (empirical, unqualified)",
+      "observed_competing_D_witnesses": [
+        [
+          170.37085410460458,
+          2.9101455773535928e-05
+        ],
+        [
+          175.37085410460458,
+          2.910145559063946e-05
+        ],
+        [
+          177.87085410460458,
+          2.9101806706470008e-05
+        ],
+        [
+          182.87085410460458,
+          2.9101455597181148e-05
+        ],
+        [
+          185.37085410460458,
+          2.910145598078391e-05
+        ],
+        [
+          190.37085410460458,
+          2.91014559946088e-05
+        ]
+      ],
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "refinement_action": "TARGETED_FIXED_D_NUISANCE_REFINEMENT",
+      "boundary_flags": "h/x/y interior in all recorded witnesses (no boundary flags recorded)",
+      "model_identity": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "source_identity": "V143 N_solve_lineage / V138 M mapping",
+      "optimizer_coverage": {
+        "refine_points": 6,
+        "plan_action": "TARGETED_FIXED_D_NUISANCE_REFINEMENT"
+      },
+      "camera_detection_status": "FPR qualified 0/60 (conditional pilot); detection != reportability",
+      "reason_codes": [
+        "D_H_COMPENSATION_FLAT_VALLEY_OBSERVED",
+        "ADAPTIVE_PROFILE_NOT_COMPLETE",
+        "DETECTION_NOT_QUALIFIED_FOR_REAL_CAMERA",
+        "EXPERIMENTAL_ABSOLUTE_NOT_VALIDATED"
+      ]
+    },
+    "M01": {
+      "candidate_D": 52.743060819785946,
+      "conditional_compatible_components": "SEE profile_witness_audit epsilon_witness_D (empirical, unqualified)",
+      "observed_competing_D_witnesses": [
+        [
+          50.0,
+          2.6108505158838806e-05
+        ],
+        [
+          150.0,
+          0.0014997192165081602
+        ]
+      ],
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "refinement_action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES",
+      "boundary_flags": "h/x/y interior in all recorded witnesses (no boundary flags recorded)",
+      "model_identity": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "source_identity": "V143 N_solve_lineage / V138 M mapping",
+      "optimizer_coverage": {
+        "refine_points": 0,
+        "plan_action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES"
+      },
+      "camera_detection_status": "FPR qualified 0/60 (conditional pilot); detection != reportability",
+      "reason_codes": [
+        "COMPETING_DISTANT_WITNESSES_UNDER_UNQUALIFIED_DEV_EPS",
+        "ADAPTIVE_PROFILE_NOT_COMPLETE",
+        "DETECTION_NOT_QUALIFIED_FOR_REAL_CAMERA",
+        "EXPERIMENTAL_ABSOLUTE_NOT_VALIDATED"
+      ]
+    },
+    "M02": {
+      "candidate_D": 81.28076269425519,
+      "conditional_compatible_components": "SEE profile_witness_audit epsilon_witness_D (empirical, unqualified)",
+      "observed_competing_D_witnesses": [
+        [
+          80.0,
+          1.1571857008555003e-05
+        ],
+        [
+          150.0,
+          0.001508384584853181
+        ]
+      ],
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "refinement_action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES",
+      "boundary_flags": "h/x/y interior in all recorded witnesses (no boundary flags recorded)",
+      "model_identity": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "source_identity": "V143 N_solve_lineage / V138 M mapping",
+      "optimizer_coverage": {
+        "refine_points": 0,
+        "plan_action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES"
+      },
+      "camera_detection_status": "FPR qualified 0/60 (conditional pilot); detection != reportability",
+      "reason_codes": [
+        "COMPETING_DISTANT_WITNESSES_UNDER_UNQUALIFIED_DEV_EPS",
+        "ADAPTIVE_PROFILE_NOT_COMPLETE",
+        "DETECTION_NOT_QUALIFIED_FOR_REAL_CAMERA",
+        "EXPERIMENTAL_ABSOLUTE_NOT_VALIDATED"
+      ]
+    },
+    "M03": {
+      "candidate_D": 119.22526143674465,
+      "conditional_compatible_components": "SEE profile_witness_audit epsilon_witness_D (empirical, unqualified)",
+      "observed_competing_D_witnesses": [
+        [
+          119.22526143674465,
+          4.940025881889271e-06
+        ],
+        [
+          200.0,
+          0.001571006854047395
+        ]
+      ],
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "refinement_action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES",
+      "boundary_flags": "h/x/y interior in all recorded witnesses (no boundary flags recorded)",
+      "model_identity": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "source_identity": "V143 N_solve_lineage / V138 M mapping",
+      "optimizer_coverage": {
+        "refine_points": 0,
+        "plan_action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES"
+      },
+      "camera_detection_status": "FPR qualified 0/60 (conditional pilot); detection != reportability",
+      "reason_codes": [
+        "COMPETING_DISTANT_WITNESSES_UNDER_UNQUALIFIED_DEV_EPS",
+        "ADAPTIVE_PROFILE_NOT_COMPLETE",
+        "DETECTION_NOT_QUALIFIED_FOR_REAL_CAMERA",
+        "EXPERIMENTAL_ABSOLUTE_NOT_VALIDATED"
+      ]
+    },
+    "M04": {
+      "candidate_D": 149.2585476311477,
+      "conditional_compatible_components": "SEE profile_witness_audit epsilon_witness_D (empirical, unqualified)",
+      "observed_competing_D_witnesses": [
+        [
+          130.0,
+          5.517308464430619e-06
+        ],
+        [
+          140.0,
+          5.517308540193098e-06
+        ],
+        [
+          149.2585476311477,
+          5.517308464489809e-06
+        ],
+        [
+          150.0,
+          5.517308464527496e-06
+        ],
+        [
+          160.0,
+          5.517308464253649e-06
+        ],
+        [
+          170.0,
+          5.517308504196016e-06
+        ]
+      ],
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "refinement_action": "TARGETED_FIXED_D_NUISANCE_REFINEMENT",
+      "boundary_flags": "h/x/y interior in all recorded witnesses (no boundary flags recorded)",
+      "model_identity": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "source_identity": "V143 N_solve_lineage / V138 M mapping",
+      "optimizer_coverage": {
+        "refine_points": 6,
+        "plan_action": "TARGETED_FIXED_D_NUISANCE_REFINEMENT"
+      },
+      "camera_detection_status": "FPR qualified 0/60 (conditional pilot); detection != reportability",
+      "reason_codes": [
+        "D_H_COMPENSATION_FLAT_VALLEY_OBSERVED",
+        "ADAPTIVE_PROFILE_NOT_COMPLETE",
+        "DETECTION_NOT_QUALIFIED_FOR_REAL_CAMERA",
+        "EXPERIMENTAL_ABSOLUTE_NOT_VALIDATED"
+      ]
+    },
+    "M05": {
+      "candidate_D": 172.36815415453196,
+      "conditional_compatible_components": "SEE profile_witness_audit epsilon_witness_D (empirical, unqualified)",
+      "observed_competing_D_witnesses": [
+        [
+          160.0,
+          0.0015120292397985795
+        ],
+        [
+          200.0,
+          0.0003871878632380597
+        ]
+      ],
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "refinement_action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES",
+      "boundary_flags": "h/x/y interior in all recorded witnesses (no boundary flags recorded)",
+      "model_identity": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "source_identity": "V143 N_solve_lineage / V138 M mapping",
+      "optimizer_coverage": {
+        "refine_points": 0,
+        "plan_action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES"
+      },
+      "camera_detection_status": "FPR qualified 0/60 (conditional pilot); detection != reportability",
+      "reason_codes": [
+        "COMPETING_DISTANT_WITNESSES_UNDER_UNQUALIFIED_DEV_EPS",
+        "ADAPTIVE_PROFILE_NOT_COMPLETE",
+        "DETECTION_NOT_QUALIFIED_FOR_REAL_CAMERA",
+        "EXPERIMENTAL_ABSOLUTE_NOT_VALIDATED"
+      ]
+    },
+    "M06": {
+      "candidate_D": 184.34673932132725,
+      "conditional_compatible_components": "SEE profile_witness_audit epsilon_witness_D (empirical, unqualified)",
+      "observed_competing_D_witnesses": [
+        [
+          174.34673932132725,
+          4.239303443533858e-05
+        ],
+        [
+          179.34673932132725,
+          4.239303524149225e-05
+        ],
+        [
+          181.84673932132725,
+          4.2393033592183714e-05
+        ],
+        [
+          186.84673932132725,
+          4.239303360944405e-05
+        ],
+        [
+          189.34673932132725,
+          4.239303359195489e-05
+        ],
+        [
+          194.34673932132725,
+          4.239303359174136e-05
+        ]
+      ],
+      "conditional_identifiable": null,
+      "reportable_D": null,
+      "refinement_action": "TARGETED_FIXED_D_NUISANCE_REFINEMENT",
+      "boundary_flags": "h/x/y interior in all recorded witnesses (no boundary flags recorded)",
+      "model_identity": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "source_identity": "V143 N_solve_lineage / V138 M mapping",
+      "optimizer_coverage": {
+        "refine_points": 6,
+        "plan_action": "TARGETED_FIXED_D_NUISANCE_REFINEMENT"
+      },
+      "camera_detection_status": "FPR qualified 0/60 (conditional pilot); detection != reportability",
+      "reason_codes": [
+        "D_H_COMPENSATION_FLAT_VALLEY_OBSERVED",
+        "ADAPTIVE_PROFILE_NOT_COMPLETE",
+        "DETECTION_NOT_QUALIFIED_FOR_REAL_CAMERA",
+        "EXPERIMENTAL_ABSOLUTE_NOT_VALIDATED"
+      ]
+    }
+  }
+}

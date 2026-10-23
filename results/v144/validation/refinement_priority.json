@@ -1,0 +1,147 @@
+{
+  "schema": "iscat144.refinement_plan.1",
+  "cases": {
+    "ANON_01": {
+      "action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES",
+      "reason": "Existing distant attainable D values both under the UNQUALIFIED empirical epsilon",
+      "separated_pair": {
+        "D1": 30.0,
+        "R1": 5.089790622273166e-05,
+        "D2": 150.0,
+        "R2": 0.001465427265955942,
+        "separation_nm": 120.0
+      },
+      "new_forward_needed": false,
+      "target_D": []
+    },
+    "ANON_02": {
+      "action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES",
+      "reason": "Existing distant attainable D values both under the UNQUALIFIED empirical epsilon",
+      "separated_pair": {
+        "D1": 100.0,
+        "R1": 0.0005153869888547684,
+        "D2": 160.0,
+        "R2": 0.0012967729888161872,
+        "separation_nm": 60.0
+      },
+      "new_forward_needed": false,
+      "target_D": []
+    },
+    "ANON_03": {
+      "action": "TARGETED_FIXED_D_NUISANCE_REFINEMENT",
+      "reason": "No distant competing witness yet; incomplete/untested diameters remain UNKNOWN",
+      "new_forward_needed": true,
+      "target_D": [
+        143.26416607970438,
+        140.0,
+        150.0,
+        130.0,
+        160.0,
+        120.0
+      ],
+      "every_fixed_D_must_optimize": "h,x,y from multiple independent height basins; preserve prior valid point",
+      "may_certify_global_uniqueness": false
+    },
+    "ANON_04": {
+      "action": "TARGETED_FIXED_D_NUISANCE_REFINEMENT",
+      "reason": "No distant competing witness yet; incomplete/untested diameters remain UNKNOWN",
+      "new_forward_needed": true,
+      "target_D": [
+        182.87085410460458,
+        177.87085410460458,
+        185.37085410460458,
+        175.37085410460458,
+        190.37085410460458,
+        170.37085410460458
+      ],
+      "every_fixed_D_must_optimize": "h,x,y from multiple independent height basins; preserve prior valid point",
+      "may_certify_global_uniqueness": false
+    },
+    "M01": {
+      "action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES",
+      "reason": "Existing distant attainable D values both under the UNQUALIFIED empirical epsilon",
+      "separated_pair": {
+        "D1": 50.0,
+        "R1": 2.6108505158838806e-05,
+        "D2": 150.0,
+        "R2": 0.0014997192165081602,
+        "separation_nm": 100.0
+      },
+      "new_forward_needed": false,
+      "target_D": []
+    },
+    "M02": {
+      "action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES",
+      "reason": "Existing distant attainable D values both under the UNQUALIFIED empirical epsilon",
+      "separated_pair": {
+        "D1": 80.0,
+        "R1": 1.1571857008555003e-05,
+        "D2": 150.0,
+        "R2": 0.001508384584853181,
+        "separation_nm": 70.0
+      },
+      "new_forward_needed": false,
+      "target_D": []
+    },
+    "M03": {
+      "action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES",
+      "reason": "Existing distant attainable D values both under the UNQUALIFIED empirical epsilon",
+      "separated_pair": {
+        "D1": 119.22526143674465,
+        "R1": 4.940025881889271e-06,
+        "D2": 200.0,
+        "R2": 0.001571006854047395,
+        "separation_nm": 80.77473856325535
+      },
+      "new_forward_needed": false,
+      "target_D": []
+    },
+    "M04": {
+      "action": "TARGETED_FIXED_D_NUISANCE_REFINEMENT",
+      "reason": "No distant competing witness yet; incomplete/untested diameters remain UNKNOWN",
+      "new_forward_needed": true,
+      "target_D": [
+        149.2585476311477,
+        150.0,
+        140.0,
+        160.0,
+        170.0,
+        130.0
+      ],
+      "every_fixed_D_must_optimize": "h,x,y from multiple independent height basins; preserve prior valid point",
+      "may_certify_global_uniqueness": false
+    },
+    "M05": {
+      "action": "STOP_UNIQUE_SIZING__DOCUMENT_COMPETING_WITNESSES",
+      "reason": "Existing distant attainable D values both under the UNQUALIFIED empirical epsilon",
+      "separated_pair": {
+        "D1": 160.0,
+        "R1": 0.0015120292397985795,
+        "D2": 200.0,
+        "R2": 0.0003871878632380597,
+        "separation_nm": 40.0
+      },
+      "new_forward_needed": false,
+      "target_D": []
+    },
+    "M06": {
+      "action": "TARGETED_FIXED_D_NUISANCE_REFINEMENT",
+      "reason": "No distant competing witness yet; incomplete/untested diameters remain UNKNOWN",
+      "new_forward_needed": true,
+      "target_D": [
+        186.84673932132725,
+        181.84673932132725,
+        189.34673932132725,
+        179.34673932132725,
+        194.34673932132725,
+        174.34673932132725
+      ],
+      "every_fixed_D_must_optimize": "h,x,y from multiple independent height basins; preserve prior valid point",
+      "may_certify_global_uniqueness": false
+    }
+  },
+  "context": "DO_NOT_RUN_WITHOUT_FROZEN_MODEL_AND_OBSERVATION_IDENTITY_AND_PERSISTENT_PRECHARGED_BUDGET",
+  "truth_not_used": true,
+  "no_global_optimum_claim": true,
+  "reported_diameters": []
+}

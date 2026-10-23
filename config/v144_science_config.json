@@ -1,0 +1,155 @@
+{
+  "schema": "iscat144.science_config.1",
+  "task": "V144_CANONICAL_N_ORACLE_AND_CONSERVATIVE_DIAMETER_IDENTIFIABILITY",
+  "fixed_source_git": "f6055bc03eacf27ce6b3b90232a4b4bf046f58fd",
+  "repository": "yyyyzoey/iscat-handoff",
+  "frozen_parent_F2c_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "frozen_parent_git": "ddd6db13b5603470072a28e6356cdf35b75f5990",
+  "inputs": {
+    "N_lineage": "results/v143/provenance/N_solve_lineage.json",
+    "N_original_renders": "results/v142/validation/new_N_render_mats",
+    "N_original_solves": "results/v143/provenance/n_solve_source",
+    "N_anonymous_observation": "results/v142/validation/new_N_independent_images.h5",
+    "N_estimator_candidates": "results/v142/validation/new_N_candidate_estimates.csv",
+    "N_validator_truth": "config/v142_new_N_validator_only.json",
+    "M_observation": "results/v132/validation/new_M_images.h5",
+    "M_fits": "results/v142/dev_M_F2c",
+    "v143_profile_root": "results/v143/profiles",
+    "v143_profile_inventory": "results/v143/validation/profile_inventory_and_known_components.json",
+    "v143_budget_sqlite": "results/v143/logs/v143_budget.sqlite",
+    "v143_extra_F2_calls": "results/v143/validation/n_forward_budget.json",
+    "model_library": "results/v128/library/v128_Dh_train_fields.h5",
+    "legacy_v143_oracle_table": "results/v143/validation/N_same_solve_and_F2c_forward.csv"
+  },
+  "known_sha256": {
+    "library": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "N_anonymous_observation": "524baf145701ba67c6f96a4ab912fa06774d6f85020184f2dad79348e3098875",
+    "M_observation": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b"
+  },
+  "measurement_confirmed": {
+    "state": "suspended",
+    "medium": "pure_water",
+    "temperature_C": 26,
+    "laser_vacuum_nm": 520,
+    "physical_camera_pixel_um": 14,
+    "objective_nominal_magnification": 50,
+    "glass_slide_present": false
+  },
+  "conditional_assumptions": {
+    "n_water": 1.3353,
+    "n_glass": 1.5,
+    "n_particle_complex": [
+      1.38,
+      0
+    ],
+    "NA": 0.8,
+    "additional_magnification": 1,
+    "object_pixel_nm": 280,
+    "q": 5,
+    "camera_n": 17,
+    "score_n": 13,
+    "focus_nm": 450
+  },
+  "published_source_transform": {
+    "MATLAB_vector_field": "compound real+imag; transpose(2,1,0); flip(axis0)",
+    "MATLAB_camera_C": "RAW_C.T[::-1,:]",
+    "source_fx": "-raw_fine_x[::-1]",
+    "source_fy": "raw_fine_y",
+    "sample_query": "canonical_camera_query - (dx,dy)",
+    "camera_after_field_interpolation": "ALREADY_CANONICAL_DO_NOT_TRANSPOSE_OR_FLIP_AGAIN"
+  },
+  "opened_developer_groups": [
+    "H",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N"
+  ],
+  "profile_cases": [
+    "ANON_01",
+    "ANON_02",
+    "ANON_03",
+    "ANON_04",
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06"
+  ],
+  "profile": {
+    "dev_epsilon_L2_unqualified": 0.0015811481066672155,
+    "observable": "CENTRAL13_SIGNED_STATIC_C_UNSCALED_L2",
+    "diameter_supported_nm": [
+      30,
+      200
+    ],
+    "height_supported_nm": [
+      350,
+      550
+    ],
+    "nuisance": "h,x,y continuous bounded",
+    "exact_candidate_witness_must_be_included": true,
+    "unconverged_starts_do_not_invalidate_found_finite_witness": true,
+    "no_global_minimum_claim": true,
+    "unknown_regions_not_excluded": true,
+    "preferred_frozen_model": "F2c; do not retune on N",
+    "numerical_refinement_steps_nm": [
+      5,
+      2.5,
+      1.25,
+      0.5
+    ]
+  },
+  "camera": {
+    "no_new_exposures": true,
+    "historical_v143": "912 events, blank val 0/60 each B, detection counts 1/12,3/12,9/12",
+    "preserve_original_seeds_and_trials": true,
+    "B_assumed_electrons_per_pixel": [
+      1000,
+      10000,
+      100000
+    ],
+    "FPR_single_sided_95pct_goal": 0.05,
+    "never_mark_diameter_reportable_from_detection_only": true
+  },
+  "hard_budget_new_v144": {
+    "BEM_attempts": 0,
+    "new_render_attempts": 0,
+    "new_camera_exposure_events": 0,
+    "total_F2_and_F2c_forward_queries": 160000,
+    "heavy_physics_concurrency": 1,
+    "wall_hours_including_finalize": 12,
+    "finalize_minutes_reserved": 30
+  },
+  "historical_budget_preserve": {
+    "v137_camera_actual": 23958,
+    "v137_camera_cap": 6000,
+    "v142_forward_actual_published": 48874,
+    "v142_forward_reserved_published": 277260,
+    "v143_forward_actual_published": 49390,
+    "v143_forward_reserved_published": 155000,
+    "v143_aux_N_forward_calls_published": 8,
+    "v143_camera_exposures": 912
+  },
+  "delivery": {
+    "branch": "v144",
+    "unique_archive": "iscat_v144_return.zip",
+    "experimental_absolute_diameter_validated": false,
+    "model_change_allowed_without_new_id": false,
+    "N_now_opened_dev_not_new_blind": true,
+    "reportable_D_fail_closed": true
+  },
+  "qualification": {
+    "sourcewide_rel_L2_gate": 0.01,
+    "same_render_max_abs": 1e-12,
+    "conditional_abs_diameter_accuracy_gate": "external only max(5nm,0.1Dtrue)",
+    "camera_CP95_FPR_max": 0.05
+  },
+  "historical_git": {
+    "V142_preN_model_development": "841df9b37a387a87ee192062b6411ed9719a114f",
+    "V142_N_data_added": "677920ae83009532f5c300bfce0837ef5b0e5bd7",
+    "note": "added in V144: config as shipped omitted this block; SHAs verified present in repo history (R01 freeze-order audit)"
+  }
+}

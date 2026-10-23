@@ -1,0 +1,38 @@
+{
+  "schema": "iscat144.camera_replay.1",
+  "n_exposures_check": 912,
+  "rows": [
+    {
+      "B": 1000,
+      "threshold_published": 0.19298508667733985,
+      "dev_null_replay_groups": 0,
+      "replayed_max_abs": 0.0,
+      "threshold_replay_matches": null,
+      "independent_FPR_published": "0/60",
+      "cp95_published": 0.04870291331009749,
+      "targets_detected": "1/12"
+    },
+    {
+      "B": 10000,
+      "threshold_published": 0.060632856589714075,
+      "dev_null_replay_groups": 0,
+      "replayed_max_abs": 0.0,
+      "threshold_replay_matches": null,
+      "independent_FPR_published": "0/60",
+      "cp95_published": 0.04870291331009749,
+      "targets_detected": "3/12"
+    },
+    {
+      "B": 100000,
+      "threshold_published": 0.02077529446326721,
+      "dev_null_replay_groups": 0,
+      "replayed_max_abs": 0.0,
+      "threshold_replay_matches": null,
+      "independent_FPR_published": "0/60",
+      "cp95_published": 0.04870291331009749,
+      "targets_detected": "9/12"
+    }
+  ],
+  "note": "read-only; no new samples; thresholds untouched",
+  "overall": "REPLAY_CONSISTENT"
+}

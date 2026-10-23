@@ -1,0 +1,121 @@
+{
+  "schema": "iscat144.v143_audit.1",
+  "fixed_git": "f6055bc03eacf27ce6b3b90232a4b4bf046f58fd",
+  "score_replay": {
+    "n": 4,
+    "n_within_goal": 4,
+    "MAE_nm": 0.30841921647878934,
+    "RMSE_nm": 0.3652364905060381,
+    "max_err_nm": 0.6291458953954248,
+    "matches_published": true
+  },
+  "camera": [
+    {
+      "B": 1000,
+      "k": 0,
+      "n": 60,
+      "CP95": 0.04870291331009746,
+      "reported_CP95": 0.04870291331009749,
+      "replay_diff": 2.7755575615628914e-17,
+      "target_detected": 1,
+      "target_total": 12
+    },
+    {
+      "B": 10000,
+      "k": 0,
+      "n": 60,
+      "CP95": 0.04870291331009746,
+      "reported_CP95": 0.04870291331009749,
+      "replay_diff": 2.7755575615628914e-17,
+      "target_detected": 3,
+      "target_total": 12
+    },
+    {
+      "B": 100000,
+      "k": 0,
+      "n": 60,
+      "CP95": 0.04870291331009746,
+      "reported_CP95": 0.04870291331009749,
+      "replay_diff": 2.7755575615628914e-17,
+      "target_detected": 9,
+      "target_total": 12
+    }
+  ],
+  "budget_main_ledger": {
+    "FORWARD": {
+      "events": 155,
+      "reserved": 155000,
+      "actual": 49390,
+      "states": [
+        "COMPLETED"
+      ]
+    },
+    "CAMERA": {
+      "events": 456,
+      "reserved": 912,
+      "actual": 912,
+      "states": [
+        "COMPLETED"
+      ]
+    },
+    "RENDER": {
+      "events": 0,
+      "reserved": 0,
+      "actual": 0,
+      "states": []
+    },
+    "BEM": {
+      "events": 0,
+      "reserved": 0,
+      "actual": 0,
+      "states": []
+    }
+  },
+  "aux_v143_n_forward_published_calls": 8,
+  "at_least_forward_callbacks_including_auxiliary": 49398,
+  "no_claim_of_exact_full_global_execution_counter": true,
+  "freeze_chronology": {
+    "declared_freeze_has_F2c_model": false,
+    "preN_commit_has_F2c_model": true,
+    "preN_commit_has_N_estimator": false,
+    "N_data_commit_has_N_estimator": true
+  },
+  "inherited_F2c_N_direct_checks": [
+    {
+      "case": "ANON_01",
+      "F2c_rel": 0.002127774965489362,
+      "F2_rel": 0.019323027350336475,
+      "sourcewide_S1_rel_as_published": 0.5354322194921406,
+      "sourcewide_S2_rel_as_published": 0.5411020060722279
+    },
+    {
+      "case": "ANON_02",
+      "F2c_rel": 0.0052931553320738605,
+      "F2_rel": 0.0174670709862071,
+      "sourcewide_S1_rel_as_published": 0.8279547836605746,
+      "sourcewide_S2_rel_as_published": 0.8346408336634126
+    },
+    {
+      "case": "ANON_03",
+      "F2c_rel": 0.003599259717364486,
+      "F2_rel": 0.01869318361011088,
+      "sourcewide_S1_rel_as_published": 0.8548759217496035,
+      "sourcewide_S2_rel_as_published": 0.8614782813179557
+    },
+    {
+      "case": "ANON_04",
+      "F2c_rel": 0.0007854230634838672,
+      "F2_rel": 0.014076152837867126,
+      "sourcewide_S1_rel_as_published": 0.8234686523226145,
+      "sourcewide_S2_rel_as_published": 0.831046023906153
+    }
+  ],
+  "issues": [
+    "DECLARED_FREEZE_PARENT_COMMIT_LACKS_F2C_MODEL_SOURCE",
+    "ANONYMOUS_N_ESTIMATOR_NOT_PRESENT_IN_EARLIER_PREN_GIT_COMMIT",
+    "AUXILIARY_N_FORWARD_CALLS_NOT_INCLUDED_IN_V143_MAIN_LEDGER_AS_EVIDENCED_BY_SCRIPT"
+  ],
+  "source_scope": "GITHUB_PUBLISHED_CSV_JSON_AND_WORKSTATION_LEDGER_REPLAY",
+  "experimental_absolute_diameter_validated": false,
+  "scientific_verdict": "PARTIAL_NEEDS_PHYSICS_AND_PROFILE_CORRECTIONS"
+}

@@ -1,0 +1,8 @@
+{
+  "rows": 16,
+  "S1_pass": 0,
+  "S2_pass": 4,
+  "double_transform_error_isolated": true,
+  "independent_Maxwell_validation": false,
+  "note": "Validator-only, old N opened development; no BEM/render/new camera and no estimator reads truth"
+}

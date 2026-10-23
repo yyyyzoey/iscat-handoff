@@ -1,0 +1,1883 @@
+{
+  "schema": "iscat144.profile_witness_audit.1",
+  "epsilon_L2_unqualified": 0.0015811481066672155,
+  "cases": {
+    "ANON_01": {
+      "case": "ANON_01",
+      "source_binding": {
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha": "33cf029a866d42de773c2664caf775e388ee1a065849ce55c51b9be7d49ebf4c",
+        "estimator_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      },
+      "n_checkpoints": 19,
+      "n_unique_D": 19,
+      "n_missing_witness": 0,
+      "n_all_starts_completed": 1,
+      "n_incomplete_starts_with_valid_witness": 18,
+      "observed_minimum_witness": {
+        "D": 59.09926569428531,
+        "loss_L2": 3.4750227484898043e-07,
+        "theta": [
+          59.09926569428531,
+          391.2445804521126,
+          77.02074164094438,
+          -34.95851536781026
+        ],
+        "all_starts_complete": false,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/ANON_01/59p0992656942853.a0.json",
+        "phase": "coarse"
+      },
+      "nearest_existing_witness_to_candidate": {
+        "D": 59.09926569428531,
+        "loss_L2": 3.4750227484898043e-07,
+        "theta": [
+          59.09926569428531,
+          391.2445804521126,
+          77.02074164094438,
+          -34.95851536781026
+        ],
+        "all_starts_complete": false,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/ANON_01/59p0992656942853.a0.json",
+        "phase": "coarse"
+      },
+      "epsilon_L2_unqualified": 0.0015811481066672155,
+      "n_witnesses_below_epsilon": 14,
+      "epsilon_witness_D": [
+        30.0,
+        40.0,
+        50.0,
+        59.09926569428531,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+        100.0,
+        110.0,
+        120.0,
+        130.0,
+        140.0,
+        150.0
+      ],
+      "known_nonunique_under_assumed_epsilon": true,
+      "separated_compatible_witness_pair": {
+        "D1": 30.0,
+        "R1": 5.089790622273166e-05,
+        "D2": 150.0,
+        "R2": 0.001465427265955942,
+        "separation_nm": 120.0
+      },
+      "supports_claim_unique_D": false,
+      "candidate_D": 59.09926569428531,
+      "scientific_disposition": "TWO_DISTINCT_FINITE_WITNESSES__NOT_UNIQUE_UNDER_ASSUMED_EPS",
+      "reportable_D": null,
+      "examples_missing_witness": [],
+      "all_D_and_residuals": [
+        {
+          "D": 30.0,
+          "R": 5.089790622273166e-05,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 40.0,
+          "R": 4.1642435804623995e-05,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 50.0,
+          "R": 2.4493981866551488e-05,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 59.09926569428531,
+          "R": 3.4750227484898043e-07,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 60.0,
+          "R": 3.0069675544601744e-06,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 70.0,
+          "R": 4.49803594416173e-05,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 80.0,
+          "R": 0.00010757988087506204,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 90.0,
+          "R": 0.00019774282402792258,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 100.0,
+          "R": 0.00032291484072655266,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 110.0,
+          "R": 0.0004894979848273179,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 120.0,
+          "R": 0.0006982191656661483,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 130.0,
+          "R": 0.0009424193875854495,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 140.0,
+          "R": 0.0012054306128039885,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 150.0,
+          "R": 0.001465427265955942,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 160.0,
+          "R": 0.0017138053916930984,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 170.0,
+          "R": 0.001936293144129565,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 180.0,
+          "R": 0.0021096411688754924,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 190.0,
+          "R": 0.002205588053509698,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 200.0,
+          "R": 0.0021927672370660356,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        }
+      ],
+      "scope": "FINITE_WITNESS_COMPATIBILITY_UNDER_UNQUALIFIED_DEV_EPS_NOT_95PCT_CI",
+      "published_components_miss_near_candidate": true,
+      "published_components_nearest_missing_D": 59.09926569428531
+    },
+    "ANON_02": {
+      "case": "ANON_02",
+      "source_binding": {
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha": "0ac6be36096f29aa77a399d0ca304f3a07f9503890461086116ece00064db9cd",
+        "estimator_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      },
+      "n_checkpoints": 22,
+      "n_unique_D": 22,
+      "n_missing_witness": 0,
+      "n_all_starts_completed": 10,
+      "n_incomplete_starts_with_valid_witness": 12,
+      "observed_minimum_witness": {
+        "D": 101.24109919653004,
+        "loss_L2": 2.2989068741428283e-06,
+        "theta": [
+          101.24109919653004,
+          432.42453125289455,
+          -91.0035952043441,
+          105.00637585924397
+        ],
+        "all_starts_complete": true,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/ANON_02/101p2410991965300.a0.json",
+        "phase": "coarse"
+      },
+      "nearest_existing_witness_to_candidate": {
+        "D": 101.24109919653004,
+        "loss_L2": 2.2989068741428283e-06,
+        "theta": [
+          101.24109919653004,
+          432.42453125289455,
+          -91.0035952043441,
+          105.00637585924397
+        ],
+        "all_starts_complete": true,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/ANON_02/101p2410991965300.a0.json",
+        "phase": "coarse"
+      },
+      "epsilon_L2_unqualified": 0.0015811481066672155,
+      "n_witnesses_below_epsilon": 10,
+      "epsilon_witness_D": [
+        100.0,
+        100.62054959826503,
+        101.24109919653004,
+        105.62054959826503,
+        110.0,
+        120.0,
+        130.0,
+        140.0,
+        150.0,
+        160.0
+      ],
+      "known_nonunique_under_assumed_epsilon": true,
+      "separated_compatible_witness_pair": {
+        "D1": 100.0,
+        "R1": 0.0005153869888547684,
+        "D2": 160.0,
+        "R2": 0.0012967729888161872,
+        "separation_nm": 60.0
+      },
+      "supports_claim_unique_D": false,
+      "candidate_D": 101.24109919653004,
+      "scientific_disposition": "TWO_DISTINCT_FINITE_WITNESSES__NOT_UNIQUE_UNDER_ASSUMED_EPS",
+      "reportable_D": null,
+      "examples_missing_witness": [],
+      "all_D_and_residuals": [
+        {
+          "D": 30.0,
+          "R": 0.059746024775747746,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 40.0,
+          "R": 0.05698180854123293,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 50.0,
+          "R": 0.0524851936194851,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 60.0,
+          "R": 0.046100093127046285,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 70.0,
+          "R": 0.03767433027045537,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 80.0,
+          "R": 0.027119767310544267,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 90.0,
+          "R": 0.014590130839130912,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 95.0,
+          "R": 0.007655479668416115,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 100.0,
+          "R": 0.0005153869888547684,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 100.62054959826503,
+          "R": 0.00015204982632063336,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 101.24109919653004,
+          "R": 2.2989068741428283e-06,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 105.62054959826503,
+          "R": 0.00036277962300583955,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 110.0,
+          "R": 0.00045344961791847764,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 120.0,
+          "R": 0.00044982593114581236,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 130.0,
+          "R": 0.0004384716063287157,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 140.0,
+          "R": 0.0006010417722206762,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 150.0,
+          "R": 0.000913837185797743,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 160.0,
+          "R": 0.0012967729888161872,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 170.0,
+          "R": 0.0017045300095554715,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 180.0,
+          "R": 0.0021094049283781014,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 190.0,
+          "R": 0.002493309466213397,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 200.0,
+          "R": 0.0028493681842759744,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        }
+      ],
+      "scope": "FINITE_WITNESS_COMPATIBILITY_UNDER_UNQUALIFIED_DEV_EPS_NOT_95PCT_CI",
+      "published_components_miss_near_candidate": false,
+      "published_components_nearest_missing_D": null
+    },
+    "ANON_03": {
+      "case": "ANON_03",
+      "source_binding": {
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha": "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba",
+        "estimator_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      },
+      "n_checkpoints": 19,
+      "n_unique_D": 19,
+      "n_missing_witness": 0,
+      "n_all_starts_completed": 0,
+      "n_incomplete_starts_with_valid_witness": 19,
+      "observed_minimum_witness": {
+        "D": 143.26416607970438,
+        "loss_L2": 2.843860826458615e-06,
+        "theta": [
+          143.26416607970438,
+          478.74071371594044,
+          34.99468760444489,
+          119.00376913202128
+        ],
+        "all_starts_complete": false,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/ANON_03/143p2641660797044.a0.json",
+        "phase": "coarse"
+      },
+      "nearest_existing_witness_to_candidate": {
+        "D": 143.26416607970438,
+        "loss_L2": 2.843860826458615e-06,
+        "theta": [
+          143.26416607970438,
+          478.74071371594044,
+          34.99468760444489,
+          119.00376913202128
+        ],
+        "all_starts_complete": false,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/ANON_03/143p2641660797044.a0.json",
+        "phase": "coarse"
+      },
+      "epsilon_L2_unqualified": 0.0015811481066672155,
+      "n_witnesses_below_epsilon": 3,
+      "epsilon_witness_D": [
+        140.0,
+        143.26416607970438,
+        150.0
+      ],
+      "known_nonunique_under_assumed_epsilon": false,
+      "separated_compatible_witness_pair": null,
+      "supports_claim_unique_D": false,
+      "candidate_D": 143.26416607970438,
+      "scientific_disposition": "NO_UNIQUENESS_PROOF_UNSAMPLED_AND/OR_UNCONVERGED_D_REMAIN",
+      "reportable_D": null,
+      "examples_missing_witness": [],
+      "all_D_and_residuals": [
+        {
+          "D": 30.0,
+          "R": 0.043525207866997685,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 40.0,
+          "R": 0.04085811790763303,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 50.0,
+          "R": 0.0365495284087983,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 60.0,
+          "R": 0.03052047189022991,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 70.0,
+          "R": 0.022852204164128642,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 80.0,
+          "R": 0.014453356215811853,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 90.0,
+          "R": 0.00986663797098962,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 100.0,
+          "R": 0.007969902677625838,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 110.0,
+          "R": 0.006162541120546253,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 120.0,
+          "R": 0.004326065344439218,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 130.0,
+          "R": 0.0024615962960323643,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 140.0,
+          "R": 0.0005985615623537633,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 143.26416607970438,
+          "R": 2.843860826458615e-06,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 150.0,
+          "R": 0.0012056826910792203,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 160.0,
+          "R": 0.0028849663246507833,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 170.0,
+          "R": 0.004371295641065911,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 180.0,
+          "R": 0.00559749795953786,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 190.0,
+          "R": 0.006501372293218692,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 200.0,
+          "R": 0.007032382370039433,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        }
+      ],
+      "scope": "FINITE_WITNESS_COMPATIBILITY_UNDER_UNQUALIFIED_DEV_EPS_NOT_95PCT_CI",
+      "published_components_miss_near_candidate": true,
+      "published_components_nearest_missing_D": 143.26416607970438
+    },
+    "ANON_04": {
+      "case": "ANON_04",
+      "source_binding": {
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+        "estimator_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      },
+      "n_checkpoints": 23,
+      "n_unique_D": 23,
+      "n_missing_witness": 0,
+      "n_all_starts_completed": 23,
+      "n_incomplete_starts_with_valid_witness": 0,
+      "observed_minimum_witness": {
+        "D": 180.37085410460458,
+        "loss_L2": 2.910145740176316e-05,
+        "theta": [
+          180.37085410460458,
+          526.4818247313361,
+          -119.01437203022122,
+          -76.98541922263884
+        ],
+        "all_starts_complete": true,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/ANON_04/180p3708541046046.a0.json",
+        "phase": "coarse"
+      },
+      "nearest_existing_witness_to_candidate": {
+        "D": 180.37085410460458,
+        "loss_L2": 2.910145740176316e-05,
+        "theta": [
+          180.37085410460458,
+          526.4818247313361,
+          -119.01437203022122,
+          -76.98541922263884
+        ],
+        "all_starts_complete": true,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/ANON_04/180p3708541046046.a0.json",
+        "phase": "coarse"
+      },
+      "epsilon_L2_unqualified": 0.0015811481066672155,
+      "n_witnesses_below_epsilon": 8,
+      "epsilon_witness_D": [
+        175.0,
+        180.0,
+        180.1854270523023,
+        180.37085410460458,
+        185.1854270523023,
+        190.0,
+        195.0,
+        200.0
+      ],
+      "known_nonunique_under_assumed_epsilon": false,
+      "separated_compatible_witness_pair": null,
+      "supports_claim_unique_D": false,
+      "candidate_D": 180.37085410460458,
+      "scientific_disposition": "NO_UNIQUENESS_PROOF_UNSAMPLED_AND/OR_UNCONVERGED_D_REMAIN",
+      "reportable_D": null,
+      "examples_missing_witness": [],
+      "all_D_and_residuals": [
+        {
+          "D": 30.0,
+          "R": 0.17061651912272344,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 40.0,
+          "R": 0.16784269412943456,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 50.0,
+          "R": 0.1633216515261861,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 60.0,
+          "R": 0.15688320349029114,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 70.0,
+          "R": 0.14835333757509017,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 80.0,
+          "R": 0.13761380528227854,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 90.0,
+          "R": 0.12478412882858872,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 100.0,
+          "R": 0.11004385792908063,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 110.0,
+          "R": 0.09363757606579254,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 120.0,
+          "R": 0.0760694744148733,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 130.0,
+          "R": 0.05792647171107329,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 140.0,
+          "R": 0.03987878399745274,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 150.0,
+          "R": 0.022898720765791785,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 160.0,
+          "R": 0.008874130016933605,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 170.0,
+          "R": 0.0022430467980684176,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 175.0,
+          "R": 0.0008700723470463868,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 180.0,
+          "R": 5.286329858592795e-05,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 180.1854270523023,
+          "R": 3.636067410913253e-05,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 180.37085410460458,
+          "R": 2.910145740176316e-05,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 185.1854270523023,
+          "R": 0.00038619840877027965,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 190.0,
+          "R": 0.00044499139823308203,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 195.0,
+          "R": 0.00018937377528858206,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 200.0,
+          "R": 0.000511597631342199,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        }
+      ],
+      "scope": "FINITE_WITNESS_COMPATIBILITY_UNDER_UNQUALIFIED_DEV_EPS_NOT_95PCT_CI",
+      "published_components_miss_near_candidate": false,
+      "published_components_nearest_missing_D": null
+    },
+    "M01": {
+      "case": "M01",
+      "source_binding": {
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha": "ff2e3aeb62de7ff46242846e95e34e357e2a5813d781d8cbe6b63b789c95fded",
+        "estimator_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      },
+      "n_checkpoints": 19,
+      "n_unique_D": 19,
+      "n_missing_witness": 0,
+      "n_all_starts_completed": 9,
+      "n_incomplete_starts_with_valid_witness": 10,
+      "observed_minimum_witness": {
+        "D": 52.743060819785946,
+        "loss_L2": 6.271345413398365e-07,
+        "theta": [
+          52.743060819785946,
+          365.1381317132276,
+          41.996517344568154,
+          -69.99739666061181
+        ],
+        "all_starts_complete": true,
+        "provenance_status": "INHERITED_V142_VALID_POINT",
+        "checkpoint": "coarse/M01/52p7430608197859.a0.json",
+        "phase": "coarse"
+      },
+      "nearest_existing_witness_to_candidate": {
+        "D": 52.743060819785946,
+        "loss_L2": 6.271345413398365e-07,
+        "theta": [
+          52.743060819785946,
+          365.1381317132276,
+          41.996517344568154,
+          -69.99739666061181
+        ],
+        "all_starts_complete": true,
+        "provenance_status": "INHERITED_V142_VALID_POINT",
+        "checkpoint": "coarse/M01/52p7430608197859.a0.json",
+        "phase": "coarse"
+      },
+      "epsilon_L2_unqualified": 0.0015811481066672155,
+      "n_witnesses_below_epsilon": 12,
+      "epsilon_witness_D": [
+        50.0,
+        52.743060819785946,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+        100.0,
+        110.0,
+        120.0,
+        130.0,
+        140.0,
+        150.0
+      ],
+      "known_nonunique_under_assumed_epsilon": true,
+      "separated_compatible_witness_pair": {
+        "D1": 50.0,
+        "R1": 2.6108505158838806e-05,
+        "D2": 150.0,
+        "R2": 0.0014997192165081602,
+        "separation_nm": 100.0
+      },
+      "supports_claim_unique_D": false,
+      "candidate_D": 52.743060819785946,
+      "scientific_disposition": "TWO_DISTINCT_FINITE_WITNESSES__NOT_UNIQUE_UNDER_ASSUMED_EPS",
+      "reportable_D": null,
+      "examples_missing_witness": [],
+      "all_D_and_residuals": [
+        {
+          "D": 30.0,
+          "R": 0.005332138232624133,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 40.0,
+          "R": 0.002559790752585175,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 50.0,
+          "R": 2.6108505158838806e-05,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 52.743060819785946,
+          "R": 6.271345413398365e-07,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 60.0,
+          "R": 3.8434195149618224e-05,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 70.0,
+          "R": 8.236183948899913e-05,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 80.0,
+          "R": 0.00014045927975789781,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 90.0,
+          "R": 0.00022351088796703007,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 100.0,
+          "R": 0.00033996764115947745,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 110.0,
+          "R": 0.0004969243131390857,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 120.0,
+          "R": 0.0006968497641609461,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 130.0,
+          "R": 0.0009373400819216621,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 140.0,
+          "R": 0.0012103165835068354,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 150.0,
+          "R": 0.0014997192165081602,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 160.0,
+          "R": 0.0017829107937793968,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 170.0,
+          "R": 0.0020329204589804016,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 180.0,
+          "R": 0.002220642790538282,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 190.0,
+          "R": 0.002316578703120436,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 200.0,
+          "R": 0.0022920425421215493,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        }
+      ],
+      "scope": "FINITE_WITNESS_COMPATIBILITY_UNDER_UNQUALIFIED_DEV_EPS_NOT_95PCT_CI",
+      "published_components_miss_near_candidate": false,
+      "published_components_nearest_missing_D": null
+    },
+    "M02": {
+      "case": "M02",
+      "source_binding": {
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha": "8be84898ed8d6b1033a6d4b8e8bb178aee499aa504d3b6b354ff8f2017fdef98",
+        "estimator_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      },
+      "n_checkpoints": 19,
+      "n_unique_D": 19,
+      "n_missing_witness": 0,
+      "n_all_starts_completed": 4,
+      "n_incomplete_starts_with_valid_witness": 15,
+      "observed_minimum_witness": {
+        "D": 81.28076269425519,
+        "loss_L2": 1.8197843073618564e-06,
+        "theta": [
+          81.28076269425519,
+          415.4695019963753,
+          -112.00170182909781,
+          56.00766134332343
+        ],
+        "all_starts_complete": false,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/M02/81p2807626942552.a0.json",
+        "phase": "coarse"
+      },
+      "nearest_existing_witness_to_candidate": {
+        "D": 81.28076269425519,
+        "loss_L2": 1.8197843073618564e-06,
+        "theta": [
+          81.28076269425519,
+          415.4695019963753,
+          -112.00170182909781,
+          56.00766134332343
+        ],
+        "all_starts_complete": false,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/M02/81p2807626942552.a0.json",
+        "phase": "coarse"
+      },
+      "epsilon_L2_unqualified": 0.0015811481066672155,
+      "n_witnesses_below_epsilon": 9,
+      "epsilon_witness_D": [
+        80.0,
+        81.28076269425519,
+        90.0,
+        100.0,
+        110.0,
+        120.0,
+        130.0,
+        140.0,
+        150.0
+      ],
+      "known_nonunique_under_assumed_epsilon": true,
+      "separated_compatible_witness_pair": {
+        "D1": 80.0,
+        "R1": 1.1571857008555003e-05,
+        "D2": 150.0,
+        "R2": 0.001508384584853181,
+        "separation_nm": 70.0
+      },
+      "supports_claim_unique_D": false,
+      "candidate_D": 81.28076269425519,
+      "scientific_disposition": "TWO_DISTINCT_FINITE_WITNESSES__NOT_UNIQUE_UNDER_ASSUMED_EPS",
+      "reportable_D": null,
+      "examples_missing_witness": [],
+      "all_D_and_residuals": [
+        {
+          "D": 30.0,
+          "R": 0.024290710083619296,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 40.0,
+          "R": 0.021526711223051317,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 50.0,
+          "R": 0.017030911675973027,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 60.0,
+          "R": 0.010649144882702593,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 70.0,
+          "R": 0.0022614722079818085,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 80.0,
+          "R": 1.1571857008555003e-05,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 81.28076269425519,
+          "R": 1.8197843073618564e-06,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 90.0,
+          "R": 6.0767958502435194e-05,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 100.0,
+          "R": 0.00017692986105318132,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 110.0,
+          "R": 0.0003511568742525498,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 120.0,
+          "R": 0.0005778543251796006,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 130.0,
+          "R": 0.0008523272573351545,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 140.0,
+          "R": 0.0011672073061123839,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 150.0,
+          "R": 0.001508384584853181,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 160.0,
+          "R": 0.0018568092948547856,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 170.0,
+          "R": 0.002189517997511903,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 180.0,
+          "R": 0.002480806799572088,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 190.0,
+          "R": 0.0027042355965507837,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 200.0,
+          "R": 0.0028352965321291478,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        }
+      ],
+      "scope": "FINITE_WITNESS_COMPATIBILITY_UNDER_UNQUALIFIED_DEV_EPS_NOT_95PCT_CI",
+      "published_components_miss_near_candidate": true,
+      "published_components_nearest_missing_D": 81.28076269425519
+    },
+    "M03": {
+      "case": "M03",
+      "source_binding": {
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha": "8f76cd7134062ae5b5e0f646a058bd7f29b2f9d71fa55e732839af4b8dc33772",
+        "estimator_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      },
+      "n_checkpoints": 19,
+      "n_unique_D": 19,
+      "n_missing_witness": 0,
+      "n_all_starts_completed": 4,
+      "n_incomplete_starts_with_valid_witness": 15,
+      "observed_minimum_witness": {
+        "D": 119.22526143674465,
+        "loss_L2": 4.940025881889271e-06,
+        "theta": [
+          119.22526143674465,
+          446.88667767430513,
+          83.99430461971872,
+          98.00586080431648
+        ],
+        "all_starts_complete": false,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/M03/119p2252614367446.a0.json",
+        "phase": "coarse"
+      },
+      "nearest_existing_witness_to_candidate": {
+        "D": 119.22526143674465,
+        "loss_L2": 4.940025881889271e-06,
+        "theta": [
+          119.22526143674465,
+          446.88667767430513,
+          83.99430461971872,
+          98.00586080431648
+        ],
+        "all_starts_complete": false,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/M03/119p2252614367446.a0.json",
+        "phase": "coarse"
+      },
+      "epsilon_L2_unqualified": 0.0015811481066672155,
+      "n_witnesses_below_epsilon": 6,
+      "epsilon_witness_D": [
+        119.22526143674465,
+        120.0,
+        170.0,
+        180.0,
+        190.0,
+        200.0
+      ],
+      "known_nonunique_under_assumed_epsilon": true,
+      "separated_compatible_witness_pair": {
+        "D1": 119.22526143674465,
+        "R1": 4.940025881889271e-06,
+        "D2": 200.0,
+        "R2": 0.001571006854047395,
+        "separation_nm": 80.77473856325535
+      },
+      "supports_claim_unique_D": false,
+      "candidate_D": 119.22526143674465,
+      "scientific_disposition": "TWO_DISTINCT_FINITE_WITNESSES__NOT_UNIQUE_UNDER_ASSUMED_EPS",
+      "reportable_D": null,
+      "examples_missing_witness": [],
+      "all_D_and_residuals": [
+        {
+          "D": 30.0,
+          "R": 0.08836871125681978,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 40.0,
+          "R": 0.08560531703390577,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 50.0,
+          "R": 0.08111011304909232,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 60.0,
+          "R": 0.07472702880317056,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 70.0,
+          "R": 0.06630397800294685,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 80.0,
+          "R": 0.05575287303410367,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 90.0,
+          "R": 0.04322621637251755,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 100.0,
+          "R": 0.028938030123443946,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 110.0,
+          "R": 0.01317278774416556,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 119.22526143674465,
+          "R": 4.940025881889271e-06,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 120.0,
+          "R": 0.0003128093706895479,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 130.0,
+          "R": 0.0022689840665665517,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 140.0,
+          "R": 0.0021300665612059883,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 150.0,
+          "R": 0.0018692474395654419,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 160.0,
+          "R": 0.0015878804064869449,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 170.0,
+          "R": 0.0013600146955651633,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 180.0,
+          "R": 0.0012581268872475875,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 190.0,
+          "R": 0.0013288352618576649,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 200.0,
+          "R": 0.001571006854047395,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        }
+      ],
+      "scope": "FINITE_WITNESS_COMPATIBILITY_UNDER_UNQUALIFIED_DEV_EPS_NOT_95PCT_CI",
+      "published_components_miss_near_candidate": true,
+      "published_components_nearest_missing_D": 119.22526143674465
+    },
+    "M04": {
+      "case": "M04",
+      "source_binding": {
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha": "18e52d15d6ed13a0bf1a3801caa70dc8adbdac6a755169c5b9f95ab89c5e196a",
+        "estimator_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      },
+      "n_checkpoints": 19,
+      "n_unique_D": 19,
+      "n_missing_witness": 0,
+      "n_all_starts_completed": 1,
+      "n_incomplete_starts_with_valid_witness": 18,
+      "observed_minimum_witness": {
+        "D": 149.2585476311477,
+        "loss_L2": 5.517308464309678e-06,
+        "theta": [
+          149.2585476311477,
+          471.8610360486137,
+          -70.00721587112636,
+          -111.99492015699569
+        ],
+        "all_starts_complete": false,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/M04/149p2585476311477.a0.json",
+        "phase": "coarse"
+      },
+      "nearest_existing_witness_to_candidate": {
+        "D": 149.2585476311477,
+        "loss_L2": 5.517308464309678e-06,
+        "theta": [
+          149.2585476311477,
+          471.8610360486137,
+          -70.00721587112636,
+          -111.99492015699569
+        ],
+        "all_starts_complete": false,
+        "provenance_status": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF",
+        "checkpoint": "coarse/M04/149p2585476311477.a0.json",
+        "phase": "coarse"
+      },
+      "epsilon_L2_unqualified": 0.0015811481066672155,
+      "n_witnesses_below_epsilon": 2,
+      "epsilon_witness_D": [
+        149.2585476311477,
+        150.0
+      ],
+      "known_nonunique_under_assumed_epsilon": false,
+      "separated_compatible_witness_pair": null,
+      "supports_claim_unique_D": false,
+      "candidate_D": 149.2585476311477,
+      "scientific_disposition": "NO_UNIQUENESS_PROOF_UNSAMPLED_AND/OR_UNCONVERGED_D_REMAIN",
+      "reportable_D": null,
+      "examples_missing_witness": [],
+      "all_D_and_residuals": [
+        {
+          "D": 30.0,
+          "R": 0.07344702028928644,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 40.0,
+          "R": 0.07071367453708609,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 50.0,
+          "R": 0.06627231622573913,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 60.0,
+          "R": 0.059977793726250755,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 70.0,
+          "R": 0.05170168962630118,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 80.0,
+          "R": 0.04141260841417892,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 90.0,
+          "R": 0.029426210705950716,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 100.0,
+          "R": 0.01671173065593187,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 110.0,
+          "R": 0.008882938168706337,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 120.0,
+          "R": 0.0062799840063259525,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 130.0,
+          "R": 0.004027029302300695,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 140.0,
+          "R": 0.0018846220485061135,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 149.2585476311477,
+          "R": 5.517308464309678e-06,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 150.0,
+          "R": 0.0001459876579076497,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 160.0,
+          "R": 0.0020226636771523867,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 170.0,
+          "R": 0.0036926414250474026,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 180.0,
+          "R": 0.005100224372841682,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 190.0,
+          "R": 0.006194222984302696,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 200.0,
+          "R": 0.006936725852525439,
+          "complete": false,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        }
+      ],
+      "scope": "FINITE_WITNESS_COMPATIBILITY_UNDER_UNQUALIFIED_DEV_EPS_NOT_95PCT_CI",
+      "published_components_miss_near_candidate": true,
+      "published_components_nearest_missing_D": 149.2585476311477
+    },
+    "M05": {
+      "case": "M05",
+      "source_binding": {
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha": "67e78663ea15a8707c039d06a66619042cc609057d896114410f0dfc4095e086",
+        "estimator_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      },
+      "n_checkpoints": 19,
+      "n_unique_D": 19,
+      "n_missing_witness": 0,
+      "n_all_starts_completed": 19,
+      "n_incomplete_starts_with_valid_witness": 0,
+      "observed_minimum_witness": {
+        "D": 172.36815415453196,
+        "loss_L2": 1.5487991631941165e-05,
+        "theta": [
+          172.36815415453196,
+          509.312647448332,
+          125.9857515894615,
+          -41.986741258361924
+        ],
+        "all_starts_complete": true,
+        "provenance_status": "INHERITED_V142_VALID_POINT",
+        "checkpoint": "coarse/M05/172p3681541545320.a0.json",
+        "phase": "coarse"
+      },
+      "nearest_existing_witness_to_candidate": {
+        "D": 172.36815415453196,
+        "loss_L2": 1.5487991631941165e-05,
+        "theta": [
+          172.36815415453196,
+          509.312647448332,
+          125.9857515894615,
+          -41.986741258361924
+        ],
+        "all_starts_complete": true,
+        "provenance_status": "INHERITED_V142_VALID_POINT",
+        "checkpoint": "coarse/M05/172p3681541545320.a0.json",
+        "phase": "coarse"
+      },
+      "epsilon_L2_unqualified": 0.0015811481066672155,
+      "n_witnesses_below_epsilon": 6,
+      "epsilon_witness_D": [
+        160.0,
+        170.0,
+        172.36815415453196,
+        180.0,
+        190.0,
+        200.0
+      ],
+      "known_nonunique_under_assumed_epsilon": true,
+      "separated_compatible_witness_pair": {
+        "D1": 160.0,
+        "R1": 0.0015120292397985795,
+        "D2": 200.0,
+        "R2": 0.0003871878632380597,
+        "separation_nm": 40.0
+      },
+      "supports_claim_unique_D": false,
+      "candidate_D": 172.36815415453196,
+      "scientific_disposition": "TWO_DISTINCT_FINITE_WITNESSES__NOT_UNIQUE_UNDER_ASSUMED_EPS",
+      "reportable_D": null,
+      "examples_missing_witness": [],
+      "all_D_and_residuals": [
+        {
+          "D": 30.0,
+          "R": 0.10426156645601849,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 40.0,
+          "R": 0.10150883957426352,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 50.0,
+          "R": 0.09702478380079951,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 60.0,
+          "R": 0.09064609213026145,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 70.0,
+          "R": 0.0822110352516084,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 80.0,
+          "R": 0.07162492869779961,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 90.0,
+          "R": 0.0590555486836798,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 100.0,
+          "R": 0.04480449445161494,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 110.0,
+          "R": 0.02951668779428527,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 120.0,
+          "R": 0.015593592076662586,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 130.0,
+          "R": 0.008735144777496673,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 140.0,
+          "R": 0.005537802309482333,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 150.0,
+          "R": 0.0032604194823428858,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 160.0,
+          "R": 0.0015120292397985795,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 170.0,
+          "R": 0.00023254027954325453,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 172.36815415453196,
+          "R": 1.5487991631941165e-05,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 180.0,
+          "R": 0.0005475923200115904,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 190.0,
+          "R": 0.0007559403947590114,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 200.0,
+          "R": 0.0003871878632380597,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        }
+      ],
+      "scope": "FINITE_WITNESS_COMPATIBILITY_UNDER_UNQUALIFIED_DEV_EPS_NOT_95PCT_CI",
+      "published_components_miss_near_candidate": false,
+      "published_components_nearest_missing_D": null
+    },
+    "M06": {
+      "case": "M06",
+      "source_binding": {
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha": "5be586e4c62a40d7e27850f2a79f062c22f3787287f51f9059c9d262b415668a",
+        "estimator_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+      },
+      "n_checkpoints": 19,
+      "n_unique_D": 19,
+      "n_missing_witness": 0,
+      "n_all_starts_completed": 19,
+      "n_incomplete_starts_with_valid_witness": 0,
+      "observed_minimum_witness": {
+        "D": 184.34673932132725,
+        "loss_L2": 4.239303359111329e-05,
+        "theta": [
+          184.34673932132725,
+          541.5710342225597,
+          -98.01148551879386,
+          70.01176993107566
+        ],
+        "all_starts_complete": true,
+        "provenance_status": "INHERITED_V142_VALID_POINT",
+        "checkpoint": "coarse/M06/184p3467393213272.a0.json",
+        "phase": "coarse"
+      },
+      "nearest_existing_witness_to_candidate": {
+        "D": 184.34673932132725,
+        "loss_L2": 4.239303359111329e-05,
+        "theta": [
+          184.34673932132725,
+          541.5710342225597,
+          -98.01148551879386,
+          70.01176993107566
+        ],
+        "all_starts_complete": true,
+        "provenance_status": "INHERITED_V142_VALID_POINT",
+        "checkpoint": "coarse/M06/184p3467393213272.a0.json",
+        "phase": "coarse"
+      },
+      "epsilon_L2_unqualified": 0.0015811481066672155,
+      "n_witnesses_below_epsilon": 1,
+      "epsilon_witness_D": [
+        184.34673932132725
+      ],
+      "known_nonunique_under_assumed_epsilon": false,
+      "separated_compatible_witness_pair": null,
+      "supports_claim_unique_D": false,
+      "candidate_D": 184.34673932132725,
+      "scientific_disposition": "NO_UNIQUENESS_PROOF_UNSAMPLED_AND/OR_UNCONVERGED_D_REMAIN",
+      "reportable_D": null,
+      "examples_missing_witness": [],
+      "all_D_and_residuals": [
+        {
+          "D": 30.0,
+          "R": 0.19083665270503922,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 40.0,
+          "R": 0.18806313998663282,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 50.0,
+          "R": 0.1835425245936594,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 60.0,
+          "R": 0.17710412209565937,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 70.0,
+          "R": 0.16857335384124905,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 80.0,
+          "R": 0.15783116306693182,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 90.0,
+          "R": 0.14499552159436005,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 100.0,
+          "R": 0.13024346333022785,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 110.0,
+          "R": 0.11381509444533731,
+          "complete": true,
+          "source": "COMPLETED_NUMERICAL_ATTEMPT_NOT_GLOBAL_PROOF"
+        },
+        {
+          "D": 120.0,
+          "R": 0.09620539823723392,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 130.0,
+          "R": 0.07798056890071273,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 140.0,
+          "R": 0.059756010341784564,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 150.0,
+          "R": 0.04231613151327501,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 160.0,
+          "R": 0.026497633428587002,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 170.0,
+          "R": 0.013146861422130778,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 180.0,
+          "R": 0.0031133719881588375,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 184.34673932132725,
+          "R": 4.239303359111329e-05,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 190.0,
+          "R": 0.0027754179643001394,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        },
+        {
+          "D": 200.0,
+          "R": 0.0029896886488709534,
+          "complete": true,
+          "source": "INHERITED_V142_VALID_POINT"
+        }
+      ],
+      "scope": "FINITE_WITNESS_COMPATIBILITY_UNDER_UNQUALIFIED_DEV_EPS_NOT_95PCT_CI",
+      "published_components_miss_near_candidate": false,
+      "published_components_nearest_missing_D": null
+    }
+  },
+  "cases_with_proven_competing_witness_under_dev_eps": [
+    "ANON_01",
+    "ANON_02",
+    "M01",
+    "M02",
+    "M03",
+    "M05"
+  ],
+  "published_compat_missed_known_candidate": [
+    "ANON_01",
+    "ANON_03",
+    "M02",
+    "M03",
+    "M04"
+  ],
+  "rule": "ALL_FINITE_WITNESSES_CAN_REJECT_UNIQUENESS; NO_FINITE_SAMPLE_CAN_PROVE_UNIQUENESS",
+  "cannot_claim_statistical_interval": true,
+  "experimental_absolute_diameter_validated": false
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "iscat144.return_external.1",
+  "mechanical": {
+    "status": "PASS",
+    "errors": []
+  },
+  "published_stage_declarations": {
+    "MECHANICAL": "see external receipt",
+    "HISTORICAL_SOURCES": "V143 N solves shipped and lineage-linked 4/4; V137 camera breach 23958/6000 preserved",
+    "NUMERIC_OPERATORS": "W1 corrected oracle: V139 double-transform isolated; corrected S2 cubic 4/4 PASS at 5.3-7.5e-5; corrected S1 bilinear 0/4 (1.31-1.77%)",
+    "DIRECT_PHYSICS_F2C": "V142 results retained: F2c at truth 4/4 <=1% on N; old F2 0/4",
+    "CONDITIONAL_IDENTIFIABILITY": "FAIL (conservative): flat D-valleys measured (ANON_03/04, M04, M06 ~constant loss over 20-40nm) + distant competing witnesses under unqualified dev epsilon (ANON_01: 30 vs 150nm; ANON_02: 100 vs 160nm)",
+    "CAMERA_DETECTION": "REPLAY_CONSISTENT: 0/60 all B levels, 912 exposures read-only",
+    "CAMERA_DIAMETER_REPORTABILITY": "NOT_QUALIFIED",
+    "EXPERIMENTAL_ABSOLUTE": "NOT_VALIDATED"
+  },
+  "independent_physics_verdict": "NOT_CERTIFIED_BY_ZIP_MANIFEST_ALONE",
+  "absolute_magnetic_core_sizing": "NOT_VALIDATED",
+  "sha256": "0d67f3b5162b1d1122074f2d09cbf7c88b0298e546fa82bcf2879b6285b59fc8"
+}

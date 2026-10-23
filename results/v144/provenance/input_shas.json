@@ -1,0 +1,28 @@
+{
+  "inputs": {
+    "results/v128/library/v128_Dh_train_fields.h5": {
+      "sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+      "bytes": 53435213
+    },
+    "results/v132/validation/new_M_images.h5": {
+      "sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+      "bytes": 60246
+    },
+    "results/v143/provenance/n_solve_source": {
+      "cache_key_map.csv": "d02a64f6c662427de807762ad8ead86d60f17f8bb34bbdf80b74e841f637c127",
+      "sol_00a0a1a478bffb623195a39c7f5968e133d767fa.mat": "b312028783a17b7223dc33dfad696ea872ab2c80ca061a1a22819cb016401b34",
+      "sol_1d8a7e7b266a04cd646c36a962d58310042b1ade.mat": "e43891a85ace6c09b7307e5e4484bb49185e35f9b2ace00c35ff73893badb01a",
+      "sol_304fdc65a3d84ed1fc7de3c74f7eb106224b6a40.mat": "32eee7d7e953712fa7fe8e594a702aad1f108b93e1d602e6b6d7f51edc71dbc2",
+      "sol_bfde8c4d7c59e0aa4d5319b22a85c9ebb25ec796.mat": "f2b2d6eaf5a564aa47c5a70639dfacffcdbfd94debf5885c6cae1b2a0895f04c",
+      "v142_N_matlab_ledger.csv": "69af5fc121c015cbe2fba70067ecc4c8f8c16128f320d39825314d8fc4b71dba"
+    },
+    "results/v143/logs/v143_budget.sqlite": {
+      "sha256": "3fa7b274efb5fa97c393880d0b9b736d236cc1edf288908dea602097e5c56d7d",
+      "bytes": 270336
+    },
+    "results/v143/validation/camera_pilot/conditional_camera_arrays.h5": {
+      "sha256": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+      "bytes": 7615650
+    }
+  }
+}

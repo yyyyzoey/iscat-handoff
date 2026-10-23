@@ -1,0 +1,11 @@
+{
+ "case": "ANON_04",
+ "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+ "observation_sha": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+ "estimator_source_sha256": "2b4390c529bbe9adc70fe68207450b63e4445a378db0976306ca6f7849104dca",
+ "optimizer": "TRF_BOUNDED_LINEAR_V144_TARGETED",
+ "max_nfev": 35,
+ "phase": "refine_v144",
+ "per_D_budget": 1000,
+ "truth_used": false
+}

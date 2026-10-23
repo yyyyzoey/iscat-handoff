@@ -1,0 +1,33 @@
+{
+  "task": "V144_CANONICAL_N_ORACLE_AND_CONSERVATIVE_DIAMETER_IDENTIFIABILITY",
+  "git_commit_at_pack": "f6055bc03eacf27ce6b3b90232a4b4bf046f58fd",
+  "stage_states": {
+    "MECHANICAL": "see external receipt",
+    "HISTORICAL_SOURCES": "V143 N solves shipped and lineage-linked 4/4; V137 camera breach 23958/6000 preserved",
+    "NUMERIC_OPERATORS": "W1 corrected oracle: V139 double-transform isolated; corrected S2 cubic 4/4 PASS at 5.3-7.5e-5; corrected S1 bilinear 0/4 (1.31-1.77%)",
+    "DIRECT_PHYSICS_F2C": "V142 results retained: F2c at truth 4/4 <=1% on N; old F2 0/4",
+    "CONDITIONAL_IDENTIFIABILITY": "FAIL (conservative): flat D-valleys measured (ANON_03/04, M04, M06 ~constant loss over 20-40nm) + distant competing witnesses under unqualified dev epsilon (ANON_01: 30 vs 150nm; ANON_02: 100 vs 160nm)",
+    "CAMERA_DETECTION": "REPLAY_CONSISTENT: 0/60 all B levels, 912 exposures read-only",
+    "CAMERA_DIAMETER_REPORTABILITY": "NOT_QUALIFIED",
+    "EXPERIMENTAL_ABSOLUTE": "NOT_VALIDATED"
+  },
+  "reportability": {
+    "all_reportable_D_null": true,
+    "mechanism": "D-h compensation produces flat D-profile valleys; conditional_identifiable unknown; second focal plane / independent height prior needed"
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "forward_actual": 9289,
+    "forward_reserved": 24000,
+    "limit": 160000,
+    "bem": 0,
+    "render": 0,
+    "camera": 0,
+    "historical": {
+      "v137_camera": "23958/6000",
+      "v143_forward_actual": 49390,
+      "v142_f2c_actual": 48874
+    }
+  },
+  "config_correction": "v144 config completed with verified historical_git block (841df9b/677920a) - shipped config omitted it"
+}
