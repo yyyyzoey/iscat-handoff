@@ -1,0 +1,158 @@
+{
+  "run_id": "80f85cbb7aa33e22c5711d205a8d207c154381a61292bb760344093b449c1fab",
+  "code_sha256": {
+    "field_forward_reference.py": "4c064031682e4c3c48130848708bd83958aab4630c3da71adf275c231a1c3520",
+    "load_field_library.py": "d42d638378be3efbdcb9e8ff643b75485dbac618d404c92a1b3090cb9bd7a746",
+    "fit_reference.py": "c4fc509d5d52f3f0dd101787f55b627df3db59943fdbc942c31dbf3c7e4f9656",
+    "template_bank.py": "13144e2184b84a8cbc84ef5490d5061000068c65e512778998d0a7de2b0c3d11"
+  },
+  "kind": "F2",
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "rows": [
+    {
+      "theta": [
+        30,
+        350,
+        0,
+        0
+      ],
+      "max_abs_repeat": 0.0,
+      "max_abs_alias": 0.0,
+      "score_sha256": "7feb023a55223b0da429065ad545dfecf6b0d41bc2e1990db84a1eab5201a20f",
+      "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+    },
+    {
+      "theta": [
+        100,
+        450,
+        140,
+        0
+      ],
+      "max_abs_repeat": 0.0,
+      "max_abs_alias": 0.0,
+      "score_sha256": "72e1aa28df65f6cf175fef9f969f3e54b997fb3cdece8ac393c0d0b364026ac7",
+      "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+    },
+    {
+      "theta": [
+        200,
+        550,
+        0,
+        -140
+      ],
+      "max_abs_repeat": 0.0,
+      "max_abs_alias": 0.0,
+      "score_sha256": "67b1e853a56d64eabce26ece887995d4837919c2b160c1048ce18b9ebf935dbe",
+      "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+    },
+    {
+      "theta": [
+        50,
+        375,
+        70,
+        -98
+      ],
+      "max_abs_repeat": 0.0,
+      "max_abs_alias": 0.0,
+      "score_sha256": "49da557a81d6226ed6021e5d88b3c8658e9a37756a1a367cb26dc38118371b74",
+      "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+    },
+    {
+      "theta": [
+        183.7,
+        518.75,
+        -84,
+        70
+      ],
+      "max_abs_repeat": 0.0,
+      "max_abs_alias": 0.0,
+      "score_sha256": "30bd39e301ce66adb4e488bcf5d4a9a6bb536c1f5f652924b31d8b64e532dad5",
+      "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+    },
+    {
+      "theta": [
+        83.7,
+        412.5,
+        56,
+        -84
+      ],
+      "max_abs_repeat": 0.0,
+      "max_abs_alias": 0.0,
+      "score_sha256": "93f721c6690b5c7e6b0528bea93a605744863be22a41afbd7cc44b0eedc51771",
+      "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+    },
+    {
+      "theta": [
+        83.7,
+        412.5,
+        56,
+        -84
+      ],
+      "max_abs_repeat": 0.0,
+      "max_abs_alias": 0.0,
+      "score_sha256": "93f721c6690b5c7e6b0528bea93a605744863be22a41afbd7cc44b0eedc51771",
+      "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+    },
+    {
+      "theta": [
+        183.7,
+        518.75,
+        -84,
+        70
+      ],
+      "max_abs_repeat": 0.0,
+      "max_abs_alias": 0.0,
+      "score_sha256": "30bd39e301ce66adb4e488bcf5d4a9a6bb536c1f5f652924b31d8b64e532dad5",
+      "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+    },
+    {
+      "theta": [
+        50,
+        375,
+        70,
+        -98
+      ],
+      "max_abs_repeat": 0.0,
+      "max_abs_alias": 0.0,
+      "score_sha256": "49da557a81d6226ed6021e5d88b3c8658e9a37756a1a367cb26dc38118371b74",
+      "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+    },
+    {
+      "theta": [
+        200,
+        550,
+        0,
+        -140
+      ],
+      "max_abs_repeat": 0.0,
+      "max_abs_alias": 0.0,
+      "score_sha256": "67b1e853a56d64eabce26ece887995d4837919c2b160c1048ce18b9ebf935dbe",
+      "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+    },
+    {
+      "theta": [
+        100,
+        450,
+        140,
+        0
+      ],
+      "max_abs_repeat": 0.0,
+      "max_abs_alias": 0.0,
+      "score_sha256": "72e1aa28df65f6cf175fef9f969f3e54b997fb3cdece8ac393c0d0b364026ac7",
+      "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+    },
+    {
+      "theta": [
+        30,
+        350,
+        0,
+        0
+      ],
+      "max_abs_repeat": 0.0,
+      "max_abs_alias": 0.0,
+      "score_sha256": "7feb023a55223b0da429065ad545dfecf6b0d41bc2e1990db84a1eab5201a20f",
+      "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+    }
+  ],
+  "role": "NUMERICAL_BINDING_NOT_PHYSICAL_OR_EXPERIMENTAL_VALIDATION"
+}

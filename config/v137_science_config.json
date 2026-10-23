@@ -21,12 +21,22 @@
     "previous_parity_record": "results/v136/preflight/implementation_parity.csv",
     "old_unqualified_profiles": "results/v136/profiles",
     "observation_type": "SIGNED_STATIC_C_FROM_LINEAR_INTENSITY",
-    "score_shape": [13, 13],
+    "score_shape": [
+      13,
+      13
+    ],
     "prior_loss_type": "UNSCALED_L2",
     "replay_abs_tol": 1e-12,
-    "replay_relative_tol": 1e-7
+    "replay_relative_tol": 1e-07
   },
-  "M_opened_cases": ["M01", "M02", "M03", "M04", "M05", "M06"],
+  "M_opened_cases": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06"
+  ],
   "M_validator_only_task_records": "results/v126/v132_M_cases.json",
   "past_development_observations": {
     "H": "results/v125/library/v125_direct_holdouts.h5",
@@ -46,7 +56,10 @@
   "conditional_assumptions": {
     "glass_n": 1.5,
     "water_n": 1.3353,
-    "effective_sphere_n_real_imag": [1.38, 0.0],
+    "effective_sphere_n_real_imag": [
+      1.38,
+      0.0
+    ],
     "NA": 0.8,
     "extra_relay_magnification": 1.0,
     "object_pixel_nm": 280.0,
@@ -59,19 +72,38 @@
     "reference_frames": 8
   },
   "model_bounds_nm": {
-    "D": [30.0, 200.0],
-    "h_center": [350.0, 550.0],
-    "xy": [-500.0, 500.0],
+    "D": [
+      30.0,
+      200.0
+    ],
+    "h_center": [
+      350.0,
+      550.0
+    ],
+    "xy": [
+      -500.0,
+      500.0
+    ],
     "min_surface_gap": 100.0
   },
   "F2_profile": {
     "initial_D_nm_step": 5.0,
-    "adaptive_D_nm_steps": [2.5, 1.0, 0.5],
+    "adaptive_D_nm_steps": [
+      2.5,
+      1.0,
+      0.5
+    ],
     "single_case_canonical_max": 120000,
     "maximum_saved_independent_starts_per_D": 10,
     "per_start_call_limit": 1200,
     "max_nfev_per_start": 200,
-    "axial_start_nm": [350.0, 400.0, 450.0, 500.0, 550.0],
+    "axial_start_nm": [
+      350.0,
+      400.0,
+      450.0,
+      500.0,
+      550.0
+    ],
     "include_exact_joint_D": true,
     "include_all_training_D": true,
     "include_both_boundaries": true,
@@ -83,11 +115,24 @@
     "is_95pct_experimental_confidence_interval": false
   },
   "noise": {
-    "background_e_per_pixel": [1000, 10000, 100000],
+    "background_e_per_pixel": [
+      1000,
+      10000,
+      100000
+    ],
     "read_noise_e": 2.0,
     "reference_frames": 8,
-    "development_D_nm": [50, 100, 160, 200],
-    "development_h_nm": [375, 425, 475],
+    "development_D_nm": [
+      50,
+      100,
+      160,
+      200
+    ],
+    "development_h_nm": [
+      375,
+      425,
+      475
+    ],
     "development_repetitions_per_B": 1,
     "development_blanks_per_B": 80,
     "independent_validation_blanks_per_B": 60,
@@ -99,13 +144,23 @@
     "seed_namespace": "V137_PRE_REGISTER_BEFORE_VIEWING_VALIDATION_ARRAYS"
   },
   "motion": {
-    "D_nm": [55, 115, 185],
+    "D_nm": [
+      55,
+      115,
+      185
+    ],
     "trajectories_per_D": 2,
     "frames_per_trajectory": 8,
     "rate_Hz": 5000,
-    "exposures_us": [25, 100],
+    "exposures_us": [
+      25,
+      100
+    ],
     "fine_path_step_us": 0.625,
-    "comparison_steps_us": [1.25, 2.5],
+    "comparison_steps_us": [
+      1.25,
+      2.5
+    ],
     "minimum_valid_frames": 4,
     "shared_D_continuous": true,
     "do_not_use_generator_true_trajectory_for_fitting": true,
@@ -123,5 +178,20 @@
   },
   "no_new_blind_holdouts": true,
   "diameter_definition": "CONDITIONAL_UNIFORM_SPHERE_OPTICAL_EQUIVALENT",
-  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "execution_revision": "R1",
+  "intake_commit": "24d18d592034df058c4a8edb0acb04d4ccdc2fc1",
+  "reviewed_numeric_commit": "0ca301e6f3f68c596665475d94f8b924ef3356e2",
+  "branch_read_status": "V137_RESULT_NOT_OBTAINED; V136_ADVANCED_BY_SUMMARY_ONLY",
+  "M_processing_order": [
+    "M05",
+    "M06",
+    "M01",
+    "M02",
+    "M03",
+    "M04"
+  ],
+  "summary_is_not_numeric_source": true,
+  "contract_revision_rule": "R1 replaces prior V137 handoff execution text; budgets are ONE V137 task, not additive.",
+  "must_reconcile_local_history_before_execution": true
 }

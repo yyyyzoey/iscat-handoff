@@ -1,0 +1,16 @@
+{
+  "schema": "iscat137.dev_error_envelope.1",
+  "frozen_rule": "epsilon_dev = max(1e-12, max over opened H/J/K/L truth-point unscaled central13 L2)",
+  "epsilon_dev_L2": 0.10972405988601544,
+  "per_family_max": {
+    "H": 0.09673688849238402,
+    "J": 0.09804901836270273,
+    "K": 0.08500684364826162,
+    "L": 0.10972405988601544
+  },
+  "n_cases": 24,
+  "numeric_floor": 1e-12,
+  "compatible_rule": "R_p(D) <= R_min + epsilon_dev_L2 (same unsquared L2)",
+  "is_95pct_experimental_confidence_interval": false,
+  "oracle_F2_calls": 3129
+}

@@ -1,0 +1,8 @@
+python -m unittest discover -s tests -v  # 43 PASS
+python tools/validate_handoff.py --root . --zip <R1 zip>  # 19 members
+python tools/audit_intake.py --repo <repo> --out <repo>/results/v137_r1/preflight/intake.json
+python tools/v137r1_takeover.py --r0-profiles <repo>/results/v137/offline_F2_profiles  # 216/216 rows verified
+python tools/replay_all_witnesses.py --repo <repo> --config config/v137_science_config.json --out <repo>/results/v137_r1/witnesses  # 6/6
+python tools/profile_resume_f2.py ... --cases M05 M06 M01 M02 M03 M04 --resume  # rc=3; TAKEOVER PATH ERROR caused rerun, counted
+python tools/v137r1_adaptive.py  # M01 7952 calls; others blocked per-case budget
+python tools/v137r1_assemble.py ; python tools/v137_run_all.py --resume ; python tools/v137r1_pack.py

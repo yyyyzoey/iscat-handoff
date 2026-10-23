@@ -1,0 +1,39 @@
+{
+  "cumulative_usage": {
+    "M01": 108244,
+    "M02": 240000,
+    "M03": 134184,
+    "M04": 240000,
+    "M05": 240000,
+    "M06": 240000
+  },
+  "cap": 120000,
+  "status": {
+    "M01": {
+      "adaptive": "RAN_PARTIAL",
+      "remaining_calls": 11756,
+      "adaptive_calls": 7952,
+      "new_adaptive_points": 52
+    },
+    "M02": {
+      "adaptive": "BLOCKED_PER_CASE_BUDGET_EXHAUSTED",
+      "remaining_calls": 0
+    },
+    "M03": {
+      "adaptive": "BLOCKED_PER_CASE_BUDGET_EXHAUSTED",
+      "remaining_calls": 0
+    },
+    "M04": {
+      "adaptive": "BLOCKED_PER_CASE_BUDGET_EXHAUSTED",
+      "remaining_calls": 0
+    },
+    "M05": {
+      "adaptive": "BLOCKED_PER_CASE_BUDGET_EXHAUSTED",
+      "remaining_calls": 0
+    },
+    "M06": {
+      "adaptive": "BLOCKED_PER_CASE_BUDGET_EXHAUSTED",
+      "remaining_calls": 0
+    }
+  }
+}

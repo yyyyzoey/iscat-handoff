@@ -1,0 +1,19 @@
+{
+  "theta": [
+    48.421809635083875,
+    354.5925885679087,
+    41.878947502044745,
+    -70.10345241084902
+  ],
+  "exact_D": 48.421809635083875,
+  "loss_L2": 1.0155664694752508e-05,
+  "saved_loss_L2": 1.015566469475251e-05,
+  "tolerance": 1.0155664694752509e-12,
+  "observation_sha256": "af3d66c1e93c11d76ba94e9c3a4de94193067a86e3c059ccd0b080aecac606ea",
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "status": "REPLAYED_FEASIBLE_POINT_ONLY",
+  "is_global_optimum_proof": false,
+  "is_physical_qualification": false,
+  "reportable_D": null,
+  "case": "M01"
+}

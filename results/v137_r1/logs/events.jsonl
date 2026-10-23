@@ -1,0 +1,6 @@
+{"ts": "2026-10-23", "event": "R1_INTAKE", "detail": "3 summary claims flagged (F2 bilinear / physical saturation / J truth)"}
+{"ts": "2026-10-23", "event": "R1_TAKEOVER", "detail": "216/216 R0 checkpoint rows verified by forward replay; 0 rejected"}
+{"ts": "2026-10-23", "event": "R1_WITNESSES", "detail": "6/6 exact theta replays saved with forward images"}
+{"ts": "2026-10-23", "event": "R1_TAKEOVER_PATH_ERROR", "detail": "checkpoints written to wrong dir; coarse rerun executed (~601k calls); counted as repeat, per-case caps overspent and documented"}
+{"ts": "2026-10-23", "event": "R1_ADAPTIVE", "detail": "M01 only: 7952 calls (2.5nm bidirectional + 1.0/0.5 near minima); no point beat the legal joint witness; M02-M06 blocked (cumulative per-case cap exhausted)"}
+{"ts": "2026-10-23", "event": "R1_GATES", "detail": "reportable_D=null for all six (physics+adaptive+detection unmet); reusable R0 physics/camera assets identity-verified"}

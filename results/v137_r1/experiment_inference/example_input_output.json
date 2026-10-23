@@ -1,0 +1,36 @@
+{
+  "valid_linear_input": {
+    "observed_signed_C_checksum": 0.0032865278027798817,
+    "candidate_D": null,
+    "reportable_D": null,
+    "diameter_reportable": false,
+    "compatible_D_components": null,
+    "reason_codes": [
+      "MATERIAL_N_K_NOT_CALIBRATED",
+      "ABSOLUTE_DIAMETER_NOT_EXPERIMENTALLY_VALIDATED",
+      "REQUIRES_LOCKED_F2_QUALIFICATION_AND_DETECTION_PASS"
+    ],
+    "scope": "CONDITIONAL_CANDIDATE_ONLY_PENDING_PHYSICS_GATE"
+  },
+  "rejected_fft_amplitude_input": {
+    "candidate_D": null,
+    "reportable_D": null,
+    "diameter_reportable": false,
+    "reason_codes": [
+      "UNSUPPORTED_OBSERVATION_TYPE:FFT_400HZ_AMPLITUDE",
+      "FORBIDDEN_ENCODING:FFT_DEMODULATED_MAGNITUDE"
+    ],
+    "compatible_D_components": null,
+    "scope": "FAIL_CLOSED_INTERFACE_NO_ABSOLUTE_CALIBRATION"
+  },
+  "rejected_missing_exposure": {
+    "candidate_D": null,
+    "reportable_D": null,
+    "diameter_reportable": false,
+    "reason_codes": [
+      "MISSING_FIELD:exposure_s"
+    ],
+    "compatible_D_components": null,
+    "scope": "FAIL_CLOSED_INTERFACE_NO_ABSOLUTE_CALIBRATION"
+  }
+}

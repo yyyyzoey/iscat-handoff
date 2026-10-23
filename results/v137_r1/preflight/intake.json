@@ -1,0 +1,151 @@
+{
+  "schema": "iscat137r1.intake.1",
+  "reviewed_numeric_commit": "0ca301e6f3f68c596665475d94f8b924ef3356e2",
+  "reviewed_intake_commit": "24d18d592034df058c4a8edb0acb04d4ccdc2fc1",
+  "actual_local_head": {
+    "returncode": 0,
+    "stdout": "d8ea45b094c65ae19a664d2a5b4e50580526baea",
+    "stderr": ""
+  },
+  "review_delta": {
+    "returncode": 0,
+    "stdout": "A\tV124_V136_HANDOFF_SUMMARY.md",
+    "stderr": ""
+  },
+  "local_v137_artifacts": [
+    {
+      "path": "results/v137",
+      "role": "LOCAL_ARTIFACTS_TO_CLASSIFY_NOT_AUTOMATICALLY_ACCEPTED",
+      "files": [
+        "results\\v137\\00_执行摘要.md",
+        "results\\v137\\01_V136独立审查与V137完整执行合同.md",
+        "results\\v137\\config\\effective_config.json",
+        "results\\v137\\config\\model_freeze.json",
+        "results\\v137\\config\\threshold_freeze.json",
+        "results\\v137\\experiment_inference\\example_input_output.json",
+        "results\\v137\\experiment_inference\\schema.json",
+        "results\\v137\\figures\\M_F2_profiles.png",
+        "results\\v137\\figures\\calibration_D_h.png",
+        "results\\v137\\library\\calibration_D100_vs_h.csv",
+        "results\\v137\\library\\calibration_D_h.csv",
+        "results\\v137\\logs\\budget.sqlite",
+        "results\\v137\\logs\\commands_and_errors.txt",
+        "results\\v137\\logs\\events.jsonl",
+        "results\\v137\\logs\\resource_budget.csv",
+        "results\\v137\\manifest_sha256.csv",
+        "results\\v137\\offline_F2_profiles\\checkpoint\\M01.json",
+        "results\\v137\\offline_F2_profiles\\checkpoint\\M02.json",
+        "results\\v137\\offline_F2_profiles\\checkpoint\\M03.json",
+        "results\\v137\\offline_F2_profiles\\checkpoint\\M04.json",
+        "results\\v137\\offline_F2_profiles\\checkpoint\\M05.json",
+        "results\\v137\\offline_F2_profiles\\checkpoint\\M06.json",
+        "results\\v137\\offline_F2_profiles\\component_error.json",
+        "results\\v137\\offline_F2_profiles\\component_status.json",
+        "results\\v137\\offline_F2_profiles\\profiles\\M01.json",
+        "results\\v137\\offline_F2_profiles\\profiles\\M02.json",
+        "results\\v137\\offline_F2_profiles\\profiles\\M03.json",
+        "results\\v137\\offline_F2_profiles\\profiles\\M04.json",
+        "results\\v137\\offline_F2_profiles\\profiles\\M05.json",
+        "results\\v137\\offline_F2_profiles\\profiles\\M06.json",
+        "results\\v137\\offline_F2_profiles\\source_binding.json",
+        "results\\v137\\preflight\\v136_audit.json",
+        "results\\v137\\profiles\\M01.json",
+        "results\\v137\\profiles\\M02.json",
+        "results\\v137\\profiles\\M03.json",
+        "results\\v137\\profiles\\M04.json",
+        "results\\v137\\profiles\\M05.json",
+        "results\\v137\\profiles\\M06.json",
+        "results\\v137\\provenance\\M_original_solve_render_sha.csv",
+        "results\\v137\\provenance\\inputs_manifest.json",
+        "results\\v137\\provenance\\train_source_audit.csv",
+        "results\\v137\\review.md",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\field_forward_reference.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\fit_reference.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\load_field_library.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\science_gates.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\template_bank.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\v137_check_return.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\v137_experiment_inference.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\v137_forward_parity.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\v137_reconcile_joint.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\v137_w2_same_solve.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\v137_w4_dev_envelope.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\v137_w5_w6_camera_motion.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\v137_w6_multiframe_refit.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\v137_w7_assemble.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\v137_w7_pack.py",
+        "results\\v137\\source\\ACTUALLY_EXECUTED_CODE\\validate_handoff.py",
+        "results\\v137\\source\\source_sha256.csv",
+        "results\\v137\\status.json",
+        "results\\v137\\validation\\M_compatible_components.csv",
+        "results\\v137\\validation\\M_error_separation.csv",
+        "results\\v137\\validation\\M_reconciled_candidates.csv",
+        "results\\v137\\validation\\M_reconciled_candidates.json",
+        "results\\v137\\validation\\actual_F2_replay.csv",
+        "results\\v137\\validation\\blank_per_trial.csv",
+        "results\\v137\\validation\\development_error_envelope.json",
+        "results\\v137\\validation\\domain_and_derivative_behavior.json",
+        "results\\v137\\validation\\forward_parity_matrix.csv",
+        "results\\v137\\validation\\implementation_parity_matrix.csv",
+        "results\\v137\\validation\\motion_paths_intensities.h5",
+        "results\\v137\\validation\\motion_per_track.csv",
+        "results\\v137\\validation\\noise_per_trial.csv",
+        "results\\v137\\validation\\old_HJKL_error_separation.csv",
+        "results\\v137\\validation\\physical_forward_qualification.json",
+        "results\\v137\\validation\\raw_camera_data.h5",
+        "results\\v137\\validation\\reportability_per_particle.json",
+        "results\\v137\\validation\\same_solve_shift_F2.csv",
+        "results\\v137\\validation\\shared_continuous_D.csv",
+        "results\\v137\\validation\\threshold_validation.json"
+      ]
+    }
+  ],
+  "source_sha256": {
+    "V124_V136_HANDOFF_SUMMARY.md": "fa9bd36137f600c7971266fa0e97c416fd0345905907fb838fd50023cc946aa3",
+    "tools\\field_forward_reference.py": "4c064031682e4c3c48130848708bd83958aab4630c3da71adf275c231a1c3520",
+    "results\\v126\\validation\\holdout_truth_validator_only.json": "71ca0ebabd399d45aba9275d285dd0757244a1a273a2d74090765d13d5095546",
+    "results\\v133\\M_F2_baseline\\M_F2_candidates.csv": "4ef1362ba18285aa1cf31d3c0bee20baa53430675cf9e83ffe3a14d0ad5e82cf",
+    "results\\v126\\v132_M_cases.json": "5d65daf4b4673f69a7b62d59e91f24ae73c1eb0b894d756fdae0af70127e86c4"
+  },
+  "summary_claim_findings": [
+    {
+      "claim": "F2 uses D/h bilinear interpolation",
+      "finding": "CONFLICT_WITH_ACTUAL_F2_CODE",
+      "correction": "F2 physical D/h tensor cubic; spatial field sampling is bilinear"
+    },
+    {
+      "claim": "High-D failure is conclusively physical saturation",
+      "finding": "NOT_ESTABLISHED_BY_SUMMARY; keep as hypothesis until same-objective diagnostics"
+    },
+    {
+      "claim": "J diameters in summary table",
+      "finding": "CONFLICT_WITH_ORIGINAL_J_REGISTRY",
+      "original_J_D_nm": [
+        41.0,
+        67.0,
+        89.0,
+        123.0,
+        151.0,
+        183.0
+      ]
+    }
+  ],
+  "actual_J_registry": [
+    41.0,
+    67.0,
+    89.0,
+    123.0,
+    151.0,
+    183.0
+  ],
+  "prior_M_record_scoring": {
+    "n": 6,
+    "MAE_nm": 2.751917769836067,
+    "RMSE_nm": 3.0542121224701333,
+    "bias_nm": 0.17160659985973106,
+    "size_error_target_only_pass": 6,
+    "scope": "OPENED_DEVELOPMENT_NOT_NEW_V137_RESULT"
+  },
+  "experimental_absolute_validated": false,
+  "scientific_acceptance": "NOT_ISSUED_BY_INTAKE"
+}

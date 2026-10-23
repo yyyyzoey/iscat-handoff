@@ -1,0 +1,38 @@
+{
+  "schema": "iscat137r1.takeover.1",
+  "cases": {
+    "M01": {
+      "kept": 36,
+      "rejected": 0,
+      "prior_calls": 54122
+    },
+    "M02": {
+      "kept": 36,
+      "rejected": 0,
+      "prior_calls": 120000
+    },
+    "M03": {
+      "kept": 36,
+      "rejected": 0,
+      "prior_calls": 67092
+    },
+    "M04": {
+      "kept": 36,
+      "rejected": 0,
+      "prior_calls": 120000
+    },
+    "M05": {
+      "kept": 36,
+      "rejected": 0,
+      "prior_calls": 120000
+    },
+    "M06": {
+      "kept": 36,
+      "rejected": 0,
+      "prior_calls": 120000
+    }
+  },
+  "verified_rows": 216,
+  "rejected_rows": 0,
+  "verification_calls": 216
+}

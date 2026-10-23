@@ -1,0 +1,12 @@
+event,f2_canonical_calls,camera_exposure_events
+R0_coarse_profiles,601227,0
+R0_joint_reconcile,33,0
+R0_forward_parity,44,0
+R0_dev_envelope_oracles,3129,0
+R0_camera_motion_runs_1_to_5,182649,23958
+R0_multiframe_runs_partial+3,263483,0
+R1_takeover_verification,216,0
+R1_witness_replays,6,0
+R1_coarse_rerun_takeover_path_error,601214,0
+R1_adaptive_M01,7952,0
+TOTAL_ONE_V137_TASK,1659953,23958

@@ -1,0 +1,9 @@
+{
+  "stages": {
+    "intake": "SKIP_RESUMED",
+    "witnesses": "SKIP_RESUMED",
+    "coarse": "SKIP_RESUMED",
+    "adaptive": "SKIP_RESUMED",
+    "gates": "SKIP_RESUMED"
+  }
+}

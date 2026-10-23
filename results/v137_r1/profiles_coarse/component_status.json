@@ -1,0 +1,96 @@
+{
+  "run_id": "6312eba5615a3788df7d97f2cde46e1171c1854974730fd99240fb9b73907419",
+  "component": "V137_INITIAL_LOCKED_F2_PROFILE",
+  "rows": [
+    {
+      "case": "M05",
+      "grid_points_expected": 36,
+      "grid_points_saved": 36,
+      "grid_complete": false,
+      "known_joint_D": 167.83725685498712,
+      "known_joint_loss_L2": 0.00016526920948238687,
+      "current_best_D": 167.83725685498712,
+      "current_min_loss_L2": 0.00016526920948238687,
+      "new_canonical_calls": 120000,
+      "actual_forward_calls_including_replay": 120001,
+      "scientific_complete": false
+    },
+    {
+      "case": "M06",
+      "grid_points_expected": 36,
+      "grid_points_saved": 36,
+      "grid_complete": false,
+      "known_joint_D": 190.29730590514112,
+      "known_joint_loss_L2": 8.455877073644359e-05,
+      "current_best_D": 190.29730590514112,
+      "current_min_loss_L2": 8.455877073639274e-05,
+      "new_canonical_calls": 120000,
+      "actual_forward_calls_including_replay": 120001,
+      "scientific_complete": false
+    },
+    {
+      "case": "M01",
+      "grid_points_expected": 36,
+      "grid_points_saved": 36,
+      "grid_complete": true,
+      "known_joint_D": 48.421809635083875,
+      "known_joint_loss_L2": 1.0155664694752508e-05,
+      "current_best_D": 48.421809635083875,
+      "current_min_loss_L2": 1.0155664694745375e-05,
+      "new_canonical_calls": 54122,
+      "actual_forward_calls_including_replay": 54123,
+      "scientific_complete": false
+    },
+    {
+      "case": "M02",
+      "grid_points_expected": 36,
+      "grid_points_saved": 36,
+      "grid_complete": false,
+      "known_joint_D": 81.27358906303667,
+      "known_joint_loss_L2": 1.8267013462691719e-06,
+      "current_best_D": 81.27358906303667,
+      "current_min_loss_L2": 1.8261696043568766e-06,
+      "new_canonical_calls": 120000,
+      "actual_forward_calls_including_replay": 120001,
+      "scientific_complete": false
+    },
+    {
+      "case": "M03",
+      "grid_points_expected": 36,
+      "grid_points_saved": 36,
+      "grid_complete": false,
+      "known_joint_D": 122.11998103353119,
+      "known_joint_loss_L2": 0.00016068835041670268,
+      "current_best_D": 122.11998103353119,
+      "current_min_loss_L2": 0.00016068835041648723,
+      "new_canonical_calls": 67092,
+      "actual_forward_calls_including_replay": 67093,
+      "scientific_complete": false
+    },
+    {
+      "case": "M04",
+      "grid_points_expected": 36,
+      "grid_points_saved": 36,
+      "grid_complete": false,
+      "known_joint_D": 151.07969710737842,
+      "known_joint_loss_L2": 0.0004344390219794311,
+      "current_best_D": 151.07969710737842,
+      "current_min_loss_L2": 0.00043443902197935465,
+      "new_canonical_calls": 120000,
+      "actual_forward_calls_including_replay": 120001,
+      "scientific_complete": false
+    }
+  ],
+  "full_task_complete": false,
+  "physical_qualified": false,
+  "required_next": [
+    "SOURCE_GEOMETRY_AND_SAME_SOLVE_SHIFT",
+    "ADAPTIVE_COMPETITOR_REFINEMENT",
+    "FROZEN_DEV_ERROR_ENVELOPE",
+    "FAIL_CLOSED_REPORTABILITY",
+    "CAMERA_AND_EXPOSURE_SHARED_D",
+    "EXPERIMENT_INPUT_AND_INDEPENDENT_ARCHIVE"
+  ],
+  "elapsed_seconds": 2877.219000000041,
+  "actual_component_canonical_forward_calls": 601227
+}
