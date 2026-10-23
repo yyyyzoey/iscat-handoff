@@ -1,0 +1,900 @@
+{
+  "schema": "iscat138.raw_observation_audit.1",
+  "scope": "RAW_RENDER_MAT_TO_COMBINED_H5_OBSERVATION_IDENTITY__NO_GEOMETRY_CERTIFICATE",
+  "combined_h5_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+  "pairs": [
+    {
+      "case": "M01",
+      "variant": "default",
+      "merged_dataset": "M01/C",
+      "recorded_D": 53,
+      "recorded_h": 365.625,
+      "qualification": "NOT_YET_PHYSICAL_QUALIFIED",
+      "original_render_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_1c9e34a793c140784ef763305bcfb66eb551773b.mat",
+      "original_render_file_sha256": "15907b0ccfa467d234afb995b8dfe1d818dd2336b70a9b891e3f55a84c549852",
+      "raw_render_C_sha256": "9cc656171e51ff5e669694340a9380753c526515fed987de1d7a194bcc21e059",
+      "raw_render_intensity_identity": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0,
+        "relative_L2": 0.0,
+        "max_abs": 0.0,
+        "reference_norm_L2": 0.007459844446500762
+      },
+      "render_meta": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "focus_z": 450.0,
+        "q": 5.0,
+        "render_cfg_diameter_nm": 50.0,
+        "render_cfg_gap_nm": 5.0,
+        "render_center_nm": [
+          0.0,
+          0.0,
+          365.625
+        ],
+        "render_object_pixel_nm": 280.0
+      },
+      "merged_C_sha256": "eda9dfe4d2d6642714f910475067e504000a0ec0162b0dd370c5a201e806dfba",
+      "same_array_convention_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.000543425542552195,
+        "relative_L2": 0.07284676596803612,
+        "max_abs": 0.00020074713858441156,
+        "reference_norm_L2": 0.007459844446500762
+      },
+      "central13_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          13,
+          13
+        ],
+        "abs_L2": 0.0005391538725478298,
+        "relative_L2": 0.07243768643778664,
+        "max_abs": 0.00020074713858441156,
+        "reference_norm_L2": 0.007443002379857672
+      },
+      "exploratory_NOT_ACCEPTED_symmetry_L2": {
+        "IDENTITY": 0.000543425542552195,
+        "TRANSPOSE_ONLY": 7.724054974644873e-08,
+        "FLIP_FIRST_AXIS_ONLY": 0.0005434255491098373,
+        "FLIP_SECOND_AXIS_ONLY": 0.0005434255355132864,
+        "ROTATE_180_ONLY": 0.000543425542552195,
+        "TRANSPOSE_FLIP_FIRST": 0.0,
+        "TRANSPOSE_FLIP_SECOND": 1.239573209413074e-07,
+        "TRANSPOSE_ROTATE_180": 9.96111681203021e-08
+      },
+      "expected_xy_offset": [
+        0.0,
+        0.0
+      ],
+      "render_offset_exact": true,
+      "mapping_consistent_no_transform": false
+    },
+    {
+      "case": "M01",
+      "variant": "at_offset",
+      "merged_dataset": "M01/at_offset/C",
+      "recorded_D": 53,
+      "recorded_h": 365.625,
+      "qualification": "NOT_YET_PHYSICAL_QUALIFIED",
+      "original_render_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_daca5180c61bca96bd7734e3b33a8631c875f0b2.mat",
+      "original_render_file_sha256": "d6d3a52864eb94c8e8c8ccde3f4d538ef3783ce2ca60a46a5d6c136b4b0a6319",
+      "raw_render_C_sha256": "8fad203d47aed46a912216d9761f38697ee5ec71b1e26f243ba9d832c0229d8b",
+      "raw_render_intensity_identity": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0,
+        "relative_L2": 0.0,
+        "max_abs": 0.0,
+        "reference_norm_L2": 0.007460368671188291
+      },
+      "render_meta": {
+        "dx": 42.0,
+        "dy": -70.0,
+        "focus_z": 450.0,
+        "q": 5.0,
+        "render_center_nm": [
+          0.0,
+          0.0,
+          365.625
+        ],
+        "render_object_pixel_nm": 280.0
+      },
+      "merged_C_sha256": "48573aabe0a506448550676e350ca841d83bf6cf89363b9c7f3f14cad5a82e02",
+      "same_array_convention_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0037874616562347924,
+        "relative_L2": 0.5076775455966205,
+        "max_abs": 0.0020126470518242344,
+        "reference_norm_L2": 0.00746036867118829
+      },
+      "central13_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          13,
+          13
+        ],
+        "abs_L2": 0.003761089715200647,
+        "relative_L2": 0.505409001782135,
+        "max_abs": 0.0020126470518242344,
+        "reference_norm_L2": 0.007441675359834465
+      },
+      "exploratory_NOT_ACCEPTED_symmetry_L2": {
+        "IDENTITY": 0.0037874616562347924,
+        "TRANSPOSE_ONLY": 0.0026787655827145394,
+        "FLIP_FIRST_AXIS_ONLY": 0.0014212748516551688,
+        "FLIP_SECOND_AXIS_ONLY": 0.005065254328639206,
+        "ROTATE_180_ONLY": 0.003787461656234792,
+        "TRANSPOSE_FLIP_FIRST": 0.0,
+        "TRANSPOSE_FLIP_SECOND": 0.0052585677850066365,
+        "TRANSPOSE_ROTATE_180": 0.00463587254650982
+      },
+      "expected_xy_offset": [
+        42,
+        -70
+      ],
+      "render_offset_exact": true,
+      "mapping_consistent_no_transform": false
+    },
+    {
+      "case": "M02",
+      "variant": "default",
+      "merged_dataset": "M02/C",
+      "recorded_D": 81,
+      "recorded_h": 415.625,
+      "qualification": "NOT_YET_PHYSICAL_QUALIFIED",
+      "original_render_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_ee55b8971d7534a32387f44d0f62b9f9a5e63769.mat",
+      "original_render_file_sha256": "d55a2671d22750b5b31513877fe2b40648d3504ce54a0c3547818609c882902d",
+      "raw_render_C_sha256": "c7da7498d64b2141a97a55f9034c2d9b8bae49158d20eee7bb715b6a9f20dbca",
+      "raw_render_intensity_identity": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0,
+        "relative_L2": 0.0,
+        "max_abs": 0.0,
+        "reference_norm_L2": 0.02644956885039756
+      },
+      "render_meta": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "focus_z": 450.0,
+        "q": 5.0,
+        "render_cfg_diameter_nm": 50.0,
+        "render_cfg_gap_nm": 5.0,
+        "render_center_nm": [
+          0.0,
+          0.0,
+          415.625
+        ],
+        "render_object_pixel_nm": 280.0
+      },
+      "merged_C_sha256": "1a38d56e1a243ab0356b54b256d5bcafaef9abcd03fab2975e17461d1ed63b70",
+      "same_array_convention_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0019582102122728613,
+        "relative_L2": 0.07403561938377032,
+        "max_abs": 0.0007205476613438922,
+        "reference_norm_L2": 0.02644956885039756
+      },
+      "central13_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          13,
+          13
+        ],
+        "abs_L2": 0.001942707928740982,
+        "relative_L2": 0.07362143751074018,
+        "max_abs": 0.0007205476613438922,
+        "reference_norm_L2": 0.026387802173213095
+      },
+      "exploratory_NOT_ACCEPTED_symmetry_L2": {
+        "IDENTITY": 0.0019582102122728613,
+        "TRANSPOSE_ONLY": 1.0476777012340238e-06,
+        "FLIP_FIRST_AXIS_ONLY": 0.001958210122417914,
+        "FLIP_SECOND_AXIS_ONLY": 0.0019582102969349004,
+        "ROTATE_180_ONLY": 0.0019582102122728613,
+        "TRANSPOSE_FLIP_FIRST": 0.0,
+        "TRANSPOSE_FLIP_SECOND": 1.0934605104140673e-06,
+        "TRANSPOSE_ROTATE_180": 3.440421327996069e-07
+      },
+      "expected_xy_offset": [
+        0.0,
+        0.0
+      ],
+      "render_offset_exact": true,
+      "mapping_consistent_no_transform": false
+    },
+    {
+      "case": "M02",
+      "variant": "at_offset",
+      "merged_dataset": "M02/at_offset/C",
+      "recorded_D": 81,
+      "recorded_h": 415.625,
+      "qualification": "NOT_YET_PHYSICAL_QUALIFIED",
+      "original_render_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_8abbfd21297e01198293a9238271d299134b13b5.mat",
+      "original_render_file_sha256": "2333020966650100de532ae49fd2716d9e5c1c58db68ccd6fd2c58118d54479e",
+      "raw_render_C_sha256": "c54e3a90f68031f059f774138809629fdbd988813354103644139310b1399d21",
+      "raw_render_intensity_identity": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0,
+        "relative_L2": 0.0,
+        "max_abs": 0.0,
+        "reference_norm_L2": 0.026466875136191597
+      },
+      "render_meta": {
+        "dx": -112.0,
+        "dy": 56.0,
+        "focus_z": 450.0,
+        "q": 5.0,
+        "render_center_nm": [
+          0.0,
+          0.0,
+          415.625
+        ],
+        "render_object_pixel_nm": 280.0
+      },
+      "merged_C_sha256": "08fa7fdc63fdfea420b6042e3e168441de09c7ef7700441d226efa6f693589a5",
+      "same_array_convention_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.019995958907010766,
+        "relative_L2": 0.7555088692607951,
+        "max_abs": 0.011730682062309764,
+        "reference_norm_L2": 0.026466875136191597
+      },
+      "central13_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          13,
+          13
+        ],
+        "abs_L2": 0.019871909578300456,
+        "relative_L2": 0.7528556457367481,
+        "max_abs": 0.011730682062309764,
+        "reference_norm_L2": 0.026395378305031785
+      },
+      "exploratory_NOT_ACCEPTED_symmetry_L2": {
+        "IDENTITY": 0.019995958907010766,
+        "TRANSPOSE_ONLY": 0.023716873816436165,
+        "FLIP_FIRST_AXIS_ONLY": 0.009489918659008159,
+        "FLIP_SECOND_AXIS_ONLY": 0.025612633227837647,
+        "ROTATE_180_ONLY": 0.019995958907010766,
+        "TRANSPOSE_FLIP_FIRST": 0.0,
+        "TRANSPOSE_FLIP_SECOND": 0.026251712077412052,
+        "TRANSPOSE_ROTATE_180": 0.013443545613070977
+      },
+      "expected_xy_offset": [
+        -112,
+        56
+      ],
+      "render_offset_exact": true,
+      "mapping_consistent_no_transform": false
+    },
+    {
+      "case": "M03",
+      "variant": "default",
+      "merged_dataset": "M03/C",
+      "recorded_D": 119,
+      "recorded_h": 446.875,
+      "qualification": "NOT_YET_PHYSICAL_QUALIFIED",
+      "original_render_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_9c2417b51575163eb8ff06e3dc6d3871bfb60364.mat",
+      "original_render_file_sha256": "7d93fa256dbdb570b3761492fd013b56756380c2f2f2b0e26fd2097b05971793",
+      "raw_render_C_sha256": "1aa45a6ba3bda99d6ae19f7e63cd1282870b3efceb60c65b0d3a9bd36b59c5e6",
+      "raw_render_intensity_identity": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0,
+        "relative_L2": 0.0,
+        "max_abs": 0.0,
+        "reference_norm_L2": 0.09064853306730007
+      },
+      "render_meta": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "focus_z": 450.0,
+        "q": 5.0,
+        "render_cfg_diameter_nm": 50.0,
+        "render_cfg_gap_nm": 5.0,
+        "render_center_nm": [
+          0.0,
+          0.0,
+          446.875
+        ],
+        "render_object_pixel_nm": 280.0
+      },
+      "merged_C_sha256": "e6c58a1b105ecb977890344ae863ea3aaebd1ac836d3c1abf28d2d3d7d590988",
+      "same_array_convention_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.007029343042619194,
+        "relative_L2": 0.07754502808556658,
+        "max_abs": 0.0025794851893758443,
+        "reference_norm_L2": 0.09064853306730006
+      },
+      "central13_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          13,
+          13
+        ],
+        "abs_L2": 0.006969535704536855,
+        "relative_L2": 0.07709831206451932,
+        "max_abs": 0.0025794851893758443,
+        "reference_norm_L2": 0.09039803230328097
+      },
+      "exploratory_NOT_ACCEPTED_symmetry_L2": {
+        "IDENTITY": 0.007029343042619194,
+        "TRANSPOSE_ONLY": 7.235545487565264e-07,
+        "FLIP_FIRST_AXIS_ONLY": 0.007029343100175087,
+        "FLIP_SECOND_AXIS_ONLY": 0.007029342975121901,
+        "ROTATE_180_ONLY": 0.007029343042619195,
+        "TRANSPOSE_FLIP_FIRST": 0.0,
+        "TRANSPOSE_FLIP_SECOND": 1.5120705054511183e-06,
+        "TRANSPOSE_ROTATE_180": 1.3793459619610794e-06
+      },
+      "expected_xy_offset": [
+        0.0,
+        0.0
+      ],
+      "render_offset_exact": true,
+      "mapping_consistent_no_transform": false
+    },
+    {
+      "case": "M03",
+      "variant": "at_offset",
+      "merged_dataset": "M03/at_offset/C",
+      "recorded_D": 119,
+      "recorded_h": 446.875,
+      "qualification": "NOT_YET_PHYSICAL_QUALIFIED",
+      "original_render_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_daa625469274fb71c81305541d1a5ffc1fd5820c.mat",
+      "original_render_file_sha256": "ab4d2ee688af8b8f1ca147d0193ebe093ecffba100bee72f4ae3f37e33f28ab6",
+      "raw_render_C_sha256": "01ee6d77929f17d7ffe6da70450eab57660362bcd3459868fe983c33a2eaf868",
+      "raw_render_intensity_identity": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0,
+        "relative_L2": 0.0,
+        "max_abs": 0.0,
+        "reference_norm_L2": 0.09077951965651077
+      },
+      "render_meta": {
+        "dx": 84.0,
+        "dy": 98.0,
+        "focus_z": 450.0,
+        "q": 5.0,
+        "render_center_nm": [
+          0.0,
+          0.0,
+          446.875
+        ],
+        "render_object_pixel_nm": 280.0
+      },
+      "merged_C_sha256": "cd6d0df5502f112e07beb023d9d41c18cacc69548a60e981b878d44cdf0e41b4",
+      "same_array_convention_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.07214040861254087,
+        "relative_L2": 0.7946771351677551,
+        "max_abs": 0.03730651422809859,
+        "reference_norm_L2": 0.09077951965651075
+      },
+      "central13_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          13,
+          13
+        ],
+        "abs_L2": 0.07159994632399883,
+        "relative_L2": 0.7913978602039119,
+        "max_abs": 0.03730651422809859,
+        "reference_norm_L2": 0.09047275703468588
+      },
+      "exploratory_NOT_ACCEPTED_symmetry_L2": {
+        "IDENTITY": 0.07214040861254087,
+        "TRANSPOSE_ONLY": 0.06477522041481758,
+        "FLIP_FIRST_AXIS_ONLY": 0.09556572395562282,
+        "FLIP_SECOND_AXIS_ONLY": 0.0109007957308451,
+        "ROTATE_180_ONLY": 0.07214040861254087,
+        "TRANSPOSE_FLIP_FIRST": 0.0,
+        "TRANSPOSE_FLIP_SECOND": 0.09615518742335594,
+        "TRANSPOSE_ROTATE_180": 0.0787974977251493
+      },
+      "expected_xy_offset": [
+        84,
+        98
+      ],
+      "render_offset_exact": true,
+      "mapping_consistent_no_transform": false
+    },
+    {
+      "case": "M04",
+      "variant": "default",
+      "merged_dataset": "M04/C",
+      "recorded_D": 149,
+      "recorded_h": 471.875,
+      "qualification": "NOT_YET_PHYSICAL_QUALIFIED",
+      "original_render_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_b41481f8e0e7e90a188012cec10728224098d2c2.mat",
+      "original_render_file_sha256": "a939fe2ee267d67ee05fc3e69bce3d950e4ebd6110b3535519ea827a362dd974",
+      "raw_render_C_sha256": "123b14196414059de7bdae7a0a2358c382c3906b89d101415e298933e2f5f070",
+      "raw_render_intensity_identity": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0,
+        "relative_L2": 0.0,
+        "max_abs": 0.0,
+        "reference_norm_L2": 0.07562905490980572
+      },
+      "render_meta": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "focus_z": 450.0,
+        "q": 5.0,
+        "render_cfg_diameter_nm": 50.0,
+        "render_cfg_gap_nm": 5.0,
+        "render_center_nm": [
+          0.0,
+          0.0,
+          471.875
+        ],
+        "render_object_pixel_nm": 280.0
+      },
+      "merged_C_sha256": "5380b1f0668fcf22dc942add71483ef653b6a41035bd582f371ffea7eea75f60",
+      "same_array_convention_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.006634035803955342,
+        "relative_L2": 0.08771808416576159,
+        "max_abs": 0.0024068978910283985,
+        "reference_norm_L2": 0.07562905490980572
+      },
+      "central13_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          13,
+          13
+        ],
+        "abs_L2": 0.00656699860420619,
+        "relative_L2": 0.08720229161190944,
+        "max_abs": 0.0024068978910283985,
+        "reference_norm_L2": 0.07530763793952083
+      },
+      "exploratory_NOT_ACCEPTED_symmetry_L2": {
+        "IDENTITY": 0.006634035803955342,
+        "TRANSPOSE_ONLY": 4.789119935135179e-06,
+        "FLIP_FIRST_AXIS_ONLY": 0.00663403607425681,
+        "FLIP_SECOND_AXIS_ONLY": 0.006634035526032772,
+        "ROTATE_180_ONLY": 0.006634035803955342,
+        "TRANSPOSE_FLIP_FIRST": 0.0,
+        "TRANSPOSE_FLIP_SECOND": 4.852351853327547e-06,
+        "TRANSPOSE_ROTATE_180": 8.430953946671992e-07
+      },
+      "expected_xy_offset": [
+        0.0,
+        0.0
+      ],
+      "render_offset_exact": true,
+      "mapping_consistent_no_transform": false
+    },
+    {
+      "case": "M04",
+      "variant": "at_offset",
+      "merged_dataset": "M04/at_offset/C",
+      "recorded_D": 149,
+      "recorded_h": 471.875,
+      "qualification": "NOT_YET_PHYSICAL_QUALIFIED",
+      "original_render_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_5d7396996ecb36cbd28e3ffd15f9a4da9849a300.mat",
+      "original_render_file_sha256": "08bb5d81056560f5b6627d0047fd195b490e8dc46a44a860726ea5d62d1197cd",
+      "raw_render_C_sha256": "d9872a260b97de76d0b49e6203c8974e3801e626af50079802a55fcf17a339af",
+      "raw_render_intensity_identity": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0,
+        "relative_L2": 0.0,
+        "max_abs": 0.0,
+        "reference_norm_L2": 0.07593274387413443
+      },
+      "render_meta": {
+        "dx": -70.0,
+        "dy": -112.0,
+        "focus_z": 450.0,
+        "q": 5.0,
+        "render_center_nm": [
+          0.0,
+          0.0,
+          471.875
+        ],
+        "render_object_pixel_nm": 280.0
+      },
+      "merged_C_sha256": "e4f09d92b5c6773bdcab708da8fed0c8a8978988ff0e1818f774e8a96867d9e6",
+      "same_array_convention_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.06578248299386043,
+        "relative_L2": 0.8663256407920806,
+        "max_abs": 0.033671055319173124,
+        "reference_norm_L2": 0.07593274387413441
+      },
+      "central13_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          13,
+          13
+        ],
+        "abs_L2": 0.065107189045173,
+        "relative_L2": 0.8620122517653838,
+        "max_abs": 0.033671055319173124,
+        "reference_norm_L2": 0.07552930821091555
+      },
+      "exploratory_NOT_ACCEPTED_symmetry_L2": {
+        "IDENTITY": 0.06578248299386043,
+        "TRANSPOSE_ONLY": 0.04896201653809014,
+        "FLIP_FIRST_AXIS_ONLY": 0.08504673745060548,
+        "FLIP_SECOND_AXIS_ONLY": 0.023060015148813857,
+        "ROTATE_180_ONLY": 0.06578248299386043,
+        "TRANSPOSE_FLIP_FIRST": 0.0,
+        "TRANSPOSE_FLIP_SECOND": 0.08780572774030865,
+        "TRANSPOSE_ROTATE_180": 0.07875931831941989
+      },
+      "expected_xy_offset": [
+        -70,
+        -112
+      ],
+      "render_offset_exact": true,
+      "mapping_consistent_no_transform": false
+    },
+    {
+      "case": "M05",
+      "variant": "default",
+      "merged_dataset": "M05/C",
+      "recorded_D": 171,
+      "recorded_h": 509.375,
+      "qualification": "NOT_YET_PHYSICAL_QUALIFIED",
+      "original_render_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_9ae327f82ea098aba00498f403fadb9d8fc6f566.mat",
+      "original_render_file_sha256": "fd7461379e65528e4f8c5c7b30d8ab2e5f119448967a9302f98ec20b73543af7",
+      "raw_render_C_sha256": "caa1dc70dadb55c0ac5ddeb1b593bb63e3f5d3c403186c4b8d4a91b0c95e43df",
+      "raw_render_intensity_identity": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0,
+        "relative_L2": 0.0,
+        "max_abs": 0.0,
+        "reference_norm_L2": 0.10670008379319328
+      },
+      "render_meta": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "focus_z": 450.0,
+        "q": 5.0,
+        "render_cfg_diameter_nm": 50.0,
+        "render_cfg_gap_nm": 5.0,
+        "render_center_nm": [
+          0.0,
+          0.0,
+          509.375
+        ],
+        "render_object_pixel_nm": 280.0
+      },
+      "merged_C_sha256": "de201fac9ccb70779a5e1e0be075bbe0ba082750f29b235129f9f17ca771265d",
+      "same_array_convention_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0068544549007837265,
+        "relative_L2": 0.06424038910849472,
+        "max_abs": 0.0025620213757737605,
+        "reference_norm_L2": 0.10670008379319326
+      },
+      "central13_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          13,
+          13
+        ],
+        "abs_L2": 0.006814534683866027,
+        "relative_L2": 0.063941660525139,
+        "max_abs": 0.0025620213757737605,
+        "reference_norm_L2": 0.10657425265311739
+      },
+      "exploratory_NOT_ACCEPTED_symmetry_L2": {
+        "IDENTITY": 0.0068544549007837265,
+        "TRANSPOSE_ONLY": 3.2444511285670803e-06,
+        "FLIP_FIRST_AXIS_ONLY": 0.006854453722512713,
+        "FLIP_SECOND_AXIS_ONLY": 0.006854455961902646,
+        "ROTATE_180_ONLY": 0.006854454900783726,
+        "TRANSPOSE_FLIP_FIRST": 0.0,
+        "TRANSPOSE_FLIP_SECOND": 6.1390056329145196e-06,
+        "TRANSPOSE_ROTATE_180": 5.363502140610308e-06
+      },
+      "expected_xy_offset": [
+        0.0,
+        0.0
+      ],
+      "render_offset_exact": true,
+      "mapping_consistent_no_transform": false
+    },
+    {
+      "case": "M05",
+      "variant": "at_offset",
+      "merged_dataset": "M05/at_offset/C",
+      "recorded_D": 171,
+      "recorded_h": 509.375,
+      "qualification": "NOT_YET_PHYSICAL_QUALIFIED",
+      "original_render_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_03e580db0b47097f498affca0aded00cabfa9bb3.mat",
+      "original_render_file_sha256": "0f56c7424c0207e70f15591a1617a1cc33b809c532ed76a485a3cd99c8bf9501",
+      "raw_render_C_sha256": "4018df07e3ee51d40282d0944df6727f764028a39c20a1c946f9d37494576cdc",
+      "raw_render_intensity_identity": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0,
+        "relative_L2": 0.0,
+        "max_abs": 0.0,
+        "reference_norm_L2": 0.10649410855610043
+      },
+      "render_meta": {
+        "dx": 126.0,
+        "dy": -42.0,
+        "focus_z": 450.0,
+        "q": 5.0,
+        "render_center_nm": [
+          0.0,
+          0.0,
+          509.375
+        ],
+        "render_object_pixel_nm": 280.0
+      },
+      "merged_C_sha256": "6deb8e14bc9621a654c75872b28c3ba143bbff6c1dd55aac70a12233d7b7ac8d",
+      "same_array_convention_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.07873734869896398,
+        "relative_L2": 0.7393587285392941,
+        "max_abs": 0.04669925611725739,
+        "reference_norm_L2": 0.10649410855610045
+      },
+      "central13_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          13,
+          13
+        ],
+        "abs_L2": 0.07847895989174,
+        "relative_L2": 0.7378908863947163,
+        "max_abs": 0.04669925611725739,
+        "reference_norm_L2": 0.10635577879973929
+      },
+      "exploratory_NOT_ACCEPTED_symmetry_L2": {
+        "IDENTITY": 0.07873734869896398,
+        "TRANSPOSE_ONLY": 0.09821657139482162,
+        "FLIP_FIRST_AXIS_ONLY": 0.05200022099302134,
+        "FLIP_SECOND_AXIS_ONLY": 0.09603869666659028,
+        "ROTATE_180_ONLY": 0.07873734869896398,
+        "TRANSPOSE_FLIP_FIRST": 0.0,
+        "TRANSPOSE_FLIP_SECOND": 0.10287003184225602,
+        "TRANSPOSE_ROTATE_180": 0.0375808934898554
+      },
+      "expected_xy_offset": [
+        126,
+        -42
+      ],
+      "render_offset_exact": true,
+      "mapping_consistent_no_transform": false
+    },
+    {
+      "case": "M06",
+      "variant": "default",
+      "merged_dataset": "M06/C",
+      "recorded_D": 187,
+      "recorded_h": 540.625,
+      "qualification": "NOT_YET_PHYSICAL_QUALIFIED",
+      "original_render_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_29989ca8a8eef0da9428b8924a474f0a9d9fd944.mat",
+      "original_render_file_sha256": "e6e4433520271633d62a2b80175f4c86992b5bcacb40f301cb995e96eb343b89",
+      "raw_render_C_sha256": "aae47569142a16a81469e751ba48f15a8f476cc9ee37144d05c645f5f558fc52",
+      "raw_render_intensity_identity": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0,
+        "relative_L2": 0.0,
+        "max_abs": 0.0,
+        "reference_norm_L2": 0.19383003881257435
+      },
+      "render_meta": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "focus_z": 450.0,
+        "q": 5.0,
+        "render_cfg_diameter_nm": 50.0,
+        "render_cfg_gap_nm": 5.0,
+        "render_center_nm": [
+          0.0,
+          0.0,
+          540.625
+        ],
+        "render_object_pixel_nm": 280.0
+      },
+      "merged_C_sha256": "9d683aee731e1bba00b61a7abc913a59644a99334bad6efcf13b805f5ed3fd4c",
+      "same_array_convention_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.01506298175085575,
+        "relative_L2": 0.0777123187052603,
+        "max_abs": 0.005608275879789133,
+        "reference_norm_L2": 0.19383003881257435
+      },
+      "central13_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          13,
+          13
+        ],
+        "abs_L2": 0.014938266744970043,
+        "relative_L2": 0.07726870500083904,
+        "max_abs": 0.005608275879789133,
+        "reference_norm_L2": 0.19332880944242345
+      },
+      "exploratory_NOT_ACCEPTED_symmetry_L2": {
+        "IDENTITY": 0.01506298175085575,
+        "TRANSPOSE_ONLY": 5.743934763368086e-06,
+        "FLIP_FIRST_AXIS_ONLY": 0.015062983023260392,
+        "FLIP_SECOND_AXIS_ONLY": 0.01506298023486743,
+        "ROTATE_180_ONLY": 0.015062981750855749,
+        "TRANSPOSE_FLIP_FIRST": 0.0,
+        "TRANSPOSE_FLIP_SECOND": 9.599228377254972e-06,
+        "TRANSPOSE_ROTATE_180": 8.15418613967504e-06
+      },
+      "expected_xy_offset": [
+        0.0,
+        0.0
+      ],
+      "render_offset_exact": true,
+      "mapping_consistent_no_transform": false
+    },
+    {
+      "case": "M06",
+      "variant": "at_offset",
+      "merged_dataset": "M06/at_offset/C",
+      "recorded_D": 187,
+      "recorded_h": 540.625,
+      "qualification": "NOT_YET_PHYSICAL_QUALIFIED",
+      "original_render_path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_4e58950b84be41e581e80f3a892f634585a0c964.mat",
+      "original_render_file_sha256": "6095019d4ad7e0844fd1c99567795f083f36bc2bfb93428696d2fbc637477486",
+      "raw_render_C_sha256": "2c73a33acd2040fa28ad60375b988c918d0eb4af395c1c63aa42ca464512a0dd",
+      "raw_render_intensity_identity": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.0,
+        "relative_L2": 0.0,
+        "max_abs": 0.0,
+        "reference_norm_L2": 0.1935370923831972
+      },
+      "render_meta": {
+        "dx": -98.0,
+        "dy": 70.0,
+        "focus_z": 450.0,
+        "q": 5.0,
+        "render_center_nm": [
+          0.0,
+          0.0,
+          540.625
+        ],
+        "render_object_pixel_nm": 280.0
+      },
+      "merged_C_sha256": "881e02e85596168ca52d91716a3e1b563ed3a6673bda0c4a222a60024cc020ee",
+      "same_array_convention_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          17,
+          17
+        ],
+        "abs_L2": 0.1445769398122019,
+        "relative_L2": 0.7470244490701774,
+        "max_abs": 0.08375800793480287,
+        "reference_norm_L2": 0.1935370923831972
+      },
+      "central13_raw_vs_merged": {
+        "status": "CALCULATED_NOT_QUALIFIED",
+        "shape": [
+          13,
+          13
+        ],
+        "abs_L2": 0.14357764438103368,
+        "relative_L2": 0.744135454661738,
+        "max_abs": 0.08375800793480287,
+        "reference_norm_L2": 0.19294557661723002
+      },
+      "exploratory_NOT_ACCEPTED_symmetry_L2": {
+        "IDENTITY": 0.1445769398122019,
+        "TRANSPOSE_ONLY": 0.15819704799604117,
+        "FLIP_FIRST_AXIS_ONLY": 0.038399603236370386,
+        "FLIP_SECOND_AXIS_ONLY": 0.19130849501917388,
+        "ROTATE_180_ONLY": 0.14457693981220188,
+        "TRANSPOSE_FLIP_FIRST": 0.0,
+        "TRANSPOSE_FLIP_SECOND": 0.19148360445696289,
+        "TRANSPOSE_ROTATE_180": 0.12406100790277608
+      },
+      "expected_xy_offset": [
+        -98,
+        70
+      ],
+      "render_offset_exact": true,
+      "mapping_consistent_no_transform": false
+    }
+  ],
+  "n_matched_without_transform": 0,
+  "n_required": 12,
+  "truth_use": "CASE_REGISTRY_ONLY_IN_EXTERNAL_SOURCE_AUDITOR_NOT_IN_ESTIMATOR",
+  "transform_selection_forbidden": "SYMMETRY_COMPARISON_DIAGNOSTIC_ONLY",
+  "next_action": "AUDIT_SOLVE_PARTICLE_GEOMETRY_AND_SAME_SOLVE_WIDE_FIELD_RENDER_AFTER_IDENTITY_CHECK"
+}

@@ -1,0 +1,9 @@
+python -m unittest discover -s tests -v  # 22 PASS
+python tools/verify_handoff.py --root . --zip <V138 zip>  # 13 files PASS
+python tools/audit_v137.py --repo <repo> --out <repo>/results/v138/preflight/v137_published_audit.json
+python tools/audit_raw_observation_operator.py --repo <repo> --out <repo>/results/v138/provenance --write-arrays
+python tools/verify_archive.py --zip <repo>/results/v137_r1/iscat_v137_return.zip --out <repo>/results/v138/preflight/r1_zip_mechanical.json
+python tools/v138_forensics.py --repo <repo> --out <repo>/results/v138
+python tools/v138_requalify_dev_envelope.py ...
+python tools/v138_s4_s5.py ...
+python tools/v138_run_all.py --resume ...

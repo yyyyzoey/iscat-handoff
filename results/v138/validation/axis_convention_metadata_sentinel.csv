@@ -1,0 +1,7 @@
+case,dx,dy,row_centroid,col_centroid,row_axis_guess,note
+M01,42.0,-70.0,7.795514703363518,7.890493520784281,y,asymmetric displacement sentinel
+M02,-112.0,56.0,8.154862778300817,8.311832706801788,y,asymmetric displacement sentinel
+M03,84.0,98.0,8.269875676916602,7.766433169761251,x,asymmetric displacement sentinel
+M04,-70.0,-112.0,7.708778978861009,8.194373040296746,x,asymmetric displacement sentinel
+M05,126.0,-42.0,7.889506969970352,7.634347715451875,y,asymmetric displacement sentinel
+M06,-98.0,70.0,8.199947813471049,8.273779413215678,y,asymmetric displacement sentinel

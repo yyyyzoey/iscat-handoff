@@ -1,0 +1,6 @@
+event,f2_calls,new_renders,new_camera_exposures
+S1_forensics_layers_A_B_C,0,0,0
+S2_solve_geometry_readback,0,0,0
+S1_layer_D_F2_vs_verified_raw,12,0,0
+S3_dev_envelope_requalified,48,0,0
+TOTAL_V138,60,0,0

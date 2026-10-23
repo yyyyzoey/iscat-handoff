@@ -1,0 +1,16 @@
+{
+  "schema": "iscat138.dev_envelope.1",
+  "observation_dataset": "at_offset/C (the dataset used by the published dev fits)",
+  "frozen_rule": "epsilon_dev = max(1e-12, max truth-point unscaled central13 L2 over opened H/J/K/L)",
+  "epsilon_dev_L2": 0.0030038234921309446,
+  "supersedes": "v137 epsilon_dev_L2=0.10972405988601544 (root-C + offset-truth mismatch, R05)",
+  "n_cases": 24,
+  "f2_calls_used": 48,
+  "is_95pct_experimental_confidence_interval": false,
+  "per_family_max": {
+    "H": 0.0027904442692176417,
+    "J": 0.0015369663840949968,
+    "K": 0.0030038234921309446,
+    "L": 0.0014370208488786677
+  }
+}

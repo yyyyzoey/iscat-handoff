@@ -1,0 +1,120 @@
+{
+  "schema": "iscat138.v137_published_audit.1",
+  "scope": "PUBLISHED_TEXT_AND_SOURCE_STATIC_AUDIT_NOT_RAW_MAT_PHYSICS",
+  "fixed_v137_commit": "0b64405596a7b77ad48aec26db85ca0eee495654",
+  "local_checkout_head": "0b64405596a7b77ad48aec26db85ca0eee495654",
+  "original_status_execution": "COMPLETED_WITH_DOCUMENTED_BUDGET_BREACH",
+  "r1_status_execution": "COMPLETED_WITH_DOCUMENTED_BUDGET_AND_TAKEOVER_EVENTS",
+  "direct_render_vs_F2": {
+    "default_zero_shift": {
+      "cases": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06"
+      ],
+      "n": 6,
+      "qualified": 0,
+      "relative_L2_min": 0.06429644626661864,
+      "relative_L2_max": 0.08754112877938751,
+      "relative_L2_mean": 0.07571790426822572
+    },
+    "at_offset_nonzero_shift": {
+      "cases": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06"
+      ],
+      "n": 6,
+      "qualified": 0,
+      "relative_L2_min": 0.5033519732379064,
+      "relative_L2_max": 0.8635225445717284,
+      "relative_L2_mean": 0.730347633842019
+    }
+  },
+  "reported_qualified_unique_sizes": [],
+  "all_M_reportable_null": true,
+  "development_error_envelope": {
+    "schema": "iscat137.dev_error_envelope.1",
+    "frozen_rule": "epsilon_dev = max(1e-12, max over opened H/J/K/L truth-point unscaled central13 L2)",
+    "epsilon_dev_L2": 0.10972405988601544,
+    "per_family_max": {
+      "H": 0.09673688849238402,
+      "J": 0.09804901836270273,
+      "K": 0.08500684364826162,
+      "L": 0.10972405988601544
+    },
+    "n_cases": 24,
+    "numeric_floor": 1e-12,
+    "compatible_rule": "R_p(D) <= R_min + epsilon_dev_L2 (same unsquared L2)",
+    "is_95pct_experimental_confidence_interval": false,
+    "oracle_F2_calls": 3129
+  },
+  "fpr_as_published": {
+    "1000.0": {
+      "n": 60,
+      "k": 0,
+      "cp95_upper_one_sided": 0.04870291331009749,
+      "published_qualifies": true
+    },
+    "10000.0": {
+      "n": 60,
+      "k": 0,
+      "cp95_upper_one_sided": 0.04870291331009749,
+      "published_qualifies": true
+    },
+    "100000.0": {
+      "n": 60,
+      "k": 2,
+      "cp95_upper_one_sided": 0.10123589492416163,
+      "published_qualifies": false
+    }
+  },
+  "v137_resource_history": {
+    "v137": {
+      "last_row": "TOTAL",
+      "f2_calls_reported": 1051366,
+      "camera_exposure_events_reported": 23958
+    },
+    "v137_r1": {
+      "last_row": "TOTAL_ONE_V137_TASK",
+      "f2_calls_reported": 1659953,
+      "camera_exposure_events_reported": 23958
+    }
+  },
+  "diagnostic_source_flags": [
+    "RAW_RENDER_DEFAULT_C_CHECK_USES_LAST_LOOP_ITOTAL_IREF",
+    "DEV_ERROR_ENVELOPE_MAY_COMPARE_ROOT_C_TO_OFFSET_THETA",
+    "ORIGINAL_SUPERSEDED_MOTION_ESTIMATOR_WAS_INITIALIZED_WITH_GENERATOR_TRUE_D",
+    "SAVED_MOTION_GENERATOR_IS_DETERMINISTIC_SINUSOID_NOT_BROWNIAN",
+    "FINAL_SHARED_D_REFIT_HAS_NO_EXPLICIT_SHARED_REFERENCE_COVARIANCE",
+    "R1_ARCHIVE_PROFILE_REPLAY_CHECK_IS_DEAD_CONDITION",
+    "R1_ARCHIVE_REPLAY_CHECK_HARDCODES_LOCAL_PATH",
+    "V137_CAMERA_HARD_LIMIT_BREACH_NOT_CURED_BY_R1",
+    "OLD_DEV_EPSILON_TOO_LARGE_FOR_SIZING_NEEDS_OBSERVATION_IDENTITY_AUDIT"
+  ],
+  "source_files_sha256": {
+    "results/v137/status.json": "2e28b0b9134ac4edda1ed6794c05bb1ac5c6741c35d42f54cc92a578bb89eb52",
+    "results/v137_r1/status.json": "a02fd5c085576959bb58c0410549d0e68ca77707a870601ab05e48b3bfe559a2",
+    "results/v137/validation/same_solve_shift_F2.csv": "363e1482c6960c2475ebde4280025dc43563426b2e4b64fbd64f17bc4c53ad26",
+    "results/v137/validation/physical_forward_qualification.json": "6a0c844ad092dbf362059c3ead4a3d2aba4e5fe69be69c2f878d249b74af0da6",
+    "results/v137/validation/reportability_per_particle.json": "a84862388b082b382582d8ba3000c58c725a5b51693e28d094d28a3ad61f4a23",
+    "results/v137/validation/development_error_envelope.json": "443ef78d3efbea8133d02ef8b2187940cd1c59a980f2a45f7507181e5e80bbef",
+    "results/v137/validation/threshold_validation.json": "870cac61dc44c02132fd3eb8f64bc084f842bccfea2e671cafa9fab54998a8d5",
+    "results/v137/logs/resource_budget.csv": "299bf08a9861787d887ca4f0b0a9a2342f0902b35458c7fefeb29195f653248e",
+    "results/v137_r1/logs/resource_budget.csv": "f3b5a043de3b8aa8dd514669830138508fc7c82e9b0518bd6da4fa2d9557bcfe",
+    "tools/v137_w2_same_solve.py": "001d86db8f3d648db9c52b7a11e2808516c634d9684d04985a89cf07784ae790",
+    "tools/v137_w4_dev_envelope.py": "71e364ff5e22ea5828e5c044225e86bae34554364184da8d1d9a802477d0198a",
+    "tools/v137_w5_w6_camera_motion.py": "f5b14b46041b424187bfed6e74c1a12fda00675ecba9eaa7bc6c1d652b8284f0",
+    "tools/v137_w6_multiframe_refit.py": "69aab7b92defef7aa98f6976bda1ced35e9752d37a2b9e6ddea2e3a7f74ad0b2",
+    "tools/v137r1_check_return.py": "fa49734cbdaf4acaee603bc21f0e320db69c423997cc325e9ad965de94d88d51",
+    "config/v131_science_config.json": "ad7e9d92a1626e84772e5727b56aa487aa2692dce9bfda3ac5b4c3ac7f393660"
+  },
+  "verdict": "V137_PARTIAL__PHYSICAL_SOURCE_UNRESOLVED__BUDGET_BREACH__NO_SIZE_CERTIFIED",
+  "next_gate": "RAW_RENDER_MAT_VS_MERGED_H5_AND_SAME_SOLVE_FIELD_OPERATOR_FIRST"
+}

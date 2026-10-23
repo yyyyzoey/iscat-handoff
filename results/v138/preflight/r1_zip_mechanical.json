@@ -1,0 +1,55 @@
+{
+  "archive": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v137_r1\\iscat_v137_return.zip",
+  "sha256": "5044d2c0dce020a6f7cc73de570915cbb44d4cf5e4093a029b7c08e01b306c8a",
+  "archive_bytes": 13308969,
+  "n_members_including_manifest": 101,
+  "total_uncompressed_member_bytes_excluding_manifest": 31319921,
+  "status_declared": {
+    "task": "V137_PROVENANCE_BOUND_F2_PROFILE_AND_CONDITIONAL_PARTICLE_SIZING",
+    "execution_revision": "R1",
+    "execution": "COMPLETED_WITH_DOCUMENTED_BUDGET_AND_TAKEOVER_EVENTS",
+    "source_qualification": {
+      "v136_parity": "6POINT_NUMERIC_ONLY",
+      "same_solve_shift": "FAILED_FOR_F2_SURROGATE (reused R0 identity-verified)",
+      "k02_h03": "NOT_EVALUATED"
+    },
+    "numeric_replay": {
+      "witnesses": "6/6",
+      "m02_joint_updated": true
+    },
+    "profile_quality": {
+      "coarse": "R1 complete scan (takeover rerun counted)",
+      "adaptive": "M01_PARTIAL_ONLY;M02_M06_BLOCKED_BUDGET",
+      "scientific_complete": false
+    },
+    "conditional_sizing_performance": {
+      "reportable_D_all_null": true
+    },
+    "camera_FPR": {
+      "B1000": "0/60 QUALIFIED",
+      "B10000": "0/60 QUALIFIED",
+      "B100000": "2/60 NOT_QUALIFIED",
+      "new_r1_exposures": 0
+    },
+    "exposure_motion": {
+      "shared_D": "ALL_SIX_REJECTED (reused R0, identity-verified)",
+      "new_r1_motion_computation": 0
+    },
+    "archive_integrity": "manifest_sha256.csv + v137r1_check_return",
+    "experimental_absolute_validated": false,
+    "budget": {
+      "f2_limit": 5000000,
+      "f2_executed_cumulative": 1659953,
+      "camera_limit": 6000,
+      "camera_executed_cumulative": 23958,
+      "camera_breach_documented": true,
+      "per_case_cap_overspend_documented": true,
+      "wall_window_exceeded": true
+    },
+    "git_commit_code_final": "958f52462594bd6914273a6b73837141d6dbe820"
+  },
+  "mechanical_integrity": "PASS",
+  "scientific_validation": "NOT_EVALUATED_BY_THIS_TOOL",
+  "original_solve_geometry": "NOT_EVALUATED_BY_THIS_TOOL",
+  "diameter_reportability": "NOT_EVALUATED_BY_THIS_TOOL"
+}

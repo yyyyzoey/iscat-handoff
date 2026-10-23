@@ -1,0 +1,142 @@
+{
+  "inputs": {
+    "results\\v132\\validation\\new_M_images.h5": {
+      "sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+      "bytes": 60246
+    },
+    "results\\v126\\v132_M_cases.json": {
+      "sha256": "5d65daf4b4673f69a7b62d59e91f24ae73c1eb0b894d756fdae0af70127e86c4",
+      "bytes": 2331
+    },
+    "results\\v133\\M_F2_baseline\\model_passport.json": {
+      "sha256": "a32f878ccb700be96015f88915099ce1584657f8d632f154ba406c39ab45be5a",
+      "bytes": 4831
+    },
+    "results\\v128\\library\\v128_Dh_train_fields.h5": {
+      "sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+      "bytes": 53435213
+    },
+    "results\\v137_r1\\iscat_v137_return.zip": {
+      "sha256": "5044d2c0dce020a6f7cc73de570915cbb44d4cf5e4093a029b7c08e01b306c8a",
+      "bytes": 13308969
+    },
+    "raw_render_M01_default": {
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_1c9e34a793c140784ef763305bcfb66eb551773b.mat",
+      "sha256": "15907b0ccfa467d234afb995b8dfe1d818dd2336b70a9b891e3f55a84c549852",
+      "bytes": 300608
+    },
+    "raw_render_M01_at_offset": {
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_daca5180c61bca96bd7734e3b33a8631c875f0b2.mat",
+      "sha256": "d6d3a52864eb94c8e8c8ccde3f4d538ef3783ce2ca60a46a5d6c136b4b0a6319",
+      "bytes": 265792
+    },
+    "raw_render_M02_default": {
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_ee55b8971d7534a32387f44d0f62b9f9a5e63769.mat",
+      "sha256": "d55a2671d22750b5b31513877fe2b40648d3504ce54a0c3547818609c882902d",
+      "bytes": 300202
+    },
+    "raw_render_M02_at_offset": {
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_8abbfd21297e01198293a9238271d299134b13b5.mat",
+      "sha256": "2333020966650100de532ae49fd2716d9e5c1c58db68ccd6fd2c58118d54479e",
+      "bytes": 264332
+    },
+    "raw_render_M03_default": {
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_9c2417b51575163eb8ff06e3dc6d3871bfb60364.mat",
+      "sha256": "7d93fa256dbdb570b3761492fd013b56756380c2f2f2b0e26fd2097b05971793",
+      "bytes": 301572
+    },
+    "raw_render_M03_at_offset": {
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_daa625469274fb71c81305541d1a5ffc1fd5820c.mat",
+      "sha256": "ab4d2ee688af8b8f1ca147d0193ebe093ecffba100bee72f4ae3f37e33f28ab6",
+      "bytes": 267086
+    },
+    "raw_render_M04_default": {
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_b41481f8e0e7e90a188012cec10728224098d2c2.mat",
+      "sha256": "a939fe2ee267d67ee05fc3e69bce3d950e4ebd6110b3535519ea827a362dd974",
+      "bytes": 301460
+    },
+    "raw_render_M04_at_offset": {
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_5d7396996ecb36cbd28e3ffd15f9a4da9849a300.mat",
+      "sha256": "08bb5d81056560f5b6627d0047fd195b490e8dc46a44a860726ea5d62d1197cd",
+      "bytes": 266391
+    },
+    "raw_render_M05_default": {
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_9ae327f82ea098aba00498f403fadb9d8fc6f566.mat",
+      "sha256": "fd7461379e65528e4f8c5c7b30d8ab2e5f119448967a9302f98ec20b73543af7",
+      "bytes": 302148
+    },
+    "raw_render_M05_at_offset": {
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_03e580db0b47097f498affca0aded00cabfa9bb3.mat",
+      "sha256": "0f56c7424c0207e70f15591a1617a1cc33b809c532ed76a485a3cd99c8bf9501",
+      "bytes": 267390
+    },
+    "raw_render_M06_default": {
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_29989ca8a8eef0da9428b8924a474f0a9d9fd944.mat",
+      "sha256": "e6e4433520271633d62a2b80175f4c86992b5bcacb40f301cb995e96eb343b89",
+      "bytes": 301514
+    },
+    "raw_render_M06_at_offset": {
+      "path": "C:\\Users\\PC\\Documents\\Codex\\2026-09-20\\https-chatgpt-com-share-6aafd462-6e70\\work\\iscat_v0_4\\github_handoff\\results\\v126\\renders\\ren_4e58950b84be41e581e80f3a892f634585a0c964.mat",
+      "sha256": "6095019d4ad7e0844fd1c99567795f083f36bc2bfb93428696d2fbc637477486",
+      "bytes": 267059
+    }
+  },
+  "executed_tools": [
+    {
+      "file": "audit_v137.py",
+      "sha256": "51d94fdd234938a7862536a18e4bcbdd869cc034085030e2d2580f25c90295b5"
+    },
+    {
+      "file": "audit_raw_observation_operator.py",
+      "sha256": "d6d293718caae64592b892f860f001f7f910b7ee7e8762300d94b053896f126f"
+    },
+    {
+      "file": "verify_archive.py",
+      "sha256": "ea12cb8481ca762b58346b8933cb4b20d4ecad2b996dcfaf2da8cfa0d45b2ebc"
+    },
+    {
+      "file": "v138_forensics.py",
+      "sha256": "3cf0c7e396131c065e11206e7a807e0eeaf0e48be84eb8d3f68a3b7e30248ce4"
+    },
+    {
+      "file": "v138_requalify_dev_envelope.py",
+      "sha256": "b441f05cee484213b6659aa84a83bbdeb17ae5943bbf1a2d23ca833efb028893"
+    },
+    {
+      "file": "v138_s4_s5.py",
+      "sha256": "abbff0426865f610ee985c186b621dc4146490fb9ffe572179be87c4a31389ea"
+    },
+    {
+      "file": "v138_run_all.py",
+      "sha256": "6a801aa22708f42855d4f5bc852c5169ebacc1475ab6f62ee50e21b66cfe6e92"
+    },
+    {
+      "file": "v138_pack.py",
+      "sha256": "c5066823ca0c81e6ca25ff51eab566ea6884a6d7e671ea6bda40b11d07dee57d"
+    },
+    {
+      "file": "v138_validate_science.py",
+      "sha256": "973ec162694f2ba4958a40a341e8bdc40f15da8e6ae6a56f59dde16ca3a7aea9"
+    },
+    {
+      "file": "field_forward_reference.py",
+      "sha256": "4c064031682e4c3c48130848708bd83958aab4630c3da71adf275c231a1c3520"
+    },
+    {
+      "file": "load_field_library.py",
+      "sha256": "d42d638378be3efbdcb9e8ff643b75485dbac618d404c92a1b3090cb9bd7a746"
+    },
+    {
+      "file": "fit_reference.py",
+      "sha256": "c4fc509d5d52f3f0dd101787f55b627df3db59943fdbc942c31dbf3c7e4f9656"
+    },
+    {
+      "file": "model_lock.py",
+      "sha256": "83be065c7b3938921d5b9901a3230c2d976c3b0ba7eef6b090dea3b65971b3ee"
+    },
+    {
+      "file": "v133_recover_M.py",
+      "sha256": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba"
+    }
+  ]
+}

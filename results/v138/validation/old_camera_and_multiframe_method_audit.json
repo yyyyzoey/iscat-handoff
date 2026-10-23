@@ -1,0 +1,35 @@
+{
+  "schema": "iscat138.method_audit.1",
+  "new_camera_exposures": 0,
+  "new_motion_computation": 0,
+  "source_flags": [
+    "RAW_RENDER_DEFAULT_C_CHECK_USES_LAST_LOOP_ITOTAL_IREF",
+    "DEV_ERROR_ENVELOPE_MAY_COMPARE_ROOT_C_TO_OFFSET_THETA",
+    "ORIGINAL_SUPERSEDED_MOTION_ESTIMATOR_WAS_INITIALIZED_WITH_GENERATOR_TRUE_D",
+    "SAVED_MOTION_GENERATOR_IS_DETERMINISTIC_SINUSOID_NOT_BROWNIAN",
+    "FINAL_SHARED_D_REFIT_HAS_NO_EXPLICIT_SHARED_REFERENCE_COVARIANCE",
+    "R1_ARCHIVE_PROFILE_REPLAY_CHECK_IS_DEAD_CONDITION",
+    "R1_ARCHIVE_REPLAY_CHECK_HARDCODES_LOCAL_PATH",
+    "V137_CAMERA_HARD_LIMIT_BREACH_NOT_CURED_BY_R1",
+    "OLD_DEV_EPSILON_TOO_LARGE_FOR_SIZING_NEEDS_OBSERVATION_IDENTITY_AUDIT"
+  ],
+  "camera_threshold": {
+    "validation": "0/60,0/60,2/60 (B=100000 FAIL); historical synthetic arrays retained; no new sampling",
+    "breach_preserved": "23958/6000 cumulative events documented, not reset"
+  },
+  "motion": {
+    "initial_generator": "deterministic sinusoid, NOT Brownian; documented",
+    "superseded_estimator": "true-D initialization version replaced by public-init refit (historical)",
+    "final_multiframe": "public per-frame node init + joint shared-D; objective WITHOUT explicit shared-reference GLS whitening -> UNCORRELATED_OBJECTIVE_ONLY; six rejections are method+SNR outcomes, not proof of physical non-identifiability"
+  },
+  "observation_isolation": {
+    "static_signed_C": "required",
+    "forbidden": [
+      "400Hz FFT amplitude",
+      "abs(C)",
+      "8-bit display BMP"
+    ],
+    "experiment_interface": "implemented; type rejection demonstrated"
+  },
+  "experimental_absolute_validated": false
+}

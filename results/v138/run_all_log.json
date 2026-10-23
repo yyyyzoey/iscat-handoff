@@ -1,0 +1,10 @@
+{
+  "stages": {
+    "handoff_tests": "SKIP_RESUMED",
+    "intake_audit": "SKIP_RESUMED",
+    "raw_operator_audit": "SKIP_RESUMED",
+    "forensics": "SKIP_RESUMED",
+    "dev_envelope": "SKIP_RESUMED",
+    "s4_s5": "SKIP_RESUMED"
+  }
+}

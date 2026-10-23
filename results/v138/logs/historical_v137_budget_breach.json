@@ -1,0 +1,17 @@
+{
+  "schema": "iscat138.historical_budget.1",
+  "task": "V137+R1 (frozen, not reset)",
+  "camera_exposure_events_cumulative": 23958,
+  "camera_limit": 6000,
+  "f2_canonical_calls_cumulative": 1659953,
+  "f2_limit": 5000000,
+  "per_M_profile_cap_overspend": {
+    "M02": 240000,
+    "M03": 134184,
+    "M04": 240000,
+    "M05": 240000,
+    "M06": 240000
+  },
+  "wall_window_exceeded": true,
+  "note": "Historical breach preserved as fact; V138 does not inherit or cure it."
+}

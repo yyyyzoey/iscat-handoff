@@ -1,0 +1,108 @@
+{
+  "schema": "iscat138.v1",
+  "task_id": "V138_RAW_OBSERVATION_OPERATOR_FORENSICS_AND_QUALIFIED_SIZING",
+  "audit_base": {
+    "repository": "yyyyzoey/iscat-handoff",
+    "v137_commit": "0b64405596a7b77ad48aec26db85ca0eee495654",
+    "previous_v136_commit": "24d18d592034df058c4a8edb0acb04d4ccdc2fc1",
+    "v133_f2_commit": "b522894725f159a2a585eafe27c73dd6275894f3",
+    "v137_camera_overrun_remains_failure": true,
+    "v137_camera_total_events_reported": 23958,
+    "v137_camera_limit": 6000,
+    "v137_total_f2_calls_reported_R1": 1659953,
+    "v137_per_case_profile_limit": 120000,
+    "all_HJKL_and_M_are_opened_development": true
+  },
+  "frozen_old_forward": {
+    "kind": "F2",
+    "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+    "library": "results/v128/library/v128_Dh_train_fields.h5",
+    "library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "D_h_representation": "PHYSICAL_AXIS_TENSOR_CUBIC_COMPLEX_SCATTERED_FIELD",
+    "spatial_interpolation": "BILINEAR_ON_VERIFIED_SOURCE_GRID",
+    "score_roi": "CENTRAL_13_FROM_17",
+    "obs_kind": "SIGNED_STATIC_CONTRAST_FROM_LINEAR_INTENSITY",
+    "nonlinear_visualization_or_FFT_400Hz_not_direct_input": true,
+    "source_grid_n": 125,
+    "camera_output_shape": [
+      17,
+      17
+    ],
+    "score_shape": [
+      13,
+      13
+    ]
+  },
+  "observations": {
+    "M_combined_h5": "results/v132/validation/new_M_images.h5",
+    "M_task_records": "results/v126/v132_M_cases.json",
+    "M_render_source_index": "results/v134/provenance/M_raw_source_audit.csv",
+    "M_fit_images": "results/v133/M_F2_baseline/anonymous_M_images.h5",
+    "M_fit_json_dir": "results/v133/M_F2_baseline/fits",
+    "H": "results/v125/library/v125_direct_holdouts.h5",
+    "J": "results/v126/validation/new_holdout_images.h5",
+    "K": "results/v127/validation/holdout_images.h5",
+    "L": "results/v128/validation/new_L_direct_images.h5",
+    "official_development_fit_dataset": "at_offset/C",
+    "suspect_old_envelope_dataset": "C"
+  },
+  "conditional_model": {
+    "medium": "pure water",
+    "temperature_C": 26,
+    "vacuum_wavelength_nm": 520,
+    "camera_pixel_um": 14,
+    "objective_magnification": 50,
+    "particle_n_real_imag": [
+      1.38,
+      0
+    ],
+    "water_n": 1.3353,
+    "glass_n": 1.5,
+    "NA": 0.8,
+    "assumed_extra_magnification": 1,
+    "object_pixel_nm": 280,
+    "subpixels_per_camera_pixel": 5,
+    "focus_nm": 450,
+    "D_domain_nm": [
+      30,
+      200
+    ],
+    "h_domain_nm": [
+      350,
+      550
+    ],
+    "xy_domain_nm": [
+      -500,
+      500
+    ],
+    "minimum_surface_gap_nm": 100
+  },
+  "predeclared_rules": {
+    "mat_vs_h5_operator": "NO_AXIS_FLIP_TRANSPOSE_OR_RESCALE_MAY_BE_CHOSEN_BY_BEST_FIT; DIAGNOSTIC_SYMMETRY_TABLE_ONLY",
+    "first_qualification": "WITHIN_EACH_RAW_RENDER_C_EQUALS_(ITOTAL-IREF)/IREF_AND_MATCH_PHYSICAL_GEOMETRY",
+    "second_qualification": "MERGED_H5_DEFAULT_AND_OFFSET_MATCH_THEIR_RESPECTIVE_ORIGINAL_RENDER_C",
+    "third_qualification": "SAME_SOLVE_WIDE_FIELDS_REPRODUCE_DIRECT_DEFAULT_AND_OFFSET_CAMERA_RENDER",
+    "fourth_qualification": "THEN_COMPARE_F2_LIBRARY_INTERPOLATION_TO_VERIFIED_RAW_M_RENDER",
+    "same_solve_relative_L2_target": 0.01,
+    "near_zero_signal_report_absolute_error_and_numerical_floor": true,
+    "strict_reportability": "ALL_GATE_EVIDENCE_TRUE_AND_SINGLE_NARROW_NONBOUNDARY_COMPATIBILITY",
+    "reportable_D_default": null,
+    "no_new_blind_holdouts": true,
+    "no_observation_truth_in_estimator": true,
+    "no_automatic_gain_phase_or_domain_clip": true
+  },
+  "new_round_budget": {
+    "BEM_solver_attempts": 0,
+    "optical_render_attempts": 12,
+    "synthetic_camera_exposure_events": 0,
+    "canonical_F2_forward_calls": 120000,
+    "heavy_physics_concurrency": 1,
+    "maximum_wall_hours_including_archive": 12,
+    "archive_minutes_reserved": 30,
+    "preexisting_v137_breach_NOT_reset_or_retroactively_cured": true,
+    "separate_new_v138_event_ledger_required": true,
+    "new_render_only_after_original_mapping_failure_resolved": true
+  },
+  "expected_return": "iscat_v138_return.zip",
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+}

@@ -1,0 +1,33 @@
+{
+  "task": "V138_RAW_OBSERVATION_OPERATOR_FORENSICS_AND_QUALIFIED_SIZING",
+  "git_commit": "0b64405596a7b77ad48aec26db85ca0eee495654",
+  "acceptance": {
+    "raw_render_intensity_identity": "PASS 12/12 exact (per-file, cross-variant bug fixed)",
+    "raw_vs_merged_identity": "PASS 12/12 bitwise under frozen convention OBS_MERGED_C=RAW.T[::-1,:]",
+    "solve_geometry": "PASS 6/6 M solves matched (D,h,gap,np,mesh,lambda,NA,nwater,nglass,solver_id); render->solve linked via renderer pipeline (limitation documented)",
+    "independent_camera_operator": "PASS 12/12 (<=1% gate)",
+    "f2_on_verified_raw": {
+      "zero_shift": "0.27-0.88% rel L2",
+      "offset": "0.47-2.02% rel L2",
+      "gate_1pct": "zero-shift PASS, offset partial"
+    },
+    "dev_envelope_requalified": "epsilon_dev=3.004e-3 on at_offset/C (supersedes 0.109724 root-C mismatch)",
+    "v133_candidates": "RETAINED as direct-physical under frozen convention; MAE 2.75nm remains development-set result, not blind validation",
+    "camera_fpr": "historical 0/60,0/60,2/60 preserved; B=100000 FAIL; no new samples",
+    "motion_multiframe": "method audit only; six rejections = method+SNR, not physical non-identifiability proof",
+    "reportable_D_all_null": true
+  },
+  "budget": {
+    "v138": {
+      "f2_calls": 60,
+      "limit": 120000,
+      "new_renders": 0,
+      "limit_renders": 12,
+      "new_camera_exposures": 0,
+      "limit_camera": 0,
+      "new_bem": 0
+    },
+    "v137_historical_breach": "PRESERVED (camera 23958/6000; per-M profile cap overspend; wall window exceeded)"
+  },
+  "experimental_absolute_validated": false
+}

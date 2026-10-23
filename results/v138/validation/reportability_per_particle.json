@@ -1,0 +1,131 @@
+{
+  "M01": {
+    "candidate_D": 48.421809635083875,
+    "reportable_D": null,
+    "compatible_D_components": [
+      [
+        40.0,
+        200.0
+      ]
+    ],
+    "reason_codes": [
+      "COMPATIBILITY_TOO_WIDE",
+      "INTERVAL_TOUCHES_SUPPORT_BOUNDARY",
+      "NOT_QUALIFIED:adaptive_coverage_complete",
+      "NOT_QUALIFIED:detection_pass",
+      "NOT_QUALIFIED:h_xy_boundary_independence_qualified",
+      "NOT_QUALIFIED:noise_background_FPR_qualified",
+      "NOT_QUALIFIED:profile_complete",
+      "NOT_QUALIFIED:same_solve_shift_qualified",
+      "NOT_QUALIFIED:search_complete"
+    ],
+    "observation_status": "VERIFIED_RAW_DIRECT_RENDER_FROZEN_CONVENTION"
+  },
+  "M02": {
+    "candidate_D": 81.27358906303667,
+    "reportable_D": null,
+    "compatible_D_components": [
+      [
+        70.0,
+        200.0
+      ]
+    ],
+    "reason_codes": [
+      "COMPATIBILITY_TOO_WIDE",
+      "INTERVAL_TOUCHES_SUPPORT_BOUNDARY",
+      "NOT_QUALIFIED:adaptive_coverage_complete",
+      "NOT_QUALIFIED:detection_pass",
+      "NOT_QUALIFIED:h_xy_boundary_independence_qualified",
+      "NOT_QUALIFIED:noise_background_FPR_qualified",
+      "NOT_QUALIFIED:profile_complete",
+      "NOT_QUALIFIED:search_complete"
+    ],
+    "observation_status": "VERIFIED_RAW_DIRECT_RENDER_FROZEN_CONVENTION"
+  },
+  "M03": {
+    "candidate_D": 122.11998103353119,
+    "reportable_D": null,
+    "compatible_D_components": [
+      [
+        120.0,
+        200.0
+      ]
+    ],
+    "reason_codes": [
+      "COMPATIBILITY_TOO_WIDE",
+      "INTERVAL_TOUCHES_SUPPORT_BOUNDARY",
+      "NOT_QUALIFIED:adaptive_coverage_complete",
+      "NOT_QUALIFIED:detection_pass",
+      "NOT_QUALIFIED:h_xy_boundary_independence_qualified",
+      "NOT_QUALIFIED:noise_background_FPR_qualified",
+      "NOT_QUALIFIED:profile_complete",
+      "NOT_QUALIFIED:same_solve_shift_qualified",
+      "NOT_QUALIFIED:search_complete"
+    ],
+    "observation_status": "VERIFIED_RAW_DIRECT_RENDER_FROZEN_CONVENTION"
+  },
+  "M04": {
+    "candidate_D": 151.07969710737842,
+    "reportable_D": null,
+    "compatible_D_components": [
+      [
+        135.0,
+        170.0
+      ]
+    ],
+    "reason_codes": [
+      "COMPATIBILITY_TOO_WIDE",
+      "NOT_QUALIFIED:adaptive_coverage_complete",
+      "NOT_QUALIFIED:detection_pass",
+      "NOT_QUALIFIED:h_xy_boundary_independence_qualified",
+      "NOT_QUALIFIED:noise_background_FPR_qualified",
+      "NOT_QUALIFIED:profile_complete",
+      "NOT_QUALIFIED:same_solve_shift_qualified",
+      "NOT_QUALIFIED:search_complete"
+    ],
+    "observation_status": "VERIFIED_RAW_DIRECT_RENDER_FROZEN_CONVENTION"
+  },
+  "M05": {
+    "candidate_D": 167.83725685498712,
+    "reportable_D": null,
+    "compatible_D_components": [
+      [
+        150.0,
+        200.0
+      ]
+    ],
+    "reason_codes": [
+      "COMPATIBILITY_TOO_WIDE",
+      "INTERVAL_TOUCHES_SUPPORT_BOUNDARY",
+      "NOT_QUALIFIED:adaptive_coverage_complete",
+      "NOT_QUALIFIED:detection_pass",
+      "NOT_QUALIFIED:h_xy_boundary_independence_qualified",
+      "NOT_QUALIFIED:noise_background_FPR_qualified",
+      "NOT_QUALIFIED:profile_complete",
+      "NOT_QUALIFIED:same_solve_shift_qualified",
+      "NOT_QUALIFIED:search_complete"
+    ],
+    "observation_status": "VERIFIED_RAW_DIRECT_RENDER_FROZEN_CONVENTION"
+  },
+  "M06": {
+    "candidate_D": 190.29730590514112,
+    "reportable_D": null,
+    "compatible_D_components": [
+      [
+        185.0,
+        200.0
+      ]
+    ],
+    "reason_codes": [
+      "INTERVAL_TOUCHES_SUPPORT_BOUNDARY",
+      "NOT_QUALIFIED:adaptive_coverage_complete",
+      "NOT_QUALIFIED:detection_pass",
+      "NOT_QUALIFIED:h_xy_boundary_independence_qualified",
+      "NOT_QUALIFIED:noise_background_FPR_qualified",
+      "NOT_QUALIFIED:profile_complete",
+      "NOT_QUALIFIED:same_solve_shift_qualified",
+      "NOT_QUALIFIED:search_complete"
+    ],
+    "observation_status": "VERIFIED_RAW_DIRECT_RENDER_FROZEN_CONVENTION"
+  }
+}
