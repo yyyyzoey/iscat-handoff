@@ -1,0 +1,21 @@
+{
+  "schema": "iscat139.return_receipt.1",
+  "mechanical": {
+    "status": "PASS",
+    "errors": [],
+    "archive_sha256": "843af1a9b237e1817d95e19941027ea287cb4d404482f27e8a5b51fe75a29252"
+  },
+  "published_science_gate_declarations": {
+    "mechanical": "PASS (CRC+manifest, see check receipt)",
+    "numerical_replay": "PASS: 12/12 render intensity identities (V138) + oracle residual-vector decomposition enforced",
+    "source_lineage": "PARTIAL: default<->wide bitwise same field 6/6; at_offset same-solve evidenced by identical Eref+cfg+center h; byte-level render->solve link not fully proven",
+    "coordinate": "FROZEN RAW.T[::-1,:] from V138 export-chain; NOT independent experimental axis calibration",
+    "spatial_oracle": "FAIL: oracle-vs-direct 48.6-88.3% at_offset 6/6; displaced render is NOT a sampled-grid shift of the undisplaced render",
+    "F2_physical": "CONDITIONAL: F2-vs-direct default 6/6 <=1%; at_offset 1/6 (M02) only",
+    "sizing_reportability": "FAIL-CLOSED: reportable_D=null all six; candidates + known_compatible_components retained",
+    "camera_motion": "HISTORICAL ONLY: 0/60,0/60,2/60 preserved; V137 breach 23958/6000 preserved; no new samples",
+    "experimental_absolute": "NOT_VALIDATED"
+  },
+  "independent_science_verdict": "PUBLISHED_CLAIMS_REQUIRE_EXTERNAL_REPLAY",
+  "experimental_absolute_validated": false
+}

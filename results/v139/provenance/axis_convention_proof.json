@@ -1,0 +1,6 @@
+{
+  "frozen": "H5_C = RAW_CONTRAST.T[::-1,:] (V138: 12/12 bitwise exact)",
+  "basis": "export-chain identity on opened data; NOT independent experimental axis calibration",
+  "forbidden": "fit-selected reflections; new data may not inherit automatically",
+  "oracle_camera_transform": "oracle native C -> canonical via RAW.T[::-1,:] (same convention)"
+}

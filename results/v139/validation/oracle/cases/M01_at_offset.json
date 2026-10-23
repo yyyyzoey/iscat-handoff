@@ -1,0 +1,35 @@
+{
+  "case": "M01",
+  "variant": "at_offset",
+  "input_signature": "588714d081f7a4ffad1bd4834899b976a45cee46f8578724ceb3c6ca08d6b923",
+  "oracle_vs_direct": {
+    "abs_L2": 0.0038260828027788484,
+    "relative_L2": 0.5128543871504716,
+    "max_abs": 0.002137963265027642,
+    "ref_norm": 0.00746036867118829
+  },
+  "F2_vs_oracle": {
+    "abs_L2": 0.003783146020831594,
+    "relative_L2": 0.5130807559210546,
+    "max_abs": 0.0020967132095745895,
+    "ref_norm": 0.007373392935075681
+  },
+  "F2_vs_direct": {
+    "abs_L2": 0.00012191472458569475,
+    "relative_L2": 0.016341648778903595,
+    "max_abs": 7.970223388009071e-05,
+    "ref_norm": 0.00746036867118829
+  },
+  "source_lineage": "GEOMETRY_MATCH_ONLY_RENDER_SOLVE_LINK_NOT_PROVEN",
+  "original_solve_sha256": "83cc42b9d22e71ea84cfb14e391003474252b1d40f3f61934db9f298c25db641",
+  "raw_render_sha256": "d6d3a52864eb94c8e8c8ccde3f4d538ef3783ce2ca60a46a5d6c136b4b0a6319",
+  "wide_render_sha256": "31672d459349044e7cfd2c46883685041ce0ca07b8afb551fb11079523e03446",
+  "model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+  "camera_array_transform": "RAW.T[::-1,:]",
+  "dx": 42.0,
+  "dy": -70.0,
+  "oracle_vs_direct_1pct": false,
+  "F2_vs_oracle_1pct": false,
+  "F2_vs_direct_1pct": false,
+  "science_gate": "DIAGNOSTIC_ONLY_UNLESS_RENDER_TO_SOLVE_LINK_AND_AXIS_META_VERIFIED"
+}

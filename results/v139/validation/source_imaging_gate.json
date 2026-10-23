@@ -1,0 +1,11 @@
+{
+  "layer_A_within_render_identity": "PASS 12/12 (V138)",
+  "layer_B_raw_vs_merged": "PASS 12/12 bitwise frozen convention (V138)",
+  "layer_C_same_solve_camera_operator": "PASS 12/12 (V138); np.clip replaced by explicit support-domain checks in v139_common.bilinear_checked",
+  "spatial_oracle_vs_direct": "FAIL 6/6 at_offset (48.6-88.3% rel L2); PASS 6/6 default (trivial dx=dy=0)",
+  "F2_vs_direct_at_offset": "1/6 within 1% (M02 only)",
+  "residual_vector_decomposition": "enforced exactly by oracle tool",
+  "interpretation": "The displaced direct render is NOT a sampled-grid spatial shift of the undisplaced render; F2 (D,h)-interpolated fields nonetheless match the displaced renders at 0.47-2.02%, so F2 is a qualified surrogate OF THE RENDERER FAMILY, while the pure spatial-shift operator hypothesis is not physically validated. No new BEM/render/exposure to alter this.",
+  "render_budget_used": 0,
+  "oracle_reimages": "diagnostic re-imaging from already-exported arrays (not counted as new solve renders; accounting documented)"
+}

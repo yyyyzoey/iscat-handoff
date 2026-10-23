@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "results/v132/validation/new_M_images.h5": {
+      "sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+      "bytes": 60246
+    },
+    "results/v126/v132_M_cases.json": {
+      "sha256": "5d65daf4b4673f69a7b62d59e91f24ae73c1eb0b894d756fdae0af70127e86c4",
+      "bytes": 2331
+    },
+    "results/v133/M_F2_baseline/model_passport.json": {
+      "sha256": "a32f878ccb700be96015f88915099ce1584657f8d632f154ba406c39ab45be5a",
+      "bytes": 4831
+    },
+    "results/v128/library/v128_Dh_train_fields.h5": {
+      "sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+      "bytes": 53435213
+    },
+    "results/v138/validation/F2_interpolation_on_verified_raw_M.csv": {
+      "sha256": "383c8a649aa018f418522c40494a3ef1cdcd3868ffee1a630dce9459c747ea09",
+      "bytes": 2620
+    }
+  },
+  "note": "raw MAT renders indexed by results/v134/provenance/M_raw_source_audit.csv with per-file SHA in oracle case JSONs"
+}

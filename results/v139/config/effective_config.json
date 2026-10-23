@@ -1,0 +1,144 @@
+{
+  "schema": "iscat139.science_config.1",
+  "task_id": "V139_RENDER_LINEAGE_SPATIAL_ORACLE_AND_CONDITIONAL_SIZING",
+  "fixed_source_commit": "ec2f9e81b0a43b7081e383e80361862e7ae200eb",
+  "source_repository": "yyyyzoey/iscat-handoff",
+  "scope": "SUSPENDED_SINGLE_PARTICLE_STATIC_SIGNED_CONTRAST__CONDITIONAL_UNIFORM_SPHERE_OPTICAL_EQUIVALENT",
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "inherited": {
+    "v137_commit": "0b64405596a7b77ad48aec26db85ca0eee495654",
+    "v133_commit": "b522894725f159a2a585eafe27c73dd6275894f3",
+    "F2_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+    "F2_kind": "F2_TENSOR_NOT_A_KNOT_CUBIC_PHYSICAL_D_H_PLUS_SPATIAL_BILINEAR",
+    "library": "results/v128/library/v128_Dh_train_fields.h5",
+    "library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "merged_M": "results/v132/validation/new_M_images.h5",
+    "merged_M_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+    "v133_fits": "results/v133/M_F2_baseline/fits",
+    "v133_model_passport": "results/v133/M_F2_baseline/model_passport.json",
+    "v133_observation_binding": "results/v133/M_F2_baseline/observation_binding.json",
+    "v138_original_render_index": "results/v134/provenance/M_raw_source_audit.csv",
+    "v138_forensics": "results/v138/provenance/forensics_summary.json",
+    "v138_raw_vs_merged": "results/v138/validation/raw_M_direct_vs_merged_H5.csv",
+    "v138_direct_F2": "results/v138/validation/F2_interpolation_on_verified_raw_M.csv",
+    "v138_dev_error": "results/v138/validation/development_envelope_frozen.json",
+    "v138_source_geometry": "results/v138/provenance/raw_solve_geometry_audit.csv",
+    "historic_R1_profiles": "results/v137_r1/profiles",
+    "historic_R1_status": "results/v137_r1/status.json"
+  },
+  "true_case_registry_validator_only": "results/v126/v132_M_cases.json",
+  "source_solve_root": "results/v126/bem_cache",
+  "source_render_root": "results/v126/renders",
+  "cases": [
+    {
+      "case": "M01",
+      "D_nm": 53.0,
+      "h_nm": 365.625,
+      "dx_nm": 42.0,
+      "dy_nm": -70.0
+    },
+    {
+      "case": "M02",
+      "D_nm": 81.0,
+      "h_nm": 415.625,
+      "dx_nm": -112.0,
+      "dy_nm": 56.0
+    },
+    {
+      "case": "M03",
+      "D_nm": 119.0,
+      "h_nm": 446.875,
+      "dx_nm": 84.0,
+      "dy_nm": 98.0
+    },
+    {
+      "case": "M04",
+      "D_nm": 149.0,
+      "h_nm": 471.875,
+      "dx_nm": -70.0,
+      "dy_nm": -112.0
+    },
+    {
+      "case": "M05",
+      "D_nm": 171.0,
+      "h_nm": 509.375,
+      "dx_nm": 126.0,
+      "dy_nm": -42.0
+    },
+    {
+      "case": "M06",
+      "D_nm": 187.0,
+      "h_nm": 540.625,
+      "dx_nm": -98.0,
+      "dy_nm": 70.0
+    }
+  ],
+  "measurement_approved": {
+    "state": "SUSPENDED",
+    "water": "PURE_WATER",
+    "temperature_C": 26.0,
+    "wavelength_vacuum_nm": 520.0,
+    "camera_pixel_um": 14.0,
+    "objective_magnification": 50.0,
+    "microscope_slide": false
+  },
+  "conditional_assumptions": {
+    "water_n": 1.3353,
+    "glass_n": 1.5,
+    "particle_complex_n": [
+      1.38,
+      0.0
+    ],
+    "NA": 0.8,
+    "extra_magnification": 1.0,
+    "object_pixel_nm": 280.0,
+    "q": 5,
+    "subsample_pitch_nm": 56.0,
+    "camera_n": 17,
+    "score_n": 13,
+    "focus_nm": 450.0,
+    "read_noise_e": 2.0
+  },
+  "published_provenance_convention": {
+    "raw_to_merged_expression": "RAW.T[::-1,:]",
+    "source": "V138_12_PAIRS_BITWISE_EXACT_AFTER_EXPORT_MAPPING",
+    "scope": "SOURCE_ARRAY_PROVENANCE_NOT_INDEPENDENT_EXPERIMENTAL_AXIS_CALIBRATION",
+    "forbid_fit_selected_reflections": true
+  },
+  "engineering_gates": {
+    "same_solve_oracle_vs_direct_relative_L2_max": 0.01,
+    "F2_vs_oracle_relative_L2_max": 0.01,
+    "F2_vs_direct_relative_L2_max": 0.01,
+    "same_array_replay_max_abs": 1e-12,
+    "rms_floor_nonzero_signal": 1e-12,
+    "loss_roi": "CENTRAL_13x13_STATIC_SIGNED_C",
+    "historical_v138_F2_offset_pass_only": [
+      "M02"
+    ],
+    "historic_dev_eps_L2": 0.0030038234921309446,
+    "history_dev_epsilon_requires_qualified_lineage": true,
+    "profile_known_joint_exact_D": true,
+    "profile_continuous_D": true,
+    "profile_nuisance_multi_start": true,
+    "true_case_registry_for_validator_only": true
+  },
+  "hard_budget_new_v139": {
+    "new_BEM_solver_attempts": 0,
+    "new_render_attempts": 12,
+    "new_camera_exposure_events": 0,
+    "F2_forward_calls_all_stages": 120000,
+    "heavy_physics_concurrency": 1,
+    "wall_hours_including_finalize": 12,
+    "finalize_minutes_reserved": 30
+  },
+  "historical_budget_preserve": {
+    "v137_R1_camera_actual": 23958,
+    "v137_camera_hard_limit": 6000,
+    "v137_R1_F2_actual": 1659953,
+    "v138_F2_actual": 60,
+    "never_reset_or_rename_history": true
+  },
+  "no_new_blind_holdouts": true,
+  "no_new_noise_trials": true,
+  "allow_new_calibration_model_only_with_new_model_id_and_dev_revalidation": true
+}

@@ -1,0 +1,7 @@
+python -m unittest discover -s tests -v  # 36 PASS
+python tools/verify_handoff.py --root . --zip <V139 zip>  # 14 members PASS
+python tools/audit_v138.py --repo <repo> --out <repo>/results/v139/preflight/v138_audit.json --verify-arrays
+python tools/oracle_wide_vs_direct.py --repo <repo> --out <repo>/results/v139/validation/oracle --config config/v139_science_config.json
+python tools/v139_assemble.py --repo <repo> --out <repo>/results/v139
+python tools/v139_pack.py ...
+python tools/check_v139_return.py --zip <zip> --out <repo>/results/v139/preflight/return_receipt.json

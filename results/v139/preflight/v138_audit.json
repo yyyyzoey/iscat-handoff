@@ -1,0 +1,185 @@
+{
+  "schema": "iscat139.published_v138_audit.1",
+  "source_commit_expected": "ec2f9e81b0a43b7081e383e80361862e7ae200eb",
+  "basis": "V138_FIXED_GIT_TEXT_FILES_AND_12_PUBLISHED_NPZ_IF_ENABLED__NOT_BEM_REDERIVATION",
+  "source_binary_npz_verified": true,
+  "paired_source_checks": {
+    "M01_default": {
+      "npz_sha256": "a3bfb3de24971191162ef05b45381c91be3d639e4d97bf387a428a68f8034fa2",
+      "native_shape": [
+        17,
+        17
+      ],
+      "merged_shape": [
+        17,
+        17
+      ]
+    },
+    "M01_at_offset": {
+      "npz_sha256": "747be7854bed498ac088a32c78ddbea1e21d0bb0a5459706ac6dae310a2e7a0c",
+      "native_shape": [
+        17,
+        17
+      ],
+      "merged_shape": [
+        17,
+        17
+      ]
+    },
+    "M02_default": {
+      "npz_sha256": "b2d36b9e248391f2ed219cc8d0a1ff184f771d363508a223b18d14ce4e8d24f9",
+      "native_shape": [
+        17,
+        17
+      ],
+      "merged_shape": [
+        17,
+        17
+      ]
+    },
+    "M02_at_offset": {
+      "npz_sha256": "efc0cc72514c3c9a83152dffa3e98009c1068da998550b7ba827e915266c0680",
+      "native_shape": [
+        17,
+        17
+      ],
+      "merged_shape": [
+        17,
+        17
+      ]
+    },
+    "M03_default": {
+      "npz_sha256": "97ece5951f30bd1170327b860dd2ea95d4eec48b55bb2c7a0cc22c4795c900f3",
+      "native_shape": [
+        17,
+        17
+      ],
+      "merged_shape": [
+        17,
+        17
+      ]
+    },
+    "M03_at_offset": {
+      "npz_sha256": "950ebb840ffd2f47eb54bdd9118b37763249a59cee719a249b600d27faa8c033",
+      "native_shape": [
+        17,
+        17
+      ],
+      "merged_shape": [
+        17,
+        17
+      ]
+    },
+    "M04_default": {
+      "npz_sha256": "aa102e0428cd2d37aa61dca95e46e682dc808ae08fed808ef883ccc8542dba6c",
+      "native_shape": [
+        17,
+        17
+      ],
+      "merged_shape": [
+        17,
+        17
+      ]
+    },
+    "M04_at_offset": {
+      "npz_sha256": "59c32a86b08e2ab82ee1c34b0225fa9565ba72c0ed398f8f1dc0896cd9776930",
+      "native_shape": [
+        17,
+        17
+      ],
+      "merged_shape": [
+        17,
+        17
+      ]
+    },
+    "M05_default": {
+      "npz_sha256": "5636449ae4e5cd8c5ff661dd4d50ee1e241552c7eb875f7adfc627a0fcde3f57",
+      "native_shape": [
+        17,
+        17
+      ],
+      "merged_shape": [
+        17,
+        17
+      ]
+    },
+    "M05_at_offset": {
+      "npz_sha256": "57347423567868b987bd401346fb1d94b090edbd46b4d28b81a8ba863871d0e2",
+      "native_shape": [
+        17,
+        17
+      ],
+      "merged_shape": [
+        17,
+        17
+      ]
+    },
+    "M06_default": {
+      "npz_sha256": "417b146ea909495e3c713b7fcb032fbd3e5f47608a1afe0f3e06b6afe8967a16",
+      "native_shape": [
+        17,
+        17
+      ],
+      "merged_shape": [
+        17,
+        17
+      ]
+    },
+    "M06_at_offset": {
+      "npz_sha256": "7cab9a3282ba7255e15fc9ebab43af9546fcb1bfdfa4474ed9972b316898376d",
+      "native_shape": [
+        17,
+        17
+      ],
+      "merged_shape": [
+        17,
+        17
+      ]
+    }
+  },
+  "raw_mat_h5_bitwise_publication_pass": 12,
+  "issues_from_independent_replay": [],
+  "F2_vs_raw": {
+    "default": {
+      "n": 6,
+      "within_original_1pct": 6,
+      "fail_cases": [],
+      "min_relative_L2": 0.0027364180256239123,
+      "max_relative_L2": 0.008838277456634394,
+      "mean_relative_L2": 0.005104325658871121
+    },
+    "at_offset": {
+      "n": 6,
+      "within_original_1pct": 1,
+      "fail_cases": [
+        "M01",
+        "M03",
+        "M04",
+        "M05",
+        "M06"
+      ],
+      "min_relative_L2": 0.004663209598504495,
+      "max_relative_L2": 0.02024563721642848,
+      "mean_relative_L2": 0.013745052728434577
+    }
+  },
+  "epsilon_dev_L2_published": 0.0030038234921309446,
+  "epsilon_scope": "OPENED_HJKL_CONDITIONAL_EMPIRICAL_ERROR_NOT_GLOBAL_BOUND",
+  "historical_v137_camera_exposures": 23958,
+  "historical_v137_camera_limit": 6000,
+  "v138_new_budget": {
+    "f2_calls": 60,
+    "new_renders": 0,
+    "new_camera_exposures": 0
+  },
+  "source_code_flags": {
+    "same_render_camera_replay_uses_index_clamping": true,
+    "v138_root_mismatch_control_is_center_prediction_vs_offset_observation": true,
+    "v138_run_all_none_command_on_nonresume": true,
+    "resume_skips_based_only_on_output_file_existence": true,
+    "render_to_original_solve_hash_link_not_closed": true,
+    "camera_axis_transform_not_independent_experimental_calibration": true
+  },
+  "science_verdict": "PARTIAL__RAW_SOURCE_MAPPING_ESTABLISHED__F2_SHIFT_PHYSICS_UNQUALIFIED",
+  "no_absolute_experimental_diameter": true
+}

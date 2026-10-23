@@ -1,0 +1,32 @@
+{
+  "task": "V139_RENDER_LINEAGE_SPATIAL_ORACLE_AND_CONDITIONAL_SIZING",
+  "git_commit": "ec2f9e81b0a43b7081e383e80361862e7ae200eb",
+  "science_gates": {
+    "mechanical": "PASS (CRC+manifest, see check receipt)",
+    "numerical_replay": "PASS: 12/12 render intensity identities (V138) + oracle residual-vector decomposition enforced",
+    "source_lineage": "PARTIAL: default<->wide bitwise same field 6/6; at_offset same-solve evidenced by identical Eref+cfg+center h; byte-level render->solve link not fully proven",
+    "coordinate": "FROZEN RAW.T[::-1,:] from V138 export-chain; NOT independent experimental axis calibration",
+    "spatial_oracle": "FAIL: oracle-vs-direct 48.6-88.3% at_offset 6/6; displaced render is NOT a sampled-grid shift of the undisplaced render",
+    "F2_physical": "CONDITIONAL: F2-vs-direct default 6/6 <=1%; at_offset 1/6 (M02) only",
+    "sizing_reportability": "FAIL-CLOSED: reportable_D=null all six; candidates + known_compatible_components retained",
+    "camera_motion": "HISTORICAL ONLY: 0/60,0/60,2/60 preserved; V137 breach 23958/6000 preserved; no new samples",
+    "experimental_absolute": "NOT_VALIDATED"
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "v139": {
+      "f2_calls": 12,
+      "f2_limit": 120000,
+      "new_renders": 0,
+      "render_limit": 12,
+      "new_camera_exposures": 0,
+      "new_bem": 0,
+      "wall_hours": 12
+    },
+    "historical": {
+      "v137_camera": "23958/6000 PRESERVED",
+      "v137_R1_f2": 1659953,
+      "v138_f2": 60
+    }
+  }
+}

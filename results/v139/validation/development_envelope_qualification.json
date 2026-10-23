@@ -1,0 +1,6 @@
+{
+  "envelope_value": 0.0030038234921309446,
+  "source_dataset": "at_offset/C central13, 24 opened H/J/K/L cases",
+  "formal_qualification": "NOT_GRANTED: per-case solve/render lineage for H/J/K/L not fully verified this round (config requires qualified lineage)",
+  "usable_as": "historical conditional empirical scale only"
+}

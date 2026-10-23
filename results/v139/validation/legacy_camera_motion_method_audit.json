@@ -1,0 +1,9 @@
+{
+  "new_camera_exposures": 0,
+  "new_motion_computation": 0,
+  "source_flags": [],
+  "camera_fpr_preserved": "0/60,0/60,2/60 (B=100000 FAIL); historical synthetic arrays only",
+  "v137_camera_breach_preserved": "23958/6000 events, never reset",
+  "motion": "deterministic sinusoid generator documented; shared-D refit UNCORRELATED_OBJECTIVE_ONLY; six rejections are method+SNR outcomes",
+  "observation_isolation": "static signed C only; 400Hz FFT amplitude, abs(C), 8-bit BMP rejected"
+}

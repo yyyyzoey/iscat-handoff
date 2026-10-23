@@ -1,0 +1,20 @@
+{
+  "task": "V139_SOURCE_WIDE_ORACLE_DIAGNOSTIC",
+  "n_rows": 12,
+  "same_solve_render_proven": 0,
+  "by_variant": {
+    "default": {
+      "oracle_vs_direct_pass": 6,
+      "F2_vs_oracle_pass": 6,
+      "F2_vs_direct_pass": 6
+    },
+    "at_offset": {
+      "oracle_vs_direct_pass": 0,
+      "F2_vs_oracle_pass": 0,
+      "F2_vs_direct_pass": 1
+    }
+  },
+  "F2_queries_recorded": 12,
+  "scientific_verdict": "NOT_SCIENTIFICALLY_CERTIFIED_BY_THIS_SCRIPT__SOURCE_LINK_AND_AXIS_PROOF_REQUIRED",
+  "note": "Source native-to-canonical mapping inherited from V138 opened M, not a blind independent axis calibration."
+}

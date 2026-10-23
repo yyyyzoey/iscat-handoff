@@ -1,0 +1,7 @@
+case,solve_file,geometry_matches_registry,Eref_default_vs_wide_bitwise,Eref_default_vs_at_offset_bitwise,wide_Esca_at_default_grid_max_abs_diff,center_h_default,center_h_wide,center_h_offset,source_commit_default,source_commit_wide,source_commit_offset,lineage_status
+M01,ren_1c9e34a793c140784ef763305bcfb66eb551773b.mat,True,False,True,5.008913064657435e-09,365.625,365.625,365.625,ce49f77f0963,ce49f77f0963,,LINEAGE_INCOMPLETE
+M02,ren_ee55b8971d7534a32387f44d0f62b9f9a5e63769.mat,True,False,True,1.6291901432474386e-08,415.625,415.625,415.625,ce49f77f0963,ce49f77f0963,,LINEAGE_INCOMPLETE
+M03,ren_9c2417b51575163eb8ff06e3dc6d3871bfb60364.mat,True,False,True,4.22667068850004e-08,446.875,446.875,446.875,ce49f77f0963,ce49f77f0963,,LINEAGE_INCOMPLETE
+M04,ren_b41481f8e0e7e90a188012cec10728224098d2c2.mat,True,False,True,6.579865559527544e-08,471.875,471.875,471.875,ce49f77f0963,ce49f77f0963,,LINEAGE_INCOMPLETE
+M05,ren_9ae327f82ea098aba00498f403fadb9d8fc6f566.mat,True,False,True,7.940972678148401e-08,509.375,509.375,509.375,ce49f77f0963,ce49f77f0963,,LINEAGE_INCOMPLETE
+M06,ren_29989ca8a8eef0da9428b8924a474f0a9d9fd944.mat,True,False,True,8.488116060234444e-08,540.625,540.625,540.625,ce49f77f0963,ce49f77f0963,,LINEAGE_INCOMPLETE
