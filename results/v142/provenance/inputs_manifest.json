@@ -1,0 +1,48 @@
+{
+  "inputs": {
+    "results/v128/library/v128_Dh_train_fields.h5": {
+      "sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+      "bytes": 53435213
+    },
+    "results/v132/validation/new_M_images.h5": {
+      "sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+      "bytes": 60246
+    },
+    "results/v125/library/v125_direct_holdouts.h5": {
+      "sha256": "b41629f5eaa14a4cc30b27c02f2775bde3ada9b4faa05601ce7ee85a84af9212",
+      "bytes": 4571777
+    },
+    "results/v126/validation/new_holdout_images.h5": {
+      "sha256": "5f5becaac39c4b04668462e18e824759c569ec93fed9aa393b79d8cb35c262f1",
+      "bytes": 3148742
+    },
+    "results/v127/validation/holdout_images.h5": {
+      "sha256": "1eadbcfd13b9fe0ccae49d5106012169674820a9a1c83c55984270f764d9407b",
+      "bytes": 3042677
+    },
+    "results/v128/validation/new_L_direct_images.h5": {
+      "sha256": "a47fc93c2cfb1655a4111bb2f7f8ca4d1115b2abe5ea09a6c91dacc686c61108",
+      "bytes": 3022280
+    },
+    "config/v142_new_N_validator_only.json": {
+      "sha256": "0f069b71ec803a8e8e236357e21a151be4cf0996c70b05d6f49a622910943d08",
+      "bytes": 1370
+    },
+    "results/v142/validation/new_N_render_mats": {
+      "files": {
+        "ANON_01_at_offset.mat": "73e04e620467d45f60558e4b921445d2edf8b807eddd995b6be878fc56119e60",
+        "ANON_01_default.mat": "96068dae622a10b1a53fab1ca04a96a192e2beb43cdc5bca39ab6850d496f22b",
+        "ANON_01_wide.mat": "4a2c259b55dcc7a726f8058a38b90cc22084cff4bfaf565396d7ee0646b581e0",
+        "ANON_02_at_offset.mat": "649705527939706a9dcedd562519f30a834fa3d65e986312a9c0dad8626a8b03",
+        "ANON_02_default.mat": "6831d29c93a4c355a72981e8412e82f0ea2358742322b6cbd05d98b1b3e643f0",
+        "ANON_02_wide.mat": "e8740fd63a7fa76fec980c051d9f88a193d88bade183ca080e1d3878123526fa",
+        "ANON_03_at_offset.mat": "10a5dcf60f68663a4f911927a50e80b693aac54a4e692f80eb347120deeb08ad",
+        "ANON_03_default.mat": "d889c1ae0d22e9f193a29c462308da84363982cbceb8e8255e0ac6deca367b39",
+        "ANON_03_wide.mat": "4ee82c01022248f1eb8970f53a3efc05324d6307f1e372b8b6b53809c7e2f38a",
+        "ANON_04_at_offset.mat": "e9c9ecd169ab06c194c51134c86a3c8874c9e498e55a858223395e3eb8c519e6",
+        "ANON_04_default.mat": "4b83f9a448384f3e884bc04c20f9681358694916c0a97712d0d66dbb8ad68f5e",
+        "ANON_04_wide.mat": "264b1f86ae629b60d502e1064f7399136a1b56b8107852bebbb77d6dff2d3994"
+      }
+    }
+  }
+}

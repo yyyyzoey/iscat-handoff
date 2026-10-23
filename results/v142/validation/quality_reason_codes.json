@@ -1,0 +1,10 @@
+{
+  "all_cases": [
+    "PROFILE_NOT_COMPLETE",
+    "ADAPTIVE_COVERAGE_INCOMPLETE",
+    "DETECTION_GATE_NOT_QUALIFIED",
+    "DEV_ENVELOPE_LINEAGE_QUALIFICATION_PENDING"
+  ],
+  "n_reportable": 0,
+  "reportable_D": "null for every particle"
+}

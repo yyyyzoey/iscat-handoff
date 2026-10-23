@@ -1,0 +1,10 @@
+{
+ "anon_cases": [
+  "ANON_01",
+  "ANON_02",
+  "ANON_03",
+  "ANON_04"
+ ],
+ "observation": "RAW_C_17x17_FROZEN_TRANSFORM_CENTRAL13",
+ "note": "estimator opens this file only; truth mapping kept in validator storage outside repo"
+}

@@ -1,0 +1,6 @@
+{
+  "adaptive_coverage_complete": false,
+  "per_case_coarse_points": 19,
+  "reason": "budget-honest starter profiles; adaptive refinement not executed; reportable_D stays null",
+  "next": "adaptive competitor-basin refinement requires additional forward budget in a future round"
+}

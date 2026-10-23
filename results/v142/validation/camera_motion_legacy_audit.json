@@ -1,0 +1,8 @@
+{
+  "new_camera_exposures": 0,
+  "new_motion_computation": 0,
+  "camera_fpr": "0/60,0/60,2/60 preserved (B=100000 FAIL)",
+  "v137_camera_breach": "23958/6000 PRESERVED immutable",
+  "motion": "deterministic sinusoid; shared-D refit UNCORRELATED_OBJECTIVE_ONLY; six rejections are method+SNR outcomes",
+  "observation_isolation": "static signed C only; 400Hz FFT amplitude / abs(C) / 8-bit BMP rejected"
+}

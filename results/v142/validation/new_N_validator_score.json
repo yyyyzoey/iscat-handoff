@@ -1,0 +1,63 @@
+{
+  "schema": "iscat142.n_validator_score.1",
+  "n": 4,
+  "pass_engineering": 4,
+  "MAE_nm": 0.30841921647878934,
+  "RMSE_nm": 0.3652364905060381,
+  "max_err_nm": 0.6291458953954248,
+  "note": "candidate_accuracy measured; eligible_reportability still null per incomplete profile/adaptive/detection gates",
+  "rows": [
+    {
+      "anon_case": "ANON_01",
+      "case": "N01",
+      "D_true": 59.0,
+      "D_hat": 59.09926569428531,
+      "abs_err_nm": 0.0992656942853074,
+      "engineering_target_nm": 5.9,
+      "pass_engineering": true,
+      "fit_h": 391.24453331179836,
+      "h_true": 391.25,
+      "abs_err_h_nm": 0.005466688201636316,
+      "scope": "INDEPENDENT_VALIDATOR_ONLY; 4 cases sparse stress test not domain guarantee"
+    },
+    {
+      "anon_case": "ANON_02",
+      "case": "N02",
+      "D_true": 101.0,
+      "D_hat": 101.24109919653004,
+      "abs_err_nm": 0.24109919653004397,
+      "engineering_target_nm": 10.100000000000001,
+      "pass_engineering": true,
+      "fit_h": 432.42453125289455,
+      "h_true": 432.5,
+      "abs_err_h_nm": 0.07546874710544671,
+      "scope": "INDEPENDENT_VALIDATOR_ONLY; 4 cases sparse stress test not domain guarantee"
+    },
+    {
+      "anon_case": "ANON_03",
+      "case": "N03",
+      "D_true": 143.0,
+      "D_hat": 143.26416607970438,
+      "abs_err_nm": 0.2641660797043812,
+      "engineering_target_nm": 14.3,
+      "pass_engineering": true,
+      "fit_h": 478.7407140713144,
+      "h_true": 478.75,
+      "abs_err_h_nm": 0.009285928685585532,
+      "scope": "INDEPENDENT_VALIDATOR_ONLY; 4 cases sparse stress test not domain guarantee"
+    },
+    {
+      "anon_case": "ANON_04",
+      "case": "N04",
+      "D_true": 181.0,
+      "D_hat": 180.37085410460458,
+      "abs_err_nm": 0.6291458953954248,
+      "engineering_target_nm": 18.1,
+      "pass_engineering": true,
+      "fit_h": 526.4818227695525,
+      "h_true": 526.25,
+      "abs_err_h_nm": 0.23182276955253656,
+      "scope": "INDEPENDENT_VALIDATOR_ONLY; 4 cases sparse stress test not domain guarantee"
+    }
+  ]
+}

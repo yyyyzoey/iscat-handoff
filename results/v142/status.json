@@ -1,0 +1,43 @@
+{
+  "task": "V142_SPATIAL_CUBIC_MODEL_QUALIFICATION_AND_BLINDED_PHYSICAL_SIZING",
+  "git_commit": "841df9b37a387a87ee192062b6411ed9719a114f",
+  "stage_states": {
+    "SOURCE_IDENTITY": "PIPELINE_LINKED (V140); solve content SHA per file verified in V141/V142 field tools",
+    "NUMERICAL": "PASS: 36 stability checks; dev forward 60 calls; residual identity exact",
+    "MODEL_FREEZE": "COMPLETED BEFORE N: v142-F2c-75860d22 at freeze commit f9a3777c",
+    "DIRECT_PHYSICS_N": "COMPLETED: 4 new BEM solves + 12 renders (0 fails), generated AFTER freeze+git commit",
+    "BLIND_SIZING": {
+      "n": 4,
+      "pass_engineering": 4,
+      "MAE_nm": 0.30841921647878934,
+      "RMSE_nm": 0.3652364905060381,
+      "max_err_nm": 0.6291458953954248,
+      "note": "4 cases = sparse stress test; NOT a domain-wide confidence statement"
+    },
+    "SIZING_PROFILE": "coarse starter complete for dev M (19 pts x 6); adaptive NOT complete -> reportable_D stays null",
+    "DETECTION_FPR": "HISTORICAL 0/60,0/60,2/60 preserved; B=100000 FAIL; no new samples",
+    "EXPERIMENTAL_ABSOLUTE": "NOT_VALIDATED"
+  },
+  "reportability": {
+    "all_reportable_D_null": true,
+    "reason": "adaptive/profile uniqueness + detection + lineage gates incomplete even though blind N candidate accuracy is excellent"
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "actual_f2c_calls": 48874,
+    "charged": 277260,
+    "limit": 350000,
+    "bem": 4,
+    "bem_limit": 4,
+    "new_N_renders": 12,
+    "render_limit": 12,
+    "camera": 0,
+    "historical_preserved": {
+      "v137_camera": "23958/6000",
+      "v137_R1_f2": 1659953,
+      "v138_f2": 60,
+      "v139_f2": 12,
+      "v140_f2": 12
+    }
+  }
+}

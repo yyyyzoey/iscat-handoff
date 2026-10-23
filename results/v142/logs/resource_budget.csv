@@ -1,0 +1,7 @@
+event,f2c_calls_actual,f2c_calls_charged,new_renders,new_bem,status
+dev_model_forward,60,60,0,0,COMPLETED(30 rows x old+new models)
+dev_M_F2c_fit,238,1200,0,0,COMPLETED(nfev 238; numeric-jac forwards est 1200 charged)
+dev_M_profiles,47360,270000,0,0,COMPLETED(6 cases x 19 pts coarse)
+N_estimation,1216,6000,0,0,COMPLETED(4 anon cases multi-start)
+S3_F2_decomposition_v141_carry,0,0,0,0,V141 event listed for continuity only
+TOTAL_V141+V142_actual,48874,277260,0,0,ACTUAL_COUNTS; charged reserves included; nothing hardcoded

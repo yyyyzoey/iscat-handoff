@@ -1,0 +1,19 @@
+{
+  "schema": "iscat142.new_direct_holdouts.validator_only.1",
+  "status": "PRE_REGISTERED_NOT_GENERATED",
+  "required_freeze_before_seeing_N_images": ["model_source_sha256", "model_id", "spatial_kernel_id", "training_library_sha256", "optimizer_sha256", "profile_rule", "noise_and_reporting_rule", "git_commit"],
+  "purpose": "Genuinely unseen direct L1 electromagnetic renders after all model/optimizer/reportability choices freeze; estimator must never read this file",
+  "common": {"nparticle_real":1.38,"nparticle_imag":0,"nwater":1.3353,"nglass":1.5,"lambda_nm":520,"NA":0.8,"focus_nm":450,"mesh":1444,"q":5,"camera_n":17,"pixel_nm":280},
+  "cases": [
+    {"case":"N01","D_nm":59.0,"h_nm":391.25,"x_nm":77.0,"y_nm":-35.0},
+    {"case":"N02","D_nm":101.0,"h_nm":432.5,"x_nm":-91.0,"y_nm":105.0},
+    {"case":"N03","D_nm":143.0,"h_nm":478.75,"x_nm":35.0,"y_nm":119.0},
+    {"case":"N04","D_nm":181.0,"h_nm":526.25,"x_nm":-119.0,"y_nm":-77.0}
+  ],
+  "required_render_variants":["default","wide","at_offset"],
+  "budget_only_after_frozen_selection":{"new_BEM_attempts_max":4,"new_render_attempts_max":12},
+  "use_in_estimator": false,
+  "no_new_N_if_model_not_frozen": true,
+  "after_any_model_or_threshold_change": "MARK_N_AS_OPENED_DEVELOPMENT_NOT_BLIND",
+  "scientific_caveat": "4 cases are a sparse independent stress test, not an all-domain accuracy guarantee"
+}
