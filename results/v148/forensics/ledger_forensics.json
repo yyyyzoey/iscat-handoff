@@ -1,0 +1,26 @@
+{
+  "integrity_check": "ok",
+  "n_total": 135,
+  "W1": {
+    "ops": 1,
+    "state": "RESERVED",
+    "note": "payload string corrupt; 36 forwards real but unfinalizable"
+  },
+  "W2": {
+    "completed": 119,
+    "reserved": 1,
+    "actual_known": 54058,
+    "note": "results lost in crash before summary write"
+  },
+  "W3": {
+    "completed": 14,
+    "reserved": 0,
+    "actual_known": 12641,
+    "note": "14 completed ops but theta/Q results lost; rest blocked by budget"
+  },
+  "budget": {
+    "reserved": 118636,
+    "actual_known": 66699,
+    "limit": 120000
+  }
+}

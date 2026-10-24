@@ -1,0 +1,29 @@
+{
+  "task": "V148_NOISE_ERROR_ATTRIBUTION_AND_DETECTABLE_SIZING_EXECUTION",
+  "stage_states": {
+    "P0_FORENSICS": "COMPLETED: V147 sqlite verified, W2 119 COMPLETED + 1 RESERVED, W3 14 COMPLETED (results lost), actual_known=12641 not 66699",
+    "P1_TESTS": "PASS 15/15 (ledger + forward counter + estimator math + pack negative)",
+    "W1_Q_REPLAY": "PASS 36/36 max_rel_diff=2.13e-16",
+    "W2_THREE_ESTIMATORS": "PARTIAL: E1 ran for 36 events (many FAILED at low B due to noise); E2 started for 3 events then budget exhausted; E3 not run. Confirms V146 noise degradation pattern.",
+    "W3_JOINT": "NOT_RUN (budget exhausted by W2 reservations)",
+    "FIXED_D_DIAGNOSTIC": "NOT_RUN (budget exhausted)",
+    "EXPERIMENTAL_ABSOLUTE": "NOT_VALIDATED"
+  },
+  "reportability": {
+    "all_reportable_D_null": true
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "reserved": 117036,
+    "actual_used": 3855,
+    "limit": 120000,
+    "note": "per_event_cap=3000 was too high for numeric-Jacobian fits; lower cap needed for complete 3-estimator comparison",
+    "historical": {
+      "v137_camera": "23958/6000",
+      "v145_bem": 3,
+      "v147_w1_lost": true,
+      "v147_w2_lost": true
+    }
+  },
+  "key_finding": "E1_PLUGIN_DELTA_GLS reproduces V146 noise degradation exactly: low-B events fail convergence, only B=100000 produces candidates matching V146 published values. The three-estimator comparison could not complete within 120k forwards due to numeric-Jacobian overhead."
+}

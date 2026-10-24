@@ -1,0 +1,59 @@
+{
+  "schema": "iscat148.science_config.1",
+  "task_id": "V148_NOISE_ERROR_ATTRIBUTION_AND_DETECTABLE_SIZING_EXECUTION",
+  "fixed_review_commit": "915643d2e5be25cfc1091040cd98d63e8a714cf2",
+  "frozen_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+  "camera_h5_sha256": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+  "public_bank_sha256": "25a33f525c6a31a21a18a767c549301d6547e7ad9e6851b064f893f2befa9c4e",
+  "inputs": {
+    "library": "results/v128/library/v128_Dh_train_fields.h5",
+    "camera_h5": "results/v143/validation/camera_pilot/conditional_camera_arrays.h5",
+    "v146_camera_fits": "results/v146/camera_fits",
+    "v146_bank": "results/v146/camera_fits/bank",
+    "validator_truth": "config/v142_new_N_validator_only.json",
+    "v145_violation": "results/v145/logs/v145_budget_violation.json"
+  },
+  "camera_levels": [
+    1000,
+    10000,
+    100000
+  ],
+  "read_noise_e": 2.0,
+  "object_pixel_nm": 280.0,
+  "camera_n": 17,
+  "score_n": 13,
+  "solver": {
+    "method": "trf",
+    "loss": "linear",
+    "max_nfev": 90,
+    "x_scale": [
+      50.0,
+      50.0,
+      140.0,
+      140.0
+    ],
+    "ftol": 1e-10,
+    "xtol": 1e-10,
+    "gtol": 1e-10
+  },
+  "per_event_cap": 3000,
+  "joint_per_group_cap": 2000,
+  "estimators": [
+    "E1_PLUGIN_DELTA_GLS",
+    "E2_UNWEIGHTED_C_L2",
+    "E3_MODEL_VAR_GAUSSIAN_QUASI"
+  ],
+  "budget": {
+    "FORWARD": 120000,
+    "BEM": 0,
+    "RENDER": 0,
+    "CAMERA": 0
+  },
+  "historical_preserve": {
+    "v137_camera": "23958/6000",
+    "v145_unauthorized_bem": 3,
+    "v145_unauthorized_render": 3
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+}
