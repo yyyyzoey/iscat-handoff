@@ -1,0 +1,45 @@
+{
+  "task": "V145_FIXED_DIAMETER_PROFILE_REPAIR_AND_MEASUREMENT_INFORMATION",
+  "git_commit_at_pack": "2327ff73a9fe4cb0c9db8e35b551880d654cd044",
+  "stage_states": {
+    "P0_AUDIT": "COMPLETED: 23/24 V144 fixed-D points INVALID (4D leakage); truth leak in V144 N candidates documented; camera dev-null replay gap documented",
+    "P1_TRUTH_ISOLATION": "COMPLETED: estimator-only candidates for 10 cases restored from frozen CSV; validator truth blocked from report path",
+    "P2_FIXED_D": "COMPLETED: 42 strict fixed-D points with theta[0]==D enforced; profiles show SHARP minima at candidates (e.g. ANON_01 3.47e-7 at D=59.099 vs 1.47e-3 at D=150) - V144 flat-valley claim retracted as 4D-leakage artifact; under UNQUALIFIED dev epsilon 1.58e-3 non-uniqueness persists (D=150 witness within eps) but that epsilon has no source qualification",
+    "P3_INFORMATION": "COMPLETED: Jacobian condition 7.5-144.9; D-after-projection 3.3e-5..6.2e-3; local linear information insufficient for uniqueness proof",
+    "P4_CAMERA_REPLAY": "COMPLETED: 912 exposures replayed from real arrays; thresholds match; FPR 0/60 x3; V144 fake replay superseded",
+    "P5_FOCUS_PILOT": "VIOLATED_BUDGET_AND_STOPPED: 3 unauthorized BEM solves + 3 renders executed before kill; evidence preserved; pilot invalid",
+    "P6_REPORT": "reportable_D=null all cases; candidates from estimator sources only",
+    "P7_BUDGET": "BEM VIOLATION 3 recorded; all other budgets within limits; ledger atomic per-event",
+    "P8_DELIVERY": "this archive"
+  },
+  "reportability_note": "Strict fixed-D profiles show sharp candidate minima; conditional non-uniqueness persists only under the UNQUALIFIED empirical epsilon; a source-qualified error scale is required before any identifiability claim; adaptive complete profiles still outstanding",
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "violation": {
+      "schema": "iscat145.budget_violation.1",
+      "event": "Dual-focus pilot re-solved 3 BEM systems (pilot_ANON_01/ANON_04/M02 at focus 350) because the adapter cache is per-outDir; MATLAB was killed mid-run (pilot_M06 and f550 never started).",
+      "unauthorized_BEM_solves": 3,
+      "unauthorized_renders": 3,
+      "evidence_dir": "provenance/pilot_violation_evidence/",
+      "disposition": "Pilot stopped; P5 declared VIOLATED_BUDGET_AND_STOPPED; renders/solves preserved as evidence and treated as opened development data; NOT used for any model or reportability claim",
+      "historical_preserved": {
+        "v137_camera": "23958/6000",
+        "v142_f2c_actual": 48874,
+        "v143_forward_actual": 49390,
+        "v143_camera": 912
+      }
+    },
+    "fixed_D_points": 10,
+    "historical": {
+      "v137_camera": "23958/6000",
+      "v142_f2c": 48874,
+      "v143_forward": 49390,
+      "v143_camera": 912
+    }
+  },
+  "review_corrections": {
+    "v144_flat_valley": "RETRACTED (4D leakage artifact); replaced by strict fixed-D sharp-minimum data",
+    "v144_truth_leak": "fixed in P1 estimator-only candidates",
+    "v144_camera_replay": "superseded by real array replay"
+  }
+}

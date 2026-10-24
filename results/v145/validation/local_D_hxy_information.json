@@ -1,0 +1,168 @@
+{
+  "schema": "iscat145.local_information.1",
+  "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "cases": {
+    "ANON_01": {
+      "candidate_theta_from_estimator": [
+        59.09926569428531,
+        391.24453331179836,
+        77.0208034630734,
+        -34.958595602955505
+      ],
+      "observation_sha256": "33cf029a866d42de773c2664caf775e388ee1a065849ce55c51b9be7d49ebf4c",
+      "numerical_forward_calls": 8,
+      "scaled_unit_steps": {
+        "D_nm": 10,
+        "h_nm": 10,
+        "x_nm": 50,
+        "y_nm": 50
+      },
+      "singular_values": [
+        0.00470108582830412,
+        0.00022712482888892754,
+        0.0002125131483499437,
+        3.244719311891642e-05
+      ],
+      "scaled_condition_number": 144.88420650362602,
+      "D_after_linear_nuisance_projection_L2": 3.260090774917589e-05,
+      "D_before_projection_L2": 0.00045589642998979476,
+      "D_information_fraction_after_hxy_projection": 0.07150946049282654,
+      "scientific_scope": "LOCAL_LINEAR_UNWEIGHTED_FEASIBILITY_ONLY__NOT_GLOBAL_IDENTIFIABILITY_OR_PRECISION"
+    },
+    "ANON_02": {
+      "candidate_theta_from_estimator": [
+        101.24109919653004,
+        432.42453125289455,
+        -91.0035952043441,
+        105.00637585924397
+      ],
+      "observation_sha256": "0ac6be36096f29aa77a399d0ca304f3a07f9503890461086116ece00064db9cd",
+      "numerical_forward_calls": 8,
+      "scaled_unit_steps": {
+        "D_nm": 10,
+        "h_nm": 10,
+        "x_nm": 50,
+        "y_nm": 50
+      },
+      "singular_values": [
+        0.015562631165785431,
+        0.014394432520046099,
+        0.013532817437360928,
+        0.0005314130411776173
+      ],
+      "scaled_condition_number": 29.28537683474697,
+      "D_after_linear_nuisance_projection_L2": 0.001885636819242295,
+      "D_before_projection_L2": 0.014941198793058696,
+      "D_information_fraction_after_hxy_projection": 0.12620385053161293,
+      "scientific_scope": "LOCAL_LINEAR_UNWEIGHTED_FEASIBILITY_ONLY__NOT_GLOBAL_IDENTIFIABILITY_OR_PRECISION"
+    },
+    "ANON_03": {
+      "candidate_theta_from_estimator": [
+        143.26416607970438,
+        478.7407140713144,
+        34.99468762353582,
+        119.00376906880238
+      ],
+      "observation_sha256": "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba",
+      "numerical_forward_calls": 8,
+      "scaled_unit_steps": {
+        "D_nm": 10,
+        "h_nm": 10,
+        "x_nm": 50,
+        "y_nm": 50
+      },
+      "singular_values": [
+        0.039907446379666346,
+        0.012109539187702849,
+        0.01138581133038306,
+        0.0018099551770056651
+      ],
+      "scaled_condition_number": 22.0488589367655,
+      "D_after_linear_nuisance_projection_L2": 0.0018217878410044042,
+      "D_before_projection_L2": 0.0048877473003788125,
+      "D_information_fraction_after_hxy_projection": 0.3727254559300173,
+      "scientific_scope": "LOCAL_LINEAR_UNWEIGHTED_FEASIBILITY_ONLY__NOT_GLOBAL_IDENTIFIABILITY_OR_PRECISION"
+    },
+    "ANON_04": {
+      "candidate_theta_from_estimator": [
+        180.37085410460458,
+        526.4818227695525,
+        -119.01437203438888,
+        -76.98541924943484
+      ],
+      "observation_sha256": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+      "numerical_forward_calls": 8,
+      "scaled_unit_steps": {
+        "D_nm": 10,
+        "h_nm": 10,
+        "x_nm": 50,
+        "y_nm": 50
+      },
+      "singular_values": [
+        0.0394599406246134,
+        0.03725825965458216,
+        0.026377593877967613,
+        0.0011108680002290734
+      ],
+      "scaled_condition_number": 35.52171870688176,
+      "D_after_linear_nuisance_projection_L2": 0.0011616930011705685,
+      "D_before_projection_L2": 0.007796642066878376,
+      "D_information_fraction_after_hxy_projection": 0.14899914491466296,
+      "scientific_scope": "LOCAL_LINEAR_UNWEIGHTED_FEASIBILITY_ONLY__NOT_GLOBAL_IDENTIFIABILITY_OR_PRECISION"
+    },
+    "M04": {
+      "candidate_theta_from_estimator": [
+        149.2585476311477,
+        471.8610360486137,
+        -70.00721587112636,
+        -111.99492015699569
+      ],
+      "observation_sha256": "18e52d15d6ed13a0bf1a3801caa70dc8adbdac6a755169c5b9f95ab89c5e196a",
+      "numerical_forward_calls": 8,
+      "scaled_unit_steps": {
+        "D_nm": 10,
+        "h_nm": 10,
+        "x_nm": 50,
+        "y_nm": 50
+      },
+      "singular_values": [
+        0.03895434474350652,
+        0.0190831296084395,
+        0.017885992026493998,
+        0.0019384033480400905
+      ],
+      "scaled_condition_number": 20.096098566324216,
+      "D_after_linear_nuisance_projection_L2": 0.00197300987824755,
+      "D_before_projection_L2": 0.00751791754395868,
+      "D_information_fraction_after_hxy_projection": 0.2624410106536803,
+      "scientific_scope": "LOCAL_LINEAR_UNWEIGHTED_FEASIBILITY_ONLY__NOT_GLOBAL_IDENTIFIABILITY_OR_PRECISION"
+    },
+    "M06": {
+      "candidate_theta_from_estimator": [
+        184.34673932132725,
+        541.5710342225597,
+        -98.01148551879386,
+        70.01176993107566
+      ],
+      "observation_sha256": "5be586e4c62a40d7e27850f2a79f062c22f3787287f51f9059c9d262b415668a",
+      "numerical_forward_calls": 8,
+      "scaled_unit_steps": {
+        "D_nm": 10,
+        "h_nm": 10,
+        "x_nm": 50,
+        "y_nm": 50
+      },
+      "singular_values": [
+        0.04577408985701141,
+        0.04307931412903792,
+        0.008401970438847379,
+        0.006116755380934039
+      ],
+      "scaled_condition_number": 7.483393892077081,
+      "D_after_linear_nuisance_projection_L2": 0.006203979269907959,
+      "D_before_projection_L2": 0.006276018881029296,
+      "D_information_fraction_after_hxy_projection": 0.9885214476745612,
+      "scientific_scope": "LOCAL_LINEAR_UNWEIGHTED_FEASIBILITY_ONLY__NOT_GLOBAL_IDENTIFIABILITY_OR_PRECISION"
+    }
+  }
+}

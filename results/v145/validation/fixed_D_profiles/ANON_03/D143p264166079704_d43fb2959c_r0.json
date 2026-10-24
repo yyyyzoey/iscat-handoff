@@ -1,0 +1,279 @@
+{
+  "schema": "iscat145.fixed_D.1",
+  "case": "ANON_03",
+  "target_D": 143.26416607970438,
+  "signature": "d43fb2959c70ad841f3f1fc52df46794bb0954e546480a98ddd057aa11e59b4b",
+  "event_key": "V145_FIXED_D_ANON_03_d43fb2959c70ad841f3f_r0",
+  "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "model_source_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749",
+  "observation_sha256": "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba",
+  "result": {
+    "fixed_D": 143.26416607970438,
+    "best": {
+      "theta": [
+        143.26416607970438,
+        478.74071371592936,
+        34.99468760926156,
+        119.00376913503044
+      ],
+      "loss_L2": 2.8438608264553357e-06,
+      "source": "PUBLIC_H_450",
+      "search_complete": true
+    },
+    "valid_witnesses": [
+      {
+        "theta": [
+          143.26416607970438,
+          478.74071371594044,
+          34.99468760444489,
+          119.00376913202128
+        ],
+        "loss_L2": 2.843860826458615e-06,
+        "source": "REPLAYED_V143_SAME_D_WITNESS"
+      },
+      {
+        "theta": [
+          143.26416607970438,
+          478.7407140713144,
+          34.99468762353582,
+          119.00376906880238
+        ],
+        "loss_L2": 2.843861175770618e-06,
+        "source": "EXACT_INHERITED_JOINT_WITNESS"
+      },
+      {
+        "theta": [
+          143.26416607970438,
+          478.7407137159375,
+          34.994687602887524,
+          119.00376913990591
+        ],
+        "loss_L2": 2.8438608265134193e-06,
+        "source": "PUBLIC_JOINT_NUISANCE",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          143.26416607970438,
+          399.72065941634185,
+          35.112781757773625,
+          119.12803804780899
+        ],
+        "loss_L2": 0.010767500322709577,
+        "source": "PUBLIC_H_350",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          143.26416607970438,
+          399.72065942135026,
+          35.112802048915924,
+          119.12805319462147
+        ],
+        "loss_L2": 0.010767500322714216,
+        "source": "PUBLIC_H_400",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          143.26416607970438,
+          478.74071371592936,
+          34.99468760926156,
+          119.00376913503044
+        ],
+        "loss_L2": 2.8438608264553357e-06,
+        "source": "PUBLIC_H_450",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          143.26416607970438,
+          478.74071371594044,
+          34.99468760444489,
+          119.00376913202128
+        ],
+        "loss_L2": 2.843860826458615e-06,
+        "source": "PUBLIC_H_500",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          143.26416607970438,
+          549.9999999999999,
+          383.6837809151276,
+          499.99999999999994
+        ],
+        "loss_L2": 0.13271823967528829,
+        "source": "PUBLIC_H_550",
+        "search_complete": false
+      },
+      {
+        "theta": [
+          143.26416607970438,
+          399.72065940460044,
+          35.112888144585554,
+          119.12799244508705
+        ],
+        "loss_L2": 0.010767500322745125,
+        "source": "CENTER_XY_H_400",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          143.26416607970438,
+          478.7407137198303,
+          34.99468775674886,
+          119.00376899461766
+        ],
+        "loss_L2": 2.843860826727934e-06,
+        "source": "CENTER_XY_H_500",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          143.26416607970438,
+          478.74071371594044,
+          34.99468760444489,
+          119.00376913202128
+        ],
+        "loss_L2": 2.843860826458615e-06,
+        "source": "SAME_D_PRIOR_WITNESS",
+        "search_complete": true
+      }
+    ],
+    "attempts": [
+      {
+        "start": "PUBLIC_JOINT_NUISANCE",
+        "theta": [
+          143.26416607970438,
+          478.7407137159375,
+          34.994687602887524,
+          119.00376913990591
+        ],
+        "loss_L2": 2.8438608265134193e-06,
+        "success": true,
+        "status": 1,
+        "nfev": 2,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_350",
+        "theta": [
+          143.26416607970438,
+          399.72065941634185,
+          35.112781757773625,
+          119.12803804780899
+        ],
+        "loss_L2": 0.010767500322709577,
+        "success": true,
+        "status": 2,
+        "nfev": 8,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_400",
+        "theta": [
+          143.26416607970438,
+          399.72065942135026,
+          35.112802048915924,
+          119.12805319462147
+        ],
+        "loss_L2": 0.010767500322714216,
+        "success": true,
+        "status": 2,
+        "nfev": 6,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_450",
+        "theta": [
+          143.26416607970438,
+          478.74071371592936,
+          34.99468760926156,
+          119.00376913503044
+        ],
+        "loss_L2": 2.8438608264553357e-06,
+        "success": true,
+        "status": 1,
+        "nfev": 6,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_500",
+        "theta": [
+          143.26416607970438,
+          478.74071371594044,
+          34.99468760444489,
+          119.00376913202128
+        ],
+        "loss_L2": 2.843860826458615e-06,
+        "success": true,
+        "status": 1,
+        "nfev": 5,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_550",
+        "theta": [
+          143.26416607970438,
+          549.9999999999999,
+          383.6837809151276,
+          499.99999999999994
+        ],
+        "loss_L2": 0.13271823967528829,
+        "success": false,
+        "status": 0,
+        "nfev": 65,
+        "message": "The maximum number of function evaluations is exceeded."
+      },
+      {
+        "start": "CENTER_XY_H_400",
+        "theta": [
+          143.26416607970438,
+          399.72065940460044,
+          35.112888144585554,
+          119.12799244508705
+        ],
+        "loss_L2": 0.010767500322745125,
+        "success": true,
+        "status": 2,
+        "nfev": 10,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": "CENTER_XY_H_500",
+        "theta": [
+          143.26416607970438,
+          478.7407137198303,
+          34.99468775674886,
+          119.00376899461766
+        ],
+        "loss_L2": 2.843860826727934e-06,
+        "success": true,
+        "status": 1,
+        "nfev": 7,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "SAME_D_PRIOR_WITNESS",
+        "theta": [
+          143.26416607970438,
+          478.74071371594044,
+          34.99468760444489,
+          119.00376913202128
+        ],
+        "loss_L2": 2.843860826458615e-06,
+        "success": true,
+        "status": 1,
+        "nfev": 1,
+        "message": "`gtol` termination condition is satisfied."
+      }
+    ],
+    "point_search_complete": false,
+    "actual_f2c_callbacks": 442,
+    "profile_is_upper_bound_not_global_proof": true,
+    "every_saved_witness_obeys_fixed_D": true
+  },
+  "source_scope": "ANON_OR_OPENED_DEV__TRUTH_NOT_LOADED",
+  "reportable_D": null
+}

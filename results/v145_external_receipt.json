@@ -1,0 +1,7 @@
+{
+  "mechanical": "FAIL",
+  "errors": [
+    "FileNotFoundError(2, 'No such file or directory')"
+  ],
+  "external_maxwell_verdict": "NOT_CERTIFIED_BY_ZIP"
+}

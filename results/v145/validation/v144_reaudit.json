@@ -1,0 +1,187 @@
+{
+  "schema": "iscat145.v144_audit.1",
+  "fixed_source_commit": "2327ff73a9fe4cb0c9db8e35b551880d654cd044",
+  "reviewed_files": {
+    "tools/v144_refine.py": "2b4390c529bbe9adc70fe68207450b63e4445a378db0976306ca6f7849104dca",
+    "tools/v144_assemble.py": "b8738a6289449081e62d4f935c34241043031c85fd2a7390bf54c7c1774ccb19",
+    "tools/v144_camera_replay.py": "29f3776f35025d028c27f44bc4d2b0d290c5ab481ed26e402a8b76be29f7359c",
+    "results/v144/status.json": "768f42bb4b350a84c7007bfee0cfb6f06dd20d1f58595cbbd97819742d9170c2"
+  },
+  "corrected_N_sourcewide": {
+    "S1_BILINEAR": {
+      "n": 4,
+      "pass_1pct": 0,
+      "min_relative_L2": 0.013112009965660311,
+      "max_relative_L2": 0.01766541629931476
+    },
+    "S2_CUBIC": {
+      "n": 4,
+      "pass_1pct": 4,
+      "min_relative_L2": 5.3138972571839014e-05,
+      "max_relative_L2": 7.4802608432592e-05
+    }
+  },
+  "v144_refinement": {
+    "checkpoints": 24,
+    "readable": 24,
+    "mismatched_fixed_D": 23,
+    "max_D_deviation_nm": 23.264187004523677,
+    "examples": [
+      {
+        "case": "ANON_03",
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v144/profiles/refine_v144/ANON_03/12.a1.json",
+        "target_D": 120.0,
+        "actual_fit_D": 143.26418700452368,
+        "abs_mismatch_nm": 23.264187004523677,
+        "fixed_D": false,
+        "point_search_complete": false
+      },
+      {
+        "case": "M04",
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v144/profiles/refine_v144/M04/17.a1.json",
+        "target_D": 170.0,
+        "actual_fit_D": 149.2585447842882,
+        "abs_mismatch_nm": 20.741455215711795,
+        "fixed_D": false,
+        "point_search_complete": false
+      },
+      {
+        "case": "M04",
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v144/profiles/refine_v144/M04/13.a1.json",
+        "target_D": 130.0,
+        "actual_fit_D": 149.25854758041652,
+        "abs_mismatch_nm": 19.25854758041652,
+        "fixed_D": false,
+        "point_search_complete": false
+      },
+      {
+        "case": "ANON_03",
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v144/profiles/refine_v144/ANON_03/16.a1.json",
+        "target_D": 160.0,
+        "actual_fit_D": 143.26418446359327,
+        "abs_mismatch_nm": 16.735815536406733,
+        "fixed_D": false,
+        "point_search_complete": false
+      },
+      {
+        "case": "ANON_03",
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v144/profiles/refine_v144/ANON_03/13.a1.json",
+        "target_D": 130.0,
+        "actual_fit_D": 143.26418770671086,
+        "abs_mismatch_nm": 13.264187706710857,
+        "fixed_D": false,
+        "point_search_complete": false
+      },
+      {
+        "case": "M04",
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v144/profiles/refine_v144/M04/16.a1.json",
+        "target_D": 160.0,
+        "actual_fit_D": 149.25854761194503,
+        "abs_mismatch_nm": 10.741452388054967,
+        "fixed_D": false,
+        "point_search_complete": false
+      },
+      {
+        "case": "ANON_04",
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v144/profiles/refine_v144/ANON_04/170.370854104605.a1.json",
+        "target_D": 170.37085410460458,
+        "actual_fit_D": 180.3709163147752,
+        "abs_mismatch_nm": 10.000062210170626,
+        "fixed_D": false,
+        "point_search_complete": true
+      },
+      {
+        "case": "M06",
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v144/profiles/refine_v144/M06/194.346739321327.a1.json",
+        "target_D": 194.34673932132725,
+        "actual_fit_D": 184.3467389887186,
+        "abs_mismatch_nm": 10.000000332608636,
+        "fixed_D": false,
+        "point_search_complete": true
+      },
+      {
+        "case": "M06",
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v144/profiles/refine_v144/M06/174.346739321327.a1.json",
+        "target_D": 174.34673932132725,
+        "actual_fit_D": 184.34672586891847,
+        "abs_mismatch_nm": 9.99998654759122,
+        "fixed_D": false,
+        "point_search_complete": true
+      },
+      {
+        "case": "ANON_04",
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v144/profiles/refine_v144/ANON_04/190.370854104605.a1.json",
+        "target_D": 190.37085410460458,
+        "actual_fit_D": 180.37090199279626,
+        "abs_mismatch_nm": 9.999952111808312,
+        "fixed_D": false,
+        "point_search_complete": true
+      },
+      {
+        "case": "M04",
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v144/profiles/refine_v144/M04/14.a1.json",
+        "target_D": 140.0,
+        "actual_fit_D": 149.25854446118444,
+        "abs_mismatch_nm": 9.258544461184442,
+        "fixed_D": false,
+        "point_search_complete": false
+      },
+      {
+        "case": "ANON_03",
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v144/profiles/refine_v144/ANON_03/15.a1.json",
+        "target_D": 150.0,
+        "actual_fit_D": 143.2641501636441,
+        "abs_mismatch_nm": 6.7358498363558965,
+        "fixed_D": false,
+        "point_search_complete": false
+      }
+    ],
+    "errors": [],
+    "scientific_disposition": "ALL_V144_REFINEMENT_ROWS_MUST_BE_QUARANTINED_AS_FIXED_D_EVIDENCE__4D_OPTIMIZER_USED"
+  },
+  "v144_source_code_contains_4D_trf": true,
+  "truth_leak_to_candidate_proven": true,
+  "N_candidates_disagree_with_saved_anonymous_estimator": [
+    {
+      "case": "ANON_01",
+      "v144_candidate_D": 59.0,
+      "original_anonymous_estimate_D": 59.09926569428531
+    },
+    {
+      "case": "ANON_02",
+      "v144_candidate_D": 101.0,
+      "original_anonymous_estimate_D": 101.24109919653004
+    },
+    {
+      "case": "ANON_03",
+      "v144_candidate_D": 143.0,
+      "original_anonymous_estimate_D": 143.26416607970438
+    },
+    {
+      "case": "ANON_04",
+      "v144_candidate_D": 181.0,
+      "original_anonymous_estimate_D": 180.37085410460458
+    }
+  ],
+  "camera_replay_development_null_groups_read": 0,
+  "camera_source_reads_after_close": true,
+  "camera_v144_independent_threshold_replay_qualified": false,
+  "event_ledger": {
+    "status": "RECORDED_LEDGER_ONLY",
+    "metrics": {
+      "FORWARD": {
+        "events": 24,
+        "reserved": 24000,
+        "actual": 9289,
+        "states": {
+          "COMPLETED": 24
+        }
+      }
+    }
+  },
+  "v144_status_declared_actual": 9289,
+  "v144_executive_summary_refinement_calls": 8892,
+  "historical_errors_preserved": true,
+  "correct_decision": "RETAIN_N_ORACLE_S2_4_OF_4; REJECT_V144_FIXED_D_REFINEMENT_AND_TRUTH_TAINTED_CANDIDATE; CAMERA_REPLAY_NOT_PERFORMED",
+  "experimental_absolute_diameter_validated": false
+}

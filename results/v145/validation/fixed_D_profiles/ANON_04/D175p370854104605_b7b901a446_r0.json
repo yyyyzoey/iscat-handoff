@@ -1,0 +1,234 @@
+{
+  "schema": "iscat145.fixed_D.1",
+  "case": "ANON_04",
+  "target_D": 175.37085410460458,
+  "signature": "b7b901a44657676355c705308fd606990b70ec26e4ebc1d9756a54ebaca7917d",
+  "event_key": "V145_FIXED_D_ANON_04_b7b901a44657676355c7_r0",
+  "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "model_source_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749",
+  "observation_sha256": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+  "result": {
+    "fixed_D": 175.37085410460458,
+    "best": {
+      "theta": [
+        175.37085410460458,
+        528.2910075678072,
+        -119.00827678218471,
+        -76.97404692301976
+      ],
+      "loss_L2": 0.0007927330452514773,
+      "source": "PUBLIC_JOINT_NUISANCE",
+      "search_complete": true
+    },
+    "valid_witnesses": [
+      {
+        "theta": [
+          175.37085410460458,
+          528.2910075678072,
+          -119.00827678218471,
+          -76.97404692301976
+        ],
+        "loss_L2": 0.0007927330452514773,
+        "source": "PUBLIC_JOINT_NUISANCE",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          175.37085410460458,
+          350.00000000000006,
+          -119.00890712922502,
+          -77.00874657102663
+        ],
+        "loss_L2": 0.006886802801393637,
+        "source": "PUBLIC_H_350",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          175.37085410460458,
+          350.00000000000006,
+          -119.00890646200178,
+          -77.0087472089419
+        ],
+        "loss_L2": 0.006886802801393448,
+        "source": "PUBLIC_H_400",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          175.37085410460458,
+          528.2910076064818,
+          -119.0082763425478,
+          -76.9740466380802
+        ],
+        "loss_L2": 0.0007927330452515495,
+        "source": "PUBLIC_H_450",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          175.37085410460458,
+          528.291007674852,
+          -119.00827683540892,
+          -76.97404701629796
+        ],
+        "loss_L2": 0.0007927330452515651,
+        "source": "PUBLIC_H_500",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          175.37085410460458,
+          547.8089421246071,
+          -119.03659843694464,
+          -77.07024231684467
+        ],
+        "loss_L2": 0.016230743972737452,
+        "source": "PUBLIC_H_550",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          175.37085410460458,
+          350.00000000000006,
+          -119.00890733580007,
+          -77.00874420102643
+        ],
+        "loss_L2": 0.006886802801393523,
+        "source": "CENTER_XY_H_400",
+        "search_complete": true
+      },
+      {
+        "theta": [
+          175.37085410460458,
+          528.2910076843137,
+          -119.00827703245535,
+          -76.97404688756768
+        ],
+        "loss_L2": 0.0007927330452515172,
+        "source": "CENTER_XY_H_500",
+        "search_complete": true
+      }
+    ],
+    "attempts": [
+      {
+        "start": "PUBLIC_JOINT_NUISANCE",
+        "theta": [
+          175.37085410460458,
+          528.2910075678072,
+          -119.00827678218471,
+          -76.97404692301976
+        ],
+        "loss_L2": 0.0007927330452514773,
+        "success": true,
+        "status": 1,
+        "nfev": 5,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_350",
+        "theta": [
+          175.37085410460458,
+          350.00000000000006,
+          -119.00890712922502,
+          -77.00874657102663
+        ],
+        "loss_L2": 0.006886802801393637,
+        "success": true,
+        "status": 2,
+        "nfev": 4,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_400",
+        "theta": [
+          175.37085410460458,
+          350.00000000000006,
+          -119.00890646200178,
+          -77.0087472089419
+        ],
+        "loss_L2": 0.006886802801393448,
+        "success": true,
+        "status": 2,
+        "nfev": 14,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_450",
+        "theta": [
+          175.37085410460458,
+          528.2910076064818,
+          -119.0082763425478,
+          -76.9740466380802
+        ],
+        "loss_L2": 0.0007927330452515495,
+        "success": true,
+        "status": 1,
+        "nfev": 8,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_500",
+        "theta": [
+          175.37085410460458,
+          528.291007674852,
+          -119.00827683540892,
+          -76.97404701629796
+        ],
+        "loss_L2": 0.0007927330452515651,
+        "success": true,
+        "status": 1,
+        "nfev": 9,
+        "message": "`gtol` termination condition is satisfied."
+      },
+      {
+        "start": "PUBLIC_H_550",
+        "theta": [
+          175.37085410460458,
+          547.8089421246071,
+          -119.03659843694464,
+          -77.07024231684467
+        ],
+        "loss_L2": 0.016230743972737452,
+        "success": true,
+        "status": 2,
+        "nfev": 15,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": "CENTER_XY_H_400",
+        "theta": [
+          175.37085410460458,
+          350.00000000000006,
+          -119.00890733580007,
+          -77.00874420102643
+        ],
+        "loss_L2": 0.006886802801393523,
+        "success": true,
+        "status": 2,
+        "nfev": 17,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": "CENTER_XY_H_500",
+        "theta": [
+          175.37085410460458,
+          528.2910076843137,
+          -119.00827703245535,
+          -76.97404688756768
+        ],
+        "loss_L2": 0.0007927330452515172,
+        "success": true,
+        "status": 1,
+        "nfev": 9,
+        "message": "`gtol` termination condition is satisfied."
+      }
+    ],
+    "point_search_complete": true,
+    "actual_f2c_callbacks": 324,
+    "profile_is_upper_bound_not_global_proof": true,
+    "every_saved_witness_obeys_fixed_D": true
+  },
+  "source_scope": "ANON_OR_OPENED_DEV__TRUTH_NOT_LOADED",
+  "reportable_D": null
+}

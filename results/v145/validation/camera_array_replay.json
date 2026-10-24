@@ -1,0 +1,48 @@
+{
+  "schema": "iscat145.camera_replay.1",
+  "source_h5_sha256": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+  "rows": [
+    {
+      "B_electrons_per_pixel": 1000,
+      "threshold": 0.19298508667733985,
+      "dev_nulls": 80,
+      "independent_val_nulls": 60,
+      "false_positives": 0,
+      "one_sided95_cp_upper": 0.04870291331009749,
+      "target_n": 12,
+      "target_detected": 1,
+      "FPR_qualified": true,
+      "independent_detection_and_sizing_separate": true
+    },
+    {
+      "B_electrons_per_pixel": 10000,
+      "threshold": 0.060632856589714075,
+      "dev_nulls": 80,
+      "independent_val_nulls": 60,
+      "false_positives": 0,
+      "one_sided95_cp_upper": 0.04870291331009749,
+      "target_n": 12,
+      "target_detected": 3,
+      "FPR_qualified": true,
+      "independent_detection_and_sizing_separate": true
+    },
+    {
+      "B_electrons_per_pixel": 100000,
+      "threshold": 0.02077529446326721,
+      "dev_nulls": 80,
+      "independent_val_nulls": 60,
+      "false_positives": 0,
+      "one_sided95_cp_upper": 0.04870291331009749,
+      "target_n": 12,
+      "target_detected": 9,
+      "FPR_qualified": true,
+      "independent_detection_and_sizing_separate": true
+    }
+  ],
+  "source_pair_exposures": 912,
+  "historical_912_replayed": true,
+  "no_new_random_draws": true,
+  "no_new_camera_exposures": true,
+  "real_camera_fullwell_verified": false,
+  "real_absolute_diameter_validated": false
+}

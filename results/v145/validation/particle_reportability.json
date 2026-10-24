@@ -1,0 +1,3119 @@
+{
+  "schema": "iscat145.estimator_report.1",
+  "source_scope": "ONLY_ANONYMOUS_ESTIMATES_AND_OPENED_M_FITS__NO_VALIDATOR_TRUTH",
+  "cases": {
+    "ANON_01": {
+      "candidate_D": 59.09926569428531,
+      "candidate_h": 391.24453331179836,
+      "candidate_x": 77.0208034630734,
+      "candidate_y": -34.958595602955505,
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "observation_sha256": "33cf029a866d42de773c2664caf775e388ee1a065849ce55c51b9be7d49ebf4c",
+      "known_compatible_finite_witness_D": [
+        30.0,
+        40.0,
+        50.0,
+        59.09926569428531,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+        100.0,
+        110.0,
+        120.0,
+        130.0,
+        140.0,
+        150.0
+      ],
+      "observed_far_competing_pair_under_unqualified_dev_eps": {
+        "D1": 30.0,
+        "D2": 150.0,
+        "R1": 5.089789326209534e-05,
+        "R2": 0.0014654272451786775,
+        "separation_nm": 120.0
+      },
+      "all_fixed_D_witness_points": [
+        {
+          "D": 30.0,
+          "loss_L2": 5.089789326209534e-05,
+          "theta": [
+            30.0,
+            404.44232072393964,
+            77.30752184727824,
+            -35.240500109730334
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_01/D30p000000000000_fc07c3b539_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 40.0,
+          "loss_L2": 4.1642435804623995e-05,
+          "theta": [
+            40.0,
+            395.55965630807884,
+            77.2806031921809,
+            -35.2086400448748
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/40p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 50.0,
+          "loss_L2": 2.4493981866551488e-05,
+          "theta": [
+            50.0,
+            392.4931962106276,
+            77.19588155484392,
+            -35.124531732626906
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/50p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 59.09926569428531,
+          "loss_L2": 3.4743394343457686e-07,
+          "theta": [
+            59.09926569428531,
+            391.24456574651435,
+            77.02079114558917,
+            -34.958582384618644
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_01/D59p099265694285_63fa74d507_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 60.0,
+          "loss_L2": 3.0069675544601744e-06,
+          "theta": [
+            60.0,
+            391.15965584863295,
+            76.99667408718226,
+            -34.935931122814836
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/60p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 70.0,
+          "loss_L2": 4.49803594416173e-05,
+          "theta": [
+            70.0,
+            390.48141435938464,
+            76.63789059480952,
+            -34.59561054508684
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/70p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 80.0,
+          "loss_L2": 0.00010757988087506204,
+          "theta": [
+            80.0,
+            390.1004635155704,
+            76.19181854413574,
+            -34.12509029760081
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/80p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 90.0,
+          "loss_L2": 0.00019774282402792258,
+          "theta": [
+            90.0,
+            389.8687024377237,
+            76.0352180358762,
+            -33.72047437142234
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/90p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 100.0,
+          "loss_L2": 0.00032291484072655266,
+          "theta": [
+            100.0,
+            389.7160465719404,
+            77.0983131174659,
+            -33.825273400591584
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/100p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 110.0,
+          "loss_L2": 0.0004894979848273179,
+          "theta": [
+            110.0,
+            389.6056374165467,
+            81.34144624795285,
+            -35.34072788883743
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/110p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 120.0,
+          "loss_L2": 0.0006982191656661483,
+          "theta": [
+            120.0,
+            389.51133345140147,
+            90.58453631743788,
+            -39.9440112977902
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/120p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 130.0,
+          "loss_L2": 0.0009424193875854495,
+          "theta": [
+            130.0,
+            389.41343868117866,
+            103.97678446712868,
+            -52.097001867332665
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/130p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 140.0,
+          "loss_L2": 0.0012054306128039885,
+          "theta": [
+            140.0,
+            389.29427978555157,
+            117.12298125595223,
+            -81.1527737277543
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/140p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 150.0,
+          "loss_L2": 0.0014654272451786775,
+          "theta": [
+            150.0,
+            389.1616963878214,
+            126.20145684011383,
+            -107.05494143627205
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_01/D150p000000000000_2037d83549_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 160.0,
+          "loss_L2": 0.0017138053916930984,
+          "theta": [
+            160.0,
+            389.01966076631567,
+            131.15453689115918,
+            -119.69556323524992
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/160p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 170.0,
+          "loss_L2": 0.001936293144129565,
+          "theta": [
+            170.0,
+            388.8534410054931,
+            133.84629179355855,
+            -125.85858472768666
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/170p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 180.0,
+          "loss_L2": 0.0021096411688754924,
+          "theta": [
+            180.0,
+            388.64757168246297,
+            135.36216555320325,
+            -129.1273707971262
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/180p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 190.0,
+          "loss_L2": 0.002205588053509698,
+          "theta": [
+            190.0,
+            388.38395678085544,
+            136.222497525287,
+            -130.86737531567744
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/190p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 200.0,
+          "loss_L2": 0.0021927672370660356,
+          "theta": [
+            200.0,
+            388.03772554945675,
+            136.68832593333903,
+            -131.69246191929494
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_01/200p0000000000000.a0.json",
+          "point_search_complete": false
+        }
+      ],
+      "invalid_nonfixed_checkpoints": [],
+      "model_error_epsilon_unscaled_L2": 0.0015811481066672155,
+      "model_error_epsilon_status": "UNQUALIFIED_DEVELOPER_MAX__NOT_CI",
+      "conditional_identifiable": false,
+      "conditional_identifiable_scope": "NOT_UNIQUE_UNDER_UNQUALIFIED_DEV_EPS",
+      "unknown_D_regions_remain": true,
+      "adaptive_profile_complete": false,
+      "camera_diameter_qualified": false,
+      "reportable_D": null,
+      "all_required_science_gates_passed": false,
+      "reason_codes": [
+        "DISTANT_COMPETING_FINITE_WITNESSES_UNDER_UNQUALIFIED_DEV_EPS",
+        "GLOBAL_PROFILE_UNCERTIFIED",
+        "MODEL_ERROR_NOT_CALIBRATED",
+        "REAL_CAMERA_SIZING_NOT_QUALIFIED"
+      ],
+      "estimator_truth_file_used": false
+    },
+    "ANON_02": {
+      "candidate_D": 101.24109919653004,
+      "candidate_h": 432.42453125289455,
+      "candidate_x": -91.0035952043441,
+      "candidate_y": 105.00637585924397,
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "observation_sha256": "0ac6be36096f29aa77a399d0ca304f3a07f9503890461086116ece00064db9cd",
+      "known_compatible_finite_witness_D": [
+        100.0,
+        100.62054959826503,
+        101.24109919653004,
+        105.62054959826503,
+        110.0,
+        120.0,
+        130.0,
+        140.0,
+        150.0,
+        160.0
+      ],
+      "observed_far_competing_pair_under_unqualified_dev_eps": {
+        "D1": 100.0,
+        "D2": 160.0,
+        "R1": 0.0005153869580954214,
+        "R2": 0.001296772988816084,
+        "separation_nm": 60.0
+      },
+      "all_fixed_D_witness_points": [
+        {
+          "D": 30.0,
+          "loss_L2": 0.059746024775747746,
+          "theta": [
+            30.0,
+            439.99019415295845,
+            -91.06902690390173,
+            105.06027551673769
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/30p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 40.0,
+          "loss_L2": 0.05698180854123293,
+          "theta": [
+            40.0,
+            439.9736004772859,
+            -91.06953962941373,
+            105.06340064953751
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/40p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 50.0,
+          "loss_L2": 0.0524851936194851,
+          "theta": [
+            50.0,
+            439.97159452229926,
+            -91.07778301124331,
+            105.07154867170526
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/50p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 60.0,
+          "loss_L2": 0.046100093127046285,
+          "theta": [
+            60.0,
+            439.95200720432274,
+            -91.08771263737232,
+            105.07954065342818
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/60p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 70.0,
+          "loss_L2": 0.03767433027045537,
+          "theta": [
+            70.0,
+            439.9175522193191,
+            -91.08734824503065,
+            105.08210505708828
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/70p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 80.0,
+          "loss_L2": 0.027119767310544267,
+          "theta": [
+            80.0,
+            439.87305461000864,
+            -91.07895143190476,
+            105.07568341562258
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/80p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 90.0,
+          "loss_L2": 0.014590130839130912,
+          "theta": [
+            90.0,
+            439.80062568304214,
+            -91.05464674746449,
+            105.05390295252234
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/90p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 95.0,
+          "loss_L2": 0.007655479668416115,
+          "theta": [
+            95.0,
+            439.72882075380977,
+            -91.03423750548922,
+            105.03506723004391
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/refine/ANON_02/95p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 100.0,
+          "loss_L2": 0.0005153869580954214,
+          "theta": [
+            100.0,
+            438.33809246541097,
+            -91.00751129032945,
+            105.01006730817404
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_02/D100p000000000000_287d0b4943_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 100.62054959826503,
+          "loss_L2": 0.00015204982632063336,
+          "theta": [
+            100.62054959826503,
+            434.9254305545544,
+            -91.00537718830377,
+            105.00806392808849
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/refine/ANON_02/100p6205495982650.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 101.24109919653004,
+          "loss_L2": 2.2988544339449825e-06,
+          "theta": [
+            101.24109919653004,
+            432.42456664690394,
+            -91.00359520963173,
+            105.00637586417008
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_02/D101p241099196530_b5c1bbccc7_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 105.62054959826503,
+          "loss_L2": 0.00036277962300583955,
+          "theta": [
+            105.62054959826503,
+            423.68704551654116,
+            -90.98934440111553,
+            104.99272191864355
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/refine/ANON_02/105p6205495982650.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 110.0,
+          "loss_L2": 0.00045344961791847764,
+          "theta": [
+            110.0,
+            418.8859828431903,
+            -90.97287447529781,
+            104.97676476476197
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/110p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 120.0,
+          "loss_L2": 0.00044982593114581236,
+          "theta": [
+            120.0,
+            412.1129466993616,
+            -90.92727319864372,
+            104.93193865412388
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/120p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 130.0,
+          "loss_L2": 0.0004384716063287157,
+          "theta": [
+            130.0,
+            407.9370792298988,
+            -90.87157562842191,
+            104.87614349292612
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/130p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 140.0,
+          "loss_L2": 0.0006010417722206762,
+          "theta": [
+            140.0,
+            405.0782483036435,
+            -90.80820483731448,
+            104.81135065144538
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/140p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 150.0,
+          "loss_L2": 0.000913837185797743,
+          "theta": [
+            150.0,
+            403.0311641397667,
+            -90.7412128620226,
+            104.74123188752284
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/150p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 160.0,
+          "loss_L2": 0.001296772988816084,
+          "theta": [
+            160.0,
+            401.5296580912126,
+            -90.67550672078328,
+            104.67057705304494
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_02/D160p000000000000_c88e64a505_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 170.0,
+          "loss_L2": 0.0017045300095554715,
+          "theta": [
+            170.0,
+            400.4154934158376,
+            -90.61603781027422,
+            104.60462600482845
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/170p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 180.0,
+          "loss_L2": 0.0021094049283781014,
+          "theta": [
+            180.0,
+            399.5910357465836,
+            -90.56760235815264,
+            104.54898601495051
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/180p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 190.0,
+          "loss_L2": 0.002493309466213397,
+          "theta": [
+            190.0,
+            398.99743236416305,
+            -90.53425594755221,
+            104.50876934129774
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/190p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 200.0,
+          "loss_L2": 0.0028493681842759744,
+          "theta": [
+            200.0,
+            398.6053403213383,
+            -90.52036958708601,
+            104.48955323749303
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_02/200p0000000000000.a0.json",
+          "point_search_complete": false
+        }
+      ],
+      "invalid_nonfixed_checkpoints": [],
+      "model_error_epsilon_unscaled_L2": 0.0015811481066672155,
+      "model_error_epsilon_status": "UNQUALIFIED_DEVELOPER_MAX__NOT_CI",
+      "conditional_identifiable": false,
+      "conditional_identifiable_scope": "NOT_UNIQUE_UNDER_UNQUALIFIED_DEV_EPS",
+      "unknown_D_regions_remain": true,
+      "adaptive_profile_complete": false,
+      "camera_diameter_qualified": false,
+      "reportable_D": null,
+      "all_required_science_gates_passed": false,
+      "reason_codes": [
+        "DISTANT_COMPETING_FINITE_WITNESSES_UNDER_UNQUALIFIED_DEV_EPS",
+        "GLOBAL_PROFILE_UNCERTIFIED",
+        "MODEL_ERROR_NOT_CALIBRATED",
+        "REAL_CAMERA_SIZING_NOT_QUALIFIED"
+      ],
+      "estimator_truth_file_used": false
+    },
+    "ANON_03": {
+      "candidate_D": 143.26416607970438,
+      "candidate_h": 478.7407140713144,
+      "candidate_x": 34.99468762353582,
+      "candidate_y": 119.00376906880238,
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "observation_sha256": "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba",
+      "known_compatible_finite_witness_D": [
+        140.0,
+        143.26416607970438,
+        150.0
+      ],
+      "observed_far_competing_pair_under_unqualified_dev_eps": null,
+      "all_fixed_D_witness_points": [
+        {
+          "D": 30.0,
+          "loss_L2": 0.043525207866997685,
+          "theta": [
+            30.0,
+            440.35980050596334,
+            35.28417590131387,
+            119.14016006436863
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/30p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 40.0,
+          "loss_L2": 0.04085811790763303,
+          "theta": [
+            40.0,
+            440.367639185617,
+            35.28603403311931,
+            119.14819447923277
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/40p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 50.0,
+          "loss_L2": 0.0365495284087983,
+          "theta": [
+            50.0,
+            440.41991565936075,
+            35.30117469943834,
+            119.16601756187727
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/50p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 60.0,
+          "loss_L2": 0.03052047189022991,
+          "theta": [
+            60.0,
+            440.49962745669853,
+            35.30481518949794,
+            119.18143857834578
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/60p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 70.0,
+          "loss_L2": 0.022852204164128642,
+          "theta": [
+            70.0,
+            440.70098243039143,
+            35.30023951104984,
+            119.19644589017403
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/70p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 80.0,
+          "loss_L2": 0.014453356215811853,
+          "theta": [
+            80.0,
+            441.553385060252,
+            35.28670250842471,
+            119.20903766211066
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/80p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 90.0,
+          "loss_L2": 0.00986663797098962,
+          "theta": [
+            90.0,
+            453.89930056833737,
+            35.266198884870384,
+            119.20767127965087
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/90p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 100.0,
+          "loss_L2": 0.007969902677625838,
+          "theta": [
+            100.0,
+            465.0174439764496,
+            35.247441317418236,
+            119.1924014048035
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/100p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 110.0,
+          "loss_L2": 0.006162541120546253,
+          "theta": [
+            110.0,
+            470.8113323353108,
+            35.215668501591594,
+            119.16822640446026
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/110p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 120.0,
+          "loss_L2": 0.004326065344435832,
+          "theta": [
+            120.0,
+            474.39412694111905,
+            35.16831874801053,
+            119.13309246175139
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_03/D120p000000000000_204139f4e0_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 130.0,
+          "loss_L2": 0.002461596296032033,
+          "theta": [
+            130.0,
+            476.7506118265746,
+            35.10401260194719,
+            119.08551867604854
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_03/D130p000000000000_4765195dc1_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 140.0,
+          "loss_L2": 0.0005985615623534698,
+          "theta": [
+            140.0,
+            478.3421150546866,
+            35.023741443227145,
+            119.02564326077551
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_03/D140p000000000000_ca205c2aa3_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 143.26416607970438,
+          "loss_L2": 2.8438608264553357e-06,
+          "theta": [
+            143.26416607970438,
+            478.74071371592936,
+            34.99468760926156,
+            119.00376913503044
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_03/D143p264166079704_d43fb2959c_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 150.0,
+          "loss_L2": 0.0012056826910565753,
+          "theta": [
+            150.0,
+            479.4146462272442,
+            34.93163944430921,
+            118.95586308586564
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_03/D150p000000000000_7c0adc81ca_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 160.0,
+          "loss_L2": 0.0028849663246500405,
+          "theta": [
+            160.0,
+            480.1132685432243,
+            34.83471929873305,
+            118.88096194860017
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_03/D160p000000000000_e3e31242a9_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 170.0,
+          "loss_L2": 0.004371295641065911,
+          "theta": [
+            170.0,
+            480.5246701591849,
+            34.742074927732276,
+            118.80775883739527
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/170p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 180.0,
+          "loss_L2": 0.00559749795953786,
+          "theta": [
+            180.0,
+            480.69634070327345,
+            34.664073032216805,
+            118.74475238438983
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/180p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 190.0,
+          "loss_L2": 0.006501372293218692,
+          "theta": [
+            190.0,
+            480.6447274711284,
+            34.61075815813629,
+            118.70058016385325
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/190p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 200.0,
+          "loss_L2": 0.007032382370039433,
+          "theta": [
+            200.0,
+            480.3548830949317,
+            34.59204435484557,
+            118.68397967659382
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_03/200p0000000000000.a0.json",
+          "point_search_complete": false
+        }
+      ],
+      "invalid_nonfixed_checkpoints": [],
+      "model_error_epsilon_unscaled_L2": 0.0015811481066672155,
+      "model_error_epsilon_status": "UNQUALIFIED_DEVELOPER_MAX__NOT_CI",
+      "conditional_identifiable": null,
+      "conditional_identifiable_scope": "UNKNOWN_GLOBAL_SEARCH",
+      "unknown_D_regions_remain": true,
+      "adaptive_profile_complete": false,
+      "camera_diameter_qualified": false,
+      "reportable_D": null,
+      "all_required_science_gates_passed": false,
+      "reason_codes": [
+        "GLOBAL_PROFILE_UNCERTIFIED",
+        "MODEL_ERROR_NOT_CALIBRATED",
+        "REAL_CAMERA_SIZING_NOT_QUALIFIED"
+      ],
+      "estimator_truth_file_used": false
+    },
+    "ANON_04": {
+      "candidate_D": 180.37085410460458,
+      "candidate_h": 526.4818227695525,
+      "candidate_x": -119.01437203438888,
+      "candidate_y": -76.98541924943484,
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "observation_sha256": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+      "known_compatible_finite_witness_D": [
+        175.0,
+        175.37085410460458,
+        177.87085410460458,
+        180.0,
+        180.1854270523023,
+        180.37085410460458,
+        182.87085410460458,
+        185.1854270523023,
+        185.37085410460458,
+        190.0,
+        190.37085410460458,
+        195.0,
+        200.0
+      ],
+      "observed_far_competing_pair_under_unqualified_dev_eps": null,
+      "all_fixed_D_witness_points": [
+        {
+          "D": 30.0,
+          "loss_L2": 0.17061651912272344,
+          "theta": [
+            30.0,
+            541.2544850040482,
+            -118.82414051211968,
+            -76.56139989033832
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/30p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 40.0,
+          "loss_L2": 0.16784269412943456,
+          "theta": [
+            40.0,
+            541.2408732115111,
+            -118.82143959555556,
+            -76.5764228620984
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/40p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 50.0,
+          "loss_L2": 0.1633216515261861,
+          "theta": [
+            50.0,
+            541.2357818427837,
+            -118.81519557095753,
+            -76.55432960027136
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/50p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 60.0,
+          "loss_L2": 0.15688320349029114,
+          "theta": [
+            60.0,
+            541.2171161527774,
+            -118.81458175850416,
+            -76.55387810713448
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/60p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 70.0,
+          "loss_L2": 0.14835333757509017,
+          "theta": [
+            70.0,
+            541.1852454705187,
+            -118.809284525587,
+            -76.53540754247216
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/70p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 80.0,
+          "loss_L2": 0.13761380528227854,
+          "theta": [
+            80.0,
+            541.1441393368399,
+            -118.80991697345472,
+            -76.53504372770702
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/80p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 90.0,
+          "loss_L2": 0.12478412882858872,
+          "theta": [
+            90.0,
+            541.0855926536408,
+            -118.81116355142382,
+            -76.52776555854471
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/90p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 100.0,
+          "loss_L2": 0.11004385792908063,
+          "theta": [
+            100.0,
+            541.0085740474885,
+            -118.81831683317154,
+            -76.54146886003214
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/100p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 110.0,
+          "loss_L2": 0.09363757606579254,
+          "theta": [
+            110.0,
+            540.9094986716984,
+            -118.82895644349618,
+            -76.56248054535406
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/110p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 120.0,
+          "loss_L2": 0.0760694744148733,
+          "theta": [
+            120.0,
+            540.774719604888,
+            -118.8472312601687,
+            -76.60419802396378
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/120p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 130.0,
+          "loss_L2": 0.05792647171107329,
+          "theta": [
+            130.0,
+            540.5812792313232,
+            -118.87269122968345,
+            -76.66275272687119
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/130p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 140.0,
+          "loss_L2": 0.03987878399745274,
+          "theta": [
+            140.0,
+            540.2756494000159,
+            -118.90483029845916,
+            -76.73867065961394
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/140p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 150.0,
+          "loss_L2": 0.022898720765791785,
+          "theta": [
+            150.0,
+            539.6777685198837,
+            -118.94170560510798,
+            -76.82693005249176
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/150p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 160.0,
+          "loss_L2": 0.008874130016933605,
+          "theta": [
+            160.0,
+            537.6309001995129,
+            -118.97901233319224,
+            -76.91541752476972
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/160p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 170.0,
+          "loss_L2": 0.0022430467980684176,
+          "theta": [
+            170.0,
+            531.0166808203862,
+            -119.00090796338887,
+            -76.9603718191489
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/170p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 170.37085410460458,
+          "loss_L2": 0.0021161119115701427,
+          "theta": [
+            170.37085410460458,
+            530.7961982733228,
+            -119.00145048800331,
+            -76.96137584970784
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_04/D170p370854104605_2b0e7f7b37_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 175.0,
+          "loss_L2": 0.0008700723470463868,
+          "theta": [
+            175.0,
+            528.4500889143986,
+            -119.00779688003597,
+            -76.97315242397507
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/refine/ANON_04/175p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 175.37085410460458,
+          "loss_L2": 0.0007927330452514773,
+          "theta": [
+            175.37085410460458,
+            528.2910075678072,
+            -119.00827678218471,
+            -76.97404692301976
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_04/D175p370854104605_b7b901a446_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 177.87085410460458,
+          "loss_L2": 0.0003421627885358544,
+          "theta": [
+            177.87085410460458,
+            527.3127925015677,
+            -119.01141268684346,
+            -76.97989957973996
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_04/D177p870854104605_dbeda0e916_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 180.0,
+          "loss_L2": 5.286329858592795e-05,
+          "theta": [
+            180.0,
+            526.5965744302032,
+            -119.01394460154046,
+            -76.98462313850109
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/180p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 180.1854270523023,
+          "loss_L2": 3.636067410913253e-05,
+          "theta": [
+            180.1854270523023,
+            526.5388432934265,
+            -119.01415882831967,
+            -76.98502220533993
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/refine/ANON_04/180p1854270523023.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 180.37085410460458,
+          "loss_L2": 2.910145740176316e-05,
+          "theta": [
+            180.37085410460458,
+            526.4818247313361,
+            -119.01437203022122,
+            -76.98541922263884
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/180p3708541046046.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 182.87085410460458,
+          "loss_L2": 0.00024407282289818402,
+          "theta": [
+            182.87085410460458,
+            525.7796324358906,
+            -119.01714262672758,
+            -76.99056054581851
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_04/D182p870854104605_39fb23e8fd_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 185.1854270523023,
+          "loss_L2": 0.00038619840877027965,
+          "theta": [
+            185.1854270523023,
+            525.2326168011643,
+            -119.01952449591978,
+            -76.99493788230195
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/refine/ANON_04/185p1854270523023.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 185.37085410460458,
+          "loss_L2": 0.0003943367278805938,
+          "theta": [
+            185.37085410460458,
+            525.1928254563207,
+            -119.01970718832132,
+            -76.995271303087
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_04/D185p370854104605_89bf879eb8_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 190.0,
+          "loss_L2": 0.00044499139823308203,
+          "theta": [
+            190.0,
+            524.380824461215,
+            -119.02384673246674,
+            -77.00267504118366
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/190p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 190.37085410460458,
+          "loss_L2": 0.0004365345484362719,
+          "theta": [
+            190.37085410460458,
+            524.330317886839,
+            -119.02414102266526,
+            -77.00318569801746
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/ANON_04/D190p370854104605_ad06b93be5_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 195.0,
+          "loss_L2": 0.00018937377528858206,
+          "theta": [
+            195.0,
+            523.8741023222711,
+            -119.02730120822882,
+            -77.00842152667838
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/refine/ANON_04/195p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 200.0,
+          "loss_L2": 0.000511597631342199,
+          "theta": [
+            200.0,
+            523.7433573816281,
+            -119.02953995784068,
+            -77.0114513667639
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/ANON_04/200p0000000000000.a0.json",
+          "point_search_complete": true
+        }
+      ],
+      "invalid_nonfixed_checkpoints": [],
+      "model_error_epsilon_unscaled_L2": 0.0015811481066672155,
+      "model_error_epsilon_status": "UNQUALIFIED_DEVELOPER_MAX__NOT_CI",
+      "conditional_identifiable": null,
+      "conditional_identifiable_scope": "UNKNOWN_GLOBAL_SEARCH",
+      "unknown_D_regions_remain": true,
+      "adaptive_profile_complete": false,
+      "camera_diameter_qualified": false,
+      "reportable_D": null,
+      "all_required_science_gates_passed": false,
+      "reason_codes": [
+        "GLOBAL_PROFILE_UNCERTIFIED",
+        "MODEL_ERROR_NOT_CALIBRATED",
+        "REAL_CAMERA_SIZING_NOT_QUALIFIED"
+      ],
+      "estimator_truth_file_used": false
+    },
+    "M01": {
+      "candidate_D": 52.743060819785946,
+      "candidate_h": 365.1381317132276,
+      "candidate_x": 41.996517344568154,
+      "candidate_y": -69.99739666061181,
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "observation_sha256": "ff2e3aeb62de7ff46242846e95e34e357e2a5813d781d8cbe6b63b789c95fded",
+      "known_compatible_finite_witness_D": [
+        50.0,
+        52.743060819785946,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+        100.0,
+        110.0,
+        120.0,
+        130.0,
+        140.0,
+        150.0
+      ],
+      "observed_far_competing_pair_under_unqualified_dev_eps": {
+        "D1": 50.0,
+        "D2": 150.0,
+        "R1": 2.6108436326494688e-05,
+        "R2": 0.0014997192161468008,
+        "separation_nm": 100.0
+      },
+      "all_fixed_D_witness_points": [
+        {
+          "D": 30.0,
+          "loss_L2": 0.005332138232624133,
+          "theta": [
+            30.0,
+            541.2530322364304,
+            41.98263948402133,
+            -69.85404225297222
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/30p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 40.0,
+          "loss_L2": 0.002559790752585175,
+          "theta": [
+            40.0,
+            541.1275362517773,
+            41.995039206459175,
+            -69.92465764460188
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/40p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 50.0,
+          "loss_L2": 2.6108436326494688e-05,
+          "theta": [
+            50.0,
+            359.7754009011921,
+            41.99195777589344,
+            -69.99100064650843
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M01/D50p000000000000_902fba2cbf_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 52.743060819785946,
+          "loss_L2": 6.271343792718976e-07,
+          "theta": [
+            52.743060819785946,
+            365.1381299291432,
+            41.996517104925935,
+            -69.99739634098131
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M01/D52p743060819786_ecd4119cd6_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 60.0,
+          "loss_L2": 3.8434195149618224e-05,
+          "theta": [
+            60.0,
+            373.37307106301887,
+            42.014771504446124,
+            -70.02427341321932
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/60p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 70.0,
+          "loss_L2": 8.236183948899913e-05,
+          "theta": [
+            70.0,
+            379.14358009137203,
+            42.06264750202408,
+            -70.09513377001512
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/70p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 80.0,
+          "loss_L2": 0.00014045927975789781,
+          "theta": [
+            80.0,
+            382.27726271789925,
+            42.154352113312484,
+            -70.22914388193858
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/80p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 90.0,
+          "loss_L2": 0.00022351088796703007,
+          "theta": [
+            90.0,
+            384.1471325818746,
+            42.31808787526951,
+            -70.46360886349436
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/90p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 100.0,
+          "loss_L2": 0.00033996764115947745,
+          "theta": [
+            100.0,
+            385.33775142704394,
+            42.59605394686658,
+            -70.85094693918721
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/100p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 110.0,
+          "loss_L2": 0.0004969243131390857,
+          "theta": [
+            110.0,
+            386.13131806949883,
+            43.05364327092406,
+            -71.46462757218444
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/110p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 120.0,
+          "loss_L2": 0.0006968497641609461,
+          "theta": [
+            120.0,
+            386.66633565381494,
+            43.782437442019294,
+            -72.39774794943256
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/120p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 130.0,
+          "loss_L2": 0.0009373400819216621,
+          "theta": [
+            130.0,
+            387.0222593487124,
+            44.89977428318155,
+            -73.74977005763591
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/130p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 140.0,
+          "loss_L2": 0.0012103165835068354,
+          "theta": [
+            140.0,
+            387.2469001363326,
+            46.540270051601155,
+            -75.5963535051592
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/140p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 150.0,
+          "loss_L2": 0.0014997192161468008,
+          "theta": [
+            150.0,
+            387.3707960861661,
+            48.79729373985992,
+            -77.9253371556708
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M01/D150p000000000000_bdf597808c_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 160.0,
+          "loss_L2": 0.0017829107937793968,
+          "theta": [
+            160.0,
+            387.41011111971204,
+            51.643635010017285,
+            -80.57692744316998
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/160p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 170.0,
+          "loss_L2": 0.0020329204589804016,
+          "theta": [
+            170.0,
+            387.3700054037753,
+            54.81987162291138,
+            -83.24426781414292
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/170p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 180.0,
+          "loss_L2": 0.002220642790538282,
+          "theta": [
+            180.0,
+            387.2468240536698,
+            57.81121561088765,
+            -85.53868239584051
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/180p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 190.0,
+          "loss_L2": 0.002316578703120436,
+          "theta": [
+            190.0,
+            387.02796739753927,
+            59.959461363135055,
+            -87.08506952539284
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/190p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 200.0,
+          "loss_L2": 0.0022920425421215493,
+          "theta": [
+            200.0,
+            386.6892338090796,
+            60.68771129647497,
+            -87.59766073587147
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M01/200p0000000000000.a0.json",
+          "point_search_complete": false
+        }
+      ],
+      "invalid_nonfixed_checkpoints": [],
+      "model_error_epsilon_unscaled_L2": 0.0015811481066672155,
+      "model_error_epsilon_status": "UNQUALIFIED_DEVELOPER_MAX__NOT_CI",
+      "conditional_identifiable": false,
+      "conditional_identifiable_scope": "NOT_UNIQUE_UNDER_UNQUALIFIED_DEV_EPS",
+      "unknown_D_regions_remain": true,
+      "adaptive_profile_complete": false,
+      "camera_diameter_qualified": false,
+      "reportable_D": null,
+      "all_required_science_gates_passed": false,
+      "reason_codes": [
+        "DISTANT_COMPETING_FINITE_WITNESSES_UNDER_UNQUALIFIED_DEV_EPS",
+        "GLOBAL_PROFILE_UNCERTIFIED",
+        "MODEL_ERROR_NOT_CALIBRATED",
+        "REAL_CAMERA_SIZING_NOT_QUALIFIED"
+      ],
+      "estimator_truth_file_used": false
+    },
+    "M02": {
+      "candidate_D": 81.28076269425519,
+      "candidate_h": 415.4695016313691,
+      "candidate_x": -112.00170187341698,
+      "candidate_y": 56.00766140076317,
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "observation_sha256": "8be84898ed8d6b1033a6d4b8e8bb178aee499aa504d3b6b354ff8f2017fdef98",
+      "known_compatible_finite_witness_D": [
+        80.0,
+        81.28076269425519,
+        90.0,
+        100.0,
+        110.0,
+        120.0,
+        130.0,
+        140.0,
+        150.0
+      ],
+      "observed_far_competing_pair_under_unqualified_dev_eps": {
+        "D1": 80.0,
+        "D2": 150.0,
+        "R1": 1.1571857008187218e-05,
+        "R2": 0.0015083845848315226,
+        "separation_nm": 70.0
+      },
+      "all_fixed_D_witness_points": [
+        {
+          "D": 30.0,
+          "loss_L2": 0.024290710083619296,
+          "theta": [
+            30.0,
+            439.96909558258034,
+            -112.00963078891631,
+            56.00536748468355
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/30p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 40.0,
+          "loss_L2": 0.021526711223051317,
+          "theta": [
+            40.0,
+            439.9495275877111,
+            -112.0138743054575,
+            56.016580856055505
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/40p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 50.0,
+          "loss_L2": 0.017030911675973027,
+          "theta": [
+            50.0,
+            439.9403519456125,
+            -112.02211095050474,
+            56.03424476365587
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/50p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 60.0,
+          "loss_L2": 0.010649144882702593,
+          "theta": [
+            60.0,
+            439.8990888352574,
+            -112.02484110097326,
+            56.04608578137469
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/60p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 70.0,
+          "loss_L2": 0.0022614722079818085,
+          "theta": [
+            70.0,
+            439.64526526208914,
+            -112.0194030905796,
+            56.044447685557564
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/70p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 80.0,
+          "loss_L2": 1.1571857008187218e-05,
+          "theta": [
+            80.0,
+            416.98303208081956,
+            -112.00427230595427,
+            56.012996665180374
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M02/D80p000000000000_79fa217f15_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 81.28076269425519,
+          "loss_L2": 1.8197843073618564e-06,
+          "theta": [
+            81.28076269425519,
+            415.4695019963753,
+            -112.00170182909781,
+            56.00766134332343
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/81p2807626942552.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 90.0,
+          "loss_L2": 6.0767958502435194e-05,
+          "theta": [
+            90.0,
+            408.25673833818166,
+            -111.97924659023532,
+            55.961420726705306
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/90p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 100.0,
+          "loss_L2": 0.00017692986105318132,
+          "theta": [
+            100.0,
+            403.41933021603586,
+            -111.94143313351103,
+            55.88341850774648
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/100p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 110.0,
+          "loss_L2": 0.0003511568742525498,
+          "theta": [
+            110.0,
+            400.3400757536155,
+            -111.88945942825077,
+            55.77507974596794
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/110p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 120.0,
+          "loss_L2": 0.0005778543251796006,
+          "theta": [
+            120.0,
+            398.2500954309069,
+            -111.8244824389182,
+            55.63707125071639
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/120p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 130.0,
+          "loss_L2": 0.0008523272573351545,
+          "theta": [
+            130.0,
+            396.76120814442805,
+            -111.7506184394109,
+            55.475426224865906
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/130p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 140.0,
+          "loss_L2": 0.0011672073061123839,
+          "theta": [
+            140.0,
+            395.65649242145565,
+            -111.67378552615016,
+            55.29924325477062
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/140p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 150.0,
+          "loss_L2": 0.0015083845848315226,
+          "theta": [
+            150.0,
+            394.8143487088225,
+            -111.60193969242138,
+            55.12205136446506
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M02/D150p000000000000_0f3b97d297_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 160.0,
+          "loss_L2": 0.0018568092948547856,
+          "theta": [
+            160.0,
+            394.154947818136,
+            -111.54190817442579,
+            54.95709788965968
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/160p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 170.0,
+          "loss_L2": 0.002189517997511903,
+          "theta": [
+            170.0,
+            393.6220859783773,
+            -111.49753792907843,
+            54.81401717333895
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/170p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 180.0,
+          "loss_L2": 0.002480806799572088,
+          "theta": [
+            180.0,
+            393.17489302829114,
+            -111.46834636178623,
+            54.69862175351973
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/180p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 190.0,
+          "loss_L2": 0.0027042355965507837,
+          "theta": [
+            190.0,
+            392.78226563823324,
+            -111.4511899863651,
+            54.61393050265993
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/190p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 200.0,
+          "loss_L2": 0.0028352965321291478,
+          "theta": [
+            200.0,
+            392.4189124682236,
+            -111.44369353827959,
+            54.564489631831435
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M02/200p0000000000000.a0.json",
+          "point_search_complete": false
+        }
+      ],
+      "invalid_nonfixed_checkpoints": [],
+      "model_error_epsilon_unscaled_L2": 0.0015811481066672155,
+      "model_error_epsilon_status": "UNQUALIFIED_DEVELOPER_MAX__NOT_CI",
+      "conditional_identifiable": false,
+      "conditional_identifiable_scope": "NOT_UNIQUE_UNDER_UNQUALIFIED_DEV_EPS",
+      "unknown_D_regions_remain": true,
+      "adaptive_profile_complete": false,
+      "camera_diameter_qualified": false,
+      "reportable_D": null,
+      "all_required_science_gates_passed": false,
+      "reason_codes": [
+        "DISTANT_COMPETING_FINITE_WITNESSES_UNDER_UNQUALIFIED_DEV_EPS",
+        "GLOBAL_PROFILE_UNCERTIFIED",
+        "MODEL_ERROR_NOT_CALIBRATED",
+        "REAL_CAMERA_SIZING_NOT_QUALIFIED"
+      ],
+      "estimator_truth_file_used": false
+    },
+    "M03": {
+      "candidate_D": 119.22526143674465,
+      "candidate_h": 446.88667767430513,
+      "candidate_x": 83.99430461971872,
+      "candidate_y": 98.00586080431648,
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "observation_sha256": "8f76cd7134062ae5b5e0f646a058bd7f29b2f9d71fa55e732839af4b8dc33772",
+      "known_compatible_finite_witness_D": [
+        119.22526143674465,
+        120.0,
+        170.0,
+        180.0,
+        190.0,
+        200.0
+      ],
+      "observed_far_competing_pair_under_unqualified_dev_eps": {
+        "D1": 119.22526143674465,
+        "D2": 200.0,
+        "R1": 4.940025881393707e-06,
+        "R2": 0.00157100685404726,
+        "separation_nm": 80.77473856325535
+      },
+      "all_fixed_D_witness_points": [
+        {
+          "D": 30.0,
+          "loss_L2": 0.08836871125681978,
+          "theta": [
+            30.0,
+            440.0242915981003,
+            84.06259382122731,
+            98.10993962802391
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/30p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 40.0,
+          "loss_L2": 0.08560531703390577,
+          "theta": [
+            40.0,
+            440.00754751342106,
+            84.06491622186404,
+            98.11128480553916
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/40p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 50.0,
+          "loss_L2": 0.08111011304909232,
+          "theta": [
+            50.0,
+            440.0081564635119,
+            84.07151949389649,
+            98.1173988028133
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/50p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 60.0,
+          "loss_L2": 0.07472702880317056,
+          "theta": [
+            60.0,
+            439.9899119382764,
+            84.08730443494223,
+            98.1297566025893
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/60p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 70.0,
+          "loss_L2": 0.06630397800294685,
+          "theta": [
+            70.0,
+            439.96354961223085,
+            84.09838233712861,
+            98.1360209084165
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/70p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 80.0,
+          "loss_L2": 0.05575287303410367,
+          "theta": [
+            80.0,
+            439.930420434091,
+            84.10654750216995,
+            98.1418499251843
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/80p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 90.0,
+          "loss_L2": 0.04322621637251755,
+          "theta": [
+            90.0,
+            439.88691020041875,
+            84.10130465722082,
+            98.13354183283441
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/90p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 100.0,
+          "loss_L2": 0.028938030123443946,
+          "theta": [
+            100.0,
+            439.8400677065897,
+            84.08331993900788,
+            98.10968060411896
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/100p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 110.0,
+          "loss_L2": 0.01317278774416556,
+          "theta": [
+            110.0,
+            439.8234373871424,
+            84.04602269815976,
+            98.06554926941298
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/110p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 119.22526143674465,
+          "loss_L2": 4.940025881393707e-06,
+          "theta": [
+            119.22526143674465,
+            446.8866775839069,
+            83.99430462082984,
+            98.00586079900215
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M03/D119p225261436745_3523b22a11_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 120.0,
+          "loss_L2": 0.0003128093706895479,
+          "theta": [
+            120.0,
+            448.5622311388724,
+            83.99082309171042,
+            98.001860793668
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/120p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 130.0,
+          "loss_L2": 0.0022689840665665517,
+          "theta": [
+            130.0,
+            419.4401554653648,
+            83.94807260366386,
+            97.96614230746177
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/130p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 140.0,
+          "loss_L2": 0.0021300665612059883,
+          "theta": [
+            140.0,
+            414.01193379497306,
+            83.89822858067195,
+            97.91760173897313
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/140p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 150.0,
+          "loss_L2": 0.0018692474395654419,
+          "theta": [
+            150.0,
+            410.5130388976129,
+            83.8442128927405,
+            97.86415415946804
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/150p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 160.0,
+          "loss_L2": 0.0015878804064869449,
+          "theta": [
+            160.0,
+            408.0926583218749,
+            83.78951596649124,
+            97.80952491237409
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/160p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 170.0,
+          "loss_L2": 0.0013600146955651633,
+          "theta": [
+            170.0,
+            406.3794488266238,
+            83.73801043409728,
+            97.75798593980926
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/170p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 180.0,
+          "loss_L2": 0.0012581268872475875,
+          "theta": [
+            180.0,
+            405.17953244238817,
+            83.6936658160699,
+            97.71411296533029
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/180p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 190.0,
+          "loss_L2": 0.0013288352618576649,
+          "theta": [
+            190.0,
+            404.39052077830524,
+            83.66029821130944,
+            97.68253912658957
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M03/190p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 200.0,
+          "loss_L2": 0.00157100685404726,
+          "theta": [
+            200.0,
+            403.9726554626486,
+            83.64172709199482,
+            97.667958821648
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M03/D200p000000000000_45e4ccd4d6_r0.json",
+          "point_search_complete": false
+        }
+      ],
+      "invalid_nonfixed_checkpoints": [],
+      "model_error_epsilon_unscaled_L2": 0.0015811481066672155,
+      "model_error_epsilon_status": "UNQUALIFIED_DEVELOPER_MAX__NOT_CI",
+      "conditional_identifiable": false,
+      "conditional_identifiable_scope": "NOT_UNIQUE_UNDER_UNQUALIFIED_DEV_EPS",
+      "unknown_D_regions_remain": true,
+      "adaptive_profile_complete": false,
+      "camera_diameter_qualified": false,
+      "reportable_D": null,
+      "all_required_science_gates_passed": false,
+      "reason_codes": [
+        "DISTANT_COMPETING_FINITE_WITNESSES_UNDER_UNQUALIFIED_DEV_EPS",
+        "GLOBAL_PROFILE_UNCERTIFIED",
+        "MODEL_ERROR_NOT_CALIBRATED",
+        "REAL_CAMERA_SIZING_NOT_QUALIFIED"
+      ],
+      "estimator_truth_file_used": false
+    },
+    "M04": {
+      "candidate_D": 149.2585476311477,
+      "candidate_h": 471.8610360486137,
+      "candidate_x": -70.00721587112636,
+      "candidate_y": -111.99492015699569,
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "observation_sha256": "18e52d15d6ed13a0bf1a3801caa70dc8adbdac6a755169c5b9f95ab89c5e196a",
+      "known_compatible_finite_witness_D": [
+        149.2585476311477,
+        150.0
+      ],
+      "observed_far_competing_pair_under_unqualified_dev_eps": null,
+      "all_fixed_D_witness_points": [
+        {
+          "D": 30.0,
+          "loss_L2": 0.07344702028928644,
+          "theta": [
+            30.0,
+            440.1988617552539,
+            -70.20162583885313,
+            -112.15070994706403
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/30p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 40.0,
+          "loss_L2": 0.07071367453708609,
+          "theta": [
+            40.0,
+            440.18559180300093,
+            -70.23244064177868,
+            -112.17361496384672
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/40p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 50.0,
+          "loss_L2": 0.06627231622573913,
+          "theta": [
+            50.0,
+            440.20107459511553,
+            -70.23730446111735,
+            -112.1758246432236
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/50p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 60.0,
+          "loss_L2": 0.059977793726250755,
+          "theta": [
+            60.0,
+            440.2062024514632,
+            -70.25434951548854,
+            -112.1860031755091
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/60p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 70.0,
+          "loss_L2": 0.05170168962630118,
+          "theta": [
+            70.0,
+            440.2163231964106,
+            -70.27321278509584,
+            -112.19638935494268
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/70p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 80.0,
+          "loss_L2": 0.04141260841417892,
+          "theta": [
+            80.0,
+            440.25117516019543,
+            -70.28729992757648,
+            -112.2023605357726
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/80p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 90.0,
+          "loss_L2": 0.029426210705950716,
+          "theta": [
+            90.0,
+            440.3618281175701,
+            -70.28805122171784,
+            -112.20069324675048
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/90p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 100.0,
+          "loss_L2": 0.01671173065593187,
+          "theta": [
+            100.0,
+            440.86318532432625,
+            -70.27385700040783,
+            -112.18703366330821
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/100p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 110.0,
+          "loss_L2": 0.008882938168706337,
+          "theta": [
+            110.0,
+            450.2220079572324,
+            -70.2410024698859,
+            -112.16093933604115
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/110p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 120.0,
+          "loss_L2": 0.0062799840063259525,
+          "theta": [
+            120.0,
+            460.85730657504627,
+            -70.20131740478588,
+            -112.13248213307453
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/120p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 130.0,
+          "loss_L2": 0.0040270293022998,
+          "theta": [
+            130.0,
+            466.31304181021954,
+            -70.14741531655326,
+            -112.09427048179255
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M04/D130p000000000000_f31719b3d4_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 140.0,
+          "loss_L2": 0.0018846220483563732,
+          "theta": [
+            140.0,
+            469.7345072212942,
+            -70.0796170667084,
+            -112.04628570725203
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M04/D140p000000000000_285242ef15_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 149.2585476311477,
+          "loss_L2": 5.517308464309678e-06,
+          "theta": [
+            149.2585476311477,
+            471.8610360486137,
+            -70.00721587112636,
+            -111.99492015699569
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/149p2585476311477.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 150.0,
+          "loss_L2": 0.00014598765790738605,
+          "theta": [
+            150.0,
+            471.99947656239624,
+            -70.00114135401915,
+            -111.99060137534231
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M04/D150p000000000000_00ead2f5a5_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 160.0,
+          "loss_L2": 0.0020226636771522666,
+          "theta": [
+            160.0,
+            473.50551524678735,
+            -69.91758980623409,
+            -111.93102338938691
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M04/D160p000000000000_3d7154b65b_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 170.0,
+          "loss_L2": 0.003692641425047079,
+          "theta": [
+            170.0,
+            474.4630025168039,
+            -69.8364396710105,
+            -111.87283273605814
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M04/D170p000000000000_050c12add8_r0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 180.0,
+          "loss_L2": 0.005100224372841682,
+          "theta": [
+            180.0,
+            474.9839179173916,
+            -69.76641488913782,
+            -111.82239389497644
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/180p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 190.0,
+          "loss_L2": 0.006194222984302696,
+          "theta": [
+            190.0,
+            475.1153083590783,
+            -69.71666465150065,
+            -111.78649149398446
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/190p0000000000000.a0.json",
+          "point_search_complete": false
+        },
+        {
+          "D": 200.0,
+          "loss_L2": 0.006936725852525439,
+          "theta": [
+            200.0,
+            474.84740725482914,
+            -69.695858070588,
+            -111.77152377962746
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M04/200p0000000000000.a0.json",
+          "point_search_complete": false
+        }
+      ],
+      "invalid_nonfixed_checkpoints": [],
+      "model_error_epsilon_unscaled_L2": 0.0015811481066672155,
+      "model_error_epsilon_status": "UNQUALIFIED_DEVELOPER_MAX__NOT_CI",
+      "conditional_identifiable": null,
+      "conditional_identifiable_scope": "UNKNOWN_GLOBAL_SEARCH",
+      "unknown_D_regions_remain": true,
+      "adaptive_profile_complete": false,
+      "camera_diameter_qualified": false,
+      "reportable_D": null,
+      "all_required_science_gates_passed": false,
+      "reason_codes": [
+        "GLOBAL_PROFILE_UNCERTIFIED",
+        "MODEL_ERROR_NOT_CALIBRATED",
+        "REAL_CAMERA_SIZING_NOT_QUALIFIED"
+      ],
+      "estimator_truth_file_used": false
+    },
+    "M05": {
+      "candidate_D": 172.36815415453196,
+      "candidate_h": 509.312647448332,
+      "candidate_x": 125.9857515894615,
+      "candidate_y": -41.986741258361924,
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "observation_sha256": "67e78663ea15a8707c039d06a66619042cc609057d896114410f0dfc4095e086",
+      "known_compatible_finite_witness_D": [
+        160.0,
+        170.0,
+        172.36815415453196,
+        180.0,
+        190.0,
+        200.0
+      ],
+      "observed_far_competing_pair_under_unqualified_dev_eps": {
+        "D1": 160.0,
+        "D2": 200.0,
+        "R1": 0.001512029239795439,
+        "R2": 0.0003871878632378118,
+        "separation_nm": 40.0
+      },
+      "all_fixed_D_witness_points": [
+        {
+          "D": 30.0,
+          "loss_L2": 0.10426156645601849,
+          "theta": [
+            30.0,
+            540.8998206974661,
+            125.81954994464216,
+            -41.65788860998411
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/30p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 40.0,
+          "loss_L2": 0.10150883957426352,
+          "theta": [
+            40.0,
+            540.8756020672079,
+            125.80287202282825,
+            -41.60364806168253
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/40p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 50.0,
+          "loss_L2": 0.09702478380079951,
+          "theta": [
+            50.0,
+            540.8526675013677,
+            125.8017790298718,
+            -41.623615860171704
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/50p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 60.0,
+          "loss_L2": 0.09064609213026145,
+          "theta": [
+            60.0,
+            540.8023838071401,
+            125.80704264215743,
+            -41.60018536013162
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/60p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 70.0,
+          "loss_L2": 0.0822110352516084,
+          "theta": [
+            70.0,
+            540.7226511739198,
+            125.8116875405831,
+            -41.58844042105066
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/70p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 80.0,
+          "loss_L2": 0.07162492869779961,
+          "theta": [
+            80.0,
+            540.6015688081926,
+            125.81763195916544,
+            -41.585532675668176
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/80p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 90.0,
+          "loss_L2": 0.0590555486836798,
+          "theta": [
+            90.0,
+            540.4095878327944,
+            125.82785165796439,
+            -41.59389266466536
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/90p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 100.0,
+          "loss_L2": 0.04480449445161494,
+          "theta": [
+            100.0,
+            540.0760732234261,
+            125.84604989661409,
+            -41.61762747748064
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/100p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 110.0,
+          "loss_L2": 0.02951668779428527,
+          "theta": [
+            110.0,
+            539.3549711992363,
+            125.8717506545923,
+            -41.66230744606624
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/110p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 120.0,
+          "loss_L2": 0.015593592076662586,
+          "theta": [
+            120.0,
+            536.653762599318,
+            125.90386582273807,
+            -41.72780004445616
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/120p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 130.0,
+          "loss_L2": 0.008735144777496673,
+          "theta": [
+            130.0,
+            526.8411836816204,
+            125.92549676525093,
+            -41.78281932360742
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/130p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 140.0,
+          "loss_L2": 0.005537802309482333,
+          "theta": [
+            140.0,
+            519.5960251431587,
+            125.93999378978098,
+            -41.829851967091805
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/140p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 150.0,
+          "loss_L2": 0.0032604194823428858,
+          "theta": [
+            150.0,
+            515.0249426587158,
+            125.95494433317418,
+            -41.87983545726581
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/150p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 160.0,
+          "loss_L2": 0.001512029239795439,
+          "theta": [
+            160.0,
+            511.906001740213,
+            125.96968981247169,
+            -41.929979022774795
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M05/D160p000000000000_7ea33e3a0d_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 170.0,
+          "loss_L2": 0.00023254027954325453,
+          "theta": [
+            170.0,
+            509.72327647434645,
+            125.98297094666138,
+            -41.976625511692454
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/170p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 172.36815415453196,
+          "loss_L2": 1.5487991631941165e-05,
+          "theta": [
+            172.36815415453196,
+            509.312647448332,
+            125.9857515894615,
+            -41.986741258361924
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/172p3681541545320.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 180.0,
+          "loss_L2": 0.0005475923200115904,
+          "theta": [
+            180.0,
+            508.2233690171319,
+            125.99339621698309,
+            -42.01591433613261
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/180p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 190.0,
+          "loss_L2": 0.0007559403947590114,
+          "theta": [
+            190.0,
+            507.2808538986589,
+            125.99950214360103,
+            -42.0438395705686
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M05/190p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 200.0,
+          "loss_L2": 0.0003871878632378118,
+          "theta": [
+            200.0,
+            506.8540868834304,
+            125.99984631060919,
+            -42.05629471402874
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M05/D200p000000000000_c41288738c_r0.json",
+          "point_search_complete": true
+        }
+      ],
+      "invalid_nonfixed_checkpoints": [],
+      "model_error_epsilon_unscaled_L2": 0.0015811481066672155,
+      "model_error_epsilon_status": "UNQUALIFIED_DEVELOPER_MAX__NOT_CI",
+      "conditional_identifiable": false,
+      "conditional_identifiable_scope": "NOT_UNIQUE_UNDER_UNQUALIFIED_DEV_EPS",
+      "unknown_D_regions_remain": true,
+      "adaptive_profile_complete": false,
+      "camera_diameter_qualified": false,
+      "reportable_D": null,
+      "all_required_science_gates_passed": false,
+      "reason_codes": [
+        "DISTANT_COMPETING_FINITE_WITNESSES_UNDER_UNQUALIFIED_DEV_EPS",
+        "GLOBAL_PROFILE_UNCERTIFIED",
+        "MODEL_ERROR_NOT_CALIBRATED",
+        "REAL_CAMERA_SIZING_NOT_QUALIFIED"
+      ],
+      "estimator_truth_file_used": false
+    },
+    "M06": {
+      "candidate_D": 184.34673932132725,
+      "candidate_h": 541.5710342225597,
+      "candidate_x": -98.01148551879386,
+      "candidate_y": 70.01176993107566,
+      "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+      "observation_sha256": "5be586e4c62a40d7e27850f2a79f062c22f3787287f51f9059c9d262b415668a",
+      "known_compatible_finite_witness_D": [
+        184.34673932132725
+      ],
+      "observed_far_competing_pair_under_unqualified_dev_eps": null,
+      "all_fixed_D_witness_points": [
+        {
+          "D": 30.0,
+          "loss_L2": 0.19083665270503922,
+          "theta": [
+            30.0,
+            541.4766442464069,
+            -97.84079936580896,
+            69.57557222751747
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/30p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 40.0,
+          "loss_L2": 0.18806313998663282,
+          "theta": [
+            40.0,
+            541.464624809705,
+            -97.8405640677605,
+            69.56243054576532
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/40p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 50.0,
+          "loss_L2": 0.1835425245936594,
+          "theta": [
+            50.0,
+            541.4640504344334,
+            -97.83044229441143,
+            69.55941378637507
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/50p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 60.0,
+          "loss_L2": 0.17710412209565937,
+          "theta": [
+            60.0,
+            541.4568843810383,
+            -97.82017287442561,
+            69.5467861332818
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/60p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 70.0,
+          "loss_L2": 0.16857335384124905,
+          "theta": [
+            70.0,
+            541.4365866041564,
+            -97.80826295385356,
+            69.54126128626962
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/70p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 80.0,
+          "loss_L2": 0.15783116306693182,
+          "theta": [
+            80.0,
+            541.4125857150965,
+            -97.79347195343074,
+            69.53036441286436
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/80p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 90.0,
+          "loss_L2": 0.14499552159436005,
+          "theta": [
+            90.0,
+            541.3800581044268,
+            -97.78075112513763,
+            69.52988567398785
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/90p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 100.0,
+          "loss_L2": 0.13024346333022785,
+          "theta": [
+            100.0,
+            541.3402153915682,
+            -97.77549459450537,
+            69.53017594077019
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/100p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 110.0,
+          "loss_L2": 0.11381509444533731,
+          "theta": [
+            110.0,
+            541.2933720083729,
+            -97.77515175283104,
+            69.54432421546458
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/110p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 120.0,
+          "loss_L2": 0.09620539823723392,
+          "theta": [
+            120.0,
+            541.2384858346605,
+            -97.78483208661896,
+            69.57302348415699
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/120p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 130.0,
+          "loss_L2": 0.07798056890071273,
+          "theta": [
+            130.0,
+            541.1740496784956,
+            -97.80367512370768,
+            69.61949459257467
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/130p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 140.0,
+          "loss_L2": 0.059756010341784564,
+          "theta": [
+            140.0,
+            541.1045132628204,
+            -97.83366138390092,
+            69.68182029373752
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/140p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 150.0,
+          "loss_L2": 0.04231613151327501,
+          "theta": [
+            150.0,
+            541.0399514163163,
+            -97.87175529640172,
+            69.75606144176008
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/150p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 160.0,
+          "loss_L2": 0.026497633428587002,
+          "theta": [
+            160.0,
+            540.9964799425504,
+            -97.91523445944206,
+            69.83720121021103
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/160p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 170.0,
+          "loss_L2": 0.013146861422130778,
+          "theta": [
+            170.0,
+            541.0122651841187,
+            -97.95910173452508,
+            69.91713811386181
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/170p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 174.34673932132725,
+          "loss_L2": 0.00832814610748344,
+          "theta": [
+            174.34673932132725,
+            541.0643573914421,
+            -97.9768870207406,
+            69.94923996587724
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M06/D174p346739321327_3002efbee8_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 179.34673932132725,
+          "loss_L2": 0.0036508531220206222,
+          "theta": [
+            179.34673932132725,
+            541.2076857815133,
+            -97.99549796249465,
+            69.98278829244457
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M06/D179p346739321327_dfdc98b2bc_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 180.0,
+          "loss_L2": 0.0031133719881588375,
+          "theta": [
+            180.0,
+            541.2371485896822,
+            -97.99774904265776,
+            69.98685055865876
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/180p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 181.84673932132725,
+          "loss_L2": 0.001690922670358875,
+          "theta": [
+            181.84673932132725,
+            541.3462116673835,
+            -98.00386040937737,
+            69.99790350760762
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M06/D181p846739321327_7e345e5acb_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 184.34673932132725,
+          "loss_L2": 4.239303359110502e-05,
+          "theta": [
+            184.34673932132725,
+            541.5710341991739,
+            -98.01148551373558,
+            70.01176993274885
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M06/D184p346739321327_08d12a38c3_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 189.34673932132725,
+          "loss_L2": 0.002529153903642635,
+          "theta": [
+            189.34673932132725,
+            542.3953219429919,
+            -98.02408201758047,
+            70.0350869572574
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M06/D189p346739321327_c288d3fb7c_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 190.0,
+          "loss_L2": 0.0027754179643001394,
+          "theta": [
+            190.0,
+            542.5095936774187,
+            -98.02541019453199,
+            70.03757603892967
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/190p0000000000000.a0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 194.34673932132725,
+          "loss_L2": 0.0037094490117806104,
+          "theta": [
+            194.34673932132725,
+            536.2361757438706,
+            -98.02285668652898,
+            70.02711317171264
+          ],
+          "origin": "V145_STRICT_FIXED_D",
+          "source": "results/v145/validation/fixed_D_profiles/M06/D194p346739321327_5126a3eeac_r0.json",
+          "point_search_complete": true
+        },
+        {
+          "D": 200.0,
+          "loss_L2": 0.0029896886488709534,
+          "theta": [
+            200.0,
+            535.4631769136707,
+            -98.02424128230594,
+            70.02904808384847
+          ],
+          "origin": "V143_PRIOR_VALID_D_EVALUATION",
+          "source": "results/v143/profiles/coarse/M06/200p0000000000000.a0.json",
+          "point_search_complete": true
+        }
+      ],
+      "invalid_nonfixed_checkpoints": [],
+      "model_error_epsilon_unscaled_L2": 0.0015811481066672155,
+      "model_error_epsilon_status": "UNQUALIFIED_DEVELOPER_MAX__NOT_CI",
+      "conditional_identifiable": null,
+      "conditional_identifiable_scope": "UNKNOWN_GLOBAL_SEARCH",
+      "unknown_D_regions_remain": true,
+      "adaptive_profile_complete": false,
+      "camera_diameter_qualified": false,
+      "reportable_D": null,
+      "all_required_science_gates_passed": false,
+      "reason_codes": [
+        "GLOBAL_PROFILE_UNCERTIFIED",
+        "MODEL_ERROR_NOT_CALIBRATED",
+        "REAL_CAMERA_SIZING_NOT_QUALIFIED"
+      ],
+      "estimator_truth_file_used": false
+    }
+  },
+  "experimental_absolute_diameter_validated": false
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "iscat145.budget_violation.1",
+  "event": "Dual-focus pilot re-solved 3 BEM systems (pilot_ANON_01/ANON_04/M02 at focus 350) because the adapter cache is per-outDir; MATLAB was killed mid-run (pilot_M06 and f550 never started).",
+  "unauthorized_BEM_solves": 3,
+  "unauthorized_renders": 3,
+  "evidence_dir": "provenance/pilot_violation_evidence/",
+  "disposition": "Pilot stopped; P5 declared VIOLATED_BUDGET_AND_STOPPED; renders/solves preserved as evidence and treated as opened development data; NOT used for any model or reportability claim",
+  "historical_preserved": {
+    "v137_camera": "23958/6000",
+    "v142_f2c_actual": 48874,
+    "v143_forward_actual": 49390,
+    "v143_camera": 912
+  }
+}

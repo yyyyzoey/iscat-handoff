@@ -1,0 +1,141 @@
+{
+  "status": "COMPONENT_ONLY_SCIENCE_NOT_CERTIFIED",
+  "rows": [
+    {
+      "case": "ANON_01",
+      "D": 30.0,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 5.089789326209534e-05,
+      "forward_calls": 409,
+      "point_search_complete": false
+    },
+    {
+      "case": "ANON_01",
+      "D": 59.09926569428531,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 3.4743394343457686e-07,
+      "forward_calls": 551,
+      "point_search_complete": false
+    },
+    {
+      "case": "ANON_01",
+      "D": 150.0,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 0.0014654272451786775,
+      "forward_calls": 1200,
+      "point_search_complete": false
+    },
+    {
+      "case": "ANON_02",
+      "D": 100.0,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 0.0005153869580954214,
+      "forward_calls": 666,
+      "point_search_complete": true
+    },
+    {
+      "case": "ANON_02",
+      "D": 101.24109919653004,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 2.2988544339449825e-06,
+      "forward_calls": 398,
+      "point_search_complete": true
+    },
+    {
+      "case": "ANON_02",
+      "D": 160.0,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 0.001296772988816084,
+      "forward_calls": 467,
+      "point_search_complete": false
+    },
+    {
+      "case": "M01",
+      "D": 50.0,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 2.6108436326494688e-05,
+      "forward_calls": 217,
+      "point_search_complete": true
+    },
+    {
+      "case": "M01",
+      "D": 52.743060819785946,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 6.271343792718976e-07,
+      "forward_calls": 229,
+      "point_search_complete": true
+    },
+    {
+      "case": "M01",
+      "D": 150.0,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 0.0014997192161468008,
+      "forward_calls": 1200,
+      "point_search_complete": false
+    },
+    {
+      "case": "M02",
+      "D": 80.0,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 1.1571857008187218e-05,
+      "forward_calls": 450,
+      "point_search_complete": false
+    },
+    {
+      "case": "M02",
+      "D": 81.28076269425519,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 1.8197843073618564e-06,
+      "forward_calls": 443,
+      "point_search_complete": false
+    },
+    {
+      "case": "M02",
+      "D": 150.0,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 0.0015083845848315226,
+      "forward_calls": 513,
+      "point_search_complete": false
+    },
+    {
+      "case": "M03",
+      "D": 119.22526143674465,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 4.940025881393707e-06,
+      "forward_calls": 430,
+      "point_search_complete": true
+    },
+    {
+      "case": "M03",
+      "D": 200.0,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 0.00157100685404726,
+      "forward_calls": 472,
+      "point_search_complete": false
+    },
+    {
+      "case": "M05",
+      "D": 160.0,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 0.001512029239795439,
+      "forward_calls": 249,
+      "point_search_complete": true
+    },
+    {
+      "case": "M05",
+      "D": 172.36815415453196,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 1.5487991631941165e-05,
+      "forward_calls": 215,
+      "point_search_complete": true
+    },
+    {
+      "case": "M05",
+      "D": 200.0,
+      "status": "FIXED_D_COMPLETED_OR_PARTIAL",
+      "best_loss": 0.0003871878632378118,
+      "forward_calls": 234,
+      "point_search_complete": true
+    }
+  ]
+}

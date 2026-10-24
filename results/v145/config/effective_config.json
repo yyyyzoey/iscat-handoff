@@ -1,0 +1,231 @@
+{
+  "schema": "iscat145.science_config.1",
+  "task_id": "V145_FIXED_DIAMETER_PROFILE_REPAIR_AND_MEASUREMENT_INFORMATION",
+  "repository": "yyyyzoey/iscat-handoff",
+  "fixed_review_commit": "2327ff73a9fe4cb0c9db8e35b551880d654cd044",
+  "inherited_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "model_source": "tools/v142_model.py",
+  "model_expected_git_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749",
+  "model_library": "results/v128/library/v128_Dh_train_fields.h5",
+  "model_library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+  "N_observation": "results/v142/validation/new_N_independent_images.h5",
+  "N_observation_sha256": "524baf145701ba67c6f96a4ab912fa06774d6f85020184f2dad79348e3098875",
+  "N_candidates": "results/v142/validation/new_N_candidate_estimates.csv",
+  "N_val_truth_validator_only": "config/v142_new_N_validator_only.json",
+  "M_observation": "results/v132/validation/new_M_images.h5",
+  "M_observation_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+  "M_candidates_dir": "results/v142/dev_M_F2c",
+  "v143_profile_root": "results/v143/profiles",
+  "v144_invalid_refine_root": "results/v144/profiles/refine_v144",
+  "v144_oracle_csv": "results/v144/validation/N_oracle_corrected/N_corrected_sourcewide.csv",
+  "v144_report": "results/v144/validation/particle_reportability.json",
+  "v144_budget_sqlite": "results/v144/logs/v144_budget.sqlite",
+  "camera_pilot_root": "results/v143/validation/camera_pilot",
+  "camera_pilot_h5": "results/v143/validation/camera_pilot/conditional_camera_arrays.h5",
+  "cases": [
+    "ANON_01",
+    "ANON_02",
+    "ANON_03",
+    "ANON_04",
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06"
+  ],
+  "priority_fixed_D_targets": {
+    "ANON_03": [
+      120.0,
+      130.0,
+      140.0,
+      143.26416607970438,
+      150.0,
+      160.0
+    ],
+    "ANON_04": [
+      170.37085410460458,
+      175.37085410460458,
+      177.87085410460458,
+      180.37085410460458,
+      182.87085410460458,
+      185.37085410460458,
+      190.37085410460458
+    ],
+    "M04": [
+      130.0,
+      140.0,
+      149.2585476311477,
+      150.0,
+      160.0,
+      170.0
+    ],
+    "M06": [
+      174.34673932132725,
+      179.34673932132725,
+      181.84673932132725,
+      184.34673932132725,
+      189.34673932132725,
+      194.34673932132725
+    ],
+    "ANON_01": [
+      30.0,
+      59.09926569428531,
+      150.0
+    ],
+    "ANON_02": [
+      100.0,
+      101.24109919653004,
+      160.0
+    ],
+    "M01": [
+      50.0,
+      52.743060819785946,
+      150.0
+    ],
+    "M02": [
+      80.0,
+      81.28076269425519,
+      150.0
+    ],
+    "M03": [
+      119.22526143674465,
+      200.0
+    ],
+    "M05": [
+      160.0,
+      172.36815415453196,
+      200.0
+    ]
+  },
+  "fit": {
+    "D_bounds_nm": [
+      30.0,
+      200.0
+    ],
+    "h_bounds_nm": [
+      350.0,
+      550.0
+    ],
+    "xy_bounds_nm": [
+      -500.0,
+      500.0
+    ],
+    "public_height_seeds_nm": [
+      350.0,
+      400.0,
+      450.0,
+      500.0,
+      550.0
+    ],
+    "per_D_precharge_calls": 1200,
+    "max_nfev_per_start": 65,
+    "loss": "CENTRAL_13_STATIC_SIGNED_C_UNSCALED_L2",
+    "adaptive_midpoint_nm": [
+      5.0,
+      2.5,
+      1.25,
+      0.5
+    ],
+    "source_witness_required": true,
+    "do_not_suppress_invalid_v144_history": true
+  },
+  "existing_dev_epsilon": {
+    "value_unscaled_L2": 0.0015811481066672155,
+    "qualification": "UNQUALIFIED_HJKL_DEV_MAX_NOT_STATISTICAL_CI",
+    "epsilon_is_not_for_final_reportability": true
+  },
+  "camera": {
+    "B_assumed_electrons_per_pixel": [
+      1000,
+      10000,
+      100000
+    ],
+    "dev_null_each": 80,
+    "val_null_each": 60,
+    "targets_each_B": 12,
+    "read_noise_e_assumed": 2.0,
+    "all_legacy_exposures": 912,
+    "new_exposures": 0,
+    "fpr_confidence": 0.95,
+    "fpr_one_sided_upper_target": 0.05,
+    "reference_observations_separately_counted": true
+  },
+  "optional_dual_focus_feasibility": {
+    "enabled_only_after_fixedD_and_source_review": true,
+    "original_solve_only": true,
+    "example_cases": [
+      "ANON_01",
+      "ANON_04",
+      "M02",
+      "M06"
+    ],
+    "additional_focus_z_nm": [
+      350.0,
+      550.0
+    ],
+    "max_renders": 8,
+    "scientific_status": "EXPLORATORY_DIRECT_RENDER_RESPONSE_ONLY__NO_TWO_FOCUS_FITTING_WITHOUT_FULL_LIBRARY_AND_HARDWARE_CAPABILITY",
+    "preconfirm_renderer_supports_focus_parameter": true,
+    "preconfirm_no_new_BEM_solve": true
+  },
+  "budgets_new_v145": {
+    "BEM_solver_attempts": 0,
+    "render_attempts_existing_solves_only": 8,
+    "new_camera_exposure_events": 0,
+    "all_F2_plus_F2c_forward_calls": 160000,
+    "heavy_physics_concurrency": 1,
+    "wall_hours_including_finalize": 12,
+    "finalize_minutes_reserved": 30
+  },
+  "historical_budget_must_preserve": {
+    "v144_reported_actual": 9289,
+    "v144_reported_reserved": 24000,
+    "v144_summary_mentions_refinement_calls": 8892,
+    "v143_main_actual": 49390,
+    "v143_aux_recorded": 8,
+    "v143_camera": 912,
+    "v137_camera_breach": 23958,
+    "v137_camera_limit": 6000
+  },
+  "measurement": {
+    "confirmed": [
+      "suspended",
+      "pure water 26 C",
+      "520 nm vacuum laser",
+      "14 um physical camera pixel",
+      "50x nominal objective",
+      "no slide"
+    ],
+    "conditional_assumptions": {
+      "nwater": 1.3353,
+      "nglass": 1.5,
+      "nparticle": [
+        1.38,
+        0.0
+      ],
+      "NA": 0.8,
+      "extra_magnification": 1.0,
+      "object_pixel_nm": 280.0,
+      "q": 5,
+      "fine_pitch_nm": 56.0,
+      "focus_z_nm": 450.0
+    },
+    "experimental_absolute_magnetic_core_diameter_validated": false,
+    "primary_observable": "STATIC_SIGNED_C_FROM_LINEAR_RAW_AND_MATCHED_BACKGROUND",
+    "old_fft400hz_is_different_observable": true
+  },
+  "reporting": {
+    "preserve_truth_separation": true,
+    "N_all_opened_development": true,
+    "candidate_D_from_estimator_only": true,
+    "reportable_D_fail_closed": true,
+    "no_global_uniqueness_claim_from_finite_search": true,
+    "measurement_interval_requires_calibrated_model_and_camera": true
+  },
+  "delivery": {
+    "branch": "v145",
+    "archive_name": "iscat_v145_return.zip",
+    "absolute_validation_flag": false
+  }
+}
