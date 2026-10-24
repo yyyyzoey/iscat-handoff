@@ -1,0 +1,169 @@
+{
+  "signature": "634a8d3d6e646c7d90d12323b55f3f6b724e267526cc37e9ad14953e638e6d42",
+  "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "estimator_id": "v146-deltaGLS-a9537684e1cd5a99f9270cdd44f5e4c287262d68fcae6c4f43ca85c3cd333def",
+  "observation_run_id": "634a8d3d6e646c7d90d12323b55f3f6b724e267526cc37e9ad14953e638e6d42",
+  "event": {
+    "event_id": "B100000_ANON_01_02",
+    "B": 100000,
+    "label": "ANON_01_02",
+    "T": 0.011259143899189018,
+    "threshold": 0.02077529446326721,
+    "detected": false,
+    "observation_sha256": "9e8ea9375b1d4d700c14829a2786cfba3233cff44cda5eb3352c223a0f2c787f",
+    "counts_sha256": "e00db2f7a9f9002622239995bbea383445d7fd14043c034de9b7b0b772432501",
+    "variance_sha256": "ca367021cf69672032ba04b4a2e47205e48b271a901c9bc95f2be2503798a6c2",
+    "threshold_sha256": "053409e4f055313b03e2b1da635a8009bf1c34055b7ef443959e0fbae99d4697"
+  },
+  "fit": {
+    "candidate_D": 105.1892535815481,
+    "candidate_theta": [
+      105.1892535815481,
+      484.17911649743854,
+      -176.312526018507,
+      -476.09592654635867
+    ],
+    "best": {
+      "theta": [
+        105.1892535815481,
+        484.17911649743854,
+        -176.312526018507,
+        -476.09592654635867
+      ],
+      "Q": 141.36578904318105,
+      "unscaled_L2": 0.05312431958310034
+    },
+    "trials": [
+      {
+        "start": [
+          50.0,
+          375.0,
+          -140.0,
+          0.0
+        ],
+        "theta": [
+          45.55177792216527,
+          350.00000000004354,
+          -198.3962142278697,
+          54.4438127958004
+        ],
+        "Q": 149.0837404102527,
+        "success": true,
+        "status": 2,
+        "nfev": 27,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": [
+          30.0,
+          400.0,
+          140.0,
+          -140.0
+        ],
+        "theta": [
+          105.1885593426505,
+          484.17902787222687,
+          -176.31248649110177,
+          -476.09550038292684
+        ],
+        "Q": 141.3657890432953,
+        "success": true,
+        "status": 2,
+        "nfev": 37,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": [
+          30.0,
+          450.0,
+          140.0,
+          -140.0
+        ],
+        "theta": [
+          105.1892535815481,
+          484.1791092826076,
+          -176.312526018507,
+          -476.09592654635867
+        ],
+        "Q": 141.36578904321982,
+        "success": true,
+        "status": 2,
+        "nfev": 31,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": [
+          50.0,
+          550.0,
+          -140.0,
+          0.0
+        ],
+        "theta": [
+          46.06865447390375,
+          549.9999999999999,
+          -200.70286338145016,
+          51.23332769203449
+        ],
+        "Q": 148.8160618804024,
+        "success": true,
+        "status": 2,
+        "nfev": 27,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": [
+          50.0,
+          350.0,
+          -140.0,
+          0.0
+        ],
+        "theta": [
+          45.551737844991266,
+          350.00000000003485,
+          -198.3919384268109,
+          54.437778233362835
+        ],
+        "Q": 149.08374041372275,
+        "success": true,
+        "status": 2,
+        "nfev": 17,
+        "message": "`ftol` termination condition is satisfied."
+      },
+      {
+        "start": [
+          50.0,
+          525.0,
+          -140.0,
+          0.0
+        ],
+        "theta": [
+          46.06863646474941,
+          549.9999999999999,
+          -200.7110087040939,
+          51.22879870135333
+        ],
+        "Q": 148.81606188396677,
+        "success": true,
+        "status": 2,
+        "nfev": 26,
+        "message": "`ftol` termination condition is satisfied."
+      }
+    ],
+    "optimizer_converged": true,
+    "attempted_starts": 6,
+    "planned_starts": 6,
+    "callback_cap_reached": false,
+    "actual_forward_calls": 713,
+    "reportable_D": null,
+    "confidence_interval": null,
+    "estimator_kind": "FIXED_PLUGIN_DELTA_GLS_DEVELOPMENT",
+    "reason_codes": [
+      "CAMERA_SIZING_COVERAGE_UNCALIBRATED",
+      "GLOBAL_PROFILE_NOT_CERTIFIED",
+      "EXPERIMENTAL_ABSOLUTE_NOT_VALIDATED",
+      "NOT_DETECTED_DIAGNOSTIC_CANDIDATE_ONLY"
+    ]
+  },
+  "camera_diameter_qualified": false,
+  "scope": "OPENED_SAVED_SIMULATION_REANALYSIS_NOT_NEW_BLIND_TEST"
+}

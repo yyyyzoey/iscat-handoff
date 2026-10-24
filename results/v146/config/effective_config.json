@@ -1,0 +1,204 @@
+{
+  "schema": "iscat146.science_config.1",
+  "task_id": "V146_NOISE_AWARE_SINGLE_PARTICLE_CALIBRATION_WITH_FROZEN_F2C",
+  "base_commit": "434452d6bc1986f5f112b85923be979cbc341ac2",
+  "repository": "yyyyzoey/iscat-handoff",
+  "inputs": {
+    "training_library": "results/v128/library/v128_Dh_train_fields.h5",
+    "N_observations": "results/v142/validation/new_N_independent_images.h5",
+    "N_candidates": "results/v142/validation/new_N_candidate_estimates.csv",
+    "M_observations": "results/v132/validation/new_M_images.h5",
+    "M_candidates": "results/v142/dev_M_F2c",
+    "camera_h5": "results/v143/validation/camera_pilot/conditional_camera_arrays.h5",
+    "camera_root": "results/v143/validation/camera_pilot",
+    "v145_profiles": "results/v145/validation/fixed_D_profiles",
+    "v145_summary": "results/v145/validation/fixed_D_summary.json",
+    "v145_information": "results/v145/validation/local_D_hxy_information.json",
+    "v145_report": "results/v145/validation/particle_reportability.json",
+    "pilot_ledger": "results/v145/provenance/pilot_violation_evidence/v125_matlab_ledger.csv",
+    "dev_forward_comparison": "results/v142/dev_model_forward/dev_true_parameter_forward_comparison.csv"
+  },
+  "frozen": {
+    "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+    "parent_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+    "library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "camera_h5_sha256": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+    "camera_replay_code_sha256": "de7b92dd1d4656f06c9caf36aa95e58684db212c027668c251e4254d27f8984b",
+    "source_sha256": {
+      "tools/v142_model.py": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749",
+      "tools/v142_field_reference.py": "9ae0c3e6086a65d6fca239c52f2ef4e928b6057b6689971993ec08114864b754",
+      "tools/field_forward_reference.py": "4c064031682e4c3c48130848708bd83958aab4630c3da71adf275c231a1c3520",
+      "tools/load_field_library.py": "d42d638378be3efbdcb9e8ff643b75485dbac618d404c92a1b3090cb9bd7a746",
+      "tools/v133_recover_M.py": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba"
+    },
+    "N_observation_sha256": "524baf145701ba67c6f96a4ab912fa06774d6f85020184f2dad79348e3098875",
+    "M_observation_sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b"
+  },
+  "N_cases": [
+    "ANON_01",
+    "ANON_02",
+    "ANON_03",
+    "ANON_04"
+  ],
+  "M_cases": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06"
+  ],
+  "confirmed_experiment": {
+    "state": "suspended",
+    "medium": "pure_water",
+    "temperature_C": 26,
+    "wavelength_vac_nm": 520,
+    "camera_pixel_um": 14,
+    "objective_nominal_magnification": 50,
+    "glass_slide_present": false
+  },
+  "conditional_optical_assumptions": {
+    "n_particle": [
+      1.38,
+      0
+    ],
+    "n_water": 1.3353,
+    "n_glass": 1.5,
+    "NA": 0.8,
+    "extra_magnification": 1,
+    "object_pixel_nm": 280,
+    "subpixel_q": 5,
+    "focus_z_nm": 450,
+    "D_range_nm": [
+      30,
+      200
+    ],
+    "h_range_nm": [
+      350,
+      550
+    ],
+    "xy_range_nm": [
+      -500,
+      500
+    ]
+  },
+  "budget_limits": {
+    "FORWARD": 160000,
+    "BEM": 0,
+    "RENDER": 0,
+    "CAMERA": 0
+  },
+  "work_allocations_max_forward": {
+    "camera_bank_and_fits": 108900,
+    "profile_and_margin_diagnostics": 28000,
+    "calibration_and_error_comparison": 12000,
+    "verification_and_reserve": 11100
+  },
+  "camera_fit": {
+    "levels": [
+      1000,
+      10000,
+      100000
+    ],
+    "read_noise_e": 2.0,
+    "public_xy_nm": [
+      -140,
+      0,
+      140
+    ],
+    "starts": 6,
+    "max_nfev": 90,
+    "calls_per_pair": 3000,
+    "wall_minutes": 240,
+    "n_existing_target_pairs": 36,
+    "new_draws": false,
+    "detector": "INHERIT_V143_MAX80_THRESHOLD",
+    "variance": "FIXED_OBSERVED_PLUGIN_DELTA_METHOD_INCLUDES_REFERENCE",
+    "profile_or_95pct_coverage": "NOT_CALIBRATED; DO_NOT_INFER_FROM_CHI_SQUARE_AUTOMATICALLY"
+  },
+  "noiseless": {
+    "legacy_epsilon_L2": 0.0015811481066672155,
+    "legacy_epsilon_scope": "UNQUALIFIED_EMPIRICAL_DEV_ONLY_NOT_DOMAIN_BOUND",
+    "candidate_tolerance_formula": "max(5,0.1*candidate_D)",
+    "max_new_fixed_D_points": 16,
+    "per_fixed_D_forward_cap": 1500,
+    "nuisance_only": [
+      "h",
+      "x",
+      "y"
+    ],
+    "preserve_all_finite_witnesses": true,
+    "unknown_D_regions_must_remain": true
+  },
+  "conditional_calibration": {
+    "D_grid_nm": [
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      180,
+      185,
+      190,
+      195,
+      200
+    ],
+    "h_slices_nm": [
+      350,
+      450,
+      550
+    ],
+    "xy_nm": [
+      0,
+      0
+    ],
+    "not_single_universal_C_to_D_curve": true
+  },
+  "heavy_physics_concurrency": 0,
+  "max_wall_hours_including_finalize": 12,
+  "finalize_minutes": 30,
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "historical_immutable": {
+    "v145_recorded_unauthorized_BEM": 3,
+    "v145_pilot_renders": 3,
+    "v145_forward_published": 18881,
+    "v137_camera_breach": "23958/6000"
+  },
+  "forbidden": [
+    "new_BEM",
+    "new_render",
+    "new_camera_samples",
+    "running_v125_v126_batch_adapters",
+    "truth_in_estimator",
+    "free_particle_gain_phase",
+    "domain_clip",
+    "force_push",
+    "rewriting_history"
+  ],
+  "next_return_zip": "iscat_v146_return.zip"
+}

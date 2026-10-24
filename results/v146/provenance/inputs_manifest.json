@@ -1,0 +1,94 @@
+{
+  "inputs": {
+    "results/v128/library/v128_Dh_train_fields.h5": {
+      "sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+      "bytes": 53435213
+    },
+    "results/v132/validation/new_M_images.h5": {
+      "sha256": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+      "bytes": 60246
+    },
+    "results/v143/validation/camera_pilot/conditional_camera_arrays.h5": {
+      "sha256": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+      "bytes": 7615650
+    },
+    "results/v143/provenance/N_solve_lineage.json": {
+      "sha256": "6717deebb5aecf4675abb1609efc17cf9dcb9693daf7179e9a955c3ac26d5c1a",
+      "bytes": 5967
+    },
+    "config/v142_new_N_validator_only.json": {
+      "sha256": "0f069b71ec803a8e8e236357e21a151be4cf0996c70b05d6f49a622910943d08",
+      "bytes": 1370
+    }
+  },
+  "source_tools": [
+    {
+      "file": "v146_audit_v145.py",
+      "sha256": "c59021f13cc03e356fb5a42b630fcc574c301af2ee86262c4112aefe5f2d2201"
+    },
+    {
+      "file": "v146_calibration_and_margins.py",
+      "sha256": "7a151b5974e833277a80cb2e9d4cc5ceef88454405ba967583f2d666cf98b268"
+    },
+    {
+      "file": "v146_core.py",
+      "sha256": "3dbb0ef81da820ae8a57f0919a58ef0f047e4a1f739e7a12a44aea9818ac6bb9"
+    },
+    {
+      "file": "v146_fit_saved_camera.py",
+      "sha256": "5a40f7a2f372bdbb67c2d523229585d5efa137cd1b0e21336dfe10ff861ce1e5"
+    },
+    {
+      "file": "v146_ledger.py",
+      "sha256": "501ce9187da7cf6066296fbc93b157fbd35d5c6285e58006d9d1b1a434bff093"
+    },
+    {
+      "file": "v146_run_workflow.py",
+      "sha256": "4dd4d8eff10fd3d08e5d007d1d0e73b137e4dba37f8836be1bbb922e77ee4e53"
+    },
+    {
+      "file": "v146_runtime.py",
+      "sha256": "e02b6fbb22be513754965426436a728ffaff6ca76b2411afca83775a0c594380"
+    },
+    {
+      "file": "v146_score_camera_external.py",
+      "sha256": "bddac0d3a0f7a0b1ad9dac242ff9f39266fbc141a2c92f7d2a8b2dc8003d4c3d"
+    },
+    {
+      "file": "v146_verify_package.py",
+      "sha256": "c46bbe34d05adf038d8c0e5a0dd0fdf6ddeaace4010a0ce687d5b49a475a99bd"
+    },
+    {
+      "file": "v146_assemble.py",
+      "sha256": "b348c92fd48539662edc203fcc76aba975c24df1081509af4e4a8ba095c77f1e"
+    },
+    {
+      "file": "field_forward_reference.py",
+      "sha256": "4c064031682e4c3c48130848708bd83958aab4630c3da71adf275c231a1c3520"
+    },
+    {
+      "file": "load_field_library.py",
+      "sha256": "d42d638378be3efbdcb9e8ff643b75485dbac618d404c92a1b3090cb9bd7a746"
+    },
+    {
+      "file": "fit_reference.py",
+      "sha256": "c4fc509d5d52f3f0dd101787f55b627df3db59943fdbc942c31dbf3c7e4f9656"
+    },
+    {
+      "file": "model_lock.py",
+      "sha256": "83be065c7b3938921d5b9901a3230c2d976c3b0ba7eef6b090dea3b65971b3ee"
+    },
+    {
+      "file": "v133_recover_M.py",
+      "sha256": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba"
+    },
+    {
+      "file": "v142_model.py",
+      "sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749"
+    },
+    {
+      "file": "v142_field_reference.py",
+      "sha256": "9ae0c3e6086a65d6fca239c52f2ef4e928b6057b6689971993ec08114864b754"
+    }
+  ]
+}

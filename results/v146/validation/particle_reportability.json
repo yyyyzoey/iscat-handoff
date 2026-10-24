@@ -1,0 +1,374 @@
+{
+  "schema": "iscat146.per_particle.1",
+  "note": "noisy-camera candidates from the frozen F2c GLS estimator; noiseless dev candidates in results/v142/dev_M_F2c; reportable_D null all",
+  "cases": {
+    "ANON_01": [
+      {
+        "B": 100000,
+        "rep": "00",
+        "candidate_D": 78.92243669465172,
+        "detected": false,
+        "Q": 163.55990530083858,
+        "unscaled_L2": 0.05728293539691974,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 10000,
+        "rep": "00",
+        "candidate_D": 199.99999999999997,
+        "detected": false,
+        "Q": 133.6336457005054,
+        "unscaled_L2": 0.16435580273143335,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 1000,
+        "rep": "00",
+        "candidate_D": 179.7368858383082,
+        "detected": false,
+        "Q": 183.99039888579387,
+        "unscaled_L2": 0.6051288974035411,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 100000,
+        "rep": "01",
+        "candidate_D": 92.58276556776592,
+        "detected": false,
+        "Q": 178.40516421716592,
+        "unscaled_L2": 0.059714712869866106,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 10000,
+        "rep": "01",
+        "candidate_D": 70.53726403920668,
+        "detected": false,
+        "Q": 161.4766710624055,
+        "unscaled_L2": 0.18045143153156157,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 1000,
+        "rep": "01",
+        "candidate_D": 199.99998654553121,
+        "detected": false,
+        "Q": 166.3210626397321,
+        "unscaled_L2": 0.5738528764192574,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 100000,
+        "rep": "02",
+        "candidate_D": 105.1892535815481,
+        "detected": false,
+        "Q": 141.36578904318105,
+        "unscaled_L2": 0.05312431958310034,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 10000,
+        "rep": "02",
+        "candidate_D": 82.88171949911276,
+        "detected": false,
+        "Q": 144.91051444931367,
+        "unscaled_L2": 0.17075001605860404,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 1000,
+        "rep": "02",
+        "candidate_D": 199.99999999999997,
+        "detected": false,
+        "Q": 143.6155453332045,
+        "unscaled_L2": 0.5425557681985214,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      }
+    ],
+    "ANON_02": [
+      {
+        "B": 100000,
+        "rep": "00",
+        "candidate_D": 124.49296742678486,
+        "detected": true,
+        "Q": 175.7640384294774,
+        "unscaled_L2": 0.059237753180382505,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 10000,
+        "rep": "00",
+        "candidate_D": 199.99999999999997,
+        "detected": false,
+        "Q": 133.09754809127958,
+        "unscaled_L2": 0.162178215098378,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 1000,
+        "rep": "00",
+        "candidate_D": 109.69321247543903,
+        "detected": false,
+        "Q": 170.1889451938319,
+        "unscaled_L2": 0.5827726838304349,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 100000,
+        "rep": "01",
+        "candidate_D": 185.26744732883253,
+        "detected": true,
+        "Q": 167.13675868568822,
+        "unscaled_L2": 0.05779971108103704,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 10000,
+        "rep": "01",
+        "candidate_D": 121.9670756721827,
+        "detected": false,
+        "Q": 179.10321792665536,
+        "unscaled_L2": 0.18864185105822426,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 1000,
+        "rep": "01",
+        "candidate_D": 199.99999999999997,
+        "detected": false,
+        "Q": 197.93260002609415,
+        "unscaled_L2": 0.6354810330046318,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 100000,
+        "rep": "02",
+        "candidate_D": 113.65649530264027,
+        "detected": true,
+        "Q": 180.3607513349213,
+        "unscaled_L2": 0.059907495172817155,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 10000,
+        "rep": "02",
+        "candidate_D": 159.82556635868133,
+        "detected": false,
+        "Q": 132.31385356581652,
+        "unscaled_L2": 0.16300586836904324,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 1000,
+        "rep": "02",
+        "candidate_D": 144.62898817926808,
+        "detected": false,
+        "Q": 199.46236034471994,
+        "unscaled_L2": 0.6260341276205553,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      }
+    ],
+    "ANON_03": [
+      {
+        "B": 100000,
+        "rep": "00",
+        "candidate_D": 127.54362411466334,
+        "detected": true,
+        "Q": 154.56490588319403,
+        "unscaled_L2": 0.055567648939482746,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 10000,
+        "rep": "00",
+        "candidate_D": 199.99999999948014,
+        "detected": false,
+        "Q": 144.8653270003751,
+        "unscaled_L2": 0.16984744153125128,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 1000,
+        "rep": "00",
+        "candidate_D": 199.99999999999997,
+        "detected": false,
+        "Q": 155.95687908707654,
+        "unscaled_L2": 0.5575763698447513,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 100000,
+        "rep": "01",
+        "candidate_D": 124.3732183199461,
+        "detected": true,
+        "Q": 159.3304702280423,
+        "unscaled_L2": 0.05642467970693391,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 10000,
+        "rep": "01",
+        "candidate_D": 131.96739290782588,
+        "detected": false,
+        "Q": 163.41258089413788,
+        "unscaled_L2": 0.18052225531469146,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 1000,
+        "rep": "01",
+        "candidate_D": 145.10336976260413,
+        "detected": false,
+        "Q": 184.58527218766295,
+        "unscaled_L2": 0.6179743477632483,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 100000,
+        "rep": "02",
+        "candidate_D": 161.15614858890768,
+        "detected": true,
+        "Q": 154.7250218274732,
+        "unscaled_L2": 0.055618850855778064,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 10000,
+        "rep": "02",
+        "candidate_D": 196.5087054325776,
+        "detected": false,
+        "Q": 154.44181911557465,
+        "unscaled_L2": 0.1766097345070353,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 1000,
+        "rep": "02",
+        "candidate_D": 124.05981755197543,
+        "detected": false,
+        "Q": 161.22226870951178,
+        "unscaled_L2": 0.578300398557685,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      }
+    ],
+    "ANON_04": [
+      {
+        "B": 100000,
+        "rep": "00",
+        "candidate_D": 188.5059769148906,
+        "detected": true,
+        "Q": 170.86734109197937,
+        "unscaled_L2": 0.05854504885420269,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 10000,
+        "rep": "00",
+        "candidate_D": 187.65607827010606,
+        "detected": true,
+        "Q": 176.5149092436504,
+        "unscaled_L2": 0.18729307620193048,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 1000,
+        "rep": "00",
+        "candidate_D": 199.83924019817306,
+        "detected": true,
+        "Q": 169.2456796947871,
+        "unscaled_L2": 0.5938410172622085,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 100000,
+        "rep": "01",
+        "candidate_D": 165.8856811376765,
+        "detected": true,
+        "Q": 172.02880705857535,
+        "unscaled_L2": 0.05859597105076109,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 10000,
+        "rep": "01",
+        "candidate_D": 193.2347722667712,
+        "detected": true,
+        "Q": 137.7222469453672,
+        "unscaled_L2": 0.16579966992463335,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 1000,
+        "rep": "01",
+        "candidate_D": 191.54588279596794,
+        "detected": false,
+        "Q": 161.44492078490305,
+        "unscaled_L2": 0.5723190251436564,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 100000,
+        "rep": "02",
+        "candidate_D": 189.43976056157072,
+        "detected": true,
+        "Q": 139.30906008228496,
+        "unscaled_L2": 0.052798625065320466,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 10000,
+        "rep": "02",
+        "candidate_D": 169.54726585884944,
+        "detected": true,
+        "Q": 144.35397873107334,
+        "unscaled_L2": 0.1684005877666262,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      },
+      {
+        "B": 1000,
+        "rep": "02",
+        "candidate_D": 195.49443464537944,
+        "detected": false,
+        "Q": 169.705395628297,
+        "unscaled_L2": 0.5875919757550593,
+        "reportable_D": null,
+        "reason": "NOISY_SINGLE_EXPOSURE_CANDIDATE_NOT_QUALIFIED"
+      }
+    ]
+  }
+}

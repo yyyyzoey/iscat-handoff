@@ -1,0 +1,1021 @@
+{
+  "schema": "iscat146.v145_audit.1",
+  "fixed_source_commit": "434452d6bc1986f5f112b85923be979cbc341ac2",
+  "profiles": {
+    "n_point_files": 42,
+    "n_invariant_pass": 42,
+    "errors": [],
+    "points": [
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_01/D150p000000000000_2037d83549_r0.json",
+        "case": "ANON_01",
+        "D": 150.0,
+        "theta": [
+          150.0,
+          389.1616963878214,
+          126.20145684011383,
+          -107.05494143627205
+        ],
+        "R": 0.0014654272451786775,
+        "source_sha256": "5eeab18300b31d271c1508168886e28b9d70153ae8f5a0a9009cfab9afc789b9",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "33cf029a866d42de773c2664caf775e388ee1a065849ce55c51b9be7d49ebf4c",
+        "point_search_complete": false,
+        "calls": 1200,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_01/D30p000000000000_fc07c3b539_r0.json",
+        "case": "ANON_01",
+        "D": 30.0,
+        "theta": [
+          30.0,
+          404.44232072393964,
+          77.30752184727824,
+          -35.240500109730334
+        ],
+        "R": 5.089789326209534e-05,
+        "source_sha256": "1fb4cf003c14e6e5390fa4db6914a6bbdd6638d9a4e9798d59efa0a9158e9ca0",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "33cf029a866d42de773c2664caf775e388ee1a065849ce55c51b9be7d49ebf4c",
+        "point_search_complete": false,
+        "calls": 409,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_01/D59p099265694285_63fa74d507_r0.json",
+        "case": "ANON_01",
+        "D": 59.09926569428531,
+        "theta": [
+          59.09926569428531,
+          391.24456574651435,
+          77.02079114558917,
+          -34.958582384618644
+        ],
+        "R": 3.4743394343457686e-07,
+        "source_sha256": "b83e489a1fb9ebb9f24cf301de5eefdd5ca4db7ca864f12877fc1edfe388fc8d",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "33cf029a866d42de773c2664caf775e388ee1a065849ce55c51b9be7d49ebf4c",
+        "point_search_complete": false,
+        "calls": 551,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_02/D100p000000000000_287d0b4943_r0.json",
+        "case": "ANON_02",
+        "D": 100.0,
+        "theta": [
+          100.0,
+          438.33809246541097,
+          -91.00751129032945,
+          105.01006730817404
+        ],
+        "R": 0.0005153869580954214,
+        "source_sha256": "9a13ab0622548603c86de262fd9ce133b6a983d820bfd9c530909ff11b65583e",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "0ac6be36096f29aa77a399d0ca304f3a07f9503890461086116ece00064db9cd",
+        "point_search_complete": true,
+        "calls": 666,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_02/D101p241099196530_b5c1bbccc7_r0.json",
+        "case": "ANON_02",
+        "D": 101.24109919653004,
+        "theta": [
+          101.24109919653004,
+          432.42456664690394,
+          -91.00359520963173,
+          105.00637586417008
+        ],
+        "R": 2.2988544339449825e-06,
+        "source_sha256": "6381b7369bcde0570caaab431d47958fcf1e2f34c350d03edd24eb17f40bc0e5",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "0ac6be36096f29aa77a399d0ca304f3a07f9503890461086116ece00064db9cd",
+        "point_search_complete": true,
+        "calls": 398,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_02/D160p000000000000_c88e64a505_r0.json",
+        "case": "ANON_02",
+        "D": 160.0,
+        "theta": [
+          160.0,
+          401.5296580912126,
+          -90.67550672078328,
+          104.67057705304494
+        ],
+        "R": 0.001296772988816084,
+        "source_sha256": "694605503e3c64016aba770d664aa6ef824438ed52f778e1b007cace4c174c04",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "0ac6be36096f29aa77a399d0ca304f3a07f9503890461086116ece00064db9cd",
+        "point_search_complete": false,
+        "calls": 467,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_03/D120p000000000000_204139f4e0_r0.json",
+        "case": "ANON_03",
+        "D": 120.0,
+        "theta": [
+          120.0,
+          474.39412694111905,
+          35.16831874801053,
+          119.13309246175139
+        ],
+        "R": 0.004326065344435832,
+        "source_sha256": "6ad2357c621792efa6ec730a7249a9fc2905cf2584a78b6330a57256db65a5af",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba",
+        "point_search_complete": false,
+        "calls": 515,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_03/D130p000000000000_4765195dc1_r0.json",
+        "case": "ANON_03",
+        "D": 130.0,
+        "theta": [
+          130.0,
+          476.7506118265746,
+          35.10401260194719,
+          119.08551867604854
+        ],
+        "R": 0.002461596296032033,
+        "source_sha256": "c2d66b7ce9ab14a3327b8e9cf7f039f877159d0bc3e388c0c56cae100b0ff8b5",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba",
+        "point_search_complete": false,
+        "calls": 479,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_03/D140p000000000000_ca205c2aa3_r0.json",
+        "case": "ANON_03",
+        "D": 140.0,
+        "theta": [
+          140.0,
+          478.3421150546866,
+          35.023741443227145,
+          119.02564326077551
+        ],
+        "R": 0.0005985615623534698,
+        "source_sha256": "715cbb8268f29d8ecf4f1cf22e5a61cf76dd301c5ff727e47d962d08bad76c31",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba",
+        "point_search_complete": false,
+        "calls": 461,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_03/D143p264166079704_d43fb2959c_r0.json",
+        "case": "ANON_03",
+        "D": 143.26416607970438,
+        "theta": [
+          143.26416607970438,
+          478.74071371592936,
+          34.99468760926156,
+          119.00376913503044
+        ],
+        "R": 2.8438608264553357e-06,
+        "source_sha256": "fb8321ad98c3e62d6c23b444513010e8480fdde7e3dcd62ec25e12e27aca7fc7",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba",
+        "point_search_complete": false,
+        "calls": 442,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_03/D150p000000000000_7c0adc81ca_r0.json",
+        "case": "ANON_03",
+        "D": 150.0,
+        "theta": [
+          150.0,
+          479.4146462272442,
+          34.93163944430921,
+          118.95586308586564
+        ],
+        "R": 0.0012056826910565753,
+        "source_sha256": "7044b4f90d1fe60466fcf3800502733297a9f721125a5942b42ad4112c12bf21",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba",
+        "point_search_complete": false,
+        "calls": 473,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_03/D160p000000000000_e3e31242a9_r0.json",
+        "case": "ANON_03",
+        "D": 160.0,
+        "theta": [
+          160.0,
+          480.1132685432243,
+          34.83471929873305,
+          118.88096194860017
+        ],
+        "R": 0.0028849663246500405,
+        "source_sha256": "7e7792a7da59e43df12432332df55152043c72923e4863f621293e204eeeb2c8",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "b99beb431f1fe70750dcbbdc9f55af8418106b9a10c28dd2d41ed7fe3a0eb4ba",
+        "point_search_complete": false,
+        "calls": 477,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_04/D170p370854104605_2b0e7f7b37_r0.json",
+        "case": "ANON_04",
+        "D": 170.37085410460458,
+        "theta": [
+          170.37085410460458,
+          530.7961982733228,
+          -119.00145048800331,
+          -76.96137584970784
+        ],
+        "R": 0.0021161119115701427,
+        "source_sha256": "2056e3e5ad4a5f609f7305d46551afef049d6cdddf16d0c86d426cf8f449e1b6",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+        "point_search_complete": true,
+        "calls": 309,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_04/D175p370854104605_b7b901a446_r0.json",
+        "case": "ANON_04",
+        "D": 175.37085410460458,
+        "theta": [
+          175.37085410460458,
+          528.2910075678072,
+          -119.00827678218471,
+          -76.97404692301976
+        ],
+        "R": 0.0007927330452514773,
+        "source_sha256": "d30ac33ec614f30deb3fe0698c136acd195fe7bde88b6394687e3c541554fed8",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+        "point_search_complete": true,
+        "calls": 324,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_04/D177p870854104605_dbeda0e916_r0.json",
+        "case": "ANON_04",
+        "D": 177.87085410460458,
+        "theta": [
+          177.87085410460458,
+          527.3127925015677,
+          -119.01141268684346,
+          -76.97989957973996
+        ],
+        "R": 0.0003421627885358544,
+        "source_sha256": "dcf4381239cbb6e24123a8b76f7d0f273da78fa74f912d609afa94ea5a6b8007",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+        "point_search_complete": true,
+        "calls": 284,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_04/D180p370854104605_851606c37a_r0.json",
+        "case": "ANON_04",
+        "D": 180.37085410460458,
+        "theta": [
+          180.37085410460458,
+          526.4818247313361,
+          -119.01437203022122,
+          -76.98541922263884
+        ],
+        "R": 2.910145740176316e-05,
+        "source_sha256": "dce40a02514c552ce328ac022f0cd4e5f03b071bf76024e7ad6883c60cdc2c5e",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+        "point_search_complete": true,
+        "calls": 246,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_04/D182p870854104605_39fb23e8fd_r0.json",
+        "case": "ANON_04",
+        "D": 182.87085410460458,
+        "theta": [
+          182.87085410460458,
+          525.7796324358906,
+          -119.01714262672758,
+          -76.99056054581851
+        ],
+        "R": 0.00024407282289818402,
+        "source_sha256": "cdafb5545152996275853c26effc1302c18459cceeed87937a29a8cb0928f601",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+        "point_search_complete": true,
+        "calls": 252,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_04/D185p370854104605_89bf879eb8_r0.json",
+        "case": "ANON_04",
+        "D": 185.37085410460458,
+        "theta": [
+          185.37085410460458,
+          525.1928254563207,
+          -119.01970718832132,
+          -76.995271303087
+        ],
+        "R": 0.0003943367278805938,
+        "source_sha256": "318518d5f4b18f29f98eb16c8e1de00d10ed073b6a4720eaccd46fd8072d9f78",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+        "point_search_complete": true,
+        "calls": 248,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/ANON_04/D190p370854104605_ad06b93be5_r0.json",
+        "case": "ANON_04",
+        "D": 190.37085410460458,
+        "theta": [
+          190.37085410460458,
+          524.330317886839,
+          -119.02414102266526,
+          -77.00318569801746
+        ],
+        "R": 0.0004365345484362719,
+        "source_sha256": "1e53dbfc9643d9f43b61eef1d7845008f640cf4a3ddb271f6bf7631c54be0912",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "4b70617bd260e7500f8bd0bd5594f973a343b8caf713d65d19d74a74ec95d04e",
+        "point_search_complete": true,
+        "calls": 256,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M01/D150p000000000000_bdf597808c_r0.json",
+        "case": "M01",
+        "D": 150.0,
+        "theta": [
+          150.0,
+          387.3707960861661,
+          48.79729373985992,
+          -77.9253371556708
+        ],
+        "R": 0.0014997192161468008,
+        "source_sha256": "27a4417790e263a571965937ebb9fbc0671b8d82f62ac12972e45bb3937567da",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "ff2e3aeb62de7ff46242846e95e34e357e2a5813d781d8cbe6b63b789c95fded",
+        "point_search_complete": false,
+        "calls": 1200,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M01/D50p000000000000_902fba2cbf_r0.json",
+        "case": "M01",
+        "D": 50.0,
+        "theta": [
+          50.0,
+          359.7754009011921,
+          41.99195777589344,
+          -69.99100064650843
+        ],
+        "R": 2.6108436326494688e-05,
+        "source_sha256": "0e1af58cee46479c468fc5527f0287b1288a3112d9e2c89665b76de3972a2844",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "ff2e3aeb62de7ff46242846e95e34e357e2a5813d781d8cbe6b63b789c95fded",
+        "point_search_complete": true,
+        "calls": 217,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M01/D52p743060819786_ecd4119cd6_r0.json",
+        "case": "M01",
+        "D": 52.743060819785946,
+        "theta": [
+          52.743060819785946,
+          365.1381299291432,
+          41.996517104925935,
+          -69.99739634098131
+        ],
+        "R": 6.271343792718976e-07,
+        "source_sha256": "81a9fc8777766b3fd4bf370eea70859c14b8283b880f957ef1667a27e512e9d4",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "ff2e3aeb62de7ff46242846e95e34e357e2a5813d781d8cbe6b63b789c95fded",
+        "point_search_complete": true,
+        "calls": 229,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M02/D150p000000000000_0f3b97d297_r0.json",
+        "case": "M02",
+        "D": 150.0,
+        "theta": [
+          150.0,
+          394.8143487088225,
+          -111.60193969242138,
+          55.12205136446506
+        ],
+        "R": 0.0015083845848315226,
+        "source_sha256": "2804b5da6d48055b13ce74093f789b56c9828e93e2181a65678f3641179b15b0",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "8be84898ed8d6b1033a6d4b8e8bb178aee499aa504d3b6b354ff8f2017fdef98",
+        "point_search_complete": false,
+        "calls": 513,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M02/D80p000000000000_79fa217f15_r0.json",
+        "case": "M02",
+        "D": 80.0,
+        "theta": [
+          80.0,
+          416.98303208081956,
+          -112.00427230595427,
+          56.012996665180374
+        ],
+        "R": 1.1571857008187218e-05,
+        "source_sha256": "9859d6d5cc9df85c039bfbeee263a977ac3ea38568bd1a5921dd6e2dded45f1b",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "8be84898ed8d6b1033a6d4b8e8bb178aee499aa504d3b6b354ff8f2017fdef98",
+        "point_search_complete": false,
+        "calls": 450,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M02/D81p280762694255_389741700a_r0.json",
+        "case": "M02",
+        "D": 81.28076269425519,
+        "theta": [
+          81.28076269425519,
+          415.4695019963753,
+          -112.00170182909781,
+          56.00766134332343
+        ],
+        "R": 1.8197843073618564e-06,
+        "source_sha256": "2bf5536a5921123de670e53f62d7726f976845284b956acbc27aeea74aa201ae",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "8be84898ed8d6b1033a6d4b8e8bb178aee499aa504d3b6b354ff8f2017fdef98",
+        "point_search_complete": false,
+        "calls": 443,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M03/D119p225261436745_3523b22a11_r0.json",
+        "case": "M03",
+        "D": 119.22526143674465,
+        "theta": [
+          119.22526143674465,
+          446.8866775839069,
+          83.99430462082984,
+          98.00586079900215
+        ],
+        "R": 4.940025881393707e-06,
+        "source_sha256": "a457706619348e01ff7bb59f4233e03b454b30857551e0611f5addf4a00c3322",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "8f76cd7134062ae5b5e0f646a058bd7f29b2f9d71fa55e732839af4b8dc33772",
+        "point_search_complete": true,
+        "calls": 430,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M03/D200p000000000000_45e4ccd4d6_r0.json",
+        "case": "M03",
+        "D": 200.0,
+        "theta": [
+          200.0,
+          403.9726554626486,
+          83.64172709199482,
+          97.667958821648
+        ],
+        "R": 0.00157100685404726,
+        "source_sha256": "4ecff6fd958e28472dcfdd9c305ba73739192ceb31b11aa187fd1f41dc3f08da",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "8f76cd7134062ae5b5e0f646a058bd7f29b2f9d71fa55e732839af4b8dc33772",
+        "point_search_complete": false,
+        "calls": 472,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M04/D130p000000000000_f31719b3d4_r0.json",
+        "case": "M04",
+        "D": 130.0,
+        "theta": [
+          130.0,
+          466.31304181021954,
+          -70.14741531655326,
+          -112.09427048179255
+        ],
+        "R": 0.0040270293022998,
+        "source_sha256": "179735a361f645b8f062b47bff95b8cddab43e20a3704195908f4c5b8473c9f9",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "18e52d15d6ed13a0bf1a3801caa70dc8adbdac6a755169c5b9f95ab89c5e196a",
+        "point_search_complete": false,
+        "calls": 488,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M04/D140p000000000000_285242ef15_r0.json",
+        "case": "M04",
+        "D": 140.0,
+        "theta": [
+          140.0,
+          469.7345072212942,
+          -70.0796170667084,
+          -112.04628570725203
+        ],
+        "R": 0.0018846220483563732,
+        "source_sha256": "e4defcf390e513979cdb73adacaad111d822d532b9ce85388da5f580699f9e33",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "18e52d15d6ed13a0bf1a3801caa70dc8adbdac6a755169c5b9f95ab89c5e196a",
+        "point_search_complete": false,
+        "calls": 492,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M04/D149p258547631148_06b0a175be_r0.json",
+        "case": "M04",
+        "D": 149.2585476311477,
+        "theta": [
+          149.2585476311477,
+          471.8610360486137,
+          -70.00721587112636,
+          -111.99492015699569
+        ],
+        "R": 5.517308464309678e-06,
+        "source_sha256": "0245cbd997e46eb3f6f3f047b959fe6793623508ce8df58d5a435c506b496c9d",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "18e52d15d6ed13a0bf1a3801caa70dc8adbdac6a755169c5b9f95ab89c5e196a",
+        "point_search_complete": false,
+        "calls": 438,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M04/D150p000000000000_00ead2f5a5_r0.json",
+        "case": "M04",
+        "D": 150.0,
+        "theta": [
+          150.0,
+          471.99947656239624,
+          -70.00114135401915,
+          -111.99060137534231
+        ],
+        "R": 0.00014598765790738605,
+        "source_sha256": "06bcb5d3ee18250b4163a56b455af6569638a9fbb220aa48e57debcf0fe6a315",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "18e52d15d6ed13a0bf1a3801caa70dc8adbdac6a755169c5b9f95ab89c5e196a",
+        "point_search_complete": false,
+        "calls": 449,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M04/D160p000000000000_3d7154b65b_r0.json",
+        "case": "M04",
+        "D": 160.0,
+        "theta": [
+          160.0,
+          473.50551524678735,
+          -69.91758980623409,
+          -111.93102338938691
+        ],
+        "R": 0.0020226636771522666,
+        "source_sha256": "6307920b3b7951309ff13ed68953207c658cfc99fa25119260ac4e0bf3950b63",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "18e52d15d6ed13a0bf1a3801caa70dc8adbdac6a755169c5b9f95ab89c5e196a",
+        "point_search_complete": false,
+        "calls": 467,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M04/D170p000000000000_050c12add8_r0.json",
+        "case": "M04",
+        "D": 170.0,
+        "theta": [
+          170.0,
+          474.4630025168039,
+          -69.8364396710105,
+          -111.87283273605814
+        ],
+        "R": 0.003692641425047079,
+        "source_sha256": "6ff7924bbd204abbec199fd07cc05098a4d06c85de903370e54e55429b53caf6",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "18e52d15d6ed13a0bf1a3801caa70dc8adbdac6a755169c5b9f95ab89c5e196a",
+        "point_search_complete": false,
+        "calls": 468,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M05/D160p000000000000_7ea33e3a0d_r0.json",
+        "case": "M05",
+        "D": 160.0,
+        "theta": [
+          160.0,
+          511.906001740213,
+          125.96968981247169,
+          -41.929979022774795
+        ],
+        "R": 0.001512029239795439,
+        "source_sha256": "6646e307a5bc7c1637843e3b2a247f4f1326f3102c5ac48b0575f98e6a70673a",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "67e78663ea15a8707c039d06a66619042cc609057d896114410f0dfc4095e086",
+        "point_search_complete": true,
+        "calls": 249,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M05/D172p368154154532_9e85ab4263_r0.json",
+        "case": "M05",
+        "D": 172.36815415453196,
+        "theta": [
+          172.36815415453196,
+          509.312647448332,
+          125.9857515894615,
+          -41.986741258361924
+        ],
+        "R": 1.5487991631941165e-05,
+        "source_sha256": "ea92d2e57d5b5350ea35dbe36c950860a3023228c2166a353db6e590f2993a84",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "67e78663ea15a8707c039d06a66619042cc609057d896114410f0dfc4095e086",
+        "point_search_complete": true,
+        "calls": 215,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M05/D200p000000000000_c41288738c_r0.json",
+        "case": "M05",
+        "D": 200.0,
+        "theta": [
+          200.0,
+          506.8540868834304,
+          125.99984631060919,
+          -42.05629471402874
+        ],
+        "R": 0.0003871878632378118,
+        "source_sha256": "814ad4800f91c65cebf32c83893404ef62099c449ad5522975b43c77d42a8284",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "67e78663ea15a8707c039d06a66619042cc609057d896114410f0dfc4095e086",
+        "point_search_complete": true,
+        "calls": 234,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M06/D174p346739321327_3002efbee8_r0.json",
+        "case": "M06",
+        "D": 174.34673932132725,
+        "theta": [
+          174.34673932132725,
+          541.0643573914421,
+          -97.9768870207406,
+          69.94923996587724
+        ],
+        "R": 0.00832814610748344,
+        "source_sha256": "5cdee2f5bf1b855654bb0a7d3256e73690fbfcae4d522c00529fb7e8d45ac2f8",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "5be586e4c62a40d7e27850f2a79f062c22f3787287f51f9059c9d262b415668a",
+        "point_search_complete": true,
+        "calls": 330,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M06/D179p346739321327_dfdc98b2bc_r0.json",
+        "case": "M06",
+        "D": 179.34673932132725,
+        "theta": [
+          179.34673932132725,
+          541.2076857815133,
+          -97.99549796249465,
+          69.98278829244457
+        ],
+        "R": 0.0036508531220206222,
+        "source_sha256": "469aaef9cc02eb83d93b4533f751c620a61076d3e403d656b5f7944aa604d1d6",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "5be586e4c62a40d7e27850f2a79f062c22f3787287f51f9059c9d262b415668a",
+        "point_search_complete": true,
+        "calls": 565,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M06/D181p846739321327_7e345e5acb_r0.json",
+        "case": "M06",
+        "D": 181.84673932132725,
+        "theta": [
+          181.84673932132725,
+          541.3462116673835,
+          -98.00386040937737,
+          69.99790350760762
+        ],
+        "R": 0.001690922670358875,
+        "source_sha256": "fd923ff043398311989980508db821eca4af3340cc696b15a0885f01127c3792",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "5be586e4c62a40d7e27850f2a79f062c22f3787287f51f9059c9d262b415668a",
+        "point_search_complete": true,
+        "calls": 520,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M06/D184p346739321327_08d12a38c3_r0.json",
+        "case": "M06",
+        "D": 184.34673932132725,
+        "theta": [
+          184.34673932132725,
+          541.5710341991739,
+          -98.01148551373558,
+          70.01176993274885
+        ],
+        "R": 4.239303359110502e-05,
+        "source_sha256": "4b2cea91fe764fd459a0788d530378493f93e718f77f84de7ca75312e8d5cc62",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "5be586e4c62a40d7e27850f2a79f062c22f3787287f51f9059c9d262b415668a",
+        "point_search_complete": true,
+        "calls": 270,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M06/D189p346739321327_c288d3fb7c_r0.json",
+        "case": "M06",
+        "D": 189.34673932132725,
+        "theta": [
+          189.34673932132725,
+          542.3953219429919,
+          -98.02408201758047,
+          70.0350869572574
+        ],
+        "R": 0.002529153903642635,
+        "source_sha256": "e1a3aa2367db531e95e5d4fb09fceb6d83f3acdcf2c4173a0576f638fc3d0284",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "5be586e4c62a40d7e27850f2a79f062c22f3787287f51f9059c9d262b415668a",
+        "point_search_complete": true,
+        "calls": 633,
+        "invariants_passed": true
+      },
+      {
+        "path": "C:/Users/PC/Documents/Codex/2026-10-22/https-github-com-yyyyzoey-iscat-handoff/work/repo/results/v145/validation/fixed_D_profiles/M06/D194p346739321327_5126a3eeac_r0.json",
+        "case": "M06",
+        "D": 194.34673932132725,
+        "theta": [
+          194.34673932132725,
+          536.2361757438706,
+          -98.02285668652898,
+          70.02711317171264
+        ],
+        "R": 0.0037094490117806104,
+        "source_sha256": "08fe51fa1bb8f3163c9419a496677e4e9fbc9cfaa59915b6d6aaf7c51c5b8cfb",
+        "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+        "observation_sha256": "5be586e4c62a40d7e27850f2a79f062c22f3787287f51f9059c9d262b415668a",
+        "point_search_complete": true,
+        "calls": 604,
+        "invariants_passed": true
+      }
+    ],
+    "independent_residual_replay": "NOT_DONE_BY_THIS_AUDIT",
+    "global_D_coverage": "UNKNOWN_BETWEEN_SAMPLED_POINTS"
+  },
+  "estimator_only_candidates": {
+    "ANON_01": 59.09926569428531,
+    "ANON_02": 101.24109919653004,
+    "ANON_03": 143.26416607970438,
+    "ANON_04": 180.37085410460458,
+    "M01": 52.743060819785946,
+    "M02": 81.28076269425519,
+    "M03": 119.22526143674465,
+    "M04": 149.2585476311477,
+    "M05": 172.36815415453196,
+    "M06": 184.34673932132725
+  },
+  "observed_error_margin_diagnostics": {
+    "ANON_01": {
+      "candidate_D": 59.09926569428531,
+      "best_observed_L2": 3.4743394343457686e-07,
+      "diameter_half_tolerance_nm": 5.9099265694285315,
+      "lowest_observed_outside_tolerance": {
+        "D": 30.0,
+        "theta": [
+          30.0,
+          404.44232072393964,
+          77.30752184727824,
+          -35.240500109730334
+        ],
+        "loss_L2": 5.089789326209534e-05
+      },
+      "epsilon_at_which_this_competitor_enters": 5.055045931866076e-05,
+      "unknown_regions_remain": true,
+      "certifies_unique_D": false,
+      "scope": "EMPIRICAL_WITNESS_SENSITIVITY_NOT_95PCT_CI"
+    },
+    "ANON_02": {
+      "candidate_D": 101.24109919653004,
+      "best_observed_L2": 2.2988544339449825e-06,
+      "diameter_half_tolerance_nm": 10.124109919653005,
+      "lowest_observed_outside_tolerance": {
+        "D": 160.0,
+        "theta": [
+          160.0,
+          401.5296580912126,
+          -90.67550672078328,
+          104.67057705304494
+        ],
+        "loss_L2": 0.001296772988816084
+      },
+      "epsilon_at_which_this_competitor_enters": 0.001294474134382139,
+      "unknown_regions_remain": true,
+      "certifies_unique_D": false,
+      "scope": "EMPIRICAL_WITNESS_SENSITIVITY_NOT_95PCT_CI"
+    },
+    "ANON_03": {
+      "candidate_D": 143.26416607970438,
+      "best_observed_L2": 2.8438608264553357e-06,
+      "diameter_half_tolerance_nm": 14.326416607970438,
+      "lowest_observed_outside_tolerance": {
+        "D": 160.0,
+        "theta": [
+          160.0,
+          480.1132685432243,
+          34.83471929873305,
+          118.88096194860017
+        ],
+        "loss_L2": 0.0028849663246500405
+      },
+      "epsilon_at_which_this_competitor_enters": 0.002882122463823585,
+      "unknown_regions_remain": true,
+      "certifies_unique_D": false,
+      "scope": "EMPIRICAL_WITNESS_SENSITIVITY_NOT_95PCT_CI"
+    },
+    "ANON_04": {
+      "candidate_D": 180.37085410460458,
+      "best_observed_L2": 2.910145740176316e-05,
+      "diameter_half_tolerance_nm": 18.03708541046046,
+      "lowest_observed_outside_tolerance": null,
+      "epsilon_at_which_this_competitor_enters": null,
+      "unknown_regions_remain": true,
+      "certifies_unique_D": false,
+      "scope": "EMPIRICAL_WITNESS_SENSITIVITY_NOT_95PCT_CI"
+    },
+    "M01": {
+      "candidate_D": 52.743060819785946,
+      "best_observed_L2": 6.271343792718976e-07,
+      "diameter_half_tolerance_nm": 5.274306081978595,
+      "lowest_observed_outside_tolerance": {
+        "D": 150.0,
+        "theta": [
+          150.0,
+          387.3707960861661,
+          48.79729373985992,
+          -77.9253371556708
+        ],
+        "loss_L2": 0.0014997192161468008
+      },
+      "epsilon_at_which_this_competitor_enters": 0.001499092081767529,
+      "unknown_regions_remain": true,
+      "certifies_unique_D": false,
+      "scope": "EMPIRICAL_WITNESS_SENSITIVITY_NOT_95PCT_CI"
+    },
+    "M02": {
+      "candidate_D": 81.28076269425519,
+      "best_observed_L2": 1.8197843073618564e-06,
+      "diameter_half_tolerance_nm": 8.128076269425518,
+      "lowest_observed_outside_tolerance": {
+        "D": 150.0,
+        "theta": [
+          150.0,
+          394.8143487088225,
+          -111.60193969242138,
+          55.12205136446506
+        ],
+        "loss_L2": 0.0015083845848315226
+      },
+      "epsilon_at_which_this_competitor_enters": 0.0015065648005241608,
+      "unknown_regions_remain": true,
+      "certifies_unique_D": false,
+      "scope": "EMPIRICAL_WITNESS_SENSITIVITY_NOT_95PCT_CI"
+    },
+    "M03": {
+      "candidate_D": 119.22526143674465,
+      "best_observed_L2": 4.940025881393707e-06,
+      "diameter_half_tolerance_nm": 11.922526143674466,
+      "lowest_observed_outside_tolerance": {
+        "D": 200.0,
+        "theta": [
+          200.0,
+          403.9726554626486,
+          83.64172709199482,
+          97.667958821648
+        ],
+        "loss_L2": 0.00157100685404726
+      },
+      "epsilon_at_which_this_competitor_enters": 0.0015660668281658663,
+      "unknown_regions_remain": true,
+      "certifies_unique_D": false,
+      "scope": "EMPIRICAL_WITNESS_SENSITIVITY_NOT_95PCT_CI"
+    },
+    "M04": {
+      "candidate_D": 149.2585476311477,
+      "best_observed_L2": 5.517308464309678e-06,
+      "diameter_half_tolerance_nm": 14.92585476311477,
+      "lowest_observed_outside_tolerance": {
+        "D": 170.0,
+        "theta": [
+          170.0,
+          474.4630025168039,
+          -69.8364396710105,
+          -111.87283273605814
+        ],
+        "loss_L2": 0.003692641425047079
+      },
+      "epsilon_at_which_this_competitor_enters": 0.0036871241165827694,
+      "unknown_regions_remain": true,
+      "certifies_unique_D": false,
+      "scope": "EMPIRICAL_WITNESS_SENSITIVITY_NOT_95PCT_CI"
+    },
+    "M05": {
+      "candidate_D": 172.36815415453196,
+      "best_observed_L2": 1.5487991631941165e-05,
+      "diameter_half_tolerance_nm": 17.236815415453197,
+      "lowest_observed_outside_tolerance": {
+        "D": 200.0,
+        "theta": [
+          200.0,
+          506.8540868834304,
+          125.99984631060919,
+          -42.05629471402874
+        ],
+        "loss_L2": 0.0003871878632378118
+      },
+      "epsilon_at_which_this_competitor_enters": 0.0003716998716058706,
+      "unknown_regions_remain": true,
+      "certifies_unique_D": false,
+      "scope": "EMPIRICAL_WITNESS_SENSITIVITY_NOT_95PCT_CI"
+    },
+    "M06": {
+      "candidate_D": 184.34673932132725,
+      "best_observed_L2": 4.239303359110502e-05,
+      "diameter_half_tolerance_nm": 18.434673932132725,
+      "lowest_observed_outside_tolerance": null,
+      "epsilon_at_which_this_competitor_enters": null,
+      "unknown_regions_remain": true,
+      "certifies_unique_D": false,
+      "scope": "EMPIRICAL_WITNESS_SENSITIVITY_NOT_95PCT_CI"
+    }
+  },
+  "pilot_history": {
+    "recorded_BEM_attempts": 3,
+    "recorded_successful_BEM": 3,
+    "recorded_render_attempts": 3,
+    "no_new_physics_performed": true,
+    "old_budget_violation_preserved": true,
+    "ledger_sha256": "a4497ac59dbe5b2f2f374d5af339416050d0ede1bed152fe87982a6dac447152"
+  },
+  "unknown_D_field_misleading_cases": [
+    "ANON_01",
+    "ANON_02",
+    "ANON_03",
+    "ANON_04",
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06"
+  ],
+  "norm_vs_information_correction": {
+    "ANON_01": {
+      "published_norm_ratio": 0.07150946049282654,
+      "squared_ratio_under_iid_equal_variance": 0.0051136029399751195,
+      "not_real_camera_Fisher_information": true
+    },
+    "ANON_02": {
+      "published_norm_ratio": 0.12620385053161293,
+      "squared_ratio_under_iid_equal_variance": 0.015927411889005698,
+      "not_real_camera_Fisher_information": true
+    },
+    "ANON_03": {
+      "published_norm_ratio": 0.3727254559300173,
+      "squared_ratio_under_iid_equal_variance": 0.13892426549823927,
+      "not_real_camera_Fisher_information": true
+    },
+    "ANON_04": {
+      "published_norm_ratio": 0.14899914491466296,
+      "squared_ratio_under_iid_equal_variance": 0.02220074518530073,
+      "not_real_camera_Fisher_information": true
+    },
+    "M04": {
+      "published_norm_ratio": 0.2624410106536803,
+      "squared_ratio_under_iid_equal_variance": 0.06887528407292515,
+      "not_real_camera_Fisher_information": true
+    },
+    "M06": {
+      "published_norm_ratio": 0.9885214476745612,
+      "squared_ratio_under_iid_equal_variance": 0.9771746525126102,
+      "not_real_camera_Fisher_information": true
+    }
+  },
+  "old_summary_generator_stale_claim_requires_repair": true,
+  "input_sources_sha256": {
+    "training_library": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "N_observations": "524baf145701ba67c6f96a4ab912fa06774d6f85020184f2dad79348e3098875",
+    "N_candidates": "4d2ebc975850803804e8fb5078ad13199448f6e89577d0c4433d26f7067c47d9",
+    "M_observations": "c1c184beb35fe710fc5da224e9d26e407df83c1ca94f3fdffd3dedb47570f34b",
+    "camera_h5": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+    "v145_summary": "09d2e778677d4ddb3a6fee84042a984002a2a0e08935e25f2628a05f37edbc19",
+    "v145_information": "453f68f9e565ca6e490b8a4e886230422b0ab6196e587dc37ef162ded085b413",
+    "v145_report": "61b784b20d55edbdf52127a373d1fe6cc88e9728b8a32a899d346d8be97254b6",
+    "pilot_ledger": "a4497ac59dbe5b2f2f374d5af339416050d0ede1bed152fe87982a6dac447152",
+    "dev_forward_comparison": "fd750a6d13a250f0be5f380badf2df05116e02878a7710cb3a780b158fb5d107"
+  },
+  "science_verdict": "PARTIAL; SOFTWARE_INVARIANTS_AND_PUBLISHED_RECORDS_ONLY"
+}

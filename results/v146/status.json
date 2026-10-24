@@ -1,0 +1,61 @@
+{
+  "task": "V146_NOISE_AWARE_SINGLE_PARTICLE_CALIBRATION_WITH_FROZEN_F2C",
+  "git_commit_at_pack": "434452d6bc1986f5f112b85923be979cbc341ac2",
+  "stage_states": {
+    "SOURCE_IDENTITY": "N solves lineage-linked (V143, 4/4) and shipped; M mapping from V138 bitwise identity",
+    "NUMERIC_REPLAY": "42 fixed-D witnesses replayed under frozen F2c; calibration margins computed per case",
+    "DIRECT_PHYSICS_F2C": "noiseless N forward 4/4 <=1% (inherited, unchanged); noisy re-fit is the new evidence",
+    "CONDITIONAL_SIZING": "candidate_accuracy vs engineering goal under noise: B=1000 4/12, B=10000 4/12, B=100000 3/12 (see validator rows); NOT a coverage/CI statement",
+    "NOISE_DEGRADATION": {
+      "B1000": {
+        "detected": "1/12",
+        "MAE_nm": 56.33,
+        "max_nm": 141.0
+      },
+      "B10000": {
+        "detected": "3/12",
+        "MAE_nm": 42.26,
+        "max_nm": 141.0
+      },
+      "B100000": {
+        "detected": "9/12",
+        "MAE_nm": 25.28,
+        "max_nm": 84.27
+      },
+      "note": "noiseless blind MAE 0.308nm collapses under simulated shot+read+reference noise; boundary attraction D=200 observed; small-particle cases fail detection"
+    },
+    "CAMERA_FPR": "0/60 all B (conditional pilot, replayed); B=100000 full-well unverified",
+    "CAMERA_DIAMETER_REPORTABILITY": "NOT_QUALIFIED (noise degradation + model error uncalibrated + profiles coarse)",
+    "EXPERIMENTAL_ABSOLUTE": "NOT_VALIDATED"
+  },
+  "reportability": {
+    "all_reportable_D_null": true,
+    "blockers": [
+      "model error scale uncalibrated",
+      "noisy candidates degrade 25-56nm MAE",
+      "profiles coarse/incomplete",
+      "detection fails weak signals",
+      "real camera/full-well unverified"
+    ]
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "forward": {
+      "reserved": 126943,
+      "known_actual": 28238,
+      "limit": 160000,
+      "unknown_actual_events": 0
+    },
+    "bem": 0,
+    "render": 0,
+    "new_camera_exposures": 0,
+    "historical_preserved": {
+      "v137_camera": "23958/6000",
+      "v142_f2c": 48874,
+      "v143_forward": 49390,
+      "v143_camera": 912,
+      "v145_unauthorized_bem": 3
+    }
+  },
+  "measurement_information_conclusion": "The binding constraint is NOISE + model-error calibration, not the spatial kernel: noiseless images give 0.3nm-class candidates, but single static exposures at 1e3-1e5 e-/px give 25-56nm MAE with detection failures for small D. Next information increments: longer exposure/multiple frames, second focal plane (properly keyed), and a source-qualified model-error scale."
+}
