@@ -1,0 +1,26 @@
+{
+  "schema": "iscat147.budget_final.1",
+  "total_rows": 135,
+  "states": {
+    "('FORWARD', 'RESERVED')": 2,
+    "('FORWARD', 'COMPLETED')": 133
+  },
+  "forward_reserved": 118636,
+  "forward_actual_known": 66699,
+  "limit": 120000,
+  "remaining": 1364,
+  "w1": {
+    "ops": 1,
+    "note": "36 Q-replays executed in first run; finalization failed on corrupt string payload; replays real and counted in reservation; summary lost in second-run crash"
+  },
+  "w2": {
+    "ops": 120,
+    "completed_fits_estimated": "most of ~105 precharged fits ran; per-fit results (theta,Q) LOST: crash before summary write; no per-fit checkpoints (R04 failure mode)",
+    "lost": "unquantified in detail; ledger proves consumption"
+  },
+  "w3": {
+    "ops": 14,
+    "status": "BLOCKED_BUDGET_EXHAUSTED before any joint fit (118636+2000>120000)"
+  },
+  "lesson": "per-fit checkpointing was skipped - exactly the failure mode review R04 warned against; recorded as self-inflicted loss"
+}

@@ -1,0 +1,7 @@
+{"op": "W1_REPLAY", "issue": "UNFINALIZABLE_PAYLOAD", "detail": "'str' object does not support item assignment", "actual_forwards": 36}
+{"op": "W1_REPLAY", "issue": "UNFINALIZABLE_PAYLOAD", "detail": "'str' object does not support item assignment", "actual_forwards": 36}
+{"op": "W1_REPLAY", "issue": "UNFINALIZABLE_PAYLOAD"}
+{"op": "W1_REPLAY", "issue": "UNFINALIZABLE_PAYLOAD", "detail": "'str' object does not support item assignment", "actual_forwards": 36}
+{"op": "W1_REPLAY", "issue": "UNFINALIZABLE_PAYLOAD"}
+{"op": "W1_REPLAY", "issue": "UNFINALIZABLE_PAYLOAD", "detail": "'str' object does not support item assignment", "actual_forwards": 36}
+{"op": "W1_REPLAY", "issue": "UNFINALIZABLE_PAYLOAD"}

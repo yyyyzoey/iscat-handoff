@@ -1,0 +1,63 @@
+{
+  "schema": "iscat147.contract.1",
+  "task_id": "V147_NOISE_ERROR_ATTRIBUTION_AND_DETECTABLE_SIZING",
+  "fixed_git_commit": "de4c5ef019c4b4cf3bb793a7a72539fed4898233",
+  "repository": "yyyyzoey/iscat-handoff",
+  "inherited_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "observables": "STATIC_SIGNED_CONTRAST_13x13",
+  "inputs": {
+    "v146_camera_scores": "results/v146/validator_only/camera_scores.json",
+    "v146_camera_fits": "results/v146/camera_fits/summary.json",
+    "v146_saved_pairs": "results/v143/validation/camera_pilot/conditional_camera_arrays.h5",
+    "v143_frozen_thresholds": "results/v143/validation/camera_pilot",
+    "v146_calibration": "results/v146/calibration/conditional_calibration.csv",
+    "v145_fixed_witnesses": "results/v145/validation/fixed_D_profiles",
+    "v145_violation": "results/v145/logs/v145_budget_violation.json",
+    "v146_events": "results/v146/camera_fits/events",
+    "v146_public_bank": "results/v146/camera_fits/bank",
+    "v146_ledger": "results/v146/logs/budget.sqlite"
+  },
+  "frozen_conditions": {
+    "laser_nm": 520,
+    "pure_water_C": 26,
+    "nominal_objective_M": 50,
+    "camera_pixel_um": 14,
+    "assumed_NA": 0.8,
+    "assumed_particle_n_real": 1.38,
+    "assumed_water_n": 1.3353,
+    "pixel_object_nm": 280,
+    "q": 5
+  },
+  "gates": {
+    "require_36_saved_events": true,
+    "max_1s_FPR_cp_upper": 0.05,
+    "absolute_size_error_goal_external_only": "max(5nm,0.1Dtrue)",
+    "reportable_D_fail_closed": true,
+    "confidence_intervals_not_claimed": true,
+    "blindness": "validator_only_labels_after_fits",
+    "no_per_particle_oracle_theta_initialization": true,
+    "do_not_retrain_F2c": true
+  },
+  "budget_new_v147": {
+    "BEM": 0,
+    "RENDER": 0,
+    "CAMERA": 0,
+    "FORWARD": 120000,
+    "wall_hours_including_finalization": 12,
+    "finalization_minutes": 30
+  },
+  "research_priorities": [
+    "A_same_event_replay_and_census",
+    "B_search_vs_noise_oracle_decomposition_development_only",
+    "C_detection_gate_analysis_and_near_boundary_rejection",
+    "D_frozen_predefined_covariance_and_likelihood_comparison_no_truth_tuning",
+    "E_multiframe_same_particle_fixed_saved_counts_joint_D_exploratory_no_new_camera",
+    "F_experimental_static_signed_input_and_final_archive"
+  ],
+  "historical_violations_must_preserve": {
+    "v137_camera": "23958/6000",
+    "v145_unauthorized_BEM": 3,
+    "v145_unauthorized_render": 3
+  },
+  "scope": "OLD_N_ALREADY_OPENED_DEVELOPMENT_NOT_BLIND; NO_MAGNETIC_CORE_ABSOLUTE"
+}

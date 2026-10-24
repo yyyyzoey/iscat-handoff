@@ -1,0 +1,35 @@
+{
+  "task": "V147_NOISE_ERROR_ATTRIBUTION_AND_DETECTABLE_SIZING",
+  "git_commit_at_pack": "de4c5ef019c4b4cf3bb793a7a72539fed4898233",
+  "stage_states": {
+    "W0_AUDIT": "COMPLETED: V146 published arithmetic reproduced (dual denominators 56.33/42.26/25.28 all_targets; 18.84/10.11/22.64 detected_only)",
+    "W1_Q_REPLAY": "EXECUTED 36 replays; summary LOST in second-run crash; ledger finalization UNFINALIZABLE (string payload from first-run crash) - reservation stands as evidence",
+    "W2_THREE_ESTIMATORS": "EXECUTED ~120 precharged fits across E1/E2/E3 x 36 images; RESULTS LOST: crash before summary write, NO per-fit checkpoints (self-inflicted R04 failure mode); ledger proves consumption",
+    "W3_JOINT_FRAMES": "BLOCKED_BUDGET_EXHAUSTED (118,636+2,000>120,000) before any joint fit",
+    "W4_DETECTION": "THRESHOLDS UNCHANGED (V143 frozen); census deferred - no new samples",
+    "W5_INTERFACE": "V145 adapter regression stands (FFT/abs(C) rejection demonstrated); no new fixture this round",
+    "EXPERIMENTAL_ABSOLUTE": "NOT_VALIDATED"
+  },
+  "reportability": {
+    "all_reportable_D_null": true,
+    "note": "V146 published noisy-fit candidates (25-56nm MAE) remain the standing noise-degradation evidence; V147 re-analysis lost to self-inflicted crash"
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "reserved": 118636,
+    "limit": 120000,
+    "remaining": 1364,
+    "actual_known": 66699,
+    "self_inflicted_losses": [
+      "W1 summary lost (crash)",
+      "W2 theta/Q results lost (no per-fit checkpoints)",
+      "W3 blocked"
+    ],
+    "historical_preserved": {
+      "v137_camera": "23958/6000",
+      "v145_unauthorized_BEM": 3,
+      "v145_unauthorized_render": 3
+    }
+  },
+  "lessons": "per-fit checkpointing is MANDATORY before any long fit batch; ledger payload must be dict not string"
+}

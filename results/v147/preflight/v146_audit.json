@@ -1,0 +1,60 @@
+{
+  "status": "PUBLISHED_ARITHMETIC_REPRODUCED_NOT_PHYSICS_CERTIFIED",
+  "errors": [],
+  "n_events": 36,
+  "groups": [
+    {
+      "B": 1000,
+      "scope": "all_targets",
+      "n": 12,
+      "finite": 12,
+      "MAE_nm": 56.33184857405798,
+      "within_goal": 4
+    },
+    {
+      "B": 1000,
+      "scope": "detected_only",
+      "n": 1,
+      "finite": 1,
+      "MAE_nm": 18.83924019817306,
+      "within_goal": 0
+    },
+    {
+      "B": 10000,
+      "scope": "all_targets",
+      "n": 12,
+      "finite": 12,
+      "MAE_nm": 42.258043564286915,
+      "within_goal": 4
+    },
+    {
+      "B": 10000,
+      "scope": "detected_only",
+      "n": 3,
+      "finite": 3,
+      "MAE_nm": 10.11452822600927,
+      "within_goal": 3
+    },
+    {
+      "B": 100000,
+      "scope": "all_targets",
+      "n": 12,
+      "finite": 12,
+      "MAE_nm": 25.284227366275534,
+      "within_goal": 3
+    },
+    {
+      "B": 100000,
+      "scope": "detected_only",
+      "n": 9,
+      "finite": 9,
+      "MAE_nm": 22.63514139459341,
+      "within_goal": 3
+    }
+  ],
+  "sources": {
+    "status": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v146\\status.json",
+    "validator": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v146\\validator_only\\camera_scores.json"
+  },
+  "new_physics_or_camera_generated": false
+}
