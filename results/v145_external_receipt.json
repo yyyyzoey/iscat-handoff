@@ -1,7 +1,7 @@
 {
-  "mechanical": "FAIL",
-  "errors": [
-    "FileNotFoundError(2, 'No such file or directory')"
-  ],
-  "external_maxwell_verdict": "NOT_CERTIFIED_BY_ZIP"
+  "mechanical": "PASS",
+  "errors": [],
+  "claimed_science_gates": {},
+  "external_maxwell_verdict": "NOT_CERTIFIED_BY_ZIP",
+  "real_experimental_absolute_magnetic_core_diameter": "NOT_VALIDATED"
 }
