@@ -1,0 +1,12 @@
+{
+  "task": "V156_NOISE_AWARE_SINGLE_PARTICLE_CALIBRATION_WITH_FROZEN_F2C_EXECUTION",
+  "stage_states": {
+    "B_RESCORE": "72/72 thetas re-scored with correct GLS (no 2x)",
+    "C_JACOBIAN": "12/12 groups completed at real candidate thetas",
+    "TRUTH_ISOLATION": "candidate_D from estimator CSV; truth never read by estimator"
+  },
+  "reportability": {
+    "all_reportable_D_null": true
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+}

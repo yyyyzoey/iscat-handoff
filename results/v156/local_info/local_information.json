@@ -1,0 +1,158 @@
+{
+ "B1000_ANON_01": {
+  "candidate_D": 199.99999999999997,
+  "condition_number": [
+   1.0069868953665684,
+   1.0005906745719282,
+   0.9923687291121647
+  ],
+  "remaining_D_norm_fraction": 0.24828485810531298,
+  "diagnostic_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+  "derivative_stable": true,
+  "directional_check_pass": true,
+  "source": "REAL_CANDIDATE_NOT_DEFAULT"
+ },
+ "B1000_ANON_02": {
+  "candidate_D": 199.99999999999997,
+  "condition_number": [
+   1.0017361288630118,
+   0.9996598932811794,
+   0.9986014349557126
+  ],
+  "remaining_D_norm_fraction": 0.2080102823605142,
+  "diagnostic_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+  "derivative_stable": true,
+  "directional_check_pass": true,
+  "source": "REAL_CANDIDATE_NOT_DEFAULT"
+ },
+ "B1000_ANON_03": {
+  "candidate_D": 174.97271601448753,
+  "condition_number": [
+   1.0050071139085888,
+   1.0005399316438301,
+   0.994424731278988
+  ],
+  "remaining_D_norm_fraction": 0.5562402449042471,
+  "diagnostic_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+  "derivative_stable": true,
+  "directional_check_pass": true,
+  "source": "REAL_CANDIDATE_NOT_DEFAULT"
+ },
+ "B1000_ANON_04": {
+  "candidate_D": 199.6525413874351,
+  "condition_number": [
+   1.0084186461415332,
+   0.9998402911405125,
+   0.9916709264297975
+  ],
+  "remaining_D_norm_fraction": 0.9904720496805504,
+  "diagnostic_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+  "derivative_stable": true,
+  "directional_check_pass": true,
+  "source": "REAL_CANDIDATE_NOT_DEFAULT"
+ },
+ "B10000_ANON_01": {
+  "candidate_D": 198.07540719844783,
+  "condition_number": [
+   1.0185089174350943,
+   1.0010910003730795,
+   0.9800287720660144
+  ],
+  "remaining_D_norm_fraction": 0.07431055607423975,
+  "diagnostic_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+  "derivative_stable": true,
+  "directional_check_pass": true,
+  "source": "REAL_CANDIDATE_NOT_DEFAULT"
+ },
+ "B10000_ANON_02": {
+  "candidate_D": 139.42022342193894,
+  "condition_number": [
+   1.0019809972059632,
+   1.000019010788564,
+   0.99799602168526
+  ],
+  "remaining_D_norm_fraction": 0.24139292339859528,
+  "diagnostic_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+  "derivative_stable": true,
+  "directional_check_pass": true,
+  "source": "REAL_CANDIDATE_NOT_DEFAULT"
+ },
+ "B10000_ANON_03": {
+  "candidate_D": 119.80939293953102,
+  "condition_number": [
+   1.0039313959318747,
+   0.9997953206657897,
+   0.996258535239256
+  ],
+  "remaining_D_norm_fraction": 0.2449284041208715,
+  "diagnostic_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+  "derivative_stable": true,
+  "directional_check_pass": true,
+  "source": "REAL_CANDIDATE_NOT_DEFAULT"
+ },
+ "B10000_ANON_04": {
+  "candidate_D": 189.08591609183011,
+  "condition_number": [
+   1.0047023786153506,
+   0.9996530075013589,
+   0.9956239224718055
+  ],
+  "remaining_D_norm_fraction": 0.02541385089696354,
+  "diagnostic_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+  "derivative_stable": true,
+  "directional_check_pass": true,
+  "source": "REAL_CANDIDATE_NOT_DEFAULT"
+ },
+ "B100000_ANON_01": {
+  "candidate_D": 45.24922455863183,
+  "condition_number": [
+   1.0005340807306211,
+   0.9999810897465605,
+   0.9994845538805555
+  ],
+  "remaining_D_norm_fraction": 0.02689962167115746,
+  "diagnostic_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+  "derivative_stable": true,
+  "directional_check_pass": true,
+  "source": "REAL_CANDIDATE_NOT_DEFAULT"
+ },
+ "B100000_ANON_02": {
+  "candidate_D": 124.09042981381258,
+  "condition_number": [
+   1.0014798631216049,
+   0.9997217757051903,
+   0.9987965032692052
+  ],
+  "remaining_D_norm_fraction": 0.020929072562592427,
+  "diagnostic_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+  "derivative_stable": true,
+  "directional_check_pass": true,
+  "source": "REAL_CANDIDATE_NOT_DEFAULT"
+ },
+ "B100000_ANON_03": {
+  "candidate_D": 134.84798634193208,
+  "condition_number": [
+   1.0005846367993072,
+   1.000000915228651,
+   0.9994141054353088
+  ],
+  "remaining_D_norm_fraction": 0.29269529085006174,
+  "diagnostic_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+  "derivative_stable": true,
+  "directional_check_pass": true,
+  "source": "REAL_CANDIDATE_NOT_DEFAULT"
+ },
+ "B100000_ANON_04": {
+  "candidate_D": 188.22431104153708,
+  "condition_number": [
+   1.0033471325347494,
+   1.0003432601902793,
+   0.9962970909453563
+  ],
+  "remaining_D_norm_fraction": 0.01974090095206431,
+  "diagnostic_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+  "derivative_stable": true,
+  "directional_check_pass": true,
+  "source": "REAL_CANDIDATE_NOT_DEFAULT"
+ }
+}

@@ -1,0 +1,206 @@
+{
+  "audit_scope": "PUBLISHED_FILES_AND_LEDGER_NOT_F2C_REPLAY",
+  "scientific_qualification": false,
+  "issues": [
+    "NOT_THE_12_RESC0RED_V152_CANDIDATES",
+    "NO_REPLAY_ANCHOR_OR_FINAL_VERIFY_TASKS"
+  ],
+  "group_set_matches": true,
+  "groups": [
+    {
+      "name": "100000_ANON_01",
+      "theta": [
+        200.0,
+        450.0,
+        0.0,
+        0.0
+      ],
+      "numerical_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "state": "FINISHED",
+      "used": 20,
+      "predictions_disk": 20,
+      "predictions_in_doc": 20
+    },
+    {
+      "name": "100000_ANON_02",
+      "theta": [
+        200.0,
+        450.0,
+        0.0,
+        0.0
+      ],
+      "numerical_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "state": "FINISHED",
+      "used": 20,
+      "predictions_disk": 20,
+      "predictions_in_doc": 20
+    },
+    {
+      "name": "100000_ANON_03",
+      "theta": [
+        200.0,
+        450.0,
+        0.0,
+        0.0
+      ],
+      "numerical_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "state": "FINISHED",
+      "used": 20,
+      "predictions_disk": 20,
+      "predictions_in_doc": 20
+    },
+    {
+      "name": "100000_ANON_04",
+      "theta": [
+        200.0,
+        450.0,
+        0.0,
+        0.0
+      ],
+      "numerical_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "state": "FINISHED",
+      "used": 20,
+      "predictions_disk": 20,
+      "predictions_in_doc": 20
+    },
+    {
+      "name": "10000_ANON_01",
+      "theta": [
+        200.0,
+        450.0,
+        0.0,
+        0.0
+      ],
+      "numerical_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "state": "FINISHED",
+      "used": 20,
+      "predictions_disk": 20,
+      "predictions_in_doc": 20
+    },
+    {
+      "name": "10000_ANON_02",
+      "theta": [
+        200.0,
+        450.0,
+        0.0,
+        0.0
+      ],
+      "numerical_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "state": "FINISHED",
+      "used": 20,
+      "predictions_disk": 20,
+      "predictions_in_doc": 20
+    },
+    {
+      "name": "10000_ANON_03",
+      "theta": [
+        200.0,
+        450.0,
+        0.0,
+        0.0
+      ],
+      "numerical_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "state": "FINISHED",
+      "used": 20,
+      "predictions_disk": 20,
+      "predictions_in_doc": 20
+    },
+    {
+      "name": "10000_ANON_04",
+      "theta": [
+        200.0,
+        450.0,
+        0.0,
+        0.0
+      ],
+      "numerical_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "state": "FINISHED",
+      "used": 20,
+      "predictions_disk": 20,
+      "predictions_in_doc": 20
+    },
+    {
+      "name": "1000_ANON_01",
+      "theta": [
+        200.0,
+        450.0,
+        0.0,
+        0.0
+      ],
+      "numerical_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "state": "FINISHED",
+      "used": 20,
+      "predictions_disk": 20,
+      "predictions_in_doc": 20
+    },
+    {
+      "name": "1000_ANON_02",
+      "theta": [
+        200.0,
+        450.0,
+        0.0,
+        0.0
+      ],
+      "numerical_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "state": "FINISHED",
+      "used": 20,
+      "predictions_disk": 20,
+      "predictions_in_doc": 20
+    },
+    {
+      "name": "1000_ANON_03",
+      "theta": [
+        200.0,
+        450.0,
+        0.0,
+        0.0
+      ],
+      "numerical_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "state": "FINISHED",
+      "used": 20,
+      "predictions_disk": 20,
+      "predictions_in_doc": 20
+    },
+    {
+      "name": "1000_ANON_04",
+      "theta": [
+        200.0,
+        450.0,
+        0.0,
+        0.0
+      ],
+      "numerical_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "state": "FINISHED",
+      "used": 20,
+      "predictions_disk": 20,
+      "predictions_in_doc": 20
+    }
+  ],
+  "all_at_same_artificial_anchor": true,
+  "all_boundary_only": true,
+  "sqlite_integrity_check": "ok",
+  "sqlite_tasks": 12,
+  "sqlite_attempts": 240,
+  "sqlite_used": 240,
+  "sqlite_reserved": 480,
+  "sqlite_attempt_state_counts": {
+    "RETURNED": 240
+  },
+  "sqlite_meta": {
+    "phases": {
+      "LOCAL_INFORMATION": 900
+    },
+    "plan_id": "v155",
+    "total": 900
+  },
+  "sqlite_only_local_tasks": true,
+  "manifest": {
+    "rows": 268,
+    "verified": 268,
+    "failures": []
+  },
+  "zip_members": 269,
+  "zip_crc_bad_member": null,
+  "zip_sha256": "10dbd38bdbc242dd1c9c3041fa612b4a2b17a088a472f6faa59048e8f0d3a203",
+  "assessment": "INVALID_FOR_ACTUAL_CANDIDATE_LOCAL_INFORMATION"
+}

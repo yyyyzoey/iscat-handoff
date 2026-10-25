@@ -1,0 +1,94 @@
+{
+  "schema": "iscat156.actual_candidate_pixel_information.1",
+  "base_commit": "462e188b49cab8d63fbe2d66e21ca465da3504ec",
+  "authorized_on_explicit_codex_execution": true,
+  "max_new_model_forward_attempts": 900,
+  "phases": {
+    "REPLAY_ANCHOR": 260,
+    "LOCAL_INFORMATION": 480,
+    "FINAL_VERIFY": 160
+  },
+  "per_task": {
+    "local_groups": 12,
+    "calls_per_local_group": 40,
+    "loader_initializations_max": 2,
+    "loader_calls_per_initialization_max": 100
+  },
+  "forbidden": {
+    "new_BEM": 0,
+    "new_render": 0,
+    "new_exposure": 0,
+    "new_noise_draw": 0,
+    "new_four_parameter_fits": 0,
+    "new_fixed_D_optimization": 0,
+    "new_second_focus": 0
+  },
+  "frozen": {
+    "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+    "parent_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427",
+    "library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "camera_sha256": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+    "public_bank_sha256": "25a33f525c6a31a21a18a767c549301d6547e7ad9e6851b064f893f2befa9c4e",
+    "v152_results_git_blob_sha1": "21e9d1b96f61e2fd9af57f0a038941d07f7d207b",
+    "v155_original_return_git_blob_sha1": "1686a0b25e8c9807d972712f9bc97f0dbe13ad0a"
+  },
+  "anchors": {
+    "source_commit": "6d2db46d52509bd6987726dea211781cfa1b4127",
+    "source_path": "results/v152/all_results.json",
+    "joint_groups": 12,
+    "starts_per_group": 6,
+    "expected_starts": 72,
+    "old_Q_replay_folder": "results/v146/camera_fits/events",
+    "v153_e1": "results/v153/all_results.json"
+  },
+  "physics": {
+    "num_frames_per_group": 3,
+    "pixels": [
+      13,
+      13
+    ],
+    "box_low_nm": [
+      30,
+      350,
+      -500,
+      -500
+    ],
+    "box_high_nm": [
+      200,
+      550,
+      500,
+      500
+    ],
+    "gap_min_nm": 100,
+    "variance": "fixed_observed_plugin_delta_GLS"
+  },
+  "local": {
+    "steps_nm": [
+      0.2,
+      0.2,
+      0.5,
+      0.5
+    ],
+    "multipliers": [
+      1,
+      0.5
+    ],
+    "jacobian_shape": [
+      169,
+      4
+    ],
+    "svd_rtols": [
+      1e-08,
+      1e-10,
+      1e-12
+    ],
+    "derivative_stability_relative_tolerance": 0.02,
+    "directional_relative_tolerance": 0.05,
+    "boundary_tolerance_nm": 1e-06
+  },
+  "flags": {
+    "all_reportable_D_null": true,
+    "no_global_uniqueness_claim": true,
+    "no_experimental_absolute_claim": true
+  }
+}
