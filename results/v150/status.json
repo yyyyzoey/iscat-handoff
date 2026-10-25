@@ -1,0 +1,54 @@
+{
+  "task": "V150_CANONICAL_N_ORACLE_AND_CONSERVATIVE_DIAMETER_IDENTIFIABILITY_EXECUTION",
+  "git_commit": "7d04022e4634d8afe6f77cb365fdd9613a04737b",
+  "joint_results": {
+    "B100000": {
+      "ANON_01": 49.752379958367904,
+      "ANON_02": 124.09081754395879,
+      "ANON_03": 134.8479312863484,
+      "ANON_04": 188.22485141665075
+    },
+    "B10000": {
+      "ANON_01": 198.07521837098346,
+      "ANON_02": 139.4206467931265,
+      "ANON_03": 119.81034733010588,
+      "ANON_04": 189.08562867417209
+    },
+    "B1000": {
+      "ANON_01": 199.99999999999997,
+      "ANON_02": 199.99999999999997,
+      "ANON_03": 174.96791958012588,
+      "ANON_04": 199.6542763049437
+    },
+    "finding": "Joint 3-frame with proper bounds produces candidates for all 12 groups. B=100000 most reliable. B=1000 shows D=200 boundary attraction. Small particles (N01 D=59) still fail at low B."
+  },
+  "e1_regression": {
+    "n": 6,
+    "all_new": null,
+    "finding": "E1 weighted fit fails to converge at any B for the 6 regression events - honest null"
+  },
+  "e2_paired": {
+    "n": 12,
+    "finding": "Unweighted E2 also shows boundary attraction at low B"
+  },
+  "fixed_D": {
+    "n_groups": 6,
+    "finding": "Strict fixed-D profiles completed for ANON_02/ANON_04"
+  },
+  "reportability": {
+    "all_reportable_D_null": true,
+    "reason": "Joint candidates exist but are inconsistent across B levels; D-h compensation persists; detection and model error gates uncalibrated"
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "forward_actual": 29221,
+    "limit": 120000,
+    "bem": 0,
+    "render": 0,
+    "camera": 0,
+    "historical": {
+      "v137_camera": "23958/6000",
+      "v145_unauthorized_bem": 3
+    }
+  }
+}
