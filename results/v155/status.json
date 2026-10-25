@@ -1,0 +1,16 @@
+{
+  "task": "V155_PER_PIXEL_JACOBIAN_AND_LOCAL_MEASUREMENT_INFORMATION",
+  "V154_correction": "INVALID_JACOBIAN_CONSTRUCTION_NOT_PHYSICAL_EVIDENCE - scalar rank-1 Jacobian retracted",
+  "V155_finding": "D direction retains 40% independent information after h/x/y projection; not completely degenerate",
+  "stage_states": {
+    "PIXEL_JACOBIAN": "12/12 groups completed with proper 169x4 Jacobian, SVD, and directional checks",
+    "DERIVATIVE_STABILITY": "12/12 derivative_stable=True, directional_check_pass=True",
+    "D_INFORMATION": "40% remaining after h/x/y projection - partial but not complete degeneracy",
+    "EXPERIMENTAL_ABSOLUTE": "NOT_VALIDATED"
+  },
+  "reportability": {
+    "all_reportable_D_null": true,
+    "reason": "60% D gradient absorbed by h/x/y nuisance; additional information source needed"
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+}
