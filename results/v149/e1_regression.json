@@ -1,0 +1,50 @@
+[
+ {
+  "event_id": "B1000_ANON_01_00",
+  "old_Q": 183.99039888579387,
+  "new_Q": null,
+  "new_theta": null,
+  "used": 60,
+  "results": "[{\"start\": [200.0, 375.0, -140.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 400.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 475.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [100.0, 550.0, -140.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [130.0, 425.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [130.0, 450.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]"
+ },
+ {
+  "event_id": "B1000_ANON_04_00",
+  "old_Q": 169.2456796947871,
+  "new_Q": null,
+  "new_theta": null,
+  "used": 21,
+  "results": "[{\"start\": [200.0, 350.0, 0.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 400.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 475.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 550.0, 0.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 525.0, 0.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 550.0, 0.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]"
+ },
+ {
+  "event_id": "B10000_ANON_01_00",
+  "old_Q": 133.6336457005054,
+  "new_Q": null,
+  "new_theta": null,
+  "used": 33,
+  "results": "[{\"start\": [70.0, 350.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [50.0, 425.0, 140.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [70.0, 475.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [70.0, 550.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [70.0, 525.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [100.0, 375.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]"
+ },
+ {
+  "event_id": "B10000_ANON_04_00",
+  "old_Q": 176.5149092436504,
+  "new_Q": null,
+  "new_theta": null,
+  "used": 28,
+  "results": "[{\"start\": [160.0, 350.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 400.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 475.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 525.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 525.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 350.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]"
+ },
+ {
+  "event_id": "B100000_ANON_01_00",
+  "old_Q": 163.55990530083858,
+  "new_Q": null,
+  "new_theta": null,
+  "used": 33,
+  "results": "[{\"start\": [30.0, 350.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [70.0, 400.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [50.0, 475.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 550.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [50.0, 425.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [50.0, 400.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]"
+ },
+ {
+  "event_id": "B100000_ANON_04_00",
+  "old_Q": 170.86734109197937,
+  "new_Q": null,
+  "new_theta": null,
+  "used": 28,
+  "results": "[{\"start\": [200.0, 350.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 400.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 475.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 525.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 350.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 525.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]"
+ }
+]

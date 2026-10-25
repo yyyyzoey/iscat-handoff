@@ -1,0 +1,122 @@
+[
+ {
+  "B": 100000,
+  "anon": "ANON_01",
+  "joint_D": null,
+  "Q_joint": null,
+  "K": 340.23095372793864,
+  "used": 41,
+  "results": "[{\"start\": [30.0, 387.5, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [50.0, 400.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [50.0, 475.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 500.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 450.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 425.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]",
+  "single_ds": "from_v146_published"
+ },
+ {
+  "B": 10000,
+  "anon": "ANON_01",
+  "joint_D": 117.47653475992692,
+  "Q_joint": 295.76094381242547,
+  "K": 295.7505237792785,
+  "used": 132,
+  "results": "[{\"start\": [160.0, 387.5, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 425.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [50.0, 475.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [70.0, 500.0, -140.0, -140.0], \"theta\": [117.47653475992692, 494.138079772292, -134.9925398302161, -212.45112561480468], \"Q\": 0.010420033146968254, \"success\": true, \"status\": 1, \"nfev\": 26}, {\"start\": [70.0, 375.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [50.0, 525.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]",
+  "single_ds": "from_v146_published"
+ },
+ {
+  "B": 1000,
+  "anon": "ANON_01",
+  "joint_D": null,
+  "Q_joint": null,
+  "K": 342.5413324207498,
+  "used": 68,
+  "results": "[{\"start\": [160.0, 387.5, -140.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 400.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [100.0, 450.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [50.0, 550.0, -140.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [100.0, 425.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 400.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]",
+  "single_ds": "from_v146_published"
+ },
+ {
+  "B": 100000,
+  "anon": "ANON_02",
+  "joint_D": 124.28762845583559,
+  "Q_joint": 365.31066514882673,
+  "K": 365.3095890206118,
+  "used": 200,
+  "results": "[{\"start\": [30.0, 387.5, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 400.0, -140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [100.0, 450.0, -140.0, 140.0], \"theta\": [124.28762845583559, 411.9548987508789, -75.67031980809921, 116.85532724759803], \"Q\": 0.0010761282149306223, \"success\": true, \"status\": 1, \"nfev\": 27}, {\"start\": [30.0, 500.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [100.0, 425.0, -140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 400.0, -140.0, 140.0], \"theta\": [124.2820094179206, 411.9575855505178, -75.67032414978867, 116.85539534681142], \"Q\": 0.001076128215061364, \"success\": true, \"status\": 1, \"nfev\": 21}]",
+  "single_ds": "from_v146_published"
+ },
+ {
+  "B": 10000,
+  "anon": "ANON_02",
+  "joint_D": 138.88070768766895,
+  "Q_joint": 322.5011519842479,
+  "K": 322.4925798128724,
+  "used": 71,
+  "results": "[{\"start\": [30.0, 387.5, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [100.0, 425.0, -140.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [100.0, 450.0, -140.0, 0.0], \"theta\": [138.88070768766895, 472.26864551157377, -84.44253388287828, 70.13708533016087], \"Q\": 0.008572171375464972, \"success\": true, \"status\": 1, \"nfev\": 8}, {\"start\": [30.0, 500.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 400.0, -140.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 400.0, -140.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]",
+  "single_ds": "from_v146_published"
+ },
+ {
+  "B": 1000,
+  "anon": "ANON_02",
+  "joint_D": null,
+  "Q_joint": null,
+  "K": 361.22401569179846,
+  "used": 25,
+  "results": "[{\"start\": [70.0, 350.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 400.0, -140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 475.0, -140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [70.0, 550.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 475.0, -140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [100.0, 450.0, -140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]",
+  "single_ds": "from_v146_published"
+ },
+ {
+  "B": 100000,
+  "anon": "ANON_03",
+  "joint_D": 135.0005784558555,
+  "Q_joint": 326.7543036983675,
+  "K": 326.7533163935532,
+  "used": 55,
+  "results": "[{\"start\": [30.0, 387.5, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 400.0, 0.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [130.0, 475.0, 0.0, 140.0], \"theta\": [135.0005784558555, 476.6299656013545, 45.00667216651669, 106.28816608490631], \"Q\": 0.0009873048143211514, \"success\": true, \"status\": 1, \"nfev\": 5}, {\"start\": [30.0, 500.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [130.0, 400.0, 0.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [100.0, 425.0, 0.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]",
+  "single_ds": "from_v146_published"
+ },
+ {
+  "B": 10000,
+  "anon": "ANON_03",
+  "joint_D": 120.50230194240436,
+  "Q_joint": 324.10190270378,
+  "K": 324.09184650887585,
+  "used": 145,
+  "results": "[{\"start\": [30.0, 387.5, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [130.0, 400.0, 0.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [130.0, 475.0, 0.0, 140.0], \"theta\": [120.50230194240436, 475.3840738839098, 22.48200362361362, 80.26027288661363], \"Q\": 0.010056194904171494, \"success\": true, \"status\": 1, \"nfev\": 11}, {\"start\": [30.0, 500.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [130.0, 400.0, 0.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [100.0, 475.0, 0.0, 140.0], \"theta\": [120.50197454075128, 475.38398388908473, 22.4844629193904, 80.26045997994636], \"Q\": 0.010056194904480273, \"success\": true, \"status\": 2, \"nfev\": 14}]",
+  "single_ds": "from_v146_published"
+ },
+ {
+  "B": 1000,
+  "anon": "ANON_03",
+  "joint_D": null,
+  "Q_joint": null,
+  "K": 358.96025664873224,
+  "used": 28,
+  "results": "[{\"start\": [30.0, 387.5, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 400.0, 140.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 475.0, 140.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 500.0, 140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 475.0, 140.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [130.0, 475.0, 140.0, 0.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]",
+  "single_ds": "from_v146_published"
+ },
+ {
+  "B": 100000,
+  "anon": "ANON_04",
+  "joint_D": null,
+  "Q_joint": null,
+  "K": 338.18186994375776,
+  "used": 49,
+  "results": "[{\"start\": [160.0, 350.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 400.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 475.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 525.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 525.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 350.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]",
+  "single_ds": "from_v146_published"
+ },
+ {
+  "B": 10000,
+  "anon": "ANON_04",
+  "joint_D": null,
+  "Q_joint": null,
+  "K": 284.0080498192928,
+  "used": 28,
+  "results": "[{\"start\": [160.0, 350.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 400.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 475.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 525.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 525.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 350.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]",
+  "single_ds": "from_v146_published"
+ },
+ {
+  "B": 1000,
+  "anon": "ANON_04",
+  "joint_D": null,
+  "Q_joint": null,
+  "K": 325.26857369847886,
+  "used": 24,
+  "results": "[{\"start\": [200.0, 350.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 400.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [30.0, 475.0, 140.0, 140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 525.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [200.0, 550.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}, {\"start\": [160.0, 350.0, -140.0, -140.0], \"status\": \"EXCEPTION\", \"error\": \"OutOfDomain('D/h/xy/gap outside declared model domain')\"}]",
+  "single_ds": "from_v146_published"
+ }
+]

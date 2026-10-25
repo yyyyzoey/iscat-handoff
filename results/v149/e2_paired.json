@@ -1,0 +1,84 @@
+[
+ {
+  "event_id": "B1000_ANON_01_00",
+  "theta": null,
+  "Q_unweighted": null,
+  "used": 60
+ },
+ {
+  "event_id": "B1000_ANON_02_00",
+  "theta": null,
+  "Q_unweighted": null,
+  "used": 29
+ },
+ {
+  "event_id": "B1000_ANON_03_00",
+  "theta": null,
+  "Q_unweighted": null,
+  "used": 28
+ },
+ {
+  "event_id": "B1000_ANON_04_00",
+  "theta": null,
+  "Q_unweighted": null,
+  "used": 21
+ },
+ {
+  "event_id": "B10000_ANON_01_00",
+  "theta": null,
+  "Q_unweighted": null,
+  "used": 33
+ },
+ {
+  "event_id": "B10000_ANON_02_00",
+  "theta": null,
+  "Q_unweighted": null,
+  "used": 35
+ },
+ {
+  "event_id": "B10000_ANON_03_00",
+  "theta": null,
+  "Q_unweighted": null,
+  "used": 67
+ },
+ {
+  "event_id": "B10000_ANON_04_00",
+  "theta": null,
+  "Q_unweighted": null,
+  "used": 28
+ },
+ {
+  "event_id": "B100000_ANON_01_00",
+  "theta": null,
+  "Q_unweighted": null,
+  "used": 33
+ },
+ {
+  "event_id": "B100000_ANON_02_00",
+  "theta": [
+   124.89425002730862,
+   412.5112435557427,
+   -78.10444514853229,
+   112.27447478138671
+  ],
+  "Q_unweighted": 0.003509085426301242,
+  "used": 196
+ },
+ {
+  "event_id": "B100000_ANON_03_00",
+  "theta": [
+   128.20084405048226,
+   474.2151659512231,
+   51.47387037946666,
+   116.19128196682506
+  ],
+  "Q_unweighted": 0.0030877270106355907,
+  "used": 107
+ },
+ {
+  "event_id": "B100000_ANON_04_00",
+  "theta": null,
+  "Q_unweighted": null,
+  "used": 28
+ }
+]

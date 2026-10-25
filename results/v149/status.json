@@ -1,0 +1,23 @@
+{
+  "task": "V149_NOISE_AWARE_SINGLE_PARTICLE_CALIBRATION_WITH_FROZEN_F2C",
+  "joint_3frame": {
+    "n_groups": 12,
+    "n_with_candidates": 5,
+    "finding": "Joint 3-frame D inconsistent across B levels; supports D-h compensation diagnosis"
+  },
+  "reportability": {
+    "all_reportable_D_null": true
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "total_f2c_used": 3568,
+    "limit": 120000,
+    "bem": 0,
+    "render": 0,
+    "camera_new": 0,
+    "historical": {
+      "v137_camera": "23958/6000",
+      "v145_unauthorized_bem": 3
+    }
+  }
+}
