@@ -1,0 +1,17 @@
+{
+  "task": "V152_WEIGHTED_EVIDENCE_RECOVERY_AND_STATIC_THREE_FRAME_SIZING",
+  "stage_states": {
+    "REPLAY": "COMPLETED 36/36",
+    "E1_REGRESSION": "COMPLETED 6/6 (bounded fits, all returned valid results or honest failures)",
+    "JOINT": "COMPLETED 12/12 groups with proper GLS weighted residual and bounds",
+    "FIXED_D": "COMPLETED 262 points with strict D identity"
+  },
+  "reportability": {
+    "all_reportable_D_null": true
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "total_limit": 60000,
+    "note": "See logs/v152_budget.sqlite for per-event accounting"
+  }
+}
