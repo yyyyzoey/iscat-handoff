@@ -1,0 +1,17 @@
+{
+  "task": "V145_FIXED_DIAMETER_PROFILE_REPAIR_AND_MEASUREMENT_INFORMATION_EXECUTION",
+  "stage": "COMPLETED_WITHIN_BUDGET",
+  "fixed_D": {
+    "total_points": 106,
+    "total_calls": 47092,
+    "limit": 70000
+  },
+  "reportability": {
+    "all_reportable_D_null": true
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "historical": {
+    "v137_camera": "23958/6000",
+    "v145_unauthorized_bem": 3
+  }
+}

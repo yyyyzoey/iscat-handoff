@@ -1,0 +1,22 @@
+{
+  "schema": "iscat151.proposed_budget_contract.1",
+  "authorization": "activate_only_when_user_hands_this_contract_to_Codex_for_execution",
+  "source_base_commit": "b46153564a49b5d734256e5ddc3fd113b3c42715",
+  "global_new_f2c_attempts_cap": 70000,
+  "phases": [
+    {"name": "A_B_forensics_and_fake_model_tests", "cap": 0},
+    {"name": "C1_original_Q_identity", "cap": 200},
+    {"name": "C2_six_E1_regressions", "cap": 12000, "max_tasks": 6, "per_task_cap": 2000},
+    {"name": "D_twelve_joint_three_frame_GLS", "cap": 24000, "max_tasks": 12, "per_task_cap": 2000},
+    {"name": "E_fixed_D_six_groups", "cap": 21600, "max_tasks": 54, "per_task_cap": 400},
+    {"name": "F_E2_paired_twelve_events", "cap": 7200, "max_tasks": 12, "per_task_cap": 600},
+    {"name": "G_independent_check_and_reserved", "cap": 5000}
+  ],
+  "new_bem_solves": 0,
+  "new_physics_renders": 0,
+  "new_camera_exposures": 0,
+  "new_noise_draws": 0,
+  "wall_hours_including_finalization": 12,
+  "finalization_minimum_minutes": 30,
+  "historical_ledgers_preserved": true
+}

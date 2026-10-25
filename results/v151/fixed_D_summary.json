@@ -1,0 +1,70 @@
+{
+ "cases": {
+  "ANON_01": {
+   "n_points": 26,
+   "min_Q": 0.0010660355425259178,
+   "epsilon_dev": 0.0015811481066672155,
+   "compatible_witnesses_D": [
+    30.0,
+    49.752,
+    50.0,
+    75.0,
+    100.0,
+    125.0,
+    150.0,
+    175.0,
+    200.0
+   ],
+   "non_unique_under_dev_eps": true,
+   "total_used_for_case": 12737
+  },
+  "ANON_02": {
+   "n_points": 26,
+   "min_Q": 0.0010761283460757748,
+   "epsilon_dev": 0.0015811481066672155,
+   "compatible_witnesses_D": [
+    75.0,
+    100.0,
+    124.091,
+    125.0,
+    150.0,
+    175.0,
+    200.0
+   ],
+   "non_unique_under_dev_eps": true,
+   "total_used_for_case": 13130
+  },
+  "ANON_03": {
+   "n_points": 27,
+   "min_Q": 0.0009873056410172512,
+   "epsilon_dev": 0.0015811481066672155,
+   "compatible_witnesses_D": [
+    50.0,
+    75.0,
+    100.0,
+    125.0,
+    134.848,
+    150.0,
+    175.0,
+    200.0
+   ],
+   "non_unique_under_dev_eps": true,
+   "total_used_for_case": 12431
+  },
+  "ANON_04": {
+   "n_points": 27,
+   "min_Q": 0.001029597532954755,
+   "epsilon_dev": 0.0015811481066672155,
+   "compatible_witnesses_D": [
+    150.0,
+    175.0,
+    188.225,
+    200.0
+   ],
+   "non_unique_under_dev_eps": true,
+   "total_used_for_case": 8794
+  }
+ },
+ "total_calls": 47092,
+ "limit": 70000
+}
