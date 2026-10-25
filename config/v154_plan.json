@@ -1,0 +1,67 @@
+{
+  "schema": "iscat154.contract.1",
+  "task_id": "V154_EVIDENCE_BINDING_AND_BOUNDED_INFORMATION_DIAGNOSTICS",
+  "repository": "yyyyzoey/iscat-handoff",
+  "source_commit": "e1df35a54a6ca9f91007f68603edf99ac60dc9bc",
+  "activation": "ONLY_ON_USER_AUTHORIZED_EXECUTION",
+  "count_unit": "all model forward attempts including F2 loader validation and F2c",
+  "maximum_new_model_forward_attempts": 7000,
+  "phases": {
+    "REPLAY_RESCORING": 800,
+    "LOCAL_INFORMATION": 600,
+    "TARGETED_FIXED_D": 4800,
+    "FINAL_VERIFY": 800
+  },
+  "limits": {
+    "new_BEM": 0,
+    "new_physical_render": 0,
+    "new_camera_exposures": 0,
+    "new_noise_draws": 0,
+    "new_four_parameter_E1_fits": 0,
+    "new_four_parameter_joint_fits": 0,
+    "fixed_D_tasks": 12,
+    "fixed_D_calls_per_task": 400,
+    "information_groups": 12,
+    "information_calls_per_group": 50,
+    "loader_calls_per_initialization": 100,
+    "loader_initializations": 2
+  },
+  "frozen": {
+    "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+    "library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "camera_sha256": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+    "public_bank_sha256": "25a33f525c6a31a21a18a767c549301d6547e7ad9e6851b064f893f2befa9c4e"
+  },
+  "science": {
+    "estimator": "fixed observed plug-in delta GLS",
+    "scope": "opened static simulation only",
+    "new_95pct_CI": false,
+    "absolute_core_diameter_validated": false,
+    "all_reportable_D_null": true
+  },
+  "local_information": {
+    "steps_nm": [
+      0.2,
+      0.2,
+      0.5,
+      0.5
+    ],
+    "step_multipliers": [
+      1.0,
+      0.5
+    ],
+    "derivative_relative_tolerance": 0.02,
+    "svd_rtols": [
+      1e-08,
+      1e-10,
+      1e-12
+    ],
+    "boundary_tolerance_nm": 1e-06
+  },
+  "checkpoint_policy": "immutable signed tasks; charge before model; stop on unknown active tasks; no deletion or auto-retry",
+  "reference_code_sha256": {
+    "reference/v152_budget_store.py": "83e6c764cdca7fd8a053f78538ab7e2daf2d312903ce0e90fbfc181f071af8e0",
+    "reference/v152_gls_core.py": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+    "reference/v154_evidence_guard.py": "9d3ad00b8f291aa11c2e16417aebd8d39a58c94a9a83cf384a7b55d5f08a9b08"
+  }
+}

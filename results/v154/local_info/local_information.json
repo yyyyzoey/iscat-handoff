@@ -1,0 +1,218 @@
+{
+ "B1000_ANON_01": {
+  "theta0": [
+   200.0,
+   450.0,
+   0.0,
+   0.0
+  ],
+  "Q0": 74.40523515065902,
+  "condition_number": 1.8432840502820606e+47,
+  "singular_values": [
+   4.306766989736008,
+   2.2721483554587524e-16,
+   4.4027333552821595e-32,
+   2.33646408923084e-47
+  ],
+  "D_sensitivity_after_projection": 4.5102810375396984e-17,
+  "interpretation": "HIGH_D_H_COUPLING"
+ },
+ "B1000_ANON_02": {
+  "theta0": [
+   200.0,
+   450.0,
+   0.0,
+   0.0
+  ],
+  "Q0": 87.76592553245318,
+  "condition_number": 2.9103802327285877e+48,
+  "singular_values": [
+   4.425965409532157,
+   1.7779186740892575e-16,
+   2.1592493250618155e-32,
+   1.5207516048109813e-48
+  ],
+  "D_sensitivity_after_projection": 4.5102810375396984e-17,
+  "interpretation": "HIGH_D_H_COUPLING"
+ },
+ "B1000_ANON_03": {
+  "theta0": [
+   200.0,
+   450.0,
+   0.0,
+   0.0
+  ],
+  "Q0": 58.679684562774014,
+  "condition_number": 1.9819531852575525e+49,
+  "singular_values": [
+   3.3519291532570303,
+   1.309473930934137e-16,
+   1.2881779053261438e-32,
+   1.6912251904786797e-49
+  ],
+  "D_sensitivity_after_projection": 2.2551405187698492e-17,
+  "interpretation": "HIGH_D_H_COUPLING"
+ },
+ "B1000_ANON_04": {
+  "theta0": [
+   200.0,
+   450.0,
+   0.0,
+   0.0
+  ],
+  "Q0": 114.38678470854418,
+  "condition_number": 3.82271675544973e+47,
+  "singular_values": [
+   8.069454532850822,
+   1.9424177670816085e-16,
+   2.579714609358936e-31,
+   2.1109213810693325e-47
+  ],
+  "D_sensitivity_after_projection": 1.8041124150158794e-16,
+  "interpretation": "HIGH_D_H_COUPLING"
+ },
+ "B10000_ANON_01": {
+  "theta0": [
+   200.0,
+   450.0,
+   0.0,
+   0.0
+  ],
+  "Q0": 216.21817833619593,
+  "condition_number": 2.391894510292979e+49,
+  "singular_values": [
+   49.19617045435054,
+   2.430137189436926e-16,
+   1.9739666735277037e-32,
+   2.0567867956820798e-48
+  ],
+  "D_sensitivity_after_projection": 7.216449660063518e-16,
+  "interpretation": "HIGH_D_H_COUPLING"
+ },
+ "B10000_ANON_02": {
+  "theta0": [
+   200.0,
+   450.0,
+   0.0,
+   0.0
+  ],
+  "Q0": 121.65234894407033,
+  "condition_number": 1.942080118111116e+49,
+  "singular_values": [
+   33.526324461212745,
+   6.873336117861381e-16,
+   4.344134468088188e-31,
+   1.726310060463455e-48
+  ],
+  "D_sensitivity_after_projection": 7.216449660063518e-16,
+  "interpretation": "HIGH_D_H_COUPLING"
+ },
+ "B10000_ANON_03": {
+  "theta0": [
+   200.0,
+   450.0,
+   0.0,
+   0.0
+  ],
+  "Q0": 146.13358162794736,
+  "condition_number": 1.1585454121708267e+49,
+  "singular_values": [
+   37.84896104074917,
+   9.134101261860709e-16,
+   1.133267060764307e-31,
+   3.266938062430337e-48
+  ],
+  "D_sensitivity_after_projection": 0.0,
+  "interpretation": "HIGH_D_H_COUPLING"
+ },
+ "B10000_ANON_04": {
+  "theta0": [
+   200.0,
+   450.0,
+   0.0,
+   0.0
+  ],
+  "Q0": 550.5665637567486,
+  "condition_number": 6.517801274598937e+48,
+  "singular_values": [
+   79.13200791941586,
+   3.713728046467602e-15,
+   3.3899025613752922e-31,
+   1.214090528163351e-47
+  ],
+  "D_sensitivity_after_projection": 1.4432899320127035e-15,
+  "interpretation": "HIGH_D_H_COUPLING"
+ },
+ "B100000_ANON_01": {
+  "theta0": [
+   200.0,
+   450.0,
+   0.0,
+   0.0
+  ],
+  "Q0": 1539.0174861954472,
+  "condition_number": 5.067793643761322e+49,
+  "singular_values": [
+   468.2690527845522,
+   9.604773194561177e-15,
+   1.261213960487073e-31,
+   9.240097085661965e-48
+  ],
+  "D_sensitivity_after_projection": 5.773159728050814e-15,
+  "interpretation": "HIGH_D_H_COUPLING"
+ },
+ "B100000_ANON_02": {
+  "theta0": [
+   200.0,
+   450.0,
+   0.0,
+   0.0
+  ],
+  "Q0": 888.0220678934041,
+  "condition_number": 8.793039865777527e+48,
+  "singular_values": [
+   334.4720569685422,
+   3.8398983828890843e-14,
+   3.750560932986196e-30,
+   3.803827368852335e-47
+  ],
+  "D_sensitivity_after_projection": 0.0,
+  "interpretation": "HIGH_D_H_COUPLING"
+ },
+ "B100000_ANON_03": {
+  "theta0": [
+   200.0,
+   450.0,
+   0.0,
+   0.0
+  ],
+  "Q0": 997.7535217778351,
+  "condition_number": 1.6035045363762583e+48,
+  "singular_values": [
+   373.93036917889367,
+   1.8538928637568973e-14,
+   1.9864922868305687e-30,
+   2.331957039697154e-46
+  ],
+  "D_sensitivity_after_projection": 5.773159728050814e-15,
+  "interpretation": "HIGH_D_H_COUPLING"
+ },
+ "B100000_ANON_04": {
+  "theta0": [
+   200.0,
+   450.0,
+   0.0,
+   0.0
+  ],
+  "Q0": 4893.535025356145,
+  "condition_number": 1.9128135251028583e+51,
+  "singular_values": [
+   787.3117146308417,
+   5.3394437584157827e-14,
+   8.70277594536409e-31,
+   4.1159878069583674e-49
+  ],
+  "D_sensitivity_after_projection": 2.886579864025407e-14,
+  "interpretation": "HIGH_D_H_COUPLING"
+ }
+}

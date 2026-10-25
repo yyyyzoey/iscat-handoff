@@ -1,0 +1,18 @@
+{
+  "task": "V154_EVIDENCE_BINDING_AND_BOUNDED_INFORMATION_DIAGNOSTICS",
+  "stage_states": {
+    "REPLAY_RESCORING": "36/36 correct Q (no 2x error confirmed); 262 historical witnesses re-scored",
+    "LOCAL_INFORMATION": "12/12 groups: condition numbers 1e38-1e95, D_sensitivity_after_projection ~0 - LOCAL DEGENERACY CONFIRMED",
+    "TARGETED_FIXED_D": "30 points attempted; most budget-exhausted; honest incomplete",
+    "FINAL_VERIFY": "D-invariant verified on calibration witnesses"
+  },
+  "reportability": {
+    "all_reportable_D_null": true,
+    "reason": "D/h/x/y local degeneracy confirmed by Jacobian/SVD analysis; additional measurement information required"
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "remaining": 359,
+    "limit": 7000
+  }
+}
