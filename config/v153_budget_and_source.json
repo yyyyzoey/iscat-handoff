@@ -1,0 +1,74 @@
+{
+  "schema": "iscat_v153_proposed_plan_not_executed.1",
+  "repository": "yyyyzoey/iscat-handoff",
+  "fixed_source_commit": "6d2db46d52509bd6987726dea211781cfa1b4127",
+  "parent_commit": "c30b0bd07c33be7fc18e1ef8777c04c07c57e0b0",
+  "frozen_model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "source_sha256": {
+    "training_library": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "camera_h5": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+    "public_bank_npz": "25a33f525c6a31a21a18a767c549301d6547e7ad9e6851b064f893f2befa9c4e"
+  },
+  "no_new_BEM": true,
+  "no_new_render": true,
+  "no_new_camera_exposures": true,
+  "no_new_random_noise": true,
+  "new_F2c_attempt_limit": 32000,
+  "phases": [
+    {
+      "id": "VERIFY_RESCORING",
+      "budget": 1200,
+      "action": "old Q and saved theta rescoring, no new fitting"
+    },
+    {
+      "id": "E1_REMEDY",
+      "budget": 6000,
+      "max_tasks": 6,
+      "per_task_cap": 1000,
+      "action": "only missing/suspect E1 with source-qualified reason"
+    },
+    {
+      "id": "JOINT_REMEDY",
+      "budget": 12000,
+      "max_tasks": 12,
+      "per_task_cap": 1000,
+      "action": "only targeted recovery with source-qualified reason"
+    },
+    {
+      "id": "FIXED_D_TARGETED",
+      "budget": 9600,
+      "max_tasks": 24,
+      "per_task_cap": 400,
+      "action": "6 groups, at most four D tasks each"
+    },
+    {
+      "id": "LOCAL_SENSITIVITY",
+      "budget": 1800,
+      "max_tasks": 12,
+      "per_task_cap": 150,
+      "action": "whitened local sensitivity diagnostic"
+    },
+    {
+      "id": "FINAL_INDEPENDENT_CHECK",
+      "budget": 1400,
+      "action": "verification only, no opportunistic new fitting"
+    }
+  ],
+  "score_shape": [
+    13,
+    13
+  ],
+  "camera_shape": [
+    17,
+    17
+  ],
+  "background_electrons": [
+    1000,
+    10000,
+    100000
+  ],
+  "validity_scope": "opened conditional simulated static signed-contrast only; no experimental core diameter",
+  "reportable_D_must_remain_null": true,
+  "truth_access": "only in isolated validator after estimator-output freeze",
+  "task_command_note": "Codex must implement and pass production adapter tests before running the specified CLI."
+}

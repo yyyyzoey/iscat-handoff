@@ -1,0 +1,16 @@
+{
+  "task": "V153_F2C_HOLDOUT_PROVENANCE_AND_DIAMETER_IDENTIFIABILITY",
+  "stage_states": {
+    "REPLAY": "36/36 correct (no 2x error)",
+    "E1_REGRESSION": "6 events completed with bounded fits; noisy degradation confirmed",
+    "JOINT_RESCORE": "V152 joint results re-scored with correct GLS"
+  },
+  "reportability": {
+    "all_reportable_D_null": true
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "budget": {
+    "remaining": 56439,
+    "limit": 60000
+  }
+}
