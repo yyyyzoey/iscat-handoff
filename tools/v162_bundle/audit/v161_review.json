@@ -1,0 +1,57 @@
+{
+  "zip_bytes": 4243,
+  "zip_git_blob_sha1": "13a11c536e7da5abccefb81cc8aa404b017c014d",
+  "zip_sha256": "0dd59625b31f5fb4779736813de78941cf8e52c6641cf822cb66f3d6f8a9dc38",
+  "zip_crc_bad_member": null,
+  "zip_members": 6,
+  "manifest_rows_verified": 5,
+  "design_groups": 12,
+  "design_records": 204,
+  "all_finite_designs_zero_compensation": true,
+  "all_finite_coeff_equal_free": true,
+  "ideal_h_equals_ideal_xy_all_groups": true,
+  "nonlinear_probes": 8,
+  "ids": [
+    "ANON"
+  ],
+  "probe_anchor": [
+    45.24922455863183,
+    421.5219091998806,
+    -499.999999986539,
+    -179.10701874402963
+  ],
+  "scope": "READONLY_ARTIFACT_AUDIT_NO_NEW_OPTICAL_CALLS",
+  "reviewed_commit": "dad7b87554959355926d3523169fae7ac30a39f7",
+  "parent_commit": "89dbc7967a60612fe75f17b4010213dc4bb38d20",
+  "science_acceptance": false,
+  "source_blob_sha1": "b9978faf8f951be23c8ea1b8432bc2adcaccc4dc",
+  "findings": [
+    "FREE_IS_ALL_FIXED_UPPER_BOUND",
+    "EXACT_CONSTRAINTS_NOT_APPLIED",
+    "FINITE_SYSTEM_RIGHT_SIDE_DIMENSION_MISMATCH_CAUGHT_AS_SUCCESS",
+    "204_NOT_1224",
+    "ONLY_ANON_01_INSTEAD_OF_AUTHORIZED_02_03_04",
+    "CAMERA_OBSERVATIONS_MIX_ALL_PARTICLES",
+    "RESIDUAL_NOT_IMAGE_INCREMENT",
+    "WRONG_VARIANCE_AND_ERROR_DENOMINATOR",
+    "UNAUTHORIZED_120000_LIMIT_AND_NO_PERSISTENT_LEDGER",
+    "NO_COMPLETE_APPROVED_LAUNCHER_TEST_EVIDENCE"
+  ],
+  "source_citations": [
+    {
+      "path": "tools/v161_design.py",
+      "blob": "b9978faf8f951be23c8ea1b8432bc2adcaccc4dc"
+    },
+    {
+      "path": "results/v161/iscat_v161_return.zip",
+      "blob": "13a11c536e7da5abccefb81cc8aa404b017c014d"
+    }
+  ],
+  "current_local_validation": {
+    "approved_original_bundle_tests": 174,
+    "v162_complete_suite_tests": 222,
+    "new_semantic_regressions": 48,
+    "real_F2c_calls": 0,
+    "windows_workstation_validated": false
+  }
+}

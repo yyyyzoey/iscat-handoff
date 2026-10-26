@@ -1,0 +1,140 @@
+{
+  "scope": "SYNTHETIC_MATH_AND_GROUPING_ONLY_NO_F2C",
+  "source_commit": "dad7b87554959355926d3523169fae7ac30a39f7",
+  "source_path": "tools/v161_design.py",
+  "source_blob_sha1": "b9978faf8f951be23c8ea1b8432bc2adcaccc4dc",
+  "excerpt_not_full_source_bytes": true,
+  "rows": [
+    {
+      "case": "free",
+      "published_result": {
+        "total_coefficient": 1.0,
+        "compensation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "nuisance_rank": 0
+      },
+      "independent_correct_coefficient": 0.6400000000000001,
+      "correct_compensation": [
+        -0.6,
+        0.0,
+        0.0
+      ],
+      "swallowed_errors": []
+    },
+    {
+      "case": "exact_height",
+      "published_result": {
+        "total_coefficient": 0.6400000000000001,
+        "compensation": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "nuisance_rank": 3
+      },
+      "independent_correct_coefficient": 1.0,
+      "correct_compensation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "swallowed_errors": []
+    },
+    {
+      "case": "exact_xy",
+      "published_result": {
+        "total_coefficient": 0.6400000000000001,
+        "compensation": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "nuisance_rank": 3
+      },
+      "independent_correct_coefficient": 0.6400000000000001,
+      "correct_compensation": [
+        -0.6,
+        0.0,
+        0.0
+      ],
+      "swallowed_errors": []
+    },
+    {
+      "case": "height_sigma1",
+      "published_result": {
+        "total_coefficient": 1.0,
+        "compensation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "nuisance_rank": 3
+      },
+      "independent_correct_coefficient": 0.8200000000000001,
+      "correct_compensation": [
+        -0.3,
+        0.0,
+        0.0
+      ],
+      "swallowed_errors": [
+        {
+          "type": "ValueError",
+          "message": "matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 169 is different from 170)"
+        }
+      ]
+    },
+    {
+      "case": "xy_sigma1",
+      "published_result": {
+        "total_coefficient": 1.0,
+        "compensation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "nuisance_rank": 3
+      },
+      "independent_correct_coefficient": 0.6400000000000001,
+      "correct_compensation": [
+        -0.6,
+        0.0,
+        0.0
+      ],
+      "swallowed_errors": [
+        {
+          "type": "ValueError",
+          "message": "matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 169 is different from 171)"
+        }
+      ]
+    }
+  ],
+  "collapsed_groups": {
+    "ANON": "100000_ANON_01"
+  },
+  "camera_records_selected_by_prefix": 12,
+  "linear_model_false_nonlinearity": [
+    {
+      "t": 0.5,
+      "wrong_metric": 4.0,
+      "correct_increment_metric": 0.0
+    },
+    {
+      "t": 1,
+      "wrong_metric": 2.0,
+      "correct_increment_metric": 0.0
+    },
+    {
+      "t": 2,
+      "wrong_metric": 1.0,
+      "correct_increment_metric": 0.0
+    },
+    {
+      "t": 5,
+      "wrong_metric": 0.4,
+      "correct_increment_metric": 0.0
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+def local_design(jw, sigma_h, sigma_xy, rtol):
+    j=np.asarray(jw,dtype=float)
+    jD=j[:,0];A=j[:,1:]
+    # No constraint
+    if sigma_h==float('inf') and sigma_xy==float('inf'):
+        b=np.zeros(3);total=float(np.sum(jD**2))
+    else:
+        # penalty matrix
+        s=np.array([sigma_h if sigma_h!=float('inf') else 0,
+                    sigma_xy if sigma_xy!=float('inf') else 0,
+                    sigma_xy if sigma_xy!=float('inf') else 0])
+        active=[k for k in range(3) if s[k]>0 and np.isfinite(s[k])]
+        pen=np.zeros((3,len(active)))
+        for k,col in enumerate(active):
+            if np.isfinite(s[col]):pen[col,k]=1./s[col]
+        aug=np.vstack([A,pen.T])
+        target=-jD
+        try:
+            U,S,Vt=np.linalg.svd(aug,full_matrices=False)
+            tol=max(aug.shape)*np.finfo(float).eps*S[0] if len(S)>0 else 0
+            rank=sum(1 for s in S if s>tol)
+            b=Vt[:rank].T@(np.diag(1/S[:rank])@(U.T[:rank]@target))
+            residual=target-aug@b
+            total=float(np.sum(residual**2))
+        except Exception:
+            b=np.zeros(3);total=float(np.sum(jD**2))
+    return dict(total_coefficient=total,compensation=b.tolist(),
+        nuisance_rank=rank if 'rank' in dir() else 0)

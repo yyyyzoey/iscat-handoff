@@ -1,0 +1,74 @@
+{
+  "schema": "iscat159.complete_and_validate_finite_height_design.1",
+  "mode": "COMPLETE_V157_NOT_NEW_FITTING",
+  "base_commit": "71333a9f193d00012972e8fd6c188805c7a6b18e",
+  "repository": "yyyyzoey/iscat-handoff",
+  "activation": "ONLY_ON_USER_AUTHORIZED_CODEX_EXECUTION",
+  "total": 500,
+  "phases": {
+    "REPAIR_AND_ANCHOR": 260,
+    "NONLINEAR_PROBES": 120,
+    "FINAL_VERIFY": 120
+  },
+  "probe_groups": [
+    [
+      100000,
+      "ANON_02"
+    ],
+    [
+      100000,
+      "ANON_03"
+    ],
+    [
+      100000,
+      "ANON_04"
+    ]
+  ],
+  "probe_designs": [
+    "free_hxy",
+    "exact_height",
+    "height_sigma10"
+  ],
+  "delta_D_nm": [
+    -5,
+    -2,
+    -1,
+    -0.5,
+    0.5,
+    1,
+    2,
+    5
+  ],
+  "designs_per_group": 17,
+  "jacobian_scales": [
+    "coarse",
+    "fine"
+  ],
+  "svd_rtols": [
+    1e-08,
+    1e-10,
+    1e-12
+  ],
+  "sigma_nm": [
+    1,
+    2,
+    5,
+    10,
+    20,
+    50,
+    100
+  ],
+  "new_BEM": 0,
+  "new_render": 0,
+  "new_exposure": 0,
+  "new_noise_draw": 0,
+  "new_fit": 0,
+  "new_fixed_D_optimization": 0,
+  "new_Jacobian_batch": 0,
+  "new_second_focus": 0,
+  "reportable_D": null,
+  "experimental_absolute_diameter_validated": false,
+  "source_contract": "V162: quarantine V161 incorrect design/probes; execute the unchanged approved V157 science task with independent semantic checks.",
+  "reviewed_parent_commit": "dad7b87554959355926d3523169fae7ac30a39f7",
+  "branch_parent": "dad7b87554959355926d3523169fae7ac30a39f7"
+}

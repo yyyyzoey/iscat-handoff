@@ -1,0 +1,24 @@
+{
+  "zip_bytes": 4243,
+  "zip_git_blob_sha1": "13a11c536e7da5abccefb81cc8aa404b017c014d",
+  "zip_sha256": "0dd59625b31f5fb4779736813de78941cf8e52c6641cf822cb66f3d6f8a9dc38",
+  "zip_crc_bad_member": null,
+  "zip_members": 6,
+  "manifest_rows_verified": 5,
+  "design_groups": 12,
+  "design_records": 204,
+  "all_finite_designs_zero_compensation": true,
+  "all_finite_coeff_equal_free": true,
+  "ideal_h_equals_ideal_xy_all_groups": true,
+  "nonlinear_probes": 8,
+  "ids": [
+    "ANON"
+  ],
+  "probe_anchor": [
+    45.24922455863183,
+    421.5219091998806,
+    -499.999999986539,
+    -179.10701874402963
+  ],
+  "scope": "READONLY_ARTIFACT_AUDIT_NO_NEW_OPTICAL_CALLS"
+}
