@@ -1,10 +1,10 @@
 # V162 return ZIP - independent mechanical verification
 
-- artifact: `iscat_v162_return.zip` (410926 bytes)
-- sha256: `f00ac5d9b2700affa33d22652ce71e48723571e001fc510ee4ce2d926a685c5e`
-- members: 78 (manifest rows 77 + `manifest_sha256.csv`)
+- artifact: `iscat_v162_return.zip` (417589 bytes)
+- sha256: `47e7a249511c8bd998f48d30418757d00690cec6290ce83b0dee60ec5678a381`
+- members: 85 (manifest rows 84 + `manifest_sha256.csv`)
 - CRC `testzip()`: True
-- members re-hashed and matched to manifest: 77/77
+- members re-hashed and matched to manifest: 84/84
 - member set == manifest + manifest file: True
 - mismatches: []
 - verdict: **MECHANICALLY_CONSISTENT** (scope: ZIP_STRUCTURE_ONLY_NOT_SCIENTIFIC_ACCEPTANCE)

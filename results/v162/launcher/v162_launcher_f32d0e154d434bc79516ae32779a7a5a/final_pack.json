@@ -1,0 +1,15 @@
+{
+  "stage": "final_pack",
+  "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "C:\\iscat\\v162\\tools\\v162_bundle\\code\\v162_report_pack.py",
+    "--out",
+    "C:\\iscat\\v162\\results\\v162"
+  ],
+  "cwd": "C:\\iscat\\v162",
+  "returncode": 0,
+  "started_utc": "2026-10-26T11:37:51.266733+00:00",
+  "ended_utc": "2026-10-26T11:37:51.815834+00:00",
+  "stdout_sha256": "fbe84d93f60aeba68549f8fe3af2cfa2161f6c8ad06f05b130153c406c9f82d4",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

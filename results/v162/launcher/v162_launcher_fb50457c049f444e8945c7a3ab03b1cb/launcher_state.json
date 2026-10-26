@@ -1,0 +1,21 @@
+{
+  "task": "V162",
+  "started_utc": "2026-10-26T11:36:41.210530+00:00",
+  "package": {
+    "payload_sha256": "4dc3f129f46110002dd5c56b7186794a20cfddfafc8e5a1d77cad44a902f840b",
+    "members": 51,
+    "manifest_rows": 50,
+    "inventory_count": 222,
+    "scope": "PACKAGE_BYTES_ONLY_NOT_TEST_OR_SCIENCE_ACCEPTANCE"
+  },
+  "launcher_sha256": "97ecf543b83f753a0688efbdc9209c1714e01f4cb52992778f856905cc6209d1",
+  "reviewed_parent": "dad7b87554959355926d3523169fae7ac30a39f7",
+  "scientific_acceptance": false,
+  "experimental_absolute_diameter_validated": false,
+  "state": "BLOCKED_OR_FAILED",
+  "error_type": "ValueError",
+  "error": "ValueError('V162_BRANCH_EXISTS_NO_AUTOMATIC_RESET_OR_RERUN')",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\PC\\Downloads\\iscat_v162_launcher.pyz\\v162_bootstrap.py\", line 197, in main\n    state['environment']=environment_check(src,dst)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\PC\\Downloads\\iscat_v162_launcher.pyz\\v162_bootstrap.py\", line 164, in environment_check\n    raise ValueError('V162_BRANCH_EXISTS_NO_AUTOMATIC_RESET_OR_RERUN')\nValueError: V162_BRANCH_EXISTS_NO_AUTOMATIC_RESET_OR_RERUN\n",
+  "returncode": 2,
+  "ended_utc": "2026-10-26T11:36:41.423683+00:00"
+}

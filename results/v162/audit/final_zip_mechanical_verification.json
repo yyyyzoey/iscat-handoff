@@ -1,19 +1,18 @@
 {
   "artifact": "iscat_v162_return.zip",
   "zip_path": "C:\\iscat\\v162\\results\\v162\\iscat_v162_return.zip",
-  "zip_bytes": 410926,
-  "zip_sha256": "f00ac5d9b2700affa33d22652ce71e48723571e001fc510ee4ce2d926a685c5e",
+  "zip_bytes": 417589,
+  "zip_sha256": "47e7a249511c8bd998f48d30418757d00690cec6290ce83b0dee60ec5678a381",
   "manifest_path": "C:\\iscat\\v162\\results\\v162\\manifest_sha256.csv",
-  "manifest_rows": 77,
+  "manifest_rows": 84,
   "method": "independent raw re-parse (no bundle/packer imports)",
   "external_to_zip": true,
   "external_reason": "post-pack measurement; a ZIP cannot carry its own digest",
   "external_files_added_after_pack": [
-    "audit/final_zip_mechanical_verification.py",
     "audit/final_zip_mechanical_verification.json",
     "audit/final_zip_mechanical_verification.md"
   ],
-  "external_files_note": "These three audit files were created/run after the final v162_report_pack.py pass, so they are not ZIP members. This mirrors the official packer, which already excludes archive_receipt.json from members for the same reason. Every other file under results/v162 is a verified ZIP member.",
+  "external_files_note": "This script (audit/final_zip_mechanical_verification.py) IS a ZIP member; only its two outputs are regenerated after the final v162_report_pack.py pass, because a ZIP cannot record its own digest. This mirrors the official packer, which likewise excludes archive_receipt.json from members.",
   "packer_excluded_members": [
     "iscat_v162_return.zip",
     "manifest_sha256.csv",
@@ -21,10 +20,10 @@
   ],
   "checks": {
     "crc_testzip_none": true,
-    "manifest_rows_verified": 77,
-    "manifest_rows_total": 77,
+    "manifest_rows_verified": 84,
+    "manifest_rows_total": 84,
     "member_set_equals_manifest_plus_manifest_file": true,
-    "member_count": 78,
+    "member_count": 85,
     "members_not_in_manifest": [],
     "manifest_rows_not_in_zip": [],
     "zip_contains_self_digest": false,
@@ -51,6 +50,21 @@
       "path": "audit/blocked_execution_audit.py",
       "bytes": 22680,
       "sha256": "52f5883f60201ae4ae2780241981a81dd8a06b860d835fc49bd5421ccaec5df6"
+    },
+    {
+      "path": "audit/final_zip_mechanical_verification.py",
+      "bytes": 5586,
+      "sha256": "56240f654101356f671643867b64e0fc335745282568b6a9631fc52e804608e5"
+    },
+    {
+      "path": "audit/intake_out_of_tree_receipts.py",
+      "bytes": 2937,
+      "sha256": "bd9edbbbaab5136221f927761c2fc2934eecad72fe35852d0717af2154526438"
+    },
+    {
+      "path": "audit/out_of_tree_receipt_intake.json",
+      "bytes": 2352,
+      "sha256": "1e06de5c41d8e5bee83332acf4ba3af0cf7414e978c9b737940128744041c4d4"
     },
     {
       "path": "audit/v161_archive_and_errors.json",
@@ -278,6 +292,21 @@
       "sha256": "8ef7ad038f443a27858233cde1d0e8fc0ba887c0b4c31ef866c6dde793cb5914"
     },
     {
+      "path": "launcher/v162_launcher_f32d0e154d434bc79516ae32779a7a5a/final_pack.json",
+      "bytes": 539,
+      "sha256": "b5e1a86f288007e3f8b16c089c5e9da9ed43f4f930d4ad2ca89f9a49abc72d59"
+    },
+    {
+      "path": "launcher/v162_launcher_f32d0e154d434bc79516ae32779a7a5a/final_pack.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "launcher/v162_launcher_f32d0e154d434bc79516ae32779a7a5a/final_pack.stdout",
+      "bytes": 47,
+      "sha256": "fbe84d93f60aeba68549f8fe3af2cfa2161f6c8ad06f05b130153c406c9f82d4"
+    },
+    {
       "path": "launcher/v162_launcher_f32d0e154d434bc79516ae32779a7a5a/launcher_state.json",
       "bytes": 2597,
       "sha256": "21e4262442c7ff49db93415790ccaed155bf5ec450a7c032d747b50fc7af5887"
@@ -311,6 +340,11 @@
       "path": "launcher/v162_launcher_f32d0e154d434bc79516ae32779a7a5a/run_all.stdout",
       "bytes": 128,
       "sha256": "7322bde6f7c53c480ea46daec494a8a75d576830708d3248395c920788cd866b"
+    },
+    {
+      "path": "launcher/v162_launcher_fb50457c049f444e8945c7a3ab03b1cb/launcher_state.json",
+      "bytes": 1275,
+      "sha256": "e4f0a7079e9c800e93ace5c657a8af1878453a133d4831a023cb72fdd187fb34"
     },
     {
       "path": "logs/9285abb568744494a8fd3784849c229d_stage_commands.json",
@@ -419,8 +453,8 @@
     },
     {
       "path": "manifest_sha256.csv",
-      "bytes": 10010,
-      "sha256": "a85c2aa79c6a94376e23c77fe8cc56907f21503913ceda23f52eb1c87e1c002d"
+      "bytes": 10915,
+      "sha256": "d150f9261c656e7c939c30f494a33c23ce618a6626c74549a3b9c986b28549af"
     }
   ],
   "verdict": "MECHANICALLY_CONSISTENT",

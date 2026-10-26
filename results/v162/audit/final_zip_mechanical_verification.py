@@ -38,14 +38,13 @@ def main() -> int:
         "external_to_zip": True,
         "external_reason": "post-pack measurement; a ZIP cannot carry its own digest",
         "external_files_added_after_pack": [
-            "audit/final_zip_mechanical_verification.py",
             "audit/final_zip_mechanical_verification.json",
             "audit/final_zip_mechanical_verification.md",
         ],
         "external_files_note": (
-            "These three audit files were created/run after the final v162_report_pack.py pass, so they are "
-            "not ZIP members. This mirrors the official packer, which already excludes archive_receipt.json "
-            "from members for the same reason. Every other file under results/v162 is a verified ZIP member."
+            "This script (audit/final_zip_mechanical_verification.py) IS a ZIP member; only its two outputs are "
+            "regenerated after the final v162_report_pack.py pass, because a ZIP cannot record its own digest. "
+            "This mirrors the official packer, which likewise excludes archive_receipt.json from members."
         ),
         "packer_excluded_members": PACKER_EXCLUDED,
         "checks": {},

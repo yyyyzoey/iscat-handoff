@@ -1,0 +1,46 @@
+{
+  "audit_kind": "V162_OUT_OF_TREE_LAUNCHER_RECEIPT_INTAKE",
+  "method": "byte-exact copy, sha256 compared before and after",
+  "rows": [
+    {
+      "source": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\final_pack.json",
+      "destination": "launcher/v162_launcher_f32d0e154d434bc79516ae32779a7a5a/final_pack.json",
+      "bytes": 539,
+      "source_sha256": "b5e1a86f288007e3f8b16c089c5e9da9ed43f4f930d4ad2ca89f9a49abc72d59",
+      "destination_sha256": "b5e1a86f288007e3f8b16c089c5e9da9ed43f4f930d4ad2ca89f9a49abc72d59",
+      "byte_identical": true,
+      "state": "COPIED"
+    },
+    {
+      "source": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\final_pack.stdout",
+      "destination": "launcher/v162_launcher_f32d0e154d434bc79516ae32779a7a5a/final_pack.stdout",
+      "bytes": 47,
+      "source_sha256": "fbe84d93f60aeba68549f8fe3af2cfa2161f6c8ad06f05b130153c406c9f82d4",
+      "destination_sha256": "fbe84d93f60aeba68549f8fe3af2cfa2161f6c8ad06f05b130153c406c9f82d4",
+      "byte_identical": true,
+      "state": "COPIED"
+    },
+    {
+      "source": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\final_pack.stderr",
+      "destination": "launcher/v162_launcher_f32d0e154d434bc79516ae32779a7a5a/final_pack.stderr",
+      "bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "destination_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true,
+      "state": "COPIED"
+    },
+    {
+      "source": "C:\\iscat\\v162_launcher_fb50457c049f444e8945c7a3ab03b1cb\\launcher_state.json",
+      "destination": "launcher/v162_launcher_fb50457c049f444e8945c7a3ab03b1cb/launcher_state.json",
+      "bytes": 1275,
+      "source_sha256": "e4f0a7079e9c800e93ace5c657a8af1878453a133d4831a023cb72fdd187fb34",
+      "destination_sha256": "e4f0a7079e9c800e93ace5c657a8af1878453a133d4831a023cb72fdd187fb34",
+      "byte_identical": true,
+      "state": "COPIED"
+    }
+  ],
+  "failures": [],
+  "verdict": "INTAKE_OK",
+  "scope": "source preservation only; not a test or science acceptance",
+  "note": "The f32d0e15 launcher's extracted payload directory and the two launch attempts' absolute paths are recorded here; payload digests are in each launcher_state.json."
+}
