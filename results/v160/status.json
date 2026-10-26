@@ -1,0 +1,20 @@
+{
+  "task": "V160_HEIGHT_INFORMATION_AND_NONLINEAR_COMPENSATION_PROBES",
+  "stage": "BLOCKED_PREFLIGHT",
+  "detail": "V160 preflight correctly blocked execution due to accumulated environment changes across V147-V159 rounds",
+  "completed": {
+    "branch_created": true,
+    "v160_baseline": "9027bcf",
+    "code_installed": true,
+    "test_receipt_written": true
+  },
+  "blocked": {
+    "preflight_checks": "multiple (test receipt, locked tree, bundle SHA, archive integrity, pool readability)",
+    "science_work": "NOT RUN (1224 designs + 3 probes + 36 Q-replay all blocked)",
+    "forward_calls": 0
+  },
+  "reportability": {
+    "all_reportable_D_null": true
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+}
