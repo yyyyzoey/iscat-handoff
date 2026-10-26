@@ -1,0 +1,20 @@
+{
+  "task": "V159_DEPLOYMENT_AND_MEASUREMENT_INFORMATION",
+  "stage": "BLOCKED_DEPLOYMENT_REQUIREMENTS",
+  "detail": "Preflight requires code installed at tools/v159_bundle/code/ and passing workstation_tests/test_receipt.json with all code SHA256 matching. Despite installing files and running tests, the sequential preflight checks continue to find new unmet conditions.",
+  "completed": {
+    "branch_created": true,
+    "v149_baseline": "71333a9",
+    "core_tests": "29/29 test_v159.py PASS",
+    "v152_72_thetas_rescored": true,
+    "v151_106_witnesses_preserved": true
+  },
+  "blocked": {
+    "v159_preflight": "INSTALL_EXACTLY_TO_TOOLS_V159_BUNDLE_CODE -> workstation_tests/test_receipt.json -> further checks",
+    "scientific_work": "1224 design comparisons + 3 nonlinear probes NOT RUN"
+  },
+  "reportability": {
+    "all_reportable_D_null": true
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+}
