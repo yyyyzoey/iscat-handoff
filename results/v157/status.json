@@ -1,0 +1,19 @@
+{
+  "task": "V157_CANONICAL_N_ORACLE_AND_CONSERVATIVE_DIAMETER_IDENTIFIABILITY",
+  "finding": "D-h compensation is the PRIMARY limiting factor; independent height measurement dramatically improves D estimation",
+  "quantitative_example": {
+    "case": "B100000_ANON_02",
+    "ideal_known_hxy_coefficient": 0.2072,
+    "no_auxiliary_coefficient": 9.07e-05,
+    "improvement_factor": "~2283x",
+    "note": "This is a LOCAL quadratic design coefficient, not an experimental precision"
+  },
+  "stage_states": {
+    "AUDIT": "COMPLETED (V156 readonly consistency check)",
+    "DESIGN": "COMPLETED 12 groups × 17 designs",
+    "BEM": "0",
+    "RENDER": "0",
+    "CAMERA": "0"
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+}

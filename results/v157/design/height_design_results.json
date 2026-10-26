@@ -1,0 +1,5354 @@
+{
+ "100000_ANON_01": [
+  {
+   "design": "ideal_known_hxy",
+   "sigma_h_nm": 0.0,
+   "sigma_xy_nm": 0.0,
+   "no_height_measurement": false,
+   "no_xy_measurement": false,
+   "exact_height": true,
+   "exact_xy": true,
+   "rtol": 1e-10,
+   "nuisance_rank": 0,
+   "normalized_augmented_singular_values": [],
+   "compensation_nm_per_nm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "image_coefficient_nm_minus2": 0.022017248547257697,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.022017248547257697,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.9999999999999999,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "no_auxiliary",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": null,
+   "no_height_measurement": true,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0005340807306207,
+    0.9999810897465606,
+    0.9994845538805555
+   ],
+   "compensation_nm_per_nm": [
+    -3.255887088300562,
+    -0.0034214871543864177,
+    -0.001993297475441478
+   ],
+   "image_coefficient_nm_minus2": 1.5931453083335993e-05,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 1.5931453083335993e-05,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.0007235896460514042,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_1.0nm",
+   "sigma_h_nm": 1.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0003069814844525,
+    0.9999998855801617,
+    0.9996930387039438
+   ],
+   "compensation_nm_per_nm": [
+    -0.006743396207568802,
+    -0.004008670249971645,
+    0.009958599603600987
+   ],
+   "image_coefficient_nm_minus2": 0.021926194704189293,
+   "auxiliary_coefficient_nm_minus2": 4.54733924122533e-05,
+   "total_coefficient_nm_minus2": 0.021971668096601546,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.997929784434312,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_2.0nm",
+   "sigma_h_nm": 2.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0003089675100871,
+    0.9999995504898609,
+    0.9996913866483893
+   ],
+   "compensation_nm_per_nm": [
+    -0.02680702159006678,
+    -0.004005044364882304,
+    0.009884796039238076
+   ],
+   "image_coefficient_nm_minus2": 0.021656436219173965,
+   "auxiliary_coefficient_nm_minus2": 0.00017965410163257663,
+   "total_coefficient_nm_minus2": 0.02183609032080654,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.9917719861288605,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_5.0nm",
+   "sigma_h_nm": 5.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0003218487713212,
+    0.9999975024821425,
+    0.9996805459246476
+   ],
+   "compensation_nm_per_nm": [
+    -0.16060181505472282,
+    -0.0039808650584435175,
+    0.009392635103081356
+   ],
+   "image_coefficient_nm_minus2": 0.019900268772900756,
+   "auxiliary_coefficient_nm_minus2": 0.0010317177199548556,
+   "total_coefficient_nm_minus2": 0.02093198649285561,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.9507085523391949,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_10.0nm",
+   "sigma_h_nm": 10.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0003571550221348,
+    0.9999928449168968,
+    0.9996498749617454
+   ],
+   "compensation_nm_per_nm": [
+    -0.5595980635781115,
+    -0.003908758720727457,
+    0.007924936980379304
+   ],
+   "image_coefficient_nm_minus2": 0.015104312623899304,
+   "auxiliary_coefficient_nm_minus2": 0.003131499927603721,
+   "total_coefficient_nm_minus2": 0.018235812551503024,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.8282512009782592,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_20.0nm",
+   "sigma_h_nm": 20.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0004263540737346,
+    0.999986593543959,
+    0.9995868760678498
+   ],
+   "compensation_nm_per_nm": [
+    -1.4768841242758486,
+    -0.003742987391514052,
+    0.004550722224597099
+   ],
+   "image_coefficient_nm_minus2": 0.006584384539602778,
+   "auxiliary_coefficient_nm_minus2": 0.0054529667913451015,
+   "total_coefficient_nm_minus2": 0.012037351330947878,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.5467236882533698,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_50.0nm",
+   "sigma_h_nm": 50.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.000504767408326,
+    0.9999822545979637,
+    0.9995127317260061
+   ],
+   "compensation_nm_per_nm": [
+    -2.7297762149824214,
+    -0.0035165655628690198,
+    -5.801125669623111e-05
+   ],
+   "image_coefficient_nm_minus2": 0.000590397432454331,
+   "auxiliary_coefficient_nm_minus2": 0.002980671273553502,
+   "total_coefficient_nm_minus2": 0.003571068706007833,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.16219414057768894,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_100.0nm",
+   "sigma_h_nm": 100.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0005259171157066,
+    0.9999813950164776,
+    0.999492420581904
+   ],
+   "compensation_nm_per_nm": [
+    -3.1062212681557293,
+    -0.0034485346622486535,
+    -0.0014427553486163112
+   ],
+   "image_coefficient_nm_minus2": 6.242096844832074e-05,
+   "auxiliary_coefficient_nm_minus2": 0.0009648610566742986,
+   "total_coefficient_nm_minus2": 0.0010272820251226193,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.04665805642869802,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_1.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 1.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0000044986123784,
+    0.9999999971783649,
+    0.9999955041890317
+   ],
+   "compensation_nm_per_nm": [
+    -3.2558867249122714,
+    -3.369446050178706e-07,
+    -2.2158150877295994e-07
+   ],
+   "image_coefficient_nm_minus2": 1.5933047450205818e-05,
+   "auxiliary_coefficient_nm_minus2": 1.6263003188075016e-13,
+   "total_coefficient_nm_minus2": 1.593304761283585e-05,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.0007236620678845153,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_2.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 2.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0000089992050045,
+    0.9999999887185043,
+    0.9999910119956065
+   ],
+   "compensation_nm_per_nm": [
+    -3.2558867250345487,
+    -1.3473803735444074e-06,
+    -8.860305192351806e-07
+   ],
+   "image_coefficient_nm_minus2": 1.5933046474974444e-05,
+   "auxiliary_coefficient_nm_minus2": 6.501209880072076e-13,
+   "total_coefficient_nm_minus2": 1.5933047125095433e-05,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.0007236620457318647,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_5.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 5.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0000225045827273,
+    0.9999999297105052,
+    0.9999775652018765
+   ],
+   "compensation_nm_per_nm": [
+    -3.255886725888188,
+    -8.403753856588345e-06,
+    -5.52479634871853e-06
+   ],
+   "image_coefficient_nm_minus2": 1.593303967341714e-05,
+   "auxiliary_coefficient_nm_minus2": 4.045858143077484e-12,
+   "total_coefficient_nm_minus2": 1.5933043719275285e-05,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.0007236618910431377,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_10.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 10.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0000449752587688,
+    0.9999997219386203,
+    0.9999553007921752
+   ],
+   "compensation_nm_per_nm": [
+    -3.255886728904462,
+    -3.336914640310775e-05,
+    -2.191692449395317e-05
+   ],
+   "image_coefficient_nm_minus2": 1.593301573538106e-05,
+   "auxiliary_coefficient_nm_minus2": 1.5938515109456834e-11,
+   "total_coefficient_nm_minus2": 1.593303167389617e-05,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.0007236613439548361,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_20.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 20.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0000893911596505,
+    0.9999989346904232,
+    0.9999116662525437
+   ],
+   "compensation_nm_per_nm": [
+    -3.255886740484113,
+    -0.0001296824525866443,
+    -8.486794821430566e-05
+   ],
+   "image_coefficient_nm_minus2": 1.5932925217849657e-05,
+   "auxiliary_coefficient_nm_minus2": 6.005026785748328e-11,
+   "total_coefficient_nm_minus2": 1.5932985268117516e-05,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.000723659236253751,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_50.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 50.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0002113029077955,
+    0.9999948605345368,
+    0.9997937929593296
+   ],
+   "compensation_nm_per_nm": [
+    -3.255886804504333,
+    -0.0006760039721238257,
+    -0.00043351394957480156
+   ],
+   "image_coefficient_nm_minus2": 1.5932465941517346e-05,
+   "auxiliary_coefficient_nm_minus2": 2.5796628592125347e-10,
+   "total_coefficient_nm_minus2": 1.593272390780327e-05,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.0007236473655463969,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_100.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 100.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0003522680754937,
+    0.9999886738109405,
+    0.9996589378413279
+   ],
+   "compensation_nm_per_nm": [
+    -3.255886917096434,
+    -0.0016977373170752826,
+    -0.0010493610649288763
+   ],
+   "image_coefficient_nm_minus2": 1.5931844783790095e-05,
+   "auxiliary_coefficient_nm_minus2": 3.9834706423786446e-10,
+   "total_coefficient_nm_minus2": 1.5932243130854333e-05,
+   "D_squared_norm": 0.0220172485472577,
+   "fraction_of_all_nuisance_fixed": 0.0007236255291689811,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  }
+ ],
+ "100000_ANON_02": [
+  {
+   "design": "ideal_known_hxy",
+   "sigma_h_nm": 0.0,
+   "sigma_xy_nm": 0.0,
+   "no_height_measurement": false,
+   "no_xy_measurement": false,
+   "exact_height": true,
+   "exact_xy": true,
+   "rtol": 1e-10,
+   "nuisance_rank": 0,
+   "normalized_augmented_singular_values": [],
+   "compensation_nm_per_nm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "image_coefficient_nm_minus2": 0.20715307676140854,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.20715307676140854,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 1.0,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "no_auxiliary",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": null,
+   "no_height_measurement": true,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0014798631216055,
+    0.9997217757051907,
+    0.9987965032692057
+   ],
+   "compensation_nm_per_nm": [
+    -0.48105245042260886,
+    0.006535180066561309,
+    -0.0037732517823990314
+   ],
+   "image_coefficient_nm_minus2": 9.073844982784648e-05,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 9.073844982784648e-05,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.000438026078330257,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_1.0nm",
+   "sigma_h_nm": 1.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0011975675641847,
+    0.9998054262427785,
+    0.9989957659365013
+   ],
+   "compensation_nm_per_nm": [
+    -0.22716911455685665,
+    0.00212218146285928,
+    -0.00490515672605549
+   ],
+   "image_coefficient_nm_minus2": 0.05776519105919186,
+   "auxiliary_coefficient_nm_minus2": 0.05160580660854626,
+   "total_coefficient_nm_minus2": 0.10937099766773811,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.5279718717077405,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_2.0nm",
+   "sigma_h_nm": 2.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0013720135435387,
+    0.9997484090996399,
+    0.9988779750272299
+   ],
+   "compensation_nm_per_nm": [
+    -0.3759987564446996,
+    0.004709137395199688,
+    -0.004241619645765642
+   ],
+   "image_coefficient_nm_minus2": 0.009965753023731792,
+   "auxiliary_coefficient_nm_minus2": 0.03534376621199013,
+   "total_coefficient_nm_minus2": 0.04530951923572192,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.21872481907622254,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_5.0nm",
+   "sigma_h_nm": 5.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.001459509855861,
+    0.9997263737700909,
+    0.9988123085483896
+   ],
+   "compensation_nm_per_nm": [
+    -0.460467769514544,
+    0.006177377267904828,
+    -0.003865025832886083
+   ],
+   "image_coefficient_nm_minus2": 0.0004698817339840479,
+   "auxiliary_coefficient_nm_minus2": 0.008481222670467968,
+   "total_coefficient_nm_minus2": 0.008951104404452015,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.04321009634224055,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_10.0nm",
+   "sigma_h_nm": 10.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.001474639343334,
+    0.9997229380920633,
+    0.9988005775953039
+   ],
+   "compensation_nm_per_nm": [
+    -0.47573564697945564,
+    0.006442763421369311,
+    -0.0037969560404269784
+   ],
+   "image_coefficient_nm_minus2": 0.00011603237908675652,
+   "auxiliary_coefficient_nm_minus2": 0.0022632440580696127,
+   "total_coefficient_nm_minus2": 0.0023792764371563693,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.011485595456044008,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_20.0nm",
+   "sigma_h_nm": 20.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0014785484092061,
+    0.9997220671147418,
+    0.9987975298327576
+   ],
+   "compensation_nm_per_nm": [
+    -0.47971213928025414,
+    0.006511882786416543,
+    -0.0037792273806133174
+   ],
+   "image_coefficient_nm_minus2": 9.234585864134653e-05,
+   "auxiliary_coefficient_nm_minus2": 0.000575309341432095,
+   "total_coefficient_nm_minus2": 0.0006676552000734416,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.0032230040244221082,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_50.0nm",
+   "sigma_h_nm": 50.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.00147965237123,
+    0.9997218223672302,
+    0.9987966678804777
+   ],
+   "compensation_nm_per_nm": [
+    -0.48083749756138333,
+    0.006531443757231422,
+    -0.0037742101210237857
+   ],
+   "image_coefficient_nm_minus2": 9.077979278620044e-05,
+   "auxiliary_coefficient_nm_minus2": 9.248187962443733e-05,
+   "total_coefficient_nm_minus2": 0.00018326167241063777,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.0008846678759288329,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_100.0nm",
+   "sigma_h_nm": 100.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0014798104198221,
+    0.9997217873720055,
+    0.9987965444349521
+   ],
+   "compensation_nm_per_nm": [
+    -0.4809986941920284,
+    0.006534245676085175,
+    -0.0037734914473728093
+   ],
+   "image_coefficient_nm_minus2": 9.074103549551796e-05,
+   "auxiliary_coefficient_nm_minus2": 2.3135974381443648e-05,
+   "total_coefficient_nm_minus2": 0.0001138770098769616,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.0005497239609340731,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_1.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 1.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0001260169703732,
+    0.9999940086037983,
+    0.9998799592628519
+   ],
+   "compensation_nm_per_nm": [
+    -0.48105110599711753,
+    8.308060148344294e-05,
+    -5.408813715135331e-05
+   ],
+   "image_coefficient_nm_minus2": 9.14756567655697e-05,
+   "auxiliary_coefficient_nm_minus2": 9.827912923354267e-09,
+   "total_coefficient_nm_minus2": 9.148548467849306e-05,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.00044163227555564017,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_2.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 2.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0002549681504311,
+    0.9999774047308283,
+    0.9997675673466181
+   ],
+   "compensation_nm_per_nm": [
+    -0.48105115416667116,
+    0.0003201151994646264,
+    -0.00020742967425087916
+   ],
+   "image_coefficient_nm_minus2": 9.142074833983171e-05,
+   "auxiliary_coefficient_nm_minus2": 3.637520267202585e-08,
+   "total_coefficient_nm_minus2": 9.145712354250374e-05,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.0004414953664812846,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_5.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 5.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0006195998063705,
+    0.9998998135462047,
+    0.9994802546091668
+   ],
+   "compensation_nm_per_nm": [
+    -0.48105141427701154,
+    0.0015914863642372686,
+    -0.0010060210121811102
+   ],
+   "image_coefficient_nm_minus2": 9.116451836451057e-05,
+   "auxiliary_coefficient_nm_minus2": 1.4179628498012266e-07,
+   "total_coefficient_nm_minus2": 9.130631464949069e-05,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.0004407673594665167,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_10.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 10.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.001025589214102,
+    0.9998061627810607,
+    0.9991673566543149
+   ],
+   "compensation_nm_per_nm": [
+    -0.4810518472180026,
+    0.0036785691466637268,
+    -0.0022356779059754845
+   ],
+   "image_coefficient_nm_minus2": 9.087790743522922e-05,
+   "auxiliary_coefficient_nm_minus2": 1.8530126666053226e-07,
+   "total_coefficient_nm_minus2": 9.106320870188975e-05,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.0004395938024457782,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_20.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 20.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0013190417539708,
+    0.9997488221571617,
+    0.9989306628671865
+   ],
+   "compensation_nm_per_nm": [
+    -0.48105222474398135,
+    0.005472741228361434,
+    -0.0032196288107108092
+   ],
+   "image_coefficient_nm_minus2": 9.075744211110235e-05,
+   "auxiliary_coefficient_nm_minus2": 1.0079226557841531e-07,
+   "total_coefficient_nm_minus2": 9.085823437668077e-05,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.0004386043200378241,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_50.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 50.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0014506371615757,
+    0.9997264706946051,
+    0.9988211076670253
+   ],
+   "compensation_nm_per_nm": [
+    -0.48105240849025177,
+    0.006338307029895693,
+    -0.0036722157067296587
+   ],
+   "image_coefficient_nm_minus2": 9.073909737505291e-05,
+   "auxiliary_coefficient_nm_minus2": 2.146372168079087e-08,
+   "total_coefficient_nm_minus2": 9.076056109673371e-05,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.00043813281712087946,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_100.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 100.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0014724108621516,
+    0.9997229638357096,
+    0.9988027862703893
+   ],
+   "compensation_nm_per_nm": [
+    -0.4810524396923936,
+    0.006484824187880946,
+    -0.0037474748987418867
+   ],
+   "image_coefficient_nm_minus2": 9.073849214257077e-05,
+   "auxiliary_coefficient_nm_minus2": 5.609651286442629e-09,
+   "total_coefficient_nm_minus2": 9.074410179385721e-05,
+   "D_squared_norm": 0.20715307676140854,
+   "fraction_of_all_nuisance_fixed": 0.00043805336233732604,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  }
+ ],
+ "100000_ANON_03": [
+  {
+   "design": "ideal_known_hxy",
+   "sigma_h_nm": 0.0,
+   "sigma_xy_nm": 0.0,
+   "no_height_measurement": false,
+   "no_xy_measurement": false,
+   "exact_height": true,
+   "exact_xy": true,
+   "rtol": 1e-10,
+   "nuisance_rank": 0,
+   "normalized_augmented_singular_values": [],
+   "compensation_nm_per_nm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "image_coefficient_nm_minus2": 0.062350995236032915,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.062350995236032915,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.9999999999999999,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "no_auxiliary",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": null,
+   "no_height_measurement": true,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.000584636799307,
+    1.0000009152286515,
+    0.999414105435309
+   ],
+   "compensation_nm_per_nm": [
+    0.17607751081043152,
+    -0.007316135071052887,
+    -0.00838795392782054
+   ],
+   "image_coefficient_nm_minus2": 0.005341643012771453,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.005341643012771453,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.08567053328580221,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_1.0nm",
+   "sigma_h_nm": 1.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0004899674818113,
+    1.0000008439902945,
+    0.9995089479274027
+   ],
+   "compensation_nm_per_nm": [
+    0.1140514418531268,
+    -0.00829806101844739,
+    -0.008385372751839865
+   ],
+   "image_coefficient_nm_minus2": 0.012415805609833526,
+   "auxiliary_coefficient_nm_minus2": 0.013007731388777163,
+   "total_coefficient_nm_minus2": 0.02542353699861069,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.40774869594893515,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_2.0nm",
+   "sigma_h_nm": 2.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0005542866328911,
+    1.00000089631495,
+    0.9994445091498793
+   ],
+   "compensation_nm_per_nm": [
+    0.15500316712699008,
+    -0.007649760032862267,
+    -0.008387076932217206
+   ],
+   "image_coefficient_nm_minus2": 0.00615829051678548,
+   "auxiliary_coefficient_nm_minus2": 0.006006495454849404,
+   "total_coefficient_nm_minus2": 0.012164785971634885,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.19510171290104444,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_5.0nm",
+   "sigma_h_nm": 5.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0005793541939858,
+    1.0000009121490006,
+    0.9994193972811978
+   ],
+   "compensation_nm_per_nm": [
+    0.17232872063787982,
+    -0.007375481639418465,
+    -0.008387797924267531
+   ],
+   "image_coefficient_nm_minus2": 0.005367483981346481,
+   "auxiliary_coefficient_nm_minus2": 0.001187887518267537,
+   "total_coefficient_nm_minus2": 0.006555371499614018,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.10513659765651405,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_10.0nm",
+   "sigma_h_nm": 10.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0005832992487897,
+    1.0000009144567912,
+    0.9994154453229094
+   ],
+   "compensation_nm_per_nm": [
+    0.17512510532719633,
+    -0.007331212467898533,
+    -0.00838791429406303
+   ],
+   "image_coefficient_nm_minus2": 0.0053433109138771116,
+   "auxiliary_coefficient_nm_minus2": 0.00030668802515861613,
+   "total_coefficient_nm_minus2": 0.0056499989390357275,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.09061601851979048,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_20.0nm",
+   "sigma_h_nm": 20.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.00058430133731,
+    1.0000009150355642,
+    0.9994144414832925
+   ],
+   "compensation_nm_per_nm": [
+    0.1758384395851615,
+    -0.007319919773892012,
+    -0.008387943979020407
+   ],
+   "image_coefficient_nm_minus2": 0.0053417481075494575,
+   "auxiliary_coefficient_nm_minus2": 7.729789208936123e-05,
+   "total_coefficient_nm_minus2": 0.005419045999638819,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.08691194068554542,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_50.0nm",
+   "sigma_h_nm": 50.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0005845830770432,
+    1.000000915197752,
+    0.9994141592514075
+   ],
+   "compensation_nm_per_nm": [
+    0.17603921573811274,
+    -0.007316741314940568,
+    -0.008387952334195285
+   ],
+   "image_coefficient_nm_minus2": 0.005341645709345253,
+   "auxiliary_coefficient_nm_minus2": 1.239592219107592e-05,
+   "total_coefficient_nm_minus2": 0.005354041631536329,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.08586938526431417,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_100.0nm",
+   "sigma_h_nm": 100.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.000584623367013,
+    1.0000009152209264,
+    0.9994141188910648
+   ],
+   "compensation_nm_per_nm": [
+    0.17606793548044894,
+    -0.007316286656748734,
+    -0.008387953529348891
+   ],
+   "image_coefficient_nm_minus2": 0.005341643181362312,
+   "auxiliary_coefficient_nm_minus2": 3.0999917904347533e-06,
+   "total_coefficient_nm_minus2": 0.005344743173152747,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.08572025439080716,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_1.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 1.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0000494010938572,
+    1.0000000103975026,
+    0.9999505860675377
+   ],
+   "compensation_nm_per_nm": [
+    0.17607803970274669,
+    -6.164331064412333e-05,
+    -8.067449456769876e-05
+   ],
+   "image_coefficient_nm_minus2": 0.005342760389230115,
+   "auxiliary_coefficient_nm_minus2": 1.0308271820921544e-08,
+   "total_coefficient_nm_minus2": 0.005342770697501937,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.08568861936006958,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_2.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 2.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0000978132585046,
+    1.0000000402192744,
+    0.999902136949916
+   ],
+   "compensation_nm_per_nm": [
+    0.17607802666873548,
+    -0.000240493813131457,
+    -0.00031364846832630724
+   ],
+   "image_coefficient_nm_minus2": 0.005342701548143113,
+   "auxiliary_coefficient_nm_minus2": 3.905315895948668e-08,
+   "total_coefficient_nm_minus2": 0.005342740601302073,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.08568813667010208,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_5.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 5.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0002289918577498,
+    1.0000002042485896,
+    0.9997707513975436
+   ],
+   "compensation_nm_per_nm": [
+    0.17607795077214494,
+    -0.0012818545998535674,
+    -0.0016386321428758146
+   ],
+   "image_coefficient_nm_minus2": 0.0053423948018033835,
+   "auxiliary_coefficient_nm_minus2": 1.7313066059326137e-07,
+   "total_coefficient_nm_minus2": 0.005342567932463977,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.08568536736646158,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_10.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 10.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0003803633401673,
+    1.0000004893647316,
+    0.9996190023772518
+   ],
+   "compensation_nm_per_nm": [
+    0.1760777992249593,
+    -0.0033608198794954367,
+    -0.004132601339155048
+   ],
+   "image_coefficient_nm_minus2": 0.005341951800548772,
+   "auxiliary_coefficient_nm_minus2": 2.837350409079782e-07,
+   "total_coefficient_nm_minus2": 0.00534223553558968,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.08568003630682029,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_20.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 20.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0005056801489483,
+    1.0000007516911154,
+    0.9994933119370507
+   ],
+   "compensation_nm_per_nm": [
+    0.17607763210443883,
+    -0.005652891627176185,
+    -0.006670757799537711
+   ],
+   "image_coefficient_nm_minus2": 0.005341695155607463,
+   "auxiliary_coefficient_nm_minus2": 1.9113548342172955e-07,
+   "total_coefficient_nm_minus2": 0.005341886291090885,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.0856744350409949,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_50.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 50.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0005695870918987,
+    1.000000884441668,
+    0.9994292033469048
+   ],
+   "compensation_nm_per_nm": [
+    0.17607753480001467,
+    -0.006987197676880705,
+    -0.008056145253082028
+   ],
+   "image_coefficient_nm_minus2": 0.0053416450013512445,
+   "auxiliary_coefficient_nm_minus2": 4.54889630858253e-08,
+   "total_coefficient_nm_minus2": 0.0053416904903143304,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.08567129474185751,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_100.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 100.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.000580766785864,
+    1.0000009073326999,
+    0.999417987866934
+   ],
+   "compensation_nm_per_nm": [
+    0.176077517017198,
+    -0.007231030803161756,
+    -0.008302465611661989
+   ],
+   "image_coefficient_nm_minus2": 0.005341643145286993,
+   "auxiliary_coefficient_nm_minus2": 1.2121874170910404e-08,
+   "total_coefficient_nm_minus2": 0.005341655267161164,
+   "D_squared_norm": 0.06235099523603292,
+   "fraction_of_all_nuisance_fixed": 0.08567072982460106,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  }
+ ],
+ "100000_ANON_04": [
+  {
+   "design": "ideal_known_hxy",
+   "sigma_h_nm": 0.0,
+   "sigma_xy_nm": 0.0,
+   "no_height_measurement": false,
+   "no_xy_measurement": false,
+   "exact_height": true,
+   "exact_xy": true,
+   "rtol": 1e-10,
+   "nuisance_rank": 0,
+   "normalized_augmented_singular_values": [],
+   "compensation_nm_per_nm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "image_coefficient_nm_minus2": 0.029912454275614054,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.029912454275614054,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 1.0000000000000002,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "no_auxiliary",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": null,
+   "no_height_measurement": true,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0033471325347496,
+    1.0003432601902786,
+    0.9962970909453565
+   ],
+   "compensation_nm_per_nm": [
+    -0.16536687709584186,
+    -0.0008110201257231104,
+    -0.0012782859461891432
+   ],
+   "image_coefficient_nm_minus2": 1.1656978265628231e-05,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 1.1656978265628231e-05,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.00038970317039921105,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_1.0nm",
+   "sigma_h_nm": 1.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0023974754080736,
+    1.0003380060696825,
+    0.997257827699564
+   ],
+   "compensation_nm_per_nm": [
+    -0.08637226463225467,
+    -0.00013231131704269863,
+    0.000565379686407216
+   ],
+   "image_coefficient_nm_minus2": 0.006834600550492986,
+   "auxiliary_coefficient_nm_minus2": 0.007460168097704231,
+   "total_coefficient_nm_minus2": 0.014294768648197217,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.47788685329812414,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_2.0nm",
+   "sigma_h_nm": 2.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0030109738404034,
+    1.000341948142535,
+    0.9966368311185991
+   ],
+   "compensation_nm_per_nm": [
+    -0.13459280199431176,
+    -0.0005466142985530877,
+    -0.000560045766635463
+   ],
+   "image_coefficient_nm_minus2": 0.0010471492274402084,
+   "auxiliary_coefficient_nm_minus2": 0.004528805587170003,
+   "total_coefficient_nm_minus2": 0.005575954814610212,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.1864091379207214,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_5.0nm",
+   "sigma_h_nm": 5.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0032858943211533,
+    1.0003430503460133,
+    0.996358969388361
+   ],
+   "compensation_nm_per_nm": [
+    -0.159530713399235,
+    -0.0007608767604192592,
+    -0.0011420749553623366
+   ],
+   "image_coefficient_nm_minus2": 4.889887258700534e-05,
+   "auxiliary_coefficient_nm_minus2": 0.0010180019407067546,
+   "total_coefficient_nm_minus2": 0.00106690081329376,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.03566744485301376,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_10.0nm",
+   "sigma_h_nm": 10.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0033315089734525,
+    1.0003432077323418,
+    0.9963128774861953
+   ],
+   "compensation_nm_per_nm": [
+    -0.16386816655866493,
+    -0.0007981434495610572,
+    -0.001243307344175336
+   ],
+   "image_coefficient_nm_minus2": 1.4112887744921651e-05,
+   "auxiliary_coefficient_nm_minus2": 0.0002685277601129836,
+   "total_coefficient_nm_minus2": 0.00028264064785790525,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.009448928705536755,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_20.0nm",
+   "sigma_h_nm": 20.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0033432064600476,
+    1.0003432470759914,
+    0.9963010579538353
+   ],
+   "compensation_nm_per_nm": [
+    -0.16498963527075455,
+    -0.0008077789255740176,
+    -0.001269481449699844
+   ],
+   "image_coefficient_nm_minus2": 1.181258074345333e-05,
+   "auxiliary_coefficient_nm_minus2": 6.805394936694153e-05,
+   "total_coefficient_nm_minus2": 7.986653011039485e-05,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.002670009266859308,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_50.0nm",
+   "sigma_h_nm": 50.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.003346503451924,
+    1.0003432580920013,
+    0.9962977265861225
+   ],
+   "compensation_nm_per_nm": [
+    -0.16530640251984047,
+    -0.0008105005380427675,
+    -0.0012768745221191143
+   ],
+   "image_coefficient_nm_minus2": 1.1660976999469333e-05,
+   "auxiliary_coefficient_nm_minus2": 1.0930482685620608e-05,
+   "total_coefficient_nm_minus2": 2.259145968508994e-05,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.000755252627448477,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_100.0nm",
+   "sigma_h_nm": 100.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0033469752314523,
+    1.0003432596657098,
+    0.9962972498884439
+   ],
+   "compensation_nm_per_nm": [
+    -0.1653517543040441,
+    -0.0008108901931659458,
+    -0.0012779329933657448
+   ],
+   "image_coefficient_nm_minus2": 1.1657228323643619e-05,
+   "auxiliary_coefficient_nm_minus2": 2.734120265142497e-06,
+   "total_coefficient_nm_minus2": 1.4391348588786117e-05,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.0004811156067698055,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_1.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 1.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0009723446629406,
+    1.0000252657947473,
+    0.9990014179129681
+   ],
+   "compensation_nm_per_nm": [
+    -0.16536422633473144,
+    -5.798995144469119e-05,
+    -0.00010283532214041043
+   ],
+   "image_coefficient_nm_minus2": 1.182152429245511e-05,
+   "auxiliary_coefficient_nm_minus2": 1.3937937948279628e-08,
+   "total_coefficient_nm_minus2": 1.183546223040339e-05,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.000395670048380222,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_2.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 2.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0017306504601378,
+    1.0000827767659968,
+    0.9981834217941722
+   ],
+   "compensation_nm_per_nm": [
+    -0.16536473359573267,
+    -0.00019099688167527746,
+    -0.0003313640813581462
+   ],
+   "image_coefficient_nm_minus2": 1.176502786563742e-05,
+   "auxiliary_coefficient_nm_minus2": 3.6570490806002016e-08,
+   "total_coefficient_nm_minus2": 1.1801598356443423e-05,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.0003945379488992518,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_5.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 5.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0027864986741495,
+    1.0002282889702374,
+    0.9969767339414254
+   ],
+   "compensation_nm_per_nm": [
+    -0.1653659603448224,
+    -0.0005337946699307236,
+    -0.0008771956088619463
+   ],
+   "image_coefficient_nm_minus2": 1.1676970911761526e-05,
+   "auxiliary_coefficient_nm_minus2": 4.2176355434125234e-08,
+   "total_coefficient_nm_minus2": 1.1719147267195652e-05,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.0003917815355174522,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_10.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 10.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0031754799036154,
+    1.000304870236084,
+    0.9965084661467367
+   ],
+   "compensation_nm_per_nm": [
+    -0.16536657582342434,
+    -0.0007178244059078198,
+    -0.001147151800586214
+   ],
+   "image_coefficient_nm_minus2": 1.1659151554962785e-05,
+   "auxiliary_coefficient_nm_minus2": 1.8312291313051074e-08,
+   "total_coefficient_nm_minus2": 1.1677463846275835e-05,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.00039038802161398765,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_20.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 20.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0033015845601196,
+    1.0003327834680111,
+    0.9963534778070958
+   ],
+   "compensation_nm_per_nm": [
+    -0.1653667953452431,
+    -0.0007855242535034812,
+    -0.0012427695515492294
+   ],
+   "image_coefficient_nm_minus2": 1.1657138681427816e-05,
+   "auxiliary_coefficient_nm_minus2": 5.403811277750186e-09,
+   "total_coefficient_nm_minus2": 1.1662542492705566e-05,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.0003898891874684246,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_50.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 50.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0033397162147937,
+    1.000341539781805,
+    0.9963062870688832
+   ],
+   "compensation_nm_per_nm": [
+    -0.16536686369520973,
+    -0.0008068301639433733,
+    -0.0012724675135328618
+   ],
+   "image_coefficient_nm_minus2": 1.1656982579369846e-05,
+   "auxiliary_coefficient_nm_minus2": 9.08059394578158e-10,
+   "total_coefficient_nm_minus2": 1.1657890638764423e-05,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.0003897336718461263,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_100.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 100.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0033452737563608,
+    1.0003428284643525,
+    0.9962993963516746
+   ],
+   "compensation_nm_per_nm": [
+    -0.16536687373391343,
+    -0.0008099685615885052,
+    -0.0012768263547372496
+   ],
+   "image_coefficient_nm_minus2": 1.1656978537166098e-05,
+   "auxiliary_coefficient_nm_minus2": 2.286334610913365e-10,
+   "total_coefficient_nm_minus2": 1.165720717062719e-05,
+   "D_squared_norm": 0.02991245427561405,
+   "fraction_of_all_nuisance_fixed": 0.00038971082289729255,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  }
+ ],
+ "10000_ANON_01": [
+  {
+   "design": "ideal_known_hxy",
+   "sigma_h_nm": 0.0,
+   "sigma_xy_nm": 0.0,
+   "no_height_measurement": false,
+   "no_xy_measurement": false,
+   "exact_height": true,
+   "exact_xy": true,
+   "rtol": 1e-10,
+   "nuisance_rank": 0,
+   "normalized_augmented_singular_values": [],
+   "compensation_nm_per_nm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "image_coefficient_nm_minus2": 0.0007626266733843859,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.0007626266733843859,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 1.0,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "no_auxiliary",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": null,
+   "no_height_measurement": true,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0185089174350948,
+    1.0010910003730795,
+    0.9800287720660148
+   ],
+   "compensation_nm_per_nm": [
+    -0.03838071682653617,
+    0.010945925562513522,
+    -0.011877636560005988
+   ],
+   "image_coefficient_nm_minus2": 4.211269290217723e-06,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 4.211269290217723e-06,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.005522058744062735,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_1.0nm",
+   "sigma_h_nm": 1.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0106195141314822,
+    1.0010903987028315,
+    0.9881630489355769
+   ],
+   "compensation_nm_per_nm": [
+    -0.013034280862381911,
+    -0.04707161572067794,
+    0.06629800143299833
+   ],
+   "image_coefficient_nm_minus2": 0.00033458383450738296,
+   "auxiliary_coefficient_nm_minus2": 0.00016989247759945534,
+   "total_coefficient_nm_minus2": 0.0005044763121068383,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.6614983840888655,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_2.0nm",
+   "sigma_h_nm": 2.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.015118913828721,
+    1.001090851318682,
+    0.9835398813435253
+   ],
+   "compensation_nm_per_nm": [
+    -0.025825609799143244,
+    -0.017792491203726352,
+    0.026845894563857255
+   ],
+   "image_coefficient_nm_minus2": 8.527209305920062e-05,
+   "auxiliary_coefficient_nm_minus2": 0.00016674053037440088,
+   "total_coefficient_nm_minus2": 0.00025201262343360154,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.3304534606889889,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_5.0nm",
+   "sigma_h_nm": 5.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0178165124149976,
+    1.0010909765847895,
+    0.9807478797610966
+   ],
+   "compensation_nm_per_nm": [
+    -0.0356107714844221,
+    0.004605569921760663,
+    -0.003334335062634208
+   ],
+   "image_coefficient_nm_minus2": 8.156864914312362e-06,
+   "auxiliary_coefficient_nm_minus2": 5.0725081828629206e-05,
+   "total_coefficient_nm_minus2": 5.8881946742941565e-05,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.07720939851426277,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_10.0nm",
+   "sigma_h_nm": 10.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0183284623963007,
+    1.001090994428159,
+    0.9802162840661384
+   ],
+   "compensation_nm_per_nm": [
+    -0.03764860286359706,
+    0.0092701297177301,
+    -0.009619588279871657
+   ],
+   "image_coefficient_nm_minus2": 4.486899968633622e-06,
+   "auxiliary_coefficient_nm_minus2": 1.4174172975808487e-05,
+   "total_coefficient_nm_minus2": 1.866107294444211e-05,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.02446947319797768,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_20.0nm",
+   "sigma_h_nm": 20.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0184633165358308,
+    1.0010909988869843,
+    0.9800761627640477
+   ],
+   "compensation_nm_per_nm": [
+    -0.038195031873955496,
+    0.010520896007382041,
+    -0.011304931203945424
+   ],
+   "image_coefficient_nm_minus2": 4.228999896923555e-06,
+   "auxiliary_coefficient_nm_minus2": 3.647151149631191e-06,
+   "total_coefficient_nm_minus2": 7.876151046554745e-06,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.010327662697138496,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_50.0nm",
+   "sigma_h_nm": 50.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0185015991305593,
+    1.00109100013531,
+    0.9800363779047075
+   ],
+   "compensation_nm_per_nm": [
+    -0.0383508860046735,
+    0.010877643341636142,
+    -0.011785629796832335
+   ],
+   "image_coefficient_nm_minus2": 4.211726905597194e-06,
+   "auxiliary_coefficient_nm_minus2": 5.883161829373848e-07,
+   "total_coefficient_nm_minus2": 4.800043088534579e-06,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.006294092845235717,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_100.0nm",
+   "sigma_h_nm": 100.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0185070870644517,
+    1.0010910003136373,
+    0.9800306743620468
+   ],
+   "compensation_nm_per_nm": [
+    -0.03837325477124476,
+    0.010928845050620594,
+    -0.011854621453109527
+   ],
+   "image_coefficient_nm_minus2": 4.211297924552603e-06,
+   "auxiliary_coefficient_nm_minus2": 1.4725066817388584e-07,
+   "total_coefficient_nm_minus2": 4.358548592726489e-06,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.005715179844659924,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_1.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 1.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0001382461460169,
+    1.000000056879848,
+    0.9998616778516266
+   ],
+   "compensation_nm_per_nm": [
+    -0.038374521224344905,
+    5.724349865581408e-07,
+    -6.081683479569255e-07
+   ],
+   "image_coefficient_nm_minus2": 4.224758026023722e-06,
+   "auxiliary_coefficient_nm_minus2": 6.975505532924749e-13,
+   "total_coefficient_nm_minus2": 4.224758723574275e-06,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.0055397468656920084,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_2.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 2.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0002763948834856,
+    1.000000227483812,
+    0.9997233011544852
+   ],
+   "compensation_nm_per_nm": [
+    -0.038374522184247487,
+    2.2893807414132157e-06,
+    -2.432299792356394e-06
+   ],
+   "image_coefficient_nm_minus2": 4.224753841910624e-06,
+   "auxiliary_coefficient_nm_minus2": 2.7893366147626705e-12,
+   "total_coefficient_nm_minus2": 4.224756631247239e-06,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.00553974412211234,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_5.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 5.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0006900436407415,
+    1.000001420219178,
+    0.9993080586675548
+   ],
+   "compensation_nm_per_nm": [
+    -0.03837452889524526,
+    1.4292934124825878e-05,
+    -1.5185548783681146e-05
+   ],
+   "image_coefficient_nm_minus2": 4.224724607560121e-06,
+   "auxiliary_coefficient_nm_minus2": 1.7395554310326886e-11,
+   "total_coefficient_nm_minus2": 4.224742003114432e-06,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.005539724940862434,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_10.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 10.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.001375537974355,
+    1.0000056587780692,
+    0.9986169006973652
+   ],
+   "compensation_nm_per_nm": [
+    -0.03837455274483966,
+    5.694863499237657e-05,
+    -6.051012244836438e-05
+   ],
+   "image_coefficient_nm_minus2": 4.224620971619826e-06,
+   "auxiliary_coefficient_nm_minus2": 6.904621946210988e-11,
+   "total_coefficient_nm_minus2": 4.224690017839288e-06,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.005539656774776774,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_20.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 20.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.002722719543139,
+    1.0000222883056178,
+    0.9972474971660782
+   ],
+   "compensation_nm_per_nm": [
+    -0.038374646332524374,
+    0.0002242934985600307,
+    -0.00023839718786620025
+   ],
+   "image_coefficient_nm_minus2": 4.224218175970517e-06,
+   "auxiliary_coefficient_nm_minus2": 2.678519816970272e-10,
+   "total_coefficient_nm_minus2": 4.224486027952214e-06,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.005539389291492761,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_50.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 50.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0064228391465477,
+    1.0001258087240112,
+    0.9934089971247221
+   ],
+   "compensation_nm_per_nm": [
+    -0.038375229513490594,
+    0.0012656683365961058,
+    -0.0013479516928432292
+   ],
+   "image_coefficient_nm_minus2": 4.2218474908588246e-06,
+   "auxiliary_coefficient_nm_minus2": 1.3675560418003523e-09,
+   "total_coefficient_nm_minus2": 4.223215046900625e-06,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.005537722707965136,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_100.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 100.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0109789948482222,
+    1.0003738907838635,
+    0.9885208903273787
+   ],
+   "compensation_nm_per_nm": [
+    -0.03837663123961865,
+    0.0037587563697883946,
+    -0.0040223921278841985
+   ],
+   "image_coefficient_nm_minus2": 4.21713045935275e-06,
+   "auxiliary_coefficient_nm_minus2": 3.03078878778896e-09,
+   "total_coefficient_nm_minus2": 4.220161248140539e-06,
+   "D_squared_norm": 0.0007626266733843859,
+   "fraction_of_all_nuisance_fixed": 0.005533718391217947,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  }
+ ],
+ "10000_ANON_02": [
+  {
+   "design": "ideal_known_hxy",
+   "sigma_h_nm": 0.0,
+   "sigma_xy_nm": 0.0,
+   "no_height_measurement": false,
+   "no_xy_measurement": false,
+   "exact_height": true,
+   "exact_xy": true,
+   "rtol": 1e-10,
+   "nuisance_rank": 0,
+   "normalized_augmented_singular_values": [],
+   "compensation_nm_per_nm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "image_coefficient_nm_minus2": 0.010303988609650616,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.010303988609650616,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 1.0,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "no_auxiliary",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": null,
+   "no_height_measurement": true,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0019809972059641,
+    1.000019010788563,
+    0.99799602168526
+   ],
+   "compensation_nm_per_nm": [
+    0.2295631262480213,
+    0.006153283455968481,
+    -0.008135539878119978
+   ],
+   "image_coefficient_nm_minus2": 0.0006004190161612958,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.0006004190161612958,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.058270543466920094,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_1.0nm",
+   "sigma_h_nm": 1.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0019448781435627,
+    1.0000030915442537,
+    0.9980482343373075
+   ],
+   "compensation_nm_per_nm": [
+    0.03569607032222986,
+    0.006345725472314295,
+    -0.009945422061768927
+   ],
+   "image_coefficient_nm_minus2": 0.007520711077652018,
+   "auxiliary_coefficient_nm_minus2": 0.0012742094364495793,
+   "total_coefficient_nm_minus2": 0.008794920514101598,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.8535452480861984,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_2.0nm",
+   "sigma_h_nm": 2.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.001956407460374,
+    1.0000083112630678,
+    0.9980314298427126
+   ],
+   "compensation_nm_per_nm": [
+    0.09736484715299341,
+    0.006284509998121103,
+    -0.009369701654088082
+   ],
+   "image_coefficient_nm_minus2": 0.0038182853256553424,
+   "auxiliary_coefficient_nm_minus2": 0.0023699783652814423,
+   "total_coefficient_nm_minus2": 0.006188263690936785,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.6005697332721153,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_5.0nm",
+   "sigma_h_nm": 5.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0019733947718585,
+    1.0000157637252505,
+    0.9980069080273752
+   ],
+   "compensation_nm_per_nm": [
+    0.18859285548078833,
+    0.006193952570579217,
+    -0.008518025508629736
+   ],
+   "image_coefficient_nm_minus2": 0.0009094870303138385,
+   "auxiliary_coefficient_nm_minus2": 0.0014226906055359008,
+   "total_coefficient_nm_minus2": 0.0023321776358497396,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.2263373654805329,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_10.0nm",
+   "sigma_h_nm": 10.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0019788045686675,
+    1.0000180797479428,
+    0.9979991559978306
+   ],
+   "compensation_nm_per_nm": [
+    0.21773768879517158,
+    0.006165021969335866,
+    -0.008245938462641924
+   ],
+   "image_coefficient_nm_minus2": 0.0006261674503610495,
+   "auxiliary_coefficient_nm_minus2": 0.00047409701121862996,
+   "total_coefficient_nm_minus2": 0.0011002644615796795,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.10678044233756066,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_20.0nm",
+   "sigma_h_nm": 20.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0019804271494515,
+    1.0000187691522475,
+    0.9979968361435962
+   ],
+   "compensation_nm_per_nm": [
+    0.226487959049835,
+    0.00615633601883654,
+    -0.008164248677028509
+   ],
+   "image_coefficient_nm_minus2": 0.0006021602370174312,
+   "auxiliary_coefficient_nm_minus2": 0.0001282419889863994,
+   "total_coefficient_nm_minus2": 0.0007304022260038306,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.07088538755950709,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_50.0nm",
+   "sigma_h_nm": 50.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0019809049652022,
+    1.0000189717094794,
+    0.9979961534526224
+   ],
+   "compensation_nm_per_nm": [
+    0.22906549999731352,
+    0.006153777424366881,
+    -0.00814018556111579
+   ],
+   "image_coefficient_nm_minus2": 0.0006004646117636677,
+   "auxiliary_coefficient_nm_minus2": 2.0988401315607695e-05,
+   "total_coefficient_nm_minus2": 0.0006214530130792754,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.060311888592076715,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_100.0nm",
+   "sigma_h_nm": 100.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.001980974108449,
+    1.0000190010037058,
+    0.9979960546796938
+   ],
+   "compensation_nm_per_nm": [
+    0.2294385170979826,
+    0.006153407149165792,
+    -0.008136703190160736
+   ],
+   "image_coefficient_nm_minus2": 0.0006004218751751559,
+   "auxiliary_coefficient_nm_minus2": 5.264203312812126e-06,
+   "total_coefficient_nm_minus2": 0.0006056860784879681,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.05878171079504963,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_1.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 1.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0000188451534255,
+    1.0000005336330398,
+    0.999980620848046
+   ],
+   "compensation_nm_per_nm": [
+    0.2295638857482598,
+    9.153567967991346e-06,
+    -1.4006239230375098e-05
+   ],
+   "image_coefficient_nm_minus2": 0.0006005890090148932,
+   "auxiliary_coefficient_nm_minus2": 2.7996254392313564e-10,
+   "total_coefficient_nm_minus2": 0.0006005892889774371,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.05828706840911402,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_2.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 2.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0000385965892957,
+    1.0000019722021323,
+    0.9999594296388008
+   ],
+   "compensation_nm_per_nm": [
+    0.2295638818788824,
+    3.6451736925173e-05,
+    -5.573697811008436e-05
+   ],
+   "image_coefficient_nm_minus2": 0.0006005873443957981,
+   "auxiliary_coefficient_nm_minus2": 1.1088349634265109e-09,
+   "total_coefficient_nm_minus2": 0.0006005884532307615,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.05828698730006904,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_5.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 5.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0001148338767294,
+    1.0000080031203262,
+    0.999877148831306
+   ],
+   "compensation_nm_per_nm": [
+    0.22956385586056174,
+    0.00022095713944253928,
+    -0.00033625728894324787
+   ],
+   "image_coefficient_nm_minus2": 0.0006005763503801869,
+   "auxiliary_coefficient_nm_minus2": 6.4756408735237064e-09,
+   "total_coefficient_nm_minus2": 0.0006005828260210605,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.058286441180511434,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_10.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 10.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0003130949441064,
+    1.0000141449718531,
+    0.9996726573931866
+   ],
+   "compensation_nm_per_nm": [
+    0.22956377597667157,
+    0.0007979315167546598,
+    -0.0011966085020264792
+   ],
+   "image_coefficient_nm_minus2": 0.0006005447800450478,
+   "auxiliary_coefficient_nm_minus2": 2.0685666125524466e-08,
+   "total_coefficient_nm_minus2": 0.0006005654657111734,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.05828475636596585,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_20.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 20.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0008037780017474,
+    1.0000175017903483,
+    0.9991780592318964
+   ],
+   "compensation_nm_per_nm": [
+    0.2295635781563512,
+    0.0022980964098489004,
+    -0.0033208185326736284
+   ],
+   "image_coefficient_nm_minus2": 0.0006004811371797548,
+   "auxiliary_coefficient_nm_minus2": 4.0772707089772595e-08,
+   "total_coefficient_nm_minus2": 0.0006005219098868446,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.05828052928206865,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_50.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 50.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0015955485274914,
+    1.0000187517516217,
+    0.998383119506255
+   ],
+   "compensation_nm_per_nm": [
+    0.22956327063419196,
+    0.004851491674942826,
+    -0.006603422319640256
+   ],
+   "image_coefficient_nm_minus2": 0.0006004255893018038,
+   "auxiliary_coefficient_nm_minus2": 2.6856863121425058e-08,
+   "total_coefficient_nm_minus2": 0.0006004524461649252,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.058273787841976774,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_100.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 100.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0018676711321275,
+    1.0000189453456065,
+    0.9981098529170757
+   ],
+   "compensation_nm_per_nm": [
+    0.2295631683444718,
+    0.00576649372673243,
+    -0.007689485516508805
+   ],
+   "image_coefficient_nm_minus2": 0.0006004195821962057,
+   "auxiliary_coefficient_nm_minus2": 9.238063740904315e-09,
+   "total_coefficient_nm_minus2": 0.0006004288202599466,
+   "D_squared_norm": 0.010303988609650616,
+   "fraction_of_all_nuisance_fixed": 0.05827149495270121,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  }
+ ],
+ "10000_ANON_03": [
+  {
+   "design": "ideal_known_hxy",
+   "sigma_h_nm": 0.0,
+   "sigma_xy_nm": 0.0,
+   "no_height_measurement": false,
+   "no_xy_measurement": false,
+   "exact_height": true,
+   "exact_xy": true,
+   "rtol": 1e-10,
+   "nuisance_rank": 0,
+   "normalized_augmented_singular_values": [],
+   "compensation_nm_per_nm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "image_coefficient_nm_minus2": 0.008318070930751017,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.008318070930751017,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.9999999999999998,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "no_auxiliary",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": null,
+   "no_height_measurement": true,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0039313959318747,
+    0.9997953206657899,
+    0.9962585352392563
+   ],
+   "compensation_nm_per_nm": [
+    0.27102549215825783,
+    -0.005517311732271534,
+    -0.009170931038550595
+   ],
+   "image_coefficient_nm_minus2": 0.0004990004358520504,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.0004990004358520504,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.059989923145196945,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_1.0nm",
+   "sigma_h_nm": 1.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0013296649084142,
+    0.999808939917418,
+    0.998859842938744
+   ],
+   "compensation_nm_per_nm": [
+    0.02607389601761224,
+    0.001287760717219482,
+    0.012760063397587262
+   ],
+   "image_coefficient_nm_minus2": 0.006885842882971385,
+   "auxiliary_coefficient_nm_minus2": 0.0006798480535372555,
+   "total_coefficient_nm_minus2": 0.0075656909365086405,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.9095487402660983,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_2.0nm",
+   "sigma_h_nm": 2.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.002214466494498,
+    0.9997987793022419,
+    0.9979822463625774
+   ],
+   "compensation_nm_per_nm": [
+    0.08093626406816277,
+    -0.00023638689078445577,
+    0.007848128519731323
+   ],
+   "image_coefficient_nm_minus2": 0.004345278426155334,
+   "auxiliary_coefficient_nm_minus2": 0.001637669710327844,
+   "total_coefficient_nm_minus2": 0.005982948136483178,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.7192711130130977,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_5.0nm",
+   "sigma_h_nm": 5.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.003372362768785,
+    0.9997958759302114,
+    0.9968210010351543
+   ],
+   "compensation_nm_per_nm": [
+    0.19699761394689244,
+    -0.003460721440771656,
+    -0.0025430706336719154
+   ],
+   "image_coefficient_nm_minus2": 0.0010823330507796526,
+   "auxiliary_coefficient_nm_minus2": 0.0015523223960307551,
+   "total_coefficient_nm_minus2": 0.0026346554468104078,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.3167387569478842,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_10.0nm",
+   "sigma_h_nm": 10.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.003764896641155,
+    0.9997954595440027,
+    0.9964261494692768
+   ],
+   "compensation_nm_per_nm": [
+    0.24775053229447866,
+    -0.004870703216027899,
+    -0.007087078459851075
+   ],
+   "image_coefficient_nm_minus2": 0.0005566642728058886,
+   "auxiliary_coefficient_nm_minus2": 0.0006138032625219753,
+   "total_coefficient_nm_minus2": 0.0011704675353278638,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.14071381995563065,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_20.0nm",
+   "sigma_h_nm": 20.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0038876273094397,
+    0.9997953553891736,
+    0.9963026041706704
+   ],
+   "compensation_nm_per_nm": [
+    0.26480617840248266,
+    -0.005344531144756542,
+    -0.008614103740736496
+   ],
+   "image_coefficient_nm_minus2": 0.0005031177176219321,
+   "auxiliary_coefficient_nm_minus2": 0.00017530578030031872,
+   "total_coefficient_nm_minus2": 0.0006784234979222508,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.08156019629673891,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_50.0nm",
+   "sigma_h_nm": 50.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0039242897530996,
+    0.9997953262217014,
+    0.996265690520845
+   ],
+   "compensation_nm_per_nm": [
+    0.2700108438352293,
+    -0.005489123488318678,
+    -0.009080087594060095
+   ],
+   "image_coefficient_nm_minus2": 0.0004991100222720091,
+   "auxiliary_coefficient_nm_minus2": 2.9162342315445033e-05,
+   "total_coefficient_nm_minus2": 0.0005282723645874541,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.06350899974109234,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_100.0nm",
+   "sigma_h_nm": 100.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0039296156324176,
+    0.9997953220547732,
+    0.9962603278528854
+   ],
+   "compensation_nm_per_nm": [
+    0.27077111583885866,
+    -0.005510244828809176,
+    -0.009148156230249145
+   ],
+   "image_coefficient_nm_minus2": 0.0004990073236280351,
+   "auxiliary_coefficient_nm_minus2": 7.331699717262062e-06,
+   "total_coefficient_nm_minus2": 0.0005063390233452971,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.06087216946821359,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_1.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 1.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0001017076433445,
+    0.9999998697713591,
+    0.9998984122530308
+   ],
+   "compensation_nm_per_nm": [
+    0.27101907747721643,
+    -3.4563594996447507e-06,
+    -6.553964074093321e-06
+   ],
+   "image_coefficient_nm_minus2": 0.0004990795567165553,
+   "auxiliary_coefficient_nm_minus2": 5.490086607529044e-11,
+   "total_coefficient_nm_minus2": 0.0004990796116174214,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.05999944167010856,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_2.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 2.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0002033206265217,
+    0.9999994800781131,
+    0.9997971580531642
+   ],
+   "compensation_nm_per_nm": [
+    0.27101909096246335,
+    -1.3799498753968372e-05,
+    -2.6159774329791565e-05
+   ],
+   "image_coefficient_nm_minus2": 0.0004990792285677443,
+   "auxiliary_coefficient_nm_minus2": 2.186899897115991e-10,
+   "total_coefficient_nm_minus2": 0.000499079447257734,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.059999421910757064,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_5.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 5.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0005054796153214,
+    0.9999967932642692,
+    0.9994974730938008
+   ],
+   "compensation_nm_per_nm": [
+    0.27101918379180223,
+    -8.512884142688421e-05,
+    -0.00016108637260675156
+   ],
+   "image_coefficient_nm_minus2": 0.0004990769877972866,
+   "auxiliary_coefficient_nm_minus2": 1.327829563291392e-09,
+   "total_coefficient_nm_minus2": 0.0004990783156268499,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.059999285865886376,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_10.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 10.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0009884860753069,
+    0.9999877490127743,
+    0.9990227988234432
+   ],
+   "compensation_nm_per_nm": [
+    0.27101949439400835,
+    -0.00032544834418856837,
+    -0.0006120930181754845
+   ],
+   "image_coefficient_nm_minus2": 0.0004990697207354392,
+   "auxiliary_coefficient_nm_minus2": 4.80574487634255e-09,
+   "total_coefficient_nm_minus2": 0.0004990745264803156,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.059998830334000934,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_20.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 20.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0018157097256206,
+    0.9999584571309614,
+    0.9982226043118936
+   ],
+   "compensation_nm_per_nm": [
+    0.27102048096760134,
+    -0.0011060412779510065,
+    -0.002039935523115425
+   ],
+   "image_coefficient_nm_minus2": 0.0004990490003977448,
+   "auxiliary_coefficient_nm_minus2": 1.3461660617499248e-08,
+   "total_coefficient_nm_minus2": 0.0004990624620583623,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.0599973799469997,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_50.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 50.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.003119899391961,
+    0.9998743048728913,
+    0.9969964101734854
+   ],
+   "compensation_nm_per_nm": [
+    0.271023161778286,
+    -0.0033679545764896323,
+    -0.005881449567501545
+   ],
+   "image_coefficient_nm_minus2": 0.0004990110701947081,
+   "auxiliary_coefficient_nm_minus2": 1.837382681774463e-08,
+   "total_coefficient_nm_minus2": 0.0004990294440215258,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.05999341051260664,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_100.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 100.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0036710756256164,
+    0.9998231108546477,
+    0.9964929096353133
+   ],
+   "compensation_nm_per_nm": [
+    0.27102469122395767,
+    -0.0047581452804096045,
+    -0.00804593032559422
+   ],
+   "image_coefficient_nm_minus2": 0.0004990017022422125,
+   "auxiliary_coefficient_nm_minus2": 8.737694131380091e-09,
+   "total_coefficient_nm_minus2": 0.0004990104399363439,
+   "D_squared_norm": 0.008318070930751018,
+   "fraction_of_all_nuisance_fixed": 0.05999112583803003,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  }
+ ],
+ "10000_ANON_04": [
+  {
+   "design": "ideal_known_hxy",
+   "sigma_h_nm": 0.0,
+   "sigma_xy_nm": 0.0,
+   "no_height_measurement": false,
+   "no_xy_measurement": false,
+   "exact_height": true,
+   "exact_xy": true,
+   "rtol": 1e-10,
+   "nuisance_rank": 0,
+   "normalized_augmented_singular_values": [],
+   "compensation_nm_per_nm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "image_coefficient_nm_minus2": 0.0025714288173711505,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.0025714288173711505,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 1.0000000000000004,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "no_auxiliary",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": null,
+   "no_height_measurement": true,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0047023786153506,
+    0.999653007501359,
+    0.995623922471805
+   ],
+   "compensation_nm_per_nm": [
+    -0.15919718351303663,
+    -0.0007605390656239356,
+    -0.0011041065857561993
+   ],
+   "image_coefficient_nm_minus2": 1.6607928321933756e-06,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 1.6607928321933756e-06,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.0006458638174130968,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_1.0nm",
+   "sigma_h_nm": 1.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0017228632955888,
+    0.9997395529646553,
+    0.9985349925710767
+   ],
+   "compensation_nm_per_nm": [
+    -0.01465538438019643,
+    0.00020534397056226326,
+    0.003129733428408958
+   ],
+   "image_coefficient_nm_minus2": 0.002119976418129106,
+   "auxiliary_coefficient_nm_minus2": 0.00021478029133130552,
+   "total_coefficient_nm_minus2": 0.0023347567094604113,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.9079608557266248,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_2.0nm",
+   "sigma_h_nm": 2.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0026936446850512,
+    0.9996784125170818,
+    0.9976214344407085
+   ],
+   "compensation_nm_per_nm": [
+    -0.04593537308566506,
+    -3.6807589201372113e-06,
+    0.0022134969582779337
+   ],
+   "image_coefficient_nm_minus2": 0.0013023416724169878,
+   "auxiliary_coefficient_nm_minus2": 0.0005275146251298105,
+   "total_coefficient_nm_minus2": 0.0018298562975467983,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.7116107143177763,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_5.0nm",
+   "sigma_h_nm": 5.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0040324723222487,
+    0.9996572509390504,
+    0.996295224904473
+   ],
+   "compensation_nm_per_nm": [
+    -0.11416007653865438,
+    -0.0004595840623884471,
+    0.00021509593402913819
+   ],
+   "image_coefficient_nm_minus2": 0.00020731837600319487,
+   "auxiliary_coefficient_nm_minus2": 0.0005213009230124572,
+   "total_coefficient_nm_minus2": 0.0007286192990156521,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.2833519225161916,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_10.0nm",
+   "sigma_h_nm": 10.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0045011673693824,
+    0.9996540746975592,
+    0.9958258561084443
+   ],
+   "compensation_nm_per_nm": [
+    -0.14490556823145845,
+    -0.0006650370804318019,
+    -0.0006854843393942861
+   ],
+   "image_coefficient_nm_minus2": 2.237013916541799e-05,
+   "auxiliary_coefficient_nm_minus2": 0.0002099762370448186,
+   "total_coefficient_nm_minus2": 0.0002323463762102366,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.09035691543963152,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_20.0nm",
+   "sigma_h_nm": 20.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0046493415863493,
+    0.9996532746955538,
+    0.9956771719993242
+   ],
+   "compensation_nm_per_nm": [
+    -0.15536635054910938,
+    -0.0007349399891171168,
+    -0.0009918959035346224
+   ],
+   "image_coefficient_nm_minus2": 3.1487491751148176e-06,
+   "auxiliary_coefficient_nm_minus2": 6.034675720737186e-05,
+   "total_coefficient_nm_minus2": 6.349550638248667e-05,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.024692694564806224,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_50.0nm",
+   "sigma_h_nm": 50.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0046937606036708,
+    0.9996530502701222,
+    0.9956325760488629
+   ],
+   "compensation_nm_per_nm": [
+    -0.15857160524041744,
+    -0.0007563587147153237,
+    -0.0010857824861635248
+   ],
+   "image_coefficient_nm_minus2": 1.70047241255046e-06,
+   "auxiliary_coefficient_nm_minus2": 1.0057981595409112e-05,
+   "total_coefficient_nm_minus2": 1.1758454007959572e-05,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.004572731676850616,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_100.0nm",
+   "sigma_h_nm": 100.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.004700219302086,
+    0.9996530181941811,
+    0.9956260907336668
+   ],
+   "compensation_nm_per_nm": [
+    -0.15904032665856216,
+    -0.0007594908887246784,
+    -0.0010995120198181443
+   ],
+   "image_coefficient_nm_minus2": 1.6632874887308037e-06,
+   "auxiliary_coefficient_nm_minus2": 2.529382550366216e-06,
+   "total_coefficient_nm_minus2": 4.192670039097019e-06,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.0016304826370357453,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_1.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 1.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0004221346089954,
+    0.9999971773129577,
+    0.9995805109897337
+   ],
+   "compensation_nm_per_nm": [
+    -0.15919393994597847,
+    -5.981881074164293e-06,
+    -9.862896189706331e-06
+   ],
+   "image_coefficient_nm_minus2": 1.6760989154514981e-06,
+   "auxiliary_coefficient_nm_minus2": 1.3305962243436862e-10,
+   "total_coefficient_nm_minus2": 1.6762319750739324e-06,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.0006518679279590543,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_2.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 2.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0008361130105674,
+    0.9999889783096623,
+    0.9991742181186908
+   ],
+   "compensation_nm_per_nm": [
+    -0.15919402339330177,
+    -2.337575868534522e-05,
+    -3.8422053804455295e-05
+   ],
+   "image_coefficient_nm_minus2": 1.6753372171933561e-06,
+   "auxiliary_coefficient_nm_minus2": 5.056700781669875e-10,
+   "total_coefficient_nm_minus2": 1.6758428872715231e-06,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.0006517166160503672,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_5.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 5.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0019429973597127,
+    0.9999409620201858,
+    0.9981123696838851
+   ],
+   "compensation_nm_per_nm": [
+    -0.15919450554205802,
+    -0.00012579415848816756,
+    -0.00020304614831981107
+   ],
+   "image_coefficient_nm_minus2": 1.671304994300275e-06,
+   "auxiliary_coefficient_nm_minus2": 2.2820763462902775e-09,
+   "total_coefficient_nm_minus2": 1.6735870706465653e-06,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.0006508393541134554,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_10.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 10.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0031653242171785,
+    0.9998436595825947,
+    0.9969814384835493
+   ],
+   "compensation_nm_per_nm": [
+    -0.15919544973609812,
+    -0.0003362846826922917,
+    -0.0005234267398230549
+   ],
+   "image_coefficient_nm_minus2": 1.6652589682851966e-06,
+   "auxiliary_coefficient_nm_minus2": 3.870629397752473e-09,
+   "total_coefficient_nm_minus2": 1.669129597682949e-06,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.0006491058925711782,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_20.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 20.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0041228700525393,
+    0.9997340841578981,
+    0.9961270113848036
+   ],
+   "compensation_nm_per_nm": [
+    -0.1591964639633996,
+    -0.0005781678202519722,
+    -0.000864385073840818
+   ],
+   "image_coefficient_nm_minus2": 1.6615744643988498e-06,
+   "auxiliary_coefficient_nm_minus2": 2.703598960634283e-09,
+   "total_coefficient_nm_minus2": 1.6642780633594842e-06,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.0006472191849591725,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_50.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 50.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0045932233370412,
+    0.99966914843412,
+    0.9957178562696841
+   ],
+   "compensation_nm_per_nm": [
+    -0.15919704225984518,
+    -0.0007239977551974672,
+    -0.0010571968647076597
+   ],
+   "image_coefficient_nm_minus2": 1.6608232516480704e-06,
+   "auxiliary_coefficient_nm_minus2": 6.56735184111471e-10,
+   "total_coefficient_nm_minus2": 1.6614799868321818e-06,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.0006461310441915184,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_100.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 100.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0046743656403532,
+    0.9996571886439458,
+    0.9956479921225356
+   ],
+   "compensation_nm_per_nm": [
+    -0.15919714701612417,
+    -0.0007510621459477412,
+    -0.0010919932272787495
+   ],
+   "image_coefficient_nm_minus2": 1.660794866739483e-06,
+   "auxiliary_coefficient_nm_minus2": 1.756543555498285e-10,
+   "total_coefficient_nm_minus2": 1.6609705210950328e-06,
+   "D_squared_norm": 0.0025714288173711492,
+   "fraction_of_all_nuisance_fixed": 0.0006459329186460211,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  }
+ ],
+ "1000_ANON_01": [
+  {
+   "design": "ideal_known_hxy",
+   "sigma_h_nm": 0.0,
+   "sigma_xy_nm": 0.0,
+   "no_height_measurement": false,
+   "no_xy_measurement": false,
+   "exact_height": true,
+   "exact_xy": true,
+   "rtol": 1e-10,
+   "nuisance_rank": 0,
+   "normalized_augmented_singular_values": [],
+   "compensation_nm_per_nm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "image_coefficient_nm_minus2": 0.00013309145128524393,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.00013309145128524393,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 1.0,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "no_auxiliary",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": null,
+   "no_height_measurement": true,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0069868953665682,
+    1.0005906745719284,
+    0.9923687291121647
+   ],
+   "compensation_nm_per_nm": [
+    -0.0554905265326979,
+    -0.0010433092087693556,
+    0.0011506892077001387
+   ],
+   "image_coefficient_nm_minus2": 8.204471860047673e-06,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 8.204471860047673e-06,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.06164537076437543,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_1.0nm",
+   "sigma_h_nm": 1.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0022014430454906,
+    1.000228905397029,
+    0.9975642357090586
+   ],
+   "compensation_nm_per_nm": [
+    -0.0021623203039313394,
+    -0.00889512973102146,
+    0.0024939122173427033
+   ],
+   "image_coefficient_nm_minus2": 0.00012351713496074746,
+   "auxiliary_coefficient_nm_minus2": 4.67562909679372e-06,
+   "total_coefficient_nm_minus2": 0.00012819276405754118,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.9631930737819981,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_2.0nm",
+   "sigma_h_nm": 2.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0029952052842277,
+    1.000427480528343,
+    0.9965668439099122
+   ],
+   "compensation_nm_per_nm": [
+    -0.007743992029683788,
+    -0.00807330789031103,
+    0.002353321891425688
+   ],
+   "image_coefficient_nm_minus2": 0.00010064166751913879,
+   "auxiliary_coefficient_nm_minus2": 1.499235313895151e-05,
+   "total_coefficient_nm_minus2": 0.0001156340206580903,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.8688313151703593,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_5.0nm",
+   "sigma_h_nm": 5.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0050462141699237,
+    1.0005578119462306,
+    0.9943672220744582
+   ],
+   "compensation_nm_per_nm": [
+    -0.02793382127959634,
+    -0.0051006424500896,
+    0.0018447834438182489
+   ],
+   "image_coefficient_nm_minus2": 3.899503504383382e-05,
+   "auxiliary_coefficient_nm_minus2": 3.121193485121718e-05,
+   "total_coefficient_nm_minus2": 7.0206969895051e-05,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.5275092368222974,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_10.0nm",
+   "sigma_h_nm": 10.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0062820949048796,
+    1.0005821690931682,
+    0.9930919737701333
+   ],
+   "compensation_nm_per_nm": [
+    -0.04451260827678949,
+    -0.002659651665209718,
+    0.0014271993969995388
+   ],
+   "image_coefficient_nm_minus2": 1.3091029610246335e-05,
+   "auxiliary_coefficient_nm_minus2": 1.9813722956029082e-05,
+   "total_coefficient_nm_minus2": 3.290475256627542e-05,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.24723415552628827,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_20.0nm",
+   "sigma_h_nm": 20.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0067872461157392,
+    1.0005885296503443,
+    0.9925734408046838
+   ],
+   "compensation_nm_per_nm": [
+    -0.05226788580256084,
+    -0.0015177972594682188,
+    0.001231860608102566
+   ],
+   "image_coefficient_nm_minus2": 8.625573404211385e-06,
+   "auxiliary_coefficient_nm_minus2": 6.8298297156738525e-06,
+   "total_coefficient_nm_minus2": 1.5455403119885238e-05,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.11612618970365682,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_50.0nm",
+   "sigma_h_nm": 50.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0069536971660962,
+    1.0005903305485746,
+    0.9924027620760754
+   ],
+   "compensation_nm_per_nm": [
+    -0.05494846015890865,
+    -0.0011231207790271273,
+    0.00116434269574184
+   ],
+   "image_coefficient_nm_minus2": 8.216386145065129e-06,
+   "auxiliary_coefficient_nm_minus2": 1.2077333095340686e-06,
+   "total_coefficient_nm_minus2": 9.424119454599197e-06,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.07080935224307727,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_100.0nm",
+   "sigma_h_nm": 100.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.006978548814471,
+    1.000590588536194,
+    0.9923772852903757
+   ],
+   "compensation_nm_per_nm": [
+    -0.055354009752906934,
+    -0.0010634093645593176,
+    0.001154127772257128
+   ],
+   "image_coefficient_nm_minus2": 8.20522753516367e-06,
+   "auxiliary_coefficient_nm_minus2": 3.0640663957249166e-07,
+   "total_coefficient_nm_minus2": 8.511634174736163e-06,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.06395327492893499,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_1.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 1.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.000135358722891,
+    1.0000002457101085,
+    0.9998643772092071
+   ],
+   "compensation_nm_per_nm": [
+    -0.05549218248388834,
+    -3.7902769095114654e-07,
+    4.5014079919111373e-07
+   ],
+   "image_coefficient_nm_minus2": 8.205384928998878e-06,
+   "auxiliary_coefficient_nm_minus2": 3.462887296041724e-13,
+   "total_coefficient_nm_minus2": 8.205385275287607e-06,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.06165223382906601,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_2.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 2.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0002703155116648,
+    1.0000009816170903,
+    0.9997286295145559
+   ],
+   "compensation_nm_per_nm": [
+    -0.05549218065813073,
+    -1.514460727292047e-06,
+    1.7984520799887536e-06
+   ],
+   "image_coefficient_nm_minus2": 8.205382855597907e-06,
+   "auxiliary_coefficient_nm_minus2": 1.3820052946314575e-12,
+   "total_coefficient_nm_minus2": 8.205384237603202e-06,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.06165222603228872,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_5.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 5.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.000671429405096,
+    1.0000060821130965,
+    0.9993220332351207
+   ],
+   "compensation_nm_per_nm": [
+    -0.05549216798975301,
+    -9.393814001569413e-06,
+    1.114882360522878e-05
+   ],
+   "image_coefficient_nm_minus2": 8.205368537793475e-06,
+   "auxiliary_coefficient_nm_minus2": 8.50160037106352e-12,
+   "total_coefficient_nm_minus2": 8.205377039393845e-06,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.06165217194760268,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_10.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 10.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0013199039185623,
+    1.0000236003612073,
+    0.9986547194787238
+   ],
+   "compensation_nm_per_nm": [
+    -0.0554921242882344,
+    -3.6587287042759144e-05,
+    4.3335404502187365e-05
+   ],
+   "image_coefficient_nm_minus2": 8.205320068536786e-06,
+   "auxiliary_coefficient_nm_minus2": 3.2165868565174523e-11,
+   "total_coefficient_nm_minus2": 8.205352234405351e-06,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.061651985572082284,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_20.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 20.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0024968097660156,
+    1.0000843072269296,
+    0.9974124146246592
+   ],
+   "compensation_nm_per_nm": [
+    -0.05549197052142992,
+    -0.0001324215124527676,
+    0.00015574220437327918
+   ],
+   "image_coefficient_nm_minus2": 8.205160800962559e-06,
+   "auxiliary_coefficient_nm_minus2": 1.0447772795831686e-10,
+   "total_coefficient_nm_minus2": 8.205265278690518e-06,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.06165133221896311,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_50.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 50.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0048103055043252,
+    1.000301284195346,
+    0.9948636041133709
+   ],
+   "compensation_nm_per_nm": [
+    -0.05549138937197657,
+    -0.0004967025596032586,
+    0.000569017855948429
+   ],
+   "image_coefficient_nm_minus2": 8.204712852970542e-06,
+   "auxiliary_coefficient_nm_minus2": 2.2819790124183033e-10,
+   "total_coefficient_nm_minus2": 8.204941050871785e-06,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.06164889609090528,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_100.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 100.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.006177794236901,
+    1.0004763360861781,
+    0.9933042571720608
+   ],
+   "compensation_nm_per_nm": [
+    -0.05549088057586273,
+    -0.0008182224459165176,
+    0.000916460956968849
+   ],
+   "image_coefficient_nm_minus2": 8.204511743256521e-06,
+   "auxiliary_coefficient_nm_minus2": 1.5093886566498674e-10,
+   "total_coefficient_nm_minus2": 8.204662682122186e-06,
+   "D_squared_norm": 0.00013309145128524393,
+   "fraction_of_all_nuisance_fixed": 0.06164680453095225,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  }
+ ],
+ "1000_ANON_02": [
+  {
+   "design": "ideal_known_hxy",
+   "sigma_h_nm": 0.0,
+   "sigma_xy_nm": 0.0,
+   "no_height_measurement": false,
+   "no_xy_measurement": false,
+   "exact_height": true,
+   "exact_xy": true,
+   "rtol": 1e-10,
+   "nuisance_rank": 0,
+   "normalized_augmented_singular_values": [],
+   "compensation_nm_per_nm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "image_coefficient_nm_minus2": 0.00011869817129439874,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 0.00011869817129439874,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 1.0000000000000002,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "no_auxiliary",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": null,
+   "no_height_measurement": true,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0017361288630116,
+    0.9996598932811799,
+    0.9986014349557124
+   ],
+   "compensation_nm_per_nm": [
+    -0.0501658390257435,
+    0.0006050441183037077,
+    -0.0009252845491897723
+   ],
+   "image_coefficient_nm_minus2": 5.135865422344546e-06,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 5.135865422344546e-06,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.04326827756770086,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_1.0nm",
+   "sigma_h_nm": 1.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.000906188191007,
+    0.9999543159835143,
+    0.999138713286044
+   ],
+   "compensation_nm_per_nm": [
+    -0.002165988687214006,
+    0.0011086722585565468,
+    0.0006939197977038593
+   ],
+   "image_coefficient_nm_minus2": 0.00010910299824356465,
+   "auxiliary_coefficient_nm_minus2": 4.691506993139053e-06,
+   "total_coefficient_nm_minus2": 0.0001137945052367037,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.9586879392982997,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_2.0nm",
+   "sigma_h_nm": 2.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.001050510804484,
+    0.9998694915734647,
+    0.9990790132110196
+   ],
+   "compensation_nm_per_nm": [
+    -0.007670408977779624,
+    0.0010509183086055212,
+    0.0005082362758021817
+   ],
+   "image_coefficient_nm_minus2": 8.662519746097158e-05,
+   "auxiliary_coefficient_nm_minus2": 1.4708793471600564e-05,
+   "total_coefficient_nm_minus2": 0.00010133399093257215,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.8537114753119538,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_5.0nm",
+   "sigma_h_nm": 5.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0014094704335414,
+    0.9997271462775461,
+    0.9988617049030204
+   ],
+   "compensation_nm_per_nm": [
+    -0.02659302492746154,
+    0.0008523768170748044,
+    -0.0001300903394736282
+   ],
+   "image_coefficient_nm_minus2": 3.0210762739385673e-05,
+   "auxiliary_coefficient_nm_minus2": 2.8287558991703642e-05,
+   "total_coefficient_nm_minus2": 5.8498321731089315e-05,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.4928325440330503,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_10.0nm",
+   "sigma_h_nm": 10.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0016195586455359,
+    0.9996791498250663,
+    0.9986990823785494
+   ],
+   "compensation_nm_per_nm": [
+    -0.04106544438325446,
+    0.0007005280582956732,
+    -0.0006182961219420839
+   ],
+   "image_coefficient_nm_minus2": 8.872982922912536e-06,
+   "auxiliary_coefficient_nm_minus2": 1.6863707223941655e-05,
+   "total_coefficient_nm_minus2": 2.573669014685419e-05,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.2168246558998899,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_20.0nm",
+   "sigma_h_nm": 20.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0017033818859646,
+    0.9996648751312598,
+    0.9986292966596891
+   ],
+   "compensation_nm_per_nm": [
+    -0.04753245639689834,
+    0.0006326743210350067,
+    -0.0008364512597198511
+   ],
+   "image_coefficient_nm_minus2": 5.448793284799374e-06,
+   "auxiliary_coefficient_nm_minus2": 5.648336027807606e-06,
+   "total_coefficient_nm_minus2": 1.1097129312606981e-05,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.09349031405954479,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_50.0nm",
+   "sigma_h_nm": 50.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0017306992694897,
+    0.9996606980141521,
+    0.9986060759813745
+   ],
+   "compensation_nm_per_nm": [
+    -0.0497250619257339,
+    0.000609668877538809,
+    -0.000910415582072068
+   ],
+   "image_coefficient_nm_minus2": 5.144632489781915e-06,
+   "auxiliary_coefficient_nm_minus2": 9.890327134072286e-07,
+   "total_coefficient_nm_minus2": 6.133665203189144e-06,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.05167447094004713,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_100.0nm",
+   "sigma_h_nm": 100.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0017347643718246,
+    0.999660094738086,
+    0.9986026020580787
+   ],
+   "compensation_nm_per_nm": [
+    -0.050054913775574,
+    0.0006062079777127702,
+    -0.000921542649038659
+   ],
+   "image_coefficient_nm_minus2": 5.136420657727821e-06,
+   "auxiliary_coefficient_nm_minus2": 2.5054943930801486e-07,
+   "total_coefficient_nm_minus2": 5.386970097035836e-06,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.04538376655925821,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_1.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 1.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.000022187424483,
+    0.9999998950903204,
+    0.9999779169952211
+   ],
+   "compensation_nm_per_nm": [
+    -0.050165685576702916,
+    1.3959443014657728e-07,
+    -2.4868545462054466e-07
+   ],
+   "image_coefficient_nm_minus2": 5.136179906611169e-06,
+   "auxiliary_coefficient_nm_minus2": 8.133106026777462e-14,
+   "total_coefficient_nm_minus2": 5.136179987942229e-06,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.043270927697810296,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_2.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 2.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0000444661930752,
+    0.9999995807394942,
+    0.9999559511085697
+   ],
+   "compensation_nm_per_nm": [
+    -0.05016568570406027,
+    5.579916810260885e-07,
+    -9.9394028983488e-07
+   ],
+   "image_coefficient_nm_minus2": 5.136179419320956e-06,
+   "auxiliary_coefficient_nm_minus2": 3.2481800396284135e-13,
+   "total_coefficient_nm_minus2": 5.13617974413896e-06,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.043270925643833676,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_5.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 5.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.000111714962894,
+    0.9999973960529643,
+    0.9998908767866962
+   ],
+   "compensation_nm_per_nm": [
+    -0.05016568658970373,
+    3.4706516895137666e-06,
+    -6.177284736312425e-06
+   ],
+   "image_coefficient_nm_minus2": 5.136176039914306e-06,
+   "auxiliary_coefficient_nm_minus2": 2.00817079453613e-12,
+   "total_coefficient_nm_minus2": 5.136178048085101e-06,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.04327091135503848,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_10.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 10.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0002243236210016,
+    0.9999898125171688,
+    0.9997858157119391
+   ],
+   "compensation_nm_per_nm": [
+    -0.0501656896712442,
+    1.3647850321900357e-05,
+    -2.4223907959406284e-05
+   ],
+   "image_coefficient_nm_minus2": 5.1361644073224e-06,
+   "auxiliary_coefficient_nm_minus2": 7.73061535234783e-12,
+   "total_coefficient_nm_minus2": 5.136172137937752e-06,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.043270861563645034,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_20.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 20.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0004450988236981,
+    0.9999625423121337,
+    0.9995921759459181
+   ],
+   "compensation_nm_per_nm": [
+    -0.05016570084919175,
+    5.113262774591053e-05,
+    -8.983879622862202e-05
+   ],
+   "image_coefficient_nm_minus2": 5.136123868321573e-06,
+   "auxiliary_coefficient_nm_minus2": 2.671388732002433e-11,
+   "total_coefficient_nm_minus2": 5.136150582208893e-06,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.04327067996245755,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_50.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 50.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0009808624411347,
+    0.9998509570027163,
+    0.9991673417437916
+   ],
+   "compensation_nm_per_nm": [
+    -0.050165748407809393,
+    0.0002213807742872328,
+    -0.00037190311336823313
+   ],
+   "image_coefficient_nm_minus2": 5.1359817183313555e-06,
+   "auxiliary_coefficient_nm_minus2": 7.492854918279984e-11,
+   "total_coefficient_nm_minus2": 5.1360566468805385e-06,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.043269888582714036,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_100.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 100.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0014109368072444,
+    0.9997419225906734,
+    0.9988454454306442
+   ],
+   "compensation_nm_per_nm": [
+    -0.050165798426387076,
+    0.0004221611649452787,
+    -0.0006743989487759551
+   ],
+   "image_coefficient_nm_minus2": 5.135890062651128e-06,
+   "auxiliary_coefficient_nm_minus2": 6.330339912980682e-11,
+   "total_coefficient_nm_minus2": 5.135953366050258e-06,
+   "D_squared_norm": 0.00011869817129439873,
+   "fraction_of_all_nuisance_fixed": 0.043269018469643594,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  }
+ ],
+ "1000_ANON_03": [
+  {
+   "design": "ideal_known_hxy",
+   "sigma_h_nm": 0.0,
+   "sigma_xy_nm": 0.0,
+   "no_height_measurement": false,
+   "no_xy_measurement": false,
+   "exact_height": true,
+   "exact_xy": true,
+   "rtol": 1e-10,
+   "nuisance_rank": 0,
+   "normalized_augmented_singular_values": [],
+   "compensation_nm_per_nm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "image_coefficient_nm_minus2": 8.422388009415986e-05,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 8.422388009415986e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 1.0,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "no_auxiliary",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": null,
+   "no_height_measurement": true,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0050071139085894,
+    1.0005399316438306,
+    0.9944247312789884
+   ],
+   "compensation_nm_per_nm": [
+    0.037254270529802264,
+    -0.007604803710798964,
+    -0.0023608003751808514
+   ],
+   "image_coefficient_nm_minus2": 2.6059138864095094e-05,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 2.6059138864095094e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.3094032100511367,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_1.0nm",
+   "sigma_h_nm": 1.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0008645442647022,
+    1.0005097278778143,
+    0.9986242779222181
+   ],
+   "compensation_nm_per_nm": [
+    0.0014983129472786764,
+    -0.002571776183368696,
+    -0.005607510912105495
+   ],
+   "image_coefficient_nm_minus2": 7.963275305233731e-05,
+   "auxiliary_coefficient_nm_minus2": 2.2449416879829136e-06,
+   "total_coefficient_nm_minus2": 8.187769474032022e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.9721434663041328,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_2.0nm",
+   "sigma_h_nm": 2.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0017592706488043,
+    1.0005350895318224,
+    0.9977013071479478
+   ],
+   "compensation_nm_per_nm": [
+    0.005347986868862208,
+    -0.0031136583235473916,
+    -0.0052579530277703
+   ],
+   "image_coefficient_nm_minus2": 6.871773537732011e-05,
+   "auxiliary_coefficient_nm_minus2": 7.15024088738065e-06,
+   "total_coefficient_nm_minus2": 7.586797626470076e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.9007893744610503,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_5.0nm",
+   "sigma_h_nm": 5.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0035149470932343,
+    1.0005392346335065,
+    0.9959312179661102
+   ],
+   "compensation_nm_per_nm": [
+    0.019060126014587453,
+    -0.005043786292324146,
+    -0.0040128641067009195
+   ],
+   "image_coefficient_nm_minus2": 3.9930446351599404e-05,
+   "auxiliary_coefficient_nm_minus2": 1.4531536147678136e-05,
+   "total_coefficient_nm_minus2": 5.446198249927754e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.6466335015483806,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_10.0nm",
+   "sigma_h_nm": 10.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0044751960804301,
+    1.0005397598888734,
+    0.9949621949303896
+   ],
+   "compensation_nm_per_nm": [
+    0.03007671873005028,
+    -0.006594487717881443,
+    -0.00301253604758699
+   ],
+   "image_coefficient_nm_minus2": 2.8217910930610156e-05,
+   "auxiliary_coefficient_nm_minus2": 9.046090095665574e-06,
+   "total_coefficient_nm_minus2": 3.726400102627573e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.44243985179281287,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_20.0nm",
+   "sigma_h_nm": 20.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0048574256443192,
+    1.0005398888587105,
+    0.9945760327546969
+   ],
+   "compensation_nm_per_nm": [
+    0.035156802914585054,
+    -0.00730956305835941,
+    -0.0025512545167446607
+   ],
+   "image_coefficient_nm_minus2": 2.6243489503014883e-05,
+   "auxiliary_coefficient_nm_minus2": 3.0900019779374405e-06,
+   "total_coefficient_nm_minus2": 2.9333491480952323e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.34827998244866337,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_50.0nm",
+   "sigma_h_nm": 50.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0049822752771949,
+    1.000539924805065,
+    0.9944498404895791
+   ],
+   "compensation_nm_per_nm": [
+    0.03690201649927961,
+    -0.007555220246891929,
+    -0.0023927857267107625
+   ],
+   "image_coefficient_nm_minus2": 2.6064338417713604e-05,
+   "auxiliary_coefficient_nm_minus2": 5.447035286852418e-07,
+   "total_coefficient_nm_minus2": 2.6609041946398847e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.31593227379990935,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_100.0nm",
+   "sigma_h_nm": 100.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0050008710130132,
+    1.0005399299343836,
+    0.9944310422900049
+   ],
+   "compensation_nm_per_nm": [
+    0.03716557805505056,
+    -0.007592319311077328,
+    -0.002368853824501928
+   ],
+   "image_coefficient_nm_minus2": 2.6059468494804422e-05,
+   "auxiliary_coefficient_nm_minus2": 1.381280192166056e-07,
+   "total_coefficient_nm_minus2": 2.619759651402103e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.3110471339569357,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_1.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 1.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0000684299658902,
+    1.0000000961795013,
+    0.999931469165036
+   ],
+   "compensation_nm_per_nm": [
+    0.03725123918381959,
+    -1.19382663407637e-06,
+    -4.517364150876325e-07
+   ],
+   "image_coefficient_nm_minus2": 2.6069282511522355e-05,
+   "auxiliary_coefficient_nm_minus2": 1.6292878209463408e-12,
+   "total_coefficient_nm_minus2": 2.6069284140810175e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.30952366611067395,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_2.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 2.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0001367244532722,
+    1.000000384512651,
+    0.9998628722852095
+   ],
+   "compensation_nm_per_nm": [
+    0.0372512405104663,
+    -4.773058464417823e-06,
+    -1.8059096333319931e-06
+   ],
+   "image_coefficient_nm_minus2": 2.6069272744461406e-05,
+   "auxiliary_coefficient_nm_minus2": 6.51084917712798e-12,
+   "total_coefficient_nm_minus2": 2.6069279255310584e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.3095236081045647,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_5.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 5.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0003404540175933,
+    1.000002394258009,
+    0.9996570349545513
+   ],
+   "compensation_nm_per_nm": [
+    0.03725124976532008,
+    -2.973363149460342e-05,
+    -1.1241815994952477e-05
+   ],
+   "image_coefficient_nm_minus2": 2.606920476998612e-05,
+   "auxiliary_coefficient_nm_minus2": 4.041869074884968e-11,
+   "total_coefficient_nm_minus2": 2.606924518867687e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.3095232036274298,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_10.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 10.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0006741890042608,
+    1.0000094513763942,
+    0.9993158983117141
+   ],
+   "compensation_nm_per_nm": [
+    0.037251282371986216,
+    -0.00011755553212704895,
+    -4.4334311030787334e-05
+   ],
+   "image_coefficient_nm_minus2": 2.6068967527803008e-05,
+   "auxiliary_coefficient_nm_minus2": 1.578483426824823e-10,
+   "total_coefficient_nm_minus2": 2.606912537614569e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.3095217810792042,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_20.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 20.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0013068156022304,
+    1.0000359202742115,
+    0.998655505762538
+   ],
+   "compensation_nm_per_nm": [
+    0.03725140618576933,
+    -0.0004493807559197038,
+    -0.00016788445063033592
+   ],
+   "image_coefficient_nm_minus2": 2.6068098028749247e-05,
+   "auxiliary_coefficient_nm_minus2": 5.753206313860353e-10,
+   "total_coefficient_nm_minus2": 2.6068673349380633e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.30951641411244185,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_50.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 50.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0027847496174163,
+    1.0001664061523778,
+    0.9970405738679712
+   ],
+   "compensation_nm_per_nm": [
+    0.03725205260887706,
+    -0.002143584833489488,
+    -0.0007641187443298537
+   ],
+   "image_coefficient_nm_minus2": 2.6064309520223345e-05,
+   "auxiliary_coefficient_nm_minus2": 2.0715333575209553e-09,
+   "total_coefficient_nm_minus2": 2.6066381053580864e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.3094891974157377,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_100.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 100.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.00400102077287,
+    1.0003458817301156,
+    0.9956355092063724
+   ],
+   "compensation_nm_per_nm": [
+    0.037253046021299925,
+    -0.004645739196530104,
+    -0.0015508508606352455
+   ],
+   "image_coefficient_nm_minus2": 2.606063917938517e-05,
+   "auxiliary_coefficient_nm_minus2": 2.398803107410926e-09,
+   "total_coefficient_nm_minus2": 2.606303798249258e-05,
+   "D_squared_norm": 8.422388009415986e-05,
+   "fraction_of_all_nuisance_fixed": 0.3094495047408746,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  }
+ ],
+ "1000_ANON_04": [
+  {
+   "design": "ideal_known_hxy",
+   "sigma_h_nm": 0.0,
+   "sigma_xy_nm": 0.0,
+   "no_height_measurement": false,
+   "no_xy_measurement": false,
+   "exact_height": true,
+   "exact_xy": true,
+   "rtol": 1e-10,
+   "nuisance_rank": 0,
+   "normalized_augmented_singular_values": [],
+   "compensation_nm_per_nm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "image_coefficient_nm_minus2": 5.381044549623237e-05,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 5.381044549623237e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 1.0000000000000002,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "no_auxiliary",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": null,
+   "no_height_measurement": true,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0084186461415332,
+    0.9998402911405123,
+    0.9916709264297975
+   ],
+   "compensation_nm_per_nm": [
+    0.013166798312532863,
+    0.002537044017575367,
+    0.00020422389024878063
+   ],
+   "image_coefficient_nm_minus2": 5.278992400462879e-05,
+   "auxiliary_coefficient_nm_minus2": 0.0,
+   "total_coefficient_nm_minus2": 5.278992400462879e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9810348811983907,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_1.0nm",
+   "sigma_h_nm": 1.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0050681548818927,
+    0.999997470106094,
+    0.9949085705851165
+   ],
+   "compensation_nm_per_nm": [
+    7.674349386255641e-05,
+    0.0020986379266448134,
+    0.00021034054879682374
+   ],
+   "image_coefficient_nm_minus2": 5.379450054626594e-05,
+   "auxiliary_coefficient_nm_minus2": 5.889563850232233e-09,
+   "total_coefficient_nm_minus2": 5.3800390110116174e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9998131331933149,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_2.0nm",
+   "sigma_h_nm": 2.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0051457929657723,
+    0.999990339637774,
+    0.9948373010268252
+   ],
+   "compensation_nm_per_nm": [
+    0.00030169856944125927,
+    0.002106172018494331,
+    0.0002102354328591544
+   ],
+   "image_coefficient_nm_minus2": 5.3760269551681255e-05,
+   "auxiliary_coefficient_nm_minus2": 2.2755506700725585e-08,
+   "total_coefficient_nm_minus2": 5.378302505838198e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.999490425370065,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_5.0nm",
+   "sigma_h_nm": 5.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0055969460717218,
+    0.999954175948217,
+    0.9944176326146622
+   ],
+   "compensation_nm_per_nm": [
+    0.0016831404439570377,
+    0.0021524386339091704,
+    0.0002095899192713908
+   ],
+   "image_coefficient_nm_minus2": 5.3563068364755414e-05,
+   "auxiliary_coefficient_nm_minus2": 1.1331847016335576e-07,
+   "total_coefficient_nm_minus2": 5.367638683491877e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9975086870201999,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_10.0nm",
+   "sigma_h_nm": 10.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0065105914090022,
+    0.9999014916710721,
+    0.993545890402383
+   ],
+   "compensation_nm_per_nm": [
+    0.004866338063519636,
+    0.0022590488234296574,
+    0.00020810248982975978
+   ],
+   "image_coefficient_nm_minus2": 5.319385246117384e-05,
+   "auxiliary_coefficient_nm_minus2": 2.3681246148460046e-07,
+   "total_coefficient_nm_minus2": 5.343066492265844e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.99294225182357,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_20.0nm",
+   "sigma_h_nm": 20.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0075770097546302,
+    0.9998617593407296,
+    0.9925044239810621
+   ],
+   "compensation_nm_per_nm": [
+    0.009230645319070713,
+    0.0024052161932405836,
+    0.00020606315709580648
+   ],
+   "image_coefficient_nm_minus2": 5.288075708513942e-05,
+   "auxiliary_coefficient_nm_minus2": 2.1301203251620518e-07,
+   "total_coefficient_nm_minus2": 5.3093769117655626e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9866814635714749,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_50.0nm",
+   "sigma_h_nm": 50.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0082463739547451,
+    0.9998441629326202,
+    0.9918421745704687
+   ],
+   "compensation_nm_per_nm": [
+    0.012325836469631105,
+    0.002508878910608675,
+    0.00020461685089839365
+   ],
+   "image_coefficient_nm_minus2": 5.279407022788992e-05,
+   "auxiliary_coefficient_nm_minus2": 6.077049787043527e-08,
+   "total_coefficient_nm_minus2": 5.285484072576036e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9822412774757847,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "height_sigma_100.0nm",
+   "sigma_h_nm": 100.0,
+   "sigma_xy_nm": null,
+   "no_height_measurement": false,
+   "no_xy_measurement": true,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0083737695260493,
+    0.9998412769980837,
+    0.9917155649391958
+   ],
+   "compensation_nm_per_nm": [
+    0.012945980128432337,
+    0.0025296484765911544,
+    0.00020432707311943978
+   ],
+   "image_coefficient_nm_minus2": 5.279020987541113e-05,
+   "auxiliary_coefficient_nm_minus2": 1.67598401485765e-08,
+   "total_coefficient_nm_minus2": 5.280696971555971e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9813516544711954,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_1.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 1.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0002039518313328,
+    0.9999997390338231,
+    0.9997962675831858
+   ],
+   "compensation_nm_per_nm": [
+    0.013153334652867714,
+    2.3594413613189433e-06,
+    1.872233192010411e-07
+   ],
+   "image_coefficient_nm_minus2": 5.279594264467783e-05,
+   "auxiliary_coefficient_nm_minus2": 5.602016108755243e-12,
+   "total_coefficient_nm_minus2": 5.279594824669394e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9811468342218157,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_2.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 2.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0004079134314294,
+    0.9999989612241806,
+    0.9995929593061045
+   ],
+   "compensation_nm_per_nm": [
+    0.013153372112940622,
+    9.411507126536704e-06,
+    7.468432399203867e-07
+   ],
+   "image_coefficient_nm_minus2": 5.279590920383939e-05,
+   "auxiliary_coefficient_nm_minus2": 2.2283560304466488e-11,
+   "total_coefficient_nm_minus2": 5.27959314873997e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9811465227712397,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_5.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 5.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.001017612003649,
+    0.9999937218995957,
+    0.9989876358693865
+   ],
+   "compensation_nm_per_nm": [
+    0.013153628608238214,
+    5.769820005446553e-05,
+    4.580004209728545e-06
+   ],
+   "image_coefficient_nm_minus2": 5.279568273106168e-05,
+   "auxiliary_coefficient_nm_minus2": 1.340023491234503e-10,
+   "total_coefficient_nm_minus2": 5.27958167334108e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9811443902115138,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_10.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 10.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.002011005626101,
+    0.9999775354768616,
+    0.9980074514480292
+   ],
+   "compensation_nm_per_nm": [
+    0.013154469769912025,
+    0.00021605208101673192,
+    1.7167016853602745e-05
+   ],
+   "image_coefficient_nm_minus2": 5.279497066809294e-05,
+   "auxiliary_coefficient_nm_minus2": 4.697320817931238e-10,
+   "total_coefficient_nm_minus2": 5.279544040017473e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9811373965278043,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_20.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 20.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0037857978826334,
+    0.9999368022405708,
+    0.9962632500970945
+   ],
+   "compensation_nm_per_nm": [
+    0.013156978551549183,
+    0.0006883495168190076,
+    5.4852522238413575e-05
+   ],
+   "image_coefficient_nm_minus2": 5.279312585803536e-05,
+   "auxiliary_coefficient_nm_minus2": 1.1920846412521925e-09,
+   "total_coefficient_nm_minus2": 5.279431794267661e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9811165370554887,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_50.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 50.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0066831636981164,
+    0.9998716471583856,
+    0.9934010756665852
+   ],
+   "compensation_nm_per_nm": [
+    0.013162748003667155,
+    0.0017745132088095794,
+    0.0001422778841046382
+   ],
+   "image_coefficient_nm_minus2": 5.2790468778444374e-05,
+   "auxiliary_coefficient_nm_minus2": 1.2676560498179852e-09,
+   "total_coefficient_nm_minus2": 5.279173643449419e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9810685629463987,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  },
+  {
+   "design": "xy_sigma_100.0nm",
+   "sigma_h_nm": null,
+   "sigma_xy_nm": 100.0,
+   "no_height_measurement": true,
+   "no_xy_measurement": false,
+   "exact_height": false,
+   "exact_xy": false,
+   "rtol": 1e-10,
+   "nuisance_rank": 3,
+   "normalized_augmented_singular_values": [
+    1.0078743559206955,
+    0.999849483309711,
+    0.9922148423616465
+   ],
+   "compensation_nm_per_nm": [
+    0.01316549105864296,
+    0.0022909327938039677,
+    0.000184182578767754
+   ],
+   "image_coefficient_nm_minus2": 5.278998075618218e-05,
+   "auxiliary_coefficient_nm_minus2": 5.282296288047993e-10,
+   "total_coefficient_nm_minus2": 5.2790508985810985e-05,
+   "D_squared_norm": 5.381044549623236e-05,
+   "fraction_of_all_nuisance_fixed": 0.9810457523438867,
+   "scope": "LOCAL_QUADRATIC_DESIGN_NOT_CALIBRATED_FISHER_OR_CI",
+   "reportable_D": null
+  }
+ ]
+}

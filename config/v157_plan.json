@@ -1,0 +1,127 @@
+{
+  "schema": "iscat157.finite_auxiliary_design.1",
+  "base_commit": "797d8e5232b93fdfcfe796f429ff5fa749118c00",
+  "repository": "yyyyzoey/iscat-handoff",
+  "authorization": "ONLY_ON_USER_AUTHORIZED_CODEX_EXECUTION",
+  "max_new_model_forward_attempts": 500,
+  "phases": {
+    "REPAIR_AND_ANCHOR": 260,
+    "NONLINEAR_PROBES": 120,
+    "FINAL_VERIFY": 120
+  },
+  "per_task": {
+    "loader_initializations": 2,
+    "loader_calls_each": 100,
+    "nonlinear_groups": 3,
+    "nonlinear_cap_each": 40,
+    "max_proposed_points_each": 24
+  },
+  "frozen": {
+    "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+    "library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "camera_sha256": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+    "v152_results_git_blob_sha1": "21e9d1b96f61e2fd9af57f0a038941d07f7d207b",
+    "v156_runner_git_blob_sha1": "5a447cfe883fe91b6e8ef8b4559ed0c516acd8b8",
+    "v156_rescored_git_blob_sha1": "531b3638003bcf742fc2f993db015b3d4f1a3ac7",
+    "v156_return_git_blob_sha1": "8bbc0e078af026b9d7889a6fda5d0f1fe015d613"
+  },
+  "source_pool": {
+    "commit": "6d2db46d52509bd6987726dea211781cfa1b4127",
+    "path": "results/v152/all_results.json",
+    "groups": 12,
+    "starts_per_group": 6
+  },
+  "prior_e1_source": {
+    "commit": "e1df35a54a6ca9f91007f68603edf99ac60dc9bc",
+    "path": "results/v153/all_results.json",
+    "key": "e1_regression",
+    "count": 6
+  },
+  "saved_groups_root": "results/v156/joint",
+  "ledger_files": [
+    "results/v156/logs/v156_budget.sqlite",
+    "results/v156/logs/v156_budget_fresh.sqlite"
+  ],
+  "finite_auxiliary": {
+    "sigma_nm": [
+      1,
+      2,
+      5,
+      10,
+      20,
+      50,
+      100
+    ],
+    "rtols": [
+      1e-08,
+      1e-10,
+      1e-12
+    ],
+    "fixed_sigma10_nonlinear_design_only": true,
+    "hypothetical_measurement_not_observed_data": true,
+    "coarse_fine_coefficient_relative_tolerance": 0.05,
+    "residual_resolution_floor_relative_to_D_norm": 1e-10
+  },
+  "nonlinear": {
+    "groups": [
+      [
+        100000,
+        "ANON_02"
+      ],
+      [
+        100000,
+        "ANON_03"
+      ],
+      [
+        100000,
+        "ANON_04"
+      ]
+    ],
+    "paths": [
+      "free_hxy",
+      "exact_height",
+      "height_sigma10"
+    ],
+    "delta_D_nm": [
+      -5,
+      -2,
+      -1,
+      -0.5,
+      0.5,
+      1,
+      2,
+      5
+    ],
+    "no_clip_no_refit": true,
+    "image_linearization_tolerance": 0.05,
+    "image_change_norm_floor": 1e-12
+  },
+  "numerics": {
+    "Q_atol": 1e-08,
+    "Q_rtol": 1e-10,
+    "C_atol": 1e-12,
+    "C_rtol": 1e-10,
+    "boundary_nm": 1e-06
+  },
+  "forbidden": {
+    "new_BEM": 0,
+    "new_physical_render": 0,
+    "new_camera_exposure": 0,
+    "new_noise_draw": 0,
+    "new_four_parameter_fit": 0,
+    "new_fixed_D_optimization": 0,
+    "new_full_Jacobian_batch": 0,
+    "new_second_focus": 0
+  },
+  "all_reportable_D_null": true,
+  "calibrated_uncertainty": false,
+  "experimental_absolute_diameter_validated": false,
+  "reference_sha256": {
+    "reference/v152_budget_store.py": "83e6c764cdca7fd8a053f78538ab7e2daf2d312903ce0e90fbfc181f071af8e0",
+    "reference/v152_gls_core.py": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+    "reference/v155_pixel_diagnostics.py": "27364771b013f15c59ea639708ecb6dc0d66c210245a80d2d7c047406090f1ad",
+    "reference/v155_stage.py": "9105646cdecabb1875831c73da3b4b07a9af242bb8e1fd1d77b200dc0a739645",
+    "reference/v156_candidate_guard.py": "259e71512dc2de64392bfe654f49688c0535682b8d8a698e5d02e7f019dd3da0",
+    "reference/v157_height_design.py": "65e421fb78a515eed7db7a877201005b18ab6022ff4774f9804d882eb1ef1365"
+  }
+}

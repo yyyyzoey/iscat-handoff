@@ -1,0 +1,726 @@
+{
+  "commit_requested": "797d8e5232b93fdfcfe796f429ff5fa749118c00",
+  "scope": "READONLY_SAVED_ARTIFACTS_NOT_SOURCE_LOCK_OR_NEW_OPTICAL_REPLAY",
+  "scientific_acceptance": false,
+  "failures": [],
+  "groups": [
+    {
+      "B": 1000,
+      "anon": "ANON_01",
+      "theta": [
+        199.99999999999997,
+        470.1718638106314,
+        251.854217049231,
+        -271.23458015028183
+      ],
+      "Q_joint": 507.08512982659875,
+      "saved_predictions": 20,
+      "parameter_boundary": true,
+      "step_relative_errors": [
+        1.5230625502278291e-05,
+        4.092039838156012e-06,
+        1.601182184775339e-06,
+        1.7304770293000565e-06
+      ],
+      "directional_relative_errors": [
+        0.00156794504296259,
+        0.0007849977821751692,
+        0.0014543300744784065,
+        0.0007282675809233612
+      ],
+      "saved_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "squared_fractions": {
+        "free_hxy": 0.0616453707643754,
+        "height_fixed": 0.9997484924067125,
+        "xy_fixed": 0.061652236431939705
+      }
+    },
+    {
+      "B": 1000,
+      "anon": "ANON_02",
+      "theta": [
+        199.99999999999997,
+        474.45595619017047,
+        -145.68001480482107,
+        203.2799041923354
+      ],
+      "Q_joint": 580.6634392767403,
+      "saved_predictions": 20,
+      "parameter_boundary": true,
+      "step_relative_errors": [
+        1.2722446625802327e-05,
+        3.824697775061592e-06,
+        1.5684199191726124e-06,
+        1.6984711336783723e-06
+      ],
+      "directional_relative_errors": [
+        0.001379665678058484,
+        0.0006907271523222206,
+        0.0012911594119119948,
+        0.0006464305577850315
+      ],
+      "saved_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "squared_fractions": {
+        "free_hxy": 0.04326827756770084,
+        "height_fixed": 0.9999961645818721,
+        "xy_fixed": 0.043270928383180446
+      }
+    },
+    {
+      "B": 1000,
+      "anon": "ANON_03",
+      "theta": [
+        174.97271601448753,
+        476.97889511049976,
+        87.21942117182824,
+        19.067851774514764
+      ],
+      "Q_joint": 510.291702356689,
+      "saved_predictions": 21,
+      "parameter_boundary": false,
+      "step_relative_errors": [
+        5.5955063019645595e-06,
+        5.39456291166001e-06,
+        1.6081955499679911e-06,
+        1.7479896142346341e-06
+      ],
+      "directional_relative_errors": [
+        0.0015531979529619887,
+        0.0007778758341662905,
+        0.001363359470092103,
+        0.0006829189049714825
+      ],
+      "saved_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+      "squared_fractions": {
+        "free_hxy": 0.30940321005113675,
+        "height_fixed": 0.9999148469009146,
+        "xy_fixed": 0.3095236854585197
+      }
+    },
+    {
+      "B": 1000,
+      "anon": "ANON_04",
+      "theta": [
+        199.6525413874351,
+        529.3266301526128,
+        -90.7448274301891,
+        -106.81398811456674
+      ],
+      "Q_joint": 510.9011644364041,
+      "saved_predictions": 21,
+      "parameter_boundary": false,
+      "step_relative_errors": [
+        1.8918646441874234e-05,
+        8.409162040056688e-06,
+        1.4791996949099445e-06,
+        1.5839718058733468e-06
+      ],
+      "directional_relative_errors": [
+        0.0030910124350092766,
+        0.0015434087144732375,
+        0.003914596626048187,
+        0.0019535784742992566
+      ],
+      "saved_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+      "squared_fractions": {
+        "free_hxy": 0.9810348811983907,
+        "height_fixed": 0.9999232250673888,
+        "xy_fixed": 0.9811469384251964
+      }
+    },
+    {
+      "B": 10000,
+      "anon": "ANON_01",
+      "theta": [
+        198.07540719844783,
+        385.723449734212,
+        -205.72296517536537,
+        -328.185459677864
+      ],
+      "Q_joint": 451.22082255201184,
+      "saved_predictions": 21,
+      "parameter_boundary": false,
+      "step_relative_errors": [
+        2.573854614446505e-06,
+        4.300208215038452e-06,
+        1.7534764157614383e-06,
+        1.3926714260634586e-06
+      ],
+      "directional_relative_errors": [
+        0.0008981326830407861,
+        0.0004492839133138542,
+        0.0009345177258905933,
+        0.0004673638003581869
+      ],
+      "saved_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+      "squared_fractions": {
+        "free_hxy": 0.0055220587440627305,
+        "height_fixed": 0.9988310045688931,
+        "xy_fixed": 0.005539747780407761
+      }
+    },
+    {
+      "B": 10000,
+      "anon": "ANON_02",
+      "theta": [
+        139.42022342193894,
+        472.35395249401085,
+        -84.78041324447284,
+        70.514781275572
+      ],
+      "Q_joint": 451.70890360794056,
+      "saved_predictions": 21,
+      "parameter_boundary": false,
+      "step_relative_errors": [
+        2.3749337760297758e-06,
+        3.8503368817661604e-06,
+        1.5583559017858143e-06,
+        1.6524855718743446e-06
+      ],
+      "directional_relative_errors": [
+        0.003388537305102404,
+        0.0016967111380319577,
+        0.002107727510912985,
+        0.001055428381057441
+      ],
+      "saved_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+      "squared_fractions": {
+        "free_hxy": 0.05827054346692009,
+        "height_fixed": 0.9999764281854445,
+        "xy_fixed": 0.05828709562437198
+      }
+    },
+    {
+      "B": 10000,
+      "anon": "ANON_03",
+      "theta": [
+        119.80939293953102,
+        475.1573332227965,
+        22.45478900198157,
+        79.80431692442946
+      ],
+      "Q_joint": 474.7095761104198,
+      "saved_predictions": 21,
+      "parameter_boundary": false,
+      "step_relative_errors": [
+        1.97801554889962e-06,
+        5.630494358492689e-06,
+        1.597997083867637e-06,
+        1.6673057893455478e-06
+      ],
+      "directional_relative_errors": [
+        0.004257342777882644,
+        0.0021327981694432086,
+        0.0022266128111056312,
+        0.0011154529108493183
+      ],
+      "saved_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+      "squared_fractions": {
+        "free_hxy": 0.05998992314519694,
+        "height_fixed": 0.9999801095956424,
+        "xy_fixed": 0.059999448274894
+      }
+    },
+    {
+      "B": 10000,
+      "anon": "ANON_04",
+      "theta": [
+        189.08591609183011,
+        525.2235403982793,
+        -120.96870917869451,
+        -75.42580663251154
+      ],
+      "Q_joint": 463.06426423750975,
+      "saved_predictions": 21,
+      "parameter_boundary": false,
+      "step_relative_errors": [
+        8.468239593266728e-06,
+        6.409140717785666e-06,
+        1.479591354880808e-06,
+        1.5431881339603276e-06
+      ],
+      "directional_relative_errors": [
+        0.0021271234954738432,
+        0.0010619131052017677,
+        0.0028201045016568757,
+        0.0014074617661737837
+      ],
+      "saved_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+      "squared_fractions": {
+        "free_hxy": 0.0006458638174130946,
+        "height_fixed": 0.9999553517140702,
+        "xy_fixed": 0.0006519201246521957
+      }
+    },
+    {
+      "B": 100000,
+      "anon": "ANON_01",
+      "theta": [
+        45.24922455863183,
+        421.5219091998806,
+        -499.999999986539,
+        -179.10701874402963
+      ],
+      "Q_joint": 500.0181758515399,
+      "saved_predictions": 20,
+      "parameter_boundary": true,
+      "step_relative_errors": [
+        1.7757644839723517e-06,
+        6.789962149999564e-06,
+        2.920567821610386e-06,
+        1.5449160572136456e-06
+      ],
+      "directional_relative_errors": [
+        0.002515349358199334,
+        0.0012587610886684636,
+        0.0012195716001170789,
+        0.0006106102346148221
+      ],
+      "saved_status": "BOUNDARY_LOCAL_DIAGNOSTIC_ONLY",
+      "squared_fractions": {
+        "free_hxy": 0.0007235896460514042,
+        "height_fixed": 0.9999994240407303,
+        "xy_fixed": 0.0007236620752717536
+      }
+    },
+    {
+      "B": 100000,
+      "anon": "ANON_02",
+      "theta": [
+        124.09042981381258,
+        412.039395189038,
+        -75.76760477309037,
+        117.0422352121129
+      ],
+      "Q_joint": 527.1683634782148,
+      "saved_predictions": 21,
+      "parameter_boundary": false,
+      "step_relative_errors": [
+        1.4197976335026994e-06,
+        4.828582328403281e-06,
+        1.4582271083875954e-06,
+        1.5302696763999096e-06
+      ],
+      "directional_relative_errors": [
+        0.0009596088509008364,
+        0.0004803016186449704,
+        0.0010054912929028884,
+        0.0005021745972027345
+      ],
+      "saved_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+      "squared_fractions": {
+        "free_hxy": 0.00043802607833025916,
+        "height_fixed": 0.9999973246652959,
+        "xy_fixed": 0.0004416803527530682
+      }
+    },
+    {
+      "B": 100000,
+      "anon": "ANON_03",
+      "theta": [
+        134.84798634193208,
+        476.59348174254495,
+        44.96074376773707,
+        106.4545424044937
+      ],
+      "Q_joint": 474.7850232808556,
+      "saved_predictions": 21,
+      "parameter_boundary": false,
+      "step_relative_errors": [
+        2.3841730670734558e-06,
+        5.500075447625667e-06,
+        1.6170648109268628e-06,
+        1.6705046890419481e-06
+      ],
+      "directional_relative_errors": [
+        0.0029938653058261284,
+        0.0014995978107742662,
+        0.0018655545055652296,
+        0.0009345318640526915
+      ],
+      "saved_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+      "squared_fractions": {
+        "free_hxy": 0.08567053328580224,
+        "height_fixed": 0.9999751494167741,
+        "xy_fixed": 0.08568878621811113
+      }
+    },
+    {
+      "B": 100000,
+      "anon": "ANON_04",
+      "theta": [
+        188.22431104153708,
+        524.5608744334014,
+        -118.30198304395213,
+        -76.86688004842907
+      ],
+      "Q_joint": 492.85607964668293,
+      "saved_predictions": 21,
+      "parameter_boundary": false,
+      "step_relative_errors": [
+        7.817827004826867e-06,
+        6.182643483858317e-06,
+        1.4754062140584105e-06,
+        1.5417656650951625e-06
+      ],
+      "directional_relative_errors": [
+        0.002042591344339726,
+        0.0010197069293388084,
+        0.002703765267898734,
+        0.0013494196020989793
+      ],
+      "saved_status": "NUMERICALLY_CHECKED_LOCAL_ONLY",
+      "squared_fractions": {
+        "free_hxy": 0.00038970317039921365,
+        "height_fixed": 0.9999795495688995,
+        "xy_fixed": 0.0003961755932270081
+      }
+    }
+  ],
+  "groups_complete": true,
+  "ledgers": [
+    {
+      "path": "v156_budget.sqlite",
+      "bytes": 24576,
+      "sha256": "4e6a141e62934203c4cc3ebf67786274b6dc1a3d2586e7a50c2c943829ac34af",
+      "git_blob": "04012df3130dec65499de3adb4fca52ad9413433",
+      "integrity_check": "ok",
+      "tables": [
+        "attempts",
+        "metadata",
+        "tasks"
+      ],
+      "metadata": [
+        {
+          "id": 1,
+          "value": "{\"phases\":{\"LOCAL_INFORMATION\":480},\"plan_id\":\"v156\",\"total\":480}"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "V156_B1000_ANON_01",
+          "signature": "645262461608385cadbda9656424f28355e99b75522eb7a220ca2f1b201c141d",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 0,
+          "owner": "v156",
+          "state": "RUNNING",
+          "result_path": null,
+          "result_sha": null
+        },
+        {
+          "id": "V156_B1000_ANON_02",
+          "signature": "67017f939a184d74ea138a9f45ed35175de37105fdd15d4c0ff47e747fc2e4a2",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 0,
+          "owner": "v156",
+          "state": "RUNNING",
+          "result_path": null,
+          "result_sha": null
+        },
+        {
+          "id": "V156_B1000_ANON_03",
+          "signature": "6e1f6210dbb242e1e6284f89a0a96fbb033b1ca2f12e8ac9ab3faac6b2e84e3e",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 0,
+          "owner": "v156",
+          "state": "RUNNING",
+          "result_path": null,
+          "result_sha": null
+        },
+        {
+          "id": "V156_B1000_ANON_04",
+          "signature": "055296ebf6e697be0402b4448c8a0a18db3914bd8c1a3956e5affadc272e7205",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 0,
+          "owner": "v156",
+          "state": "RUNNING",
+          "result_path": null,
+          "result_sha": null
+        },
+        {
+          "id": "V156_B10000_ANON_01",
+          "signature": "14a498ab3edd79c45e1c96dcdc53b6e3943518b435fd4fc61cc0644b7ea891e5",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 0,
+          "owner": "v156",
+          "state": "RUNNING",
+          "result_path": null,
+          "result_sha": null
+        },
+        {
+          "id": "V156_B10000_ANON_02",
+          "signature": "dfcc21e6faff3cf8335d783ba9138867051718fa684726431f56c409e6a8d03e",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 0,
+          "owner": "v156",
+          "state": "RUNNING",
+          "result_path": null,
+          "result_sha": null
+        },
+        {
+          "id": "V156_B10000_ANON_03",
+          "signature": "c7d1b2d4d1ff3d4c727e19e970581fb5bdfcd8af39255e505e95de92594b7568",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 0,
+          "owner": "v156",
+          "state": "RUNNING",
+          "result_path": null,
+          "result_sha": null
+        },
+        {
+          "id": "V156_B10000_ANON_04",
+          "signature": "c0482942919e25fd1a0a6cea00c3ccae4fa0e19ea7cfffad3cf07de156bb332a",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 0,
+          "owner": "v156",
+          "state": "RUNNING",
+          "result_path": null,
+          "result_sha": null
+        },
+        {
+          "id": "V156_B100000_ANON_01",
+          "signature": "30b4dbf08614e62cdc587d7e6935bd42465889b44ed868773aec3453b635925c",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 0,
+          "owner": "v156",
+          "state": "RUNNING",
+          "result_path": null,
+          "result_sha": null
+        },
+        {
+          "id": "V156_B100000_ANON_02",
+          "signature": "568037c18de763daf6331bda75da743ec4bcbf6c7189795b763127d7b81cb172",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 0,
+          "owner": "v156",
+          "state": "RUNNING",
+          "result_path": null,
+          "result_sha": null
+        },
+        {
+          "id": "V156_B100000_ANON_03",
+          "signature": "7905e5f8c1a68a51fb572e47a99bd32633d0fd3b8601427fca1b726bb9316e96",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 0,
+          "owner": "v156",
+          "state": "RUNNING",
+          "result_path": null,
+          "result_sha": null
+        },
+        {
+          "id": "V156_B100000_ANON_04",
+          "signature": "146bcb314db7e40408a51e2347b6dabba5364bc8c5fa7124ede71fcb1dda482c",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 0,
+          "owner": "v156",
+          "state": "RUNNING",
+          "result_path": null,
+          "result_sha": null
+        }
+      ],
+      "attempt_states": {},
+      "attempts": 0,
+      "recorded_used": 0,
+      "reserved": 480,
+      "task_over_cap": [],
+      "task_attempt_count_matches": true
+    },
+    {
+      "path": "v156_budget_fresh.sqlite",
+      "bytes": 86016,
+      "sha256": "c6911da4c7f34b77404029160f30259fe65e694e27a6564037d087e6ecceae4c",
+      "git_blob": "f498033543625bc6c9d1a3b394c60d53fe89e4b4",
+      "integrity_check": "ok",
+      "tables": [
+        "attempts",
+        "metadata",
+        "tasks"
+      ],
+      "metadata": [
+        {
+          "id": 1,
+          "value": "{\"phases\":{\"LOCAL_INFORMATION\":480},\"plan_id\":\"v156\",\"total\":480}"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "V156_B1000_ANON_01",
+          "signature": "645262461608385cadbda9656424f28355e99b75522eb7a220ca2f1b201c141d",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 20,
+          "owner": "v156",
+          "state": "FINISHED",
+          "result_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v156\\joint\\1000_ANON_01\\result.json",
+          "result_sha": "c326515fa29fe1d13b67288ef1b32c21398e054f6a4fd3fef4e154f3ffc67f82"
+        },
+        {
+          "id": "V156_B1000_ANON_02",
+          "signature": "67017f939a184d74ea138a9f45ed35175de37105fdd15d4c0ff47e747fc2e4a2",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 20,
+          "owner": "v156",
+          "state": "FINISHED",
+          "result_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v156\\joint\\1000_ANON_02\\result.json",
+          "result_sha": "6a37d13e79ece9ff9c1fb6d3657904b8372c6b864be31a0cfe767b96041d0763"
+        },
+        {
+          "id": "V156_B1000_ANON_03",
+          "signature": "6e1f6210dbb242e1e6284f89a0a96fbb033b1ca2f12e8ac9ab3faac6b2e84e3e",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 21,
+          "owner": "v156",
+          "state": "FINISHED",
+          "result_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v156\\joint\\1000_ANON_03\\result.json",
+          "result_sha": "f977a5aaf9e72a0dca5eda6a918208822778d796573e6dab98ecbb3328968cbf"
+        },
+        {
+          "id": "V156_B1000_ANON_04",
+          "signature": "055296ebf6e697be0402b4448c8a0a18db3914bd8c1a3956e5affadc272e7205",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 21,
+          "owner": "v156",
+          "state": "FINISHED",
+          "result_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v156\\joint\\1000_ANON_04\\result.json",
+          "result_sha": "299303222f70b10cc4bb906c5728336ade57f9c20530d24311073d98c62d6f21"
+        },
+        {
+          "id": "V156_B10000_ANON_01",
+          "signature": "14a498ab3edd79c45e1c96dcdc53b6e3943518b435fd4fc61cc0644b7ea891e5",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 21,
+          "owner": "v156",
+          "state": "FINISHED",
+          "result_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v156\\joint\\10000_ANON_01\\result.json",
+          "result_sha": "3272c8b4c54d9ec9db97d660d26267a0a0a70a2be2b440e8e3c3a6f787de06dc"
+        },
+        {
+          "id": "V156_B10000_ANON_02",
+          "signature": "dfcc21e6faff3cf8335d783ba9138867051718fa684726431f56c409e6a8d03e",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 21,
+          "owner": "v156",
+          "state": "FINISHED",
+          "result_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v156\\joint\\10000_ANON_02\\result.json",
+          "result_sha": "ac65f7f282e95299fe983c3b887a8d2fb54baa547b4ddd37dde755d40d6e1e38"
+        },
+        {
+          "id": "V156_B10000_ANON_03",
+          "signature": "c7d1b2d4d1ff3d4c727e19e970581fb5bdfcd8af39255e505e95de92594b7568",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 21,
+          "owner": "v156",
+          "state": "FINISHED",
+          "result_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v156\\joint\\10000_ANON_03\\result.json",
+          "result_sha": "1b0a5457f713115e84304face7dfdc2a1680b9d645e7f4013234aea778382acc"
+        },
+        {
+          "id": "V156_B10000_ANON_04",
+          "signature": "c0482942919e25fd1a0a6cea00c3ccae4fa0e19ea7cfffad3cf07de156bb332a",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 21,
+          "owner": "v156",
+          "state": "FINISHED",
+          "result_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v156\\joint\\10000_ANON_04\\result.json",
+          "result_sha": "9db24827a2408cfa59dc18a2924c57c3f1719168fd716fc0984882b6415abed1"
+        },
+        {
+          "id": "V156_B100000_ANON_01",
+          "signature": "30b4dbf08614e62cdc587d7e6935bd42465889b44ed868773aec3453b635925c",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 20,
+          "owner": "v156",
+          "state": "FINISHED",
+          "result_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v156\\joint\\100000_ANON_01\\result.json",
+          "result_sha": "8e76165f427abb4974063fc1ee5449055c241e697db1b021c3bc2f7bee3a19c1"
+        },
+        {
+          "id": "V156_B100000_ANON_02",
+          "signature": "568037c18de763daf6331bda75da743ec4bcbf6c7189795b763127d7b81cb172",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 21,
+          "owner": "v156",
+          "state": "FINISHED",
+          "result_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v156\\joint\\100000_ANON_02\\result.json",
+          "result_sha": "fa382000dd036ff5c738552759d07d8fcec67c28af3915da7840bfcd39278ea1"
+        },
+        {
+          "id": "V156_B100000_ANON_03",
+          "signature": "7905e5f8c1a68a51fb572e47a99bd32633d0fd3b8601427fca1b726bb9316e96",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 21,
+          "owner": "v156",
+          "state": "FINISHED",
+          "result_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v156\\joint\\100000_ANON_03\\result.json",
+          "result_sha": "3b68864d1a86b4506095e5fa2e7d347857639b3669692f37306fcc81199fbe6f"
+        },
+        {
+          "id": "V156_B100000_ANON_04",
+          "signature": "146bcb314db7e40408a51e2347b6dabba5364bc8c5fa7124ede71fcb1dda482c",
+          "phase": "LOCAL_INFORMATION",
+          "cap": 40,
+          "used": 21,
+          "owner": "v156",
+          "state": "FINISHED",
+          "result_path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo\\results\\v156\\joint\\100000_ANON_04\\result.json",
+          "result_sha": "0b991b11a1b33d7bc948b92d47c29a2fb137d16d5a57465809c0e06179c65565"
+        }
+      ],
+      "attempt_states": {
+        "RETURNED": 249
+      },
+      "attempts": 249,
+      "recorded_used": 249,
+      "reserved": 480,
+      "task_over_cap": [],
+      "task_attempt_count_matches": true
+    }
+  ],
+  "ledger_totals_combined": null,
+  "ledger_warning": "DO_NOT_SUM_TWO_RUNS_OR_DEDUP_WITHOUT_RUN_IDENTITIES",
+  "archive": {
+    "bytes": 1367691,
+    "sha256": "e85038a2ded0f2b1aef49226f0b4e2b9e26ad4e24cd5da75a032fb5a700c78f6",
+    "git_blob": "8bbc0e078af026b9d7889a6fda5d0f1fe015d613",
+    "members": 285,
+    "duplicates": false,
+    "crc_bad_member": null,
+    "manifest_rows": 284,
+    "manifest_failures": [],
+    "unlisted_files": []
+  },
+  "cross_background_best_files": [
+    "joint\\ANON_01_best.json",
+    "joint\\ANON_02_best.json",
+    "joint\\ANON_03_best.json",
+    "joint\\ANON_04_best.json"
+  ],
+  "excluded_from_science": [
+    "joint\\ANON_01_best.json",
+    "joint\\ANON_02_best.json",
+    "joint\\ANON_03_best.json",
+    "joint\\ANON_04_best.json"
+  ]
+}
