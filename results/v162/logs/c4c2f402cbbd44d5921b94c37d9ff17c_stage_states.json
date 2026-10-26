@@ -1,0 +1,6 @@
+{
+  "tests": "FINISHED",
+  "preflight": "FINISHED",
+  "execute": "BLOCKED_OR_FAILED",
+  "verify": "NOT_STARTED"
+}

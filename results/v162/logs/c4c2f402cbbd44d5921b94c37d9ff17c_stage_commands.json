@@ -1,0 +1,50 @@
+[
+  {
+    "stage": "tests",
+    "command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v162\\tools\\v162_bundle\\run_workstation_tests.py",
+      "--out",
+      "C:\\iscat\\v162\\results\\v162\\workstation_tests"
+    ],
+    "returncode": 0,
+    "stdout": "c4c2f402cbbd44d5921b94c37d9ff17c_tests.stdout",
+    "stderr": "c4c2f402cbbd44d5921b94c37d9ff17c_tests.stderr"
+  },
+  {
+    "stage": "preflight",
+    "command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v162\\tools\\v162_bundle\\code\\v162_run.py",
+      "--repo",
+      "C:\\iscat\\v162",
+      "--config",
+      "C:\\iscat\\v162\\tools\\v162_bundle\\config\\v162_plan.json",
+      "--out",
+      "C:\\iscat\\v162\\results\\v162",
+      "--mode",
+      "preflight"
+    ],
+    "returncode": 0,
+    "stdout": "c4c2f402cbbd44d5921b94c37d9ff17c_preflight.stdout",
+    "stderr": "c4c2f402cbbd44d5921b94c37d9ff17c_preflight.stderr"
+  },
+  {
+    "stage": "execute",
+    "command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v162\\tools\\v162_bundle\\code\\v162_run.py",
+      "--repo",
+      "C:\\iscat\\v162",
+      "--config",
+      "C:\\iscat\\v162\\tools\\v162_bundle\\config\\v162_plan.json",
+      "--out",
+      "C:\\iscat\\v162\\results\\v162",
+      "--mode",
+      "execute"
+    ],
+    "returncode": 2,
+    "stdout": "c4c2f402cbbd44d5921b94c37d9ff17c_execute.stdout",
+    "stderr": "c4c2f402cbbd44d5921b94c37d9ff17c_execute.stderr"
+  }
+]

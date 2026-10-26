@@ -1,0 +1,262 @@
+{
+  "task": "V162",
+  "record_type": "CONTRACT_SECTION_4_DEPLOYMENT_CONDITION_REPAIR_AND_RESUME",
+  "contract_clause": "Section 4: if the launcher/installation/tests fail, the real deployment condition may be repaired provided no V162 model ledger and no actual model call exist, then the original package is re-tested in full; old logs are kept, no check is deleted by us, no math core is changed.",
+  "baseline_conditions": {
+    "frozen_science_base": "71333a9f193d00012972e8fd6c188805c7a6b18e",
+    "reviewed_parent": "dad7b87554959355926d3523169fae7ac30a39f7",
+    "code_commit": "dc919aada7cc750c19383470021878fab5814db5",
+    "worktree": "C:\\iscat\\v162",
+    "v162_model_ledger_exists_at_repair_time": true,
+    "model_forward_calls_made_before_repair": 0,
+    "ledger_path": "results/v162/logs/v162_budget.sqlite"
+  },
+  "first_run": {
+    "launcher_evidence_dir": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a",
+    "launcher_artifacts": {
+      "launcher_state.json": {
+        "path": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\launcher_state.json",
+        "bytes": 2597,
+        "sha256": "21e4262442c7ff49db93415790ccaed155bf5ec450a7c032d747b50fc7af5887"
+      },
+      "prepare.json": {
+        "path": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\prepare.json",
+        "bytes": 723,
+        "sha256": "66e5f1386886131e8e74e4483b3bd08d6b01fc06d8eedc812815dc5481a09893"
+      },
+      "prepare.stdout": {
+        "path": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\prepare.stdout",
+        "bytes": 3761,
+        "sha256": "0b2251086242e9701b5b2fc68df56f86d9d627dc3cd555f843a4440c7674c792"
+      },
+      "prepare.stderr": {
+        "path": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\prepare.stderr",
+        "bytes": 2879,
+        "sha256": "d746672ab6bb31ef3d3a956656e3908aca0645a073ebd7982f318590b1fad4b1"
+      },
+      "run_all.json": {
+        "path": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\run_all.json",
+        "bytes": 507,
+        "sha256": "ef47faf6f7146d82f84dd1656d662cc691e659635f79a46dd32a5720cdc9f717"
+      },
+      "run_all.stdout": {
+        "path": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\run_all.stdout",
+        "bytes": 128,
+        "sha256": "7322bde6f7c53c480ea46daec494a8a75d576830708d3248395c920788cd866b"
+      },
+      "run_all.stderr": {
+        "path": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\run_all.stderr",
+        "bytes": 2,
+        "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+      },
+      "final_pack.json": {
+        "path": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\final_pack.json",
+        "bytes": 539,
+        "sha256": "b5e1a86f288007e3f8b16c089c5e9da9ed43f4f930d4ad2ca89f9a49abc72d59"
+      }
+    },
+    "launcher_returncode": 2,
+    "prepare_returncode": 0,
+    "run_all_returncode": 2,
+    "final_pack_returncode": 0,
+    "stage_states": {
+      "tests": "BLOCKED_OR_FAILED",
+      "preflight": "NOT_STARTED",
+      "execute": "NOT_STARTED",
+      "verify": "NOT_STARTED"
+    },
+    "stage_commands": [
+      {
+        "stage": "tests",
+        "returncode": 2,
+        "command": [
+          "C:\\ProgramData\\anaconda3\\python.exe",
+          "C:\\iscat\\v162\\tools\\v162_bundle\\run_workstation_tests.py",
+          "--out",
+          "C:\\iscat\\v162\\results\\v162\\workstation_tests"
+        ]
+      }
+    ],
+    "first_failure_stage": "tests",
+    "preserved_evidence": {
+      "results/v162/logs/9285abb568744494a8fd3784849c229d_tests.stdout": {
+        "path": "C:\\iscat\\v162\\results\\v162\\logs\\9285abb568744494a8fd3784849c229d_tests.stdout",
+        "bytes": 35583,
+        "sha256": "48309bc81817a2514a70f7e6188fb51ac6abfa63016f58f69b83dd8798b52660"
+      },
+      "results/v162/logs/9285abb568744494a8fd3784849c229d_stage_states.json": {
+        "path": "C:\\iscat\\v162\\results\\v162\\logs\\9285abb568744494a8fd3784849c229d_stage_states.json",
+        "bytes": 126,
+        "sha256": "c851856d1b48e4ad5d4fcef84e653c06bf7ed3d1d65c3ed8ba18eaba549d9e41"
+      },
+      "results/v162/workstation_tests/test_output.txt": {
+        "path": "C:\\iscat\\v162\\results\\v162\\workstation_tests\\test_output.txt",
+        "bytes": 34823,
+        "sha256": "c13b19c3490e5d3379b92c06f8daceabc05d667a11e2221e3742c3e79d82d5c1"
+      },
+      "results/v162/workstation_tests/test_receipt.json": {
+        "path": "C:\\iscat\\v162\\results\\v162\\workstation_tests\\test_receipt.json",
+        "bytes": 7766,
+        "sha256": "a9967f60552a329d44a3281c0b5d813137a6e136e4a9bdd9f394c6958d6467c3"
+      },
+      "results/v162/workstation_tests/pytest_outcomes.json": {
+        "path": "C:\\iscat\\v162\\results\\v162\\workstation_tests\\pytest_outcomes.json",
+        "bytes": 123880,
+        "sha256": "984e60ba8f0694b739691bc595b7ed325502910f2cb52529f2b676164fef4a32"
+      }
+    },
+    "snapshot_of_first_run": {
+      "directory": "results/v162/deployment_repair_evidence/first_failed_run_snapshot",
+      "note": "Byte copies taken before any state was changed; manifest with sha256 beside them.",
+      "manifest": {
+        "path": "C:\\iscat\\v162\\results\\v162\\deployment_repair_evidence\\first_failed_run_snapshot\\sha256_manifest.json",
+        "bytes": 1431,
+        "sha256": "318b1e050896cd90b5668a509ad5107bdc8a1fb34088c07709585b8ec72256fc"
+      }
+    },
+    "snapshot_of_first_run_pack": {
+      "directory": "results/v162/deployment_repair_evidence/first_failed_run_pack",
+      "note": "The first-run report pack (a returned ZIP is not a science pass).",
+      "zip_sha256": "b9d658b5497c42c6184d37d26bc3c2ab1cc0db8d91694484365c15c28caa5166",
+      "zip_bytes": 108051
+    }
+  },
+  "root_cause": {
+    "summary": "The frozen test module defines a module-level helper `def setup(theta=None)` (tests/test_v162.py:14). pytest 7.4.0 still ships the deprecated builtin 'nose' plugin (_pytest/nose.py), which is listed in pytest.config.default_plugins and therefore stays loaded even though the bundle runner sets PYTEST_DISABLE_PLUGIN_AUTOLOAD=1. With that plugin active, Module._inject_setup_module_fixture hijacks any callable module-level `setup` as a nose-style setup hook and invokes it as setup(<Module ...>), so the helper received a module object as `theta`.",
+    "mechanism_citations": [
+      "_pytest/python.py:543 has_nose = self.config.pluginmanager.has_plugin('nose')",
+      "_pytest/python.py:547-551 falls back to _get_first_non_fixture_func(self.obj, ('setup',))",
+      "_pytest/nose.py pytest_runtest_setup -> call_optional(..., 'setup', nodeid)",
+      "pytest.config.default_plugins contains 'nose' (verified in the installed 7.4.0)",
+      "pytest.config.essential_plugins does NOT contain 'nose'",
+      "PYTEST_DISABLE_PLUGIN_AUTOLOAD only suppresses setuptools entry-point autoloading, not builtin default plugins"
+    ],
+    "observed_exception": "TypeError: float() argument must be a string or a real number, not 'module' at code/v152_gls_core.py:24, raised from tests/test_v162.py:20 with theta = <module 'test_v162' ...>",
+    "exception_count": 25,
+    "affected_nodeids": 25,
+    "tests_passed_in_first_run": 197,
+    "tests_collected": 222,
+    "interpretation": "This is a harness-level name collision in the frozen bundle's test module, not a defect in the approved GLS/design/optics cores and not a scientific result. pytest >= 8.0 removed the nose plugin entirely, so the intended semantics (the helper is called explicitly by the tests) is also the post-8.0 semantics.",
+    "disclosure": "The frozen package as shipped cannot pass the full suite under pytest 7.x without the opt-out. This is a real defect of the delivered package and is reported as such."
+  },
+  "repair": {
+    "what_was_changed": "Ambient interpreter/deployment condition only: the deprecated builtin 'nose' plugin is disabled for the test session via an environment variable.",
+    "environment_variable": {
+      "name": "PYTEST_ADDOPTS",
+      "value": "-p no:nose",
+      "scope": "the resumed run_all process only"
+    },
+    "package_bytes_changed": 0,
+    "checks_deleted": 0,
+    "math_cores_changed": 0,
+    "launcher_single_shot_evidence": {
+      "guard": "v162_bootstrap.py environment_check raises V162_BRANCH_EXISTS_NO_AUTOMATIC_RESET_OR_RERUN when refs/heads/v162 exists",
+      "guard_file": "package/code/v162_bootstrap.py in the launcher evidence directory",
+      "consequence": "The launcher cannot be re-run for this worktree by design; the resume uses exactly the launcher's own second stage: <worktree>/tools/v162_bundle/run_all.py --repo <worktree>."
+    },
+    "a_b_evidence": {
+      "script": "C:\\iscat\\v162\\results\\v162\\deployment_repair_evidence\\ab_nose_plugin_reproduction.py",
+      "summary": {
+        "path": "C:\\iscat\\v162\\results\\v162\\deployment_repair_evidence\\ab_nose_plugin_summary.json",
+        "bytes": 3996,
+        "sha256": "d5bdc4131e4ba7f519c14c83d37b0f7f90660c1e72e7950e3b20e5d3afec1d93"
+      },
+      "without_optout": {
+        "env": {
+          "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "V162_PYTEST_OUTCOMES": "C:\\iscat\\v162\\results\\v162\\deployment_repair_evidence\\focal_without_optout_outcomes.json",
+          "PYTEST_ADDOPTS": null
+        },
+        "returncode": 1,
+        "outcomes": {
+          "collected": 25,
+          "exitstatus": 1,
+          "collection_errors": 0,
+          "report_pairs": {
+            "setup/failed": 25,
+            "teardown/passed": 25
+          },
+          "nodes_with_all_three_phases_passed": 0
+        },
+        "output_sha256": "d82e699019adf20f7b9c9e1fc9318fdeb8cdf2832c3b91340b436e5675d2af5f"
+      },
+      "with_no_nose_optout": {
+        "env": {
+          "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "V162_PYTEST_OUTCOMES": "C:\\iscat\\v162\\results\\v162\\deployment_repair_evidence\\focal_with_no_nose_optout_outcomes.json",
+          "PYTEST_ADDOPTS": "-p no:nose"
+        },
+        "returncode": 0,
+        "outcomes": {
+          "collected": 25,
+          "exitstatus": 0,
+          "collection_errors": 0,
+          "report_pairs": {
+            "call/passed": 25,
+            "setup/passed": 25,
+            "teardown/passed": 25
+          },
+          "nodes_with_all_three_phases_passed": 25
+        },
+        "output_sha256": "f05c2213fd3f18ba3d8bea5b1336423bb22ef5b4bf77c4e78703049229f556b6"
+      },
+      "scope_limit": "Focal scope (tests/test_v162.py only). Not a substitute for the official 222-node receipt.",
+      "independently_reconfirmed": true
+    },
+    "package_byte_identity": {
+      "report": "results/v162/deployment_repair_evidence/payload_vs_installed_verification.json",
+      "generator": "results/v162/deployment_repair_evidence/payload_vs_installed_verification.py",
+      "verdict": "ALL_MANIFEST_ROWS_BYTE_IDENTICAL",
+      "manifest_rows": 50,
+      "checked_files": 50,
+      "mismatches": 0,
+      "embedded_payload_sha256": "4dc3f129f46110002dd5c56b7186794a20cfddfafc8e5a1d77cad44a902f840b",
+      "note": "Every file listed in the launcher payload manifest is byte-identical to the installed bundle, so the re-test runs the original package, not a patched copy."
+    },
+    "reverted_edit": {
+      "directory": "results/v162/deployment_repair_evidence/runner_edit_reverted_before_commit",
+      "path_rel": "tools/v162_bundle/run_workstation_tests.py",
+      "before_revert": {
+        "size_bytes": 3274,
+        "sha256": "14985fe2cad73f9a1bd50baf02fb067ac21db7d882964aca6ac5885ed3b1ee52"
+      },
+      "head_blob": {
+        "size_bytes": 2304,
+        "sha256": "9a5482314e31c705d03ddb49a4643e3630b64f2ea0917f163d96df8555ac611d"
+      },
+      "head_blob_id": "517ccaec0a824cf1f39847937104fb353bb1b774",
+      "status_after_revert": "git status clean; working-tree bytes equal HEAD blob",
+      "disclosure": "During the first repair investigation one bundle file (tools/v162_bundle/run_workstation_tests.py) was edited in the working tree. That edit is disclosed here, was fully reverted to the exact HEAD blob before any commit and before any model call, and its bytes and diff are preserved. The package-byte identity check above was run after the revert."
+    },
+    "superseded_earlier_report": {
+      "path": "results/v162/deployment_repair_evidence/bundle_vs_payload_diff.json",
+      "note": "Recorded the pre-revert state (exactly one differing file). Superseded by payload_vs_installed_verification.json; kept unmodified as history."
+    },
+    "resume_command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v162\\tools\\v162_bundle\\run_all.py",
+      "--repo",
+      "C:\\iscat\\v162"
+    ],
+    "resume_environment": {
+      "PYTEST_ADDOPTS": "-p no:nose",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONPATH": "<removed>",
+      "note": "run_workstation_tests.py sets PYTHONPATH=<bundle>/code, PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 and PYTHONDONTWRITEBYTECODE=1 for the child pytest itself, exactly as in the first run."
+    }
+  },
+  "residual_risks": [
+    "The opt-out is supplied by the caller, not by the frozen package; a fresh checkout of the bundle on another pytest 7.x station needs the same documented opt-out or a pytest >= 8.",
+    "Disabling the nose plugin also disables nose-style module-level setup/teardown for every test module in this bundle; tests/test_v162.py is the only module that defines one.",
+    "A passing suite remains a software result only and is not optical, physical or experimental acceptance."
+  ],
+  "status_vocabulary": {
+    "tests_first_run": "FAILED",
+    "deployment_condition": "REPAIRED_BEFORE_RETEST",
+    "package_bytes": "UNCHANGED_AND_VERIFIED_AGAINST_PAYLOAD_MANIFEST",
+    "model_calls_before_repair": 0,
+    "ledger_before_repair": "NOT_CREATED"
+  }
+}

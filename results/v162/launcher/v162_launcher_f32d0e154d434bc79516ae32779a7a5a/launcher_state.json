@@ -1,0 +1,60 @@
+{
+  "task": "V162",
+  "started_utc": "2026-10-26T11:37:20.980002+00:00",
+  "package": {
+    "payload_sha256": "4dc3f129f46110002dd5c56b7186794a20cfddfafc8e5a1d77cad44a902f840b",
+    "members": 51,
+    "manifest_rows": 50,
+    "inventory_count": 222,
+    "scope": "PACKAGE_BYTES_ONLY_NOT_TEST_OR_SCIENCE_ACCEPTANCE"
+  },
+  "launcher_sha256": "97ecf543b83f753a0688efbdc9209c1714e01f4cb52992778f856905cc6209d1",
+  "reviewed_parent": "dad7b87554959355926d3523169fae7ac30a39f7",
+  "scientific_acceptance": false,
+  "experimental_absolute_diameter_validated": false,
+  "environment": {
+    "python": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]",
+    "executable": "C:\\ProgramData\\anaconda3\\python.exe",
+    "reviewed_parent": "dad7b87554959355926d3523169fae7ac30a39f7",
+    "source_repo": "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo",
+    "new_worktree": "C:\\iscat\\v162"
+  },
+  "state": "BLOCKED_OR_FAILED",
+  "command_receipts": [
+    {
+      "stage": "prepare",
+      "command": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\package\\prepare_v162.py",
+        "--source-repo",
+        "C:\\Users\\PC\\Documents\\Codex\\2026-10-22\\https-github-com-yyyyzoey-iscat-handoff\\work\\repo",
+        "--worktree",
+        "C:\\iscat\\v162"
+      ],
+      "cwd": "C:\\iscat\\v162_launcher_f32d0e154d434bc79516ae32779a7a5a\\package",
+      "returncode": 0,
+      "started_utc": "2026-10-26T11:37:21.209924+00:00",
+      "ended_utc": "2026-10-26T11:37:32.864642+00:00",
+      "stdout_sha256": "0b2251086242e9701b5b2fc68df56f86d9d627dc3cd555f843a4440c7674c792",
+      "stderr_sha256": "d746672ab6bb31ef3d3a956656e3908aca0645a073ebd7982f318590b1fad4b1"
+    },
+    {
+      "stage": "run_all",
+      "command": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "C:\\iscat\\v162\\tools\\v162_bundle\\run_all.py",
+        "--repo",
+        "C:\\iscat\\v162"
+      ],
+      "cwd": "C:\\iscat\\v162",
+      "returncode": 2,
+      "started_utc": "2026-10-26T11:37:32.866618+00:00",
+      "ended_utc": "2026-10-26T11:37:51.252897+00:00",
+      "stdout_sha256": "7322bde6f7c53c480ea46daec494a8a75d576830708d3248395c920788cd866b",
+      "stderr_sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    }
+  ],
+  "returncode": 2,
+  "resource_statement": "Model counts must be read from the persistent ledger; no zero is inferred from a failed command.",
+  "ended_utc": "2026-10-26T11:37:51.254897+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "action": "REVERT_WORKING_TREE_EDIT_TO_HEAD_BYTES_BEFORE_ANY_COMMIT",
+  "path_rel": "tools/v162_bundle/run_workstation_tests.py",
+  "before_revert": {
+    "size_bytes": 3274,
+    "sha256": "14985fe2cad73f9a1bd50baf02fb067ac21db7d882964aca6ac5885ed3b1ee52"
+  },
+  "head_blob_id": "517ccaec0a824cf1f39847937104fb353bb1b774",
+  "head_blob": {
+    "size_bytes": 2304,
+    "sha256": "9a5482314e31c705d03ddb49a4643e3630b64f2ea0917f163d96df8555ac611d"
+  },
+  "v162_ledger_existed_at_revert_time": true,
+  "model_forward_calls_made_before_revert": 0,
+  "note": "Edit was made during first-run deployment repair investigation; reverted before any git commit and before any V162 model forward call. Package payload bytes were never modified."
+}

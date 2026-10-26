@@ -1,0 +1,3435 @@
+{
+  "collected": [
+    "tests/test_v155.py::test_gls_unequal_weights_identity",
+    "tests/test_v155.py::test_mean_variance_is_not_variance_of_mean",
+    "tests/test_v155.py::test_actual_vector_jacobian_full_rank",
+    "tests/test_v155.py::test_old_scalar_gradient_bug_is_rank_one_on_full_rank_model",
+    "tests/test_v155.py::test_real_dependent_model_not_forced_to_rank_four",
+    "tests/test_v155.py::test_one_sided_boundary_has_legal_real_coordinates[theta0]",
+    "tests/test_v155.py::test_one_sided_boundary_has_legal_real_coordinates[theta1]",
+    "tests/test_v155.py::test_one_sided_boundary_has_legal_real_coordinates[theta2]",
+    "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[1.2]",
+    "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[bad1]",
+    "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[bad2]",
+    "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[bad3]",
+    "tests/test_v155.py::test_bad_variance_is_not_floored[0.0]",
+    "tests/test_v155.py::test_bad_variance_is_not_floored[-1.0]",
+    "tests/test_v155.py::test_bad_variance_is_not_floored[nan]",
+    "tests/test_v155.py::test_scalar_gradient_tampering_fails_independent_validator",
+    "tests/test_v155.py::test_whitening_tampering_fails",
+    "tests/test_v155.py::test_complete_theta_tampering_fails",
+    "tests/test_v155.py::test_scalar_Q_double_tampering_fails",
+    "tests/test_v155.py::test_reportability_tampering_fails",
+    "tests/test_v155.py::test_snapshot_failure_stops_future_predictions",
+    "tests/test_v155.py::test_fixed_D_postfit_observation_is_not_array",
+    "tests/test_v155.py::test_stage_true_path_and_idempotent_reuse",
+    "tests/test_v155.py::test_hard_cap_before_model",
+    "tests/test_v155.py::test_counter_records_model_exception",
+    "tests/test_v155.py::test_missing_reservation_blocks_model",
+    "tests/test_v155.py::test_phase_reservation_overrun_blocked",
+    "tests/test_v155.py::test_existing_ledger_plan_cannot_change",
+    "tests/test_v155.py::test_stage_real_error_sealed_and_propagated",
+    "tests/test_v155.py::test_parameter_outside_domain_not_clipped",
+    "tests/test_v155.py::test_best_is_not_first_and_moves_whole_record",
+    "tests/test_v155.py::test_mixed_candidate_d_is_rejected",
+    "tests/test_v155.py::test_q_model_label_mix_is_rejected",
+    "tests/test_v155.py::test_fabricated_projection_is_rejected",
+    "tests/test_v155.py::test_mutated_stencil_coordinate_is_rejected",
+    "tests/test_v155.py::test_true_constant_pixel_rank_one_model_is_allowed",
+    "tests/test_v156_audit.py::test_readonly_detects_twelve_uniform_fake_anchor",
+    "tests/test_v156_candidate_guard.py::test_good_source_exact_72",
+    "tests/test_v156_candidate_guard.py::test_v150_summary_without_starts_rejected",
+    "tests/test_v156_candidate_guard.py::test_wrong_commit_is_rejected",
+    "tests/test_v156_candidate_guard.py::test_duplicate_group_rejected",
+    "tests/test_v156_candidate_guard.py::test_missing_group_rejected",
+    "tests/test_v156_candidate_guard.py::test_clipped_theta_rejected",
+    "tests/test_v156_candidate_guard.py::test_best_select_entire_record_no_field_mixing",
+    "tests/test_v156_candidate_guard.py::test_wrong_Q_component_rejected",
+    "tests/test_v156_candidate_guard.py::test_D_mismatch_rejected",
+    "tests/test_v156_candidate_guard.py::test_unscored_old_Q_cannot_rank",
+    "tests/test_v156_candidate_guard.py::test_fallback_theta_must_not_be_synthesized",
+    "tests/test_v156_candidate_guard.py::test_historical_Q_not_authoritative_for_select",
+    "tests/test_v157_audit.py::test_archive_good",
+    "tests/test_v157_audit.py::test_archive_bad_hash",
+    "tests/test_v157_audit.py::test_archive_path_traversal_rejected",
+    "tests/test_v157_audit.py::test_native_read_only_ledger",
+    "tests/test_v157_audit.py::test_wal_not_silently_ignored",
+    "tests/test_v157_design.py::test_free_and_exact_height_and_xy[1e-08]",
+    "tests/test_v157_design.py::test_free_and_exact_height_and_xy[1e-10]",
+    "tests/test_v157_design.py::test_free_and_exact_height_and_xy[1e-12]",
+    "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[1.0]",
+    "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[2.0]",
+    "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[5.0]",
+    "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[10.0]",
+    "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[20.0]",
+    "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[50.0]",
+    "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[100.0]",
+    "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[inf]",
+    "tests/test_v157_design.py::test_sigma_design_sweep_complete_without_model",
+    "tests/test_v157_design.py::test_bad_j_fails[bad0]",
+    "tests/test_v157_design.py::test_bad_j_fails[bad1]",
+    "tests/test_v157_design.py::test_bad_j_fails[bad2]",
+    "tests/test_v157_design.py::test_bad_sigma_fails[-1.0]",
+    "tests/test_v157_design.py::test_bad_sigma_fails[-inf]",
+    "tests/test_v157_design.py::test_bad_sigma_fails[nan]",
+    "tests/test_v157_design.py::test_bad_rtol_fails[0.0]",
+    "tests/test_v157_design.py::test_bad_rtol_fails[-1.0]",
+    "tests/test_v157_design.py::test_bad_rtol_fails[1.0]",
+    "tests/test_v157_design.py::test_bad_rtol_fails[nan]",
+    "tests/test_v157_design.py::test_zero_columns_no_divide_by_zero",
+    "tests/test_v157_design.py::test_rank_deficient_no_inverse_normal_matrix",
+    "tests/test_v157_design.py::test_fraction_is_squared_not_norm",
+    "tests/test_v157_design.py::test_paths_fixed_and_bounded_without_clipping",
+    "tests/test_v157_design.py::test_skipped_makes_zero_predictions",
+    "tests/test_v157_design.py::test_path_linear_model_distance_and_q_identity[free_hxy]",
+    "tests/test_v157_design.py::test_path_linear_model_distance_and_q_identity[exact_height]",
+    "tests/test_v157_design.py::test_path_linear_model_distance_and_q_identity[height_sigma10]",
+    "tests/test_v157_design.py::test_persist_failure_not_success",
+    "tests/test_v157_design.py::test_scalar_q_not_accepted_as_contrast",
+    "tests/test_v157_design.py::test_curved_model_detected_without_claiming_profile",
+    "tests/test_v162.py::test_complete_exact17_two_scales_three_rtols",
+    "tests/test_v162.py::test_boundary_cannot_be_ranked[theta0]",
+    "tests/test_v162.py::test_boundary_cannot_be_ranked[theta1]",
+    "tests/test_v162.py::test_boundary_cannot_be_ranked[theta2]",
+    "tests/test_v162.py::test_boundary_cannot_be_ranked[theta3]",
+    "tests/test_v162.py::test_tampered_numerical_flags_rejected[derivative_stable]",
+    "tests/test_v162.py::test_tampered_numerical_flags_rejected[directional_check_pass]",
+    "tests/test_v162.py::test_tampered_numerical_flags_rejected[parameter_boundary]",
+    "tests/test_v162.py::test_saved_scalar_broadcast_rejected",
+    "tests/test_v162.py::test_saved_q_tamper_rejected",
+    "tests/test_v162.py::test_config_edits_fail[total-501]",
+    "tests/test_v162.py::test_config_edits_fail[base_commit-main]",
+    "tests/test_v162.py::test_config_edits_fail[mode-ONLY_DESIGN]",
+    "tests/test_v162.py::test_config_edits_fail[phases-value3]",
+    "tests/test_v162.py::test_config_edits_fail[probe_groups-value4]",
+    "tests/test_v162.py::test_fixed_config_pass",
+    "tests/test_v162.py::test_loader_calls_are_charged_before_model",
+    "tests/test_v162.py::test_loader_error_and_restore",
+    "tests/test_v162.py::test_recorded_predictor_no_duplicate_charge_and_array_saved",
+    "tests/test_v162.py::test_failed_preflight_never_constructs_model",
+    "tests/test_v162.py::test_existing_ledger_never_removed",
+    "tests/test_v162.py::test_run_task_preserves_failure",
+    "tests/test_v162.py::test_completed_task_not_reexecuted",
+    "tests/test_v162.py::test_contrast_object_not_silently_accepted",
+    "tests/test_v162.py::test_historical_example_ratios_not_precision",
+    "tests/test_v162_bootstrap.py::test_intact_payload_contains_tests_inventory_and_orchestration",
+    "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[test_inventory.json]",
+    "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[run_all.py]",
+    "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[run_workstation_tests.py]",
+    "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[config/v162_plan.json]",
+    "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[tests/test_v162_deployment.py]",
+    "tests/test_v162_bootstrap.py::test_outer_hash_is_enforced",
+    "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[../escape]",
+    "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[/abs]",
+    "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[C:/abs]",
+    "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[a\\\\b]",
+    "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[a/../x]",
+    "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[a//x]",
+    "tests/test_v162_bootstrap.py::test_unlisted_payload_member_rejected",
+    "tests/test_v162_bootstrap.py::test_manifest_hash_mismatch_rejected",
+    "tests/test_v162_bootstrap.py::test_windows_case_collision_rejected",
+    "tests/test_v162_bootstrap.py::test_zero_or_duplicate_test_inventory_rejected",
+    "tests/test_v162_bootstrap.py::test_extraction_is_complete_and_does_not_overwrite",
+    "tests/test_v162_bootstrap.py::test_prepare_failure_never_starts_controller[1]",
+    "tests/test_v162_bootstrap.py::test_prepare_failure_never_starts_controller[2]",
+    "tests/test_v162_bootstrap.py::test_prepare_failure_never_starts_controller[3]",
+    "tests/test_v162_bootstrap.py::test_one_command_keeps_whole_bundle_paths",
+    "tests/test_v162_bootstrap.py::test_launcher_records_true_child_returncode_and_stderr",
+    "tests/test_v162_bootstrap.py::test_actual_pyz_inspection_runs_without_model_or_worktree",
+    "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[a\\r\\n-a\\n-UTF8_BOM_OR_CRLF_DIFFERENCE]",
+    "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[\\xef\\xbb\\xbfa\\n-a\\n-UTF8_BOM_OR_CRLF_DIFFERENCE]",
+    "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[{ \"x\": 1 }-{\"x\":1}\\n-JSON_FORMAT_ONLY]",
+    "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[{\"x\":2}-{\"x\":1}-CONTENT_DIFFERENCE]",
+    "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[\\xff\\x00-\\xfe\\x01-BINARY_DIFFERENCE]",
+    "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[None-a-MISSING]",
+    "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[a-a-EXACT]",
+    "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[../x]",
+    "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[/x]",
+    "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[C:/x]",
+    "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[a\\\\b]",
+    "tests/test_v162_deployment.py::test_collects_all_mismatches_not_only_first",
+    "tests/test_v162_deployment.py::test_raw_restore_only_new_worktree_preserves_original",
+    "tests/test_v162_deployment.py::test_restore_refuses_old_worktree",
+    "tests/test_v162_deployment.py::test_restore_refuses_after_any_ledger",
+    "tests/test_v162_deployment.py::test_wrong_top_level_tools_deployment_rejected",
+    "tests/test_v162_deployment.py::test_receipt_requires_exact_test_inventory",
+    "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[skip]",
+    "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[wrong_command]",
+    "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[code_changed]",
+    "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[output_changed]",
+    "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[test_error]",
+    "tests/test_v162_deployment.py::test_actual_cli_blocks_wrong_install_before_model",
+    "tests/test_v162_deployment.py::test_execute_verify_end_to_end_synthetic",
+    "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[probe]",
+    "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[selected]",
+    "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[rescore]",
+    "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[replay]",
+    "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[task]",
+    "tests/test_v162_deployment.py::test_blocked_run_can_be_packaged_without_status",
+    "tests/test_v162_deployment.py::test_numpy_comparison_count_must_be_native_int",
+    "tests/test_v162_intake.py::test_reviewed_parent_and_frozen_science_source_are_distinct",
+    "tests/test_v162_intake.py::test_new_version_requires_nested_entry_and_own_results_directory",
+    "tests/test_v162_intake.py::test_full_bundle_files_present_and_no_legacy_flat_install",
+    "tests/test_v162_intake.py::test_incomplete_bundle_rejected_before_any_optics",
+    "tests/test_v162_intake.py::test_frozen_science_problem_and_budget_unchanged",
+    "tests/test_v162_intake.py::test_worktree_preparation_must_start_from_reviewed_v159",
+    "tests/test_v162_intake.py::test_complete_prepare_worktree_installs_entire_bundle_synthetically",
+    "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[inf-inf-0.64]",
+    "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[0.0-inf-1.0]",
+    "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[inf-0.0-0.64]",
+    "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[1.0-inf-0.82]",
+    "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[2.0-inf-0.712]",
+    "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[inf-1.0-0.64]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[free]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[exact_height]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[exact_xy]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_1nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_2nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_5nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_10nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_20nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_50nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_100nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_1nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_2nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_5nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_10nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_20nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_50nm]",
+    "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_100nm]",
+    "tests/test_v162_semantics.py::test_v161_fallback_pattern_cannot_pass_semantic_validation",
+    "tests/test_v162_semantics.py::test_exact_height_cannot_move_height",
+    "tests/test_v162_semantics.py::test_exact_xy_cannot_move_xy",
+    "tests/test_v162_semantics.py::test_required_design_and_rtol_axes_not_collapsed",
+    "tests/test_v162_semantics.py::test_solver_error_must_propagate_not_return_zero_compensation",
+    "tests/test_v162_semantics.py::test_grouping_preserves_particle_number_and_exact_three_frames",
+    "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[ANON]",
+    "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[wrong_event]",
+    "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[duplicate]",
+    "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[missing]",
+    "tests/test_v162_semantics.py::test_probe_case_01_is_not_an_authorized_replacement",
+    "tests/test_v162_semantics.py::test_probe_path_set_cannot_be_only_eight_points",
+    "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-5.0]",
+    "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-2.0]",
+    "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-1.0]",
+    "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-0.5]",
+    "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[0.5]",
+    "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[1.0]",
+    "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[2.0]",
+    "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[5.0]",
+    "tests/test_v162_semantics.py::test_hypothetical_infinity_is_not_written_as_invalid_json_token",
+    "tests/test_v162_semantics.py::test_original_v161_archive_mechanical_integrity_not_science_pass",
+    "tests/test_v162_semantics.py::test_original_v161_archive_tampering_rejected",
+    "tests/test_v162_semantics.py::test_seven_approved_kernel_files_are_frozen",
+    "tests/test_v162_semantics.py::test_kernel_lock_not_just_a_file_name"
+  ],
+  "reports": [
+    {
+      "nodeid": "tests/test_v155.py::test_gls_unequal_weights_identity",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_gls_unequal_weights_identity",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_gls_unequal_weights_identity",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_mean_variance_is_not_variance_of_mean",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_mean_variance_is_not_variance_of_mean",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_mean_variance_is_not_variance_of_mean",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_actual_vector_jacobian_full_rank",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_actual_vector_jacobian_full_rank",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_actual_vector_jacobian_full_rank",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_old_scalar_gradient_bug_is_rank_one_on_full_rank_model",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_old_scalar_gradient_bug_is_rank_one_on_full_rank_model",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_old_scalar_gradient_bug_is_rank_one_on_full_rank_model",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_real_dependent_model_not_forced_to_rank_four",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_real_dependent_model_not_forced_to_rank_four",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_real_dependent_model_not_forced_to_rank_four",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_one_sided_boundary_has_legal_real_coordinates[theta0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_one_sided_boundary_has_legal_real_coordinates[theta0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_one_sided_boundary_has_legal_real_coordinates[theta0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_one_sided_boundary_has_legal_real_coordinates[theta1]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_one_sided_boundary_has_legal_real_coordinates[theta1]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_one_sided_boundary_has_legal_real_coordinates[theta1]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_one_sided_boundary_has_legal_real_coordinates[theta2]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_one_sided_boundary_has_legal_real_coordinates[theta2]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_one_sided_boundary_has_legal_real_coordinates[theta2]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[1.2]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[1.2]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[1.2]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[bad1]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[bad1]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[bad1]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[bad2]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[bad2]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[bad2]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[bad3]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[bad3]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_or_wrong_prediction_is_rejected[bad3]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_bad_variance_is_not_floored[0.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_bad_variance_is_not_floored[0.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_bad_variance_is_not_floored[0.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_bad_variance_is_not_floored[-1.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_bad_variance_is_not_floored[-1.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_bad_variance_is_not_floored[-1.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_bad_variance_is_not_floored[nan]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_bad_variance_is_not_floored[nan]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_bad_variance_is_not_floored[nan]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_gradient_tampering_fails_independent_validator",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_gradient_tampering_fails_independent_validator",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_gradient_tampering_fails_independent_validator",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_whitening_tampering_fails",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_whitening_tampering_fails",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_whitening_tampering_fails",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_complete_theta_tampering_fails",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_complete_theta_tampering_fails",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_complete_theta_tampering_fails",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_Q_double_tampering_fails",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_Q_double_tampering_fails",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_scalar_Q_double_tampering_fails",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_reportability_tampering_fails",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_reportability_tampering_fails",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_reportability_tampering_fails",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_snapshot_failure_stops_future_predictions",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_snapshot_failure_stops_future_predictions",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_snapshot_failure_stops_future_predictions",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_fixed_D_postfit_observation_is_not_array",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_fixed_D_postfit_observation_is_not_array",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_fixed_D_postfit_observation_is_not_array",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_stage_true_path_and_idempotent_reuse",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_stage_true_path_and_idempotent_reuse",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_stage_true_path_and_idempotent_reuse",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_hard_cap_before_model",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_hard_cap_before_model",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_hard_cap_before_model",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_counter_records_model_exception",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_counter_records_model_exception",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_counter_records_model_exception",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_missing_reservation_blocks_model",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_missing_reservation_blocks_model",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_missing_reservation_blocks_model",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_phase_reservation_overrun_blocked",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_phase_reservation_overrun_blocked",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_phase_reservation_overrun_blocked",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_existing_ledger_plan_cannot_change",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_existing_ledger_plan_cannot_change",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_existing_ledger_plan_cannot_change",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_stage_real_error_sealed_and_propagated",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_stage_real_error_sealed_and_propagated",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_stage_real_error_sealed_and_propagated",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_parameter_outside_domain_not_clipped",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_parameter_outside_domain_not_clipped",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_parameter_outside_domain_not_clipped",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_best_is_not_first_and_moves_whole_record",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_best_is_not_first_and_moves_whole_record",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_best_is_not_first_and_moves_whole_record",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_mixed_candidate_d_is_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_mixed_candidate_d_is_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_mixed_candidate_d_is_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_q_model_label_mix_is_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_q_model_label_mix_is_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_q_model_label_mix_is_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_fabricated_projection_is_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_fabricated_projection_is_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_fabricated_projection_is_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_mutated_stencil_coordinate_is_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_mutated_stencil_coordinate_is_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_mutated_stencil_coordinate_is_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_true_constant_pixel_rank_one_model_is_allowed",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_true_constant_pixel_rank_one_model_is_allowed",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v155.py::test_true_constant_pixel_rank_one_model_is_allowed",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_audit.py::test_readonly_detects_twelve_uniform_fake_anchor",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_audit.py::test_readonly_detects_twelve_uniform_fake_anchor",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_audit.py::test_readonly_detects_twelve_uniform_fake_anchor",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_good_source_exact_72",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_good_source_exact_72",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_good_source_exact_72",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_v150_summary_without_starts_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_v150_summary_without_starts_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_v150_summary_without_starts_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_wrong_commit_is_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_wrong_commit_is_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_wrong_commit_is_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_duplicate_group_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_duplicate_group_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_duplicate_group_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_missing_group_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_missing_group_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_missing_group_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_clipped_theta_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_clipped_theta_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_clipped_theta_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_best_select_entire_record_no_field_mixing",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_best_select_entire_record_no_field_mixing",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_best_select_entire_record_no_field_mixing",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_wrong_Q_component_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_wrong_Q_component_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_wrong_Q_component_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_D_mismatch_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_D_mismatch_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_D_mismatch_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_unscored_old_Q_cannot_rank",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_unscored_old_Q_cannot_rank",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_unscored_old_Q_cannot_rank",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_fallback_theta_must_not_be_synthesized",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_fallback_theta_must_not_be_synthesized",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_fallback_theta_must_not_be_synthesized",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_historical_Q_not_authoritative_for_select",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_historical_Q_not_authoritative_for_select",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v156_candidate_guard.py::test_historical_Q_not_authoritative_for_select",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_archive_good",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_archive_good",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_archive_good",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_archive_bad_hash",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_archive_bad_hash",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_archive_bad_hash",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_archive_path_traversal_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_archive_path_traversal_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_archive_path_traversal_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_native_read_only_ledger",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_native_read_only_ledger",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_native_read_only_ledger",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_wal_not_silently_ignored",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_wal_not_silently_ignored",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_audit.py::test_wal_not_silently_ignored",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_free_and_exact_height_and_xy[1e-08]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_free_and_exact_height_and_xy[1e-08]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_free_and_exact_height_and_xy[1e-08]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_free_and_exact_height_and_xy[1e-10]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_free_and_exact_height_and_xy[1e-10]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_free_and_exact_height_and_xy[1e-10]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_free_and_exact_height_and_xy[1e-12]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_free_and_exact_height_and_xy[1e-12]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_free_and_exact_height_and_xy[1e-12]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[1.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[1.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[1.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[2.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[2.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[2.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[5.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[5.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[5.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[10.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[10.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[10.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[20.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[20.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[20.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[50.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[50.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[50.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[100.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[100.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[100.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[inf]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[inf]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_finite_sigma_analytic_and_monotonic[inf]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_sigma_design_sweep_complete_without_model",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_sigma_design_sweep_complete_without_model",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_sigma_design_sweep_complete_without_model",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_j_fails[bad0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_j_fails[bad0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_j_fails[bad0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_j_fails[bad1]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_j_fails[bad1]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_j_fails[bad1]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_j_fails[bad2]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_j_fails[bad2]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_j_fails[bad2]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_sigma_fails[-1.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_sigma_fails[-1.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_sigma_fails[-1.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_sigma_fails[-inf]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_sigma_fails[-inf]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_sigma_fails[-inf]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_sigma_fails[nan]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_sigma_fails[nan]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_sigma_fails[nan]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_rtol_fails[0.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_rtol_fails[0.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_rtol_fails[0.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_rtol_fails[-1.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_rtol_fails[-1.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_rtol_fails[-1.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_rtol_fails[1.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_rtol_fails[1.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_rtol_fails[1.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_rtol_fails[nan]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_rtol_fails[nan]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_bad_rtol_fails[nan]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_zero_columns_no_divide_by_zero",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_zero_columns_no_divide_by_zero",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_zero_columns_no_divide_by_zero",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_rank_deficient_no_inverse_normal_matrix",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_rank_deficient_no_inverse_normal_matrix",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_rank_deficient_no_inverse_normal_matrix",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_fraction_is_squared_not_norm",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_fraction_is_squared_not_norm",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_fraction_is_squared_not_norm",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_paths_fixed_and_bounded_without_clipping",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_paths_fixed_and_bounded_without_clipping",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_paths_fixed_and_bounded_without_clipping",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_skipped_makes_zero_predictions",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_skipped_makes_zero_predictions",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_skipped_makes_zero_predictions",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_path_linear_model_distance_and_q_identity[free_hxy]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_path_linear_model_distance_and_q_identity[free_hxy]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_path_linear_model_distance_and_q_identity[free_hxy]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_path_linear_model_distance_and_q_identity[exact_height]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_path_linear_model_distance_and_q_identity[exact_height]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_path_linear_model_distance_and_q_identity[exact_height]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_path_linear_model_distance_and_q_identity[height_sigma10]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_path_linear_model_distance_and_q_identity[height_sigma10]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_path_linear_model_distance_and_q_identity[height_sigma10]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_persist_failure_not_success",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_persist_failure_not_success",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_persist_failure_not_success",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_scalar_q_not_accepted_as_contrast",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_scalar_q_not_accepted_as_contrast",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_scalar_q_not_accepted_as_contrast",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_curved_model_detected_without_claiming_profile",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_curved_model_detected_without_claiming_profile",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v157_design.py::test_curved_model_detected_without_claiming_profile",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_complete_exact17_two_scales_three_rtols",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_complete_exact17_two_scales_three_rtols",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta0]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta1]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta1]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta2]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta2]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta3]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta3]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_tampered_numerical_flags_rejected[derivative_stable]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_tampered_numerical_flags_rejected[derivative_stable]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_tampered_numerical_flags_rejected[directional_check_pass]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_tampered_numerical_flags_rejected[directional_check_pass]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_tampered_numerical_flags_rejected[parameter_boundary]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_tampered_numerical_flags_rejected[parameter_boundary]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_saved_scalar_broadcast_rejected",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_saved_scalar_broadcast_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_saved_q_tamper_rejected",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_saved_q_tamper_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[total-501]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[total-501]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[base_commit-main]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[base_commit-main]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[mode-ONLY_DESIGN]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[mode-ONLY_DESIGN]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[phases-value3]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[phases-value3]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[probe_groups-value4]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[probe_groups-value4]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_fixed_config_pass",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_fixed_config_pass",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_loader_calls_are_charged_before_model",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_loader_calls_are_charged_before_model",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_loader_error_and_restore",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_loader_error_and_restore",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_recorded_predictor_no_duplicate_charge_and_array_saved",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_recorded_predictor_no_duplicate_charge_and_array_saved",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_failed_preflight_never_constructs_model",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_failed_preflight_never_constructs_model",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_existing_ledger_never_removed",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_existing_ledger_never_removed",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_run_task_preserves_failure",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_run_task_preserves_failure",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_completed_task_not_reexecuted",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_completed_task_not_reexecuted",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_contrast_object_not_silently_accepted",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_contrast_object_not_silently_accepted",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_historical_example_ratios_not_precision",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_historical_example_ratios_not_precision",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_intact_payload_contains_tests_inventory_and_orchestration",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_intact_payload_contains_tests_inventory_and_orchestration",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_intact_payload_contains_tests_inventory_and_orchestration",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[test_inventory.json]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[test_inventory.json]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[test_inventory.json]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[run_all.py]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[run_all.py]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[run_all.py]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[run_workstation_tests.py]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[run_workstation_tests.py]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[run_workstation_tests.py]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[config/v162_plan.json]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[config/v162_plan.json]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[config/v162_plan.json]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[tests/test_v162_deployment.py]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[tests/test_v162_deployment.py]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_missing_required_member_rejected_before_model[tests/test_v162_deployment.py]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_outer_hash_is_enforced",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_outer_hash_is_enforced",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_outer_hash_is_enforced",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[../escape]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[../escape]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[../escape]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[/abs]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[/abs]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[/abs]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[C:/abs]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[C:/abs]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[C:/abs]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[a\\\\b]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[a\\\\b]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[a\\\\b]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[a/../x]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[a/../x]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[a/../x]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[a//x]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[a//x]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_cross_platform_path_safety[a//x]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_unlisted_payload_member_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_unlisted_payload_member_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_unlisted_payload_member_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_manifest_hash_mismatch_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_manifest_hash_mismatch_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_manifest_hash_mismatch_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_windows_case_collision_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_windows_case_collision_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_windows_case_collision_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_zero_or_duplicate_test_inventory_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_zero_or_duplicate_test_inventory_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_zero_or_duplicate_test_inventory_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_extraction_is_complete_and_does_not_overwrite",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_extraction_is_complete_and_does_not_overwrite",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_extraction_is_complete_and_does_not_overwrite",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_prepare_failure_never_starts_controller[1]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_prepare_failure_never_starts_controller[1]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_prepare_failure_never_starts_controller[1]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_prepare_failure_never_starts_controller[2]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_prepare_failure_never_starts_controller[2]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_prepare_failure_never_starts_controller[2]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_prepare_failure_never_starts_controller[3]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_prepare_failure_never_starts_controller[3]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_prepare_failure_never_starts_controller[3]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_one_command_keeps_whole_bundle_paths",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_one_command_keeps_whole_bundle_paths",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_one_command_keeps_whole_bundle_paths",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_launcher_records_true_child_returncode_and_stderr",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_launcher_records_true_child_returncode_and_stderr",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_launcher_records_true_child_returncode_and_stderr",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_actual_pyz_inspection_runs_without_model_or_worktree",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_actual_pyz_inspection_runs_without_model_or_worktree",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_bootstrap.py::test_actual_pyz_inspection_runs_without_model_or_worktree",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[a\\r\\n-a\\n-UTF8_BOM_OR_CRLF_DIFFERENCE]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[a\\r\\n-a\\n-UTF8_BOM_OR_CRLF_DIFFERENCE]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[a\\r\\n-a\\n-UTF8_BOM_OR_CRLF_DIFFERENCE]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[\\xef\\xbb\\xbfa\\n-a\\n-UTF8_BOM_OR_CRLF_DIFFERENCE]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[\\xef\\xbb\\xbfa\\n-a\\n-UTF8_BOM_OR_CRLF_DIFFERENCE]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[\\xef\\xbb\\xbfa\\n-a\\n-UTF8_BOM_OR_CRLF_DIFFERENCE]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[{ \"x\": 1 }-{\"x\":1}\\n-JSON_FORMAT_ONLY]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[{ \"x\": 1 }-{\"x\":1}\\n-JSON_FORMAT_ONLY]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[{ \"x\": 1 }-{\"x\":1}\\n-JSON_FORMAT_ONLY]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[{\"x\":2}-{\"x\":1}-CONTENT_DIFFERENCE]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[{\"x\":2}-{\"x\":1}-CONTENT_DIFFERENCE]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[{\"x\":2}-{\"x\":1}-CONTENT_DIFFERENCE]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[\\xff\\x00-\\xfe\\x01-BINARY_DIFFERENCE]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[\\xff\\x00-\\xfe\\x01-BINARY_DIFFERENCE]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[\\xff\\x00-\\xfe\\x01-BINARY_DIFFERENCE]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[None-a-MISSING]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[None-a-MISSING]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[None-a-MISSING]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[a-a-EXACT]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[a-a-EXACT]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_mismatch_diagnosis_does_not_relax_identity[a-a-EXACT]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[../x]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[../x]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[../x]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[/x]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[/x]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[/x]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[C:/x]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[C:/x]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[C:/x]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[a\\\\b]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[a\\\\b]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_unsafe_relative_path_rejected[a\\\\b]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_collects_all_mismatches_not_only_first",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_collects_all_mismatches_not_only_first",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_collects_all_mismatches_not_only_first",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_raw_restore_only_new_worktree_preserves_original",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_raw_restore_only_new_worktree_preserves_original",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_raw_restore_only_new_worktree_preserves_original",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_restore_refuses_old_worktree",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_restore_refuses_old_worktree",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_restore_refuses_old_worktree",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_restore_refuses_after_any_ledger",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_restore_refuses_after_any_ledger",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_restore_refuses_after_any_ledger",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_wrong_top_level_tools_deployment_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_wrong_top_level_tools_deployment_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_wrong_top_level_tools_deployment_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_receipt_requires_exact_test_inventory",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_receipt_requires_exact_test_inventory",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_receipt_requires_exact_test_inventory",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[skip]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[skip]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[skip]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[wrong_command]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[wrong_command]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[wrong_command]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[code_changed]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[code_changed]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[code_changed]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[output_changed]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[output_changed]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[output_changed]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[test_error]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[test_error]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_old_32_pass_or_edited_receipt_not_accepted[test_error]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_actual_cli_blocks_wrong_install_before_model",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_actual_cli_blocks_wrong_install_before_model",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_actual_cli_blocks_wrong_install_before_model",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_execute_verify_end_to_end_synthetic",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_execute_verify_end_to_end_synthetic",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_execute_verify_end_to_end_synthetic",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[probe]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[probe]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[probe]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[selected]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[selected]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[selected]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[rescore]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[rescore]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[rescore]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[replay]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[replay]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[replay]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[task]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[task]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_missing_artifact_cannot_receive_verify_pass[task]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_blocked_run_can_be_packaged_without_status",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_blocked_run_can_be_packaged_without_status",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_blocked_run_can_be_packaged_without_status",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_numpy_comparison_count_must_be_native_int",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_numpy_comparison_count_must_be_native_int",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_deployment.py::test_numpy_comparison_count_must_be_native_int",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_reviewed_parent_and_frozen_science_source_are_distinct",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_reviewed_parent_and_frozen_science_source_are_distinct",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_reviewed_parent_and_frozen_science_source_are_distinct",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_new_version_requires_nested_entry_and_own_results_directory",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_new_version_requires_nested_entry_and_own_results_directory",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_new_version_requires_nested_entry_and_own_results_directory",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_full_bundle_files_present_and_no_legacy_flat_install",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_full_bundle_files_present_and_no_legacy_flat_install",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_full_bundle_files_present_and_no_legacy_flat_install",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_incomplete_bundle_rejected_before_any_optics",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_incomplete_bundle_rejected_before_any_optics",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_incomplete_bundle_rejected_before_any_optics",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_frozen_science_problem_and_budget_unchanged",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_frozen_science_problem_and_budget_unchanged",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_frozen_science_problem_and_budget_unchanged",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_worktree_preparation_must_start_from_reviewed_v159",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_worktree_preparation_must_start_from_reviewed_v159",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_worktree_preparation_must_start_from_reviewed_v159",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_complete_prepare_worktree_installs_entire_bundle_synthetically",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_complete_prepare_worktree_installs_entire_bundle_synthetically",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_intake.py::test_complete_prepare_worktree_installs_entire_bundle_synthetically",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[inf-inf-0.64]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[inf-inf-0.64]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[inf-inf-0.64]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[0.0-inf-1.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[0.0-inf-1.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[0.0-inf-1.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[inf-0.0-0.64]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[inf-0.0-0.64]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[inf-0.0-0.64]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[1.0-inf-0.82]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[1.0-inf-0.82]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[1.0-inf-0.82]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[2.0-inf-0.712]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[2.0-inf-0.712]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[2.0-inf-0.712]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[inf-1.0-0.64]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[inf-1.0-0.64]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_analytic_free_exact_and_finite_mean_different_things[inf-1.0-0.64]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[free]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[free]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[free]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[exact_height]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[exact_height]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[exact_height]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[exact_xy]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[exact_xy]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[exact_xy]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_1nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_1nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_1nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_2nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_2nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_2nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_5nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_5nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_5nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_10nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_10nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_10nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_20nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_20nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_20nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_50nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_50nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_50nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_100nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_100nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[height_sigma_100nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_1nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_1nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_1nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_2nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_2nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_2nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_5nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_5nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_5nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_10nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_10nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_10nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_20nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_20nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_20nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_50nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_50nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_50nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_100nm]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_100nm]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_each_required_condition_matches_independent_lstsq[xy_sigma_100nm]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_v161_fallback_pattern_cannot_pass_semantic_validation",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_v161_fallback_pattern_cannot_pass_semantic_validation",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_v161_fallback_pattern_cannot_pass_semantic_validation",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_exact_height_cannot_move_height",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_exact_height_cannot_move_height",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_exact_height_cannot_move_height",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_exact_xy_cannot_move_xy",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_exact_xy_cannot_move_xy",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_exact_xy_cannot_move_xy",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_required_design_and_rtol_axes_not_collapsed",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_required_design_and_rtol_axes_not_collapsed",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_required_design_and_rtol_axes_not_collapsed",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_solver_error_must_propagate_not_return_zero_compensation",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_solver_error_must_propagate_not_return_zero_compensation",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_solver_error_must_propagate_not_return_zero_compensation",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_preserves_particle_number_and_exact_three_frames",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_preserves_particle_number_and_exact_three_frames",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_preserves_particle_number_and_exact_three_frames",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[ANON]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[ANON]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[ANON]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[wrong_event]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[wrong_event]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[wrong_event]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[duplicate]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[duplicate]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[duplicate]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[missing]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[missing]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_grouping_rejects_v161_prefix_collapse_and_other_corruption[missing]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_probe_case_01_is_not_an_authorized_replacement",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_probe_case_01_is_not_an_authorized_replacement",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_probe_case_01_is_not_an_authorized_replacement",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_probe_path_set_cannot_be_only_eight_points",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_probe_path_set_cannot_be_only_eight_points",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_probe_path_set_cannot_be_only_eight_points",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-5.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-5.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-5.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-2.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-2.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-2.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-1.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-1.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-1.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-0.5]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-0.5]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[-0.5]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[0.5]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[0.5]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[0.5]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[1.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[1.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[1.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[2.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[2.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[2.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[5.0]",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[5.0]",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_increment_not_noisy_residual_is_linearization_target[5.0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_hypothetical_infinity_is_not_written_as_invalid_json_token",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_hypothetical_infinity_is_not_written_as_invalid_json_token",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_hypothetical_infinity_is_not_written_as_invalid_json_token",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_original_v161_archive_mechanical_integrity_not_science_pass",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_original_v161_archive_mechanical_integrity_not_science_pass",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_original_v161_archive_mechanical_integrity_not_science_pass",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_original_v161_archive_tampering_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_original_v161_archive_tampering_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_original_v161_archive_tampering_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_seven_approved_kernel_files_are_frozen",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_seven_approved_kernel_files_are_frozen",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_seven_approved_kernel_files_are_frozen",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_kernel_lock_not_just_a_file_name",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_kernel_lock_not_just_a_file_name",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162_semantics.py::test_kernel_lock_not_just_a_file_name",
+      "when": "teardown",
+      "outcome": "passed"
+    }
+  ],
+  "collection_errors": [],
+  "exitstatus": 1
+}

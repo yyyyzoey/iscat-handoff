@@ -1,0 +1,56 @@
+HEAD is now at dad7b87 V161: 204 design comparisons + 8 nonlinear probes completed; D retains ~40% independent info after h/x/y projection; reportable_D null
+[v162 dc919aa] V162: isolated byte-locked deployment and complete recovery workflow
+ 51 files changed, 11337 insertions(+)
+ create mode 100644 tools/v162_bundle/.gitattributes
+ create mode 100644 "tools/v162_bundle/00_V162_Codex_\345\224\257\344\270\200\346\211\247\350\241\214\345\220\210\345\220\214.md"
+ create mode 100644 tools/v162_bundle/README.md
+ create mode 100644 tools/v162_bundle/V162_CODE_CHANGELOG.md
+ create mode 100644 tools/v162_bundle/audit/archive_audit.json
+ create mode 100644 tools/v162_bundle/audit/audit_existing_v155.py
+ create mode 100644 tools/v162_bundle/audit/audit_v156_readonly.py
+ create mode 100644 tools/v162_bundle/audit/audit_v161_readonly.py
+ create mode 100644 tools/v162_bundle/audit/core_identity.json
+ create mode 100644 tools/v162_bundle/audit/faulty_local_design_excerpt.py.txt
+ create mode 100644 tools/v162_bundle/audit/iscat_v161_return_original.zip
+ create mode 100644 tools/v162_bundle/audit/original_v161_bundle_retest/pytest_outcomes.json
+ create mode 100644 tools/v162_bundle/audit/original_v161_bundle_retest/test_output.txt
+ create mode 100644 tools/v162_bundle/audit/original_v161_bundle_retest/test_receipt.json
+ create mode 100644 tools/v162_bundle/audit/synthetic_reproduction.json
+ create mode 100644 tools/v162_bundle/audit/v161_review.json
+ create mode 100644 tools/v162_bundle/code/audit_v156_readonly.py
+ create mode 100644 tools/v162_bundle/code/audit_v161_readonly.py
+ create mode 100644 tools/v162_bundle/code/v152_budget_store.py
+ create mode 100644 tools/v162_bundle/code/v152_gls_core.py
+ create mode 100644 tools/v162_bundle/code/v155_pixel_diagnostics.py
+ create mode 100644 tools/v162_bundle/code/v155_stage.py
+ create mode 100644 tools/v162_bundle/code/v156_candidate_guard.py
+ create mode 100644 tools/v162_bundle/code/v157_height_design.py
+ create mode 100644 tools/v162_bundle/code/v162_bootstrap.py
+ create mode 100644 tools/v162_bundle/code/v162_deployment.py
+ create mode 100644 tools/v162_bundle/code/v162_design.py
+ create mode 100644 tools/v162_bundle/code/v162_receipt_plugin.py
+ create mode 100644 tools/v162_bundle/code/v162_report_pack.py
+ create mode 100644 tools/v162_bundle/code/v162_run.py
+ create mode 100644 tools/v162_bundle/code/v162_semantics.py
+ create mode 100644 tools/v162_bundle/config/kernel_lock.json
+ create mode 100644 tools/v162_bundle/config/v162_plan.json
+ create mode 100644 tools/v162_bundle/local_test_receipt/pytest_outcomes.json
+ create mode 100644 tools/v162_bundle/local_test_receipt/test_output.txt
+ create mode 100644 tools/v162_bundle/local_test_receipt/test_receipt.json
+ create mode 100644 tools/v162_bundle/manifest_sha256.csv
+ create mode 100644 tools/v162_bundle/prepare_v162.py
+ create mode 100644 tools/v162_bundle/run_all.py
+ create mode 100644 tools/v162_bundle/run_workstation_tests.py
+ create mode 100644 tools/v162_bundle/test_inventory.json
+ create mode 100644 tools/v162_bundle/tests/test_v155.py
+ create mode 100644 tools/v162_bundle/tests/test_v156_audit.py
+ create mode 100644 tools/v162_bundle/tests/test_v156_candidate_guard.py
+ create mode 100644 tools/v162_bundle/tests/test_v157_audit.py
+ create mode 100644 tools/v162_bundle/tests/test_v157_design.py
+ create mode 100644 tools/v162_bundle/tests/test_v162.py
+ create mode 100644 tools/v162_bundle/tests/test_v162_bootstrap.py
+ create mode 100644 tools/v162_bundle/tests/test_v162_deployment.py
+ create mode 100644 tools/v162_bundle/tests/test_v162_intake.py
+ create mode 100644 tools/v162_bundle/tests/test_v162_semantics.py
+PREPARED_NEW_WORKTREE: C:\iscat\v162
+NEXT: python tools/v162_bundle/run_all.py --repo .

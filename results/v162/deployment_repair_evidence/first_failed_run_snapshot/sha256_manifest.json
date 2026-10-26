@@ -1,0 +1,33 @@
+{
+  "note": "Verbatim snapshot of the first (failed) V162 launcher run artifacts, taken before the deployment-conditions repair and full re-test. Sources: results/v162/workstation_tests/* and results/v162/logs/9285abb568744494a8fd3784849c229d_*. Original files are not deleted or edited.",
+  "files": {
+    "test_receipt.json": {
+      "sha256": "a9967f60552a329d44a3281c0b5d813137a6e136e4a9bdd9f394c6958d6467c3",
+      "bytes": 7766
+    },
+    "9285abb568744494a8fd3784849c229d_tests.stdout": {
+      "sha256": "48309bc81817a2514a70f7e6188fb51ac6abfa63016f58f69b83dd8798b52660",
+      "bytes": 35583
+    },
+    "9285abb568744494a8fd3784849c229d_stage_states.json": {
+      "sha256": "c851856d1b48e4ad5d4fcef84e653c06bf7ed3d1d65c3ed8ba18eaba549d9e41",
+      "bytes": 126
+    },
+    "pytest_outcomes.json": {
+      "sha256": "984e60ba8f0694b739691bc595b7ed325502910f2cb52529f2b676164fef4a32",
+      "bytes": 123880
+    },
+    "9285abb568744494a8fd3784849c229d_tests.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "9285abb568744494a8fd3784849c229d_stage_commands.json": {
+      "sha256": "a729ba2dec53238db54ea5fb2407a74e4e71bfc83bab597f213bc2611dd63f1f",
+      "bytes": 410
+    },
+    "test_output.txt": {
+      "sha256": "c13b19c3490e5d3379b92c06f8daceabc05d667a11e2221e3742c3e79d82d5c1",
+      "bytes": 34823
+    }
+  }
+}

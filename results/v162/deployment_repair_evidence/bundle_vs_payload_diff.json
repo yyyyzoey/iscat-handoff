@@ -1,0 +1,15 @@
+{
+  "note": "Byte-diff of the installed bundle against the launcher payload manifest, after the disclosed contract-section-4 deployment repair. Exactly one file may differ.",
+  "payload_manifest_rows": 50,
+  "differing_files": [
+    {
+      "path": "run_workstation_tests.py",
+      "payload_sha256": "9a5482314e31c705d03ddb49a4643e3630b64f2ea0917f163d96df8555ac611d",
+      "installed_sha256": "14985fe2cad73f9a1bd50baf02fb067ac21db7d882964aca6ac5885ed3b1ee52",
+      "payload_bytes": 2304,
+      "installed_bytes": 3274
+    }
+  ],
+  "missing_files": [],
+  "files_absent_from_payload_manifest": []
+}

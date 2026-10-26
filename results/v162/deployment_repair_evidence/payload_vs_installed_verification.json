@@ -1,0 +1,43 @@
+{
+  "purpose": "Prove that after reverting the one uncommitted deployment-repair edit, every installed bundle file is byte-identical to the bytes inside the executable launcher payload.",
+  "launcher_pyz": "C:\\Users\\PC\\Downloads\\iscat_v162_launcher.pyz",
+  "launcher_pyz_sha256": "97ecf543b83f753a0688efbdc9209c1714e01f4cb52992778f856905cc6209d1",
+  "embedded_payload_sha256": "4dc3f129f46110002dd5c56b7186794a20cfddfafc8e5a1d77cad44a902f840b",
+  "payload_members": 51,
+  "manifest_rows": 50,
+  "mismatches": [],
+  "extras": [
+    {
+      "path": ".pytest_cache/.gitignore",
+      "bytes": 39,
+      "in_payload_zip": false
+    },
+    {
+      "path": ".pytest_cache/CACHEDIR.TAG",
+      "bytes": 191,
+      "in_payload_zip": false
+    },
+    {
+      "path": ".pytest_cache/README.md",
+      "bytes": 310,
+      "in_payload_zip": false
+    },
+    {
+      "path": ".pytest_cache/v/cache/lastfailed",
+      "bytes": 2,
+      "in_payload_zip": false
+    },
+    {
+      "path": ".pytest_cache/v/cache/nodeids",
+      "bytes": 18322,
+      "in_payload_zip": false
+    },
+    {
+      "path": ".pytest_cache/v/cache/stepwise",
+      "bytes": 2,
+      "in_payload_zip": false
+    }
+  ],
+  "checked_files": 50,
+  "verdict": "ALL_MANIFEST_ROWS_BYTE_IDENTICAL"
+}

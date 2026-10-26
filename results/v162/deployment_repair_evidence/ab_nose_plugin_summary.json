@@ -1,0 +1,84 @@
+{
+  "purpose": "A/B reproduction: pytest 7.x builtin deprecated 'nose' plugin treats the module-level helper `def setup(theta=None)` in tests/test_v162.py as a nose setup convention and calls setup(<module>).",
+  "frozen_test_file": "C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py",
+  "frozen_test_file_sha256": "9bd0369d1099d45c21c9948805a12ed060717b35b369227bb7c7e93d61d18b6b",
+  "interpreter": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]",
+  "station_pytest_version": "7.4.0",
+  "station_pytest_nose_module": "C:\\ProgramData\\anaconda3\\Lib\\site-packages\\_pytest\\nose.py",
+  "station_nose_in_default_plugins": true,
+  "note": "Focal scope (tests/test_v162.py only). Not a substitute for the official 222-node receipt.",
+  "results": [
+    {
+      "label": "without_optout",
+      "PYTEST_ADDOPTS": null,
+      "command": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "v162_receipt_plugin",
+        "tests/test_v162.py"
+      ],
+      "cwd": "C:\\iscat\\v162\\tools\\v162_bundle",
+      "env": {
+        "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "V162_PYTEST_OUTCOMES": "C:\\iscat\\v162\\results\\v162\\deployment_repair_evidence\\focal_without_optout_outcomes.json",
+        "PYTEST_ADDOPTS": null
+      },
+      "returncode": 1,
+      "output_file": "focal_without_optout_output.txt",
+      "output_sha256": "d82e699019adf20f7b9c9e1fc9318fdeb8cdf2832c3b91340b436e5675d2af5f",
+      "outcomes_file": "focal_without_optout_outcomes.json",
+      "outcomes": {
+        "collected": 25,
+        "exitstatus": 1,
+        "collection_errors": 0,
+        "report_pairs": {
+          "setup/failed": 25,
+          "teardown/passed": 25
+        },
+        "nodes_with_all_three_phases_passed": 0
+      },
+      "output_tail": "existing_ledger_never_removed - TypeError: flo...\r\nERROR tests/test_v162.py::test_run_task_preserves_failure - TypeError: float(...\r\nERROR tests/test_v162.py::test_completed_task_not_reexecuted - TypeError: flo...\r\nERROR tests/test_v162.py::test_contrast_object_not_silently_accepted - TypeEr...\r\nERROR tests/test_v162.py::test_historical_example_ratios_not_precision - Type...\r\n25 errors in 1.05s\r\n\n"
+    },
+    {
+      "label": "with_no_nose_optout",
+      "PYTEST_ADDOPTS": "-p no:nose",
+      "command": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "v162_receipt_plugin",
+        "tests/test_v162.py"
+      ],
+      "cwd": "C:\\iscat\\v162\\tools\\v162_bundle",
+      "env": {
+        "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "V162_PYTEST_OUTCOMES": "C:\\iscat\\v162\\results\\v162\\deployment_repair_evidence\\focal_with_no_nose_optout_outcomes.json",
+        "PYTEST_ADDOPTS": "-p no:nose"
+      },
+      "returncode": 0,
+      "output_file": "focal_with_no_nose_optout_output.txt",
+      "output_sha256": "f05c2213fd3f18ba3d8bea5b1336423bb22ef5b4bf77c4e78703049229f556b6",
+      "outcomes_file": "focal_with_no_nose_optout_outcomes.json",
+      "outcomes": {
+        "collected": 25,
+        "exitstatus": 0,
+        "collection_errors": 0,
+        "report_pairs": {
+          "call/passed": 25,
+          "setup/passed": 25,
+          "teardown/passed": 25
+        },
+        "nodes_with_all_three_phases_passed": 25
+      },
+      "output_tail": ".........................                                                [100%]\r\n25 passed in 0.63s\r\n\n"
+    }
+  ],
+  "counter_note": "First summary draft used a label `setup_errors` that did not match pytest's plugin API: a setup failure is emitted as when='setup', outcome='failed'. Raw focal outputs and outcome files were not modified; only this summary's counters were regenerated from those raw files."
+}

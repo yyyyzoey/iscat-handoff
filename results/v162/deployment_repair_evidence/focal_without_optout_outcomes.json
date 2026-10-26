@@ -1,0 +1,283 @@
+{
+  "collected": [
+    "tests/test_v162.py::test_complete_exact17_two_scales_three_rtols",
+    "tests/test_v162.py::test_boundary_cannot_be_ranked[theta0]",
+    "tests/test_v162.py::test_boundary_cannot_be_ranked[theta1]",
+    "tests/test_v162.py::test_boundary_cannot_be_ranked[theta2]",
+    "tests/test_v162.py::test_boundary_cannot_be_ranked[theta3]",
+    "tests/test_v162.py::test_tampered_numerical_flags_rejected[derivative_stable]",
+    "tests/test_v162.py::test_tampered_numerical_flags_rejected[directional_check_pass]",
+    "tests/test_v162.py::test_tampered_numerical_flags_rejected[parameter_boundary]",
+    "tests/test_v162.py::test_saved_scalar_broadcast_rejected",
+    "tests/test_v162.py::test_saved_q_tamper_rejected",
+    "tests/test_v162.py::test_config_edits_fail[total-501]",
+    "tests/test_v162.py::test_config_edits_fail[base_commit-main]",
+    "tests/test_v162.py::test_config_edits_fail[mode-ONLY_DESIGN]",
+    "tests/test_v162.py::test_config_edits_fail[phases-value3]",
+    "tests/test_v162.py::test_config_edits_fail[probe_groups-value4]",
+    "tests/test_v162.py::test_fixed_config_pass",
+    "tests/test_v162.py::test_loader_calls_are_charged_before_model",
+    "tests/test_v162.py::test_loader_error_and_restore",
+    "tests/test_v162.py::test_recorded_predictor_no_duplicate_charge_and_array_saved",
+    "tests/test_v162.py::test_failed_preflight_never_constructs_model",
+    "tests/test_v162.py::test_existing_ledger_never_removed",
+    "tests/test_v162.py::test_run_task_preserves_failure",
+    "tests/test_v162.py::test_completed_task_not_reexecuted",
+    "tests/test_v162.py::test_contrast_object_not_silently_accepted",
+    "tests/test_v162.py::test_historical_example_ratios_not_precision"
+  ],
+  "reports": [
+    {
+      "nodeid": "tests/test_v162.py::test_complete_exact17_two_scales_three_rtols",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_complete_exact17_two_scales_three_rtols",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta0]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta0]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta1]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta1]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta2]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta2]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta3]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_boundary_cannot_be_ranked[theta3]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_tampered_numerical_flags_rejected[derivative_stable]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_tampered_numerical_flags_rejected[derivative_stable]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_tampered_numerical_flags_rejected[directional_check_pass]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_tampered_numerical_flags_rejected[directional_check_pass]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_tampered_numerical_flags_rejected[parameter_boundary]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_tampered_numerical_flags_rejected[parameter_boundary]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_saved_scalar_broadcast_rejected",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_saved_scalar_broadcast_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_saved_q_tamper_rejected",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_saved_q_tamper_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[total-501]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[total-501]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[base_commit-main]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[base_commit-main]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[mode-ONLY_DESIGN]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[mode-ONLY_DESIGN]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[phases-value3]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[phases-value3]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[probe_groups-value4]",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_config_edits_fail[probe_groups-value4]",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_fixed_config_pass",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_fixed_config_pass",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_loader_calls_are_charged_before_model",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_loader_calls_are_charged_before_model",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_loader_error_and_restore",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_loader_error_and_restore",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_recorded_predictor_no_duplicate_charge_and_array_saved",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_recorded_predictor_no_duplicate_charge_and_array_saved",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_failed_preflight_never_constructs_model",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_failed_preflight_never_constructs_model",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_existing_ledger_never_removed",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_existing_ledger_never_removed",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_run_task_preserves_failure",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_run_task_preserves_failure",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_completed_task_not_reexecuted",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_completed_task_not_reexecuted",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_contrast_object_not_silently_accepted",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_contrast_object_not_silently_accepted",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_historical_example_ratios_not_precision",
+      "when": "setup",
+      "outcome": "failed"
+    },
+    {
+      "nodeid": "tests/test_v162.py::test_historical_example_ratios_not_precision",
+      "when": "teardown",
+      "outcome": "passed"
+    }
+  ],
+  "collection_errors": [],
+  "exitstatus": 1
+}

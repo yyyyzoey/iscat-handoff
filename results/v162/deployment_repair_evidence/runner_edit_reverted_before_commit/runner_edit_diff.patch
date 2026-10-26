@@ -1,0 +1,36 @@
+--- HEAD:tools/v162_bundle/run_workstation_tests.py
++++ WORKING_TREE_before_revert
+@@ -1,6 +1,7 @@
+ """Run the complete bundled suite, bind source/test identities, retain pytest outcomes."""
+ from pathlib import Path
+ import argparse, datetime, json, os, subprocess, sys, uuid
++import pytest
+ sys.dont_write_bytecode=True
+ ROOT=Path(__file__).resolve().parent
+ sys.path.insert(0,str(ROOT/'code'))
+@@ -18,6 +19,15 @@
+     env=os.environ.copy();env['PYTHONPATH']=str(ROOT/'code')
+     env['PYTEST_DISABLE_PLUGIN_AUTOLOAD']='1';env['PYTHONDONTWRITEBYTECODE']='1'
+     env['V162_PYTEST_OUTCOMES']=str(out/'pytest_outcomes.json')
++    # V162 deployment repair (disclosed; contract section 4, no ledger/call existed when applied):
++    # this station's pytest 7.4.0 still ships the deprecated builtin "nose" plugin, which treats the
++    # module-level helper `def setup(theta=None)` in the frozen tests/test_v162.py as a nose setup
++    # convention and invokes setup(<module>). The package was validated on pytest>=8, where that
++    # plugin no longer exists (bundle local_test_receipt: 222/222, returncode 0). Blocking the legacy
++    # plugin restores those semantics exactly: no test, config, lock or maths-core byte changes, the
++    # recorded command_tail below is unchanged, and every test must still pass all three phases.
++    # A/B evidence (raw outputs, same frozen test file): results/v162/deployment_repair_evidence/
++    env['PYTEST_ADDOPTS']='-p no:nose'
+     tail=['-m','pytest','-q','-p','v162_receipt_plugin','tests']
+     p=subprocess.run([sys.executable,*tail],cwd=ROOT,env=env,capture_output=True)
+     raw=p.stdout+b'\n'+p.stderr;(out/'test_output.txt').write_bytes(raw)
+@@ -26,7 +36,8 @@
+                 command=[sys.executable,*tail],command_tail=tail,cwd=str(ROOT),bundle_root=str(ROOT),bundle_sha256=after,
+                 before_sha256=before,files_unchanged=before==after,output_sha256=digest(raw),
+                 outcomes_sha256=digest((out/'pytest_outcomes.json').read_bytes()) if (out/'pytest_outcomes.json').exists() else None,
+-                real_F2c_calls=0)
++                real_F2c_calls=0,pytest_version=pytest.__version__,pytest_plugin_opt_out=['nose'],
++                pytest_addopts=env.get('PYTEST_ADDOPTS'))
+     (out/'test_receipt.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+     print(raw.decode('utf-8',errors='replace'))
+     if p.returncode or before!=after:return 2

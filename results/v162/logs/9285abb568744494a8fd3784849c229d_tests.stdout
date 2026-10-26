@@ -1,0 +1,759 @@
+........................................................................ [ 32%]
+...............EEEEEEEEEEEEEEEEEEEEEEEEE................................ [ 64%]
+........................................................................ [ 97%]
+......                                                                   [100%]
+=================================== ERRORS ====================================
+_______ ERROR at setup of test_complete_exact17_two_scales_three_rtols ________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+__________ ERROR at setup of test_boundary_cannot_be_ranked[theta0] ___________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+__________ ERROR at setup of test_boundary_cannot_be_ranked[theta1] ___________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+__________ ERROR at setup of test_boundary_cannot_be_ranked[theta2] ___________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+__________ ERROR at setup of test_boundary_cannot_be_ranked[theta3] ___________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+_ ERROR at setup of test_tampered_numerical_flags_rejected[derivative_stable] _
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+_ ERROR at setup of test_tampered_numerical_flags_rejected[directional_check_pass] _
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+_ ERROR at setup of test_tampered_numerical_flags_rejected[parameter_boundary] _
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+___________ ERROR at setup of test_saved_scalar_broadcast_rejected ____________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+_______________ ERROR at setup of test_saved_q_tamper_rejected ________________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+_____________ ERROR at setup of test_config_edits_fail[total-501] _____________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+_________ ERROR at setup of test_config_edits_fail[base_commit-main] __________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+_________ ERROR at setup of test_config_edits_fail[mode-ONLY_DESIGN] __________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+___________ ERROR at setup of test_config_edits_fail[phases-value3] ___________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+________ ERROR at setup of test_config_edits_fail[probe_groups-value4] ________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+__________________ ERROR at setup of test_fixed_config_pass ___________________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+________ ERROR at setup of test_loader_calls_are_charged_before_model _________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+_______________ ERROR at setup of test_loader_error_and_restore _______________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+_ ERROR at setup of test_recorded_predictor_no_duplicate_charge_and_array_saved _
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+_______ ERROR at setup of test_failed_preflight_never_constructs_model ________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+____________ ERROR at setup of test_existing_ledger_never_removed _____________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+______________ ERROR at setup of test_run_task_preserves_failure ______________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+____________ ERROR at setup of test_completed_task_not_reexecuted _____________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+________ ERROR at setup of test_contrast_object_not_silently_accepted _________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+_______ ERROR at setup of test_historical_example_ratios_not_precision ________
+
+theta = <module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>
+
+    def setup(theta=None):
+        t=np.array([120.,450.,0.,0.] if theta is None else theta)
+        j=np.zeros((169,4));j[:4,:]=np.eye(4);j[:,0]=.4*j[:,0]+np.sqrt(.84)*j[:,1]
+        raw=j/np.sqrt(3)
+        def pred(x):return (raw@(np.asarray(x)-t)).reshape(13,13)
+        gd=GlsData.from_frames(np.zeros((3,13,13)),np.ones((3,13,13)))
+>       return diagnose(gd,t,pred)
+
+tests\test_v162.py:20: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+code\v155_pixel_diagnostics.py:69: in diagnose
+    theta = check_theta(theta).copy()
+code\v152_gls_core.py:31: in check_theta
+    t = _finite_array(theta, 'theta')
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+x = array(<module 'test_v162' from 'C:\\iscat\\v162\\tools\\v162_bundle\\tests\\test_v162.py'>,
+      dtype=object)
+name = 'theta'
+
+    def _finite_array(x: Any, name: str) -> np.ndarray:
+>       a = np.array(x, dtype=np.float64, copy=True)
+E       TypeError: float() argument must be a string or a real number, not 'module'
+
+code\v152_gls_core.py:24: TypeError
+=========================== short test summary info ===========================
+ERROR tests/test_v162.py::test_complete_exact17_two_scales_three_rtols - Type...
+ERROR tests/test_v162.py::test_boundary_cannot_be_ranked[theta0] - TypeError:...
+ERROR tests/test_v162.py::test_boundary_cannot_be_ranked[theta1] - TypeError:...
+ERROR tests/test_v162.py::test_boundary_cannot_be_ranked[theta2] - TypeError:...
+ERROR tests/test_v162.py::test_boundary_cannot_be_ranked[theta3] - TypeError:...
+ERROR tests/test_v162.py::test_tampered_numerical_flags_rejected[derivative_stable]
+ERROR tests/test_v162.py::test_tampered_numerical_flags_rejected[directional_check_pass]
+ERROR tests/test_v162.py::test_tampered_numerical_flags_rejected[parameter_boundary]
+ERROR tests/test_v162.py::test_saved_scalar_broadcast_rejected - TypeError: f...
+ERROR tests/test_v162.py::test_saved_q_tamper_rejected - TypeError: float() a...
+ERROR tests/test_v162.py::test_config_edits_fail[total-501] - TypeError: floa...
+ERROR tests/test_v162.py::test_config_edits_fail[base_commit-main] - TypeErro...
+ERROR tests/test_v162.py::test_config_edits_fail[mode-ONLY_DESIGN] - TypeErro...
+ERROR tests/test_v162.py::test_config_edits_fail[phases-value3] - TypeError: ...
+ERROR tests/test_v162.py::test_config_edits_fail[probe_groups-value4] - TypeE...
+ERROR tests/test_v162.py::test_fixed_config_pass - TypeError: float() argumen...
+ERROR tests/test_v162.py::test_loader_calls_are_charged_before_model - TypeEr...
+ERROR tests/test_v162.py::test_loader_error_and_restore - TypeError: float() ...
+ERROR tests/test_v162.py::test_recorded_predictor_no_duplicate_charge_and_array_saved
+ERROR tests/test_v162.py::test_failed_preflight_never_constructs_model - Type...
+ERROR tests/test_v162.py::test_existing_ledger_never_removed - TypeError: flo...
+ERROR tests/test_v162.py::test_run_task_preserves_failure - TypeError: float(...
+ERROR tests/test_v162.py::test_completed_task_not_reexecuted - TypeError: flo...
+ERROR tests/test_v162.py::test_contrast_object_not_silently_accepted - TypeEr...
+ERROR tests/test_v162.py::test_historical_example_ratios_not_precision - Type...
+197 passed, 25 errors in 16.31s
+
+

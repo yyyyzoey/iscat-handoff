@@ -1,0 +1,14 @@
+[
+  {
+    "stage": "tests",
+    "command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v162\\tools\\v162_bundle\\run_workstation_tests.py",
+      "--out",
+      "C:\\iscat\\v162\\results\\v162\\workstation_tests"
+    ],
+    "returncode": 2,
+    "stdout": "9285abb568744494a8fd3784849c229d_tests.stdout",
+    "stderr": "9285abb568744494a8fd3784849c229d_tests.stderr"
+  }
+]

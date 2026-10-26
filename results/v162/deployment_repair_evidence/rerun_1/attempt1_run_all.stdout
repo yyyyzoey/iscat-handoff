@@ -1,0 +1,6 @@
+tests exit 0
+preflight exit 0
+execute exit 2
+ARCHIVED_AVAILABLE_EVIDENCE__NOT_SCIENCE_PASS
+
+pack exit 0 ; FINISHED is not experimental diameter validation

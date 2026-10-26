@@ -1,0 +1,15 @@
+{
+  "stage": "run_all",
+  "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "C:\\iscat\\v162\\tools\\v162_bundle\\run_all.py",
+    "--repo",
+    "C:\\iscat\\v162"
+  ],
+  "cwd": "C:\\iscat\\v162",
+  "returncode": 2,
+  "started_utc": "2026-10-26T11:37:32.866618+00:00",
+  "ended_utc": "2026-10-26T11:37:51.252897+00:00",
+  "stdout_sha256": "7322bde6f7c53c480ea46daec494a8a75d576830708d3248395c920788cd866b",
+  "stderr_sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+}

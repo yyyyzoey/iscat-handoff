@@ -1,0 +1,33 @@
+{
+  "note": "Verbatim snapshot of the results archive produced by the FIRST (failed) V162 launcher run, taken before the repaired full re-test regenerates those files.",
+  "files": {
+    "iscat_v162_return.zip": {
+      "sha256": "b9d658b5497c42c6184d37d26bc3c2ab1cc0db8d91694484365c15c28caa5166",
+      "bytes": 108051
+    },
+    "00_execution_truth_report.md": {
+      "sha256": "35c09373fd9e49f852ae30e663470644c2db533e782d7adf780489cc99dd5141",
+      "bytes": 1135
+    },
+    "execution_integrity.json": {
+      "sha256": "0c1737655431626e68c298b407c3909a4bc9f998cb69de8c31b66bdf53f1f473",
+      "bytes": 880
+    },
+    "failures.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "history_corrections.md": {
+      "sha256": "8ef7ad038f443a27858233cde1d0e8fc0ba887c0b4c31ef866c6dde793cb5914",
+      "bytes": 563
+    },
+    "archive_receipt.json": {
+      "sha256": "9361a4bdeea268c2e480bfff014f3bf3ba8742d6939f38a3d1c2f8749c7e4202",
+      "bytes": 205
+    },
+    "manifest_sha256.csv": {
+      "sha256": "5a8a31606d0ade858b54327a38de3c92a0a8daaf431a4ef1bdba57a36292b59d",
+      "bytes": 2420
+    }
+  }
+}

@@ -1,0 +1,653 @@
+{
+  "audit_kind": "V162_BLOCKED_EXECUTION_READONLY_FORENSIC_AUDIT",
+  "generated_utc": "2026-10-26T12:38:24.513148+00:00",
+  "repo": "C:\\iscat\\v162",
+  "base_commit": "71333a9f193d00012972e8fd6c188805c7a6b18e",
+  "disputed_path": "tools/v133_recover_M.py",
+  "scope_note": "Read-only forensic audit of the blocked V162 execute stage. git_state was captured before the results commit.",
+  "git_state": {
+    "head": "dc919aada7cc750c19383470021878fab5814db5",
+    "branch": "v162",
+    "status_porcelain": [
+      "?? .v162-preparation.json",
+      "?? results/v162/"
+    ]
+  },
+  "preparation_marker": {
+    "path": ".v162-preparation.json",
+    "sha256": "a3cf11110ec60a1730b5bf7c923ea7fc7bfe2a6f99330ce18d6c8b935e5ebc98",
+    "doc": {
+      "destination": "C:\\iscat\\v162",
+      "base_commit": "71333a9f193d00012972e8fd6c188805c7a6b18e",
+      "reviewed_parent_commit": "dad7b87554959355926d3523169fae7ac30a39f7",
+      "state": "PREPARED",
+      "code_commit": "dc919aada7cc750c19383470021878fab5814db5"
+    }
+  },
+  "ledger": {
+    "path": "logs/v162_budget.sqlite",
+    "bytes": 24576,
+    "sha256": "94368faf65b7329253a70c86ad909d694d4444071d39d0366c0480886327a2e5",
+    "sidecar_wal": false,
+    "sidecar_journal": false,
+    "integrity_check": "ok",
+    "tables": {
+      "attempts": {
+        "columns": [
+          "task",
+          "seq",
+          "theta",
+          "state",
+          "detail",
+          "ts"
+        ],
+        "row_count": 0,
+        "rows": []
+      },
+      "metadata": {
+        "columns": [
+          "id",
+          "value"
+        ],
+        "row_count": 1,
+        "rows": [
+          {
+            "id": 1,
+            "value": {
+              "phases": {
+                "FINAL_VERIFY": 120,
+                "NONLINEAR_PROBES": 120,
+                "REPAIR_AND_ANCHOR": 260
+              },
+              "plan_id": "v162",
+              "total": 500
+            }
+          }
+        ]
+      },
+      "tasks": {
+        "columns": [
+          "id",
+          "signature",
+          "phase",
+          "cap",
+          "used",
+          "owner",
+          "state",
+          "result_path",
+          "result_sha"
+        ],
+        "row_count": 1,
+        "rows": [
+          {
+            "id": "LOADER_1",
+            "signature": "73213ca4cb4027c56e20149f8c2a7bc23116255c4b6ef29f7730e349e3f6af4d",
+            "phase": "REPAIR_AND_ANCHOR",
+            "cap": 100,
+            "used": 0,
+            "owner": "v162-single-process",
+            "state": "FAILED",
+            "result_path": "C:\\iscat\\v162\\results\\v162\\tasks\\LOADER_1\\result.json",
+            "result_sha": "2203b29bee9e0561a1156fa07e0393ddc6c08c74d9684ffb6f64d6859474942b"
+          }
+        ]
+      }
+    },
+    "summary": {
+      "task_count": 1,
+      "charged_attempt_rows": 0,
+      "attempt_state_counts": {},
+      "total_used": 0,
+      "total_reserved_cap": 100,
+      "tasks": [
+        {
+          "id": "LOADER_1",
+          "phase": "REPAIR_AND_ANCHOR",
+          "cap": 100,
+          "used": 0,
+          "state": "FAILED"
+        }
+      ]
+    }
+  },
+  "sealed_task_result_verification": [
+    {
+      "task": "LOADER_1",
+      "result_path": "C:\\iscat\\v162\\results\\v162\\tasks\\LOADER_1\\result.json",
+      "result_sha_in_ledger": "2203b29bee9e0561a1156fa07e0393ddc6c08c74d9684ffb6f64d6859474942b",
+      "exists": true,
+      "result_sha_recomputed": "2203b29bee9e0561a1156fa07e0393ddc6c08c74d9684ffb6f64d6859474942b",
+      "matches": true
+    }
+  ],
+  "failure_records": [
+    {
+      "path": "failures/000.json",
+      "bytes": 1372,
+      "sha256": "4db0b2494d734e947a98c3183ba44564211271b35d2a83ca1191925ccf6ed068",
+      "doc": {
+        "all_reportable_D_null": true,
+        "error": "ValueError('FROZEN_SOURCE_CHANGED:tools/v133_recover_M.py')",
+        "mode": "execute",
+        "state": "BLOCKED_OR_FAILED",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\iscat\\v162\\tools\\v162_bundle\\code\\v162_run.py\", line 405, in main\n    result=execute(repo,cfg,out)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\iscat\\v162\\tools\\v162_bundle\\code\\v162_run.py\", line 241, in execute\n    model=construct_counted(repo,store,out,signature)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\iscat\\v162\\tools\\v162_bundle\\code\\v162_run.py\", line 161, in construct_counted\n    run_task(store,'LOADER_1','REPAIR_AND_ANCHOR',100,out,signature,work)\n  File \"C:\\iscat\\v162\\tools\\v162_bundle\\code\\v162_run.py\", line 112, in run_task\n    payload=work(name)\n            ^^^^^^^^^^\n  File \"C:\\iscat\\v162\\tools\\v162_bundle\\code\\v162_run.py\", line 159, in work\n    holder['model']=runtime.construct_bound(repo,cfg146)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\iscat\\v162\\tools\\v146_runtime.py\", line 12, in construct_bound\n    if file_sha(repo/rel)!=expected:raise ValueError('FROZEN_SOURCE_CHANGED:'+rel)\n                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: FROZEN_SOURCE_CHANGED:tools/v133_recover_M.py\n"
+      }
+    }
+  ],
+  "loader_task_record": {
+    "path": "tasks/LOADER_1/result.json",
+    "sha256": "2203b29bee9e0561a1156fa07e0393ddc6c08c74d9684ffb6f64d6859474942b",
+    "doc": {
+      "actual_model_forward_attempts": 0,
+      "error": "ValueError('FROZEN_SOURCE_CHANGED:tools/v133_recover_M.py')",
+      "execution_state": "FAILED",
+      "reportable_D": null,
+      "signature": "73213ca4cb4027c56e20149f8c2a7bc23116255c4b6ef29f7730e349e3f6af4d",
+      "traceback": "Traceback (most recent call last):\n  File \"C:\\iscat\\v162\\tools\\v162_bundle\\code\\v162_run.py\", line 112, in run_task\n    payload=work(name)\n            ^^^^^^^^^^\n  File \"C:\\iscat\\v162\\tools\\v162_bundle\\code\\v162_run.py\", line 159, in work\n    holder['model']=runtime.construct_bound(repo,cfg146)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\iscat\\v162\\tools\\v146_runtime.py\", line 12, in construct_bound\n    if file_sha(repo/rel)!=expected:raise ValueError('FROZEN_SOURCE_CHANGED:'+rel)\n                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: FROZEN_SOURCE_CHANGED:tools/v133_recover_M.py\n"
+    }
+  },
+  "prediction_files_under_tasks": [],
+  "seal_failure_files": [],
+  "frozen_pins": {
+    "config": "config/v146_science_config.json",
+    "config_sha256": "481730f6a4a7cd666e76ff1c045e13960031985c14a8a1b580543434adc97803",
+    "pins": [
+      {
+        "path": "tools/v142_model.py",
+        "expected_sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749",
+        "exists": true,
+        "bytes": 3152,
+        "sha256": "e75e6d244cf491b4c52351ec86990a4fc9fceabfef90b15186cb0d7fe4592749",
+        "git_blob": "e4ef41651b67c14b00f915101b0def9be8d3b669",
+        "matches": true
+      },
+      {
+        "path": "tools/v142_field_reference.py",
+        "expected_sha256": "9ae0c3e6086a65d6fca239c52f2ef4e928b6057b6689971993ec08114864b754",
+        "exists": true,
+        "bytes": 6767,
+        "sha256": "9ae0c3e6086a65d6fca239c52f2ef4e928b6057b6689971993ec08114864b754",
+        "git_blob": "76a927850808c7b0d21c76f703ff62ec54ba198f",
+        "matches": true
+      },
+      {
+        "path": "tools/field_forward_reference.py",
+        "expected_sha256": "4c064031682e4c3c48130848708bd83958aab4630c3da71adf275c231a1c3520",
+        "exists": true,
+        "bytes": 7972,
+        "sha256": "4c064031682e4c3c48130848708bd83958aab4630c3da71adf275c231a1c3520",
+        "git_blob": "8df4f51937df59ea5e82eeb6c25893b0138ffbfa",
+        "matches": true
+      },
+      {
+        "path": "tools/load_field_library.py",
+        "expected_sha256": "d42d638378be3efbdcb9e8ff643b75485dbac618d404c92a1b3090cb9bd7a746",
+        "exists": true,
+        "bytes": 6106,
+        "sha256": "d42d638378be3efbdcb9e8ff643b75485dbac618d404c92a1b3090cb9bd7a746",
+        "git_blob": "b6f205b7c4f66a987f78b519f5d6fb6588b58da2",
+        "matches": true
+      },
+      {
+        "path": "tools/v133_recover_M.py",
+        "expected_sha256": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba",
+        "exists": true,
+        "bytes": 9533,
+        "sha256": "142052e012a89191bd0d6fa943af06d8ca1fec5d3ae8f09298fb8e9bec997a4c",
+        "git_blob": "0ee71c80664d5661ed4f7eea5d620d1c24adc461",
+        "matches": false
+      }
+    ],
+    "mismatched_paths": [
+      "tools/v133_recover_M.py"
+    ],
+    "library": {
+      "path": "results/v128/library/v128_Dh_train_fields.h5",
+      "bytes": 53435213,
+      "sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+      "expected": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+      "matches": true
+    },
+    "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+    "parent_model_id": "v131-field-db000d86636ed018cf1f9bd5291c7409b7e9d2aaa481328b3c22dfdb1a689427"
+  },
+  "disputed_path_git_facts": {
+    "history": [
+      "7c2098976da60d8655bc9c44045ce1dcf8094b0e|2026-10-22 17:25:27 +0800|v133: F2 M recovery 6/6 candidates (MAE~2.8nm vs C-map 36.5nm) - complex-field forward works correctly after V130 fix"
+    ],
+    "refs": {
+      "BASE": {
+        "ref": "71333a9f193d00012972e8fd6c188805c7a6b18e",
+        "ls_tree": "100644 blob 0ee71c80664d5661ed4f7eea5d620d1c24adc461\ttools/v133_recover_M.py",
+        "blob_sha1": "0ee71c80664d5661ed4f7eea5d620d1c24adc461",
+        "blob_bytes": 9533,
+        "blob_sha256": "142052e012a89191bd0d6fa943af06d8ca1fec5d3ae8f09298fb8e9bec997a4c"
+      },
+      "HEAD": {
+        "ref": "dc919aada7cc750c19383470021878fab5814db5",
+        "ls_tree": "100644 blob 0ee71c80664d5661ed4f7eea5d620d1c24adc461\ttools/v133_recover_M.py",
+        "blob_sha1": "0ee71c80664d5661ed4f7eea5d620d1c24adc461",
+        "blob_bytes": 9533,
+        "blob_sha256": "142052e012a89191bd0d6fa943af06d8ca1fec5d3ae8f09298fb8e9bec997a4c"
+      }
+    },
+    "worktree": {
+      "bytes": 9533,
+      "sha256": "142052e012a89191bd0d6fa943af06d8ca1fec5d3ae8f09298fb8e9bec997a4c",
+      "git_blob": "0ee71c80664d5661ed4f7eea5d620d1c24adc461"
+    }
+  },
+  "all_v133_recover_M_copies_under_results_and_tools": {
+    "count": 9,
+    "by_class": {
+      "base_blob_bytes": 1,
+      "v146_pin_bytes": 8,
+      "neither": 0
+    },
+    "copies": [
+      {
+        "path": "results/v137_r1/source/ACTUALLY_EXECUTED_CODE/v133_recover_M.py",
+        "bytes": 9662,
+        "sha256": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba",
+        "is_base_bytes": false,
+        "is_v146_pin_bytes": true
+      },
+      {
+        "path": "results/v138/source/ACTUALLY_EXECUTED_CODE/v133_recover_M.py",
+        "bytes": 9662,
+        "sha256": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba",
+        "is_base_bytes": false,
+        "is_v146_pin_bytes": true
+      },
+      {
+        "path": "results/v139/source/ACTUALLY_EXECUTED_CODE/v133_recover_M.py",
+        "bytes": 9662,
+        "sha256": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba",
+        "is_base_bytes": false,
+        "is_v146_pin_bytes": true
+      },
+      {
+        "path": "results/v140/source/ACTUALLY_EXECUTED_CODE/v133_recover_M.py",
+        "bytes": 9662,
+        "sha256": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba",
+        "is_base_bytes": false,
+        "is_v146_pin_bytes": true
+      },
+      {
+        "path": "results/v141/source/ACTUALLY_EXECUTED_CODE/v133_recover_M.py",
+        "bytes": 9662,
+        "sha256": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba",
+        "is_base_bytes": false,
+        "is_v146_pin_bytes": true
+      },
+      {
+        "path": "results/v142/source/ACTUALLY_EXECUTED_CODE/v133_recover_M.py",
+        "bytes": 9662,
+        "sha256": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba",
+        "is_base_bytes": false,
+        "is_v146_pin_bytes": true
+      },
+      {
+        "path": "results/v145/source/ACTUALLY_EXECUTED_CODE/v133_recover_M.py",
+        "bytes": 9662,
+        "sha256": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba",
+        "is_base_bytes": false,
+        "is_v146_pin_bytes": true
+      },
+      {
+        "path": "results/v146/source/ACTUALLY_EXECUTED_CODE/v133_recover_M.py",
+        "bytes": 9662,
+        "sha256": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba",
+        "is_base_bytes": false,
+        "is_v146_pin_bytes": true
+      },
+      {
+        "path": "tools/v133_recover_M.py",
+        "bytes": 9533,
+        "sha256": "142052e012a89191bd0d6fa943af06d8ca1fec5d3ae8f09298fb8e9bec997a4c",
+        "is_base_bytes": true,
+        "is_v146_pin_bytes": false
+      }
+    ]
+  },
+  "preflight_receipt_crosscheck": {
+    "preflight_sha256": "90330deb3b1808af9fa25e21d55f1994764be014c9bc891b78a4033b09deb8e6",
+    "execution_code_commit": "dc919aada7cc750c19383470021878fab5814db5",
+    "driver_sha256": "b7893be69b0a44341164a345ee90e5f5987ae9e9e55b9be8ce81c4da408f9198",
+    "n_model_calls": 0,
+    "scope": "SAVED_ARRAY_AND_SOURCE_CHECKS_NOT_NEW_OPTICAL_REPLAY",
+    "source_lock_files": 360,
+    "source_lock_entry_for_disputed_path": {
+      "bytes": 9533,
+      "git_blob": "0ee71c80664d5661ed4f7eea5d620d1c24adc461",
+      "sha256": "142052e012a89191bd0d6fa943af06d8ca1fec5d3ae8f09298fb8e9bec997a4c"
+    },
+    "entry_equal_to_worktree_identity": true,
+    "entry_equal_to_v146_pin": false
+  },
+  "design_outputs": {
+    "path": "design/saved_array_designs.json",
+    "sha256": "4c91766adab0952acabde8c90daebfa15e83ebf94e0a670bc0c7a23c45dfc1e5",
+    "group_count": 12,
+    "sum_design_count": 204,
+    "sum_evaluation_count": 1224,
+    "groups": {
+      "100000_ANON_01": {
+        "design_count": 17,
+        "evaluation_count": 102,
+        "reportable_D": null,
+        "global_uniqueness_certified": false,
+        "experimental_absolute_diameter_validated": false
+      },
+      "100000_ANON_02": {
+        "design_count": 17,
+        "evaluation_count": 102,
+        "reportable_D": null,
+        "global_uniqueness_certified": false,
+        "experimental_absolute_diameter_validated": false
+      },
+      "100000_ANON_03": {
+        "design_count": 17,
+        "evaluation_count": 102,
+        "reportable_D": null,
+        "global_uniqueness_certified": false,
+        "experimental_absolute_diameter_validated": false
+      },
+      "100000_ANON_04": {
+        "design_count": 17,
+        "evaluation_count": 102,
+        "reportable_D": null,
+        "global_uniqueness_certified": false,
+        "experimental_absolute_diameter_validated": false
+      },
+      "10000_ANON_01": {
+        "design_count": 17,
+        "evaluation_count": 102,
+        "reportable_D": null,
+        "global_uniqueness_certified": false,
+        "experimental_absolute_diameter_validated": false
+      },
+      "10000_ANON_02": {
+        "design_count": 17,
+        "evaluation_count": 102,
+        "reportable_D": null,
+        "global_uniqueness_certified": false,
+        "experimental_absolute_diameter_validated": false
+      },
+      "10000_ANON_03": {
+        "design_count": 17,
+        "evaluation_count": 102,
+        "reportable_D": null,
+        "global_uniqueness_certified": false,
+        "experimental_absolute_diameter_validated": false
+      },
+      "10000_ANON_04": {
+        "design_count": 17,
+        "evaluation_count": 102,
+        "reportable_D": null,
+        "global_uniqueness_certified": false,
+        "experimental_absolute_diameter_validated": false
+      },
+      "1000_ANON_01": {
+        "design_count": 17,
+        "evaluation_count": 102,
+        "reportable_D": null,
+        "global_uniqueness_certified": false,
+        "experimental_absolute_diameter_validated": false
+      },
+      "1000_ANON_02": {
+        "design_count": 17,
+        "evaluation_count": 102,
+        "reportable_D": null,
+        "global_uniqueness_certified": false,
+        "experimental_absolute_diameter_validated": false
+      },
+      "1000_ANON_03": {
+        "design_count": 17,
+        "evaluation_count": 102,
+        "reportable_D": null,
+        "global_uniqueness_certified": false,
+        "experimental_absolute_diameter_validated": false
+      },
+      "1000_ANON_04": {
+        "design_count": 17,
+        "evaluation_count": 102,
+        "reportable_D": null,
+        "global_uniqueness_certified": false,
+        "experimental_absolute_diameter_validated": false
+      }
+    },
+    "note": "Produced by the preflight stage from saved V156 arrays with n_model_calls=0; design definitions only, not new optical computation."
+  },
+  "workstation_test_receipt_reverification": {
+    "via": "v162_deployment.verify_test_receipt (official bundle verifier)",
+    "result": "PASS",
+    "scope": "COMPONENT_AND_SYNTHETIC_MODEL_TESTS_NOT_PHYSICAL_VALIDATION",
+    "returncode": 0,
+    "bundle_root": "C:\\iscat\\v162\\tools\\v162_bundle",
+    "command_tail": [
+      "-m",
+      "pytest",
+      "-q",
+      "-p",
+      "v162_receipt_plugin",
+      "tests"
+    ],
+    "inventory_nodeids": 222,
+    "outcomes_collected": 222,
+    "outcomes_exitstatus": 0,
+    "report_records": 666,
+    "receipt_sha256": "70482bfe4cc0d4acde0b3b7acd364d6d02a553043e59f3aaa243df71160e541d",
+    "outcomes_sha256": "c4d658e1a9f139d50c3e5e4499d7c28e2cee73510006467f0b431d2610d08657",
+    "output_sha256": "9aab1c1767b5e75652bdf9a02f8319427f87e0424cdd1d298c178493623d373b"
+  },
+  "workstation_tests_history_files": [
+    "workstation_tests/history/b7c8d8a319504c95932790ac03979b83/pytest_outcomes.json",
+    "workstation_tests/history/b7c8d8a319504c95932790ac03979b83/test_output.txt",
+    "workstation_tests/history/b7c8d8a319504c95932790ac03979b83/test_receipt.json"
+  ],
+  "stage_evidence": {
+    "stage_states": {
+      "9285abb568744494a8fd3784849c229d_stage_states.json": {
+        "tests": "BLOCKED_OR_FAILED",
+        "preflight": "NOT_STARTED",
+        "execute": "NOT_STARTED",
+        "verify": "NOT_STARTED"
+      },
+      "c4c2f402cbbd44d5921b94c37d9ff17c_stage_states.json": {
+        "tests": "FINISHED",
+        "preflight": "FINISHED",
+        "execute": "BLOCKED_OR_FAILED",
+        "verify": "NOT_STARTED"
+      }
+    },
+    "stage_commands": {
+      "9285abb568744494a8fd3784849c229d_stage_commands.json": [
+        {
+          "stage": "tests",
+          "returncode": 2,
+          "command": [
+            "C:\\ProgramData\\anaconda3\\python.exe",
+            "C:\\iscat\\v162\\tools\\v162_bundle\\run_workstation_tests.py",
+            "--out",
+            "C:\\iscat\\v162\\results\\v162\\workstation_tests"
+          ]
+        }
+      ],
+      "c4c2f402cbbd44d5921b94c37d9ff17c_stage_commands.json": [
+        {
+          "stage": "tests",
+          "returncode": 0,
+          "command": [
+            "C:\\ProgramData\\anaconda3\\python.exe",
+            "C:\\iscat\\v162\\tools\\v162_bundle\\run_workstation_tests.py",
+            "--out",
+            "C:\\iscat\\v162\\results\\v162\\workstation_tests"
+          ]
+        },
+        {
+          "stage": "preflight",
+          "returncode": 0,
+          "command": [
+            "C:\\ProgramData\\anaconda3\\python.exe",
+            "C:\\iscat\\v162\\tools\\v162_bundle\\code\\v162_run.py",
+            "--repo",
+            "C:\\iscat\\v162",
+            "--config",
+            "C:\\iscat\\v162\\tools\\v162_bundle\\config\\v162_plan.json",
+            "--out",
+            "C:\\iscat\\v162\\results\\v162",
+            "--mode",
+            "preflight"
+          ]
+        },
+        {
+          "stage": "execute",
+          "returncode": 2,
+          "command": [
+            "C:\\ProgramData\\anaconda3\\python.exe",
+            "C:\\iscat\\v162\\tools\\v162_bundle\\code\\v162_run.py",
+            "--repo",
+            "C:\\iscat\\v162",
+            "--config",
+            "C:\\iscat\\v162\\tools\\v162_bundle\\config\\v162_plan.json",
+            "--out",
+            "C:\\iscat\\v162\\results\\v162",
+            "--mode",
+            "execute"
+          ]
+        }
+      ]
+    }
+  },
+  "stage_console_logs": [
+    {
+      "name": "9285abb568744494a8fd3784849c229d_tests.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    {
+      "name": "9285abb568744494a8fd3784849c229d_tests.stdout",
+      "bytes": 35583,
+      "sha256": "48309bc81817a2514a70f7e6188fb51ac6abfa63016f58f69b83dd8798b52660"
+    },
+    {
+      "name": "c4c2f402cbbd44d5921b94c37d9ff17c_execute.stderr",
+      "bytes": 55,
+      "sha256": "83204f571c5b8e60d46c41c909b7247c1e761d3aa40ba7b2168b2641e1392ddb",
+      "text": "V162_BLOCKED_OR_FAILED__DEPENDENT_COMPUTATION_STOPPED\r\n"
+    },
+    {
+      "name": "c4c2f402cbbd44d5921b94c37d9ff17c_execute.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    {
+      "name": "c4c2f402cbbd44d5921b94c37d9ff17c_preflight.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    {
+      "name": "c4c2f402cbbd44d5921b94c37d9ff17c_preflight.stdout",
+      "bytes": 74,
+      "sha256": "f84928bd2660753d048138ca9208b3c74bfe14593a046ccadb00131ec76f1b47",
+      "text": "V162_STAGE_RETURNED__READ_STATUS_AND_VERIFICATION__NOT_EXPERIMENTAL_PASS\r\n"
+    },
+    {
+      "name": "c4c2f402cbbd44d5921b94c37d9ff17c_tests.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    {
+      "name": "c4c2f402cbbd44d5921b94c37d9ff17c_tests.stdout",
+      "bytes": 411,
+      "sha256": "56ce8511a500aef1148490da35f78696013c948d7113a5906becca121e0ce3fe",
+      "text": "........................................................................ [ 32%]\r\r\n........................................................................ [ 64%]\r\r\n........................................................................ [ 97%]\r\r\n......                                                                   [100%]\r\r\n222 passed in 15.32s\r\r\n\r\n\r\nCOMPLETE_BUNDLE_TESTS_VERIFIED_NOT_REAL_F2C_VALIDATION\r\n"
+    }
+  ],
+  "pack_artifacts_before_final_repack": {
+    "zip": {
+      "path": "iscat_v162_return.zip",
+      "bytes": 392535,
+      "sha256": "c9a508fdbfb1bf0b79ea0a6ec0c5c748a281568d0b57569dbc1d512ca149d828",
+      "members": 74
+    },
+    "manifest_sha256_csv_sha256": "f57bcb2a4e53bfbd0046da4e704fd516cd1444944ab14db634507f3cedea1164",
+    "archive_receipt": {
+      "members": 74,
+      "note": "Receipt is external to ZIP; CRC does not establish scientific acceptance.",
+      "path": "iscat_v162_return.zip",
+      "sha256": "c9a508fdbfb1bf0b79ea0a6ec0c5c748a281568d0b57569dbc1d512ca149d828"
+    },
+    "first_failed_run_pack_zip_sha256": "b9d658b5497c42c6184d37d26bc3c2ab1cc0db8d91694484365c15c28caa5166",
+    "note": "Generated BEFORE the final repack; the final zip identity is recorded in audit/final_zip_mechanical_verification.json (external companion by construction)."
+  },
+  "resume_wrapper_records": {
+    "dir": "deployment_repair_evidence/rerun_1",
+    "files": [
+      "attempt1_run_all.json",
+      "attempt1_run_all.stderr",
+      "attempt1_run_all.stdout",
+      "run_second_stage.py"
+    ],
+    "attempt1_json_present": true,
+    "attempt1_run_all": {
+      "stage": "run_all_resume",
+      "attempt": "attempt1",
+      "command": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "C:\\iscat\\v162\\tools\\v162_bundle\\run_all.py",
+        "--repo",
+        "C:\\iscat\\v162"
+      ],
+      "cwd": "C:\\iscat\\v162",
+      "environment": {
+        "PYTEST_ADDOPTS": "-p no:nose",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONPATH": null
+      },
+      "returncode": 2,
+      "started_utc": "2026-10-26T12:27:01.652754+00:00",
+      "ended_utc": "2026-10-26T12:27:27.100401+00:00",
+      "stdout": "results\\v162\\deployment_repair_evidence\\rerun_1\\attempt1_run_all.stdout",
+      "stderr": "results\\v162\\deployment_repair_evidence\\rerun_1\\attempt1_run_all.stderr",
+      "stdout_bytes": 162,
+      "stderr_bytes": 2,
+      "stdout_sha256": "d8d927eaaa976be1bc4d92f8583b0bbf21b3968d91112c6743247b2b2a5dab5b",
+      "stderr_sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "note": "A returned process is not scientific acceptance. Read results/v162/status.json, verification.json, execution_integrity.json and the per-stage logs."
+    }
+  },
+  "verdict": {
+    "actual_model_forward_attempts_total": 0,
+    "charged_or_unknown_attempts": 0,
+    "software_tests": "222/222 PASS via official receipt verifier",
+    "preflight_stage": "FINISHED",
+    "execute_stage": "BLOCKED_OR_FAILED",
+    "verify_stage": "NOT_STARTED",
+    "blocking_cause": "UNSATISFIABLE_FROZEN_SOURCE_PIN:tools/v133_recover_M.py",
+    "contradiction": {
+      "requirement_A": "v162_deployment.verify_locked_inputs requires worktree bytes == BASE git blob bytes for tools/v133_recover_M.py",
+      "requirement_A_file_sha256": "142052e012a89191bd0d6fa943af06d8ca1fec5d3ae8f09298fb8e9bec997a4c",
+      "requirement_B": "v146_runtime.construct_bound requires sha256(file) == config/v146_science_config.json frozen.source_sha256[tools/v133_recover_M.py]",
+      "requirement_B_pin": "4b89adf9354c468e706da9d63e70d545fb8b3ad18da69ec87f6fb87a7e01d4ba",
+      "equal": false,
+      "satisfiable": false,
+      "preflight_passed_with_sha256": "142052e012a89191bd0d6fa943af06d8ca1fec5d3ae8f09298fb8e9bec997a4c"
+    },
+    "dependent_stages_not_started": [
+      "ANCHORS (36 Q replay, 6 E1 regression, 72 start rescoring, 12 candidate selection)",
+      "NONLINEAR_PROBES (3 groups x 24 planned points)",
+      "FINAL_VERIFY / verification.json"
+    ],
+    "design_definitions": "saved_array_designs.json produced by preflight (n_model_calls=0)",
+    "scientific_conclusions": "NOT_EVALUATED",
+    "all_reportable_D_null": true,
+    "experimental_absolute_diameter_validated": false,
+    "global_uniqueness_certified": false
+  }
+}
