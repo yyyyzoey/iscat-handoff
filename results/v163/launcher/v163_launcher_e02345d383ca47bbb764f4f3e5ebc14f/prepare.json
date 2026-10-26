@@ -1,0 +1,17 @@
+{
+  "stage": "prepare",
+  "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "C:\\iscat\\v163_launcher_e02345d383ca47bbb764f4f3e5ebc14f\\package\\prepare_v163.py",
+    "--source-repo",
+    "C:\\iscat\\v162",
+    "--worktree",
+    "C:\\iscat\\v163"
+  ],
+  "cwd": "C:\\iscat\\v163_launcher_e02345d383ca47bbb764f4f3e5ebc14f\\package",
+  "returncode": 0,
+  "started_utc": "2026-10-26T13:48:38.262870+00:00",
+  "ended_utc": "2026-10-26T13:48:49.938472+00:00",
+  "stdout_sha256": "196caf0302d9ed8028f6cd952dafa99c4cb73543f46564c694b40c35d3dde8f3",
+  "stderr_sha256": "f8cd6e0e8030c940ff28f1471561de1f0115e75cdbb1c51d91020de288f9fa24"
+}

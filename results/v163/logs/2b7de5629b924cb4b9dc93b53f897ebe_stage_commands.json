@@ -1,0 +1,68 @@
+[
+  {
+    "stage": "tests",
+    "command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v163\\tools\\v163_bundle\\run_workstation_tests.py",
+      "--out",
+      "C:\\iscat\\v163\\results\\v163\\workstation_tests"
+    ],
+    "returncode": 0,
+    "stdout": "2b7de5629b924cb4b9dc93b53f897ebe_tests.stdout",
+    "stderr": "2b7de5629b924cb4b9dc93b53f897ebe_tests.stderr"
+  },
+  {
+    "stage": "preflight",
+    "command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v163\\tools\\v163_bundle\\code\\v163_run.py",
+      "--repo",
+      "C:\\iscat\\v163",
+      "--config",
+      "C:\\iscat\\v163\\tools\\v163_bundle\\config\\v163_plan.json",
+      "--out",
+      "C:\\iscat\\v163\\results\\v163",
+      "--mode",
+      "preflight"
+    ],
+    "returncode": 0,
+    "stdout": "2b7de5629b924cb4b9dc93b53f897ebe_preflight.stdout",
+    "stderr": "2b7de5629b924cb4b9dc93b53f897ebe_preflight.stderr"
+  },
+  {
+    "stage": "execute",
+    "command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v163\\tools\\v163_bundle\\code\\v163_run.py",
+      "--repo",
+      "C:\\iscat\\v163",
+      "--config",
+      "C:\\iscat\\v163\\tools\\v163_bundle\\config\\v163_plan.json",
+      "--out",
+      "C:\\iscat\\v163\\results\\v163",
+      "--mode",
+      "execute"
+    ],
+    "returncode": 0,
+    "stdout": "2b7de5629b924cb4b9dc93b53f897ebe_execute.stdout",
+    "stderr": "2b7de5629b924cb4b9dc93b53f897ebe_execute.stderr"
+  },
+  {
+    "stage": "verify",
+    "command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v163\\tools\\v163_bundle\\code\\v163_run.py",
+      "--repo",
+      "C:\\iscat\\v163",
+      "--config",
+      "C:\\iscat\\v163\\tools\\v163_bundle\\config\\v163_plan.json",
+      "--out",
+      "C:\\iscat\\v163\\results\\v163",
+      "--mode",
+      "verify"
+    ],
+    "returncode": 0,
+    "stdout": "2b7de5629b924cb4b9dc93b53f897ebe_verify.stdout",
+    "stderr": "2b7de5629b924cb4b9dc93b53f897ebe_verify.stderr"
+  }
+]

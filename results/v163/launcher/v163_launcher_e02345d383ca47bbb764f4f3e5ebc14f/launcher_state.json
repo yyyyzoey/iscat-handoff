@@ -1,0 +1,60 @@
+{
+  "task": "V163",
+  "started_utc": "2026-10-26T13:48:37.742964+00:00",
+  "package": {
+    "payload_sha256": "e775abdfc39ad5cc0975a108072d784b9bee91ad6542f33896a818b65bd92bfc",
+    "members": 64,
+    "manifest_rows": 63,
+    "inventory_count": 247,
+    "scope": "PACKAGE_BYTES_ONLY_NOT_TEST_OR_SCIENCE_ACCEPTANCE"
+  },
+  "launcher_sha256": "84d20bbab88145626c534d8926cac1e3293824516268d36cfcc32aca2ff4ee4d",
+  "reviewed_parent": "dc919aada7cc750c19383470021878fab5814db5",
+  "scientific_acceptance": false,
+  "experimental_absolute_diameter_validated": false,
+  "environment": {
+    "python": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]",
+    "executable": "C:\\ProgramData\\anaconda3\\python.exe",
+    "reviewed_parent": "dc919aada7cc750c19383470021878fab5814db5",
+    "source_repo": "C:\\iscat\\v162",
+    "new_worktree": "C:\\iscat\\v163"
+  },
+  "state": "PIPELINE_RETURNED_READ_VERIFICATION",
+  "command_receipts": [
+    {
+      "stage": "prepare",
+      "command": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "C:\\iscat\\v163_launcher_e02345d383ca47bbb764f4f3e5ebc14f\\package\\prepare_v163.py",
+        "--source-repo",
+        "C:\\iscat\\v162",
+        "--worktree",
+        "C:\\iscat\\v163"
+      ],
+      "cwd": "C:\\iscat\\v163_launcher_e02345d383ca47bbb764f4f3e5ebc14f\\package",
+      "returncode": 0,
+      "started_utc": "2026-10-26T13:48:38.262870+00:00",
+      "ended_utc": "2026-10-26T13:48:49.938472+00:00",
+      "stdout_sha256": "196caf0302d9ed8028f6cd952dafa99c4cb73543f46564c694b40c35d3dde8f3",
+      "stderr_sha256": "f8cd6e0e8030c940ff28f1471561de1f0115e75cdbb1c51d91020de288f9fa24"
+    },
+    {
+      "stage": "run_all",
+      "command": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "C:\\iscat\\v163\\tools\\v163_bundle\\run_all.py",
+        "--repo",
+        "C:\\iscat\\v163"
+      ],
+      "cwd": "C:\\iscat\\v163",
+      "returncode": 0,
+      "started_utc": "2026-10-26T13:48:49.940472+00:00",
+      "ended_utc": "2026-10-26T13:49:30.188061+00:00",
+      "stdout_sha256": "7caac269e24c35a935c7b411e3ca7076d69db288c81320a8f3d48d34692af8eb",
+      "stderr_sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    }
+  ],
+  "returncode": 0,
+  "resource_statement": "Model counts must be read from the persistent ledger; no zero is inferred from a failed command.",
+  "ended_utc": "2026-10-26T13:49:30.190061+00:00"
+}
