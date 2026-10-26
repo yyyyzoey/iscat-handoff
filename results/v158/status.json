@@ -1,0 +1,17 @@
+{
+  "task": "V148_NOISE_ERROR_ATTRIBUTION_AND_DETECTABLE_SIZING",
+  "stage_states": {
+    "P0_FORENSICS": "COMPLETED",
+    "P1_TESTS": "32/32 PASS",
+    "PREFLIGHT": "BLOCKED: working tree does not match committed state",
+    "EXECUTE": "NOT_RUN (blocked by preflight gate - correct fail-closed behavior)"
+  },
+  "deviations": [
+    {
+      "stage": "preflight",
+      "issue": "working tree modified across multiple rounds",
+      "detail": "Accumulated file modifications from V147-V158 make it impossible to verify all tracked files match committed blobs. This is the correct fail-closed response, not a bug to bypass."
+    }
+  ],
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+}
