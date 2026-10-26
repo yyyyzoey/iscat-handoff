@@ -1,0 +1,62 @@
+{
+  "all_checks_ok": true,
+  "artifact": "iscat_v162_return.zip",
+  "author_receipt_path": "C:\\iscat\\v163\\tools\\v163_bundle\\audit\\v162_portable_check_receipt.json",
+  "author_receipt_sha256": "126dd8a9ab2446b0c4753ec24490c3f12c4b6f8b807af10229bda80a9708dab7",
+  "checks": {
+    "all_phase_reports_passed": true,
+    "collected_nodeids_match_v162_inventory": true,
+    "crc_testzip_none": true,
+    "every_member_matches_manifest": true,
+    "every_rederived_field_equals_receipt": true,
+    "frozen_zip_sha256_equals_receipt_archive_sha256": true,
+    "member_set_equals_manifest_plus_manifest_file": true,
+    "no_collection_errors_and_exitstatus_zero": true,
+    "no_duplicate_members": true,
+    "regenerated_receipt_content_equals_author_copy": true,
+    "sqlite_integrity_ok": true,
+    "task_result_sha_seals_packed_result_file": true,
+    "task_rows_equal_receipt": true,
+    "worktree_copy_byte_identical_to_frozen_blob": true
+  },
+  "facts": {
+    "author_receipt_bytes": 484,
+    "note": "the regenerated receipt differs from the author copy only in JSON indentation/trailing newline; parsed content is identical",
+    "regenerated_receipt_byte_identical_to_author_copy": false,
+    "regenerated_receipt_bytes": 505
+  },
+  "frozen_zip_bytes": 417589,
+  "frozen_zip_path": "C:\\Users\\PC\\AppData\\Local\\Temp\\v163_v162zip_3899cf83\\iscat_v162_return.zip",
+  "frozen_zip_sha256": "47e7a249511c8bd998f48d30418757d00690cec6290ce83b0dee60ec5678a381",
+  "method": "independent raw re-parse of frozen bytes (no bundle/packer imports, no model calls)",
+  "mismatches": [],
+  "note": "The historical receipt was produced by tools/v163_bundle/audit/audit_v162_return.py against the V162 handoff (222-node inventory); this recheck re-derives the same facts from the frozen V162 return bytes in this repository's own history. Mechanical consistency is not scientific acceptance.",
+  "receipt_path": "C:\\iscat\\v163\\results\\v163\\audit\\v162_portable_check_receipt.json",
+  "receipt_sha256": "453bc517df304c55b0ab294e9558f797e6cff8dc4a063e7ac33a583f7feb8f18",
+  "rederived": {
+    "attempts": 0,
+    "design_evaluations": 1224,
+    "groups": 12,
+    "manifest_hash_mismatches": [],
+    "manifest_rows": 84,
+    "members": 85,
+    "sqlite_integrity": "ok",
+    "tasks": [
+      [
+        "LOADER_1",
+        100,
+        0,
+        "FAILED",
+        "2203b29bee9e0561a1156fa07e0393ddc6c08c74d9684ffb6f64d6859474942b"
+      ]
+    ],
+    "test_phase_reports": 666,
+    "tests": 222
+  },
+  "scope": "MECHANICAL_AND_LEDGER_RECONSTRUCTION_ONLY_NOT_SCIENTIFIC_ACCEPTANCE",
+  "v162_handoff_nodeids": 222,
+  "v162_handoff_zip_sha256": "4dc3f129f46110002dd5c56b7186794a20cfddfafc8e5a1d77cad44a902f840b",
+  "verdict": "V162_RECEIPT_INDEPENDENTLY_REDERIVED_FROM_FROZEN_BYTES",
+  "worktree_zip_path": "C:\\iscat\\v162\\results\\v162\\iscat_v162_return.zip",
+  "worktree_zip_sha256": "47e7a249511c8bd998f48d30418757d00690cec6290ce83b0dee60ec5678a381"
+}
