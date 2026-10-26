@@ -1,0 +1,16 @@
+{
+  "task": "V161_DESIGN_AND_NONLINEAR_PROBES",
+  "completed": {
+    "design_comparisons": 204,
+    "probes_executed": 8,
+    "f2c_calls": 8
+  },
+  "not_run": {
+    "e1_regression_6": "already done in V150",
+    "full_36_e1": "not needed (V146 published)"
+  },
+  "reportability": {
+    "all_reportable_D_null": true
+  },
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false
+}

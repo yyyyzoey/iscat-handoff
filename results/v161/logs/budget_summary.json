@@ -1,0 +1,10 @@
+{
+ "f2c_calls": 8,
+ "limit": 120000,
+ "bem": 0,
+ "render": 0,
+ "camera": 0,
+ "design_comparisons": 204,
+ "probes_executed": 8,
+ "probes_planned": 8
+}

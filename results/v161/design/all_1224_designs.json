@@ -1,0 +1,2474 @@
+{
+ "100000_ANON_01": [
+  {
+   "design": "free",
+   "sigma_h": Infinity,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 0
+  },
+  {
+   "design": "exact_height",
+   "sigma_h": 0.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 1.5931453083336007e-05,
+   "compensation": [
+    -3.2558870883005597,
+    -0.003421487154380079,
+    -0.00199329747544852
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "exact_xy",
+   "sigma_h": Infinity,
+   "sigma_xy": 0.0,
+   "total_coefficient": 1.5931453083336007e-05,
+   "compensation": [
+    -3.2558870883005597,
+    -0.003421487154380079,
+    -0.00199329747544852
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_1.0",
+   "sigma_h": 1.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_1.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 1.0,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_2.0",
+   "sigma_h": 2.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_2.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 2.0,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_5.0",
+   "sigma_h": 5.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_5.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 5.0,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_10.0",
+   "sigma_h": 10.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_10.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 10.0,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_20.0",
+   "sigma_h": 20.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_20.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 20.0,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_50.0",
+   "sigma_h": 50.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_50.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 50.0,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_100.0",
+   "sigma_h": 100.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_100.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 100.0,
+   "total_coefficient": 0.022017248547257697,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  }
+ ],
+ "100000_ANON_02": [
+  {
+   "design": "free",
+   "sigma_h": Infinity,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 0
+  },
+  {
+   "design": "exact_height",
+   "sigma_h": 0.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 9.073844982784646e-05,
+   "compensation": [
+    -0.48105245042260847,
+    0.006535180066561743,
+    -0.0037732517824002583
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "exact_xy",
+   "sigma_h": Infinity,
+   "sigma_xy": 0.0,
+   "total_coefficient": 9.073844982784646e-05,
+   "compensation": [
+    -0.48105245042260847,
+    0.006535180066561743,
+    -0.0037732517824002583
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_1.0",
+   "sigma_h": 1.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_1.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 1.0,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_2.0",
+   "sigma_h": 2.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_2.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 2.0,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_5.0",
+   "sigma_h": 5.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_5.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 5.0,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_10.0",
+   "sigma_h": 10.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_10.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 10.0,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_20.0",
+   "sigma_h": 20.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_20.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 20.0,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_50.0",
+   "sigma_h": 50.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_50.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 50.0,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_100.0",
+   "sigma_h": 100.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_100.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 100.0,
+   "total_coefficient": 0.20715307676140854,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  }
+ ],
+ "100000_ANON_03": [
+  {
+   "design": "free",
+   "sigma_h": Infinity,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 0
+  },
+  {
+   "design": "exact_height",
+   "sigma_h": 0.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.005341643012771454,
+   "compensation": [
+    0.17607751081043152,
+    -0.0073161350710529765,
+    -0.008387953927819982
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "exact_xy",
+   "sigma_h": Infinity,
+   "sigma_xy": 0.0,
+   "total_coefficient": 0.005341643012771454,
+   "compensation": [
+    0.17607751081043152,
+    -0.0073161350710529765,
+    -0.008387953927819982
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_1.0",
+   "sigma_h": 1.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_1.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 1.0,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_2.0",
+   "sigma_h": 2.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_2.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 2.0,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_5.0",
+   "sigma_h": 5.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_5.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 5.0,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_10.0",
+   "sigma_h": 10.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_10.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 10.0,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_20.0",
+   "sigma_h": 20.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_20.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 20.0,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_50.0",
+   "sigma_h": 50.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_50.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 50.0,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_100.0",
+   "sigma_h": 100.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_100.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 100.0,
+   "total_coefficient": 0.06235099523603291,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  }
+ ],
+ "100000_ANON_04": [
+  {
+   "design": "free",
+   "sigma_h": Infinity,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 0
+  },
+  {
+   "design": "exact_height",
+   "sigma_h": 0.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 1.1656978265628247e-05,
+   "compensation": [
+    -0.1653668770958419,
+    -0.0008110201257230711,
+    -0.001278285946189094
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "exact_xy",
+   "sigma_h": Infinity,
+   "sigma_xy": 0.0,
+   "total_coefficient": 1.1656978265628247e-05,
+   "compensation": [
+    -0.1653668770958419,
+    -0.0008110201257230711,
+    -0.001278285946189094
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_1.0",
+   "sigma_h": 1.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_1.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 1.0,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_2.0",
+   "sigma_h": 2.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_2.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 2.0,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_5.0",
+   "sigma_h": 5.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_5.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 5.0,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_10.0",
+   "sigma_h": 10.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_10.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 10.0,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_20.0",
+   "sigma_h": 20.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_20.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 20.0,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_50.0",
+   "sigma_h": 50.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_50.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 50.0,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_100.0",
+   "sigma_h": 100.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_100.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 100.0,
+   "total_coefficient": 0.029912454275614054,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  }
+ ],
+ "10000_ANON_01": [
+  {
+   "design": "free",
+   "sigma_h": Infinity,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 0
+  },
+  {
+   "design": "exact_height",
+   "sigma_h": 0.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 4.211269290217723e-06,
+   "compensation": [
+    -0.0383807168265362,
+    0.01094592556251418,
+    -0.011877636560005188
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "exact_xy",
+   "sigma_h": Infinity,
+   "sigma_xy": 0.0,
+   "total_coefficient": 4.211269290217723e-06,
+   "compensation": [
+    -0.0383807168265362,
+    0.01094592556251418,
+    -0.011877636560005188
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_1.0",
+   "sigma_h": 1.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_1.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 1.0,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_2.0",
+   "sigma_h": 2.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_2.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 2.0,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_5.0",
+   "sigma_h": 5.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_5.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 5.0,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_10.0",
+   "sigma_h": 10.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_10.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 10.0,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_20.0",
+   "sigma_h": 20.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_20.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 20.0,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_50.0",
+   "sigma_h": 50.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_50.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 50.0,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_100.0",
+   "sigma_h": 100.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_100.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 100.0,
+   "total_coefficient": 0.0007626266733843858,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  }
+ ],
+ "10000_ANON_02": [
+  {
+   "design": "free",
+   "sigma_h": Infinity,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 0
+  },
+  {
+   "design": "exact_height",
+   "sigma_h": 0.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.0006004190161612956,
+   "compensation": [
+    0.2295631262480214,
+    0.006153283455968561,
+    -0.008135539878119623
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "exact_xy",
+   "sigma_h": Infinity,
+   "sigma_xy": 0.0,
+   "total_coefficient": 0.0006004190161612956,
+   "compensation": [
+    0.2295631262480214,
+    0.006153283455968561,
+    -0.008135539878119623
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_1.0",
+   "sigma_h": 1.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_1.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 1.0,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_2.0",
+   "sigma_h": 2.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_2.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 2.0,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_5.0",
+   "sigma_h": 5.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_5.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 5.0,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_10.0",
+   "sigma_h": 10.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_10.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 10.0,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_20.0",
+   "sigma_h": 20.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_20.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 20.0,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_50.0",
+   "sigma_h": 50.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_50.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 50.0,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_100.0",
+   "sigma_h": 100.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_100.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 100.0,
+   "total_coefficient": 0.010303988609650618,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  }
+ ],
+ "10000_ANON_03": [
+  {
+   "design": "free",
+   "sigma_h": Infinity,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 0
+  },
+  {
+   "design": "exact_height",
+   "sigma_h": 0.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.0004990004358520504,
+   "compensation": [
+    0.2710254921582575,
+    -0.005517311732272322,
+    -0.0091709310385507
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "exact_xy",
+   "sigma_h": Infinity,
+   "sigma_xy": 0.0,
+   "total_coefficient": 0.0004990004358520504,
+   "compensation": [
+    0.2710254921582575,
+    -0.005517311732272322,
+    -0.0091709310385507
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_1.0",
+   "sigma_h": 1.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_1.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 1.0,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_2.0",
+   "sigma_h": 2.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_2.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 2.0,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_5.0",
+   "sigma_h": 5.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_5.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 5.0,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_10.0",
+   "sigma_h": 10.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_10.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 10.0,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_20.0",
+   "sigma_h": 20.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_20.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 20.0,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_50.0",
+   "sigma_h": 50.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_50.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 50.0,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_100.0",
+   "sigma_h": 100.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_100.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 100.0,
+   "total_coefficient": 0.008318070930751017,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  }
+ ],
+ "10000_ANON_04": [
+  {
+   "design": "free",
+   "sigma_h": Infinity,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 0
+  },
+  {
+   "design": "exact_height",
+   "sigma_h": 0.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 1.6607928321933794e-06,
+   "compensation": [
+    -0.1591971835130365,
+    -0.0007605390656215309,
+    -0.0011041065857565816
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "exact_xy",
+   "sigma_h": Infinity,
+   "sigma_xy": 0.0,
+   "total_coefficient": 1.6607928321933794e-06,
+   "compensation": [
+    -0.1591971835130365,
+    -0.0007605390656215309,
+    -0.0011041065857565816
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_1.0",
+   "sigma_h": 1.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_1.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 1.0,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_2.0",
+   "sigma_h": 2.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_2.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 2.0,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_5.0",
+   "sigma_h": 5.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_5.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 5.0,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_10.0",
+   "sigma_h": 10.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_10.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 10.0,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_20.0",
+   "sigma_h": 20.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_20.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 20.0,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_50.0",
+   "sigma_h": 50.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_50.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 50.0,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_100.0",
+   "sigma_h": 100.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_100.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 100.0,
+   "total_coefficient": 0.00257142881737115,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  }
+ ],
+ "1000_ANON_01": [
+  {
+   "design": "free",
+   "sigma_h": Infinity,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 0
+  },
+  {
+   "design": "exact_height",
+   "sigma_h": 0.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 8.204471860047676e-06,
+   "compensation": [
+    -0.055490526532697856,
+    -0.001043309208769621,
+    0.0011506892077002074
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "exact_xy",
+   "sigma_h": Infinity,
+   "sigma_xy": 0.0,
+   "total_coefficient": 8.204471860047676e-06,
+   "compensation": [
+    -0.055490526532697856,
+    -0.001043309208769621,
+    0.0011506892077002074
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_1.0",
+   "sigma_h": 1.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_1.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 1.0,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_2.0",
+   "sigma_h": 2.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_2.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 2.0,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_5.0",
+   "sigma_h": 5.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_5.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 5.0,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_10.0",
+   "sigma_h": 10.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_10.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 10.0,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_20.0",
+   "sigma_h": 20.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_20.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 20.0,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_50.0",
+   "sigma_h": 50.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_50.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 50.0,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_100.0",
+   "sigma_h": 100.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_100.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 100.0,
+   "total_coefficient": 0.00013309145128524396,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  }
+ ],
+ "1000_ANON_02": [
+  {
+   "design": "free",
+   "sigma_h": Infinity,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 0
+  },
+  {
+   "design": "exact_height",
+   "sigma_h": 0.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 5.135865422344545e-06,
+   "compensation": [
+    -0.050165839025743494,
+    0.0006050441183036179,
+    -0.0009252845491899801
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "exact_xy",
+   "sigma_h": Infinity,
+   "sigma_xy": 0.0,
+   "total_coefficient": 5.135865422344545e-06,
+   "compensation": [
+    -0.050165839025743494,
+    0.0006050441183036179,
+    -0.0009252845491899801
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_1.0",
+   "sigma_h": 1.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_1.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 1.0,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_2.0",
+   "sigma_h": 2.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_2.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 2.0,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_5.0",
+   "sigma_h": 5.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_5.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 5.0,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_10.0",
+   "sigma_h": 10.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_10.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 10.0,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_20.0",
+   "sigma_h": 20.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_20.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 20.0,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_50.0",
+   "sigma_h": 50.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_50.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 50.0,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_100.0",
+   "sigma_h": 100.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_100.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 100.0,
+   "total_coefficient": 0.00011869817129439874,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  }
+ ],
+ "1000_ANON_03": [
+  {
+   "design": "free",
+   "sigma_h": Infinity,
+   "sigma_xy": Infinity,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 0
+  },
+  {
+   "design": "exact_height",
+   "sigma_h": 0.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 2.6059138864095094e-05,
+   "compensation": [
+    0.03725427052980225,
+    -0.007604803710798873,
+    -0.0023608003751809546
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "exact_xy",
+   "sigma_h": Infinity,
+   "sigma_xy": 0.0,
+   "total_coefficient": 2.6059138864095094e-05,
+   "compensation": [
+    0.03725427052980225,
+    -0.007604803710798873,
+    -0.0023608003751809546
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_1.0",
+   "sigma_h": 1.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_1.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 1.0,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_2.0",
+   "sigma_h": 2.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_2.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 2.0,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_5.0",
+   "sigma_h": 5.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_5.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 5.0,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_10.0",
+   "sigma_h": 10.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_10.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 10.0,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_20.0",
+   "sigma_h": 20.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_20.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 20.0,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_50.0",
+   "sigma_h": 50.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_50.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 50.0,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_100.0",
+   "sigma_h": 100.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_100.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 100.0,
+   "total_coefficient": 8.422388009415986e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  }
+ ],
+ "1000_ANON_04": [
+  {
+   "design": "free",
+   "sigma_h": Infinity,
+   "sigma_xy": Infinity,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 0
+  },
+  {
+   "design": "exact_height",
+   "sigma_h": 0.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 5.278992400462879e-05,
+   "compensation": [
+    0.013166798312532877,
+    0.00253704401757536,
+    0.00020422389024875895
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "exact_xy",
+   "sigma_h": Infinity,
+   "sigma_xy": 0.0,
+   "total_coefficient": 5.278992400462879e-05,
+   "compensation": [
+    0.013166798312532877,
+    0.00253704401757536,
+    0.00020422389024875895
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_1.0",
+   "sigma_h": 1.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_1.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 1.0,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_2.0",
+   "sigma_h": 2.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_2.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 2.0,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_5.0",
+   "sigma_h": 5.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_5.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 5.0,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_10.0",
+   "sigma_h": 10.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_10.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 10.0,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_20.0",
+   "sigma_h": 20.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_20.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 20.0,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_50.0",
+   "sigma_h": 50.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_50.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 50.0,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "height_100.0",
+   "sigma_h": 100.0,
+   "sigma_xy": Infinity,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  },
+  {
+   "design": "xy_100.0",
+   "sigma_h": Infinity,
+   "sigma_xy": 100.0,
+   "total_coefficient": 5.381044549623237e-05,
+   "compensation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "nuisance_rank": 3
+  }
+ ]
+}
