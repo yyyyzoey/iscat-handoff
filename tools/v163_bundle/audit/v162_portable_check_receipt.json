@@ -1,0 +1,21 @@
+{
+  "archive_sha256": "47e7a249511c8bd998f48d30418757d00690cec6290ce83b0dee60ec5678a381",
+  "members": 85,
+  "manifest_rows": 84,
+  "tests": 222,
+  "test_phase_reports": 666,
+  "sqlite_integrity": "ok",
+  "tasks": [
+    [
+      "LOADER_1",
+      100,
+      0,
+      "FAILED",
+      "2203b29bee9e0561a1156fa07e0393ddc6c08c74d9684ffb6f64d6859474942b"
+    ]
+  ],
+  "attempts": 0,
+  "groups": 12,
+  "design_evaluations": 1224,
+  "scope": "READONLY_RETURN_FILE_CHECKS_NO_OPTICAL_REPLAY"
+}

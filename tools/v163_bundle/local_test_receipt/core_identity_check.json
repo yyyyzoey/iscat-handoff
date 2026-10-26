@@ -1,0 +1,12 @@
+{
+  "scope": "SEVEN_FROZEN_CORE_BYTE_IDENTITIES_NOT_PHYSICAL_VALIDATION",
+  "checks": {
+    "v152_budget_store.py": true,
+    "v152_gls_core.py": true,
+    "v155_pixel_diagnostics.py": true,
+    "v155_stage.py": true,
+    "v156_candidate_guard.py": true,
+    "v157_height_design.py": true,
+    "audit_v156_readonly.py": true
+  }
+}
