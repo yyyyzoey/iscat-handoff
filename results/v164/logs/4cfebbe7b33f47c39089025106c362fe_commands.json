@@ -1,0 +1,56 @@
+[
+  {
+    "stage": "tests",
+    "command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v164\\tools\\v164_bundle\\run_workstation_tests.py",
+      "--out",
+      "C:\\iscat\\v164\\results\\v164\\workstation_tests"
+    ],
+    "returncode": 0,
+    "stdout": "4cfebbe7b33f47c39089025106c362fe_tests.stdout",
+    "stderr": "4cfebbe7b33f47c39089025106c362fe_tests.stderr"
+  },
+  {
+    "stage": "preflight",
+    "command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v164\\tools\\v164_bundle\\code\\v164_run.py",
+      "--repo",
+      "C:\\iscat\\v164",
+      "--mode",
+      "preflight"
+    ],
+    "returncode": 0,
+    "stdout": "4cfebbe7b33f47c39089025106c362fe_preflight.stdout",
+    "stderr": "4cfebbe7b33f47c39089025106c362fe_preflight.stderr"
+  },
+  {
+    "stage": "execute",
+    "command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v164\\tools\\v164_bundle\\code\\v164_run.py",
+      "--repo",
+      "C:\\iscat\\v164",
+      "--mode",
+      "execute"
+    ],
+    "returncode": 0,
+    "stdout": "4cfebbe7b33f47c39089025106c362fe_execute.stdout",
+    "stderr": "4cfebbe7b33f47c39089025106c362fe_execute.stderr"
+  },
+  {
+    "stage": "verify",
+    "command": [
+      "C:\\ProgramData\\anaconda3\\python.exe",
+      "C:\\iscat\\v164\\tools\\v164_bundle\\code\\v164_run.py",
+      "--repo",
+      "C:\\iscat\\v164",
+      "--mode",
+      "verify"
+    ],
+    "returncode": 0,
+    "stdout": "4cfebbe7b33f47c39089025106c362fe_verify.stdout",
+    "stderr": "4cfebbe7b33f47c39089025106c362fe_verify.stderr"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "package": {
+    "payload_sha256": "4fe942aa686525eaeaf47001276eb7a46d141526ce6d4058e487cbff56cc57dc",
+    "members": 32,
+    "manifest_rows": 31,
+    "bytes": 60121
+  },
+  "stages": [
+    {
+      "stage": "prepare",
+      "command": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "C:\\Users\\PC\\AppData\\Local\\Temp\\iscat_v164_verified_j7uzlo0z\\bundle\\prepare_v164.py",
+        "--source-repo",
+        "C:\\iscat\\v163",
+        "--worktree",
+        "C:\\iscat\\v164"
+      ],
+      "returncode": 0
+    },
+    {
+      "stage": "run_all",
+      "command": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "C:\\iscat\\v164\\tools\\v164_bundle\\run_all.py",
+        "--repo",
+        "C:\\iscat\\v164"
+      ],
+      "returncode": 0
+    }
+  ],
+  "scope": "EXECUTION_COMMANDS_NOT_SCIENTIFIC_CERTIFICATION"
+}

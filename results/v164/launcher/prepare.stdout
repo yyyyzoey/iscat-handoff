@@ -1,0 +1,36 @@
+HEAD is now at 06c5441 V163 results addendum: V162 external mechanical receipt (re-run + independent re-derivation), regenerate pack, independent recheck of the final return archive
+[v164 d802b9e] V164: bounded fixed-D conditional model-separation experiment
+ 32 files changed, 3295 insertions(+)
+ create mode 100644 "tools/v164_bundle/00_V164_Codex_\345\224\257\344\270\200\346\211\247\350\241\214\345\220\210\345\220\214.md"
+ create mode 100644 tools/v164_bundle/README.md
+ create mode 100644 tools/v164_bundle/audit/LOCAL_TEST_HISTORY.md
+ create mode 100644 tools/v164_bundle/audit/PRIMARY_METHOD_REFERENCE.md
+ create mode 100644 tools/v164_bundle/audit/V163_REVIEW_SCOPE.md
+ create mode 100644 tools/v164_bundle/audit/V164_CHANGELOG.md
+ create mode 100644 tools/v164_bundle/audit/local_pytest_outcomes.json
+ create mode 100644 tools/v164_bundle/audit/local_test_output.txt
+ create mode 100644 tools/v164_bundle/audit/local_test_receipt.json
+ create mode 100644 tools/v164_bundle/audit/preserved_core_identities.json
+ create mode 100644 tools/v164_bundle/audit/v163_selected_recalculation.json
+ create mode 100644 tools/v164_bundle/code/v152_budget_store.py
+ create mode 100644 tools/v164_bundle/code/v152_gls_core.py
+ create mode 100644 tools/v164_bundle/code/v157_height_design.py
+ create mode 100644 tools/v164_bundle/code/v164_io.py
+ create mode 100644 tools/v164_bundle/code/v164_profile_core.py
+ create mode 100644 tools/v164_bundle/code/v164_receipt_plugin.py
+ create mode 100644 tools/v164_bundle/code/v164_receipts.py
+ create mode 100644 tools/v164_bundle/code/v164_report_pack.py
+ create mode 100644 tools/v164_bundle/code/v164_run.py
+ create mode 100644 tools/v164_bundle/config/v164_plan.json
+ create mode 100644 tools/v164_bundle/launcher_main_template.py
+ create mode 100644 tools/v164_bundle/manifest_sha256.csv
+ create mode 100644 tools/v164_bundle/prepare_v164.py
+ create mode 100644 tools/v164_bundle/run_all.py
+ create mode 100644 tools/v164_bundle/run_workstation_tests.py
+ create mode 100644 tools/v164_bundle/test_inventory.json
+ create mode 100644 tools/v164_bundle/tests/test_v164_io.py
+ create mode 100644 tools/v164_bundle/tests/test_v164_launcher.py
+ create mode 100644 tools/v164_bundle/tests/test_v164_profile.py
+ create mode 100644 tools/v164_bundle/tests/test_v164_receipts.py
+ create mode 100644 tools/v164_bundle/tests/test_v164_workflow.py
+PREPARED C:\iscat\v164
