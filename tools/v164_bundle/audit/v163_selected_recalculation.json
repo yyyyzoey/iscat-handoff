@@ -1,0 +1,14 @@
+{
+  "scope": "SELECTED_PUBLISHED_VALUES_RECALCULATED_NOT_FULL_V163_ZIP_OR_SQLITE_REAUDIT",
+  "commit": "06c54419c590b6ddadc50cd6117a7a54b2cf5ddf",
+  "group": "100000_ANON_02",
+  "delta_D_nm": 5.0,
+  "free_distance": 0.07051630399001119,
+  "height10_total": 0.11287106245292952,
+  "exact_height_distance": 5.221684977451426,
+  "local_height10_coefficient_ratio": 26.221259473469644,
+  "straight_finite_height10_ratio": 1.6006378109226767,
+  "straight_finite_exact_height_ratio": 74.04932876503413,
+  "white_norm_free": 0.2655490613615706,
+  "Q_identity_abs": 6.658562590189376e-14
+}

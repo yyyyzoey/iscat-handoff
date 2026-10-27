@@ -1,0 +1,37 @@
+{
+  "schema": "iscat164.fixed_D_conditional_design.1",
+  "parent": "06c54419c590b6ddadc50cd6117a7a54b2cf5ddf",
+  "total": 10000,
+  "phases": {
+    "MODEL_BINDING": 160,
+    "FIXED_D_DESIGN": 9600,
+    "FINAL_VERIFY": 240
+  },
+  "groups": [
+    "100000_ANON_02",
+    "100000_ANON_03",
+    "100000_ANON_04"
+  ],
+  "designs": [
+    "free_hxy",
+    "height_sigma10",
+    "height_sigma1",
+    "exact_height"
+  ],
+  "delta_D_nm": [
+    -5.0,
+    5.0
+  ],
+  "fits": 24,
+  "starts": 2,
+  "per_start_cap": 200,
+  "task_cap": 400,
+  "authorization": "ONLY_ON_EXPLICIT_USER_CODEX_EXECUTION",
+  "new_BEM": 0,
+  "new_render": 0,
+  "new_camera": 0,
+  "new_noise": 0,
+  "new_four_parameter_fits": 0,
+  "new_Jacobian": 0,
+  "all_reportable_D_null": true
+}

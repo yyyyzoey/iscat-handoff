@@ -1,0 +1,17 @@
+{
+  "v152_budget_store.py": {
+    "sha256": "83e6c764cdca7fd8a053f78538ab7e2daf2d312903ce0e90fbfc181f071af8e0",
+    "bytes": 8141,
+    "unchanged_from_v163_handoff": true
+  },
+  "v152_gls_core.py": {
+    "sha256": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+    "bytes": 6917,
+    "unchanged_from_v163_handoff": true
+  },
+  "v157_height_design.py": {
+    "sha256": "65e421fb78a515eed7db7a877201005b18ab6022ff4774f9804d882eb1ef1365",
+    "bytes": 8584,
+    "unchanged_from_v163_handoff": true
+  }
+}
