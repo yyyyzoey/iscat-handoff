@@ -1,5 +1,36 @@
 {
-  "generated_utc": "2026-10-28T10:28:29.080588Z",
+  "addendum": {
+    "added_utc": "2026-10-28T10:43:13.301338+00:00",
+    "commit_tree_manifest_head": "af2078b2a2d545b8455b48d814faa12017e5e8ac",
+    "current_sha256": "c3e5ed24451ed7e35257aba8a72812f82dc65358d5cdb12316e8388350dcc528",
+    "diff_method": "difflib.unified_diff(n=3) over files read with newline=\"\" (line endings preserved), written with newline=\"\" (LF). The five earlier diffs were written by the original P5f generator with slightly different line-ending handling; byte-identical reproduction of those files is not attempted. Every entry records both the snapshot and the current SHA-256, so each change is verifiable independently of diff formatting.",
+    "head_at_addendum_generation": "fffe580f4fd8e3bd224dc9bcadf478679ce3fdfc",
+    "reason": "the P0 snapshot comparison reports 6 MODIFIED files but only 5 repair diffs were archived; the sixth is the P1 change to the workstation test runner (real-F2c tripwire must be absent at start, real_F2c_calls recorded in the receipt). It is a harness, not a test module; no test file under tools/v165_bundle/tests/ was modified.",
+    "repair_index_sha256": "c28855bee28d41b02dabc143311f3eab0822ec7231119b79bff048a441d9adea",
+    "repaired_diff_path": "results/v166/p5_report/repair_diffs/run_workstation_tests.py.diff",
+    "repaired_diff_sha256": "eb5012d6570f950b669a0392244c1b5b372f27ab197623c77e7b6a9c3ad4f719",
+    "scope_note": "only results/v166 evidence changed; no executed code, plan, model, reading, estimate, seal, ledger or scoring file was touched by this addendum",
+    "snapshot_sha256": "2683144ca2f240ac5ed4492371520429daea4c88cbe2c129a3ee5549fe68b029",
+    "superseded_artifacts": {
+      "manifest_index.json": {
+        "bytes_before": 1806,
+        "sha256_before": "b20ffef41a6283265aef0ef95c195a293eae92c4ea2a2bacd9afa068e5901c4a",
+        "superseded_path": "manifest_index_r1_superseded.json"
+      },
+      "result_manifest_sha256.csv": {
+        "bytes_before": 1357423,
+        "sha256_before": "e2058ec59e52a14ff5929782e4299a6b733457798c53aea334cde1f337ce8965",
+        "superseded_path": "result_manifest_sha256_r1_superseded.csv"
+      },
+      "result_manifest_sha256.csv.aggregate.sha256": {
+        "bytes_before": 66,
+        "sha256_before": "4824305cc9a9d0178c79b1980f75ca297d0cf7cb37a53297ffd5abd253d7cb0c",
+        "superseded_path": "result_manifest_sha256.csv.aggregate_r1_superseded.sha256"
+      }
+    },
+    "superseded_reason": "the prior P5f versions of the results manifest and manifest index are kept in this same directory under an _r1_superseded name; nothing was deleted or overwritten in place"
+  },
+  "generated_utc": "2026-10-28T10:44:41.184080+00:00",
   "head": "af2078b2a2d545b8455b48d814faa12017e5e8ac",
   "manifests": {
     "code_all_tracked": {
@@ -21,10 +52,10 @@
       "rows": 4937
     },
     "results_full": {
-      "aggregate_sha256": "978f240377469649fcf1e765bf99f576ef9a56a7636648efb25348d5e833ae7f",
-      "manifest_bytes": 1357423,
-      "manifest_sha256": "e2058ec59e52a14ff5929782e4299a6b733457798c53aea334cde1f337ce8965",
-      "rows": 10064
+      "aggregate_sha256": "5a8cd8dcb647539700e9e4e488e3a79a73eee855d66e211950efb3a5bc136f40",
+      "manifest_bytes": 1357972,
+      "manifest_sha256": "3f81ef25490a2b9633c19923aa0131e077fabb2b628232cea28eb60da5fb049b",
+      "rows": 10068
     },
     "v166_execution_bundle": {
       "aggregate_sha256": "787b3cbc73ae5238dce00af45ac8e2b788fd7203c4833dec28aa2766b3346fdb",
