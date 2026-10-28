@@ -1,0 +1,158 @@
+{
+ "budget_at_publish": {
+  "cap_total": 10000,
+  "charged_attempts": 1,
+  "ledger_sha256": "212fc61391070cc0d8f07e41d1a356f31d76a4aed713bfc8c0e0031ef1d1eb34",
+  "ledger_writes_by_packing": 0,
+  "model_calls_by_packing": 0,
+  "reserved_tasks_running": 26,
+  "stranded_charge_disclosure": {
+   "charge_digest_sha256": "2d1dc88673faab8e8d7fe33e700f456ab9337ed8902d0a93f6220656f89294fc",
+   "ledger_seq": 1,
+   "state": "CHARGED and never returned; counted as consumed per contract section 7",
+   "task": "V167_LOADER_1",
+   "theta": [
+    30.0,
+    350.0,
+    0.0,
+    0.0
+   ],
+   "theta_sha256": "6cf3b6eee80372e1f36d11f746d18a1f8a81842d17e486ac2199fa53e486e588"
+  },
+  "used_calls_total": 1
+ },
+ "code_identity": {
+  "file_count": 46,
+  "identity_checks_all_true": true,
+  "identity_sha256": "9d267addaf905669824b7c226a479d4dc233fed58afed2e8583a553dc8b07185",
+  "note": "committing does not move this identity: _code_row binds disk bytes plus the fixed V166 parent commit, never HEAD, and code_identities() scans only tools/v167, tools/v167_bundle and the pinned files, so the root progress document and results/v167 are identity-neutral"
+ },
+ "contract_reference": "section 10.6 line 230 and section 11; V167 unique contract",
+ "delivered_archive": {
+  "bytes": 27280244,
+  "contents_csv_lists_itself": true,
+  "member_count_including_contents_csv": 5749,
+  "member_prefix_counts": {
+   "ZIP_CONTENTS_SHA256.csv": 1,
+   "code": 37,
+   "contract": 1,
+   "deliverables": 1,
+   "provenance": 2924,
+   "results": 2785
+  },
+  "pack_audit": "PACK_AUDIT_CLEAN",
+  "pack_audit_path": "results/v167_prepared/pack_rehearsal/rehearsal_zip_verification.json",
+  "pack_audit_sha256": "0c2a763c3f7c7de909f7d0b38b1de61aa3f44a1543318086643b0ed6774e0619",
+  "package_receipt_sha256": "faac4f4951963af9c6a0a7d666299b5a680b6e15bcc8f8397c49bc61c266b431",
+  "path": "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T204438Z.zip",
+  "pycache_members": 0,
+  "sha256": "273b20b94b1053f4f25de725ab29f4ee534e4997931c7284f27361927755fcae",
+  "sidecar_path": "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T204438Z.zip.sha256",
+  "sidecar_sha256": "c8b6ccbfe5dab9b32697d4e8f40e3f59c785ac4ca769deb4fd092473038729b1"
+ },
+ "delivery_manifests": {
+  "caveat": "the results manifest was generated at 20261028T202738Z before this final pack, so the rehearsal receipts rewritten after it are inventoried here rather than in that CSV; the archive's own ZIP_CONTENTS_SHA256.csv is the complete inventory of the delivered bytes",
+  "code_manifest_rows": 46,
+  "code_manifest_sha256": "d01a7c818a64afe0301128757e493bad4d62498db9a8a5928c6116b588d12688",
+  "inside_the_archive": true,
+  "results_manifest_rows": 2719,
+  "results_manifest_sha256": "87394c0b06bfa78471bc9cb704413e8cc98ec43bb0b00a958e7eb248e31435bf"
+ },
+ "git_publish_is_delivery_only": true,
+ "input_isolation_at_publish": {
+  "controlled_offset_exposed_to_estimator": false,
+  "guard_label": "NON_ADVERSARIAL_PYTHON_RUNTIME_ISOLATION_NOT_A_KERNEL_SANDBOX",
+  "model_calls": 0,
+  "receipt": "results/v167/estimator_inputs/00_isolation_receipt.json",
+  "receipt_sha256": "60c22bf048a92085dfbc638429181701ee2099ee241a0cb7d4b7275a8674e8bf",
+  "single_reading_per_task": true,
+  "tasks_with_exactly_three_files": 23,
+  "truth_valued_key_offenders_in_any_staged_document": 0
+ },
+ "inside_versus_beside": {
+  "archive_without_sidecar": [
+   "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T183921Z.zip"
+  ],
+  "excluded_from_archive_by_design": [
+   "README_V167_RETURN.md"
+  ],
+  "readme_sha256": "ee3bcfc847d4f776ca8f1af956e11508aaba75ebb8a766c82ce1e51cc95600ab",
+  "reason": "the packer suppresses the README in rehearsal because a rehearsal has no closing report; the file is published beside the archive in Git instead",
+  "stale_archives_kept_untouched": [
+   "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T183921Z.zip",
+   "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T184012Z.zip",
+   "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T184023Z.zip",
+   "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T184038Z.zip",
+   "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T201923Z.zip"
+  ],
+  "status_json_note": "results/v167/status.json is retained unchanged from round 1 and is now stale; it is kept as evidence and superseded by the audit files"
+ },
+ "publication_caution": {
+  "already_public_evidence": "results/v165/validator_only/v166_height_truth_sealed.json, v166_independent_score.json and v166_validator_score.json are members of the published results/v166/iscat_v166_return_001.zip, and results/v166/validator_only/gate_a_003 is tracked on branch v166, so this archive discloses no truth that is not already public; the simulated nature of the readings is unchanged",
+  "already_public_on_branch_v166": true,
+  "estimator_reachability": "the jail enumeration proves each worker sees only its own three files, so this audit path is not on any estimator dependency route",
+  "isolation_offenders_in_archive": 0,
+  "reading_count": 24,
+  "seed": 16520261027,
+  "truth_file_sha256": "0f069b71ec803a8e8e236357e21a151be4cf0996c70b05d6f49a622910943d08",
+  "truth_side_content_in_delivered_archive": "results/v167/audit/v167_p0c_identity_and_pins_recheck.json records the frozen draw seed, the sealed truth file SHA-256 and the 24 recovered epsilon/h pairs behind the hypothetical height readings, because the P0c gate had to prove the 24 readings were reproduced byte-exactly rather than re-drawn",
+  "validator_only_files_found_in_v167_worktree": false
+ },
+ "publish_time_added_paths": [
+  "V167_CURRENT_EVIDENCE_SUMMARY.md",
+  "results/v167/audit/v167_package_publish_receipt.json"
+ ],
+ "repository": {
+  "branch": "v167",
+  "git_head": "e4939e19f353f8118d98b97ae2af989f298315ea",
+  "remote": "https://github.com/yyyyzoey/iscat-handoff.git",
+  "v166_release_commit": "06b35cd4e0a47f7f49ef4b05401a07266f2c03b6"
+ },
+ "root_progress_document_sha256": "3cd6da9e3c7bd5440efa9abf1487ed9e804c94b81379e70a4d0eb961ab1f45a7",
+ "schema": "iscat167.package_publish_receipt.1",
+ "scientific_state": {
+  "ANON_01_detection": "0/3, not reported as a successful diameter measurement",
+  "EXPERIMENTAL_ABSOLUTE_DIAMETER_VALIDATED": false,
+  "new_height_noise_draws": 0,
+  "reportable_D": null,
+  "v166_frozen_inputs": "four pins verified byte-identical; no re-draw, no re-run"
+ },
+ "task_outcome_at_publish": {
+  "bias_stress_18": "BLOCKED",
+  "decision_left_to_pi": true,
+  "final_verify": "BLOCKED",
+  "reason": "reserve() re-derives every task signature from the descriptor, which binds code_identity_sha256; the 26 rows already RUNNING in the frozen ledger carry the pre-repair identity, so a re-entry raises StoreError('task signature changed'). Escaping that guard would require deleting or editing ledger rows, renaming the run fresh, or bumping a revision, all refused by contract section 7 and by the standing instruction not to alter evidence",
+  "search_extension_5": "BLOCKED"
+ },
+ "utc": "20261028T204710Z",
+ "what_this_is": "blocked-round delivery record: the authorized R and B computations did not run, so this package carries verification and evidence only and is NOT a scientific acceptance of any kind",
+ "why_this_archive_and_not_the_primary_pack": {
+  "exit_code_observed": 2,
+  "mode_pack_refused": "--pack runs CLOSE_STEPS through the controller, which dies at prepare with RUN_IDENTITY_CODE_CHANGED because the mandated input-isolation repair moved the code identity away from the one recorded in results/v167/controller_only/run_identity.json",
+  "primary_package_name_left_free": "results/v167/iscat_v167_return_001.zip was never created, so the authorized round can still claim it",
+  "rehearsal_chosen_because": "--pack-rehearsal exercises the identical packer and audit against today's tree with zero budget and zero model calls; it does not forge the closing evidence pass"
+ },
+ "workstation_tests_at_publish": {
+  "all_suites_green": true,
+  "budget_state_unchanged_by_testing": true,
+  "bundle_plan_and_core": {
+   "all_green": true,
+   "tests": 38
+  },
+  "run_id": "full_008",
+  "scope_statement": "LOCAL_TEST_INVENTORY_ONLY: synthetic forwards and plan guards, NOT physical validation and NOT the authorized V167 fit",
+  "total_green": 177,
+  "v166_inherited_41": {
+   "all_green": true,
+   "tests": 41
+  },
+  "v167_production": {
+   "all_green": true,
+   "collected": 98,
+   "failed": 0,
+   "passed": 98,
+   "tests": 98
+  },
+  "zero_real_f2c_construction_tripwire": true
+ }
+}

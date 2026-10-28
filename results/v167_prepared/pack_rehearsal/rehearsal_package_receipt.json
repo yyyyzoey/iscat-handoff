@@ -1,0 +1,39 @@
+{
+ "archive": "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T204438Z.zip",
+ "contents_csv_header": "sha256,bytes,arcname",
+ "contents_csv_lists_itself": false,
+ "contract_pins": {
+  "results/v166/estimates.json": "8f97339e9645a29ec929e5c792d234a28821970338cf92a62d2982bfebba7634",
+  "results/v166/height_input/height_readings.json": "bbfd793aff48247623081dd607168cd9afbba2deeff5f37c7a0cbd62b032ad4e",
+  "results/v166/iscat_v166_return_001.zip": "866feed02333f244df72f55e38ccf74060962007a5010c5c29df5ebe9f16a74e",
+  "results/v166/logs/v165_budget.sqlite": "254b5485164a57865328c81f8890ea4aa458d1386ed6f5f34533f2848f7e4ece"
+ },
+ "controller_manifest_snapshot": {
+  "note": "written by the controller manifest step during the run; the package CSV is the complete inventory of this archive",
+  "path": "results/v167/manifest.json",
+  "sha256": null
+ },
+ "excluded_from_package": {
+  "this_receipt_and_audit": "written after the archive, disclosed by path here",
+  "v166_return_zip": "results/v166/iscat_v166_return_001.zip is not re-embedded; its SHA-256 and size are pinned in seal.json, verification.json and provenance/v166/iscat_v166_return_001.zip.sha256"
+ },
+ "member_count_including_contents_csv": 5749,
+ "member_count_listed_in_csv": 5748,
+ "pack_gate": {
+  "skipped": "rehearsal"
+ },
+ "rehearsal": true,
+ "results_v167_files_in_package": 2723,
+ "results_v167_files_not_in_package": [
+  "results/v167/README_V167_RETURN.md"
+ ],
+ "run_id": null,
+ "schema": "iscat167.return_package_receipt.1",
+ "sidecar_path": "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T204438Z.zip.sha256",
+ "sidecar_sha256": "c8b6ccbfe5dab9b32697d4e8f40e3f59c785ac4ca769deb4fd092473038729b1",
+ "uncompressed_bytes_of_listed_members": 66989386,
+ "utc": "20261028T204446Z",
+ "why_the_zip_has_no_digest_of_itself": "a ZIP cannot contain the SHA-256 of its own bytes; the digest lives in the sidecar beside it and in the post-pack audit, both outside the archive",
+ "zip_bytes": 27280244,
+ "zip_sha256": "273b20b94b1053f4f25de725ab29f4ee534e4997931c7284f27361927755fcae"
+}

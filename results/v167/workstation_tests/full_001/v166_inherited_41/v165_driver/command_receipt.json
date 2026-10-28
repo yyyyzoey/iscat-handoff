@@ -1,0 +1,24 @@
+{
+  "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "v165_receipt_plugin",
+    "tests"
+  ],
+  "cwd": "C:\\iscat\\v167\\tools\\v165_bundle",
+  "environment_overrides": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONPATH": "C:\\iscat\\v167\\tools\\v165_bundle\\code",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "V165_PYTEST_OUTCOMES": "C:\\iscat\\v167\\results\\v167\\workstation_tests\\full_001\\v166_inherited_41\\v165_driver\\pytest_outcomes.json",
+    "V165_REAL_CALL_TRIPWIRE": "C:\\iscat\\v167\\results\\v167\\workstation_tests\\full_001\\v166_inherited_41\\v165_driver\\real_f2c_tripwire.txt"
+  },
+  "external_pytest_addopts_ignored": null,
+  "returncode": 0
+}

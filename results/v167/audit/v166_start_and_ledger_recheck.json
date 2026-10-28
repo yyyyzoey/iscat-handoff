@@ -1,0 +1,527 @@
+{
+  "role": "V167_P0b_LEDGER_AND_STARTS_RECHECK",
+  "real_model_calls": 0,
+  "new_random_draws": 0,
+  "ledger": {
+    "path": "C:\\iscat\\v166\\results\\v166\\logs\\v165_budget.sqlite",
+    "mode": "ro+immutable",
+    "open_read_only": true,
+    "metadata": [
+      "{\"phases\":{\"FINAL_VERIFY\":600,\"HEIGHT_FITS\":11200,\"MODEL_BINDING\":200},\"plan_id\":\"v165\",\"total\":12000}"
+    ],
+    "task_rows": 31,
+    "attempt_rows": 4937,
+    "attempt_states": {
+      "RETURNED": 4937
+    },
+    "by_phase": {
+      "FINAL_VERIFY": {
+        "tasks": 1,
+        "cap": 600,
+        "used": 32
+      },
+      "HEIGHT_FITS": {
+        "tasks": 28,
+        "cap": 11200,
+        "used": 4811
+      },
+      "MODEL_BINDING": {
+        "tasks": 2,
+        "cap": 200,
+        "used": 94
+      }
+    },
+    "per_task": [
+      {
+        "id": "FINAL_VERIFY",
+        "signature": "460b79ee66e28e646463bd3e0d53436882b50256cfeb0f1f2e014644eca4ccea",
+        "phase": "FINAL_VERIFY",
+        "cap": 600,
+        "used": 32,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\FINAL_VERIFY\\result.json",
+        "result_sha": "538628fc6590e2281bfb170bfa5ec520db7cdea735d793f3c96425f5048e8547"
+      },
+      {
+        "id": "B100000_ANON_01_H10_R00",
+        "signature": "aec48a68796e9141338b6de3d2dead7f87ec8bb1c1ddef9093e5bc26acf87673",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 245,
+        "owner": "v165-single-process",
+        "state": "PARTIAL_BUDGET",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_01_H10_R00\\result.json",
+        "result_sha": "2e0782c2b542257d20147ec9e369254af1145b38cb88386a6a324728cd654293"
+      },
+      {
+        "id": "B100000_ANON_01_H10_R01",
+        "signature": "0b4c7a7acff5c159d665da1ff935984d341284e2a2ac2a24a49db21a5e26ffbc",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 290,
+        "owner": "v165-single-process",
+        "state": "PARTIAL_BUDGET",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_01_H10_R01\\result.json",
+        "result_sha": "891db1d503ecdb9c89bc09eec0c09e34c187e127c6c7575cfd48b16808fa382f"
+      },
+      {
+        "id": "B100000_ANON_01_H10_R02",
+        "signature": "c17ab6a52b1c71612fd32f5f10172bf18e0e7e9c64e02eb925f61894d9e5505b",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 314,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_01_H10_R02\\result.json",
+        "result_sha": "f5a3d4ae802195f3ace81e441cf9a889a56482a354413c225a5992bc67c8b44a"
+      },
+      {
+        "id": "B100000_ANON_01_H1_R00",
+        "signature": "3497bc476d12754efacbfb6b0c6e2742dd450042a17e2ad73b8bad1d92f329ca",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 272,
+        "owner": "v165-single-process",
+        "state": "PARTIAL_BUDGET",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_01_H1_R00\\result.json",
+        "result_sha": "c118980b0579c1121cdce40e65e930289f92bf5ccfa947af0e1823ad4ef1f809"
+      },
+      {
+        "id": "B100000_ANON_01_H1_R01",
+        "signature": "033d8269981e66a2d85f98475ef2ae5483b2b57631eea79f5d42db5794ba6018",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 290,
+        "owner": "v165-single-process",
+        "state": "PARTIAL_BUDGET",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_01_H1_R01\\result.json",
+        "result_sha": "f8b3181464580214da96232318033a0a75ff82c34ac70ef918ff25a0a95e57f9"
+      },
+      {
+        "id": "B100000_ANON_01_H1_R02",
+        "signature": "8ca9cdf15f7a04b7f3b18996b8acc334f5f7e6f269a3176a1a3e574e1a9093f7",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 317,
+        "owner": "v165-single-process",
+        "state": "PARTIAL_BUDGET",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_01_H1_R02\\result.json",
+        "result_sha": "3f4539893ffccc4c6bec2228e0d7709dbca47639869c0c8636ae21e6e679a925"
+      },
+      {
+        "id": "B100000_ANON_01_NO_HEIGHT",
+        "signature": "e5228216863ecca18af2aeec81f1f89ce983ed94f4136140bf6c646911c7aca2",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 47,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_01_NO_HEIGHT\\result.json",
+        "result_sha": "509b09c1a56dd7eebd83193342a8a525a19bd6cc5a9e89e19dd772a607c28ee0"
+      },
+      {
+        "id": "B100000_ANON_02_H10_R00",
+        "signature": "9e5fc44a1fc9355d0c47f6da439ed2819790cb23597ef85b20003a35f28b72d4",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 235,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_02_H10_R00\\result.json",
+        "result_sha": "5a92778bd5f3412ed009c7b4709fc1ddfff15a2e7a72c87403f633ebb531bf81"
+      },
+      {
+        "id": "B100000_ANON_02_H10_R01",
+        "signature": "3181507c4627c1f08f67accc79d31176fac8bce26eec6b47a4e4a444f800ce16",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 242,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_02_H10_R01\\result.json",
+        "result_sha": "ea4e9a38d7a93d8eb07fe811173aa62d10baad67cde5cff92b3ee36e0076eb0b"
+      },
+      {
+        "id": "B100000_ANON_02_H10_R02",
+        "signature": "f6f84152f934c744f01d1466979a8d1338f2f8e79973777779e79179ae9a106b",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 260,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_02_H10_R02\\result.json",
+        "result_sha": "addca14f941340c9c4a4944cbe86a46d509486bb75280c6881535d05c7cb876c"
+      },
+      {
+        "id": "B100000_ANON_02_H1_R00",
+        "signature": "82e927900a2a438e7347eb342c6a1eea488ced2fa21028b5077ad5f9001edc59",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 163,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_02_H1_R00\\result.json",
+        "result_sha": "554252700ac1a6231580a3e869cf3dccf5126ce0d09975a9d0ffc2993a9b9dde"
+      },
+      {
+        "id": "B100000_ANON_02_H1_R01",
+        "signature": "7f3a1cedb8e9250dca0a7f67e3267e226eda38398c3209bcd0169ae8e4b86e89",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 154,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_02_H1_R01\\result.json",
+        "result_sha": "b7545c32cc60a36e0bad5f220fda604449be3eb42cddccf237ab2f1cc8bb7942"
+      },
+      {
+        "id": "B100000_ANON_02_H1_R02",
+        "signature": "29004eaea55cb7a9ec5442a4f9aa7a17af6245794cf74263596c2178c5d7708a",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 163,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_02_H1_R02\\result.json",
+        "result_sha": "0ce4c95136e83ae98b03ff92f46aef6d75b1808ab512b530d83f6c6b2d9fc48b"
+      },
+      {
+        "id": "B100000_ANON_02_NO_HEIGHT",
+        "signature": "555e32f5e1aa72c8dfae5c6765e3f68f1bc3fde1fd98116c067596361058edff",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 37,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_02_NO_HEIGHT\\result.json",
+        "result_sha": "2c843360250f015cfaeb9050e10745970b749a85f93d35801f1777bb42b4dfb0"
+      },
+      {
+        "id": "B100000_ANON_03_H10_R00",
+        "signature": "97d57d029d1753b3b1a307bed8f88e953e1fded3095b14c6f5f5d72180d82833",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 72,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_03_H10_R00\\result.json",
+        "result_sha": "00aaf5702d2006e6961aeb26748895e55b4600f52f799e1086f420fe3d6281f4"
+      },
+      {
+        "id": "B100000_ANON_03_H10_R01",
+        "signature": "60adda3f37e537fee688bda757e70fb0649fb62f19613c2c277510c0cf0ba26c",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 90,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_03_H10_R01\\result.json",
+        "result_sha": "404168fada2c4be0a48a5186bbbc34d6cd45c8bb6066b8a1e7dc0244254fb84b"
+      },
+      {
+        "id": "B100000_ANON_03_H10_R02",
+        "signature": "d5f4cb645aa0ec21955b8df5eb854433d67eb1fc0c592882239b5f6f05ab3e04",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 81,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_03_H10_R02\\result.json",
+        "result_sha": "27b8271228caccf9eee23c0cc0b183ea70e2ff622ea66657db5f4575953f691b"
+      },
+      {
+        "id": "B100000_ANON_03_H1_R00",
+        "signature": "9e1be20138a566272fbfa5496aab74d796fc9c62071e766b0a0ae42be0b96eb4",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 153,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_03_H1_R00\\result.json",
+        "result_sha": "89384eb3bc7ab9de1fa50098bc7d8c1f8cb6a9a4ecb911354ea24e795ac3e54f"
+      },
+      {
+        "id": "B100000_ANON_03_H1_R01",
+        "signature": "08d26faa56aeb9a9d27d35279a70b16e133417d8e736e53be6aff130146bd629",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 171,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_03_H1_R01\\result.json",
+        "result_sha": "39b7e5620d33559d89614cd203fd45b4d6f145602b95119aafcc0cf9c647c426"
+      },
+      {
+        "id": "B100000_ANON_03_H1_R02",
+        "signature": "510a8d98dd2dbd2fe5d37301c5eb362d1d35c93b396879d2685a6e00f63d4e93",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 135,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_03_H1_R02\\result.json",
+        "result_sha": "31e6d7d2a2d1cdba4f15aeef5883e7ae05074955aeefbfa192166e3e1c3051bd"
+      },
+      {
+        "id": "B100000_ANON_03_NO_HEIGHT",
+        "signature": "6f45ceace8966ddd98a817b7006e0ff7b949c077ee50880e2ac55e0bf49708f3",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 36,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_03_NO_HEIGHT\\result.json",
+        "result_sha": "ec3009dd8c399bf7f9dbdd8c88c73119fe2569ad7f8d6ef310848d360f88359c"
+      },
+      {
+        "id": "B100000_ANON_04_H10_R00",
+        "signature": "a4e571f879d2e78f439d2058d31eeb543c379fb2d30c8deb49e379244c3f0dae",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 156,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_04_H10_R00\\result.json",
+        "result_sha": "e68270fd644dd80d8dcf61b1fabe6918e0c19d501a2c268064d0ac5f27216d58"
+      },
+      {
+        "id": "B100000_ANON_04_H10_R01",
+        "signature": "ec2cb5822e0bddcd3d4cbaf7844406a07d123cbbe9309ad4bab6a8d78de8a581",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 159,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_04_H10_R01\\result.json",
+        "result_sha": "1f08910c2e980143b726fa161c39714360e14ffbc6930d4193edef2a786b44e6"
+      },
+      {
+        "id": "B100000_ANON_04_H10_R02",
+        "signature": "640a2176bd3a3a9e3c866ba8ee18662adfe3a5d86ffa69a45b291fca0c1eb153",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 253,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_04_H10_R02\\result.json",
+        "result_sha": "e054e4f43e51f2f067c156c9c1a073106dfa705c441b5f1e683083fdfe9daf5a"
+      },
+      {
+        "id": "B100000_ANON_04_H1_R00",
+        "signature": "7ad47e6348e3e2bbf5c9c99337910d00c8cd28f5eb586e34f2efe356ecdb11fa",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 144,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_04_H1_R00\\result.json",
+        "result_sha": "170ee527d730c87e9cf03c006ae7885016ad28f8610fa76696b93bea8bdea623"
+      },
+      {
+        "id": "B100000_ANON_04_H1_R01",
+        "signature": "ab8be1b9f20d6f2423ea22992ae2e6c8ff9eb27924bfff9e1175cb2bacb88f38",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 135,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_04_H1_R01\\result.json",
+        "result_sha": "0510629dfc1c92b0d4054c8fbb440668d7f8c94a26e8b108b1506282973599d9"
+      },
+      {
+        "id": "B100000_ANON_04_H1_R02",
+        "signature": "ca84845d313560d2ac764e925c833cfd27e32c9d5e20538687044a6eae699a6e",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 153,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_04_H1_R02\\result.json",
+        "result_sha": "a0e3ba247b06697b2ce4dabe4efff6fa94a5cfb1c90b7fc508eae33a4b209013"
+      },
+      {
+        "id": "B100000_ANON_04_NO_HEIGHT",
+        "signature": "39990984875294f97dacafc34a95d37a5d4627fbbe151899561292a7cc82c1af",
+        "phase": "HEIGHT_FITS",
+        "cap": 400,
+        "used": 44,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\B100000_ANON_04_NO_HEIGHT\\result.json",
+        "result_sha": "47d6ff8dc89f8cf55315071a4c163c6cc81f5bf424221fa4c317d29819bcdaf2"
+      },
+      {
+        "id": "BINDING",
+        "signature": "ec4b0de22be7f48bb6e2f9ab1226f96f085ee8ccb5bc52d0b80611890f75bb86",
+        "phase": "MODEL_BINDING",
+        "cap": 100,
+        "used": 24,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\BINDING\\result.json",
+        "result_sha": "81cde6247954eabb541803e122d5ac197c017695796523ffcc019ec085ca35aa"
+      },
+      {
+        "id": "LOADER_1",
+        "signature": "fe3cc1e118a9c8ece90e0ab636b48738d38baeb89343ef3d3146bbc26f193c17",
+        "phase": "MODEL_BINDING",
+        "cap": 100,
+        "used": 70,
+        "owner": "v165-single-process",
+        "state": "FINISHED",
+        "result_path": "C:\\iscat\\v166\\results\\v166\\tasks\\LOADER_1\\result.json",
+        "result_sha": "94f1ea88ab37736b21f74d4a3ca2a76127724664110bf68c21f29d9683d71f16"
+      }
+    ],
+    "used_vs_attempts_mismatches": [],
+    "attempt_seq_gaps": [],
+    "attempt_ts_span_seconds": 2338.6603770256042,
+    "recovery_tasks_attempt_span_seconds": 1324.175889492035,
+    "recovery_attempt_counts": {
+      "B100000_ANON_01_H10_R00": 245,
+      "B100000_ANON_01_H10_R01": 290,
+      "B100000_ANON_01_H1_R00": 272,
+      "B100000_ANON_01_H1_R01": 290,
+      "B100000_ANON_01_H1_R02": 317
+    },
+    "distinct_theta": 4468
+  },
+  "start_records": 56,
+  "start_states": {
+    "FINISHED": 51,
+    "PARTIAL_SEARCH": 5
+  },
+  "start_problems": [],
+  "recovery": [
+    {
+      "old_task_id": "B100000_ANON_01_H10_R00",
+      "start_index": 1,
+      "state": "PARTIAL_SEARCH",
+      "error_type": "CallCapReached",
+      "actual_calls": 200,
+      "local_cap": 200,
+      "best_q_total": 500.90280113561823,
+      "best_theta": [
+        52.47781354136366,
+        406.05619175133717,
+        96.3045009375518,
+        446.81402519456725
+      ],
+      "warm_start_is_best_theta": true,
+      "warm_start_is_not_x0": true,
+      "first_start_theta": [
+        54.19141232622576,
+        406.0763049450694,
+        -499.99999999999994,
+        -178.9439664066551
+      ],
+      "first_start_state": "FINISHED",
+      "prediction_path": "tasks/B100000_ANON_01_H10_R00/predictions/0244.json"
+    },
+    {
+      "old_task_id": "B100000_ANON_01_H10_R01",
+      "start_index": 1,
+      "state": "PARTIAL_SEARCH",
+      "error_type": "CallCapReached",
+      "actual_calls": 200,
+      "local_cap": 200,
+      "best_q_total": 501.06772708855436,
+      "best_theta": [
+        80.08217286065776,
+        394.0774176687236,
+        104.23666568866965,
+        441.1685339366534
+      ],
+      "warm_start_is_best_theta": true,
+      "warm_start_is_not_x0": true,
+      "first_start_theta": [
+        88.72512186807795,
+        393.3389421077685,
+        -499.99999999999994,
+        -177.93720454361795
+      ],
+      "first_start_state": "FINISHED",
+      "prediction_path": "tasks/B100000_ANON_01_H10_R01/predictions/0290.json"
+    },
+    {
+      "old_task_id": "B100000_ANON_01_H1_R00",
+      "start_index": 1,
+      "state": "PARTIAL_SEARCH",
+      "error_type": "CallCapReached",
+      "actual_calls": 200,
+      "local_cap": 200,
+      "best_q_total": 501.1057442715854,
+      "best_theta": [
+        89.56338105497156,
+        392.77098067281423,
+        110.75967244868721,
+        436.5982897832334
+      ],
+      "warm_start_is_best_theta": true,
+      "warm_start_is_not_x0": true,
+      "first_start_theta": [
+        94.13205395576593,
+        392.7458987376239,
+        -499.99999999999994,
+        -177.62430833698315
+      ],
+      "first_start_state": "FINISHED",
+      "prediction_path": "tasks/B100000_ANON_01_H1_R00/predictions/0271.json"
+    },
+    {
+      "old_task_id": "B100000_ANON_01_H1_R01",
+      "start_index": 1,
+      "state": "PARTIAL_SEARCH",
+      "error_type": "CallCapReached",
+      "actual_calls": 200,
+      "local_cap": 200,
+      "best_q_total": 501.31063784740553,
+      "best_theta": [
+        106.64618512909115,
+        391.421942255441,
+        134.9590952161132,
+        413.9958397444493
+      ],
+      "warm_start_is_best_theta": true,
+      "warm_start_is_not_x0": true,
+      "first_start_theta": [
+        113.7177490983573,
+        391.3860693246534,
+        -499.99999999999994,
+        -175.69298598645534
+      ],
+      "first_start_state": "FINISHED",
+      "prediction_path": "tasks/B100000_ANON_01_H1_R01/predictions/0289.json"
+    },
+    {
+      "old_task_id": "B100000_ANON_01_H1_R02",
+      "start_index": 1,
+      "state": "PARTIAL_SEARCH",
+      "error_type": "CallCapReached",
+      "actual_calls": 200,
+      "local_cap": 200,
+      "best_q_total": 501.4150512836372,
+      "best_theta": [
+        117.6218509955765,
+        390.9364051024017,
+        156.45666864370594,
+        391.83637365707455
+      ],
+      "warm_start_is_best_theta": true,
+      "warm_start_is_not_x0": true,
+      "first_start_theta": [
+        123.65892669431452,
+        390.9576351091697,
+        -499.99999999999994,
+        -174.13788092404556
+      ],
+      "first_start_state": "FINISHED",
+      "prediction_path": "tasks/B100000_ANON_01_H1_R02/predictions/0316.json"
+    }
+  ],
+  "estimates_states": {
+    "FINISHED": 23,
+    "PARTIAL_SEARCH": 5
+  }
+}

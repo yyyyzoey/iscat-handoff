@@ -1,0 +1,34 @@
+.........F........                                                       [100%]
+================================== FAILURES ===================================
+_ test_a_failed_best_write_is_reported_failed_and_never_becomes_a_usable_value _
+
+staged = {'caps': {'V167_08b5eae8d7e918268bafe50b': 400, 'V167_157ff8cb77af1db8dde80a96': 400, 'V167_1eef8373eb166eb53b8561d6':...600, 'tasks': 1}, 'MODEL_BINDING': {'cap': 200, 'tasks': 2}, 'SEARCH_EXTENSION': {'cap': 2000, 'tasks': 5}}, ...}, ...}
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-120/test_a_failed_best_write_is_re0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D9202AEB90>
+
+    def test_a_failed_best_write_is_reported_failed_and_never_becomes_a_usable_value(
+            staged, tmp_path, monkeypatch):
+        payload, data, dirs, task_dir = _pass_fixture(staged, tmp_path)
+        reading = common.reading_from_document(payload["reading"])
+        original = common.atomic_json
+    
+        def refuse_best(path, value):
+            path = Path(path)
+            if path.parent.name == "best":
+                raise common.FatalPersistenceError("TEST_BEST_WRITE_REFUSED")
+            return original(path, value)
+    
+        monkeypatch.setattr(common, "atomic_json", refuse_best)
+        record, _checkpoint = worker.run_pass(StubRemote(), common, data, reading, dirs,
+                                             payload, 0, 0,
+                                             [float(v) for v in payload["starts"][0]], 5)
+        assert record["execution_state"] == "FAILED"
+        assert record["error"]["error_type"] == "FatalPersistenceError"
+        # nothing survived the refused write, so the pass has no best and no candidate
+>       assert record["best"] is None and record["reportable_D"] is None
+E       AssertionError: assert ({'K': 365.3095890206118, 'Q_frames': [1362835.4519060825, 1364199.291449322, 1369054.0461766473], 'Q_height': 324.86497160974943, 'Q_joint': 4096088.789532052, ...} is None)
+
+tools\v167\tests\test_v167_reporting.py:362: AssertionError
+=========================== short test summary info ===========================
+FAILED tools/v167/tests/test_v167_reporting.py::test_a_failed_best_write_is_reported_failed_and_never_becomes_a_usable_value
+1 failed, 17 passed in 6.69s

@@ -1,0 +1,40 @@
+{
+ "all_green": true,
+ "captured_utc": "2026-10-28T18:42:28.147646+00:00",
+ "command": [
+  "C:\\ProgramData\\anaconda3\\python.exe",
+  "C:\\iscat\\v167\\tools\\v165_bundle\\run_workstation_tests.py",
+  "--out",
+  "C:\\iscat\\v167\\results\\v167\\workstation_tests\\full_004\\v166_inherited_41\\v165_driver"
+ ],
+ "counts_reconcile": true,
+ "cwd": "C:\\iscat\\v167",
+ "inherited_outcomes": {
+  "collected": 41,
+  "collection_errors": 0,
+  "exitstatus": 0,
+  "outcomes_present": true,
+  "outcomes_sha256": "9846f6d28a2937cda4f61a16bdb18651e9f99fbbe4d460e7e1c91c064f3a2f25",
+  "phase_pass_records": {
+   "call": 41,
+   "setup": 41,
+   "teardown": 41
+  },
+  "phase_reports": 123,
+  "reported_nodeids": 41,
+  "schema": "v165_receipt_plugin"
+ },
+ "inherited_real_f2c_calls": 0,
+ "inherited_receipt_sha256": "ab18a41d15008c05518c1ac1511d50d249f062731798e13c1b4ce935b1e49095",
+ "inherited_returncode": 0,
+ "inherited_scope": "COMPONENT_SYNTHETIC_FAULT_AND_ISOLATION_TESTS_NOT_PHYSICAL_VALIDATION",
+ "python": "C:\\ProgramData\\anaconda3\\python.exe",
+ "python_version": "3.11.7",
+ "returncode": 0,
+ "suite": "v166_inherited_41",
+ "tests": 41,
+ "v166_inherited_sha256": {
+  "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "ebe6aefd3a2427399eff461dd343b1b1a36f43d4671a070da5e6ca86fc0a5b20"
+ }
+}

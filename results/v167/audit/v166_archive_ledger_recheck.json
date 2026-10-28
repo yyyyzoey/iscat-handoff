@@ -1,0 +1,228 @@
+{
+  "role": "V167_P0a_BUNDLE_AND_ARCHIVE_RECHECK",
+  "contract_pins": {
+    "archive_sha256": "866feed02333f244df72f55e38ccf74060962007a5010c5c29df5ebe9f16a74e",
+    "archive_bytes": 17554667,
+    "archive_members": 5177,
+    "estimates_sha256": "8f97339e9645a29ec929e5c792d234a28821970338cf92a62d2982bfebba7634",
+    "readings_sha256": "bbfd793aff48247623081dd607168cd9afbba2deeff5f37c7a0cbd62b032ad4e",
+    "ledger_sha256": "254b5485164a57865328c81f8890ea4aa458d1386ed6f5f34533f2848f7e4ece",
+    "parent_commit": "06b35cd4e0a47f7f49ef4b05401a07266f2c03b6",
+    "publish_commit": "06b35cd4e0a47f7f49ef4b05401a07266f2c03b6",
+    "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+    "field_library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+    "camera_h5_sha256": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+    "results_full_tree_rows": 10068,
+    "code_tree_rows": 7477,
+    "predictions_rows": 4937
+  },
+  "real_model_calls": 0,
+  "new_random_draws": 0,
+  "wrote_inside_v166": false,
+  "bundle_install": {
+    "status": "ALREADY_PRESENT_NO_OVERWRITE",
+    "path": "C:\\iscat\\v167\\tools\\v167_bundle",
+    "files": [
+      "00_V167_唯一执行合同.md",
+      "README.md",
+      "approved_core/v152_gls_core.py",
+      "approved_core/v165_objective.py",
+      "code/v167_payload_gate.py",
+      "code/v167_plan.py",
+      "config/v167_plan.json",
+      "manifest_sha256.csv",
+      "review_only/V166_独立审查.md",
+      "review_only/local_test_receipt.json",
+      "review_only/local_tests.txt",
+      "review_only/local_tests_initial_failed.txt",
+      "review_only/recompute_metrics.py",
+      "review_only/reviewer_candidate_metrics.json",
+      "review_only/reviewer_candidate_values.csv",
+      "tests/test_approved_objective.py",
+      "tests/test_v167_plan.py"
+    ]
+  },
+  "archive": {
+    "copies": [
+      {
+        "path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-28\\sh\\work\\v166_remote_download.zip",
+        "status": "PRESENT",
+        "bytes": 17554667,
+        "sha256": "866feed02333f244df72f55e38ccf74060962007a5010c5c29df5ebe9f16a74e",
+        "matches_contract": true
+      },
+      {
+        "path": "C:\\Users\\PC\\Documents\\Codex\\2026-10-28\\sh\\outputs\\iscat_v166_return_001.zip",
+        "status": "PRESENT",
+        "bytes": 17554667,
+        "sha256": "866feed02333f244df72f55e38ccf74060962007a5010c5c29df5ebe9f16a74e",
+        "matches_contract": true
+      }
+    ],
+    "checks": [
+      {
+        "item": "copy_present_and_bound",
+        "pass": true,
+        "detail": "v166_remote_download.zip sha256=866feed02333f244df72f55e38ccf74060962007a5010c5c29df5ebe9f16a74e bytes=17554667"
+      },
+      {
+        "item": "copy_present_and_bound",
+        "pass": true,
+        "detail": "iscat_v166_return_001.zip sha256=866feed02333f244df72f55e38ccf74060962007a5010c5c29df5ebe9f16a74e bytes=17554667"
+      },
+      {
+        "item": "crc_testzip_clean",
+        "pass": true,
+        "detail": "testzip()==None over all members"
+      },
+      {
+        "item": "member_count",
+        "pass": true,
+        "detail": "5177 vs 5177"
+      },
+      {
+        "item": "no_duplicate_names",
+        "pass": true,
+        "detail": "duplicate arcname count=0"
+      },
+      {
+        "item": "no_unsafe_paths",
+        "pass": true,
+        "detail": "unsafe=[]"
+      },
+      {
+        "item": "directory_members_none",
+        "pass": true,
+        "detail": "count ends-with-slash=0"
+      },
+      {
+        "item": "contents_manifest_rowcount",
+        "pass": true,
+        "detail": "5176 rows vs 5176 content members (manifest self-reference excluded)"
+      },
+      {
+        "item": "contents_manifest_all_members_match",
+        "pass": true,
+        "detail": "mismatches=0 sample=[]"
+      },
+      {
+        "item": "only_self_reference_unlisted",
+        "pass": true,
+        "detail": "unlisted=['ZIP_CONTENTS_SHA256.csv']"
+      },
+      {
+        "item": "namespace_sizes_documented",
+        "pass": true,
+        "detail": "ZIP 5177 / results-full 10068 / code-tree 7477 / predictions 4937 kept distinct, no forced equality"
+      },
+      {
+        "item": "predictions_excluded_from_zip_body",
+        "pass": true,
+        "detail": "0 prediction json embedded"
+      },
+      {
+        "item": "delta_explained_by_prediction_exclusion",
+        "pass": true,
+        "detail": "non-prediction rows absent from ZIP: []"
+      },
+      {
+        "item": "archive_estimates_sha",
+        "pass": true,
+        "detail": "results/v166/estimates.json sha256=8f97339e9645a29ec929e5c792d234a28821970338cf92a62d2982bfebba7634"
+      },
+      {
+        "item": "archive_readings_sha",
+        "pass": true,
+        "detail": "results/v166/height_input/height_readings.json sha256=bbfd793aff48247623081dd607168cd9afbba2deeff5f37c7a0cbd62b032ad4e"
+      },
+      {
+        "item": "archive_budget_copy_sha",
+        "pass": true,
+        "detail": "deliverables/budget/v166_budget.sqlite sha256=254b5485164a57865328c81f8890ea4aa458d1386ed6f5f34533f2848f7e4ece"
+      },
+      {
+        "item": "workspace_ledger_sha",
+        "pass": true,
+        "detail": "254b5485164a57865328c81f8890ea4aa458d1386ed6f5f34533f2848f7e4ece"
+      }
+    ],
+    "manifest_mismatches": [],
+    "members_unlisted": [
+      "ZIP_CONTENTS_SHA256.csv"
+    ],
+    "namespaces": {
+      "zip_members": 5177,
+      "results_full_tree_rows": 10068,
+      "code_tree_rows": 7477,
+      "predictions_rows": 4937
+    },
+    "prediction_paths_present_inside_zip": 0,
+    "zip_members_outside_results_manifest": [
+      "README_V166_RETURN.md",
+      "ZIP_CONTENTS_SHA256.csv",
+      "code/tools/gate_a.py",
+      "code/tools/v165_bundle/00_V165_Codex_唯一执行合同.md",
+      "code/tools/v165_bundle/README.md",
+      "code/tools/v165_bundle/code/v152_budget_store.py",
+      "code/tools/v165_bundle/code/v152_gls_core.py",
+      "code/tools/v165_bundle/code/v164_io.py",
+      "code/tools/v165_bundle/code/v165_guard.py",
+      "code/tools/v165_bundle/code/v165_io.py",
+      "code/tools/v165_bundle/code/v165_objective.py",
+      "code/tools/v165_bundle/code/v165_receipt_plugin.py",
+      "code/tools/v165_bundle/code/v165_receipts.py",
+      "code/tools/v165_bundle/code/v165_run.py",
+      "code/tools/v165_bundle/code/v165_task_ids.py",
+      "code/tools/v165_bundle/config/v165_plan.json",
+      "code/tools/v165_bundle/generator/v165_generate_height.py",
+      "code/tools/v165_bundle/manifest_sha256.csv",
+      "code/tools/v165_bundle/review/V164_INDEPENDENT_REVIEW_SCOPE.md",
+      "code/tools/v165_bundle/review/local_test_inventory.txt"
+    ],
+    "results_manifest_rows_not_in_zip_count": 4937,
+    "results_manifest_rows_not_in_zip_sample": [
+      "results/v166/tasks/B100000_ANON_01_H10_R00/predictions/0001.json",
+      "results/v166/tasks/B100000_ANON_01_H10_R00/predictions/0002.json",
+      "results/v166/tasks/B100000_ANON_01_H10_R00/predictions/0003.json",
+      "results/v166/tasks/B100000_ANON_01_H10_R00/predictions/0004.json",
+      "results/v166/tasks/B100000_ANON_01_H10_R00/predictions/0005.json",
+      "results/v166/tasks/B100000_ANON_01_H10_R00/predictions/0006.json",
+      "results/v166/tasks/B100000_ANON_01_H10_R00/predictions/0007.json",
+      "results/v166/tasks/B100000_ANON_01_H10_R00/predictions/0008.json"
+    ],
+    "delta_breakdown": {
+      "results_rows_not_in_zip": 4937,
+      "of_which_prediction_json": 4937,
+      "of_which_other": [],
+      "zip_members_not_in_results_full_count": 46
+    },
+    "publish_receipt_inside_zip": false,
+    "publish_receipt_sha256": null,
+    "workspace_ledger": {
+      "path": "C:\\iscat\\v166\\results\\v166\\logs\\v165_budget.sqlite",
+      "sha256": "254b5485164a57865328c81f8890ea4aa458d1386ed6f5f34533f2848f7e4ece",
+      "bytes": 6979584,
+      "matches_contract": true
+    }
+  },
+  "commit_tree_growth": {
+    "execution_code_commit": {
+      "rev": "af2078b2a2d545b8455b48d814faa12017e5e8ac",
+      "tracked_files": 7477
+    },
+    "pre_publish_head": {
+      "rev": "f5e88ad409baf50fd0a9cb6c44bc30b34a7b8a08",
+      "tracked_files": 12616
+    },
+    "publish_commit": {
+      "rev": "06b35cd4e0a47f7f49ef4b05401a07266f2c03b6",
+      "tracked_files": 12619
+    }
+  },
+  "publish_receipt_on_v167_tree": {
+    "path": "results/v166/p5_report/package_publish_receipt.json",
+    "exists": true,
+    "sha256": "1779f9f3d007fe0b967336535a6c32a65bee83f8bb526592ca5cfb6daa46d7b1"
+  },
+  "all_checks_pass": true
+}

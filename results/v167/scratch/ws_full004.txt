@@ -1,0 +1,23 @@
+{
+ "run_id": "full_004",
+ "all_suites_green": true,
+ "per_suite": {
+  "v166_inherited_41": {
+   "tests": 41,
+   "returncode": 0,
+   "green": true
+  },
+  "bundle_plan_and_core": {
+   "tests": 38,
+   "returncode": 0,
+   "green": true
+  },
+  "v167_production": {
+   "tests": 80,
+   "returncode": 0,
+   "green": true
+  }
+ },
+ "zero_charged_calls": true,
+ "receipt": "C:\\iscat\\v167\\results\\v167\\workstation_tests\\full_004\\workstation_test_receipt.json"
+}

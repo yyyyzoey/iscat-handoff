@@ -1,0 +1,4 @@
+usage: run_all [-h]
+               (--plan | --workstation-tests | --dry-run | --run | --pack | --pack-rehearsal | --status)
+               [--run-id RUN_ID]
+run_all: error: unrecognized arguments: ; echo "RC=$LASTEXITCODE"; python -c "

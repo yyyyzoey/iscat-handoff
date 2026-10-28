@@ -1,0 +1,12 @@
+REHEARSAL_MISSING_MEMBERS ["deliverables/budget/v167_budget.sqlite"]
+Traceback (most recent call last):
+  File "C:\iscat\v167\tools\v167\run_all.py", line 771, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "C:\iscat\v167\tools\v167\run_all.py", line 763, in main
+    return mode_pack(rehearsal=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\iscat\v167\tools\v167\run_all.py", line 706, in mode_pack
+    findings = _audit_package(zip_path, receipt["zip_sha256"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: _audit_package() takes 1 positional argument but 2 were given

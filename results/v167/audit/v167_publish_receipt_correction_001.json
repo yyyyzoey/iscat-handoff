@@ -1,0 +1,32 @@
+{
+ "action_taken": "the inaccurate sentence was corrected in the same draft before its first commit and a new section records the correction; no evidence file was deleted, renamed or overwritten, and the publish receipt itself is left exactly as written",
+ "corrects": "results/v167/audit/v167_package_publish_receipt.json",
+ "corrects_sha256": "5e232320a0a65c4cfff5fe17da9cf6db1e21a85107094b8ff7ec864e362745d3",
+ "delivered_archive_unchanged_by_the_correction": {
+  "bytes": 27280244,
+  "note": "the archive was packed before this correction, so the corrected progress document is published beside the archive in Git; the archive still carries the p5_delivery manifests, which is what the re-pack was for",
+  "path": "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T204438Z.zip",
+  "sha256": "273b20b94b1053f4f25de725ab29f4ee534e4997931c7284f27361927755fcae"
+ },
+ "ledger_writes": 0,
+ "model_calls": 0,
+ "reason": "the publish receipt recorded the root progress document as 3cd6da9e3c7bd5440efa9abf1487ed9e804c94b81379e70a4d0eb961ab1f45a7, which was the bytes at receipt-writing time; that draft claimed the archive contains no seed or epsilon content, which is false because the P0c audit inside the archive records the frozen draw seed, the sealed truth file SHA-256 and the 24 recovered epsilon/h pairs",
+ "root_progress_document_final": {
+  "bytes": 12314,
+  "path": "V167_CURRENT_EVIDENCE_SUMMARY.md",
+  "sha256": "88b0e028518e0f4bc856fed1ee62961c931a7e9cb489a27b9c377898a2763f14"
+ },
+ "schema": "iscat167.publish_receipt_correction.1",
+ "scope": "this record fixes one descriptive sentence in a delivery summary; it changes no code, no test, no ledger and no scientific state, and spends no budget",
+ "truth_side_content_accurately_described": {
+  "already_public_on_branch_v166": true,
+  "audit_file": "results/v167/audit/v167_p0c_identity_and_pins_recheck.json",
+  "estimator_reachable": false,
+  "jail_file_enumeration_tasks_with_exactly_three_files": 23,
+  "reading_count": 24,
+  "seed": 16520261027,
+  "truth_file_sha256": "0f069b71ec803a8e8e236357e21a151be4cf0996c70b05d6f49a622910943d08",
+  "truth_valued_key_offenders_in_any_staged_document": 0
+ },
+ "utc": "20261028T204850Z"
+}

@@ -1,0 +1,87 @@
+{
+ "all_green": true,
+ "captured_utc": "2026-10-28T19:55:35.243001+00:00",
+ "collection": {
+  "captured_utc": "2026-10-28T19:55:35.968387+00:00",
+  "collect_only_sha256": {
+   "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "stdout": "5b696d3905260328c2d566edd894650dfbe78f56f0e3d3df1b6b4eae9061c007"
+  },
+  "collected_nodeids": 98,
+  "collection_failed": false,
+  "command": [
+   "C:\\ProgramData\\anaconda3\\python.exe",
+   "-m",
+   "pytest",
+   "--collect-only",
+   "-q",
+   "tools/v167/tests"
+  ],
+  "cwd": "C:\\iscat\\v167",
+  "nodeids_sha256": "d1a9f3f12a96b1922da4d13bd02d0e89f344d421a637cfaf5a2aed8dd3efdfe2",
+  "python": "C:\\ProgramData\\anaconda3\\python.exe",
+  "python_version": "3.11.7",
+  "returncode": 0
+ },
+ "command": [
+  "C:\\ProgramData\\anaconda3\\python.exe",
+  "-m",
+  "pytest",
+  "-q",
+  "--junitxml",
+  "C:\\iscat\\v167\\results\\v167\\workstation_tests\\full_008\\v167_production_suite\\junit.xml",
+  "tools/v167/tests"
+ ],
+ "counts_reconcile": true,
+ "cwd": "C:\\iscat\\v167",
+ "environment": {
+  "MKL_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "OPENBLAS_NUM_THREADS": "1",
+  "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+  "PYTHONDONTWRITEBYTECODE": "1"
+ },
+ "errors": 0,
+ "exitstatus": 0,
+ "external_pytest_addopts_ignored": null,
+ "failures": 0,
+ "final_outcomes": {
+  "failed": 0,
+  "passed": 98,
+  "skipped": 0
+ },
+ "junit_present": true,
+ "junit_sha256": "fc8988798c6919b8fed36d107aef7cff2d633123d263426fa49f75f4bf6c2f7f",
+ "outcome_recorder": "conftest",
+ "outcomes_present": true,
+ "outcomes_sha256": "5614af35532c7821d30d3ff6dcdb454000d8bf06023ee2f3f02f5bf1ca37a416",
+ "phase_pass_records": {
+  "call": 98,
+  "setup": 98,
+  "teardown": 98
+ },
+ "phase_records": 98,
+ "python": "C:\\ProgramData\\anaconda3\\python.exe",
+ "python_version": "3.11.7",
+ "returncode": 0,
+ "run_sha256": {
+  "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "ad94c201a2cd2ddc17d7c01f3e31baa758f219af4a76ba48eba5dcedfebc3788"
+ },
+ "schema": "iscat167.pytest_outcomes.1",
+ "skipped": 0,
+ "suite": "v167_production",
+ "tests": 98,
+ "tripwire": {
+  "exists": true,
+  "file": "real_f2c_tripwire.txt",
+  "path": "C:\\iscat\\v167\\results\\v167\\workstation_tests\\full_008\\v167_production_suite\\real_f2c_tripwire.txt",
+  "real_construction_attempts": 0,
+  "record_types": [
+   "ZERO_REAL_F2C_MODEL_CONSTRUCTION_ATTEMPTS"
+  ],
+  "records": 1,
+  "sha256": "0ec689f1a9defc5a7973db3863e96608546ba228aa2543fc088241b6cbbca5fb",
+  "zero_marker_written": true
+ }
+}

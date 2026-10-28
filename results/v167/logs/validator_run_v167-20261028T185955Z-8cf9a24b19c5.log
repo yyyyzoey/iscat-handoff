@@ -1,0 +1,7 @@
+# V167 validator subprocess
+$ C:\ProgramData\anaconda3\python.exe -X utf8 C:\iscat\v167\tools\v167\v167_validator.py --dry-run
+exit_code=0
+--- stdout ---
+VALIDATOR {"all_reportable_D_null": null, "model_calls": 0, "primary_scenario_MAE_nm": null, "run_id": null, "status": "NOT_STARTED_DRY_RUN", "task_execution_states": null, "tasks_total": null}
+
+--- stderr ---

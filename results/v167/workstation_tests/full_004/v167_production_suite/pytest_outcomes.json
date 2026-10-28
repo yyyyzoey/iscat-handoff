@@ -1,0 +1,10 @@
+{
+ "counts": {
+  "failed": 0,
+  "passed": 0,
+  "skipped": 0
+ },
+ "exitstatus": 0,
+ "schema": "iscat167.pytest_outcomes.1",
+ "tests": []
+}

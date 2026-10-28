@@ -1,0 +1,4 @@
+........................................................................ [ 85%]
+............                                                             [100%]
+- generated xml file: C:\iscat\v167\results\v167\workstation_tests\full_005\v167_production_suite\junit.xml -
+84 passed in 30.94s

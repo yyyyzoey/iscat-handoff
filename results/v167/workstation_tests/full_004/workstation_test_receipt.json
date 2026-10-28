@@ -1,0 +1,310 @@
+{
+ "all_suites_green": true,
+ "budget_state_after": {
+  "estimates_new_exists": false,
+  "ledger_exists": false,
+  "ledger_path": "C:\\iscat\\v167\\results\\v167\\logs\\v167_budget.sqlite",
+  "ledger_sha256": null,
+  "primary_task_dirs": 0,
+  "seal_exists": false
+ },
+ "budget_state_before": {
+  "estimates_new_exists": false,
+  "ledger_exists": false,
+  "ledger_path": "C:\\iscat\\v167\\results\\v167\\logs\\v167_budget.sqlite",
+  "ledger_sha256": null,
+  "primary_task_dirs": 0,
+  "seal_exists": false
+ },
+ "contract_reference": "section 3.3",
+ "real_f2c_tripwire": {
+  "exists": true,
+  "file": "real_f2c_tripwire.txt",
+  "path": "C:\\iscat\\v167\\results\\v167\\workstation_tests\\full_004\\v167_production_suite\\real_f2c_tripwire.txt",
+  "real_construction_attempts": 0,
+  "record_types": [
+   "ZERO_REAL_F2C_MODEL_CONSTRUCTION_ATTEMPTS"
+  ],
+  "records": 1,
+  "sha256": "0ec689f1a9defc5a7973db3863e96608546ba228aa2543fc088241b6cbbca5fb",
+  "zero_marker_written": true
+ },
+ "run_id": "full_004",
+ "schema": "iscat167.workstation_tests.1",
+ "scope": "LOCAL_TEST_INVENTORY_ONLY: synthetic forwards and plan guards, NOT physical validation and NOT the authorized V167 fit",
+ "source_hashes_after": {
+  "tools/v165_bundle/run_workstation_tests.py": "c3e5ed24451ed7e35257aba8a72812f82dc65358d5cdb12316e8388350dcc528",
+  "tools/v165_bundle/test_inventory.json": "9721b30a865dc868218178b969d9265e0f4b61000d0b16d6ca608f482987a0d8",
+  "tools/v167/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/v167/run_all.py": "adb89d52219920e19a31469c1322ba3d2f2d70e159603d727a76339209fcd8bf",
+  "tools/v167/run_workstation_tests.py": "ff5c4cfe7c21635fff23e9c5fcf9b8a642e3d070fca5584b745d75d7f09333b2",
+  "tools/v167/tests/conftest.py": "add32d7b21349b086df2c99eeca830a9a6543aa5d4bc50b1d5bbc602585fa7e8",
+  "tools/v167/tests/test_v167_billing.py": "c4ccfbdceca30b79e19b672fa91a6ffd9e4b1e9f8c172856a73dace9d47d82fe",
+  "tools/v167/tests/test_v167_frozen_literals.py": "5371e0adcca40c3d85dc8e4f0aec032c31cbd85e1f177688ae62f444b4e6528d",
+  "tools/v167/tests/test_v167_isolation.py": "2ee83837be536b3c4273cd0f244f4c6435726721689f09af7f0d4bbb772fc7a7",
+  "tools/v167/tests/test_v167_pipeline.py": "d0a72e1f9eaa328b6ad34ed2fd9a55dd4aa22cb92f6d48f9470f8072dc5603da",
+  "tools/v167/tests/test_v167_reporting.py": "ff06e5d5a72fc97206449c3872e693e04d22ac6334ae16284ecd9db4468a5fbf",
+  "tools/v167/v167_common.py": "c6d4cdea61e805e02753d2a8a92b87a6f685817f12f21bc3866908ddb6cabc91",
+  "tools/v167/v167_controller.py": "b894cd1c0dfcb399bae982f706796affa9f67fb63b49425b34224beca059bf2a",
+  "tools/v167/v167_jail.py": "9fc9b46a2353d4626240a47271dd890a3119aa613f9e764df955cc57c7dfb721",
+  "tools/v167/v167_rpc.py": "6281d75c4ae2ca7124ceae79def163b8bdeee5584affff0d1c037533977731bd",
+  "tools/v167/v167_runner.py": "0704429db73a7269537cdbcc8896767f17adcd0f2656638feb3112d72ebe3917",
+  "tools/v167/v167_service.py": "e27e096aa6c7ab8dc6ab1865b74b805c779e3cbb100a140b98047c14fd57c33e",
+  "tools/v167/v167_validator.py": "82c90b4c54cf7b43475c9e28a8f3031987ae54740d4f83896fd20d5bfae78c8e",
+  "tools/v167/v167_worker.py": "c237779ef1a9c4eff14594495c3e0929970357cf091edc4b3c6128439979b964",
+  "tools/v167_bundle/approved_core/v152_gls_core.py": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+  "tools/v167_bundle/approved_core/v165_objective.py": "7d013551d9ae155de023daa1e1a6ad5678c6b038ae217fa79fe22c4e4eed64bd",
+  "tools/v167_bundle/code/v167_payload_gate.py": "1d39764e91875673bf11d5f1e6e456be9cc214d27994f439145d98f049185b5c",
+  "tools/v167_bundle/code/v167_plan.py": "57302ab473466593522062432c5c95620e00d963ab38cb98b89c790f984f887e",
+  "tools/v167_bundle/config/v167_plan.json": "a2cccf0031667bd01e3a64da0765aecfb8de222fb85c88536a66bea1ea67f65a",
+  "tools/v167_bundle/manifest_sha256.csv": "a53b3a77c29d58d8ce49be2ef604cccb6344b97420296f4d913b4374f02a1008",
+  "tools/v167_bundle/tests/test_approved_objective.py": "1eae9fd22b5e221db29f3fbe87e540253df9f9ab85754937a2cf33683a5493d6",
+  "tools/v167_bundle/tests/test_v167_plan.py": "66a95826f6797ad9847a74c12f4bf5b7cb954a32f717d8ee4f0365e6fa8686ee"
+ },
+ "source_hashes_before": {
+  "tools/v165_bundle/run_workstation_tests.py": "c3e5ed24451ed7e35257aba8a72812f82dc65358d5cdb12316e8388350dcc528",
+  "tools/v165_bundle/test_inventory.json": "9721b30a865dc868218178b969d9265e0f4b61000d0b16d6ca608f482987a0d8",
+  "tools/v167/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/v167/run_all.py": "adb89d52219920e19a31469c1322ba3d2f2d70e159603d727a76339209fcd8bf",
+  "tools/v167/run_workstation_tests.py": "ff5c4cfe7c21635fff23e9c5fcf9b8a642e3d070fca5584b745d75d7f09333b2",
+  "tools/v167/tests/conftest.py": "add32d7b21349b086df2c99eeca830a9a6543aa5d4bc50b1d5bbc602585fa7e8",
+  "tools/v167/tests/test_v167_billing.py": "c4ccfbdceca30b79e19b672fa91a6ffd9e4b1e9f8c172856a73dace9d47d82fe",
+  "tools/v167/tests/test_v167_frozen_literals.py": "5371e0adcca40c3d85dc8e4f0aec032c31cbd85e1f177688ae62f444b4e6528d",
+  "tools/v167/tests/test_v167_isolation.py": "2ee83837be536b3c4273cd0f244f4c6435726721689f09af7f0d4bbb772fc7a7",
+  "tools/v167/tests/test_v167_pipeline.py": "d0a72e1f9eaa328b6ad34ed2fd9a55dd4aa22cb92f6d48f9470f8072dc5603da",
+  "tools/v167/tests/test_v167_reporting.py": "ff06e5d5a72fc97206449c3872e693e04d22ac6334ae16284ecd9db4468a5fbf",
+  "tools/v167/v167_common.py": "c6d4cdea61e805e02753d2a8a92b87a6f685817f12f21bc3866908ddb6cabc91",
+  "tools/v167/v167_controller.py": "b894cd1c0dfcb399bae982f706796affa9f67fb63b49425b34224beca059bf2a",
+  "tools/v167/v167_jail.py": "9fc9b46a2353d4626240a47271dd890a3119aa613f9e764df955cc57c7dfb721",
+  "tools/v167/v167_rpc.py": "6281d75c4ae2ca7124ceae79def163b8bdeee5584affff0d1c037533977731bd",
+  "tools/v167/v167_runner.py": "0704429db73a7269537cdbcc8896767f17adcd0f2656638feb3112d72ebe3917",
+  "tools/v167/v167_service.py": "e27e096aa6c7ab8dc6ab1865b74b805c779e3cbb100a140b98047c14fd57c33e",
+  "tools/v167/v167_validator.py": "82c90b4c54cf7b43475c9e28a8f3031987ae54740d4f83896fd20d5bfae78c8e",
+  "tools/v167/v167_worker.py": "c237779ef1a9c4eff14594495c3e0929970357cf091edc4b3c6128439979b964",
+  "tools/v167_bundle/approved_core/v152_gls_core.py": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+  "tools/v167_bundle/approved_core/v165_objective.py": "7d013551d9ae155de023daa1e1a6ad5678c6b038ae217fa79fe22c4e4eed64bd",
+  "tools/v167_bundle/code/v167_payload_gate.py": "1d39764e91875673bf11d5f1e6e456be9cc214d27994f439145d98f049185b5c",
+  "tools/v167_bundle/code/v167_plan.py": "57302ab473466593522062432c5c95620e00d963ab38cb98b89c790f984f887e",
+  "tools/v167_bundle/config/v167_plan.json": "a2cccf0031667bd01e3a64da0765aecfb8de222fb85c88536a66bea1ea67f65a",
+  "tools/v167_bundle/manifest_sha256.csv": "a53b3a77c29d58d8ce49be2ef604cccb6344b97420296f4d913b4374f02a1008",
+  "tools/v167_bundle/tests/test_approved_objective.py": "1eae9fd22b5e221db29f3fbe87e540253df9f9ab85754937a2cf33683a5493d6",
+  "tools/v167_bundle/tests/test_v167_plan.py": "66a95826f6797ad9847a74c12f4bf5b7cb954a32f717d8ee4f0365e6fa8686ee"
+ },
+ "source_hashes_unchanged": true,
+ "suite_receipt_sha256": {
+  "suite_00": "bdade4ab721c91b01308019491ec51c295931285d801373869e97011dac51b95",
+  "suite_01": "dd6b4bb5b4839c1bff6f9c5a40b2ee36f8134bec4d339e4e7365a955fc53e790",
+  "suite_02": "b037db4eaa9c70f969b0e44217edd39c6a744219ac0a20ef0806ea280f1735ca"
+ },
+ "suites": [
+  {
+   "all_green": true,
+   "captured_utc": "2026-10-28T18:42:28.147646+00:00",
+   "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "C:\\iscat\\v167\\tools\\v165_bundle\\run_workstation_tests.py",
+    "--out",
+    "C:\\iscat\\v167\\results\\v167\\workstation_tests\\full_004\\v166_inherited_41\\v165_driver"
+   ],
+   "counts_reconcile": true,
+   "cwd": "C:\\iscat\\v167",
+   "inherited_outcomes": {
+    "collected": 41,
+    "collection_errors": 0,
+    "exitstatus": 0,
+    "outcomes_present": true,
+    "outcomes_sha256": "9846f6d28a2937cda4f61a16bdb18651e9f99fbbe4d460e7e1c91c064f3a2f25",
+    "phase_pass_records": {
+     "call": 41,
+     "setup": 41,
+     "teardown": 41
+    },
+    "phase_reports": 123,
+    "reported_nodeids": 41,
+    "schema": "v165_receipt_plugin"
+   },
+   "inherited_real_f2c_calls": 0,
+   "inherited_receipt_sha256": "ab18a41d15008c05518c1ac1511d50d249f062731798e13c1b4ce935b1e49095",
+   "inherited_returncode": 0,
+   "inherited_scope": "COMPONENT_SYNTHETIC_FAULT_AND_ISOLATION_TESTS_NOT_PHYSICAL_VALIDATION",
+   "python": "C:\\ProgramData\\anaconda3\\python.exe",
+   "python_version": "3.11.7",
+   "returncode": 0,
+   "suite": "v166_inherited_41",
+   "tests": 41,
+   "v166_inherited_sha256": {
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "ebe6aefd3a2427399eff461dd343b1b1a36f43d4671a070da5e6ca86fc0a5b20"
+   }
+  },
+  {
+   "all_green": true,
+   "captured_utc": "2026-10-28T18:42:29.040448+00:00",
+   "collected": 38,
+   "collection": {
+    "captured_utc": "2026-10-28T18:42:29.765360+00:00",
+    "collect_only_sha256": {
+     "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stdout": "f4f327aa0aabe37b573a1556b1b612924e1576c2bf2c2a3c854274ecfe8010e4"
+    },
+    "collected_nodeids": 38,
+    "collection_failed": false,
+    "command": [
+     "C:\\ProgramData\\anaconda3\\python.exe",
+     "-m",
+     "pytest",
+     "--collect-only",
+     "-q",
+     "tests"
+    ],
+    "cwd": "C:\\iscat\\v167\\tools\\v167_bundle",
+    "nodeids_sha256": "f7cadf1b928554f4ba7d8c54953754bfaca53df07af61d12bd40eac3909532c3",
+    "python": "C:\\ProgramData\\anaconda3\\python.exe",
+    "python_version": "3.11.7",
+    "returncode": 0
+   },
+   "collection_errors": 0,
+   "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml",
+    "C:\\iscat\\v167\\results\\v167\\workstation_tests\\full_004\\bundle_local_38\\junit.xml",
+    "-p",
+    "v165_receipt_plugin",
+    "tests"
+   ],
+   "counts_reconcile": true,
+   "cwd": "C:\\iscat\\v167\\tools\\v167_bundle",
+   "environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+   },
+   "errors": 0,
+   "exitstatus": 0,
+   "external_pytest_addopts_ignored": null,
+   "failures": 0,
+   "junit_present": true,
+   "junit_sha256": "08312e2ed3cab2e26c475383b748cb4cbb75f907ff0962246a36ca4279edbb6b",
+   "outcome_recorder": "plugin",
+   "outcomes_present": true,
+   "outcomes_sha256": "6e6f64c8989d83c9552464ddf5fda835bd313cd27b1bfdabf5eca11f6c809b52",
+   "phase_pass_records": {
+    "call": 38,
+    "setup": 38,
+    "teardown": 38
+   },
+   "phase_records": 38,
+   "phase_reports": 114,
+   "python": "C:\\ProgramData\\anaconda3\\python.exe",
+   "python_version": "3.11.7",
+   "reported_nodeids": 38,
+   "returncode": 0,
+   "run_sha256": {
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "25bd8d629dc74886afde1093116bef22c64f0096c11ac8f77ab7a6ddec1a6bdd"
+   },
+   "schema": "v165_receipt_plugin",
+   "skipped": 0,
+   "suite": "bundle_plan_and_core",
+   "tests": 38,
+   "tripwire": {
+    "performed": false
+   }
+  },
+  {
+   "all_green": true,
+   "captured_utc": "2026-10-28T18:42:47.158137+00:00",
+   "collection": {
+    "captured_utc": "2026-10-28T18:42:47.891639+00:00",
+    "collect_only_sha256": {
+     "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stdout": "36e0f2246ef445c84b58d5b78893d022cd4a5c48ebd3f854452d5e150f5d812a"
+    },
+    "collected_nodeids": 80,
+    "collection_failed": false,
+    "command": [
+     "C:\\ProgramData\\anaconda3\\python.exe",
+     "-m",
+     "pytest",
+     "--collect-only",
+     "-q",
+     "tools/v167/tests"
+    ],
+    "cwd": "C:\\iscat\\v167",
+    "nodeids_sha256": "c3225d5235c59d9edcd2ccc29360910d6aaa7931d7aeae399b49b0da805e4883",
+    "python": "C:\\ProgramData\\anaconda3\\python.exe",
+    "python_version": "3.11.7",
+    "returncode": 0
+   },
+   "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml",
+    "C:\\iscat\\v167\\results\\v167\\workstation_tests\\full_004\\v167_production_suite\\junit.xml",
+    "tools/v167/tests"
+   ],
+   "counts_reconcile": true,
+   "cwd": "C:\\iscat\\v167",
+   "environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+   },
+   "errors": 0,
+   "exitstatus": 0,
+   "external_pytest_addopts_ignored": null,
+   "failures": 0,
+   "final_outcomes": {
+    "failed": 0,
+    "passed": 80,
+    "skipped": 0
+   },
+   "junit_present": true,
+   "junit_sha256": "e5a77f97f90fe394ec2658bb42684b675ac4b46ad7f3f6161e9cdcb714d59208",
+   "outcome_recorder": "conftest",
+   "outcomes_present": true,
+   "outcomes_sha256": "318949d3ae8bab6c90247689b7d5afc1207baff3283fe9a6f857a03f5c771b6d",
+   "phase_pass_records": {
+    "call": 80,
+    "setup": 80,
+    "teardown": 80
+   },
+   "phase_records": 80,
+   "python": "C:\\ProgramData\\anaconda3\\python.exe",
+   "python_version": "3.11.7",
+   "returncode": 0,
+   "run_sha256": {
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "d25d45ab022bbec5fadda8434754b1e33acbdf6c1cdf91738bb4ffc928dc225e"
+   },
+   "schema": "iscat167.pytest_outcomes.1",
+   "skipped": 0,
+   "suite": "v167_production",
+   "tests": 80,
+   "tripwire": {
+    "exists": true,
+    "file": "real_f2c_tripwire.txt",
+    "path": "C:\\iscat\\v167\\results\\v167\\workstation_tests\\full_004\\v167_production_suite\\real_f2c_tripwire.txt",
+    "real_construction_attempts": 0,
+    "record_types": [
+     "ZERO_REAL_F2C_MODEL_CONSTRUCTION_ATTEMPTS"
+    ],
+    "records": 1,
+    "sha256": "0ec689f1a9defc5a7973db3863e96608546ba228aa2543fc088241b6cbbca5fb",
+    "zero_marker_written": true
+   }
+  }
+ ],
+ "total_tests_recorded": 159,
+ "utc": "2026-10-28T18:42:47.904528+00:00",
+ "zero_charged_calls_proved": true
+}

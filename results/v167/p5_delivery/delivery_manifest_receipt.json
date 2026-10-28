@@ -1,0 +1,63 @@
+{
+ "code_identity_checks_all_true": true,
+ "code_identity_sha256": "9d267addaf905669824b7c226a479d4dc233fed58afed2e8583a553dc8b07185",
+ "code_manifest": {
+  "aggregate_sidecar": "results/v167/p5_delivery/v167_code_sha256_manifest.csv.aggregate.sha256",
+  "aggregate_sidecar_bytes": 65,
+  "aggregate_sidecar_format": "64 lowercase hex then one LF; sha256 of the CSV bytes",
+  "manifest": "results/v167/p5_delivery/v167_code_sha256_manifest.csv",
+  "manifest_bytes": 5017,
+  "manifest_sha256": "d01a7c818a64afe0301128757e493bad4d62498db9a8a5928c6116b588d12688",
+  "rows": 46,
+  "sum_bytes_of_listed_files": 676629
+ },
+ "contract_reference": "section 10.6 line 230 (full code SHA, full results SHA)",
+ "git_head": "e4939e19f353f8118d98b97ae2af989f298315ea",
+ "produced_by": "results/v167/p5_delivery/build_delivery_manifests.py",
+ "results_manifest": {
+  "aggregate_sidecar": "results/v167/p5_delivery/v167_results_sha256_manifest.csv.aggregate.sha256",
+  "aggregate_sidecar_bytes": 65,
+  "aggregate_sidecar_format": "64 lowercase hex then one LF; sha256 of the CSV bytes",
+  "manifest": "results/v167/p5_delivery/v167_results_sha256_manifest.csv",
+  "manifest_bytes": 479018,
+  "manifest_sha256": "87394c0b06bfa78471bc9cb704413e8cc98ec43bb0b00a958e7eb248e31435bf",
+  "rows": 2719,
+  "sum_bytes_of_listed_files": 44518129
+ },
+ "schema": "iscat167.delivery_manifests.1",
+ "scope": {
+  "budget": {
+   "attempt_states": {
+    "CHARGED": 1
+   },
+   "attempts": 1,
+   "cap_total": 10000,
+   "ledger": "results/v167/logs/v167_budget.sqlite",
+   "ledger_sha256": "212fc61391070cc0d8f07e41d1a356f31d76a4aed713bfc8c0e0031ef1d1eb34",
+   "opened": "sqlite mode=ro",
+   "task_states": {
+    "RUNNING": 26
+   },
+   "tasks": 26,
+   "used_calls_total": 1
+  },
+  "code_manifest_scope": "exactly the file set code_identities() binds the run to: tools/v167, tools/v167_bundle, the nine pinned V165/shared code files, and the five frozen literals",
+  "experimental_absolute_diameter_validated": false,
+  "ledger_writes": 0,
+  "model_calls": 0,
+  "reportable_D": null,
+  "results_manifest_scope": "every file under results/v167 at generation time"
+ },
+ "self_exclusion": {
+  "excluded_from_results_manifest": [
+   "results/v167/p5_delivery/delivery_manifest_receipt.json",
+   "results/v167/p5_delivery/v167_code_sha256_manifest.csv",
+   "results/v167/p5_delivery/v167_code_sha256_manifest.csv.aggregate.sha256",
+   "results/v167/p5_delivery/v167_results_sha256_manifest.csv",
+   "results/v167/p5_delivery/v167_results_sha256_manifest.csv.aggregate.sha256"
+  ],
+  "reason": "a manifest cannot contain the SHA-256 of its own bytes; these five paths are published beside the archive and their digests appear in this receipt"
+ },
+ "utc": "20261028T202738Z",
+ "v166_release_commit": "06b35cd4e0a47f7f49ef4b05401a07266f2c03b6"
+}

@@ -1,0 +1,314 @@
+{
+ "budget_caps_by_phase": {
+  "BIAS_STRESS": 7200,
+  "FINAL_VERIFY": 600,
+  "MODEL_BINDING": 200,
+  "SEARCH_EXTENSION": 2000
+ },
+ "budget_total": 10000,
+ "camera_h5_sha256": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+ "code_file_count": 45,
+ "code_git_state": {
+  "bundle_tracked": true,
+  "dirty_git_entries": [
+   "M tools/v167/v167_common.py",
+   " M tools/v167/v167_controller.py",
+   " M tools/v167/v167_service.py",
+   "?? tools/v167/tests/test_v167_persistence.py"
+  ],
+  "estimator_code_clean": false,
+  "estimator_code_tracked": true,
+  "git_head": "9fac18112b1712738759b2ed6bbebde623e9631e",
+  "missing_from_git": [],
+  "required_controller_files": [
+   "tools/v167/__init__.py",
+   "tools/v167/run_all.py",
+   "tools/v167/v167_common.py",
+   "tools/v167/v167_controller.py",
+   "tools/v167/v167_jail.py",
+   "tools/v167/v167_rpc.py",
+   "tools/v167/v167_runner.py",
+   "tools/v167/v167_service.py",
+   "tools/v167/v167_validator.py",
+   "tools/v167/v167_worker.py"
+  ],
+  "schema": "iscat167.code_git_state.1",
+  "tracked_v167_files": 34,
+  "untracked_python_under_tools_v167": [
+   "tools/v167/tests/test_v167_persistence.py"
+  ]
+ },
+ "code_identity_sha256": "8cf9a24b19c5e261478440d0de4376069a49a781a6eae179d809f11b99d536b8",
+ "controller_code_sha256": {
+  "run_all.py": "adb89d52219920e19a31469c1322ba3d2f2d70e159603d727a76339209fcd8bf",
+  "v167_controller.py": "55f68126bfd87f093b2a9477082b72c32ce98871dcb96d4a657f91b341ff24d0",
+  "v167_rpc.py": "6281d75c4ae2ca7124ceae79def163b8bdeee5584affff0d1c037533977731bd",
+  "v167_runner.py": "0704429db73a7269537cdbcc8896767f17adcd0f2656638feb3112d72ebe3917",
+  "v167_service.py": "c0253ffde1a4d82a52f3a919a1b1ea2c55611e991b38b30c35faeb5877ec9051",
+  "v167_validator.py": "82c90b4c54cf7b43475c9e28a8f3031987ae54740d4f83896fd20d5bfae78c8e"
+ },
+ "deliverable_ledger_path": "C:\\iscat\\v167\\results\\v167\\logs\\v167_budget.sqlite",
+ "dry_run": true,
+ "estimator_code_sha256": {
+  "v167_common.py": "fe261c072fbe73935e0a73eb465c14df596618f5e89a524fb0935bc177898d95",
+  "v167_jail.py": "9fc9b46a2353d4626240a47271dd890a3119aa613f9e764df955cc57c7dfb721",
+  "v167_rpc.py": "6281d75c4ae2ca7124ceae79def163b8bdeee5584affff0d1c037533977731bd",
+  "v167_worker.py": "c237779ef1a9c4eff14594495c3e0929970357cf091edc4b3c6128439979b964"
+ },
+ "field_library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+ "frozen_modules": {
+  "v152_budget_store": {
+   "bytes": 9437,
+   "path": "C:\\iscat\\v167\\tools\\v165_bundle\\code\\v152_budget_store.py",
+   "sha256": "98615b608f57f8ba531fc6a304aa45b371d8b24ca7793c0c252bb827847808b9"
+  },
+  "v152_gls_core": {
+   "bytes": 6917,
+   "path": "C:\\iscat\\v167\\tools\\v165_bundle\\code\\v152_gls_core.py",
+   "sha256": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5"
+  },
+  "v165_objective": {
+   "bytes": 3502,
+   "path": "C:\\iscat\\v167\\tools\\v165_bundle\\code\\v165_objective.py",
+   "sha256": "7d013551d9ae155de023daa1e1a6ad5678c6b038ae217fa79fe22c4e4eed64bd"
+  },
+  "v167_payload_gate": {
+   "bytes": 2107,
+   "path": "C:\\iscat\\v167\\tools\\v167_bundle\\code\\v167_payload_gate.py",
+   "sha256": "1d39764e91875673bf11d5f1e6e456be9cc214d27994f439145d98f049185b5c"
+  }
+ },
+ "git_blob_pinned_files": 72,
+ "git_head": "9fac18112b1712738759b2ed6bbebde623e9631e",
+ "ledger_path": "C:\\iscat\\v167\\results\\v167\\dry_run\\8cf9a24b19c5\\logs\\v167_budget.sqlite",
+ "model_calls_at_this_point": 0,
+ "old_source_shas": {
+  "results/v166/estimates.json": "8f97339e9645a29ec929e5c792d234a28821970338cf92a62d2982bfebba7634",
+  "results/v166/height_input/height_readings.json": "bbfd793aff48247623081dd607168cd9afbba2deeff5f37c7a0cbd62b032ad4e",
+  "results/v166/iscat_v166_return_001.zip": "866feed02333f244df72f55e38ccf74060962007a5010c5c29df5ebe9f16a74e",
+  "results/v166/logs/v165_budget.sqlite": "254b5485164a57865328c81f8890ea4aa458d1386ed6f5f34533f2848f7e4ece"
+ },
+ "plan_sha256": "eeae31bb98bafa4893c1c993ebfb7c985a702f1bd32aaba75546c16bd4ebab5d",
+ "printed_before_first_model_construction": true,
+ "reserved_by_phase": {
+  "BIAS_STRESS": {
+   "cap": 7200,
+   "tasks": 18
+  },
+  "FINAL_VERIFY": {
+   "cap": 600,
+   "tasks": 1
+  },
+  "MODEL_BINDING": {
+   "cap": 200,
+   "tasks": 2
+  },
+  "SEARCH_EXTENSION": {
+   "cap": 2000,
+   "tasks": 5
+  }
+ },
+ "run_id": "v167-20261028T185955Z-8cf9a24b19c5",
+ "schema": "iscat167.run_preamble.1",
+ "task_count": 23,
+ "tasks": [
+  {
+   "kind": "SEARCH_EXTENSION",
+   "payload_sha256": "46c8c1d7368e10b1038036c152b4f57e994a54e1888274dfe2aee7fcc934d1fb",
+   "phase": "SEARCH_EXTENSION",
+   "source_task_id": "B100000_ANON_01_H10_R00",
+   "task_cap": 400,
+   "task_id": "V167_f6cdbdadd4efb6608c395b35"
+  },
+  {
+   "kind": "SEARCH_EXTENSION",
+   "payload_sha256": "1ce7af552664e25547ccc5999f928d878c12cbd4c4900654ee55821c3cfad056",
+   "phase": "SEARCH_EXTENSION",
+   "source_task_id": "B100000_ANON_01_H10_R01",
+   "task_cap": 400,
+   "task_id": "V167_6ff0324a1689f547abd09d94"
+  },
+  {
+   "kind": "SEARCH_EXTENSION",
+   "payload_sha256": "49840cf7005b8a656dd112d72d730b259981f77f19ba6d493fe9fe1b29be393a",
+   "phase": "SEARCH_EXTENSION",
+   "source_task_id": "B100000_ANON_01_H1_R00",
+   "task_cap": 400,
+   "task_id": "V167_bb3fd0ce869436623e5cf1b9"
+  },
+  {
+   "kind": "SEARCH_EXTENSION",
+   "payload_sha256": "6fe3e28882c6355480fe6ed7e6b153b0924f3741aa541dd13cc0dcc874b2c41f",
+   "phase": "SEARCH_EXTENSION",
+   "source_task_id": "B100000_ANON_01_H1_R01",
+   "task_cap": 400,
+   "task_id": "V167_2517123845be16c853d4adfb"
+  },
+  {
+   "kind": "SEARCH_EXTENSION",
+   "payload_sha256": "75ab365f61b0651520c8dd1e53e405da6c95862e17fc1d3ead69bd35b094c6b4",
+   "phase": "SEARCH_EXTENSION",
+   "source_task_id": "B100000_ANON_01_H1_R02",
+   "task_cap": 400,
+   "task_id": "V167_7d56f0cb54fce600473a5d14"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "aeaebb154e7bfb2aba68d75091cfeb99f2f6d02dfe049572a341defeca3f8ade",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_02_H1_R00",
+   "task_cap": 400,
+   "task_id": "V167_adade862c88fbe559e2005cd"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "e81bc7ad38fe5ec470b6f565cdee73bf239af479b456c1e4900283f8d0d33041",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_02_H1_R00",
+   "task_cap": 400,
+   "task_id": "V167_1eef8373eb166eb53b8561d6"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "5f704cd80d8fcb9503eb904d7693aadd2cccffd795d6f39db3ce000ef813e93e",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_02_H1_R01",
+   "task_cap": 400,
+   "task_id": "V167_f91641c1923b33e3dc53ed69"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "a1733b9f0442f9b7b4efa57a078a6fd5da3f524329793c192905de2c4915f199",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_02_H1_R01",
+   "task_cap": 400,
+   "task_id": "V167_3299c3144b653ba742f4811b"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "604a9774f51d8972a99f7454ed8954e0a3daf686beb47dcd4240ee60f60c491f",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_02_H1_R02",
+   "task_cap": 400,
+   "task_id": "V167_8aa04d0a60e778e5a615d54f"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "45c6f0ad985bc4b3e2700f42b70aec7473ecca15f02c047107441dc952e9777b",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_02_H1_R02",
+   "task_cap": 400,
+   "task_id": "V167_ab8df6beb21c510526c0f4d2"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "1d192c2b7ede78bd2d05dc80cf91e00138e29178c273b5f408fdb914856293bf",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_03_H1_R00",
+   "task_cap": 400,
+   "task_id": "V167_cf164b9af6c9f32ea9db7253"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "d0642db1b564b6c4f93ca82dd18a6a1385abbd496f5e221496a4673f400e222a",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_03_H1_R00",
+   "task_cap": 400,
+   "task_id": "V167_2dbd84a618388d86cb85826c"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "fa44038321f95523613b45b6e05de14abd25fbe5433004509f0cf7267b34ed63",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_03_H1_R01",
+   "task_cap": 400,
+   "task_id": "V167_ca77c765372c19f03c0a3e0a"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "c52c94534fada7eb30c89be8211e4d48d35b8d42a813ec562ba8f39c859a3a1c",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_03_H1_R01",
+   "task_cap": 400,
+   "task_id": "V167_e0a11fff6f1cd4909dbed256"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "af4346a5a29e233c10ec565ba9a9b6608ee5db95bf5650e9a93830cfe8c95c5b",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_03_H1_R02",
+   "task_cap": 400,
+   "task_id": "V167_997c3880b428c1aa9e16fc41"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "db9fdcfea9a8f83929d92ad87ac0a36df6bf95082659d8e142ec73313a061f77",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_03_H1_R02",
+   "task_cap": 400,
+   "task_id": "V167_08b5eae8d7e918268bafe50b"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "1b1b9c1b51e8ae271c222d1d913b924bcb0a8a0de8ba7a24a0f45ef252d1a088",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_04_H1_R00",
+   "task_cap": 400,
+   "task_id": "V167_157ff8cb77af1db8dde80a96"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "07d9c8a68511cc3baaba1ec1ee2b40463f3bd0f112acc9377e0a2f57a2510015",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_04_H1_R00",
+   "task_cap": 400,
+   "task_id": "V167_a1c4e50224ba3f62a3cc8ff1"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "3eb255f9c0564378c3e4efc48818b2806748e6d7f7bcbd5c5bd65956bb48b834",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_04_H1_R01",
+   "task_cap": 400,
+   "task_id": "V167_44c521983b315b3193f9f0d5"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "fba5669b86be901b3c25f8799ff471fd2afcc64e3d95b876bb2b7a16a587a302",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_04_H1_R01",
+   "task_cap": 400,
+   "task_id": "V167_28b3489fc660bb9947850c4d"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "7421b4fd20c53f73bb676e24b37c320f6baf3c18be45ae4439961df57107e56b",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_04_H1_R02",
+   "task_cap": 400,
+   "task_id": "V167_d7b0fa3ee026d3a4eecef249"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "d70ea34a78371bf9bdf99cceb0b3d8fab277998a5658d057f86173345b417f40",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_04_H1_R02",
+   "task_cap": 400,
+   "task_id": "V167_b7ecbd064ac655d088a097aa"
+  }
+ ],
+ "v166_release_commit": "06b35cd4e0a47f7f49ef4b05401a07266f2c03b6"
+}
+STEP_OK prepare {"budget_total": 10000, "code_identity_sha256": "8cf9a24b19c5e261478440d0de4376069a49a781a6eae179d809f11b99d536b8", "dry_run": true, "git_head": "9fac18112b1712738759b2ed6bbebde623e9631e", "model_calls": 0, "run_id": "v167-20261028T185955Z-8cf9a24b19c5", "tasks_planned": 23}
+STEP_OK bind {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}
+STEP_OK run {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": null, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}
+STEP_OK tables {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}
+STEP_OK final {"actual_calls": 0, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": "NOT_STARTED", "distinct_theta": null, "estimates_new_sha256": null, "execution_state": "NOT_STARTED", "file_count": null, "logical_items": 36, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}
+STEP_OK estimates {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}
+STEP_OK seal {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}
+STEP_OK validate {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}
+STEP_OK records {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}
+STEP_OK status {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}
+STEP_OK manifest {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}
+STEP_OK verification {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}
+TRACE {"blocked_steps": [], "dry_run": true, "exit_code": 0, "failed_step": null, "model_constructions_in_process": 0, "reportable_D": null, "requested_steps": ["prepare", "bind", "run", "tables", "final", "estimates", "seal", "validate", "records", "status", "manifest", "verification"], "run_id": "v167-20261028T185955Z-8cf9a24b19c5", "schema": "iscat167.step_sequence.1", "steps": [{"status": "OK", "step": "prepare", "summary": {"budget_total": 10000, "code_identity_sha256": "8cf9a24b19c5e261478440d0de4376069a49a781a6eae179d809f11b99d536b8", "dry_run": true, "git_head": "9fac18112b1712738759b2ed6bbebde623e9631e", "model_calls": 0, "run_id": "v167-20261028T185955Z-8cf9a24b19c5", "tasks_planned": 23}, "wall_seconds": 6.172}, {"status": "OK", "step": "bind", "summary": {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}, "wall_seconds": 4.734}, {"status": "OK", "step": "run", "summary": {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": null, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}, "wall_seconds": 0.0}, {"status": "OK", "step": "tables", "summary": {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}, "wall_seconds": 0.0}, {"status": "OK", "step": "final", "summary": {"actual_calls": 0, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": "NOT_STARTED", "distinct_theta": null, "estimates_new_sha256": null, "execution_state": "NOT_STARTED", "file_count": null, "logical_items": 36, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}, "wall_seconds": 0.0}, {"status": "OK", "step": "estimates", "summary": {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}, "wall_seconds": 0.0}, {"status": "OK", "step": "seal", "summary": {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}, "wall_seconds": 0.0}, {"status": "OK", "step": "validate", "summary": {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}, "wall_seconds": 0.532}, {"status": "OK", "step": "records", "summary": {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}, "wall_seconds": 0.0}, {"status": "OK", "step": "status", "summary": {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}, "wall_seconds": 0.0}, {"status": "OK", "step": "manifest", "summary": {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}, "wall_seconds": 0.0}, {"status": "OK", "step": "verification", "summary": {"actual_calls": null, "authorized_constructions": null, "binding_status": null, "contract_pins_matched": null, "db_state": null, "distinct_theta": null, "estimates_new_sha256": null, "execution_state": null, "file_count": null, "logical_items": null, "merge_reuse_sha256": null, "model_calls": 0, "not_verifiable": null, "row_count": null, "seal_sha256": null, "status": "NOT_STARTED_DRY_RUN", "task_count": null, "tasks_executed_this_round": null, "tasks_planned": null, "verified": null}, "wall_seconds": 0.0}]}

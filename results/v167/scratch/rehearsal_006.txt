@@ -1,0 +1,16 @@
+REHEARSAL_MISSING_MEMBERS ["deliverables/budget/v167_budget.sqlite"]
+{
+ "audit": "C:\\iscat\\v167\\results\\v167_prepared\\pack_rehearsal\\rehearsal_zip_verification.json",
+ "crc_bad_member": null,
+ "csv_mismatches": [],
+ "isolation_offenders": {},
+ "member_count": 4307,
+ "pack_passes": {
+  "rehearsal": true
+ },
+ "unsafe_paths": [],
+ "zip_bytes": 16835741,
+ "zip_sha256": "5068f2163b2fd6ae8eca049046b3886efe494b0c1cd4303f508596871b2b50fa"
+}
+
+PACK_AUDIT_CLEAN results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T184038Z.zip
