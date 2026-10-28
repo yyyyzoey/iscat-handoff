@@ -1,0 +1,27 @@
+{
+  "scope": "LOCAL_COMPONENT_AND_SYNTHETIC_TEST_ONLY_NOT_WORKSTATION_F2C_VALIDATION",
+  "test_summary": "............                                                             [100%]\n12 passed in 0.35s",
+  "code_sha256": {
+    "code/v152_gls_core.py": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+    "code/v165_objective.py": "7d013551d9ae155de023daa1e1a6ad5678c6b038ae217fa79fe22c4e4eed64bd",
+    "code/v165_task_ids.py": "5a3207cedf139c337bde9751e8ef5883866b63cd70103fc110528b4c1e173110",
+    "generator/v165_generate_height.py": "a0a08a216e1e0307420432d8adf02cf364610946f5ed3e2f8863c9f83d730884",
+    "tests/test_generator_ids.py": "42b2f120ad7ce51d63dad3116f148480bbf3be9de98621e38c14c4bf2008c51d",
+    "tests/test_height.py": "9acf55e820704983f1b34a6dfd68e76ab56cc6313c132f1231d6c284f57b76b7",
+    "tests/test_validator.py": "8d985b218e467f053d087657c67954f21e8543258434c160093e1c502c71103c",
+    "validator/v165_validator.py": "af63ace2a6218177c21b93e6e89d96b5839c6953af564c05c7c68b815ff5f743"
+  },
+  "phase_budget": {
+    "MODEL_BINDING": 200,
+    "HEIGHT_FITS": 11200,
+    "FINAL_VERIFY": 600,
+    "total": 12000
+  },
+  "expected_fit_tasks": 28,
+  "expected_aux_height_readings": 24,
+  "new_optical_BEM": 0,
+  "new_render": 0,
+  "new_camera_exposure": 0,
+  "workstation_real_f2c_calls": null,
+  "scientific_experiment_run": false
+}
