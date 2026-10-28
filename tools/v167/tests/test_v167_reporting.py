@@ -587,3 +587,109 @@ def test_every_pinned_v166_file_is_present_and_matches_its_contract_digest():
         assert common.sha_file(path) == digest, "PINNED_BYTES_CHANGED:" + rel
         # a pinned file may not be reachable only through a rename of a deliverable dir
         assert rel.startswith("results/v166/"), "PIN_OUTSIDE_THE_V166_ROOT:" + rel
+
+
+# ------------------------------------------------------------------ status honesty
+class _StubStore:
+    """Counts only: the status document reads the settled budget tally and nothing else."""
+
+    def __init__(self, counts: dict | None = None):
+        self._counts = dict(counts or {})
+
+    def counts(self) -> dict:
+        return dict(self._counts)
+
+
+def _status_ctx(out: Path, entries: list[dict], run_id: str) -> dict:
+    ctx = _report_ctx(out, entries, run_id)
+    ctx["store"] = _StubStore()
+    return ctx
+
+
+def _patch_status_tree(probe_tree, monkeypatch):
+    monkeypatch.setattr(controller, "OUT", probe_tree)
+    monkeypatch.setattr(controller, "CONTROL", probe_tree / "controller_only")
+    monkeypatch.setattr(controller, "JAIL_ROOT", probe_tree / "estimator_inputs")
+    monkeypatch.setattr(controller, "LEDGER_PATH", probe_tree / "logs" / "v167_budget.sqlite")
+
+
+def _write_control_json(out: Path, name: str, document: dict) -> None:
+    control = out / "controller_only"
+    control.mkdir(parents=True, exist_ok=True)
+    (control / name).write_bytes(common.canon(document))
+
+
+def test_the_status_document_may_not_report_a_round_that_left_no_run_round_file(
+        staged, probe_tree, monkeypatch):
+    """P3/P4 may only claim what their own evidence file proves (regression guard).
+
+    The primary status.json of the failed first round printed P3 "EXECUTED" with
+    "0 of 23 tasks sealed" even though no run_round.json existed: the stage labels
+    tested the truthiness of a dict that had just been merged with
+    published_versions, which is never empty.  Existence of the evidence file is the
+    only admissible proof.
+    """
+    entries = staged["plan"]["entries"]
+    out = probe_tree
+    _patch_status_tree(out, monkeypatch)
+    # P0/P1 evidence present, so those two stages legitimately read EXECUTED.
+    _write_control_json(out, "task_signatures.json", {"schema": "iscat167.task_signatures.1"})
+    jail = out / "estimator_inputs"
+    jail.mkdir(parents=True, exist_ok=True)
+    (jail / "00_isolation_receipt.json").write_bytes(common.canon({"schema": "probe"}))
+    assert not (out / "controller_only" / "run_round.json").exists()
+    assert not (out / "controller_only" / "final_verify.json").exists()
+
+    document = controller.status_document(_status_ctx(out, entries, "PROBE_STATUS_EMPTY"))
+    stages = document["stages"]
+    assert not (out / "controller_only" / "run_round.json").exists(), (
+        "status_document must not author the evidence it reads")
+    assert stages["P3_authorized_computation"]["EXECUTION"] == "NOT_STARTED", (
+        "P3_CLAIMED_EXECUTION_WITHOUT_A_RUN_ROUND_FILE")
+    assert stages["P3_authorized_computation"]["VERIFICATION"] == "NOT_STARTED", (
+        "P3_CLAIMED_SEAL_COUNT_WITHOUT_A_RUN_ROUND_FILE")
+    assert stages["P4_final_verify"]["EXECUTION"] == "NOT_STARTED"
+    assert stages["P4_final_verify"]["VERIFICATION"] == "NOT_STARTED", (
+        "P4_INVENTED_A_VERIFICATION_STRING_WITHOUT_A_FINAL_VERIFY_FILE")
+    assert "logical None" not in stages["P4_final_verify"]["VERIFICATION"]
+    assert stages["P2_model_binding"]["EXECUTION"] == "NOT_STARTED"
+    assert stages["P5_seal_and_score"]["EXECUTION"] == "NOT_STARTED"
+    assert document["budget_used_total"] == 0
+    assert document["reportable_D"] is None
+    assert document["experimental_absolute_diameter_validated"] is False
+
+
+def test_a_round_document_that_records_blocked_execution_is_reported_verbatim(
+        staged, probe_tree, monkeypatch):
+    """A BLOCKED round receipt must reach the status document unchanged, not as a pass."""
+    entries = staged["plan"]["entries"]
+    out = probe_tree
+    _patch_status_tree(out, monkeypatch)
+    _write_control_json(out, "run_round.json",
+                        {"status": "BLOCKED", "tasks_planned": 0,
+                         "blocked_reason": "RUN_IDENTITY_CODE_CHANGED"})
+
+    document = controller.status_document(_status_ctx(out, entries, "PROBE_STATUS_BLOCKED"))
+    p3 = document["stages"]["P3_authorized_computation"]
+    assert p3["EXECUTION"] == "BLOCKED", "A_BLOCKED_ROUND_WAS_SMOOTHED_INTO_A_STATUS"
+    assert p3["VERIFICATION"] == "0 of 23 tasks sealed"
+    assert document["stages"]["P4_final_verify"]["EXECUTION"] == "NOT_STARTED"
+
+
+def test_p3_only_claims_executed_once_the_round_step_wrote_its_own_receipt(
+        staged, probe_tree, monkeypatch):
+    """The positive side of the same gate: with the receipt present the label is allowed."""
+    entries = staged["plan"]["entries"]
+    out = probe_tree
+    _patch_status_tree(out, monkeypatch)
+    _write_control_json(out, "run_round.json", {"status": "EXECUTED", "tasks_planned": 23})
+    _write_control_json(out, "final_verify.json",
+                        {"status": "EXECUTED", "logical_items": 28, "distinct_theta": 28,
+                         "verified": 28, "not_verifiable": 0})
+
+    document = controller.status_document(_status_ctx(out, entries, "PROBE_STATUS_FULL"))
+    p3 = document["stages"]["P3_authorized_computation"]
+    assert p3["EXECUTION"] == "EXECUTED"
+    assert p3["VERIFICATION"] == "23 of 23 tasks sealed"
+    assert document["stages"]["P4_final_verify"]["EXECUTION"] == "EXECUTED"
+    assert "logical 28" in document["stages"]["P4_final_verify"]["VERIFICATION"]

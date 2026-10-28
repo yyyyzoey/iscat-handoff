@@ -1868,8 +1868,13 @@ def status_document(ctx: dict) -> dict:
     """Contract section 11: EXECUTION, VERIFICATION, EVIDENCE, SCIENTIFIC_SCOPE."""
     round_path, round_history = latest_evidence(CONTROL / "run_round.json")
     final_path, final_history = latest_evidence(CONTROL / "final_verify.json")
-    round_doc = read_json(round_path) if round_path.exists() else {}
-    final = read_json(final_path) if final_path.exists() else {}
+    # Existence is captured before published_versions is merged in: the merged dict is
+    # never empty, so a truthiness test on it reported EXECUTED for a round that ran no
+    # task at all and left no run_round.json behind.
+    round_ran = round_path.is_file()
+    final_ran = final_path.is_file()
+    round_doc = read_json(round_path) if round_ran else {}
+    final = read_json(final_path) if final_ran else {}
     round_doc = dict(round_doc, published_versions=[str(p) for p in round_history])
     final = dict(final, published_versions=[str(p) for p in final_history])
     estimates = read_json(OUT / "estimates_new.json") if (OUT / "estimates_new.json").exists() \
@@ -1896,17 +1901,19 @@ def status_document(ctx: dict) -> dict:
             "EVIDENCE": str(CONTROL / "bind_model.json"),
             "SCIENTIFIC_SCOPE": "one authorized construction; no new BEM or render"},
         "P3_authorized_computation": {
-            "EXECUTION": round_doc.get("status", "EXECUTED" if round_doc else "NOT_STARTED"),
+            "EXECUTION": (round_doc.get("status", "EXECUTED")
+                          if round_ran else "NOT_STARTED"),
             "VERIFICATION": ("%d of 23 tasks sealed" % round_doc.get("tasks_planned", 0)
-                             if round_doc else "NOT_STARTED"),
+                             if round_ran else "NOT_STARTED"),
             "EVIDENCE": str(round_path),
             "SCIENTIFIC_SCOPE": "simulated F2c development fits only"},
         "P4_final_verify": {
-            "EXECUTION": final.get("status", final.get("execution_state", "NOT_STARTED")),
+            "EXECUTION": (final.get("status", final.get("execution_state", "NOT_STARTED"))
+                          if final_ran else "NOT_STARTED"),
             "VERIFICATION": ("logical %s / distinct %s / verified %s / not verifiable %s"
                              % (final.get("logical_items"), final.get("distinct_theta"),
                                 final.get("verified"), final.get("not_verifiable"))
-                             if final else "NOT_STARTED"),
+                             if final_ran else "NOT_STARTED"),
             "EVIDENCE": str(final_path),
             "SCIENTIFIC_SCOPE": "byte-level reproduction of published answers only"},
         "P5_seal_and_score": {
