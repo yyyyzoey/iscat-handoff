@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import importlib
 import json
+import re
 import sqlite3
 import sys
 import time
@@ -41,6 +42,39 @@ class FatalPersistenceError(RuntimeError):
 
 class ReconstructionRefused(RuntimeError):
     pass
+
+
+# The loader self-check does not run on the F2c composite: it runs on the legacy F2
+# field library that the composite wraps (tools/load_field_library.py walks its own
+# nodes after building the model, and tools/v142_model.py records that library id as
+# identity["parent_model_id"]).  So a loader forward legitimately returns an id
+# different from MODEL_ID.  V167 still verifies every return; it verifies the correct
+# value, and after construction it requires that value to be exactly the frozen F2c
+# parent.  Estimator returns keep the original MODEL_ID rule untouched.
+LOADER_KIND = "MODEL_LOADER"
+FIELD_MODEL_ID = re.compile(r"^v131-field-[0-9a-f]{64}$")
+
+
+def check_returned_model_id(kind: str, model_id: Any) -> None:
+    """Refuse a return whose model id is not the one this call was billed against."""
+    if kind == LOADER_KIND:
+        require(isinstance(model_id, str) and FIELD_MODEL_ID.match(model_id) is not None,
+                "LOADER_FORWARD_MODEL_ID_NOT_FIELD_LIBRARY:" + repr(model_id))
+        return
+    require(model_id is None or model_id == MODEL_ID, "MODEL_ID_MISMATCH_IN_RETURN")
+
+
+def resolve_loader_field_parent(model: Any, observed: Any) -> tuple[str, str]:
+    """Bind the loader self-check ids to the parent id of the live F2c model."""
+    ids = {str(value) for value in observed}
+    require(len(ids) == 1, "LOADER_FIELD_ID_DISTINCT_COUNT:" + json.dumps(sorted(ids)))
+    identity = getattr(model, "identity", None)
+    require(isinstance(identity, dict), "F2C_IDENTITY_NOT_A_MAPPING")
+    parent = identity.get("parent_model_id")
+    field_id = ids.pop()
+    require(field_id == parent,
+            "LOADER_FIELD_ID_NOT_F2C_PARENT:" + str(field_id) + "!=" + str(parent))
+    return field_id, str(parent)
 
 
 def make_store(path: Path) -> BudgetStore:
@@ -125,6 +159,9 @@ class PredictionService:
         self.loader_signature: str | None = None
         self.binding_signature: str | None = None
         self.import_summary: dict | None = None
+        # Model ids seen on loader returns, and the loader charges this process closed.
+        self.loader_field_model_ids: set[str] = set()
+        self.orphan_recovery: list[dict] = []
 
     # --------------------------------------------------------------- cache
     def load_existing_predictions(self) -> dict:
@@ -338,10 +375,28 @@ class PredictionService:
                     "CHARGED_MODEL_ERROR_NOT_DURABLE:" + task_id + ":" + str(seq)) from persist_exc
             raise
         elapsed_ms = (time.perf_counter() - started) * 1000.0
-        c, returned_theta, model_id, observation = _read_model_output(result, t)
-        require(c.shape == (13, 13) and np.isfinite(c).all(),
-                "MODEL_OUTPUT_MUST_BE_FINITE_13X13_SIGNED_C")
-        require(model_id is None or model_id == MODEL_ID, "MODEL_ID_MISMATCH_IN_RETURN")
+        try:
+            c, returned_theta, model_id, observation = _read_model_output(result, t)
+            require(c.shape == (13, 13) and np.isfinite(c).all(),
+                    "MODEL_OUTPUT_MUST_BE_FINITE_13X13_SIGNED_C")
+            check_returned_model_id(kind, model_id)
+        except Exception as exc:
+            # The model did answer, so the charge stands, but the return is refused.
+            # The attempt has to be settled here or the open CHARGED row keeps the task
+            # unsealable and the billed call silently disappears from the accounting.
+            detail = {"error_type": type(exc).__name__, "error": str(exc),
+                      "error_repr": repr(exc), "traceback": traceback.format_exc(),
+                      "ledger_seq": seq, "start_index": start_index, "kind": kind,
+                      "returned_theta": None, "theta_sha256": key,
+                      "refusal_stage": "POST_RETURN_VALIDATION"}
+            try:
+                self.store.returned(task_id, seq, "MODEL_ERROR", detail)
+            except Exception as persist_exc:
+                raise FatalPersistenceError(
+                    "CHARGED_REFUSED_RETURN_NOT_DURABLE:" + task_id + ":" + str(seq)) from persist_exc
+            raise
+        if kind == LOADER_KIND:
+            self.loader_field_model_ids.add(str(model_id))
         c_hash = array_sha(c)
         path = self.out / "tasks" / task_id / "predictions" / f"{seq:04d}.json"
         require(not path.exists(), "PREDICTION_PATH_ALREADY_EXISTS:" + str(path))
@@ -368,16 +423,73 @@ class PredictionService:
         self.real_calls += 1
         self.durations_ms.append(elapsed_ms)
         relative = path.relative_to(self.out).as_posix()
-        self.cache[key] = {"C": c, "C_sha256": c_hash, "task_id": task_id, "seq": seq,
-                           "model_id": model_id or MODEL_ID, "origin": "v167_charged",
-                           "prediction_path": relative, "prediction_sha256": file_sha,
-                           "charged": True, "frames_sha256": frames_sha256}
+        if (model_id or MODEL_ID) == MODEL_ID:
+            # A loader answer belongs to the legacy field library, so it is never
+            # allowed to serve an estimator's reuse request as if it were F2c output.
+            self.cache[key] = {"C": c, "C_sha256": c_hash, "task_id": task_id, "seq": seq,
+                               "model_id": model_id or MODEL_ID, "origin": "v167_charged",
+                               "prediction_path": relative, "prediction_sha256": file_sha,
+                               "charged": True, "frames_sha256": frames_sha256}
         return {"C": c, "C_sha256": c_hash, "seq": seq, "prediction_path": relative,
                 "prediction_sha256": file_sha, "charged": True, "cache_hit": False,
                 "forward_wall_ms": elapsed_ms, "model_output": result,
                 "returned_theta": returned_theta.tolist(), "theta_sha256": key}
 
     # --------------------------------------------------------------- loading
+    def reconcile_loader_orphans(self) -> dict:
+        """Close a CHARGED loader attempt that a refused return left stranded.
+
+        Section 7 bills before the real forward, so a refusal inside the loader walk
+        leaves the attempt open: the loader task can never seal and the billed call
+        disappears from the accounting.  Each open loader attempt is settled as
+        MODEL_ERROR with every original charge field preserved, which is the same
+        semantics the round controller uses for worker tasks.  No call is refunded.
+        A CHARGED attempt outside the loader task means a crash this service knows
+        nothing about, so it stops the round instead of being absorbed here.
+        """
+        with self.store.db() as db:
+            rows = db.execute(
+                "SELECT seq, detail FROM attempts WHERE task = ? AND state = 'CHARGED' "
+                "ORDER BY seq", (LOADER_TASK,)).fetchall()
+            other = db.execute(
+                "SELECT task, seq FROM attempts WHERE state = 'CHARGED' AND task <> ? "
+                "ORDER BY task, seq", (LOADER_TASK,)).fetchall()
+        require(not other, "CHARGED_ORPHAN_OUTSIDE_LOADER:" + json.dumps(
+            [[str(task), int(seq)] for task, seq in other]))
+        recovery_log = self.out / "logs" / "loader_orphan_recovery.jsonl"
+        settled = []
+        for seq, raw in rows:
+            detail = json.loads(raw) if raw else {}
+            require(detail.get("kind") == LOADER_KIND,
+                    "LOADER_ORPHAN_SCOPE_EXCEEDED:" + str(int(seq)) + ":"
+                    + str(detail.get("kind")))
+            note = "loader_attempt_orphaned_by_a_refused_return"
+            self.store.returned(LOADER_TASK, int(seq), "MODEL_ERROR",
+                                dict(detail, reconciliation_state="MODEL_ERROR",
+                                     reconciliation_note=note,
+                                     reconciled_utc=time.strftime("%Y-%m-%dT%H:%M:%SZ",
+                                                                  time.gmtime())))
+            # The refusal raised before any return was written, so the ledger holds no
+            # reason text for it; the line points at the run that produced the orphan.
+            line = {"task_id": LOADER_TASK, "ledger_seq": int(seq),
+                    "theta_sha256": detail.get("theta_sha256"),
+                    "requested_theta": detail.get("requested_theta"),
+                    "charge_detail_sha256": sha_bytes(canon(detail)),
+                    "state_before": "CHARGED", "state_after": "MODEL_ERROR",
+                    "refunded_calls": 0,
+                    "reconciled_by": "v167_service.reconcile_loader_orphans",
+                    "note": note, "refusal_reason_in_ledger": False,
+                    "refusal_reason_source": "prior authorized run step trace"}
+            recovery_log.parent.mkdir(parents=True, exist_ok=True)
+            with recovery_log.open("a", encoding="utf-8") as handle:
+                handle.write(canon(line).decode("utf-8"))
+            settled.append(line)
+        self.orphan_recovery.extend(settled)
+        return {"settled_count": len(settled), "refunded_calls": 0,
+                "settled_sequences": [row["ledger_seq"] for row in settled],
+                "recovery_log": (recovery_log.relative_to(self.out).as_posix()
+                                 if settled else None)}
+
     def ensure_loader(self, *, dry_run: bool = False) -> dict:
         if self.model is not None:
             return {"constructed": False, "reason": "ALREADY_LIVE_IN_THIS_PROCESS"}
@@ -390,6 +502,7 @@ class PredictionService:
         if dry_run:
             return {"constructed": False, "model_calls": 0,
                     "reason": "DRY_RUN_NO_MODEL_CONSTRUCTION_AUTHORIZED"}
+        self.reconcile_loader_orphans()
         runtime, fields = model_modules()
         self.loader_signature, state = self.reserve_loader()
         require(state in ("RUNNING",), "LOADER_TASK_STATE:" + str(state))
@@ -415,12 +528,16 @@ class PredictionService:
         finally:
             fields.FieldForward.forward = original
         require(model.model_id == MODEL_ID, "F2C_MODEL_ID_CHANGED")
+        field_id, parent = resolve_loader_field_parent(model, self.loader_field_model_ids)
         self.model = model
         record = {
             "schema": "iscat167.model_construction.1",
             "signature": self.loader_signature,
             "constructions_in_this_process": self.constructions,
             "model_id": model.model_id,
+            "loader_field_model_id": field_id,
+            "f2c_parent_model_id": parent,
+            "orphan_attempts_reconciled": self.orphan_recovery,
             "model_module": str(Path(sys.modules["v142_model"].__file__).resolve()),
             "loader_task": LOADER_TASK, "loader_calls": len(loader_rows),
             "loader_attempts": loader_rows,

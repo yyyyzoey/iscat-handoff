@@ -14,6 +14,7 @@ import datetime
 import hashlib
 import json
 import os
+import sqlite3
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
@@ -68,7 +69,16 @@ def _source_hashes() -> dict:
 
 
 def _budget_state() -> dict:
-    """The only honest zero-charge proof: the primary ledger and task tree are absent."""
+    """Charge evidence for the zero-charge proof, read without touching the ledger.
+
+    Two situations have to be told apart.  Before the authorized round starts there is
+    no round ledger at all, so an absent tree is the strongest proof that no test billed
+    anything.  Once the round has opened its ledger that proof is no longer available,
+    and the only honest statement left is a differential one: every charge, attempt and
+    byte of the ledger has to come back identical after the suites.  The digest below is
+    taken through a read-only connection so the evidence itself cannot be written by the
+    run that is collecting it.
+    """
     return {
         "ledger_path": str(LEDGER),
         "ledger_exists": LEDGER.is_file(),
@@ -76,7 +86,41 @@ def _budget_state() -> dict:
         "primary_task_dirs": len(list(V167_TASKS.iterdir())) if V167_TASKS.is_dir() else 0,
         "estimates_new_exists": (OUT / "estimates_new.json").is_file(),
         "seal_exists": (OUT / "seal.json").is_file(),
+        "charge_digest": _charge_digest(),
     }
+
+
+def _charge_digest() -> dict:
+    """Every reserved task and every attempt row in the round ledger, as one digest."""
+    if not LEDGER.is_file():
+        return {"ledger_absent": True}
+    connection = sqlite3.connect(LEDGER.resolve().as_uri() + "?mode=ro", uri=True)
+    try:
+        tasks = connection.execute(
+            "SELECT id, used, state FROM tasks ORDER BY id").fetchall()
+        attempts = connection.execute(
+            "SELECT task, seq, state FROM attempts ORDER BY task, seq").fetchall()
+    finally:
+        connection.close()
+    encoded = json.dumps([tasks, attempts], sort_keys=True,
+                         separators=(",", ":")).encode("utf-8")
+    return {
+        "ledger_absent": False,
+        "reserved_tasks": len(tasks),
+        "calls_charged": sum(int(row[1]) for row in tasks),
+        "attempt_rows": len(attempts),
+        "attempts_open_charged": sum(1 for row in attempts if row[2] == "CHARGED"),
+        "charge_digest_sha256": hashlib.sha256(encoded).hexdigest(),
+    }
+
+
+# The fields a test run must leave exactly as it found them once a ledger exists.
+BUDGET_CORE_KEYS = ("ledger_sha256", "primary_task_dirs", "estimates_new_exists",
+                    "seal_exists", "charge_digest")
+
+
+def _budget_unchanged(before: dict, after: dict) -> bool:
+    return all(before.get(key) == after.get(key) for key in BUDGET_CORE_KEYS)
 
 
 def _run(command: list[str], cwd: Path, env: dict, suite_dir: Path, stem: str) -> dict:
@@ -278,7 +322,13 @@ def main(argv: list[str]) -> int:
         path.write_text(json.dumps(record, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
     wire = _tripwire(root / "v167_production_suite" / "real_f2c_tripwire.txt")
-    ledger_touched = before_budget["ledger_exists"] or after_budget["ledger_exists"]
+    # An absent ledger proves the suites billed nothing on its own; a live ledger has to
+    # be proved by comparison, and a ledger that appears mid-run is a failure either way.
+    ledger_present = bool(before_budget["ledger_exists"] or after_budget["ledger_exists"])
+    ledger_opened_mid_run = (not before_budget["ledger_exists"]
+                             and after_budget["ledger_exists"])
+    budget_identical = _budget_unchanged(before_budget, after_budget)
+    zero_charged = (not ledger_present) or (budget_identical and not ledger_opened_mid_run)
     receipt = {
         "schema": "iscat167.workstation_tests.1",
         "run_id": args.run_id,
@@ -293,9 +343,14 @@ def main(argv: list[str]) -> int:
         "source_hashes_after": after_hashes,
         "source_hashes_unchanged": before_hashes == after_hashes,
         "real_f2c_tripwire": wire,
+        "budget_proof_mode": ("absent_ledger" if not ledger_present else
+                              "differential_ledger_digest"),
+        "budget_ledger_present": ledger_present,
+        "budget_ledger_opened_mid_run": ledger_opened_mid_run,
+        "budget_core_state_unchanged": budget_identical,
         "budget_state_before": before_budget,
         "budget_state_after": after_budget,
-        "zero_charged_calls_proved": not ledger_touched,
+        "zero_charged_calls_proved": zero_charged,
         "suite_receipt_sha256": {f"suite_{index:02d}": _sha(root / f"suite_{index:02d}_receipt.json")
                                  for index in range(len(suites))},
     }
