@@ -1,0 +1,86 @@
+{
+  "task_id": "V167_V166_TARGETED_SEARCH_COMPLETION_AND_HEIGHT_BIAS_STRESS",
+  "parent_commit": "06b35cd4e0a47f7f49ef4b05401a07266f2c03b6",
+  "model_id": "v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3",
+  "old_archive_sha256": "866feed02333f244df72f55e38ccf74060962007a5010c5c29df5ebe9f16a74e",
+  "old_estimates_sha256": "8f97339e9645a29ec929e5c792d234a28821970338cf92a62d2982bfebba7634",
+  "old_readings_sha256": "bbfd793aff48247623081dd607168cd9afbba2deeff5f37c7a0cbd62b032ad4e",
+  "old_ledger_sha256": "254b5485164a57865328c81f8890ea4aa458d1386ed6f5f34533f2848f7e4ece",
+  "phases": {
+    "MODEL_BINDING": 200,
+    "SEARCH_EXTENSION": 2000,
+    "BIAS_STRESS": 7200,
+    "FINAL_VERIFY": 600
+  },
+  "total_new_model_attempts": 10000,
+  "recovery_tasks": [
+    "B100000_ANON_01_H10_R00",
+    "B100000_ANON_01_H10_R01",
+    "B100000_ANON_01_H1_R00",
+    "B100000_ANON_01_H1_R01",
+    "B100000_ANON_01_H1_R02"
+  ],
+  "recovery_start_index": 1,
+  "recovery_new_cap_per_task": 400,
+  "bias_groups": [
+    "ANON_02",
+    "ANON_03",
+    "ANON_04"
+  ],
+  "replicates": [
+    0,
+    1,
+    2
+  ],
+  "base_height_sigma_nm": 1.0,
+  "deterministic_bias_nm": [
+    -2.0,
+    2.0
+  ],
+  "bias_tasks": 18,
+  "bias_starts_per_task": 2,
+  "bias_cap_per_start": 200,
+  "bias_cap_per_task": 400,
+  "optimizer": {
+    "method": "trf",
+    "jac": "3-point",
+    "loss": "linear",
+    "diff_step": 1e-05,
+    "x_scale": [
+      50,
+      50,
+      280,
+      280
+    ],
+    "ftol": 1e-09,
+    "xtol": 1e-09,
+    "gtol": 1e-08,
+    "max_nfev": 200
+  },
+  "domain": {
+    "lower": [
+      30,
+      350,
+      -500,
+      -500
+    ],
+    "upper": [
+      200,
+      550,
+      500,
+      500
+    ],
+    "min_surface_gap_nm": 100
+  },
+  "new_BEM": 0,
+  "new_render": 0,
+  "new_camera_exposures": 0,
+  "new_camera_noise": 0,
+  "new_height_random_draws": 0,
+  "new_fixed_D_scans": 0,
+  "new_Jacobian_batch": 0,
+  "new_second_focus": 0,
+  "reportable_D": null,
+  "scope": "OPENED_DEVELOPMENT_SENSITIVITY_NOT_NEW_BLIND_OR_EXPERIMENTAL_VALIDATION",
+  "package_role": "TASK_PLANNER_GUARDS_AND_APPROVED_OBJECTIVE_NOT_COMPLETE_WORKSTATION_RUNNER"
+}

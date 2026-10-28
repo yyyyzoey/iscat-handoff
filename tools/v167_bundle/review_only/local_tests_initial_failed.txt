@@ -1,0 +1,22 @@
+...F..................................                                   [100%]
+=================================== FAILURES ===================================
+________________ test_optical_and_auxiliary_cost_identity[10.0] ________________
+
+sigma = 10.0
+
+    @pytest.mark.parametrize('sigma',[None,1.,10.])
+    def test_optical_and_auxiliary_cost_identity(sigma):
+     y=np.stack([np.full((13,13),q) for q in [.001,.002,-.001]])
+     v=np.stack([np.full((13,13),q) for q in [.01,.02,.03]])
+     d=GlsData.from_frames(y,v);c=np.full((13,13),.0005);t=[80.,430.,0.,0.]
+     r=None if sigma is None else HeightReading('task','ANON_02',0,sigma,432.)
+     result=augmented_objective(d,c,t,r)
+     assert abs(result['Q_joint']-sum(result['Q_frames']))<1e-10
+     assert abs(result['Q_total']-(result['residual']@result['residual']+result['K']))<1e-10
+>    assert result['Q_height']==(0. if sigma is None else 4/sigma**2)
+E    assert 0.04000000000000001 == 0.04
+
+tests/test_approved_objective.py:26: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_approved_objective.py::test_optical_and_auxiliary_cost_identity[10.0] - assert 0.04000000000000001 == 0.04
+1 failed, 37 passed in 0.50s

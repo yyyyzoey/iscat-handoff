@@ -1,0 +1,32 @@
+{
+  "scope": "LOCAL_COMPONENT_SYNTHETIC_AND_TASK_PLANNING_ONLY_NOT_WORKSTATION_OR_F2C_VALIDATION",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests"
+  ],
+  "returncode": 0,
+  "tests_passed": 38,
+  "output_sha256": "7f9dd6a658d6ad78c1b0ef4354ddefebff1d752704f8775bb5f735b64631dfe9",
+  "source_sha256": {
+    "code/v167_payload_gate.py": "1d39764e91875673bf11d5f1e6e456be9cc214d27994f439145d98f049185b5c",
+    "code/v167_plan.py": "57302ab473466593522062432c5c95620e00d963ab38cb98b89c790f984f887e",
+    "tests/test_approved_objective.py": "1eae9fd22b5e221db29f3fbe87e540253df9f9ab85754937a2cf33683a5493d6",
+    "tests/test_v167_plan.py": "66a95826f6797ad9847a74c12f4bf5b7cb954a32f717d8ee4f0365e6fa8686ee",
+    "approved_core/v152_gls_core.py": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+    "approved_core/v165_objective.py": "7d013551d9ae155de023daa1e1a6ad5678c6b038ae217fa79fe22c4e4eed64bd"
+  },
+  "development_failure_retained": "review_only/local_tests_initial_failed.txt",
+  "development_correction": "Only a new test float-equality assertion was changed to explicit 1e-14/1e-15 tolerances; approved objectives unchanged.",
+  "real_model_calls": 0,
+  "new_random_sensor_or_camera_draws": 0,
+  "not_implemented_in_this_bundle": [
+    "complete_workstation_executor",
+    "single_task_process_file_access_isolation",
+    "live_model_broker",
+    "new_production_ledger",
+    "postseal_bias_scorer"
+  ]
+}
