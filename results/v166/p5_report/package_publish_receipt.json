@@ -1,0 +1,48 @@
+{
+  "schema": "iscat166.p5g_package_publish_receipt.1",
+  "generated_utc": "2026-10-28T11:29:24.194170+00:00",
+  "branch": "v166",
+  "repository": "https://github.com/yyyyzoey/iscat-handoff",
+  "archive_path_in_repo": "results/v166/iscat_v166_return_001.zip",
+  "archive_sha256": "866feed02333f244df72f55e38ccf74060962007a5010c5c29df5ebe9f16a74e",
+  "archive_bytes": 17554667,
+  "archive_entries": 5177,
+  "archive_readme_sha256": "26a88dbcd14ddbe611257583705e8f3f1f4f0f565266e2365565d8bb6781b913",
+  "archive_contents_manifest_rows": 5176,
+  "sidecar_path_in_repo": "results/v166/iscat_v166_return_001.zip.sha256",
+  "sidecar_matches_archive": true,
+  "bound_commits": {
+    "v165_remote_head_start": "bbe854c3a8c0427debc40f182fab64368de9ae23",
+    "p1_repaired_executor": "3c944f0",
+    "p2_code_head_under_execution": "af2078b2a2d545b8455b48d814faa12017e5e8ac",
+    "p5f_results_commit": "fffe580f4fd8e3bd224dc9bcadf478679ce3fdfc",
+    "p5f_addendum_commit": "f5e88ad409baf50fd0a9cb6c44bc30b34a7b8a08"
+  },
+  "manifest_scope_note": {
+    "results_full_rows_at_delivery": 10068,
+    "results_full_aggregate_at_delivery": "5a8cd8dcb647539700e9e4e488e3a79a73eee855d66e211950efb3a5bc136f40",
+    "commit_tree_full_rows_at_delivery": 7477,
+    "commit_tree_manifest_head": "af2078b2a2d545b8455b48d814faa12017e5e8ac",
+    "explanation": "The delivered manifests bind the results/ tree and the HEAD tree as they stood at the P5f addendum commit. This receipt, the archive and its sidecar are registered publish-time artifacts added afterwards; they are deliberately not part of the results_full or commit_tree_full aggregates, and no scientific file was modified.",
+    "publish_time_added_paths": [
+      "results/v166/iscat_v166_return_001.zip",
+      "results/v166/iscat_v166_return_001.zip.sha256",
+      "results/v166/p5_report/package_publish_receipt.json"
+    ]
+  },
+  "publication_caution": "The repository is public. The archive contains results/v165/validator_only/ v166_height_truth_sealed.json, v166_validator_score.json and v166_independent_score.json, i.e. the sealed synthetic height truth and the truth-scored metrics. Estimates were sealed before any truth read (seal.json = SEALED_BEFORE_VALIDATOR), so publication does not weaken V166; any FUTURE strict-blind round must not reuse these frozen scenes without regenerating truth. Prior versions of this project already committed validator-only truth files to the same public branches.",
+  "scientific_status_unchanged": {
+    "tasks_total": 28,
+    "finished": 23,
+    "partial_search": 5,
+    "failed": 0,
+    "blocked": 0,
+    "budget_used": 4937,
+    "budget_authority": 12000,
+    "all_reportable_D_null": true,
+    "ANON_01_high_background_detection": "0/3 (not detected)",
+    "primary_MAE_NO_HEIGHT_nm": 13.054405824607887,
+    "primary_MAE_H1_nm": null,
+    "primary_MAE_H10_nm": null
+  }
+}
