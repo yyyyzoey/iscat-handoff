@@ -1,0 +1,93 @@
+{
+  "attempt_rows_verbatim": [
+    {
+      "detail": "{\"frames_sha256\":null,\"invocation\":\"charged_model_forward\",\"kind\":\"MODEL_LOADER\",\"ledger_seq\":1,\"requested_theta\":[30.0,350.0,0.0,0.0],\"start_index\":0,\"task_id\":\"V167_LOADER_1\",\"theta_sha256\":\"6cf3b6eee80372e1f36d11f746d18a1f8a81842d17e486ac2199fa53e486e588\"}",
+      "detail_parsed": {
+        "frames_sha256": null,
+        "invocation": "charged_model_forward",
+        "kind": "MODEL_LOADER",
+        "ledger_seq": 1,
+        "requested_theta": [
+          30.0,
+          350.0,
+          0.0,
+          0.0
+        ],
+        "start_index": 0,
+        "task_id": "V167_LOADER_1",
+        "theta_sha256": "6cf3b6eee80372e1f36d11f746d18a1f8a81842d17e486ac2199fa53e486e588"
+      },
+      "seq": 1,
+      "state": "CHARGED",
+      "task": "V167_LOADER_1",
+      "theta": "[30.0,350.0,0.0,0.0]",
+      "ts": 1793214295.0581424,
+      "ts_utc": "2026-10-28T19:04:55Z"
+    }
+  ],
+  "charge_digest_grounding": {
+    "found_in": {
+      "results/v167/00_execution_truth_report.md": true,
+      "results/v167/audit/v167_decision_required_pi.json": true,
+      "results/v167/audit/v167_package_publish_receipt.json": true,
+      "results/v167/workstation_tests/full_008/workstation_test_receipt.json": true
+    },
+    "note": "the digest is not recomputed here; it is cited only where already recorded by the loader run and the test receipts that observed it",
+    "value": "2d1dc88673faab8e8d7fe33e700f456ab9337ed8902d0a93f6220656f89294fc"
+  },
+  "correction_mode": "append-only: the confirmation file is left byte-identical on disk and in git history; this file records the accurate content beside it",
+  "corrects": {
+    "bytes": 7820,
+    "path": "results/v167/audit/v167_publish_confirmation.json",
+    "sha256": "81760af59e6f7d7b1fd202242aaedef0a190ac2711f760b51319adc855591258"
+  },
+  "defect": {
+    "accurate_value_count": 1,
+    "cause": "the confirming script looked for a table named 'charges'. The frozen V152 budget store writes attempt rows to a table named 'attempts', so the query silently returned nothing. The table inventory at confirmation time was [\"metadata\", \"tasks\", \"attempts\"]",
+    "does_this_change_any_count": false,
+    "field": "budget_at_confirmation.charge_attempts",
+    "recorded_value": [],
+    "why_it_matters": "an empty attempts list in a blocked-round record could read as 'nothing was charged', which is false; the round did consume one authorized model construction"
+  },
+  "ledger_tables": [
+    "metadata",
+    "tasks",
+    "attempts"
+  ],
+  "metadata_rows_verbatim": [
+    {
+      "id": 1,
+      "value": "{\"phases\":{\"BIAS_STRESS\":7200,\"FINAL_VERIFY\":600,\"MODEL_BINDING\":200,\"SEARCH_EXTENSION\":2000},\"plan_id\":\"v167\",\"total\":10000}"
+    }
+  ],
+  "no_computation_change": "this correction reads the ledger and git only. It reserves no budget, runs no model forward, and does not alter the R or B BLOCKED status recorded in the confirmation.",
+  "plan_caps_from_ledger_metadata": [
+    {
+      "phases": {
+        "BIAS_STRESS": 7200,
+        "FINAL_VERIFY": 600,
+        "MODEL_BINDING": 200,
+        "SEARCH_EXTENSION": 2000
+      },
+      "plan_id": "v167",
+      "total": 10000
+    }
+  ],
+  "schema": "iscat167.publish_confirmation_correction.1",
+  "unchanged_facts": {
+    "confirmation_ledger_sha_agrees": true,
+    "confirmation_used_total_agrees": true,
+    "ledger_sha256": "212fc61391070cc0d8f07e41d1a356f31d76a4aed713bfc8c0e0031ef1d1eb34",
+    "running_descriptors": 26,
+    "total_model_calls_used": 1
+  },
+  "unique_return_archive_clarification": {
+    "count_all_zip_members_of_head": 39,
+    "count_v167": 1,
+    "explanation": "the remaining zip members of HEAD are frozen V166 evidence carried unchanged inside results/v166; the V167 return package is exactly one archive: results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T204438Z.zip",
+    "v167_archives_tracked_in_head": [
+      "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T204438Z.zip"
+    ]
+  },
+  "utc_written": "2026-10-28T20:55:09Z"
+}
