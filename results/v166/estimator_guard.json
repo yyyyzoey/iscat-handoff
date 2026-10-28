@@ -1,0 +1,1 @@
+{"denied_import_attempts":[],"denied_open_attempts":[],"deny_dir_prefixes":["results/v142/validation/","results/v165/validator_only/"],"deny_module_prefixes":["v165_truth_audit","v165_generate_height","v165_validator"],"guard_installed_once":true,"model_calls":0,"repo":"C:\\iscat\\v166","scope":"PYTHON_LEVEL_AUDIT_HOOK_NOT_A_KERNEL_SANDBOX"}

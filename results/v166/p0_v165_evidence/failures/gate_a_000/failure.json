@@ -1,0 +1,13 @@
+{
+  "command": "python -c ... v165_truth_audit.build(repo, config/v143_science_config.json)",
+  "error": "ValueError('CAMERA_H5_CHANGED')",
+  "error_type": "ValueError",
+  "mode": "gate_a_first_actual_attempt",
+  "pythonpath": "C:\\iscat\\v165\\tools\\v165_bundle\\code",
+  "reportable_D": null,
+  "source_sha256": {
+    "v165_io.py": "5fc77cf6582c99177df60030dd0146e335306165d0892cd444dbc6a7fcd4454a",
+    "v165_truth_audit.py": "05270fece0bc3b6f05c51d6e33b5f0c93bfeaf04c64a795b83350167282392ab"
+  },
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\n  File \"C:\\iscat\\v165\\tools\\v165_bundle\\code\\v165_truth_audit.py\", line 344, in build\n    camera = camera_chain(repo, truth, cfg143)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\iscat\\v165\\tools\\v165_bundle\\code\\v165_truth_audit.py\", line 228, in camera_chain\n    require(sha(h5p) == CAMERA_H5_SHA256, 'CAMERA_H5_CHANGED')\n  File \"C:\\iscat\\v165\\tools\\v165_bundle\\code\\v165_io.py\", line 54, in require\n    raise ValueError(message)\nValueError: CAMERA_H5_CHANGED\n"
+}

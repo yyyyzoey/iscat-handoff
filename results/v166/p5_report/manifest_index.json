@@ -1,0 +1,40 @@
+{
+  "generated_utc": "2026-10-28T10:28:29.080588Z",
+  "head": "af2078b2a2d545b8455b48d814faa12017e5e8ac",
+  "manifests": {
+    "code_all_tracked": {
+      "aggregate_sha256": "4f13ff752064918f2d31e20ad7a525f94c219ecb064f32fd0be20c3bb8bc8034",
+      "manifest_bytes": 71303,
+      "manifest_sha256": "cef9b5820b59b701df3e3c28f9471965259acb3f537a1cfcb599ed4ae60e0cba",
+      "rows": 653
+    },
+    "commit_tree_full": {
+      "aggregate_sha256": "5ff3707c0de04fae86dd2701059a4b09545a02ee27ebf8a8829de97b5f775926",
+      "manifest_bytes": 978866,
+      "manifest_sha256": "d8f47eecfb635d13b09b3eeef081556b23abd1b1bac8417c90b3fdfe80267de9",
+      "rows": 7477
+    },
+    "predictions_excluded_from_commit": {
+      "aggregate_sha256": "ca1573f7761e0a641130c6875914030be4e30f634d5ac45a4c1b62ec9ca485a3",
+      "manifest_bytes": 667742,
+      "manifest_sha256": "1362c5f05815533c514f4dcdd92af3b6326acb45b67e28490c362f1aff3be6a4",
+      "rows": 4937
+    },
+    "results_full": {
+      "aggregate_sha256": "978f240377469649fcf1e765bf99f576ef9a56a7636648efb25348d5e833ae7f",
+      "manifest_bytes": 1357423,
+      "manifest_sha256": "e2058ec59e52a14ff5929782e4299a6b733457798c53aea334cde1f337ce8965",
+      "rows": 10064
+    },
+    "v166_execution_bundle": {
+      "aggregate_sha256": "787b3cbc73ae5238dce00af45ac8e2b788fd7203c4833dec28aa2766b3346fdb",
+      "manifest_bytes": 2452,
+      "manifest_sha256": "3f228b63ea2a160a8e4c95206cf3b27e9c2ffb5b589548d43739a218857c8aaa",
+      "rows": 22
+    }
+  },
+  "note": "result_manifest_sha256.csv and manifest_index.json are self-excluded from the result manifest; the ZIP-external .sha256 file covers the delivered archive.",
+  "schema": "iscat166.p5f_manifest_index.1",
+  "tracked_blob_count": 7477,
+  "tracked_dirty_paths": []
+}

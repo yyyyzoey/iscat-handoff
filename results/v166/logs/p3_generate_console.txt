@@ -1,0 +1,1 @@
+{"scope": "OPENED_DEV_SIMULATION_NOT_INDEPENDENT_EXPERIMENT", "public_readings": 24, "groups": 4, "replicates": 3, "seed": 16520261027, "height_out": "results\\v166\\height_input\\height_readings.json", "validator_out": "results\\v165\\validator_only\\v166_height_truth_sealed.json"}

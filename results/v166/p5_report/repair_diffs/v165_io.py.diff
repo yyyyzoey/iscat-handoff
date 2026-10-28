@@ -1,0 +1,153 @@
+--- p0_snapshot/tools/v165_bundle/code/v165_io.py
++++ v166_current/tools/v165_bundle/code/v165_io.py
+@@ -5,10 +5,12 @@
+ sources before any model forward attempt is charged.
+ """
+ from __future__ import annotations
++import ast
+ import csv
+ import hashlib
+ import json
+ import math
++import re
+ import sqlite3
+ import subprocess
+ import zipfile
+@@ -128,54 +130,110 @@
+ 
+ ESTIMATOR_MODULES = ('v165_objective.py', 'v152_gls_core.py', 'v152_budget_store.py',
+                      'v165_task_ids.py', 'v165_io.py', 'v165_run.py')
+-# The deny-list entries are assembled at runtime so this estimator module does
+-# not contain the forbidden identities as contiguous literals.  The scanner
+-# below still rejects those identities anywhere else in the estimator stack.
+-FORBIDDEN_TRUTH_IDENTITIES = (
+-    'new_N_validator_' + 'only_truth',
+-    'validator_' + 'only_truth',
+-    'v165_truth_' + 'audit',
+-    'v165_generate_' + 'height',
+-    'v165_' + 'validator',
+-    'cd097e0c5236c331f8b1862e6e301674454a871e',
+-)
+ GUARD_MODULE = 'v165_guard.py'
++GUARD_DENY_TUPLES = ('DENY_DIR_PREFIXES', 'DENY_MODULE_PREFIXES', 'DENY_NAME_TOKENS')
++# A full Git object id: 40 hexadecimal characters, not embedded in a longer run
++# (so model ids and archive digests, which are 64 hex, are not picked up here).
++GIT_SHA1_RE = re.compile(r'(?<![0-9a-fA-F])[0-9a-fA-F]{40}(?![0-9a-fA-F])')
++
++
++def declared_deny_tokens(guard_path):
++    """Read the protected identities out of the guard module as literal data.
++
++    The scanner deliberately owns no protected identity of its own: any identity
++    written into this estimator module would itself be the contamination the scan
++    is looking for.  The guard is the single designated identity holder, so the
++    deny list is parsed from its module-level literal tuples with no code
++    execution and no import.
++    """
++    tree = ast.parse(Path(guard_path).read_text(encoding='utf-8'), filename=str(guard_path))
++    found = {}
++    for node in tree.body:
++        if not isinstance(node, ast.Assign) or len(node.targets) != 1:
++            continue
++        target = node.targets[0]
++        if isinstance(target, ast.Name) and target.id in GUARD_DENY_TUPLES:
++            found[target.id] = node.value
++    missing = [name for name in GUARD_DENY_TUPLES if name not in found]
++    require(not missing, 'GUARD_DENY_TUPLE_MISSING:' + ','.join(missing))
++    tokens = []
++    for name in GUARD_DENY_TUPLES:
++        try:
++            value = ast.literal_eval(found[name])
++        except Exception:
++            raise ValueError('GUARD_DENY_TUPLE_NOT_A_LITERAL:' + name)
++        require(isinstance(value, tuple) and bool(value), 'GUARD_DENY_TUPLE_EMPTY:' + name)
++        require(all(isinstance(item, str) and item for item in value),
++                'GUARD_DENY_TUPLE_MEMBER_INVALID:' + name)
++        tokens.extend(item.lower() for item in value)
++    require(len(set(tokens)) == len(tokens), 'GUARD_DENY_TUPLE_DUPLICATE_TOKEN')
++    return tuple(tokens)
++
++
++def git_object_type(repo, sha1):
++    """Return the Git object type for a full object id, or ``ABSENT``."""
++    try:
++        return git(repo, 'cat-file', '-t', sha1).decode('ascii').strip()
++    except subprocess.CalledProcessError:
++        return 'ABSENT'
+ 
+ 
+ def assert_no_truth_literals(code_dir):
+     """Auditor static scan: the estimator stack must not name truth identities.
+ 
+-    ``v165_guard.py`` is deliberately outside this list: it holds only a deny
+-    list of directories/modules (no truth value, no truth-file identity) and is
+-    imported by ``v165_run.main`` as a separate runtime guard role. Its hash is
+-    recorded here so the exclusion is auditable rather than silent.
++    Two identity-free rules replace the old hand-maintained block list:
++
++    1. Every 40-hex object id written in an estimator module must resolve, in this
++       repository, to a Git *commit*.  A truth-bearing file is a *blob*, so the
++       identity of the truth file is refused here without this module ever having
++       to name it.  An id that resolves to nothing is refused as well.
++    2. Protected path/module/name identities are read from the guard module and may
++       not appear in an estimator module, in any letter case.
++
++    ``v165_guard.py`` stays outside the scanned list: it is the designated holder of
++    the deny list (paths and module names only, never a truth value and never a
++    truth-file hash, which rule 1 also forbids inside it).  Its hash is recorded so
++    the exclusion is auditable rather than silent.
+ 
+     This is a literal scan of the execution code only. It cannot prove runtime
+     isolation; the binding proof is the sealed-estimate ordering recorded in
+-    results/v165/seal.json plus the absence of truth keys in estimator inputs.
++    seal.json plus the absence of truth keys in estimator inputs.
+     """
+     code_dir = Path(code_dir)
++    repo = code_dir.resolve().parents[2]
++    require((repo / '.git').exists(), 'GUARD_SCAN_REPOSITORY_MISSING')
++    guard = code_dir / GUARD_MODULE
++    require(guard.is_file(), 'MISSING_RUNTIME_GUARD_MODULE')
++    tokens = declared_deny_tokens(guard)
+     hits = []
+     scanned = {}
++    sha1_types = {}
+     for name in ESTIMATOR_MODULES:
+         p = code_dir / name
+         require(p.is_file(), 'MISSING_ESTIMATOR_MODULE:' + name)
+         raw = p.read_text(encoding='utf-8')
+         scanned[name] = sha(p)
+-        bad = [lit for lit in FORBIDDEN_TRUTH_IDENTITIES if lit in raw]
++        lowered = raw.lower()
++        named = [token for token in tokens if token in lowered]
++        if named:
++            hits.append(name + ':protected_identity:' + ','.join(named))
++        bad = {}
++        for token in GIT_SHA1_RE.findall(raw):
++            kind = sha1_types.setdefault(token, git_object_type(repo, token))
++            if kind != 'commit':
++                bad[token] = kind
+         if bad:
+-            hits.append(name + ':' + ','.join(bad))
++            hits.append(name + ':non_commit_sha1:' + ','.join(
++                token + '=' + bad[token] for token in sorted(bad)))
+     require(not hits, 'TRUTH_LITERAL_IN_ESTIMATOR_CODE:' + ';'.join(hits))
+-    guard = code_dir / GUARD_MODULE
+-    require(guard.is_file(), 'MISSING_RUNTIME_GUARD_MODULE')
+     guard_raw = guard.read_text(encoding='utf-8')
+-    guard_bad = [lit for lit in (
+-        'new_N_validator_' + 'only_truth',
+-        'validator_' + 'only_truth',
+-        'cd097e0c5236c331f8b1862e6e301674454a871e',
+-    ) if lit in guard_raw]
+-    require(not guard_bad, 'TRUTH_LITERAL_IN_GUARD_MODULE:' + ','.join(guard_bad))
+-    return dict(scope='STATIC_LITERAL_SCAN_NOT_A_SANDBOX',
++    guard_sha1 = GIT_SHA1_RE.findall(guard_raw)
++    require(not guard_sha1, 'RUNTIME_GUARD_HOLDS_AN_OBJECT_IDENTITY')
++    return dict(scope='STATIC_RULE_BASED_SCAN_NOT_A_SANDBOX',
++                protected_identity_source=GUARD_MODULE + ':' + ','.join(GUARD_DENY_TUPLES),
++                protected_token_count=len(tokens),
++                rule_non_commit_sha1_refused=True,
++                git_object_types_by_sha1=sha1_types,
+                 scanned_modules=scanned, scanned_module_count=len(scanned),
+                 excluded_guard_module=GUARD_MODULE, guard_module_sha256=sha(guard),
+                 offenders=hits, estimator_imports_truth_default_to_none=True,

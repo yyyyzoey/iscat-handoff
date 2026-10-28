@@ -1,0 +1,154 @@
+{
+ "production_files_modified_vs_snapshot": [
+  "tools/gate_a.py",
+  "tools/v165_bundle/code/v165_guard.py",
+  "tools/v165_bundle/code/v165_io.py",
+  "tools/v165_bundle/code/v165_receipts.py",
+  "tools/v165_bundle/code/v165_run.py"
+ ],
+ "repo_root": "C:\\iscat\\v166",
+ "schema": "iscat166.p0_snapshot_vs_current.1",
+ "snapshot_files_compared": 110,
+ "snapshot_root": "C:\\iscat\\v166_p0\\uncommitted",
+ "source_and_test_files": [
+  {
+   "current_sha256": "33beb6a85f294e5c3d422f813af8e8e7777fa5096aae4ed64e477a9c3f9acaac",
+   "path": "tools/gate_a.py",
+   "snapshot_sha256": "231f22e996b32bf8982d1913641e127c0545f49c830f2652cae0c6b87cbe429b",
+   "state": "MODIFIED"
+  },
+  {
+   "current_sha256": "98615b608f57f8ba531fc6a304aa45b371d8b24ca7793c0c252bb827847808b9",
+   "path": "tools/v165_bundle/code/v152_budget_store.py",
+   "snapshot_sha256": "98615b608f57f8ba531fc6a304aa45b371d8b24ca7793c0c252bb827847808b9",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+   "path": "tools/v165_bundle/code/v152_gls_core.py",
+   "snapshot_sha256": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": "66ff754a68e2e8b8b230bdaaf1995375132ef5d2057777813efda393275330d7",
+   "path": "tools/v165_bundle/code/v164_io.py",
+   "snapshot_sha256": "66ff754a68e2e8b8b230bdaaf1995375132ef5d2057777813efda393275330d7",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": "284bf7845182c5b79c465d3f62af06d3ef99f1049494dd54b6b37b9e3c4117bd",
+   "path": "tools/v165_bundle/code/v165_guard.py",
+   "snapshot_sha256": "a7aca4db56094217ad2570fc6ecd37c52685e5e9d0a392249c88a02d8b47f5bd",
+   "state": "MODIFIED"
+  },
+  {
+   "current_sha256": "9467cc924fac9ba366858794f15d138b3fabbd0572dccbae2a75f0e2089ca0b5",
+   "path": "tools/v165_bundle/code/v165_io.py",
+   "snapshot_sha256": "27579074a4322ef85d3421661c4ea8389990a90aa00ea44bc83bd98350a73495",
+   "state": "MODIFIED"
+  },
+  {
+   "current_sha256": "7d013551d9ae155de023daa1e1a6ad5678c6b038ae217fa79fe22c4e4eed64bd",
+   "path": "tools/v165_bundle/code/v165_objective.py",
+   "snapshot_sha256": "7d013551d9ae155de023daa1e1a6ad5678c6b038ae217fa79fe22c4e4eed64bd",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": "0bb44428a110e3351d7be5a222d0f9c2538e11e24ddf0334af94eb725ac89019",
+   "path": "tools/v165_bundle/code/v165_receipt_plugin.py",
+   "snapshot_sha256": "0bb44428a110e3351d7be5a222d0f9c2538e11e24ddf0334af94eb725ac89019",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": "cfb68c7122cf0d1eb39acbf0af7c87c8ebd49d5c81767e9bfc187bb4e89dc94b",
+   "path": "tools/v165_bundle/code/v165_receipts.py",
+   "snapshot_sha256": "089a24c5929290a774b1368126df6995c477cce69a79c712a9a42a4d45f62afa",
+   "state": "MODIFIED"
+  },
+  {
+   "current_sha256": "92ed6ca791039b8304050def6d81a8a1cd6648e0dc0bef1bd3d76917b1798deb",
+   "path": "tools/v165_bundle/code/v165_run.py",
+   "snapshot_sha256": "99e5ec1ba7ba621c568599c15ead96668233e44b504b8bd0f331c208520ed8a9",
+   "state": "MODIFIED"
+  },
+  {
+   "current_sha256": "5a3207cedf139c337bde9751e8ef5883866b63cd70103fc110528b4c1e173110",
+   "path": "tools/v165_bundle/code/v165_task_ids.py",
+   "snapshot_sha256": "5a3207cedf139c337bde9751e8ef5883866b63cd70103fc110528b4c1e173110",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": null,
+   "path": "tools/v165_bundle/code/v165_truth_audit.py",
+   "snapshot_sha256": "9a13c35deb2bbaba96c24780f493f817d45326dcb1b60bb39f7fb54d76c792a0",
+   "state": "SNAPSHOT_ONLY"
+  },
+  {
+   "current_sha256": "7f25bcd57caf99844ca08c9bc46ba992cc7f9b881e2c5df94d550f73286e97ce",
+   "path": "tools/v165_bundle/config/v165_plan.json",
+   "snapshot_sha256": "7f25bcd57caf99844ca08c9bc46ba992cc7f9b881e2c5df94d550f73286e97ce",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": "a0a08a216e1e0307420432d8adf02cf364610946f5ed3e2f8863c9f83d730884",
+   "path": "tools/v165_bundle/generator/v165_generate_height.py",
+   "snapshot_sha256": "a0a08a216e1e0307420432d8adf02cf364610946f5ed3e2f8863c9f83d730884",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": "fad16f46cb494d72ea962f33cc04587e8559a13648a9812b13a4985bb37cd6cf",
+   "path": "tools/v165_bundle/tests/conftest.py",
+   "snapshot_sha256": "fad16f46cb494d72ea962f33cc04587e8559a13648a9812b13a4985bb37cd6cf",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": "42b2f120ad7ce51d63dad3116f148480bbf3be9de98621e38c14c4bf2008c51d",
+   "path": "tools/v165_bundle/tests/test_generator_ids.py",
+   "snapshot_sha256": "42b2f120ad7ce51d63dad3116f148480bbf3be9de98621e38c14c4bf2008c51d",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": "9acf55e820704983f1b34a6dfd68e76ab56cc6313c132f1231d6c284f57b76b7",
+   "path": "tools/v165_bundle/tests/test_height.py",
+   "snapshot_sha256": "9acf55e820704983f1b34a6dfd68e76ab56cc6313c132f1231d6c284f57b76b7",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": "45f2be957958a2a60db6859bdaa7edfc96087d57d979bff280109c47ad3c2068",
+   "path": "tools/v165_bundle/tests/test_production_workflow.py",
+   "snapshot_sha256": "45f2be957958a2a60db6859bdaa7edfc96087d57d979bff280109c47ad3c2068",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": "8d985b218e467f053d087657c67954f21e8543258434c160093e1c502c71103c",
+   "path": "tools/v165_bundle/tests/test_validator.py",
+   "snapshot_sha256": "8d985b218e467f053d087657c67954f21e8543258434c160093e1c502c71103c",
+   "state": "IDENTICAL"
+  },
+  {
+   "current_sha256": "af63ace2a6218177c21b93e6e89d96b5839c6953af564c05c7c68b815ff5f743",
+   "path": "tools/v165_bundle/validator/v165_validator.py",
+   "snapshot_sha256": "af63ace2a6218177c21b93e6e89d96b5839c6953af564c05c7c68b815ff5f743",
+   "state": "IDENTICAL"
+  }
+ ],
+ "state_counts": {
+  "IDENTICAL": 23,
+  "MODIFIED": 6,
+  "SNAPSHOT_ONLY": 81
+ },
+ "test_files_added_in_v166_not_in_v165_snapshot": [
+  {
+   "current_sha256": "7fd69068641e8a4cdbffd2230b0ffb588fea1ae1c4ee03e2ee4e8931e69cb025",
+   "path": "tools/v165_bundle/tests/test_p1_fault_injections.py"
+  }
+ ],
+ "tests_identical_to_snapshot": [
+  "tools/v165_bundle/tests/conftest.py",
+  "tools/v165_bundle/tests/test_generator_ids.py",
+  "tools/v165_bundle/tests/test_height.py",
+  "tools/v165_bundle/tests/test_production_workflow.py",
+  "tools/v165_bundle/tests/test_validator.py"
+ ],
+ "tests_modified_vs_snapshot": []
+}

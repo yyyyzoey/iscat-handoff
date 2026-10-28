@@ -1,0 +1,2832 @@
+[
+  {
+    "task_id": "B100000_ANON_01_NO_HEIGHT",
+    "group": "ANON_01",
+    "replicate": null,
+    "sigma_nm": null,
+    "design": "NO_HEIGHT",
+    "result_present": true,
+    "result_sha256": "509b09c1a56dd7eebd83193342a8a525a19bd6cc5a9e89e19dd772a607c28ee0",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      45.249898467399106,
+      421.5198759376691,
+      -499.99999999534197,
+      -179.10576108304045
+    ],
+    "actual_calls": 47,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          45.24922455863183,
+          421.5219091998806,
+          -499.999999986539,
+          -179.10701874402963
+        ],
+        "local_cap": 200,
+        "actual_calls": 20,
+        "error": null,
+        "best_theta": [
+          45.249898467399106,
+          421.5198759376691,
+          -499.99999999534197,
+          -179.10576108304045
+        ],
+        "best_Q_total": 500.0181758506722,
+        "best_Q_model": 159.78722212273357,
+        "best_Q_height": 0.0,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 79.89361106136678,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 19,
+        "best_prediction_sha256": "125f0fd65c7a0b5abf9d6b362aa99d5a40cefa7200eb7cf9e39a4428f3fb52f2",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 4,
+        "optimizer_njev": 2,
+        "optimizer_optimality": 5.288006876675857e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "7f7a94e0a93adb1bdffd40b66bbce1906241c0abe157d61a3159fa5cb1a855ae"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          37.48626268473966,
+          549.9999999958067,
+          152.17734459718372,
+          -499.99999999999994
+        ],
+        "local_cap": 200,
+        "actual_calls": 27,
+        "error": null,
+        "best_theta": [
+          37.486283293832315,
+          549.9999999999894,
+          152.17514422188714,
+          -499.99999999999113
+        ],
+        "best_Q_total": 503.0517024170033,
+        "best_Q_model": 162.8207486890646,
+        "best_Q_height": 0.0,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 81.4103743445323,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 45,
+        "best_prediction_sha256": "67b4bc422c162a79b74f30030c4d914a8c12aa8eec0df6c2dd3a8b1d6dc6dd7c",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 3,
+        "optimizer_njev": 3,
+        "optimizer_optimality": 3.471836734400679e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "04e80bf2169f6e65c93b3cfd80beb5dc2940d51f050df745dff42961d947f822"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_01_H10_R00",
+    "group": "ANON_01",
+    "replicate": 0,
+    "sigma_nm": 10.0,
+    "design": "H10",
+    "result_present": true,
+    "result_sha256": "2e0782c2b542257d20147ec9e369254af1145b38cb88386a6a324728cd654293",
+    "execution_state": "PARTIAL_SEARCH",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS",
+      "PARTIAL_SEARCH"
+    ],
+    "theta": [
+      54.19141232622576,
+      406.0763049450694,
+      -499.99999999999994,
+      -178.9439664066551
+    ],
+    "actual_calls": 245,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          45.24922455863183,
+          421.5219091998806,
+          -499.999999986539,
+          -179.10701874402963
+        ],
+        "local_cap": 200,
+        "actual_calls": 45,
+        "error": null,
+        "best_theta": [
+          54.19141232622576,
+          406.0763049450694,
+          -499.99999999999994,
+          -178.9439664066551
+        ],
+        "best_Q_total": 500.026897382048,
+        "best_Q_model": 159.7958913329691,
+        "best_Q_height": 5.232114027071572e-05,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 79.89797182705468,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 44,
+        "best_prediction_sha256": "918501ad538c2cca34469f6809d4a2715af198b58bb5d58831700bcd68f7d431",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 5,
+        "optimizer_njev": 5,
+        "optimizer_optimality": 0.0007053573010304862,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "855e5ac399cb080cddcff765d5836054630096f8fabfc4e4d8a4afdd3c24c118"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "PARTIAL_SEARCH",
+        "x0": [
+          37.48626268473966,
+          549.9999999958067,
+          152.17734459718372,
+          -499.99999999999994
+        ],
+        "local_cap": 200,
+        "actual_calls": 200,
+        "error": {
+          "error": "PER_START_REAL_MODEL_CALL_CAP",
+          "error_repr": "CallCapReached('PER_START_REAL_MODEL_CALL_CAP')",
+          "error_type": "CallCapReached",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\iscat\\v166\\tools\\v165_bundle\\code\\v165_run.py\", line 1032, in optimize_start\n    optimizer = least_squares(\n                ^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\least_squares.py\", line 940, in least_squares\n    result = trf(fun_wrapped, jac_wrapped, x0, f0, J0, lb, ub, ftol, xtol,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\trf.py\", line 123, in trf\n    return trf_bounds(\n           ^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\trf.py\", line 374, in trf_bounds\n    J = jac(x, f)\n        ^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\least_squares.py\", line 898, in jac_wrapped\n    J = approx_derivative(fun, x, rel_step=diff_step, method=jac,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_numdiff.py\", line 505, in approx_derivative\n    return _dense_difference(fun_wrapped, x0, f0, h,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_numdiff.py\", line 589, in _dense_difference\n    f2 = fun(x2)\n         ^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_numdiff.py\", line 456, in fun_wrapped\n    f = np.atleast_1d(fun(x, *args, **kwargs))\n                      ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\iscat\\v166\\tools\\v165_bundle\\code\\v165_run.py\", line 1001, in residual\n    raise CallCapReached(\"PER_START_REAL_MODEL_CALL_CAP\")\nv152_gls_core.CallCapReached: PER_START_REAL_MODEL_CALL_CAP\n"
+        },
+        "best_theta": [
+          52.47781354136366,
+          406.05619175133717,
+          96.3045009375518,
+          446.81402519456725
+        ],
+        "best_Q_total": 500.90280113561823,
+        "best_Q_model": 160.6718201382287,
+        "best_Q_height": 2.7269450850984336e-05,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 80.33592370383977,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 244,
+        "best_prediction_sha256": "f2a68c6df50b48728eb922bd418aa4933d74576d6e39036e2a3edfd854c57b0f",
+        "optimizer_status": null,
+        "optimizer_success": null,
+        "optimizer_nfev": null,
+        "optimizer_njev": null,
+        "optimizer_optimality": null,
+        "optimizer_message": null,
+        "reportable_D": null,
+        "sha256": "5ec2a911ee96f063cd9d26f8ac040126695e067ab61173c42ee4f13bec94a8c5"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_01_H1_R00",
+    "group": "ANON_01",
+    "replicate": 0,
+    "sigma_nm": 1.0,
+    "design": "H1",
+    "result_present": true,
+    "result_sha256": "c118980b0579c1121cdce40e65e930289f92bf5ccfa947af0e1823ad4ef1f809",
+    "execution_state": "PARTIAL_SEARCH",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS",
+      "PARTIAL_SEARCH"
+    ],
+    "theta": [
+      94.13205395576593,
+      392.7458987376239,
+      -499.99999999999994,
+      -177.62430833698315
+    ],
+    "actual_calls": 272,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          45.24922455863183,
+          421.5219091998806,
+          -499.999999986539,
+          -179.10701874402963
+        ],
+        "local_cap": 200,
+        "actual_calls": 72,
+        "error": null,
+        "best_theta": [
+          94.13205395576593,
+          392.7458987376239,
+          -499.99999999999994,
+          -177.62430833698315
+        ],
+        "best_Q_total": 500.1311467322661,
+        "best_Q_model": 159.89977268960786,
+        "best_Q_height": 0.00042031471959507317,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 79.95009650216372,
+        "best_half_cost_identity_abs_error": -1.4210854715202004e-14,
+        "best_seq": 72,
+        "best_prediction_sha256": "c6e7120a3ff71612924063173f89cf9dacfc4d3558a770416901cd03bc9be9b9",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 8,
+        "optimizer_njev": 8,
+        "optimizer_optimality": 0.0018829060774799814,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "d1c62c213ee97b7935a088aae461b1cac1eee6af2b947a2a605815cb876ff32c"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "PARTIAL_SEARCH",
+        "x0": [
+          37.48626268473966,
+          549.9999999958067,
+          152.17734459718372,
+          -499.99999999999994
+        ],
+        "local_cap": 200,
+        "actual_calls": 200,
+        "error": {
+          "error": "PER_START_REAL_MODEL_CALL_CAP",
+          "error_repr": "CallCapReached('PER_START_REAL_MODEL_CALL_CAP')",
+          "error_type": "CallCapReached",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\iscat\\v166\\tools\\v165_bundle\\code\\v165_run.py\", line 1032, in optimize_start\n    optimizer = least_squares(\n                ^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\least_squares.py\", line 940, in least_squares\n    result = trf(fun_wrapped, jac_wrapped, x0, f0, J0, lb, ub, ftol, xtol,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\trf.py\", line 123, in trf\n    return trf_bounds(\n           ^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\trf.py\", line 374, in trf_bounds\n    J = jac(x, f)\n        ^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\least_squares.py\", line 898, in jac_wrapped\n    J = approx_derivative(fun, x, rel_step=diff_step, method=jac,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_numdiff.py\", line 505, in approx_derivative\n    return _dense_difference(fun_wrapped, x0, f0, h,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_numdiff.py\", line 589, in _dense_difference\n    f2 = fun(x2)\n         ^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_numdiff.py\", line 456, in fun_wrapped\n    f = np.atleast_1d(fun(x, *args, **kwargs))\n                      ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\iscat\\v166\\tools\\v165_bundle\\code\\v165_run.py\", line 1001, in residual\n    raise CallCapReached(\"PER_START_REAL_MODEL_CALL_CAP\")\nv152_gls_core.CallCapReached: PER_START_REAL_MODEL_CALL_CAP\n"
+        },
+        "best_theta": [
+          89.56338105497156,
+          392.77098067281423,
+          110.75967244868721,
+          436.5982897832334
+        ],
+        "best_Q_total": 501.1057442715854,
+        "best_Q_model": 160.87271268692953,
+        "best_Q_height": 0.0020778567172499065,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 80.43739527182339,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 271,
+        "best_prediction_sha256": "9e9d6171f57b38bd4cdb63f083896035133c8cb8b1e17d7190fd5de519b83dfc",
+        "optimizer_status": null,
+        "optimizer_success": null,
+        "optimizer_nfev": null,
+        "optimizer_njev": null,
+        "optimizer_optimality": null,
+        "optimizer_message": null,
+        "reportable_D": null,
+        "sha256": "722b8a505ce3a950a7471ff37b1a83cd9d44726049af2a03145647547cd52fa5"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_01_H10_R01",
+    "group": "ANON_01",
+    "replicate": 1,
+    "sigma_nm": 10.0,
+    "design": "H10",
+    "result_present": true,
+    "result_sha256": "891db1d503ecdb9c89bc09eec0c09e34c187e127c6c7575cfd48b16808fa382f",
+    "execution_state": "PARTIAL_SEARCH",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS",
+      "PARTIAL_SEARCH"
+    ],
+    "theta": [
+      88.72512186807795,
+      393.3389421077685,
+      -499.99999999999994,
+      -177.93720454361795
+    ],
+    "actual_calls": 290,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          45.24922455863183,
+          421.5219091998806,
+          -499.999999986539,
+          -179.10701874402963
+        ],
+        "local_cap": 200,
+        "actual_calls": 90,
+        "error": null,
+        "best_theta": [
+          88.72512186807795,
+          393.3389421077685,
+          -499.99999999999994,
+          -177.93720454361795
+        ],
+        "best_Q_total": 500.13092266322536,
+        "best_Q_model": 159.8794485205139,
+        "best_Q_height": 0.020520414772785465,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 79.94998446764333,
+        "best_half_cost_identity_abs_error": -1.4210854715202004e-14,
+        "best_seq": 89,
+        "best_prediction_sha256": "0c4b98d319eb298dfbc3a54e0d2a8f609280b4c01ab116a3aee690df637e3ffb",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 10,
+        "optimizer_njev": 10,
+        "optimizer_optimality": 0.0009766222040876458,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "42fca8831fda00e1b19c6e5165ca07aa49ee3d2e30e7c4af1332e933c73c97ab"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "PARTIAL_SEARCH",
+        "x0": [
+          37.48626268473966,
+          549.9999999958067,
+          152.17734459718372,
+          -499.99999999999994
+        ],
+        "local_cap": 200,
+        "actual_calls": 200,
+        "error": {
+          "error": "PER_START_REAL_MODEL_CALL_CAP",
+          "error_repr": "CallCapReached('PER_START_REAL_MODEL_CALL_CAP')",
+          "error_type": "CallCapReached",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\iscat\\v166\\tools\\v165_bundle\\code\\v165_run.py\", line 1032, in optimize_start\n    optimizer = least_squares(\n                ^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\least_squares.py\", line 940, in least_squares\n    result = trf(fun_wrapped, jac_wrapped, x0, f0, J0, lb, ub, ftol, xtol,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\trf.py\", line 123, in trf\n    return trf_bounds(\n           ^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\trf.py\", line 338, in trf_bounds\n    f_new = fun(x_new)\n            ^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\least_squares.py\", line 830, in fun_wrapped\n    return np.atleast_1d(fun(x, *args, **kwargs))\n                         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\iscat\\v166\\tools\\v165_bundle\\code\\v165_run.py\", line 1001, in residual\n    raise CallCapReached(\"PER_START_REAL_MODEL_CALL_CAP\")\nv152_gls_core.CallCapReached: PER_START_REAL_MODEL_CALL_CAP\n"
+        },
+        "best_theta": [
+          80.08217286065776,
+          394.0774176687236,
+          104.23666568866965,
+          441.1685339366534
+        ],
+        "best_Q_total": 501.06772708855436,
+        "best_Q_model": 160.78964223563602,
+        "best_Q_height": 0.04713112497966418,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 80.41838668030785,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 290,
+        "best_prediction_sha256": "276d314ba67816ea513f35868368aee2fceaaa58c8c24a7b578d805c39885879",
+        "optimizer_status": null,
+        "optimizer_success": null,
+        "optimizer_nfev": null,
+        "optimizer_njev": null,
+        "optimizer_optimality": null,
+        "optimizer_message": null,
+        "reportable_D": null,
+        "sha256": "40ec2a8946361c967fc94547cc759bb3015f11bd24b6d5347f172edea6fc49d3"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_01_H1_R01",
+    "group": "ANON_01",
+    "replicate": 1,
+    "sigma_nm": 1.0,
+    "design": "H1",
+    "result_present": true,
+    "result_sha256": "f8b3181464580214da96232318033a0a75ff82c34ac70ef918ff25a0a95e57f9",
+    "execution_state": "PARTIAL_SEARCH",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS",
+      "PARTIAL_SEARCH"
+    ],
+    "theta": [
+      113.7177490983573,
+      391.3860693246534,
+      -499.99999999999994,
+      -175.69298598645534
+    ],
+    "actual_calls": 290,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          45.24922455863183,
+          421.5219091998806,
+          -499.999999986539,
+          -179.10701874402963
+        ],
+        "local_cap": 200,
+        "actual_calls": 90,
+        "error": null,
+        "best_theta": [
+          113.7177490983573,
+          391.3860693246534,
+          -499.99999999999994,
+          -175.69298598645534
+        ],
+        "best_Q_total": 500.2392488900966,
+        "best_Q_model": 160.00333553811947,
+        "best_Q_height": 0.00495962403843969,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 80.00414758107894,
+        "best_half_cost_identity_abs_error": -1.4210854715202004e-14,
+        "best_seq": 90,
+        "best_prediction_sha256": "137ef20a80d9e2fbef52402162364dc12ef42bd0ba552fc4743b0e63c7ff4115",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 10,
+        "optimizer_njev": 10,
+        "optimizer_optimality": 0.0032509263073587876,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "088e1955316c879c14542469d7aa6334806d1485e02faa6a861cf8aba711dc71"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "PARTIAL_SEARCH",
+        "x0": [
+          37.48626268473966,
+          549.9999999958067,
+          152.17734459718372,
+          -499.99999999999994
+        ],
+        "local_cap": 200,
+        "actual_calls": 200,
+        "error": {
+          "error": "PER_START_REAL_MODEL_CALL_CAP",
+          "error_repr": "CallCapReached('PER_START_REAL_MODEL_CALL_CAP')",
+          "error_type": "CallCapReached",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\iscat\\v166\\tools\\v165_bundle\\code\\v165_run.py\", line 1032, in optimize_start\n    optimizer = least_squares(\n                ^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\least_squares.py\", line 940, in least_squares\n    result = trf(fun_wrapped, jac_wrapped, x0, f0, J0, lb, ub, ftol, xtol,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\trf.py\", line 123, in trf\n    return trf_bounds(\n           ^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\trf.py\", line 374, in trf_bounds\n    J = jac(x, f)\n        ^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\least_squares.py\", line 898, in jac_wrapped\n    J = approx_derivative(fun, x, rel_step=diff_step, method=jac,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_numdiff.py\", line 505, in approx_derivative\n    return _dense_difference(fun_wrapped, x0, f0, h,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_numdiff.py\", line 589, in _dense_difference\n    f2 = fun(x2)\n         ^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_numdiff.py\", line 456, in fun_wrapped\n    f = np.atleast_1d(fun(x, *args, **kwargs))\n                      ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\iscat\\v166\\tools\\v165_bundle\\code\\v165_run.py\", line 1001, in residual\n    raise CallCapReached(\"PER_START_REAL_MODEL_CALL_CAP\")\nv152_gls_core.CallCapReached: PER_START_REAL_MODEL_CALL_CAP\n"
+        },
+        "best_theta": [
+          106.64618512909115,
+          391.421942255441,
+          134.9590952161132,
+          413.9958397444493
+        ],
+        "best_Q_total": 501.31063784740553,
+        "best_Q_model": 161.0683849547877,
+        "best_Q_height": 0.011299164679146892,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 80.53984205973342,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 289,
+        "best_prediction_sha256": "7ce04ede70f102d87eaf559b74230f58680471955e8d71e9566b23885224356a",
+        "optimizer_status": null,
+        "optimizer_success": null,
+        "optimizer_nfev": null,
+        "optimizer_njev": null,
+        "optimizer_optimality": null,
+        "optimizer_message": null,
+        "reportable_D": null,
+        "sha256": "493008395f84f077c7062f044939c2b9d86373651c2de6120139b28f1afbbccc"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_01_H10_R02",
+    "group": "ANON_01",
+    "replicate": 2,
+    "sigma_nm": 10.0,
+    "design": "H10",
+    "result_present": true,
+    "result_sha256": "f5a3d4ae802195f3ace81e441cf9a889a56482a354413c225a5992bc67c8b44a",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      106.96858578276624,
+      391.7548019415584,
+      -499.99999999999994,
+      -176.489408770179
+    ],
+    "actual_calls": 314,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          45.24922455863183,
+          421.5219091998806,
+          -499.999999986539,
+          -179.10701874402963
+        ],
+        "local_cap": 200,
+        "actual_calls": 134,
+        "error": null,
+        "best_theta": [
+          106.96858578276624,
+          391.7548019415584,
+          -499.99999999999994,
+          -176.489408770179
+        ],
+        "best_Q_total": 500.40940351595503,
+        "best_Q_model": 159.96099903013516,
+        "best_Q_height": 0.21745075788123003,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 80.0892248940082,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 127,
+        "best_prediction_sha256": "43044871e2f3236ad5d8ff8d3b2f8922b17fddad6e3e0261f7eac288bcd48b58",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 22,
+        "optimizer_njev": 14,
+        "optimizer_optimality": 0.00030456085288388884,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "303c286d7ca334a71dfc5ad0b2d7afb693fe414527982f310e28235e35cf1048"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          37.48626268473966,
+          549.9999999958067,
+          152.17734459718372,
+          -499.99999999999994
+        ],
+        "local_cap": 200,
+        "actual_calls": 180,
+        "error": null,
+        "best_theta": [
+          37.244393848254866,
+          386.631554399604,
+          499.99989093480764,
+          130.00792909082432
+        ],
+        "best_Q_total": 505.25714131525524,
+        "best_Q_model": 165.0240707962614,
+        "best_Q_height": 0.0021167910551624595,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 82.51309379365829,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 308,
+        "best_prediction_sha256": "c1f549241df2b5d2d4aec0b1bb9d1550c7621a55362db000b38a396bd9fd1fd5",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 28,
+        "optimizer_njev": 19,
+        "optimizer_optimality": 7.06949059633375e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "0214e7fd33d8af09c36a0cbd09afcb152ec32697e7eb1475809bfe03f5714170"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_01_H1_R02",
+    "group": "ANON_01",
+    "replicate": 2,
+    "sigma_nm": 1.0,
+    "design": "H1",
+    "result_present": true,
+    "result_sha256": "3f4539893ffccc4c6bec2228e0d7709dbca47639869c0c8636ae21e6e679a925",
+    "execution_state": "PARTIAL_SEARCH",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS",
+      "PARTIAL_SEARCH"
+    ],
+    "theta": [
+      123.65892669431452,
+      390.9576351091697,
+      -499.99999999999994,
+      -174.13788092404556
+    ],
+    "actual_calls": 317,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          45.24922455863183,
+          421.5219091998806,
+          -499.999999986539,
+          -179.10701874402963
+        ],
+        "local_cap": 200,
+        "actual_calls": 117,
+        "error": null,
+        "best_theta": [
+          123.65892669431452,
+          390.9576351091697,
+          -499.99999999999994,
+          -174.13788092404556
+        ],
+        "best_Q_total": 500.3299837763597,
+        "best_Q_model": 160.08378494290224,
+        "best_Q_height": 0.015245105518857376,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 80.04951502421055,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 116,
+        "best_prediction_sha256": "3cdace826276744bb5c3cfcba54f7d0c4eecb91feb680e654496f5a3a6fa3012",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 13,
+        "optimizer_njev": 13,
+        "optimizer_optimality": 0.0008983647155402646,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "e72cb0bf1deab202e2da97239d42018e355f22aa50dc6fa76fe91368b824cc00"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "PARTIAL_SEARCH",
+        "x0": [
+          37.48626268473966,
+          549.9999999958067,
+          152.17734459718372,
+          -499.99999999999994
+        ],
+        "local_cap": 200,
+        "actual_calls": 200,
+        "error": {
+          "error": "PER_START_REAL_MODEL_CALL_CAP",
+          "error_repr": "CallCapReached('PER_START_REAL_MODEL_CALL_CAP')",
+          "error_type": "CallCapReached",
+          "traceback": "Traceback (most recent call last):\n  File \"C:\\iscat\\v166\\tools\\v165_bundle\\code\\v165_run.py\", line 1032, in optimize_start\n    optimizer = least_squares(\n                ^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\least_squares.py\", line 940, in least_squares\n    result = trf(fun_wrapped, jac_wrapped, x0, f0, J0, lb, ub, ftol, xtol,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\trf.py\", line 123, in trf\n    return trf_bounds(\n           ^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\trf.py\", line 374, in trf_bounds\n    J = jac(x, f)\n        ^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_lsq\\least_squares.py\", line 898, in jac_wrapped\n    J = approx_derivative(fun, x, rel_step=diff_step, method=jac,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_numdiff.py\", line 505, in approx_derivative\n    return _dense_difference(fun_wrapped, x0, f0, h,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_numdiff.py\", line 589, in _dense_difference\n    f2 = fun(x2)\n         ^^^^^^^\n  File \"C:\\ProgramData\\anaconda3\\Lib\\site-packages\\scipy\\optimize\\_numdiff.py\", line 456, in fun_wrapped\n    f = np.atleast_1d(fun(x, *args, **kwargs))\n                      ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\iscat\\v166\\tools\\v165_bundle\\code\\v165_run.py\", line 1001, in residual\n    raise CallCapReached(\"PER_START_REAL_MODEL_CALL_CAP\")\nv152_gls_core.CallCapReached: PER_START_REAL_MODEL_CALL_CAP\n"
+        },
+        "best_theta": [
+          117.6218509955765,
+          390.9364051024017,
+          156.45666864370594,
+          391.83637365707455
+        ],
+        "best_Q_total": 501.4150512836372,
+        "best_Q_model": 161.17364432036322,
+        "best_Q_height": 0.010453235335334078,
+        "best_K": 340.23095372793864,
+        "best_scipy_cost": 80.59204877784927,
+        "best_half_cost_identity_abs_error": -1.4210854715202004e-14,
+        "best_seq": 316,
+        "best_prediction_sha256": "65b40b5eff194d1a9b0fe1c7eb1753823d9bb2d99b3ed9ac69deb6ece456d018",
+        "optimizer_status": null,
+        "optimizer_success": null,
+        "optimizer_nfev": null,
+        "optimizer_njev": null,
+        "optimizer_optimality": null,
+        "optimizer_message": null,
+        "reportable_D": null,
+        "sha256": "90c78baaf0c875d42e234c22e8661d30fbe50ab636604e54964250c90137e942"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_02_NO_HEIGHT",
+    "group": "ANON_02",
+    "replicate": null,
+    "sigma_nm": null,
+    "design": "NO_HEIGHT",
+    "result_present": true,
+    "result_sha256": "2c843360250f015cfaeb9050e10745970b749a85f93d35801f1777bb42b4dfb0",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      124.0907197448066,
+      412.03925578151427,
+      -75.7676010774828,
+      117.04223687856476
+    ],
+    "actual_calls": 37,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          124.09042981381258,
+          412.039395189038,
+          -75.76760477309037,
+          117.0422352121129
+        ],
+        "local_cap": 200,
+        "actual_calls": 19,
+        "error": null,
+        "best_theta": [
+          124.0907197448066,
+          412.03925578151427,
+          -75.7676010774828,
+          117.04223687856476
+        ],
+        "best_Q_total": 527.1683634781987,
+        "best_Q_model": 161.8587744575869,
+        "best_Q_height": 0.0,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 80.92938722879344,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 11,
+        "best_prediction_sha256": "c4428a44d0be15e33e43d3a804ef1f44ddc64295c393d5a097cc43ec251c0c99",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 3,
+        "optimizer_njev": 2,
+        "optimizer_optimality": 2.0349631394425592e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "53090539f9565a31e52bcb5a11210c9591c42e6d330dcbf3b2e9f8282b74a4ae"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          54.50858632245563,
+          350.0000018361917,
+          234.0973358871585,
+          -376.76754435370975
+        ],
+        "local_cap": 200,
+        "actual_calls": 18,
+        "error": null,
+        "best_theta": [
+          54.508595248339965,
+          350.00000000000693,
+          234.09435457100886,
+          -376.76802688164105
+        ],
+        "best_Q_total": 1201.6754240714445,
+        "best_Q_model": 836.3658350508327,
+        "best_Q_height": 0.0,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 418.18291752541637,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 29,
+        "best_prediction_sha256": "ae2d9f00c52227449aa50201797cd2ab74f7aaa1f29a3134e558a3c0b7ec49cd",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 2,
+        "optimizer_njev": 2,
+        "optimizer_optimality": 9.64561741547521e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "f4b51945803a7e84eb0cf797becc3fc9b435e01df59940cf59fa9888b66caefe"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_02_H10_R00",
+    "group": "ANON_02",
+    "replicate": 0,
+    "sigma_nm": 10.0,
+    "design": "H10",
+    "result_present": true,
+    "result_sha256": "5a92778bd5f3412ed009c7b4709fc1ddfff15a2e7a72c87403f633ebb531bf81",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      107.04248484328876,
+      426.18068999070016,
+      -75.85127790514734,
+      117.18122825440938
+    ],
+    "actual_calls": 235,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          124.09042981381258,
+          412.039395189038,
+          -75.76760477309037,
+          117.0422352121129
+        ],
+        "local_cap": 200,
+        "actual_calls": 73,
+        "error": null,
+        "best_theta": [
+          107.04248484328876,
+          426.18068999070016,
+          -75.85127790514734,
+          117.18122825440938
+        ],
+        "best_Q_total": 527.4972335737986,
+        "best_Q_model": 162.14948794535513,
+        "best_Q_height": 0.03815660783161577,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 81.09382227659339,
+        "best_half_cost_identity_abs_error": 1.4210854715202004e-14,
+        "best_seq": 65,
+        "best_prediction_sha256": "7c15e6b6d5c096f84b183d0c029e2def79683445bc902184ac056eba90ba8346",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 9,
+        "optimizer_njev": 8,
+        "optimizer_optimality": 0.00013576048641752387,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "96f36467b2f4f1faed061b1bdf27b38f39bc5e0eaa2d0b3eda853f5690d919cc"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          54.50858632245563,
+          350.0000018361917,
+          234.0973358871585,
+          -376.76754435370975
+        ],
+        "local_cap": 200,
+        "actual_calls": 162,
+        "error": null,
+        "best_theta": [
+          111.32071034200574,
+          385.1659800210416,
+          244.61905074457405,
+          -377.0219480940565
+        ],
+        "best_Q_total": 1223.4496527858203,
+        "best_Q_model": 839.6775033888412,
+        "best_Q_height": 18.46256037636734,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 429.0700318826042,
+        "best_half_cost_identity_abs_error": -5.684341886080802e-14,
+        "best_seq": 234,
+        "best_prediction_sha256": "45e939329a8d58c8bc602ab2ddef26acb2ae7fc5ca34443684d18eb547daf3c6",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 26,
+        "optimizer_njev": 17,
+        "optimizer_optimality": 0.0035379578143693575,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "c5336bdc86c5160f1084da1ace7c75fc23fd405a838bf392616071f8cc044077"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_02_H1_R00",
+    "group": "ANON_02",
+    "replicate": 0,
+    "sigma_nm": 1.0,
+    "design": "H1",
+    "result_present": true,
+    "result_sha256": "554252700ac1a6231580a3e869cf3dccf5126ce0d09975a9d0ffc2993a9b9dde",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      104.32504401954736,
+      432.03426334876787,
+      -75.82508909351742,
+      117.20688684139773
+    ],
+    "actual_calls": 163,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          124.09042981381258,
+          412.039395189038,
+          -75.76760477309037,
+          117.0422352121129
+        ],
+        "local_cap": 200,
+        "actual_calls": 54,
+        "error": null,
+        "best_theta": [
+          104.32504402221394,
+          432.0342633675007,
+          -75.82507490622662,
+          117.20688826058091
+        ],
+        "best_Q_total": 527.7424589344225,
+        "best_Q_model": 162.43202061124853,
+        "best_Q_height": 0.0008493025622477832,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 81.21643495690539,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 46,
+        "best_prediction_sha256": "da708d985f199814516b50cac22d1ec12fd5f51cabeb8d6fbcc67a05ebbeb2ad",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 6,
+        "optimizer_njev": 6,
+        "optimizer_optimality": 4.693378519600346e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "a57840c9b8c3cdeb5e9ba23a7ded17c0c5bbb0372637b04b52780a12ff143496"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          54.50858632245563,
+          350.0000018361917,
+          234.0973358871585,
+          -376.76754435370975
+        ],
+        "local_cap": 200,
+        "actual_calls": 109,
+        "error": null,
+        "best_theta": [
+          104.32504401954736,
+          432.03426334876787,
+          -75.82508909351742,
+          117.20688684139773
+        ],
+        "best_Q_total": 527.7424589344205,
+        "best_Q_model": 162.43202061015467,
+        "best_Q_height": 0.0008493036541041097,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 81.21643495690438,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 155,
+        "best_prediction_sha256": "fc69bb80530b12da688636a0478ba576b92fefca76d9c8eec6e09b51a54cbe39",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 13,
+        "optimizer_njev": 12,
+        "optimizer_optimality": 3.552376418633126e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "9768408679ed7515b3f99b8ce3b7c966361087de25e2ac991efdb5ed3295d329"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_02_H10_R01",
+    "group": "ANON_02",
+    "replicate": 1,
+    "sigma_nm": 10.0,
+    "design": "H10",
+    "result_present": true,
+    "result_sha256": "ea4e9a38d7a93d8eb07fe811173aa62d10baad67cde5cff92b3ee36e0076eb0b",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      110.28643935792385,
+      421.8955796740131,
+      -75.85318391390827,
+      117.15552974717004
+    ],
+    "actual_calls": 242,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          124.09042981381258,
+          412.039395189038,
+          -75.76760477309037,
+          117.0422352121129
+        ],
+        "local_cap": 200,
+        "actual_calls": 74,
+        "error": null,
+        "best_theta": [
+          110.28643935792385,
+          421.8955796740131,
+          -75.85318391390827,
+          117.15552974717004
+        ],
+        "best_Q_total": 527.3362308170097,
+        "best_Q_model": 162.00781397921088,
+        "best_Q_height": 0.018827817187131977,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 81.013320898199,
+        "best_half_cost_identity_abs_error": -1.4210854715202004e-14,
+        "best_seq": 66,
+        "best_prediction_sha256": "b24c6d4d7bdfd91000742f1b5c81dc79bf08e5c3535539581d852451151ac08a",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 10,
+        "optimizer_njev": 8,
+        "optimizer_optimality": 0.0001880828503966485,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "c529ad8c598612f64a49f840800f3c6841b274e2e59922f0d0d45a7f05c04ea7"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          54.50858632245563,
+          350.0000018361917,
+          234.0973358871585,
+          -376.76754435370975
+        ],
+        "local_cap": 200,
+        "actual_calls": 168,
+        "error": null,
+        "best_theta": [
+          109.39281523038134,
+          384.96461916810614,
+          243.86626079544249,
+          -377.24199056694346
+        ],
+        "best_Q_total": 1219.4949659000383,
+        "best_Q_model": 839.5140980163519,
+        "best_Q_height": 14.671278863074495,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 427.09268843971324,
+        "best_half_cost_identity_abs_error": 5.684341886080802e-14,
+        "best_seq": 239,
+        "best_prediction_sha256": "efbc786c441ac7364c4d803ac722e7d3618e82a1dc7797202c8bd652e5f6c158",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 24,
+        "optimizer_njev": 18,
+        "optimizer_optimality": 0.004665477616951237,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "14015102194826601dff3c03a19294b71dd280c2a92a61ef7f77be682417d887"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_02_H1_R01",
+    "group": "ANON_02",
+    "replicate": 1,
+    "sigma_nm": 1.0,
+    "design": "H1",
+    "result_present": true,
+    "result_sha256": "b7545c32cc60a36e0bad5f220fda604449be3eb42cddccf237ab2f1cc8bb7942",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      104.48686070210665,
+      431.5485339112985,
+      -75.82814908257731,
+      117.2050497584465
+    ],
+    "actual_calls": 154,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          124.09042981381258,
+          412.039395189038,
+          -75.76760477309037,
+          117.0422352121129
+        ],
+        "local_cap": 200,
+        "actual_calls": 54,
+        "error": null,
+        "best_theta": [
+          104.48686070210665,
+          431.5485339112985,
+          -75.82814908257731,
+          117.2050497584465
+        ],
+        "best_Q_total": 527.7145372547553,
+        "best_Q_model": 162.40415081846805,
+        "best_Q_height": 0.0007974156755767341,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 81.20247411707182,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 46,
+        "best_prediction_sha256": "c765108ee4b91211f8db7a989b2b105e0a797629387359d1d5a34f980108132d",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 6,
+        "optimizer_njev": 6,
+        "optimizer_optimality": 3.91187205599669e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "92ccddad48dbda1bb14eb1f28cc608e4ed8424b112b0b5b000a071fb0756be7b"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          54.50858632245563,
+          350.0000018361917,
+          234.0973358871585,
+          -376.76754435370975
+        ],
+        "local_cap": 200,
+        "actual_calls": 100,
+        "error": null,
+        "best_theta": [
+          104.48686086781147,
+          431.5485337449709,
+          -75.82821473131295,
+          117.20506320713554
+        ],
+        "best_Q_total": 527.714537254795,
+        "best_Q_model": 162.40415080911401,
+        "best_Q_height": 0.0007974250693044489,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 81.20247411709167,
+        "best_half_cost_identity_abs_error": 1.4210854715202004e-14,
+        "best_seq": 146,
+        "best_prediction_sha256": "a57454a4191ca8987511135a93d154d1591edd7c756bd7aa0319b52cadae3609",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 12,
+        "optimizer_njev": 11,
+        "optimizer_optimality": 0.00040599111498258484,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "dbac7e1a2c62ca87c1cc310aae57a670f01b2eac6cae20e3a6c3f3cb04db65a8"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_02_H10_R02",
+    "group": "ANON_02",
+    "replicate": 2,
+    "sigma_nm": 10.0,
+    "design": "H10",
+    "result_present": true,
+    "result_sha256": "addca14f941340c9c4a4944cbe86a46d509486bb75280c6881535d05c7cb876c",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      104.21612410929158,
+      432.3806417542644,
+      -75.82280028665046,
+      117.20817309936318
+    ],
+    "actual_calls": 260,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          124.09042981381258,
+          412.039395189038,
+          -75.76760477309037,
+          117.0422352121129
+        ],
+        "local_cap": 200,
+        "actual_calls": 73,
+        "error": null,
+        "best_theta": [
+          104.21612410929158,
+          432.3806417542644,
+          -75.82280028665046,
+          117.20817309936318
+        ],
+        "best_Q_total": 527.850854699954,
+        "best_Q_model": 162.45243750196144,
+        "best_Q_height": 0.08882817738088446,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 81.27063283967117,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 65,
+        "best_prediction_sha256": "0ad6429de77e307f884c856f2485042d2c037d9b9601ec661d27938469497186",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 9,
+        "optimizer_njev": 8,
+        "optimizer_optimality": 9.885442750571091e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "03605cd0613a32d03515443fb319e5b9dca614df6e09be940cab5c115a6cb78b"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          54.50858632245563,
+          350.0000018361917,
+          234.0973358871585,
+          -376.76754435370975
+        ],
+        "local_cap": 200,
+        "actual_calls": 187,
+        "error": null,
+        "best_theta": [
+          113.85442425180855,
+          385.4126738707243,
+          245.6987048666142,
+          -376.6812392383811
+        ],
+        "best_Q_total": 1230.164084136336,
+        "best_Q_model": 839.9060949461002,
+        "best_Q_height": 24.948400169623895,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 432.4272475578621,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 259,
+        "best_prediction_sha256": "0a90a7c9b86a4e5c2a6f185b9f819b36af2d1ec346d582d6d38e3a881e0fca0d",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 27,
+        "optimizer_njev": 20,
+        "optimizer_optimality": 0.0029756541451588484,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "57b91edbb90df1b007087865f57be9f21101c5c8fa3f6cf7a169323ba68b3f8b"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_02_H1_R02",
+    "group": "ANON_02",
+    "replicate": 2,
+    "sigma_nm": 1.0,
+    "design": "H1",
+    "result_present": true,
+    "result_sha256": "0ce4c95136e83ae98b03ff92f46aef6d75b1808ab512b530d83f6c6b2d9fc48b",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      104.10422471409653,
+      432.7555709943206,
+      -75.82022494385946,
+      117.20953996148624
+    ],
+    "actual_calls": 163,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          124.09042981381258,
+          412.039395189038,
+          -75.76760477309037,
+          117.0422352121129
+        ],
+        "local_cap": 200,
+        "actual_calls": 54,
+        "error": null,
+        "best_theta": [
+          104.10422471409653,
+          432.7555709943206,
+          -75.82022494385946,
+          117.20953996148624
+        ],
+        "best_Q_total": 527.7855799411193,
+        "best_Q_model": 162.47505861095917,
+        "best_Q_height": 0.0009323095483326485,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 81.23799546025376,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 46,
+        "best_prediction_sha256": "58f1778d7665a3053231e10815eeb48949b9d54ac2f41539f90c02619f33c03f",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 6,
+        "optimizer_njev": 6,
+        "optimizer_optimality": 5.892003508461539e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "36b1f63e7109191ea04bbe9f6da112f19e58b0301cd8525b7e4f72475cc1a87e"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          54.50858632245563,
+          350.0000018361917,
+          234.0973358871585,
+          -376.76754435370975
+        ],
+        "local_cap": 200,
+        "actual_calls": 109,
+        "error": null,
+        "best_theta": [
+          104.10422471142958,
+          432.7555709721559,
+          -75.8202410840391,
+          117.20953831095095
+        ],
+        "best_Q_total": 527.7855799411201,
+        "best_Q_model": 162.47505860960646,
+        "best_Q_height": 0.0009323109018738837,
+        "best_K": 365.3095890206118,
+        "best_scipy_cost": 81.23799546025417,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 155,
+        "best_prediction_sha256": "2a2275ac507617b7a40f2eb5de939b91433476fd87e08aa92f93513ad465c304",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 13,
+        "optimizer_njev": 12,
+        "optimizer_optimality": 3.1722826871170125e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "493a7ba1bb155371ec51ff6fad21c11148bf6218f40e1f7d48a44d2e911c8b93"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_03_NO_HEIGHT",
+    "group": "ANON_03",
+    "replicate": null,
+    "sigma_nm": null,
+    "design": "NO_HEIGHT",
+    "result_present": true,
+    "result_sha256": "ec3009dd8c399bf7f9dbdd8c88c73119fe2569ad7f8d6ef310848d360f88359c",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      134.84797622741573,
+      476.5934802562332,
+      44.960781864147705,
+      106.45453846714119
+    ],
+    "actual_calls": 36,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          134.84798634193208,
+          476.59348174254495,
+          44.96074376773707,
+          106.4545424044937
+        ],
+        "local_cap": 200,
+        "actual_calls": 18,
+        "error": null,
+        "best_theta": [
+          134.84797622741573,
+          476.5934802562332,
+          44.960781864147705,
+          106.45453846714119
+        ],
+        "best_Q_total": 474.78502328084306,
+        "best_Q_model": 148.0317068872898,
+        "best_Q_height": 0.0,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 74.0158534436449,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 10,
+        "best_prediction_sha256": "084cf4be80f48aec25c6375ac73cfd1807b5e1b2540901fea858b69824cf8d90",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 2,
+        "optimizer_njev": 2,
+        "optimizer_optimality": 7.846153495247448e-06,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "3deb61b80dfca1473cfe937f2219cc50986166b94237a606d32192d58b2465dd"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          199.99999999999997,
+          396.11494568665796,
+          46.07250047049705,
+          104.76408664972523
+        ],
+        "local_cap": 200,
+        "actual_calls": 18,
+        "error": null,
+        "best_theta": [
+          199.99999999999997,
+          396.11494571956166,
+          46.07248985174818,
+          104.76400384501714
+        ],
+        "best_Q_total": 484.67516611020426,
+        "best_Q_model": 157.92184971665108,
+        "best_Q_height": 0.0,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 78.96092485832554,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 28,
+        "best_prediction_sha256": "c9dd9dd86cc4f1dff04e5bfb7aeb8de62383884fc054cb7c90d256b868dffe11",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 2,
+        "optimizer_njev": 2,
+        "optimizer_optimality": 3.079487956036483e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "c2ee4e74a2cf57da81982ad1a85a8966d60885bd6216df12c01ec542eeef4bd6"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_03_H10_R00",
+    "group": "ANON_03",
+    "replicate": 0,
+    "sigma_nm": 10.0,
+    "design": "H10",
+    "result_present": true,
+    "result_sha256": "00aaf5702d2006e6961aeb26748895e55b4600f52f799e1086f420fe3d6281f4",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      134.71750214275426,
+      476.5682873668079,
+      44.96763444241507,
+      106.45433968370101
+    ],
+    "actual_calls": 72,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          134.84798634193208,
+          476.59348174254495,
+          44.96074376773707,
+          106.4545424044937
+        ],
+        "local_cap": 200,
+        "actual_calls": 36,
+        "error": null,
+        "best_theta": [
+          134.71750214275426,
+          476.5682873668079,
+          44.96763444241507,
+          106.45433968370101
+        ],
+        "best_Q_total": 474.7866791316363,
+        "best_Q_model": 148.03180650577085,
+        "best_Q_height": 0.0015562323122259056,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 74.01668136904154,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 28,
+        "best_prediction_sha256": "40c7ff4722682fad895fd547c9f1ff5a897881a8db00837c3f6b9ca23169ee41",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 4,
+        "optimizer_njev": 4,
+        "optimizer_optimality": 9.699291357497273e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "49aa929f167ab31ce7369a1b0f23a7939ee632c566ba64946b243ab3a8e83ffa"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          199.99999999999997,
+          396.11494568665796,
+          46.07250047049705,
+          104.76408664972523
+        ],
+        "local_cap": 200,
+        "actual_calls": 36,
+        "error": null,
+        "best_theta": [
+          199.99999999999997,
+          396.27423830961266,
+          46.05579295112622,
+          104.75275539639466
+        ],
+        "best_Q_total": 548.6419275422767,
+        "best_Q_model": 158.04921753774042,
+        "best_Q_height": 63.83939361098295,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 110.94430557436168,
+        "best_half_cost_identity_abs_error": -1.4210854715202004e-14,
+        "best_seq": 64,
+        "best_prediction_sha256": "33ca5b706f7bdb9c3cbf19fa062a46c84f279e1837d8bdf13db374fea0677d17",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 4,
+        "optimizer_njev": 4,
+        "optimizer_optimality": 0.0004118284191179008,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "9deb49a6cd0a7be077910ea1426886837a65428980da76887d50d2cc53c00a8e"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_03_H1_R00",
+    "group": "ANON_03",
+    "replicate": 0,
+    "sigma_nm": 1.0,
+    "design": "H1",
+    "result_present": true,
+    "result_sha256": "89384eb3bc7ab9de1fa50098bc7d8c1f8cb6a9a4ecb911354ea24e795ac3e54f",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      143.9824723576268,
+      478.1052765204905,
+      44.47904535252527,
+      106.45892309370892
+    ],
+    "actual_calls": 153,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          134.84798634193208,
+          476.59348174254495,
+          44.96074376773707,
+          106.4545424044937
+        ],
+        "local_cap": 200,
+        "actual_calls": 54,
+        "error": null,
+        "best_theta": [
+          143.9824723576268,
+          478.1052765204905,
+          44.47904535252527,
+          106.45892309370892
+        ],
+        "best_Q_total": 475.43146589285885,
+        "best_Q_model": 148.52830068480174,
+        "best_Q_height": 0.14984881450390547,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 74.33907474965281,
+        "best_half_cost_identity_abs_error": -1.4210854715202004e-14,
+        "best_seq": 46,
+        "best_prediction_sha256": "d35ec528725a2e7a1087ed956e4bb00eb484f589faad4d30cb00a46d31c2e361",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 6,
+        "optimizer_njev": 6,
+        "optimizer_optimality": 0.00024243628927257094,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "e6e14304249ea91959368230b9ee26e81a4d469d3e2321b17716ed08c437c092"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          199.99999999999997,
+          396.11494568665796,
+          46.07250047049705,
+          104.76408664972523
+        ],
+        "local_cap": 200,
+        "actual_calls": 99,
+        "error": null,
+        "best_theta": [
+          143.98238879256974,
+          478.10526797368357,
+          44.479020337340046,
+          106.45894174369735
+        ],
+        "best_Q_total": 475.43146589289734,
+        "best_Q_model": 148.52829406777613,
+        "best_Q_height": 0.14985543156798525,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 74.33907474967206,
+        "best_half_cost_identity_abs_error": 1.4210854715202004e-14,
+        "best_seq": 145,
+        "best_prediction_sha256": "871f9647fbf11834bec8a84e926d8732c2dc6e3cc09cdbcc3d639446d5c9ca23",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 11,
+        "optimizer_njev": 11,
+        "optimizer_optimality": 0.0002396428633470546,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "f909379200a94a66b6e30c8e5f15e3b50ad28474b8a4561ee6bf9591668b7c50"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_03_H10_R01",
+    "group": "ANON_03",
+    "replicate": 1,
+    "sigma_nm": 10.0,
+    "design": "H10",
+    "result_present": true,
+    "result_sha256": "404168fada2c4be0a48a5186bbbc34d6cd45c8bb6066b8a1e7dc0244254fb84b",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      138.34686820343953,
+      477.2282788535474,
+      44.776241143901935,
+      106.45843024640546
+    ],
+    "actual_calls": 90,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          134.84798634193208,
+          476.59348174254495,
+          44.96074376773707,
+          106.4545424044937
+        ],
+        "local_cap": 200,
+        "actual_calls": 54,
+        "error": null,
+        "best_theta": [
+          138.34686820343953,
+          477.2282788535474,
+          44.776241143901935,
+          106.45843024640546
+        ],
+        "best_Q_total": 476.3236188605716,
+        "best_Q_model": 148.1038337732811,
+        "best_Q_height": 1.466468693737342,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 74.78515123350923,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 46,
+        "best_prediction_sha256": "9922205167e954d751679f7e293d099ca4769e27a871753a6f4a95f5e32bcb76",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 6,
+        "optimizer_njev": 6,
+        "optimizer_optimality": 0.000420998128942132,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "a734b3627ee9b89b3e01e827d01a27d1a2b90b069dde4e9af8fb44b6d5d2fcea"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          199.99999999999997,
+          396.11494568665796,
+          46.07250047049705,
+          104.76408664972523
+        ],
+        "local_cap": 200,
+        "actual_calls": 36,
+        "error": null,
+        "best_theta": [
+          199.99999999999997,
+          396.30049886888577,
+          46.05312042260104,
+          104.75097658111268
+        ],
+        "best_Q_total": 571.4078318352052,
+        "best_Q_model": 158.09463225457222,
+        "best_Q_height": 86.55988318707976,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 122.327257720826,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 82,
+        "best_prediction_sha256": "9ebfa8ce6a809ae2c17d42727835c4ef0de2d467e3d127fcfc6d024ccbb264c1",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 4,
+        "optimizer_njev": 4,
+        "optimizer_optimality": 0.00044892535995995976,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "85383e3f2280fd75c4ab993515fea2960e5b12f0b66ac57c710298a38eb9676d"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_03_H1_R01",
+    "group": "ANON_03",
+    "replicate": 1,
+    "sigma_nm": 1.0,
+    "design": "H1",
+    "result_present": true,
+    "result_sha256": "39b7e5620d33559d89614cd203fd45b4d6f145602b95119aafcc0cf9c647c426",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      150.6737179132982,
+      478.96038675271615,
+      44.12881219646992,
+      106.45321600401185
+    ],
+    "actual_calls": 171,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          134.84798634193208,
+          476.59348174254495,
+          44.96074376773707,
+          106.4545424044937
+        ],
+        "local_cap": 200,
+        "actual_calls": 63,
+        "error": null,
+        "best_theta": [
+          150.67225858101017,
+          478.960273654093,
+          44.12863278677088,
+          106.45329681483705
+        ],
+        "best_Q_total": 477.0184395134163,
+        "best_Q_model": 149.54511548761164,
+        "best_Q_height": 0.7200076322514538,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 75.13256155993155,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 55,
+        "best_prediction_sha256": "20e70af15b21f63d451e32a657ec5d1081ac332e6b8dbd5ec52dee5f21f7d807",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 7,
+        "optimizer_njev": 7,
+        "optimizer_optimality": 0.002699079075517972,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "be56828b414751c06df16921e4a5178a8e046d076d79c1f35348e0d0efcfe6e7"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          199.99999999999997,
+          396.11494568665796,
+          46.07250047049705,
+          104.76408664972523
+        ],
+        "local_cap": 200,
+        "actual_calls": 108,
+        "error": null,
+        "best_theta": [
+          150.6737179132982,
+          478.96038675271615,
+          44.12881219646992,
+          106.45321600401185
+        ],
+        "best_Q_total": 477.0184395124557,
+        "best_Q_model": 149.54530740960513,
+        "best_Q_height": 0.719815709297357,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 75.13256155945123,
+        "best_half_cost_identity_abs_error": -1.4210854715202004e-14,
+        "best_seq": 163,
+        "best_prediction_sha256": "741cf50032c548ff7b483d68cd253949f14705b7d1fc64e8af111679a7cfa99c",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 12,
+        "optimizer_njev": 12,
+        "optimizer_optimality": 0.004615113214029734,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "edf3b246b5dd3b3f01fb9d5f7a28a296493890a5a54be328f3251187f0ef9f98"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_03_H10_R02",
+    "group": "ANON_03",
+    "replicate": 2,
+    "sigma_nm": 10.0,
+    "design": "H10",
+    "result_present": true,
+    "result_sha256": "27b8271228caccf9eee23c0cc0b183ea70e2ff622ea66657db5f4575953f691b",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      133.58875126771497,
+      476.3454570530222,
+      45.02709303615255,
+      106.45233256354084
+    ],
+    "actual_calls": 81,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          134.84798634193208,
+          476.59348174254495,
+          44.96074376773707,
+          106.4545424044937
+        ],
+        "local_cap": 200,
+        "actual_calls": 45,
+        "error": null,
+        "best_theta": [
+          133.58875126771497,
+          476.3454570530222,
+          45.02709303615255,
+          106.45233256354084
+        ],
+        "best_Q_total": 474.92728702329873,
+        "best_Q_model": 148.04096550892697,
+        "best_Q_height": 0.13300512081854293,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 74.08698531487276,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 37,
+        "best_prediction_sha256": "046814cd3a365203a8601d2934f53221b55b11db56066b04926092b312dd3a34",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 5,
+        "optimizer_njev": 5,
+        "optimizer_optimality": 0.00010705250392989112,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "08e8ad21e64e6c0110695a505f4f471ca86e5c07abdcbe455c00fde80a4665d2"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          199.99999999999997,
+          396.11494568665796,
+          46.07250047049705,
+          104.76408664972523
+        ],
+        "local_cap": 200,
+        "actual_calls": 36,
+        "error": null,
+        "best_theta": [
+          199.99999999999997,
+          396.26730882902956,
+          46.05650187759465,
+          104.75322848207163
+        ],
+        "best_Q_total": 543.2089255072885,
+        "best_Q_model": 158.0383846139239,
+        "best_Q_height": 58.41722449981144,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 108.22780455686767,
+        "best_half_cost_identity_abs_error": -1.4210854715202004e-14,
+        "best_seq": 73,
+        "best_prediction_sha256": "6fb71665a649718aa5f0ee4e808754ec6a9d61458957156d8259ca1f367e891a",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 4,
+        "optimizer_njev": 4,
+        "optimizer_optimality": 0.0004006996726394908,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "b3728edfdc56943a6ce4148d2ee509e3eae0b532f6a803a31d7015feb5acc3c4"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_03_H1_R02",
+    "group": "ANON_03",
+    "replicate": 2,
+    "sigma_nm": 1.0,
+    "design": "H1",
+    "result_present": true,
+    "result_sha256": "31e6d7d2a2d1cdba4f15aeef5883e7ae05074955aeefbfa192166e3e1c3051bd",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      142.2349638626859,
+      477.8506061075336,
+      44.571026687325144,
+      106.45949260241717
+    ],
+    "actual_calls": 135,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          134.84798634193208,
+          476.59348174254495,
+          44.96074376773707,
+          106.4545424044937
+        ],
+        "local_cap": 200,
+        "actual_calls": 45,
+        "error": null,
+        "best_theta": [
+          142.2349638626859,
+          477.8506061075336,
+          44.571026687325144,
+          106.45949260241717
+        ],
+        "best_Q_total": 475.19532864044567,
+        "best_Q_model": 148.3554345240597,
+        "best_Q_height": 0.08657772283285253,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 74.22100612344627,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 37,
+        "best_prediction_sha256": "04914bc902f3058c6cd1b1a1d7907c7bd563f2fcab96c9e2f7d760c6d1314e4c",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 5,
+        "optimizer_njev": 5,
+        "optimizer_optimality": 0.0004407055788405974,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "f52ccc8753227429732ab2984a076696e1d2608c31b81cdedc0834372e53fe8d"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          199.99999999999997,
+          396.11494568665796,
+          46.07250047049705,
+          104.76408664972523
+        ],
+        "local_cap": 200,
+        "actual_calls": 90,
+        "error": null,
+        "best_theta": [
+          142.23521010281019,
+          477.8506333665393,
+          44.57117824485016,
+          106.45938120351357
+        ],
+        "best_Q_total": 475.19532864099267,
+        "best_Q_model": 148.35545056529367,
+        "best_Q_height": 0.08656168214574225,
+        "best_K": 326.75331639355323,
+        "best_scipy_cost": 74.22100612371969,
+        "best_half_cost_identity_abs_error": -1.4210854715202004e-14,
+        "best_seq": 127,
+        "best_prediction_sha256": "e848bca67b35e617f8024b43a64d1177bf6323c17e9124d765d819f6dc9dcf3b",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 10,
+        "optimizer_njev": 10,
+        "optimizer_optimality": 0.0014542769890825691,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "14ee782722502cd2247e59e48cdf7d7db919d68a3f565897231c9bd70cdbee5a"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_04_NO_HEIGHT",
+    "group": "ANON_04",
+    "replicate": null,
+    "sigma_nm": null,
+    "design": "NO_HEIGHT",
+    "result_present": true,
+    "result_sha256": "47d6ff8dc89f8cf55315071a4c163c6cc81f5bf424221fa4c317d29819bcdaf2",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      188.22477824843978,
+      524.5607994177144,
+      -118.30198271953978,
+      -76.8668807830059
+    ],
+    "actual_calls": 44,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          188.22431104153708,
+          524.5608744334014,
+          -118.30198304395213,
+          -76.86688004842907
+        ],
+        "local_cap": 200,
+        "actual_calls": 22,
+        "error": null,
+        "best_theta": [
+          188.22477824843978,
+          524.5607994177144,
+          -118.30198271953978,
+          -76.8668807830059
+        ],
+        "best_Q_total": 492.8560796463204,
+        "best_Q_model": 154.67420970256268,
+        "best_Q_height": 0.0,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 77.33710485128134,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 14,
+        "best_prediction_sha256": "83ef29b7f5c0d169fbd22a96e70a64d9be3ac584a81cd908580f2a8b738b323e",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 6,
+        "optimizer_njev": 2,
+        "optimizer_optimality": 8.937105632142324e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "bb96fcc6c331d755c0486947e15ae3b5810bed7fd1b756ecef4811e58fbd60bf"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          177.04057402474726,
+          350.3058724338181,
+          -118.454523823296,
+          -76.83339894045145
+        ],
+        "local_cap": 200,
+        "actual_calls": 22,
+        "error": null,
+        "best_theta": [
+          177.04074490556846,
+          350.30591978568367,
+          -118.4545286311415,
+          -76.83339787212145
+        ],
+        "best_Q_total": 504.41231520976726,
+        "best_Q_model": 166.2304452660095,
+        "best_Q_height": 0.0,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 83.11522263300475,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 36,
+        "best_prediction_sha256": "c1a4404185e30077ed743e415fce832b75f03f1b48becbb901064ddf2aaa6f72",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 6,
+        "optimizer_njev": 2,
+        "optimizer_optimality": 0.00042005297679883227,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "eee10b2086366af5acc5a84d2debfb1224f9ff4a4dfbd66784caeacbaabafaea"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_04_H10_R00",
+    "group": "ANON_04",
+    "replicate": 0,
+    "sigma_nm": 10.0,
+    "design": "H10",
+    "result_present": true,
+    "result_sha256": "e68270fd644dd80d8dcf61b1fabe6918e0c19d501a2c268064d0ac5f27216d58",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      187.17411524010774,
+      524.765542483671,
+      -118.3014982204001,
+      -76.86518729954534
+    ],
+    "actual_calls": 156,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          188.22431104153708,
+          524.5608744334014,
+          -118.30198304395213,
+          -76.86688004842907
+        ],
+        "local_cap": 200,
+        "actual_calls": 77,
+        "error": null,
+        "best_theta": [
+          187.17411524010774,
+          524.765542483671,
+          -118.3014982204001,
+          -76.86518729954534
+        ],
+        "best_Q_total": 492.92857152725657,
+        "best_Q_model": 154.67971569260837,
+        "best_Q_height": 0.06698589089042147,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 77.3733507917494,
+        "best_half_cost_identity_abs_error": 1.4210854715202004e-14,
+        "best_seq": 69,
+        "best_prediction_sha256": "2912e2875d8e006db8a2987d7aeca7ca8ce8ef686e89acfc6a3369c54eb388b0",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 13,
+        "optimizer_njev": 8,
+        "optimizer_optimality": 0.0006753168191960033,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "13ac9632cecf820ae7889044b9749e091c5c65e03b7aaff54c855798f5f63f7e"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          177.04057402474726,
+          350.3058724338181,
+          -118.454523823296,
+          -76.83339894045145
+        ],
+        "local_cap": 200,
+        "actual_calls": 79,
+        "error": null,
+        "best_theta": [
+          189.86798849323168,
+          354.37203845663004,
+          -118.48753587425584,
+          -76.88976079087789
+        ],
+        "best_Q_total": 807.6581486286516,
+        "best_Q_model": 170.24970649171473,
+        "best_Q_height": 299.22657219317915,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 234.73813934244697,
+        "best_half_cost_identity_abs_error": 2.842170943040401e-14,
+        "best_seq": 148,
+        "best_prediction_sha256": "569da1d60e8896d26be3a90bb901d69db247f1940bdff91de54859085648d555",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 15,
+        "optimizer_njev": 8,
+        "optimizer_optimality": 0.0033264627697433,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "510a7fe028527e1c2ce4fc7eb21fb0c9eba878dd60b5cc81edfe6e54b6e67429"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_04_H1_R00",
+    "group": "ANON_04",
+    "replicate": 0,
+    "sigma_nm": 1.0,
+    "design": "H1",
+    "result_present": true,
+    "result_sha256": "170ee527d730c87e9cf03c006ae7885016ad28f8610fa76696b93bea8bdea623",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      181.275304830255,
+      526.2298044081604,
+      -118.30409733285725,
+      -76.85267432194786
+    ],
+    "actual_calls": 144,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          188.22431104153708,
+          524.5608744334014,
+          -118.30198304395213,
+          -76.86688004842907
+        ],
+        "local_cap": 200,
+        "actual_calls": 54,
+        "error": null,
+        "best_theta": [
+          181.275304830255,
+          526.2298044081604,
+          -118.30409733285725,
+          -76.85267432194786
+        ],
+        "best_Q_total": 493.12617429025914,
+        "best_Q_model": 154.92725682259908,
+        "best_Q_height": 0.017047523902338317,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 77.4721521732507,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 46,
+        "best_prediction_sha256": "277b6bf118013d642e8b614be2e64a4703c24b3aa0be007b9fe35fe80cf192cc",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 6,
+        "optimizer_njev": 6,
+        "optimizer_optimality": 6.896696479294397e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "2be1818832050ce51fe41bc7ea7ff9b3615bffdd8fd51878ce14ec0051c089df"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          177.04057402474726,
+          350.3058724338181,
+          -118.454523823296,
+          -76.83339894045145
+        ],
+        "local_cap": 200,
+        "actual_calls": 90,
+        "error": null,
+        "best_theta": [
+          38.25259682277983,
+          526.3876163126174,
+          499.99999999999994,
+          499.99999999999994
+        ],
+        "best_Q_total": 4485.430483832399,
+        "best_Q_model": 4147.247871558419,
+        "best_Q_height": 0.000742330222669269,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 2073.624306944321,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 136,
+        "best_prediction_sha256": "268ade60d56aee9f3b3a06f0d87ce1742d4517706193eae26bb82f2b1731aefd",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 10,
+        "optimizer_njev": 10,
+        "optimizer_optimality": 0.00024672832873946164,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "6efe7de3c7b25526364aca74595874ed9c076f0ac0816ff4a7bee1a1f38b2340"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_04_H10_R01",
+    "group": "ANON_04",
+    "replicate": 1,
+    "sigma_nm": 10.0,
+    "design": "H10",
+    "result_present": true,
+    "result_sha256": "1f08910c2e980143b726fa161c39714360e14ffbc6930d4193edef2a786b44e6",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      190.6655246930207,
+      524.1302871831642,
+      -118.30403275978686,
+      -76.87050988234165
+    ],
+    "actual_calls": 159,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          188.22431104153708,
+          524.5608744334014,
+          -118.30198304395213,
+          -76.86688004842907
+        ],
+        "local_cap": 200,
+        "actual_calls": 70,
+        "error": null,
+        "best_theta": [
+          190.6655246930207,
+          524.1302871831642,
+          -118.30403275978686,
+          -76.87050988234165
+        ],
+        "best_Q_total": 493.6282417217921,
+        "best_Q_model": 154.7070925875608,
+        "best_Q_height": 0.7392791904735467,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 77.72318588901717,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 62,
+        "best_prediction_sha256": "b3f8e5ea98e5dfbb5c71c5ceb0a471040edbdadab9323709843a68a18000fae2",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 14,
+        "optimizer_njev": 7,
+        "optimizer_optimality": 0.000362401527144608,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "d7831282a931f13f22d2fbc252246771c4f418580341ba9dd9af71be274832e1"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          177.04057402474726,
+          350.3058724338181,
+          -118.454523823296,
+          -76.83339894045145
+        ],
+        "local_cap": 200,
+        "actual_calls": 89,
+        "error": null,
+        "best_theta": [
+          189.652456541771,
+          354.2710023556764,
+          -118.48658767904979,
+          -76.88757118719157
+        ],
+        "best_Q_total": 768.1455352159894,
+        "best_Q_model": 169.91207962926364,
+        "best_Q_height": 260.05158564296795,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 214.9818326361158,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 153,
+        "best_prediction_sha256": "10cc60f2d3fed8de07c77ccf4d969ca5f4b62739dd1add79459542f9d9a8d045",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 17,
+        "optimizer_njev": 9,
+        "optimizer_optimality": 0.000580987215717723,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "e9a173fd6853feaa9d9fc5cbfe62bbd0fe97390b8e802083550bde636d0c203e"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_04_H1_R01",
+    "group": "ANON_04",
+    "replicate": 1,
+    "sigma_nm": 1.0,
+    "design": "H1",
+    "result_present": true,
+    "result_sha256": "0510629dfc1c92b0d4054c8fbb440668d7f8c94a26e8b108b1506282973599d9",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      185.5181770499016,
+      525.1186377066069,
+      -118.30127489917102,
+      -76.862235316957
+    ],
+    "actual_calls": 135,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          188.22431104153708,
+          524.5608744334014,
+          -118.30198304395213,
+          -76.86688004842907
+        ],
+        "local_cap": 200,
+        "actual_calls": 45,
+        "error": null,
+        "best_theta": [
+          185.5181770499016,
+          525.1186377066069,
+          -118.30127489917102,
+          -76.862235316957
+        ],
+        "best_Q_total": 492.8959131317334,
+        "best_Q_model": 154.71049370361806,
+        "best_Q_height": 0.0035494843575246972,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 77.35702159398778,
+        "best_half_cost_identity_abs_error": -1.4210854715202004e-14,
+        "best_seq": 37,
+        "best_prediction_sha256": "620750d911d840fc83eef4c26be7cbc992d9fecb1e443d483f73d9750f47ffd8",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 5,
+        "optimizer_njev": 5,
+        "optimizer_optimality": 0.000208335755939564,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "ade4a3a50062ae40756601a0a74ba0063493733371a085602d5372be92eb6373"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          177.04057402474726,
+          350.3058724338181,
+          -118.454523823296,
+          -76.83339894045145
+        ],
+        "local_cap": 200,
+        "actual_calls": 90,
+        "error": null,
+        "best_theta": [
+          38.30952210583745,
+          525.2058140028577,
+          499.99999999999994,
+          499.99999999999994
+        ],
+        "best_Q_total": 4485.495322820321,
+        "best_Q_model": 4147.31269118572,
+        "best_Q_height": 0.0007616908439371398,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 2073.656726438282,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 127,
+        "best_prediction_sha256": "5d20ff60d3d4ab05202e4d58fa5e70d66c6e6b7f42f390405a1120b77ad89487",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 10,
+        "optimizer_njev": 10,
+        "optimizer_optimality": 0.00022890206348320913,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "a08345a5f81576e4d187b12e063f69726604f16c90bd93de83bcfc368fd34adc"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_04_H10_R02",
+    "group": "ANON_04",
+    "replicate": 2,
+    "sigma_nm": 10.0,
+    "design": "H10",
+    "result_present": true,
+    "result_sha256": "e054e4f43e51f2f067c156c9c1a073106dfa705c441b5f1e683083fdfe9daf5a",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      178.8820469220334,
+      527.0150951493433,
+      -118.30816054188527,
+      -76.84580445871246
+    ],
+    "actual_calls": 253,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          188.22431104153708,
+          524.5608744334014,
+          -118.30198304395213,
+          -76.86688004842907
+        ],
+        "local_cap": 200,
+        "actual_calls": 130,
+        "error": null,
+        "best_theta": [
+          178.8820469220334,
+          527.0150951493433,
+          -118.30816054188527,
+          -76.84580445871246
+        ],
+        "best_Q_total": 496.27403147292256,
+        "best_Q_model": 155.1644808876899,
+        "best_Q_height": 2.9276806414749283,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 79.04608076458241,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 122,
+        "best_prediction_sha256": "1e003f8346e43934b0ad9ffc8f6fb9205a002e3e1bf05643932c014bcd4cd474",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 18,
+        "optimizer_njev": 14,
+        "optimizer_optimality": 0.003958059490518152,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "cf11b9de9948657d9a509cea46a5d1a4576e87d245b6f4bf164752f9719a8d4a"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          177.04057402474726,
+          350.3058724338181,
+          -118.454523823296,
+          -76.83339894045145
+        ],
+        "local_cap": 200,
+        "actual_calls": 123,
+        "error": null,
+        "best_theta": [
+          190.13679682170957,
+          354.50934737685566,
+          -118.48878453420112,
+          -76.89279279702075
+        ],
+        "best_Q_total": 868.4723899244887,
+        "best_Q_model": 170.74743279719996,
+        "best_Q_height": 359.5430871835309,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 265.14525999036545,
+        "best_half_cost_identity_abs_error": 5.684341886080802e-14,
+        "best_seq": 245,
+        "best_prediction_sha256": "cd6db325a68c358f59bb41cd5ccdf36aaf3695e01c3ba3c9935813c58b9a76d0",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 19,
+        "optimizer_njev": 13,
+        "optimizer_optimality": 0.004780243854747192,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "32613693d0f226dfd4d83906a7f9dc6c5b58506b819e0c2cb88bb5d012072ed4"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  },
+  {
+    "task_id": "B100000_ANON_04_H1_R02",
+    "group": "ANON_04",
+    "replicate": 2,
+    "sigma_nm": 1.0,
+    "design": "H1",
+    "result_present": true,
+    "result_sha256": "a0e3ba247b06697b2ce4dabe4efff6fa94a5cfb1c90b7fc508eae33a4b209013",
+    "execution_state": "FINISHED",
+    "reason_codes": [
+      "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS",
+      "ALL_REPORTABLE_D_NULL",
+      "LOCAL_BOUNDED_SEARCH_NOT_GLOBAL_UNIQUENESS"
+    ],
+    "theta": [
+      176.76524458375494,
+      527.8265397772644,
+      -118.31339198855956,
+      -76.83873275442059
+    ],
+    "actual_calls": 153,
+    "best_Q_total": null,
+    "starts": [
+      {
+        "start_index": 0,
+        "execution_state": "FINISHED",
+        "x0": [
+          188.22431104153708,
+          524.5608744334014,
+          -118.30198304395213,
+          -76.86688004842907
+        ],
+        "local_cap": 200,
+        "actual_calls": 63,
+        "error": null,
+        "best_theta": [
+          176.76524458375494,
+          527.8265397772644,
+          -118.31339198855956,
+          -76.83873275442059
+        ],
+        "best_Q_total": 493.70096640185085,
+        "best_Q_model": 155.474568541858,
+        "best_Q_height": 0.044527916235092266,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 77.75954822904654,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 55,
+        "best_prediction_sha256": "d70d23b66a6a101e66069508838fd546350dc6bcc27f6bf13e5e8dc112a0a290",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 7,
+        "optimizer_njev": 7,
+        "optimizer_optimality": 7.124062087013618e-05,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "4536a475aaf97c2e5e47388d4ce70c91738d260ae87d5b60c9555df94d82fdb1"
+      },
+      {
+        "start_index": 1,
+        "execution_state": "FINISHED",
+        "x0": [
+          177.04057402474726,
+          350.3058724338181,
+          -118.454523823296,
+          -76.83339894045145
+        ],
+        "local_cap": 200,
+        "actual_calls": 90,
+        "error": null,
+        "best_theta": [
+          38.19443377919439,
+          528.0644618004804,
+          499.99999999999994,
+          499.99999999999994
+        ],
+        "best_Q_total": 4485.339675178295,
+        "best_Q_model": 4147.157081321358,
+        "best_Q_height": 0.0007239131769840988,
+        "best_K": 338.18186994375776,
+        "best_scipy_cost": 2073.578902617268,
+        "best_half_cost_identity_abs_error": 0.0,
+        "best_seq": 145,
+        "best_prediction_sha256": "1dfcab4f96dc536e85c5045f98b2ea205383193f2edcb6bf1b98c48484cb20e5",
+        "optimizer_status": 2,
+        "optimizer_success": true,
+        "optimizer_nfev": 10,
+        "optimizer_njev": 10,
+        "optimizer_optimality": 0.00027967519271618866,
+        "optimizer_message": "`ftol` termination condition is satisfied.",
+        "reportable_D": null,
+        "sha256": "25772612ff62a8d22e952c0268e762a20ef24c989c10b57e950f607c595eb27a"
+      }
+    ],
+    "best_files": [
+      "start_000.json",
+      "start_001.json"
+    ],
+    "n_starts_recorded": 2
+  }
+]

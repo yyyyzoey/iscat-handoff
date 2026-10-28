@@ -1,0 +1,286 @@
+{
+  "schema": "iscat165.hypothetical_height_readings.1",
+  "scope": "OPENED_DEV_SIMULATION_NOT_INDEPENDENT_EXPERIMENT",
+  "seed": 16520261027,
+  "groups": [
+    "ANON_01",
+    "ANON_02",
+    "ANON_03",
+    "ANON_04"
+  ],
+  "sigma_nm": [
+    10.0,
+    1.0
+  ],
+  "replicates": 3,
+  "readings": [
+    {
+      "reading_id": "B100000_ANON_01_H10_R00",
+      "group": "ANON_01",
+      "B": 100000,
+      "replicate": 0,
+      "sigma_nm": 10.0,
+      "z_nm": 406.00397159157967,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_01_H1_R00",
+      "group": "ANON_01",
+      "B": 100000,
+      "replicate": 0,
+      "sigma_nm": 1.0,
+      "z_nm": 392.725397159158,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_01_H10_R01",
+      "group": "ANON_01",
+      "B": 100000,
+      "replicate": 1,
+      "sigma_nm": 10.0,
+      "z_nm": 391.90644726405054,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_01_H1_R01",
+      "group": "ANON_01",
+      "B": 100000,
+      "replicate": 1,
+      "sigma_nm": 1.0,
+      "z_nm": 391.3156447264051,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_01_H10_R02",
+      "group": "ANON_01",
+      "B": 100000,
+      "replicate": 2,
+      "sigma_nm": 10.0,
+      "z_nm": 387.0916403758261,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_01_H1_R02",
+      "group": "ANON_01",
+      "B": 100000,
+      "replicate": 2,
+      "sigma_nm": 1.0,
+      "z_nm": 390.83416403758264,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_02_H10_R00",
+      "group": "ANON_02",
+      "B": 100000,
+      "replicate": 0,
+      "sigma_nm": 10.0,
+      "z_nm": 428.1340616356161,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_02_H1_R00",
+      "group": "ANON_02",
+      "B": 100000,
+      "replicate": 0,
+      "sigma_nm": 1.0,
+      "z_nm": 432.06340616356164,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_02_H10_R01",
+      "group": "ANON_02",
+      "B": 100000,
+      "replicate": 1,
+      "sigma_nm": 10.0,
+      "z_nm": 423.26772460757996,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_02_H1_R01",
+      "group": "ANON_02",
+      "B": 100000,
+      "replicate": 1,
+      "sigma_nm": 1.0,
+      "z_nm": 431.576772460758,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_02_H10_R02",
+      "group": "ANON_02",
+      "B": 100000,
+      "replicate": 2,
+      "sigma_nm": 10.0,
+      "z_nm": 435.3610473874104,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_02_H1_R02",
+      "group": "ANON_02",
+      "B": 100000,
+      "replicate": 2,
+      "sigma_nm": 1.0,
+      "z_nm": 432.786104738741,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_03_H10_R00",
+      "group": "ANON_03",
+      "B": 100000,
+      "replicate": 0,
+      "sigma_nm": 10.0,
+      "z_nm": 476.17379626269707,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_03_H1_R00",
+      "group": "ANON_03",
+      "B": 100000,
+      "replicate": 0,
+      "sigma_nm": 1.0,
+      "z_nm": 478.4923796262697,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_03_H10_R01",
+      "group": "ANON_03",
+      "B": 100000,
+      "replicate": 1,
+      "sigma_nm": 10.0,
+      "z_nm": 489.33806288852236,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_03_H1_R01",
+      "group": "ANON_03",
+      "B": 100000,
+      "replicate": 1,
+      "sigma_nm": 1.0,
+      "z_nm": 479.8088062888522,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_03_H10_R02",
+      "group": "ANON_03",
+      "B": 100000,
+      "replicate": 2,
+      "sigma_nm": 10.0,
+      "z_nm": 472.69847034042584,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_03_H1_R02",
+      "group": "ANON_03",
+      "B": 100000,
+      "replicate": 2,
+      "sigma_nm": 1.0,
+      "z_nm": 478.1448470340426,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_04_H10_R00",
+      "group": "ANON_04",
+      "B": 100000,
+      "replicate": 0,
+      "sigma_nm": 10.0,
+      "z_nm": 527.3537057492016,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_04_H1_R00",
+      "group": "ANON_04",
+      "B": 100000,
+      "replicate": 0,
+      "sigma_nm": 1.0,
+      "z_nm": 526.3603705749201,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_04_H10_R01",
+      "group": "ANON_04",
+      "B": 100000,
+      "replicate": 1,
+      "sigma_nm": 10.0,
+      "z_nm": 515.5321525571331,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_04_H1_R01",
+      "group": "ANON_04",
+      "B": 100000,
+      "replicate": 1,
+      "sigma_nm": 1.0,
+      "z_nm": 525.1782152557133,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_04_H10_R02",
+      "group": "ANON_04",
+      "B": 100000,
+      "replicate": 2,
+      "sigma_nm": 10.0,
+      "z_nm": 544.1255616581061,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    },
+    {
+      "reading_id": "B100000_ANON_04_H1_R02",
+      "group": "ANON_04",
+      "B": 100000,
+      "replicate": 2,
+      "sigma_nm": 1.0,
+      "z_nm": 528.0375561658107,
+      "hypothetical": true,
+      "independent_camera_noise_assumption": true,
+      "generation": "GAUSSIAN_HEIGHT_NOISE_ONLY_NO_NEW_CAMERA_FRAMES"
+    }
+  ],
+  "truth_file_sha256": "0f069b71ec803a8e8e236357e21a151be4cf0996c70b05d6f49a622910943d08",
+  "no_camera_noise_draw": true,
+  "no_new_camera_exposures": true,
+  "no_experimental_height_observation": true
+}

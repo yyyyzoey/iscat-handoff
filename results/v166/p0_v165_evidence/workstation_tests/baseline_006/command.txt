@@ -1,0 +1,5 @@
+PYTHONPATH=C:\iscat\v165\tools\v165_bundle\code
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+python=C:\ProgramData\anaconda3\python.exe
+pytest_collect=python -m pytest -q -p no:cacheprovider --collect-only tools/v165_bundle/tests
+pytest_full=python -m pytest -q -p no:cacheprovider tools/v165_bundle/tests

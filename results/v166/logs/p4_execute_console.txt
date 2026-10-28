@@ -1,0 +1,21 @@
+{
+  "schema": "iscat165.execute_status.1",
+  "execution_state": "FINISHED_WITH_PARTIAL_SEARCH",
+  "model_calls": 4937,
+  "phase_caps": {
+    "MODEL_BINDING": 200,
+    "HEIGHT_FITS": 11200,
+    "FINAL_VERIFY": 600
+  },
+  "tasks_reserved": 31,
+  "fit_tasks": 28,
+  "fit_finished": 23,
+  "fit_partial_search": 5,
+  "fit_failed": 0,
+  "fit_blocked": 0,
+  "final_verify_execution_state": "FINISHED",
+  "binding_execution_state": "FINISHED",
+  "all_reportable_D_null": true,
+  "experimental_absolute_diameter_validated": false,
+  "scope": "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS_NOT_REAL_SIZING"
+}

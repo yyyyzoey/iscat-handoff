@@ -1,0 +1,108 @@
+{
+  "public_readings_check": {
+    "readings": 24,
+    "groups": 4,
+    "per_sigma": 3,
+    "truth_free": true,
+    "scope": "OPENED_DEVELOPMENT_SIMULATED_READINGS"
+  },
+  "estimator_inputs_check": {
+    "scope": "KEY_SCAN_OF_ESTIMATOR_INPUTS_ANONYMOUS_READINGS_ONLY",
+    "inputs": [
+      "height_readings"
+    ],
+    "offenders": [],
+    "model_calls": 0
+  },
+  "truth_git_blob_sha1": "cd097e0c5236c331f8b1862e6e301674454a871e",
+  "truth_bytes": 1370,
+  "truth_blob_matches_public_meta": null,
+  "truth_blob_matches_sealed_meta": null,
+  "public_source_sha_matches_recomputed": true,
+  "public_reading_count": 24,
+  "sealed_row_count": 24,
+  "id_sets_identical": true,
+  "z_nm_exact_mismatch_ids": [],
+  "z_nm_identical_per_reading_id": true,
+  "distinct_draw_slots": 12,
+  "draw_slots_expected_12": true,
+  "sigma_grid": [
+    [
+      "ANON_01",
+      1.0,
+      0
+    ],
+    "...8 groups x 3 reps"
+  ],
+  "sigmas_present": [
+    1.0,
+    10.0
+  ],
+  "forbidden_keys_in_public_file": [],
+  "sealed_schema": "iscat165.validator_only.1",
+  "sealed_keys_per_row": [
+    "B",
+    "D_scene_nm",
+    "epsilon",
+    "group",
+    "h_scene_nm",
+    "reading_id",
+    "replicate",
+    "sigma_nm",
+    "z_nm"
+  ],
+  "sealed_is_inside_guard_denied_prefix": true,
+  "guard_deny_dir_prefixes": [
+    "results/v142/validation/",
+    "results/v165/validator_only/"
+  ],
+  "truth_file_inside_guard_denied_prefix": true,
+  "source_lock_entries_before": 859,
+  "source_lock_entries_after": 859,
+  "source_lock_unchanged_after_p3": true,
+  "artifacts": {
+    "height_readings": {
+      "path": "C:\\iscat\\v166\\results\\v166\\height_input\\height_readings.json",
+      "bytes": 8763,
+      "sha256": "bbfd793aff48247623081dd607168cd9afbba2deeff5f37c7a0cbd62b032ad4e"
+    },
+    "validator_sealed": {
+      "path": "C:\\iscat\\v166\\results\\v165\\validator_only\\v166_height_truth_sealed.json",
+      "bytes": 7032,
+      "sha256": "acb3d44cb944d094a19575aaf6ce98da5d619e8318bf0fd00400a9d9c8ebbb06"
+    },
+    "generator": {
+      "sha256": "a0a08a216e1e0307420432d8adf02cf364610946f5ed3e2f8863c9f83d730884"
+    },
+    "console_log": {
+      "path": "C:\\iscat\\v166\\results\\v166\\logs\\p3_generate_console.txt"
+    }
+  },
+  "public_meta": {
+    "schema": "iscat165.hypothetical_height_readings.1",
+    "scope": "OPENED_DEV_SIMULATION_NOT_INDEPENDENT_EXPERIMENT",
+    "seed": 16520261027,
+    "groups": [
+      "ANON_01",
+      "ANON_02",
+      "ANON_03",
+      "ANON_04"
+    ],
+    "sigma_nm": [
+      10.0,
+      1.0
+    ],
+    "replicates": 3,
+    "truth_file_sha256": "0f069b71ec803a8e8e236357e21a151be4cf0996c70b05d6f49a622910943d08",
+    "no_camera_noise_draw": true,
+    "no_new_camera_exposures": true,
+    "no_experimental_height_observation": true
+  },
+  "sealed_meta": {
+    "schema": "iscat165.validator_only.1",
+    "seed": 16520261027,
+    "source_truth_sha256": "0f069b71ec803a8e8e236357e21a151be4cf0996c70b05d6f49a622910943d08"
+  },
+  "sealed_source_sha_matches_recomputed": true,
+  "strictly_new_readings_no_replay_needed": true
+}

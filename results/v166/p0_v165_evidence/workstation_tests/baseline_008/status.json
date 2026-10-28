@@ -1,0 +1,12 @@
+{
+  "attempt": "C:\\iscat\\v165\\results\\v165\\workstation_tests\\baseline_008",
+  "command": "python -m pytest -q -p v165_receipt_plugin tests",
+  "exit_code": 1,
+  "tripwire": {
+    "path": "C:\\iscat\\v165\\results\\v165\\workstation_tests\\baseline_008\\real_call_tripwire.txt",
+    "exists": true,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "pytest_outcomes_exists": true
+}

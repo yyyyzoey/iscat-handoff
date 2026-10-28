@@ -1,0 +1,354 @@
+{
+ "attempt_rows": 4937,
+ "attempt_states": {
+  "RETURNED": 4937
+ },
+ "distinct_theta_values": 4468,
+ "estimator_guard": {
+  "denied_import_attempts": [],
+  "denied_open_attempts": [],
+  "deny_dir_prefixes": [
+   "results/v142/validation/",
+   "results/v165/validator_only/"
+  ],
+  "deny_module_prefixes": [
+   "v165_truth_audit",
+   "v165_generate_height",
+   "v165_validator"
+  ],
+  "guard_installed_once": true,
+  "model_calls": 0,
+  "repo": "C:\\iscat\\v166",
+  "scope": "PYTHON_LEVEL_AUDIT_HOOK_NOT_A_KERNEL_SANDBOX"
+ },
+ "final_verify_logical_vs_real": {
+  "contract_logical_items": "28 task results + 4 base predictions = 32",
+  "ledger_final_verify_real_charged_calls": 32,
+  "note": "logical verification items and real charged forward calls are reported separately; neither number is hardcoded by this report",
+  "p5b_readonly_verification_new_model_calls": 0
+ },
+ "generated_utc": "2026-10-28T10:15:03.849954+00:00",
+ "naming_discrepancy": {
+  "actual_executed_file": "results/v166/logs/v165_budget.sqlite",
+  "contract_requested_name": "logs/v166_budget.sqlite",
+  "delivered_copy_in_zip": "deliverables/budget/v166_budget.sqlite (byte-identical copy)",
+  "reason": "the executed production module, plan id and owner id are still v165 (PLAN_ID='v165', OWNER='v165-single-process'); V166 reuses the V165 executor unchanged, and renaming or rewriting the ledger would break the ledger SHA already bound into seal.json and the P4 result records"
+ },
+ "p4_execute_status": {
+  "all_reportable_D_null": true,
+  "binding_execution_state": "FINISHED",
+  "execution_state": "FINISHED_WITH_PARTIAL_SEARCH",
+  "experimental_absolute_diameter_validated": false,
+  "final_verify_execution_state": "FINISHED",
+  "fit_blocked": 0,
+  "fit_failed": 0,
+  "fit_finished": 23,
+  "fit_partial_search": 5,
+  "fit_tasks": 28,
+  "model_calls": 4937,
+  "phase_caps": {
+   "FINAL_VERIFY": 600,
+   "HEIGHT_FITS": 11200,
+   "MODEL_BINDING": 200
+  },
+  "schema": "iscat165.execute_status.1",
+  "scope": "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS_NOT_REAL_SIZING",
+  "tasks_reserved": 31
+ },
+ "phases": {
+  "FINAL_VERIFY": {
+   "phase_authority": 600,
+   "task_cap_sum": 600,
+   "used": 32
+  },
+  "HEIGHT_FITS": {
+   "phase_authority": 11200,
+   "task_cap_sum": 11200,
+   "used": 4811
+  },
+  "MODEL_BINDING": {
+   "phase_authority": 200,
+   "task_cap_sum": 200,
+   "used": 94
+  }
+ },
+ "plan_metadata": {
+  "phases": {
+   "FINAL_VERIFY": 600,
+   "HEIGHT_FITS": 11200,
+   "MODEL_BINDING": 200
+  },
+  "plan_id": "v165",
+  "total": 12000
+ },
+ "readonly_verification_excerpt": {
+  "all_reportable_D_null": true,
+  "experimental_absolute_diameter_validated": false,
+  "final_verify_execution_state": "FINISHED",
+  "final_verify_failures": [],
+  "fit_task_count": 28,
+  "new_model_calls": 0,
+  "scope": "READ_ONLY_MECHANICAL_AND_NUMERICAL_BINDING_CHECK",
+  "status": "LEDGER_AND_ARTIFACT_BINDING_VERIFIED",
+  "task_count": 31,
+  "test_receipt_sha256": "17ecef18670b7d1fc9ef10727d0a583730265282dd01d03115a237312282d31f"
+ },
+ "schema": "iscat166.budget_summary.1",
+ "source_ledger_bytes": 6979584,
+ "source_ledger_path": "results/v166/logs/v165_budget.sqlite",
+ "source_ledger_sha256": "254b5485164a57865328c81f8890ea4aa458d1386ed6f5f34533f2848f7e4ece",
+ "task_rows": [
+  {
+   "cap": 100,
+   "phase": "MODEL_BINDING",
+   "result_sha256": "94f1ea88ab37736b21f74d4a3ca2a76127724664110bf68c21f29d9683d71f16",
+   "state": "FINISHED",
+   "task": "LOADER_1",
+   "used": 70
+  },
+  {
+   "cap": 100,
+   "phase": "MODEL_BINDING",
+   "result_sha256": "81cde6247954eabb541803e122d5ac197c017695796523ffcc019ec085ca35aa",
+   "state": "FINISHED",
+   "task": "BINDING",
+   "used": 24
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "509b09c1a56dd7eebd83193342a8a525a19bd6cc5a9e89e19dd772a607c28ee0",
+   "state": "FINISHED",
+   "task": "B100000_ANON_01_NO_HEIGHT",
+   "used": 47
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "2e0782c2b542257d20147ec9e369254af1145b38cb88386a6a324728cd654293",
+   "state": "PARTIAL_BUDGET",
+   "task": "B100000_ANON_01_H10_R00",
+   "used": 245
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "c118980b0579c1121cdce40e65e930289f92bf5ccfa947af0e1823ad4ef1f809",
+   "state": "PARTIAL_BUDGET",
+   "task": "B100000_ANON_01_H1_R00",
+   "used": 272
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "891db1d503ecdb9c89bc09eec0c09e34c187e127c6c7575cfd48b16808fa382f",
+   "state": "PARTIAL_BUDGET",
+   "task": "B100000_ANON_01_H10_R01",
+   "used": 290
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "f8b3181464580214da96232318033a0a75ff82c34ac70ef918ff25a0a95e57f9",
+   "state": "PARTIAL_BUDGET",
+   "task": "B100000_ANON_01_H1_R01",
+   "used": 290
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "f5a3d4ae802195f3ace81e441cf9a889a56482a354413c225a5992bc67c8b44a",
+   "state": "FINISHED",
+   "task": "B100000_ANON_01_H10_R02",
+   "used": 314
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "3f4539893ffccc4c6bec2228e0d7709dbca47639869c0c8636ae21e6e679a925",
+   "state": "PARTIAL_BUDGET",
+   "task": "B100000_ANON_01_H1_R02",
+   "used": 317
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "2c843360250f015cfaeb9050e10745970b749a85f93d35801f1777bb42b4dfb0",
+   "state": "FINISHED",
+   "task": "B100000_ANON_02_NO_HEIGHT",
+   "used": 37
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "5a92778bd5f3412ed009c7b4709fc1ddfff15a2e7a72c87403f633ebb531bf81",
+   "state": "FINISHED",
+   "task": "B100000_ANON_02_H10_R00",
+   "used": 235
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "554252700ac1a6231580a3e869cf3dccf5126ce0d09975a9d0ffc2993a9b9dde",
+   "state": "FINISHED",
+   "task": "B100000_ANON_02_H1_R00",
+   "used": 163
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "ea4e9a38d7a93d8eb07fe811173aa62d10baad67cde5cff92b3ee36e0076eb0b",
+   "state": "FINISHED",
+   "task": "B100000_ANON_02_H10_R01",
+   "used": 242
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "b7545c32cc60a36e0bad5f220fda604449be3eb42cddccf237ab2f1cc8bb7942",
+   "state": "FINISHED",
+   "task": "B100000_ANON_02_H1_R01",
+   "used": 154
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "addca14f941340c9c4a4944cbe86a46d509486bb75280c6881535d05c7cb876c",
+   "state": "FINISHED",
+   "task": "B100000_ANON_02_H10_R02",
+   "used": 260
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "0ce4c95136e83ae98b03ff92f46aef6d75b1808ab512b530d83f6c6b2d9fc48b",
+   "state": "FINISHED",
+   "task": "B100000_ANON_02_H1_R02",
+   "used": 163
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "ec3009dd8c399bf7f9dbdd8c88c73119fe2569ad7f8d6ef310848d360f88359c",
+   "state": "FINISHED",
+   "task": "B100000_ANON_03_NO_HEIGHT",
+   "used": 36
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "00aaf5702d2006e6961aeb26748895e55b4600f52f799e1086f420fe3d6281f4",
+   "state": "FINISHED",
+   "task": "B100000_ANON_03_H10_R00",
+   "used": 72
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "89384eb3bc7ab9de1fa50098bc7d8c1f8cb6a9a4ecb911354ea24e795ac3e54f",
+   "state": "FINISHED",
+   "task": "B100000_ANON_03_H1_R00",
+   "used": 153
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "404168fada2c4be0a48a5186bbbc34d6cd45c8bb6066b8a1e7dc0244254fb84b",
+   "state": "FINISHED",
+   "task": "B100000_ANON_03_H10_R01",
+   "used": 90
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "39b7e5620d33559d89614cd203fd45b4d6f145602b95119aafcc0cf9c647c426",
+   "state": "FINISHED",
+   "task": "B100000_ANON_03_H1_R01",
+   "used": 171
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "27b8271228caccf9eee23c0cc0b183ea70e2ff622ea66657db5f4575953f691b",
+   "state": "FINISHED",
+   "task": "B100000_ANON_03_H10_R02",
+   "used": 81
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "31e6d7d2a2d1cdba4f15aeef5883e7ae05074955aeefbfa192166e3e1c3051bd",
+   "state": "FINISHED",
+   "task": "B100000_ANON_03_H1_R02",
+   "used": 135
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "47d6ff8dc89f8cf55315071a4c163c6cc81f5bf424221fa4c317d29819bcdaf2",
+   "state": "FINISHED",
+   "task": "B100000_ANON_04_NO_HEIGHT",
+   "used": 44
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "e68270fd644dd80d8dcf61b1fabe6918e0c19d501a2c268064d0ac5f27216d58",
+   "state": "FINISHED",
+   "task": "B100000_ANON_04_H10_R00",
+   "used": 156
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "170ee527d730c87e9cf03c006ae7885016ad28f8610fa76696b93bea8bdea623",
+   "state": "FINISHED",
+   "task": "B100000_ANON_04_H1_R00",
+   "used": 144
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "1f08910c2e980143b726fa161c39714360e14ffbc6930d4193edef2a786b44e6",
+   "state": "FINISHED",
+   "task": "B100000_ANON_04_H10_R01",
+   "used": 159
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "0510629dfc1c92b0d4054c8fbb440668d7f8c94a26e8b108b1506282973599d9",
+   "state": "FINISHED",
+   "task": "B100000_ANON_04_H1_R01",
+   "used": 135
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "e054e4f43e51f2f067c156c9c1a073106dfa705c441b5f1e683083fdfe9daf5a",
+   "state": "FINISHED",
+   "task": "B100000_ANON_04_H10_R02",
+   "used": 253
+  },
+  {
+   "cap": 400,
+   "phase": "HEIGHT_FITS",
+   "result_sha256": "a0e3ba247b06697b2ce4dabe4efff6fa94a5cfb1c90b7fc508eae33a4b209013",
+   "state": "FINISHED",
+   "task": "B100000_ANON_04_H1_R02",
+   "used": 153
+  },
+  {
+   "cap": 600,
+   "phase": "FINAL_VERIFY",
+   "result_sha256": "538628fc6590e2281bfb170bfa5ec520db7cdea735d793f3c96425f5048e8547",
+   "state": "FINISHED",
+   "task": "FINAL_VERIFY",
+   "used": 32
+  }
+ ],
+ "theta_values_seen_more_than_once": 101,
+ "total_authority": 12000,
+ "total_used": 4937,
+ "total_used_pct": 41.142
+}

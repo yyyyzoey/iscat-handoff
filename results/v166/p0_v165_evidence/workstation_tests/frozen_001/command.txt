@@ -1,0 +1,1 @@
+python -m pytest -q tools\v165_bundle\tests

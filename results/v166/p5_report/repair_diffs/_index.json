@@ -1,0 +1,68 @@
+{
+ "files": [
+  {
+   "added_lines": 14,
+   "current_bytes": 9487,
+   "current_sha256": "33beb6a85f294e5c3d422f813af8e8e7777fa5096aae4ed64e477a9c3f9acaac",
+   "diff_file": "results/v166/p5_report/repair_diffs/gate_a.py.diff",
+   "diff_sha256": "dc33c8b1d84e337dffa4850d000fc6d36c402189c7693babfa5002f1a255a9ad",
+   "path": "tools/gate_a.py",
+   "removed_lines": 6,
+   "snapshot_bytes": 8979,
+   "snapshot_sha256": "231f22e996b32bf8982d1913641e127c0545f49c830f2652cae0c6b87cbe429b"
+  },
+  {
+   "added_lines": 8,
+   "current_bytes": 3790,
+   "current_sha256": "284bf7845182c5b79c465d3f62af06d3ef99f1049494dd54b6b37b9e3c4117bd",
+   "diff_file": "results/v166/p5_report/repair_diffs/v165_guard.py.diff",
+   "diff_sha256": "c1f2abcc4676451bc0caaf88d10e6bac7889d48d0f095eb7e2e0992c251a2246",
+   "path": "tools/v165_bundle/code/v165_guard.py",
+   "removed_lines": 0,
+   "snapshot_bytes": 3228,
+   "snapshot_sha256": "a7aca4db56094217ad2570fc6ecd37c52685e5e9d0a392249c88a02d8b47f5bd"
+  },
+  {
+   "added_lines": 85,
+   "current_bytes": 28420,
+   "current_sha256": "9467cc924fac9ba366858794f15d138b3fabbd0572dccbae2a75f0e2089ca0b5",
+   "diff_file": "results/v166/p5_report/repair_diffs/v165_io.py.diff",
+   "diff_sha256": "4261812e059a8eb6fc07779533be85759e4a9f2f30d2f932af7800b0e0cd22ad",
+   "path": "tools/v165_bundle/code/v165_io.py",
+   "removed_lines": 27,
+   "snapshot_bytes": 25521,
+   "snapshot_sha256": "27579074a4322ef85d3421661c4ea8389990a90aa00ea44bc83bd98350a73495"
+  },
+  {
+   "added_lines": 47,
+   "current_bytes": 4855,
+   "current_sha256": "cfb68c7122cf0d1eb39acbf0af7c87c8ebd49d5c81767e9bfc187bb4e89dc94b",
+   "diff_file": "results/v166/p5_report/repair_diffs/v165_receipts.py.diff",
+   "diff_sha256": "fea8b106ea960f8e8986708a4735e964e272218af6a7079375a90b6251be14e0",
+   "path": "tools/v165_bundle/code/v165_receipts.py",
+   "removed_lines": 1,
+   "snapshot_bytes": 3275,
+   "snapshot_sha256": "089a24c5929290a774b1368126df6995c477cce69a79c712a9a42a4d45f62afa"
+  },
+  {
+   "added_lines": 175,
+   "current_bytes": 78093,
+   "current_sha256": "92ed6ca791039b8304050def6d81a8a1cd6648e0dc0bef1bd3d76917b1798deb",
+   "diff_file": "results/v166/p5_report/repair_diffs/v165_run.py.diff",
+   "diff_sha256": "144c738f59d21c22a8b38bcd58dded0e31cb991c358ec5536089b786f031be65",
+   "path": "tools/v165_bundle/code/v165_run.py",
+   "removed_lines": 77,
+   "snapshot_bytes": 73372,
+   "snapshot_sha256": "99e5ec1ba7ba621c568599c15ead96668233e44b504b8bd0f331c208520ed8a9"
+  }
+ ],
+ "note": "diffs were generated post-hoc by comparing the read-only P0 forensic snapshot copy against the current V166 tree; the snapshot itself was never modified",
+ "relocated_module_check": {
+  "byte_identical": true,
+  "current_path": "tools/v165_bundle/validator/v165_truth_audit.py",
+  "current_sha256": "9a13c35deb2bbaba96c24780f493f817d45326dcb1b60bb39f7fb54d76c792a0",
+  "snapshot_path": "tools/v165_bundle/code/v165_truth_audit.py",
+  "snapshot_sha256": "9a13c35deb2bbaba96c24780f493f817d45326dcb1b60bb39f7fb54d76c792a0"
+ },
+ "schema": "iscat166.repair_diff_index.1"
+}

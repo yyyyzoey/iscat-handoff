@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "C:\iscat\v165\tools\v165_bundle\run_workstation_tests.py", line 112, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "C:\iscat\v165\tools\v165_bundle\run_workstation_tests.py", line 35, in main
+    before = hashes(ROOT)
+             ^^^^^^^^^^^^
+  File "C:\iscat\v165\tools\v165_bundle\code\v165_receipts.py", line 22, in hashes
+    return {
+           ^
+  File "C:\iscat\v165\tools\v165_bundle\code\v165_receipts.py", line 23, in <dictcomp>
+    p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                                                   ^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\pathlib.py", line 1050, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\iscat\\v165\\tools\\v165_bundle\\run_all.py'

@@ -1,0 +1,29 @@
+...................FF...F....                                            [100%]
+================================== FAILURES ===================================
+______ test_execute_constructs_model_once_and_preserves_all_task_states _______
+tools\v165_bundle\tests\test_production_workflow.py:485: in test_execute_constructs_model_once_and_preserves_all_task_states
+    assert construct_calls == [1]
+E   assert [1, 1] == [1]
+E     Left contains one more item: 1
+E     Use -v to get more diff
+________ test_restart_with_sealed_loader_blocks_unfinished_dependents _________
+tools\v165_bundle\tests\test_production_workflow.py:531: in test_restart_with_sealed_loader_blocks_unfinished_dependents
+    assert construction == [1]
+E   assert [1, 1] == [1]
+E     Left contains one more item: 1
+E     Use -v to get more diff
+______ test_test_suite_does_not_import_real_model_or_have_truth_literals ______
+tools\v165_bundle\tests\test_production_workflow.py:643: in test_test_suite_does_not_import_real_model_or_have_truth_literals
+    hits = v165_io.assert_no_truth_literals(ROOT / "code")
+tools\v165_bundle\code\v165_io.py:168: in assert_no_truth_literals
+    require(not hits, 'TRUTH_LITERAL_IN_ESTIMATOR_CODE:' + ';'.join(hits))
+tools\v165_bundle\code\v165_io.py:53: in require
+    raise ValueError(message)
+E   ValueError: TRUTH_LITERAL_IN_ESTIMATOR_CODE:v165_io.py:cd097e0c5236c331f8b1862e6e301674454a871e
+=========================== short test summary info ===========================
+FAILED tools/v165_bundle/tests/test_production_workflow.py::test_execute_constructs_model_once_and_preserves_all_task_states
+FAILED tools/v165_bundle/tests/test_production_workflow.py::test_restart_with_sealed_loader_blocks_unfinished_dependents
+FAILED tools/v165_bundle/tests/test_production_workflow.py::test_test_suite_does_not_import_real_model_or_have_truth_literals
+3 failed, 26 passed in 2.06s
+PYTEST_EXIT_CODE=1
+TRIPWIRE_BYTES=0

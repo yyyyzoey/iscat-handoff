@@ -1,0 +1,39 @@
+{
+  "schema": "iscat165.gate_a_receipt.1",
+  "status": "PASS",
+  "utc": "2026-10-27T14:10:23.080732+00:00",
+  "attempt": "C:\\iscat\\v165\\results\\v165\\validator_only\\gate_a_002",
+  "repo": "C:\\iscat\\v165",
+  "command_argv": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "tools\\gate_a.py",
+    "--repo",
+    ".",
+    "--out",
+    "results\\v165\\validator_only\\gate_a_002",
+    "--projection",
+    "results\\v165\\preflight\\gate_a_projection_002.json"
+  ],
+  "command": "C:\\ProgramData\\anaconda3\\python.exe tools\\gate_a.py --repo . --out results\\v165\\validator_only\\gate_a_002 --projection results\\v165\\preflight\\gate_a_projection_002.json",
+  "module_path": "C:\\iscat\\v165\\tools\\v165_bundle\\code\\v165_truth_audit.py",
+  "source_sha256": {
+    "C:\\iscat\\v165\\tools\\gate_a.py": "231f22e996b32bf8982d1913641e127c0545f49c830f2652cae0c6b87cbe429b",
+    "C:\\iscat\\v165\\tools\\v165_bundle\\code\\v165_truth_audit.py": "9a13c35deb2bbaba96c24780f493f817d45326dcb1b60bb39f7fb54d76c792a0",
+    "C:\\iscat\\v165\\tools\\v165_bundle\\code\\v165_io.py": "7dff29afa114cc46d66da20ee7e16f3a19b634ba43b11becf6f2348eded96275",
+    "C:\\iscat\\v165\\tools\\v165_bundle\\code\\v152_gls_core.py": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5"
+  },
+  "full_report_path": "C:\\iscat\\v165\\results\\v165\\validator_only\\gate_a_002\\full_report.json",
+  "full_report_sha256": "71c20b9f112142b6a96a4bc3965d433398c873b8724fc3c6fce112415cc103cf",
+  "projection_path": "C:\\iscat\\v165\\results\\v165\\preflight\\gate_a_projection_002.json",
+  "projection_sha256": "99b4da1986904b822689d6d8f82382d93aaeaeeb99453d969fe759703282e418",
+  "full_report_status": "PASS",
+  "projection_status": "PASS",
+  "model_calls": 0,
+  "new_BEM": 0,
+  "new_render": 0,
+  "new_camera_exposures": 0,
+  "new_camera_noise_draws": 0,
+  "reportable_D": null,
+  "physical_result": "NOT_EVALUATED",
+  "scope": "READ_ONLY_PROVENANCE_ONLY_NOT_A_PHYSICAL_OR_SIZING_RESULT"
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "iscat165.gate_a_failure_postmortem.1",
+  "status": "FAILED",
+  "attempt": "C:\\iscat\\v165\\results\\v165\\validator_only\\gate_a_001",
+  "recorded_after_invocation": true,
+  "reason": "The runner failed while constructing the atomic temporary filename because os.getpid() returned an integer.",
+  "error_type": "TypeError",
+  "error": "can only concatenate str (not \"int\") to str",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\\\iscat\\\\v165\\\\tools\\\\gate_a.py\", line 248, in main\n    receipt = run_gate_a(repo, out, args.projection)\n  File \"C:\\\\iscat\\\\v165\\\\tools\\\\gate_a.py\", line 169, in run_gate_a\n    atomic_write_new(full_path, full_raw)\n  File \"C:\\\\iscat\\\\v165\\\\tools\\\\gate_a.py\", line 58, in atomic_write_new\n    tmp = path.with_name(path.name + \".\" + os.getpid() + \".tmp\")\nTypeError: can only concatenate str (not \"int\") to str\n",
+  "artifacts_absent_because_of_same_bug": [
+    "failure.json",
+    "command_output.txt",
+    "exit_code.txt",
+    "failure.sha256"
+  ],
+  "action": "Preserved empty attempt directory; no model call or scientific result was produced.",
+  "reportable_D": null
+}

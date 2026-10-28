@@ -1,0 +1,446 @@
+...............FFFFFF...F....                                            [100%]
+================================== FAILURES ===================================
+____________ test_running_start_recovers_as_partial_without_replay ____________
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-23/test_running_start_recovers_as0')
+
+    def test_running_start_recovers_as_partial_without_replay(tmp_path):
+        store = store_fixture(tmp_path)
+        start = tmp_path / "out/tasks/task/starts/000.json"
+        checkpoint = {
+            "schema": "iscat165.start_checkpoint.1",
+            "task_id": "task",
+            "start_index": 0,
+            "execution_state": "RUNNING",
+            "x0": [101.0, 432.0, 0.0, 0.0],
+            "local_cap": 200,
+            "calls_at_checkpoint": 7,
+            "charged_calls_at_checkpoint": 7,
+            "best_at_checkpoint": {
+                "theta": [101.0, 432.0, 0.0, 0.0],
+                "Q_total": 5.0,
+                "C_sha256": "0" * 64,
+            },
+        }
+        atomic_json(start, checkpoint)
+        invoked = []
+>       result = v165_run.optimize_start(
+            task_id="task",
+            start_index=0,
+            x0=[101.0, 432.0, 0.0, 0.0],
+            data=data_fixture(),
+            reading=None,
+            model=SimpleNamespace(forward=lambda _t: invoked.append(1)),
+            store=store,
+            out=tmp_path / "out",
+        )
+
+tools\v165_bundle\tests\test_production_workflow.py:170: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tools\v165_bundle\code\v165_run.py:671: in optimize_start
+    require(doc.get("execution_state") != "RUNNING", "UNFINISHED_START_CHECKPOINT")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = False, message = 'UNFINISHED_START_CHECKPOINT'
+
+    def require(value: Any, message: str):
+        if not value:
+>           raise ValueError(message)
+E           ValueError: UNFINISHED_START_CHECKPOINT
+
+tools\v165_bundle\code\v165_run.py:68: ValueError
+_____________ test_binding_replays_all_twenty_four_legal_records ______________
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-23/test_binding_replays_all_twent0')
+
+    def test_binding_replays_all_twenty_four_legal_records(tmp_path):
+        store = BudgetStore(
+            tmp_path / "b.sqlite",
+            "test",
+            {"MODEL_BINDING": 100},
+            100,
+        )
+        store.reserve(v165_run.BIND_TASK, "sig", "MODEL_BINDING", 100, v165_run.OWNER)
+        legal = {}
+        images = {}
+        dispatch = {}
+        for gi in range(1, 5):
+            group = f"ANON_{gi:02d}"
+            rows = []
+            for start in range(6):
+                theta = [50.0 + gi * 5 + start, 390.0 + start, start, -start]
+                c = np.zeros((13, 13))
+                c[0, start] = gi + start / 10
+                rows.append(
+                    {
+                        "theta": theta,
+                        "C": c.tolist(),
+                        "record_path": f"{group}/{start}.json",
+                    }
+                )
+                images[tuple(theta)] = c
+                dispatch[tuple(theta)] = group
+            legal[group] = {"six": rows}
+        model = SimpleNamespace(
+            model_id=v165_run.MODEL_ID,
+            forward=lambda theta: observation(theta, images[tuple(float(x) for x in theta)]),
+        )
+>       result = v165_run.binding_task(model, store, tmp_path / "out", legal)
+
+tools\v165_bundle\tests\test_production_workflow.py:218: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+model = namespace(model_id='v142-F2c-75860d222dd8e90d8dc2e31111e52ccbbb212a01c0d6a0dfe7fdbcdb241c98c3', forward=<function test_binding_replays_all_twenty_four_legal_records.<locals>.<lambda> at 0x0000014E4266BEC0>)
+store = <v152_budget_store.BudgetStore object at 0x0000014E4241DA10>
+out = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-23/test_binding_replays_all_twent0/out')
+legal = {'ANON_01': {'six': [{'C': [[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, ...], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ...], [0.0, 0.0, 0.0, ....0, ...], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, ...], ...], 'record_path': 'ANON_04/5.json', 'theta': [75.0, 395.0, 5, -5]}]}}
+
+    def binding_task(
+        model: Any,
+        store: BudgetStore,
+        out: Path,
+        legal: dict,
+        *,
+        prediction_writer: Callable[[Path, Any], str] | None = None,
+    ) -> dict:
+        predictor = ModelPredictor(
+            model,
+            store,
+            BIND_TASK,
+            out,
+            kind="SOURCE_BINDING",
+            prediction_writer=prediction_writer,
+        )
+        rows = []
+        for group in ("ANON_01", "ANON_02", "ANON_03", "ANON_04"):
+            for source in legal[group]:
+>               prediction = predictor(source["theta"])
+E               TypeError: string indices must be integers, not 'str'
+
+tools\v165_bundle\code\v165_run.py:1126: TypeError
+____________ test_fit_continues_after_start_zero_ordinary_failure _____________
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-23/test_fit_continues_after_start0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000014E42415DD0>
+
+    def test_fit_continues_after_start_zero_ordinary_failure(tmp_path, monkeypatch):
+        store = store_fixture(tmp_path, phase="HEIGHT_FITS", cap=400)
+        task = {
+            "task_id": "B100000_ANON_02_NO_HEIGHT",
+            "group": "ANON_02",
+            "replicate": None,
+            "sigma_nm": None,
+        }
+        witness = {
+            "theta": [101.0, 432.0, 0.0, 0.0],
+            "Q_total": 10.0,
+            "C_sha256": "0" * 64,
+        }
+        monkeypatch.setattr(v165_run, "_witness_rows", lambda *args: [witness])
+    
+        def fake_optimize(**kwargs):
+            if kwargs["start_index"] == 0:
+                raise RuntimeError("SYNTHETIC_START_ZERO_FAILURE")
+            return {
+                "execution_state": "FINISHED",
+                "start_index": 1,
+                "best": {"theta": [102.0, 432.0, 1.0, 1.0], "Q_total": 1.0},
+                "actual_calls": 10,
+                "error": None,
+            }
+    
+        monkeypatch.setattr(v165_run, "optimize_start", fake_optimize)
+        result = v165_run.fit_one_task(
+            task=task,
+            data=data_fixture(),
+            context={},
+            legal_group={"six": []},
+            fixed_starts={
+                "first": {"theta": [101.0, 432.0, 0.0, 0.0]},
+                "second": {"theta": [102.0, 432.0, 1.0, 1.0]},
+            },
+            reading=None,
+            model=SimpleNamespace(model_id="synthetic"),
+            store=store,
+            out=tmp_path / "out",
+        )
+>       assert result["execution_state"] == "PARTIAL_SEARCH"
+E       AssertionError: assert 'FAILED' == 'PARTIAL_SEARCH'
+E         - PARTIAL_SEARCH
+E         + FAILED
+
+tools\v165_bundle\tests\test_production_workflow.py:265: AssertionError
+_________ test_final_verify_emits_records_for_all_twenty_eight_tasks __________
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-23/test_final_verify_emits_record0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000014E42882510>
+
+    def test_final_verify_emits_records_for_all_twenty_eight_tasks(tmp_path, monkeypatch):
+        store = BudgetStore(
+            tmp_path / "b.sqlite",
+            "test",
+            {"FINAL_VERIFY": 600},
+            600,
+        )
+        store.reserve(v165_run.FINAL_TASK, "sig", "FINAL_VERIFY", 600, v165_run.OWNER)
+        theta = [101.0, 432.0, 0.0, 0.0]
+        c = np.zeros((13, 13))
+        c[0, 0] = 0.1
+        model = SimpleNamespace(
+            model_id=v165_run.MODEL_ID,
+            forward=lambda t: observation(t, c),
+        )
+        monkeypatch.setattr(
+            v165_run,
+            "construct_model",
+            lambda *args, **kwargs: (model, {"synthetic_loader": True}),
+        )
+        fit_payloads = {}
+        plans = tasks()
+        for index, task in enumerate(plans):
+            fit_payloads[task["task_id"]] = (
+                {
+                    "execution_state": "FINISHED",
+                    "theta": theta,
+                    "optimizer_best": {
+                        "theta": theta,
+                        "C_sha256": v165_run.array_sha(c),
+                    },
+                }
+                if index % 2 == 0
+                else {
+                    "execution_state": "BLOCKED",
+                    "theta": None,
+                    "reason_codes": ["TASK_NOT_VERIFIABLE"],
+                }
+            )
+        contexts = {
+            f"ANON_{i:02d}": {
+                "theta": theta,
+                "base_index": 0,
+                "predictions": [{"C": c.tolist()}],
+            }
+            for i in range(1, 5)
+        }
+        result = v165_run.final_verify_task(
+            tmp_path, store, tmp_path / "out", contexts, fit_payloads
+        )
+        assert result["execution_state"] == "FINISHED"
+>       assert len(result["checks"]) == 32
+E       AssertionError: assert 18 == 32
+E        +  where 18 = len([{'C_sha256': 'aa2b8cdf4acbec5ea2f97ed623c044b1e5a66188dd876b1fa7a911e2fd430b22', 'expected_C_sha256': 'aa2b8cdf4acbec...56': 'aa2b8cdf4acbec5ea2f97ed623c044b1e5a66188dd876b1fa7a911e2fd430b22', 'kind': 'TASK_CANDIDATE', 'seq': 1, ...}, ...])
+
+tools\v165_bundle\tests\test_production_workflow.py:323: AssertionError
+______ test_execute_constructs_model_once_and_preserves_all_task_states _______
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-23/test_execute_constructs_model_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000014E42883D50>
+
+    def test_execute_constructs_model_once_and_preserves_all_task_states(
+        tmp_path, monkeypatch
+    ):
+>       repo, out, _starts = _minimal_workflow(tmp_path, monkeypatch)
+
+tools\v165_bundle\tests\test_production_workflow.py:410: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-23/test_execute_constructs_model_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000014E42883D50>
+
+    def _minimal_workflow(tmp_path, monkeypatch):
+        repo = tmp_path / "repo"
+        out = repo / "results/v165"
+        out.mkdir(parents=True)
+        atomic_json(
+            out / "preflight.json",
+            {
+                "schema": "iscat165.preflight.1",
+                "status": "PASS",
+                "plan_sha256": "a" * 64,
+                "source_lock": {},
+            },
+        )
+        atomic_json(out / "frozen_detections.json", {})
+        groups = ["ANON_01", "ANON_02", "ANON_03", "ANON_04"]
+        start_doc = {}
+        starts = {}
+        for group in groups:
+            first = [101.0, 432.0, 0.0, 0.0]
+            second = [101.0, 455.0, 1.0, 1.0]
+            starts[group] = {
+                "first": {"theta": first, "record_path": group + "/first"},
+                "second": {"theta": second, "record_path": group + "/second"},
+                "stratum_available": True,
+                "stratum_flag": None,
+                "all_six": list(range(6)),
+                "six": [],
+            }
+            start_doc[group] = {
+                "first": {"theta": first, "source_record": group + "/first"},
+                "second": {"theta": second, "source_record": group + "/second"},
+                "stratum_available": True,
+                "stratum_flag": None,
+                "all_six": list(range(6)),
+            }
+        atomic_json(out / "starts_by_group.json", start_doc)
+        contexts = {
+            group: {
+                "theta": [101.0, 432.0, 0.0, 0.0],
+                "frame_Y": np.zeros((3, 13, 13)).tolist(),
+                "frame_V": np.ones((3, 13, 13)).tolist(),
+                "base_index": 0,
+                "predictions": [{"C": np.zeros((13, 13)).tolist()}],
+            }
+            for group in groups
+        }
+        monkeypatch.setattr(v165_run, "_load_contexts", lambda _out: contexts)
+        monkeypatch.setattr(
+            v165_run,
+            "_readings",
+            lambda _path: (
+                {"schema": "synthetic", "readings": []},
+                {
+                    task["task_id"]: HeightReading(
+                        task["task_id"],
+                        task["group"],
+                        task["replicate"],
+                        task["sigma_nm"],
+                        432.0,
+                    )
+                    for task in tasks()
+                    if task["sigma_nm"] is not None
+                },
+            ),
+        )
+        monkeypatch.setattr(v165_io, "lock_sources", lambda _repo: {})
+        monkeypatch.setattr(v165_io, "estimator_inputs_check", lambda _docs: {})
+        monkeypatch.setattr(v165_io, "frozen_starts", lambda _repo, _groups: starts)
+        monkeypatch.setattr(v165_io, "ledger_check", lambda *a, **k: {})
+        monkeypatch.setattr(
+>           sys.modules["v165_guard"],
+            "install",
+            lambda _repo: SimpleNamespace(report=lambda: {"synthetic_guard": True}),
+        )
+E       KeyError: 'v165_guard'
+
+tools\v165_bundle\tests\test_production_workflow.py:400: KeyError
+________ test_restart_with_sealed_loader_blocks_unfinished_dependents _________
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-23/test_restart_with_sealed_loade0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000014E4288EBD0>
+
+    def test_restart_with_sealed_loader_blocks_unfinished_dependents(
+        tmp_path, monkeypatch
+    ):
+>       repo, out, _starts = _minimal_workflow(tmp_path, monkeypatch)
+
+tools\v165_bundle\tests\test_production_workflow.py:492: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-23/test_restart_with_sealed_loade0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000014E4288EBD0>
+
+    def _minimal_workflow(tmp_path, monkeypatch):
+        repo = tmp_path / "repo"
+        out = repo / "results/v165"
+        out.mkdir(parents=True)
+        atomic_json(
+            out / "preflight.json",
+            {
+                "schema": "iscat165.preflight.1",
+                "status": "PASS",
+                "plan_sha256": "a" * 64,
+                "source_lock": {},
+            },
+        )
+        atomic_json(out / "frozen_detections.json", {})
+        groups = ["ANON_01", "ANON_02", "ANON_03", "ANON_04"]
+        start_doc = {}
+        starts = {}
+        for group in groups:
+            first = [101.0, 432.0, 0.0, 0.0]
+            second = [101.0, 455.0, 1.0, 1.0]
+            starts[group] = {
+                "first": {"theta": first, "record_path": group + "/first"},
+                "second": {"theta": second, "record_path": group + "/second"},
+                "stratum_available": True,
+                "stratum_flag": None,
+                "all_six": list(range(6)),
+                "six": [],
+            }
+            start_doc[group] = {
+                "first": {"theta": first, "source_record": group + "/first"},
+                "second": {"theta": second, "source_record": group + "/second"},
+                "stratum_available": True,
+                "stratum_flag": None,
+                "all_six": list(range(6)),
+            }
+        atomic_json(out / "starts_by_group.json", start_doc)
+        contexts = {
+            group: {
+                "theta": [101.0, 432.0, 0.0, 0.0],
+                "frame_Y": np.zeros((3, 13, 13)).tolist(),
+                "frame_V": np.ones((3, 13, 13)).tolist(),
+                "base_index": 0,
+                "predictions": [{"C": np.zeros((13, 13)).tolist()}],
+            }
+            for group in groups
+        }
+        monkeypatch.setattr(v165_run, "_load_contexts", lambda _out: contexts)
+        monkeypatch.setattr(
+            v165_run,
+            "_readings",
+            lambda _path: (
+                {"schema": "synthetic", "readings": []},
+                {
+                    task["task_id"]: HeightReading(
+                        task["task_id"],
+                        task["group"],
+                        task["replicate"],
+                        task["sigma_nm"],
+                        432.0,
+                    )
+                    for task in tasks()
+                    if task["sigma_nm"] is not None
+                },
+            ),
+        )
+        monkeypatch.setattr(v165_io, "lock_sources", lambda _repo: {})
+        monkeypatch.setattr(v165_io, "estimator_inputs_check", lambda _docs: {})
+        monkeypatch.setattr(v165_io, "frozen_starts", lambda _repo, _groups: starts)
+        monkeypatch.setattr(v165_io, "ledger_check", lambda *a, **k: {})
+        monkeypatch.setattr(
+>           sys.modules["v165_guard"],
+            "install",
+            lambda _repo: SimpleNamespace(report=lambda: {"synthetic_guard": True}),
+        )
+E       KeyError: 'v165_guard'
+
+tools\v165_bundle\tests\test_production_workflow.py:400: KeyError
+______ test_test_suite_does_not_import_real_model_or_have_truth_literals ______
+
+    def test_test_suite_does_not_import_real_model_or_have_truth_literals():
+        test_dir = ROOT / "tests"
+        text = "\n".join(p.read_text(encoding="utf-8") for p in test_dir.glob("test_*.py"))
+>       assert "tools/v146_runtime.py" not in text
+E       assert 'tools/v146_runtime.py' not in 'import sys\...t,inp,det)\n'
+E         'tools/v146_runtime.py' is contained here:
+E             assert "tools/v146_runtime.py" not in text
+E               assert "tools/v142_model.py" not in text
+E               hits = v165_io.assert_no_truth_literals(ROOT / "code")
+E               assert hits["offenders"] == []
+E           
+E           import sys...
+E         
+E         ...Full output truncated (37 lines hidden), use '-vv' to show
+
+tools\v165_bundle\tests\test_production_workflow.py:625: AssertionError
+=========================== short test summary info ===========================
+FAILED tools/v165_bundle/tests/test_production_workflow.py::test_running_start_recovers_as_partial_without_replay
+FAILED tools/v165_bundle/tests/test_production_workflow.py::test_binding_replays_all_twenty_four_legal_records
+FAILED tools/v165_bundle/tests/test_production_workflow.py::test_fit_continues_after_start_zero_ordinary_failure
+FAILED tools/v165_bundle/tests/test_production_workflow.py::test_final_verify_emits_records_for_all_twenty_eight_tasks
+FAILED tools/v165_bundle/tests/test_production_workflow.py::test_execute_constructs_model_once_and_preserves_all_task_states
+FAILED tools/v165_bundle/tests/test_production_workflow.py::test_restart_with_sealed_loader_blocks_unfinished_dependents
+FAILED tools/v165_bundle/tests/test_production_workflow.py::test_test_suite_does_not_import_real_model_or_have_truth_literals
+7 failed, 22 passed in 1.02s

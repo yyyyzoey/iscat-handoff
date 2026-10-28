@@ -1,0 +1,80 @@
+--- p0_snapshot/tools/v165_bundle/code/v165_receipts.py
++++ v166_current/tools/v165_bundle/code/v165_receipts.py
+@@ -4,6 +4,8 @@
+ import hashlib
+ import json
+ from pathlib import Path
++
++TRIPWIRE_FILE = "real_f2c_tripwire.txt"
+ 
+ 
+ def hashes(root):
+@@ -12,16 +14,54 @@
+     for folder, pattern in (
+         ("code", "*.py"),
+         ("tests", "test_*.py"),
++        # conftest carries the real-F2c tripwire fixture, so it must be hash-bound
++        # exactly like the test modules it protects.
++        ("tests", "conftest.py"),
+         ("config", "*.json"),
+         ("generator", "*.py"),
+         ("validator", "*.py"),
+     ):
+         paths.extend(sorted((root / folder).glob(pattern)))
+-    for name in ("run_all.py", "run_workstation_tests.py", "test_inventory.json"):
++    for name in (
++        "manifest_sha256.csv",
++        "run_all.py",
++        "run_workstation_tests.py",
++        "test_inventory.json",
++    ):
+         paths.append(root / name)
+     return {
+         p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+         for p in paths
++    }
++
++
++def tripwire_evidence(folder):
++    """Count real F2c loader reaches from the tripwire file the tests append to.
++
++    Absent file means zero; a present file is counted from its own bytes so the
++    receipt can never claim zero by hardcoding.
++    """
++    path = Path(folder) / TRIPWIRE_FILE
++    if not path.is_file():
++        return {
++            "file": TRIPWIRE_FILE,
++            "path": str(path),
++            "exists": False,
++            "records": 0,
++            "bytes": 0,
++            "sha256": None,
++            "record_types": [],
++        }
++    raw = path.read_bytes()
++    records = [line for line in raw.decode("ascii", errors="replace").splitlines() if line.strip()]
++    return {
++        "file": TRIPWIRE_FILE,
++        "path": str(path),
++        "exists": True,
++        "records": len(records),
++        "bytes": len(raw),
++        "sha256": hashlib.sha256(raw).hexdigest(),
++        "record_types": sorted(set(records)),
+     }
+ 
+ 
+@@ -82,6 +122,12 @@
+     ):
+         if hashlib.sha256((folder / name).read_bytes()).hexdigest() != receipt.get(key):
+             raise ValueError("TEST_RECEIPT_FILE_CHANGED:" + name)
++    # The zero-call claim must come from the tripwire file, never from a literal.
++    evidence = tripwire_evidence(folder)
++    if receipt.get("real_f2c_tripwire") != evidence:
++        raise ValueError("REAL_F2C_TRIPWIRE_EVIDENCE_MISMATCH")
++    if receipt.get("real_F2c_calls") != evidence["records"]:
++        raise ValueError("REAL_F2C_CALL_COUNT_NOT_BOUND_TO_TRIPWIRE")
+     if receipt.get("real_F2c_calls") != 0:
+         raise ValueError("SOFTWARE_TESTS_MUST_NOT_CALL_REAL_F2C")
+     return receipt

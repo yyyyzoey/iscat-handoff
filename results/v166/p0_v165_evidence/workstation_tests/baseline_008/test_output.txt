@@ -1,0 +1,291 @@
+.................F.FF...F....                                            [100%]
+================================== FAILURES ===================================
+____________ test_fit_continues_after_start_zero_ordinary_failure _____________
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-74/test_fit_continues_after_start0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D49A3FCB10>
+
+    def test_fit_continues_after_start_zero_ordinary_failure(tmp_path, monkeypatch):
+        store = store_fixture(tmp_path, phase="HEIGHT_FITS", cap=400)
+        task = {
+            "task_id": "B100000_ANON_02_NO_HEIGHT",
+            "group": "ANON_02",
+            "replicate": None,
+            "sigma_nm": None,
+        }
+        witness = {
+            "theta": [101.0, 432.0, 0.0, 0.0],
+            "Q_total": 10.0,
+            "C_sha256": "0" * 64,
+        }
+        monkeypatch.setattr(v165_run, "_witness_rows", lambda *args: [witness])
+    
+        def fake_optimize(**kwargs):
+            if kwargs["start_index"] == 0:
+                raise RuntimeError("SYNTHETIC_START_ZERO_FAILURE")
+            return {
+                "execution_state": "FINISHED",
+                "start_index": 1,
+                "best": {"theta": [102.0, 432.0, 1.0, 1.0], "Q_total": 1.0},
+                "actual_calls": 10,
+                "error": None,
+            }
+    
+        monkeypatch.setattr(v165_run, "optimize_start", fake_optimize)
+>       result = v165_run.fit_one_task(
+            task=task,
+            data=data_fixture(),
+            context={},
+            legal_group={"six": []},
+            fixed_starts={
+                "first": {"theta": [101.0, 432.0, 0.0, 0.0]},
+                "second": {"theta": [102.0, 432.0, 1.0, 1.0]},
+            },
+            reading=None,
+            model=SimpleNamespace(model_id="synthetic"),
+            store=store,
+            out=tmp_path / "out",
+        )
+
+tests\test_production_workflow.py:251: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def fit_one_task(
+        *,
+        task: dict,
+        data: GlsData,
+        context: dict,
+        legal_group: dict,
+        fixed_starts: dict,
+        reading: HeightReading | None,
+        model: Any,
+        store: BudgetStore,
+        out: Path,
+        prediction_writer: Callable[[Path, Any], str] | None = None,
+    ) -> dict:
+        task_id = task["task_id"]
+        witnesses = _witness_rows(
+            task["group"], context, legal_group, data, reading
+        )
+        legal_witness = witnesses[0]
+        write_once_json(
+            out / "tasks" / task_id / "legal_witnesses.json",
+            {"schema": "iscat165.legal_witnesses.1", "task_id": task_id, "rows": witnesses},
+        )
+        starts = [fixed_starts["first"], fixed_starts["second"]]
+        start_records = []
+        for index, start in enumerate(starts):
+>           calls_before_start = int(store.counts()[task_id])
+E           KeyError: 'B100000_ANON_02_NO_HEIGHT'
+
+code\v165_run.py:1006: KeyError
+______ test_execute_constructs_model_once_and_preserves_all_task_states _______
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-74/test_execute_constructs_model_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D4988D53D0>
+
+    def test_execute_constructs_model_once_and_preserves_all_task_states(
+        tmp_path, monkeypatch
+    ):
+>       repo, out, _starts = _minimal_workflow(tmp_path, monkeypatch)
+
+tests\test_production_workflow.py:410: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-74/test_execute_constructs_model_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D4988D53D0>
+
+    def _minimal_workflow(tmp_path, monkeypatch):
+        repo = tmp_path / "repo"
+        out = repo / "results/v165"
+        out.mkdir(parents=True)
+        atomic_json(
+            out / "preflight.json",
+            {
+                "schema": "iscat165.preflight.1",
+                "status": "PASS",
+                "plan_sha256": "a" * 64,
+                "source_lock": {},
+            },
+        )
+        atomic_json(out / "frozen_detections.json", {})
+        groups = ["ANON_01", "ANON_02", "ANON_03", "ANON_04"]
+        start_doc = {}
+        starts = {}
+        for group in groups:
+            first = [101.0, 432.0, 0.0, 0.0]
+            second = [101.0, 455.0, 1.0, 1.0]
+            starts[group] = {
+                "first": {"theta": first, "record_path": group + "/first"},
+                "second": {"theta": second, "record_path": group + "/second"},
+                "stratum_available": True,
+                "stratum_flag": None,
+                "all_six": list(range(6)),
+                "six": [],
+            }
+            start_doc[group] = {
+                "first": {"theta": first, "source_record": group + "/first"},
+                "second": {"theta": second, "source_record": group + "/second"},
+                "stratum_available": True,
+                "stratum_flag": None,
+                "all_six": list(range(6)),
+            }
+        atomic_json(out / "starts_by_group.json", start_doc)
+        contexts = {
+            group: {
+                "theta": [101.0, 432.0, 0.0, 0.0],
+                "frame_Y": np.zeros((3, 13, 13)).tolist(),
+                "frame_V": np.ones((3, 13, 13)).tolist(),
+                "base_index": 0,
+                "predictions": [{"C": np.zeros((13, 13)).tolist()}],
+            }
+            for group in groups
+        }
+        monkeypatch.setattr(v165_run, "_load_contexts", lambda _out: contexts)
+        monkeypatch.setattr(
+            v165_run,
+            "_readings",
+            lambda _path: (
+                {"schema": "synthetic", "readings": []},
+                {
+                    task["task_id"]: HeightReading(
+                        task["task_id"],
+                        task["group"],
+                        task["replicate"],
+                        task["sigma_nm"],
+                        432.0,
+                    )
+                    for task in tasks()
+                    if task["sigma_nm"] is not None
+                },
+            ),
+        )
+        monkeypatch.setattr(v165_io, "lock_sources", lambda _repo: {})
+        monkeypatch.setattr(v165_io, "estimator_inputs_check", lambda _docs: {})
+        monkeypatch.setattr(v165_io, "frozen_starts", lambda _repo, _groups: starts)
+        monkeypatch.setattr(v165_io, "ledger_check", lambda *a, **k: {})
+        monkeypatch.setattr(
+>           sys.modules["v165_guard"],
+            "install",
+            lambda _repo: SimpleNamespace(report=lambda: {"synthetic_guard": True}),
+        )
+E       KeyError: 'v165_guard'
+
+tests\test_production_workflow.py:400: KeyError
+________ test_restart_with_sealed_loader_blocks_unfinished_dependents _________
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-74/test_restart_with_sealed_loade0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D49A536550>
+
+    def test_restart_with_sealed_loader_blocks_unfinished_dependents(
+        tmp_path, monkeypatch
+    ):
+>       repo, out, _starts = _minimal_workflow(tmp_path, monkeypatch)
+
+tests\test_production_workflow.py:492: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-74/test_restart_with_sealed_loade0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D49A536550>
+
+    def _minimal_workflow(tmp_path, monkeypatch):
+        repo = tmp_path / "repo"
+        out = repo / "results/v165"
+        out.mkdir(parents=True)
+        atomic_json(
+            out / "preflight.json",
+            {
+                "schema": "iscat165.preflight.1",
+                "status": "PASS",
+                "plan_sha256": "a" * 64,
+                "source_lock": {},
+            },
+        )
+        atomic_json(out / "frozen_detections.json", {})
+        groups = ["ANON_01", "ANON_02", "ANON_03", "ANON_04"]
+        start_doc = {}
+        starts = {}
+        for group in groups:
+            first = [101.0, 432.0, 0.0, 0.0]
+            second = [101.0, 455.0, 1.0, 1.0]
+            starts[group] = {
+                "first": {"theta": first, "record_path": group + "/first"},
+                "second": {"theta": second, "record_path": group + "/second"},
+                "stratum_available": True,
+                "stratum_flag": None,
+                "all_six": list(range(6)),
+                "six": [],
+            }
+            start_doc[group] = {
+                "first": {"theta": first, "source_record": group + "/first"},
+                "second": {"theta": second, "source_record": group + "/second"},
+                "stratum_available": True,
+                "stratum_flag": None,
+                "all_six": list(range(6)),
+            }
+        atomic_json(out / "starts_by_group.json", start_doc)
+        contexts = {
+            group: {
+                "theta": [101.0, 432.0, 0.0, 0.0],
+                "frame_Y": np.zeros((3, 13, 13)).tolist(),
+                "frame_V": np.ones((3, 13, 13)).tolist(),
+                "base_index": 0,
+                "predictions": [{"C": np.zeros((13, 13)).tolist()}],
+            }
+            for group in groups
+        }
+        monkeypatch.setattr(v165_run, "_load_contexts", lambda _out: contexts)
+        monkeypatch.setattr(
+            v165_run,
+            "_readings",
+            lambda _path: (
+                {"schema": "synthetic", "readings": []},
+                {
+                    task["task_id"]: HeightReading(
+                        task["task_id"],
+                        task["group"],
+                        task["replicate"],
+                        task["sigma_nm"],
+                        432.0,
+                    )
+                    for task in tasks()
+                    if task["sigma_nm"] is not None
+                },
+            ),
+        )
+        monkeypatch.setattr(v165_io, "lock_sources", lambda _repo: {})
+        monkeypatch.setattr(v165_io, "estimator_inputs_check", lambda _docs: {})
+        monkeypatch.setattr(v165_io, "frozen_starts", lambda _repo, _groups: starts)
+        monkeypatch.setattr(v165_io, "ledger_check", lambda *a, **k: {})
+        monkeypatch.setattr(
+>           sys.modules["v165_guard"],
+            "install",
+            lambda _repo: SimpleNamespace(report=lambda: {"synthetic_guard": True}),
+        )
+E       KeyError: 'v165_guard'
+
+tests\test_production_workflow.py:400: KeyError
+______ test_test_suite_does_not_import_real_model_or_have_truth_literals ______
+
+    def test_test_suite_does_not_import_real_model_or_have_truth_literals():
+        test_dir = ROOT / "tests"
+        text = "\n".join(p.read_text(encoding="utf-8") for p in test_dir.glob("test_*.py"))
+>       assert "tools/v146_runtime.py" not in text
+E       assert 'tools/v146_runtime.py' not in 'import sys\...t,inp,det)\n'
+E         'tools/v146_runtime.py' is contained here:
+E             assert "tools/v146_runtime.py" not in text
+E               assert "tools/v142_model.py" not in text
+E               hits = v165_io.assert_no_truth_literals(ROOT / "code")
+E               assert hits["offenders"] == []
+E           
+E           import sys...
+E         
+E         ...Full output truncated (37 lines hidden), use '-vv' to show
+
+tests\test_production_workflow.py:625: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_production_workflow.py::test_fit_continues_after_start_zero_ordinary_failure
+FAILED tests/test_production_workflow.py::test_execute_constructs_model_once_and_preserves_all_task_states
+FAILED tests/test_production_workflow.py::test_restart_with_sealed_loader_blocks_unfinished_dependents
+FAILED tests/test_production_workflow.py::test_test_suite_does_not_import_real_model_or_have_truth_literals
+4 failed, 25 passed in 1.33s

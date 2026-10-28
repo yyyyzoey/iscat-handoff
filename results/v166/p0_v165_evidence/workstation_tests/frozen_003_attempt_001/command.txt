@@ -1,0 +1,1 @@
+python tools\v165_bundle\run_workstation_tests.py --out results\v165\workstation_tests\frozen_003_attempt_001

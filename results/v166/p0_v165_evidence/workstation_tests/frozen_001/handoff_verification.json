@@ -1,0 +1,28 @@
+{
+  "handoff_zip": {
+    "bytes": 27730,
+    "sha256": "abac2611ff6f0618cb73dab4323fc4e7fbd7efc1f746cf35485ab9d5ffd7eec8",
+    "members": 16,
+    "manifest_rows": 15,
+    "crc_ok": true
+  },
+  "installed_bundle": {
+    "scope": "FROZEN_ZIP_MEMBERS_BYTE_IDENTICAL_PLUS_WORKSTATION_CODE",
+    "frozen_members": 15,
+    "manifest_sha256": "0c9ef4c351e2502063041fe931213b3270181c69066a7fa3450e697237aa2781",
+    "workstation_code_files": [
+      "code/v152_budget_store.py",
+      "code/v164_io.py",
+      "code/v165_guard.py",
+      "code/v165_io.py",
+      "code/v165_receipt_plugin.py",
+      "code/v165_receipts.py",
+      "code/v165_truth_audit.py",
+      "results/v165/workstation_tests/initial_frozen_12.txt",
+      "run_workstation_tests.py"
+    ],
+    "model_calls": 0
+  },
+  "handoff_zip_sha256": "abac2611ff6f0618cb73dab4323fc4e7fbd7efc1f746cf35485ab9d5ffd7eec8",
+  "bundle_manifest_sha256": "0c9ef4c351e2502063041fe931213b3270181c69066a7fa3450e697237aa2781"
+}

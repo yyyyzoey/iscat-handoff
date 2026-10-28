@@ -1,0 +1,10 @@
+...................FF...F....                                            [100%]
+================================== FAILURES ===================================
+C:\iscat\v166\tools\v165_bundle\tests\test_production_workflow.py:485: assert [1, 1] == [1]
+C:\iscat\v166\tools\v165_bundle\tests\test_production_workflow.py:531: assert [1, 1] == [1]
+C:\iscat\v166\tools\v165_bundle\code\v165_io.py:53: ValueError: TRUTH_LITERAL_IN_ESTIMATOR_CODE:v165_io.py:cd097e0c5236c331f8b1862e6e301674454a871e
+=========================== short test summary info ===========================
+FAILED tests/test_production_workflow.py::test_execute_constructs_model_once_and_preserves_all_task_states
+FAILED tests/test_production_workflow.py::test_restart_with_sealed_loader_blocks_unfinished_dependents
+FAILED tests/test_production_workflow.py::test_test_suite_does_not_import_real_model_or_have_truth_literals
+3 failed, 26 passed in 1.93s

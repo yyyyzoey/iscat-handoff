@@ -1,0 +1,476 @@
+{
+  "collected": [
+    "tests/test_generator_ids.py::test_every_height_task_matches_exact_reading_id",
+    "tests/test_height.py::test_noheight_identity",
+    "tests/test_height.py::test_height_penalty_and_half_cost",
+    "tests/test_height.py::test_h_center_not_candidate_height",
+    "tests/test_height.py::test_no_clipping_and_signed_pixels",
+    "tests/test_height.py::test_height_generator_reproducible_without_true_in_public",
+    "tests/test_height.py::test_invalid_height_definition",
+    "tests/test_height.py::test_task_matrix_and_total_reservation",
+    "tests/test_production_workflow.py::test_charged_prediction_persists_complete_observation",
+    "tests/test_production_workflow.py::test_duplicate_theta_reuses_exact_prediction_without_second_charge",
+    "tests/test_production_workflow.py::test_budget_rejects_before_extra_model_call",
+    "tests/test_production_workflow.py::test_over_budget_reservation_is_rejected",
+    "tests/test_production_workflow.py::test_malformed_prediction_is_charged_and_recorded",
+    "tests/test_production_workflow.py::test_atomic_prediction_write_failure_is_fatal_and_charged",
+    "tests/test_production_workflow.py::test_evaluate_stored_uses_one_objective_evaluation",
+    "tests/test_production_workflow.py::test_running_start_recovers_as_partial_without_replay",
+    "tests/test_production_workflow.py::test_binding_replays_all_twenty_four_legal_records",
+    "tests/test_production_workflow.py::test_fit_continues_after_start_zero_ordinary_failure",
+    "tests/test_production_workflow.py::test_final_verify_emits_records_for_all_twenty_eight_tasks",
+    "tests/test_production_workflow.py::test_execute_constructs_model_once_and_preserves_all_task_states",
+    "tests/test_production_workflow.py::test_restart_with_sealed_loader_blocks_unfinished_dependents",
+    "tests/test_production_workflow.py::test_public_height_readings_reject_missing_group_and_rounded_label",
+    "tests/test_production_workflow.py::test_install_check_rejects_tampered_frozen_member",
+    "tests/test_production_workflow.py::test_truth_guard_denies_generator_import_in_subprocess",
+    "tests/test_production_workflow.py::test_test_suite_does_not_import_real_model_or_have_truth_literals",
+    "tests/test_validator.py::test_group_mae_preserves_four_independent_scenes",
+    "tests/test_validator.py::test_partial_status_is_not_hidden",
+    "tests/test_validator.py::test_missing_task_fails_not_silent",
+    "tests/test_validator.py::test_wrong_height_group_binding_rejected"
+  ],
+  "reports": [
+    {
+      "nodeid": "tests/test_generator_ids.py::test_every_height_task_matches_exact_reading_id",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_generator_ids.py::test_every_height_task_matches_exact_reading_id",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_generator_ids.py::test_every_height_task_matches_exact_reading_id",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_noheight_identity",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_noheight_identity",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_noheight_identity",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_height_penalty_and_half_cost",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_height_penalty_and_half_cost",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_height_penalty_and_half_cost",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_h_center_not_candidate_height",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_h_center_not_candidate_height",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_h_center_not_candidate_height",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_no_clipping_and_signed_pixels",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_no_clipping_and_signed_pixels",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_no_clipping_and_signed_pixels",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_height_generator_reproducible_without_true_in_public",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_height_generator_reproducible_without_true_in_public",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_height_generator_reproducible_without_true_in_public",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_invalid_height_definition",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_invalid_height_definition",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_invalid_height_definition",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_task_matrix_and_total_reservation",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_task_matrix_and_total_reservation",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_height.py::test_task_matrix_and_total_reservation",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_charged_prediction_persists_complete_observation",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_charged_prediction_persists_complete_observation",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_charged_prediction_persists_complete_observation",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_duplicate_theta_reuses_exact_prediction_without_second_charge",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_duplicate_theta_reuses_exact_prediction_without_second_charge",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_duplicate_theta_reuses_exact_prediction_without_second_charge",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_budget_rejects_before_extra_model_call",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_budget_rejects_before_extra_model_call",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_budget_rejects_before_extra_model_call",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_over_budget_reservation_is_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_over_budget_reservation_is_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_over_budget_reservation_is_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_malformed_prediction_is_charged_and_recorded",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_malformed_prediction_is_charged_and_recorded",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_malformed_prediction_is_charged_and_recorded",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_atomic_prediction_write_failure_is_fatal_and_charged",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_atomic_prediction_write_failure_is_fatal_and_charged",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_atomic_prediction_write_failure_is_fatal_and_charged",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_evaluate_stored_uses_one_objective_evaluation",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_evaluate_stored_uses_one_objective_evaluation",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_evaluate_stored_uses_one_objective_evaluation",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_running_start_recovers_as_partial_without_replay",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_running_start_recovers_as_partial_without_replay",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_running_start_recovers_as_partial_without_replay",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_binding_replays_all_twenty_four_legal_records",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_binding_replays_all_twenty_four_legal_records",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_binding_replays_all_twenty_four_legal_records",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_fit_continues_after_start_zero_ordinary_failure",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_fit_continues_after_start_zero_ordinary_failure",
+      "when": "call",
+      "outcome": "failed",
+      "longrepr": "tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-74/test_fit_continues_after_start0')\nmonkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D49A3FCB10>\n\n    def test_fit_continues_after_start_zero_ordinary_failure(tmp_path, monkeypatch):\n        store = store_fixture(tmp_path, phase=\"HEIGHT_FITS\", cap=400)\n        task = {\n            \"task_id\": \"B100000_ANON_02_NO_HEIGHT\",\n            \"group\": \"ANON_02\",\n            \"replicate\": None,\n            \"sigma_nm\": None,\n        }\n        witness = {\n            \"theta\": [101.0, 432.0, 0.0, 0.0],\n            \"Q_total\": 10.0,\n            \"C_sha256\": \"0\" * 64,\n        }\n        monkeypatch.setattr(v165_run, \"_witness_rows\", lambda *args: [witness])\n    \n        def fake_optimize(**kwargs):\n            if kwargs[\"start_index\"] == 0:\n                raise RuntimeError(\"SYNTHETIC_START_ZERO_FAILURE\")\n            return {\n                \"execution_state\": \"FINISHED\",\n                \"start_index\": 1,\n                \"best\": {\"theta\": [102.0, 432.0, 1.0, 1.0], \"Q_total\": 1.0},\n                \"actual_calls\": 10,\n                \"error\": None,\n            }\n    \n        monkeypatch.setattr(v165_run, \"optimize_start\", fake_optimize)\n>       result = v165_run.fit_one_task(\n            task=task,\n            data=data_fixture(),\n            context={},\n            legal_group={\"six\": []},\n            fixed_starts={\n                \"first\": {\"theta\": [101.0, 432.0, 0.0, 0.0]},\n                \"second\": {\"theta\": [102.0, 432.0, 1.0, 1.0]},\n            },\n            reading=None,\n            model=SimpleNamespace(model_id=\"synthetic\"),\n            store=store,\n            out=tmp_path / \"out\",\n        )\n\ntests\\test_production_workflow.py:251: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\n    def fit_one_task(\n        *,\n        task: dict,\n        data: GlsData,\n        context: dict,\n        legal_group: dict,\n        fixed_starts: dict,\n        reading: HeightReading | None,\n        model: Any,\n        store: BudgetStore,\n        out: Path,\n        prediction_writer: Callable[[Path, Any], str] | None = None,\n    ) -> dict:\n        task_id = task[\"task_id\"]\n        witnesses = _witness_rows(\n            task[\"group\"], context, legal_group, data, reading\n        )\n        legal_witness = witnesses[0]\n        write_once_json(\n            out / \"tasks\" / task_id / \"legal_witnesses.json\",\n            {\"schema\": \"iscat165.legal_witnesses.1\", \"task_id\": task_id, \"rows\": witnesses},\n        )\n        starts = [fixed_starts[\"first\"], fixed_starts[\"second\"]]\n        start_records = []\n        for index, start in enumerate(starts):\n>           calls_before_start = int(store.counts()[task_id])\nE           KeyError: 'B100000_ANON_02_NO_HEIGHT'\n\ncode\\v165_run.py:1006: KeyError"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_fit_continues_after_start_zero_ordinary_failure",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_final_verify_emits_records_for_all_twenty_eight_tasks",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_final_verify_emits_records_for_all_twenty_eight_tasks",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_final_verify_emits_records_for_all_twenty_eight_tasks",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_execute_constructs_model_once_and_preserves_all_task_states",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_execute_constructs_model_once_and_preserves_all_task_states",
+      "when": "call",
+      "outcome": "failed",
+      "longrepr": "tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-74/test_execute_constructs_model_0')\nmonkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D4988D53D0>\n\n    def test_execute_constructs_model_once_and_preserves_all_task_states(\n        tmp_path, monkeypatch\n    ):\n>       repo, out, _starts = _minimal_workflow(tmp_path, monkeypatch)\n\ntests\\test_production_workflow.py:410: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ntmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-74/test_execute_constructs_model_0')\nmonkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D4988D53D0>\n\n    def _minimal_workflow(tmp_path, monkeypatch):\n        repo = tmp_path / \"repo\"\n        out = repo / \"results/v165\"\n        out.mkdir(parents=True)\n        atomic_json(\n            out / \"preflight.json\",\n            {\n                \"schema\": \"iscat165.preflight.1\",\n                \"status\": \"PASS\",\n                \"plan_sha256\": \"a\" * 64,\n                \"source_lock\": {},\n            },\n        )\n        atomic_json(out / \"frozen_detections.json\", {})\n        groups = [\"ANON_01\", \"ANON_02\", \"ANON_03\", \"ANON_04\"]\n        start_doc = {}\n        starts = {}\n        for group in groups:\n            first = [101.0, 432.0, 0.0, 0.0]\n            second = [101.0, 455.0, 1.0, 1.0]\n            starts[group] = {\n                \"first\": {\"theta\": first, \"record_path\": group + \"/first\"},\n                \"second\": {\"theta\": second, \"record_path\": group + \"/second\"},\n                \"stratum_available\": True,\n                \"stratum_flag\": None,\n                \"all_six\": list(range(6)),\n                \"six\": [],\n            }\n            start_doc[group] = {\n                \"first\": {\"theta\": first, \"source_record\": group + \"/first\"},\n                \"second\": {\"theta\": second, \"source_record\": group + \"/second\"},\n                \"stratum_available\": True,\n                \"stratum_flag\": None,\n                \"all_six\": list(range(6)),\n            }\n        atomic_json(out / \"starts_by_group.json\", start_doc)\n        contexts = {\n            group: {\n                \"theta\": [101.0, 432.0, 0.0, 0.0],\n                \"frame_Y\": np.zeros((3, 13, 13)).tolist(),\n                \"frame_V\": np.ones((3, 13, 13)).tolist(),\n                \"base_index\": 0,\n                \"predictions\": [{\"C\": np.zeros((13, 13)).tolist()}],\n            }\n            for group in groups\n        }\n        monkeypatch.setattr(v165_run, \"_load_contexts\", lambda _out: contexts)\n        monkeypatch.setattr(\n            v165_run,\n            \"_readings\",\n            lambda _path: (\n                {\"schema\": \"synthetic\", \"readings\": []},\n                {\n                    task[\"task_id\"]: HeightReading(\n                        task[\"task_id\"],\n                        task[\"group\"],\n                        task[\"replicate\"],\n                        task[\"sigma_nm\"],\n                        432.0,\n                    )\n                    for task in tasks()\n                    if task[\"sigma_nm\"] is not None\n                },\n            ),\n        )\n        monkeypatch.setattr(v165_io, \"lock_sources\", lambda _repo: {})\n        monkeypatch.setattr(v165_io, \"estimator_inputs_check\", lambda _docs: {})\n        monkeypatch.setattr(v165_io, \"frozen_starts\", lambda _repo, _groups: starts)\n        monkeypatch.setattr(v165_io, \"ledger_check\", lambda *a, **k: {})\n        monkeypatch.setattr(\n>           sys.modules[\"v165_guard\"],\n            \"install\",\n            lambda _repo: SimpleNamespace(report=lambda: {\"synthetic_guard\": True}),\n        )\nE       KeyError: 'v165_guard'\n\ntests\\test_production_workflow.py:400: KeyError"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_execute_constructs_model_once_and_preserves_all_task_states",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_restart_with_sealed_loader_blocks_unfinished_dependents",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_restart_with_sealed_loader_blocks_unfinished_dependents",
+      "when": "call",
+      "outcome": "failed",
+      "longrepr": "tmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-74/test_restart_with_sealed_loade0')\nmonkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D49A536550>\n\n    def test_restart_with_sealed_loader_blocks_unfinished_dependents(\n        tmp_path, monkeypatch\n    ):\n>       repo, out, _starts = _minimal_workflow(tmp_path, monkeypatch)\n\ntests\\test_production_workflow.py:492: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ntmp_path = WindowsPath('C:/Users/PC/AppData/Local/Temp/pytest-of-PC/pytest-74/test_restart_with_sealed_loade0')\nmonkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D49A536550>\n\n    def _minimal_workflow(tmp_path, monkeypatch):\n        repo = tmp_path / \"repo\"\n        out = repo / \"results/v165\"\n        out.mkdir(parents=True)\n        atomic_json(\n            out / \"preflight.json\",\n            {\n                \"schema\": \"iscat165.preflight.1\",\n                \"status\": \"PASS\",\n                \"plan_sha256\": \"a\" * 64,\n                \"source_lock\": {},\n            },\n        )\n        atomic_json(out / \"frozen_detections.json\", {})\n        groups = [\"ANON_01\", \"ANON_02\", \"ANON_03\", \"ANON_04\"]\n        start_doc = {}\n        starts = {}\n        for group in groups:\n            first = [101.0, 432.0, 0.0, 0.0]\n            second = [101.0, 455.0, 1.0, 1.0]\n            starts[group] = {\n                \"first\": {\"theta\": first, \"record_path\": group + \"/first\"},\n                \"second\": {\"theta\": second, \"record_path\": group + \"/second\"},\n                \"stratum_available\": True,\n                \"stratum_flag\": None,\n                \"all_six\": list(range(6)),\n                \"six\": [],\n            }\n            start_doc[group] = {\n                \"first\": {\"theta\": first, \"source_record\": group + \"/first\"},\n                \"second\": {\"theta\": second, \"source_record\": group + \"/second\"},\n                \"stratum_available\": True,\n                \"stratum_flag\": None,\n                \"all_six\": list(range(6)),\n            }\n        atomic_json(out / \"starts_by_group.json\", start_doc)\n        contexts = {\n            group: {\n                \"theta\": [101.0, 432.0, 0.0, 0.0],\n                \"frame_Y\": np.zeros((3, 13, 13)).tolist(),\n                \"frame_V\": np.ones((3, 13, 13)).tolist(),\n                \"base_index\": 0,\n                \"predictions\": [{\"C\": np.zeros((13, 13)).tolist()}],\n            }\n            for group in groups\n        }\n        monkeypatch.setattr(v165_run, \"_load_contexts\", lambda _out: contexts)\n        monkeypatch.setattr(\n            v165_run,\n            \"_readings\",\n            lambda _path: (\n                {\"schema\": \"synthetic\", \"readings\": []},\n                {\n                    task[\"task_id\"]: HeightReading(\n                        task[\"task_id\"],\n                        task[\"group\"],\n                        task[\"replicate\"],\n                        task[\"sigma_nm\"],\n                        432.0,\n                    )\n                    for task in tasks()\n                    if task[\"sigma_nm\"] is not None\n                },\n            ),\n        )\n        monkeypatch.setattr(v165_io, \"lock_sources\", lambda _repo: {})\n        monkeypatch.setattr(v165_io, \"estimator_inputs_check\", lambda _docs: {})\n        monkeypatch.setattr(v165_io, \"frozen_starts\", lambda _repo, _groups: starts)\n        monkeypatch.setattr(v165_io, \"ledger_check\", lambda *a, **k: {})\n        monkeypatch.setattr(\n>           sys.modules[\"v165_guard\"],\n            \"install\",\n            lambda _repo: SimpleNamespace(report=lambda: {\"synthetic_guard\": True}),\n        )\nE       KeyError: 'v165_guard'\n\ntests\\test_production_workflow.py:400: KeyError"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_restart_with_sealed_loader_blocks_unfinished_dependents",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_public_height_readings_reject_missing_group_and_rounded_label",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_public_height_readings_reject_missing_group_and_rounded_label",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_public_height_readings_reject_missing_group_and_rounded_label",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_install_check_rejects_tampered_frozen_member",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_install_check_rejects_tampered_frozen_member",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_install_check_rejects_tampered_frozen_member",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_truth_guard_denies_generator_import_in_subprocess",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_truth_guard_denies_generator_import_in_subprocess",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_truth_guard_denies_generator_import_in_subprocess",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_test_suite_does_not_import_real_model_or_have_truth_literals",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_test_suite_does_not_import_real_model_or_have_truth_literals",
+      "when": "call",
+      "outcome": "failed",
+      "longrepr": "def test_test_suite_does_not_import_real_model_or_have_truth_literals():\n        test_dir = ROOT / \"tests\"\n        text = \"\\n\".join(p.read_text(encoding=\"utf-8\") for p in test_dir.glob(\"test_*.py\"))\n>       assert \"tools/v146_runtime.py\" not in text\nE       assert 'tools/v146_runtime.py' not in 'import sys\\...t,inp,det)\\n'\nE         'tools/v146_runtime.py' is contained here:\nE             assert \"tools/v146_runtime.py\" not in text\nE               assert \"tools/v142_model.py\" not in text\nE               hits = v165_io.assert_no_truth_literals(ROOT / \"code\")\nE               assert hits[\"offenders\"] == []\nE           \nE           import sys...\nE         \nE         ...Full output truncated (37 lines hidden), use '-vv' to show\n\ntests\\test_production_workflow.py:625: AssertionError"
+    },
+    {
+      "nodeid": "tests/test_production_workflow.py::test_test_suite_does_not_import_real_model_or_have_truth_literals",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_validator.py::test_group_mae_preserves_four_independent_scenes",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_validator.py::test_group_mae_preserves_four_independent_scenes",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_validator.py::test_group_mae_preserves_four_independent_scenes",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_validator.py::test_partial_status_is_not_hidden",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_validator.py::test_partial_status_is_not_hidden",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_validator.py::test_partial_status_is_not_hidden",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_validator.py::test_missing_task_fails_not_silent",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_validator.py::test_missing_task_fails_not_silent",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_validator.py::test_missing_task_fails_not_silent",
+      "when": "teardown",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_validator.py::test_wrong_height_group_binding_rejected",
+      "when": "setup",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_validator.py::test_wrong_height_group_binding_rejected",
+      "when": "call",
+      "outcome": "passed"
+    },
+    {
+      "nodeid": "tests/test_validator.py::test_wrong_height_group_binding_rejected",
+      "when": "teardown",
+      "outcome": "passed"
+    }
+  ],
+  "collection_errors": [],
+  "exitstatus": 1
+}

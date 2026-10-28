@@ -1,0 +1,140 @@
+{
+  "schema": "iscat165.zip_member_receipt.1",
+  "zip_path": "C:\\Users\\PC\\Downloads\\iscat_v165_handoff.zip",
+  "zip_bytes": 27730,
+  "zip_sha256": "abac2611ff6f0618cb73dab4323fc4e7fbd7efc1f746cf35485ab9d5ffd7eec8",
+  "member_count": 16,
+  "manifest_rows": 15,
+  "members": [
+    {
+      "name": "00_V165_Codex_唯一执行合同.md",
+      "bytes": 17307,
+      "compressed_bytes": 9282,
+      "crc32": "7346654b",
+      "sha256": "1f52da3b6344773c0bc5d4e79e75fe7590a604fc06c1cddfc213ea201bfec3fe",
+      "is_dir": false
+    },
+    {
+      "name": "README.md",
+      "bytes": 1877,
+      "compressed_bytes": 1193,
+      "crc32": "1352a685",
+      "sha256": "2db82cbe9b9b7d074934b0bad9d201ed9f39d5740adf95b125c40bba1944b3a2",
+      "is_dir": false
+    },
+    {
+      "name": "code/v152_gls_core.py",
+      "bytes": 6917,
+      "compressed_bytes": 2621,
+      "crc32": "76117958",
+      "sha256": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+      "is_dir": false
+    },
+    {
+      "name": "code/v165_objective.py",
+      "bytes": 3502,
+      "compressed_bytes": 1469,
+      "crc32": "b03896d1",
+      "sha256": "7d013551d9ae155de023daa1e1a6ad5678c6b038ae217fa79fe22c4e4eed64bd",
+      "is_dir": false
+    },
+    {
+      "name": "code/v165_task_ids.py",
+      "bytes": 614,
+      "compressed_bytes": 340,
+      "crc32": "60cb33cd",
+      "sha256": "5a3207cedf139c337bde9751e8ef5883866b63cd70103fc110528b4c1e173110",
+      "is_dir": false
+    },
+    {
+      "name": "config/v165_plan.json",
+      "bytes": 2202,
+      "compressed_bytes": 1158,
+      "crc32": "af9ca72a",
+      "sha256": "7f25bcd57caf99844ca08c9bc46ba992cc7f9b881e2c5df94d550f73286e97ce",
+      "is_dir": false
+    },
+    {
+      "name": "generator/v165_generate_height.py",
+      "bytes": 3669,
+      "compressed_bytes": 1663,
+      "crc32": "3caad257",
+      "sha256": "a0a08a216e1e0307420432d8adf02cf364610946f5ed3e2f8863c9f83d730884",
+      "is_dir": false
+    },
+    {
+      "name": "review/V164_INDEPENDENT_REVIEW_SCOPE.md",
+      "bytes": 1929,
+      "compressed_bytes": 1388,
+      "crc32": "d055ec29",
+      "sha256": "271a65070a7e2331073dd853f3c834ee8ee546918a210663ad7a08cbad80cedc",
+      "is_dir": false
+    },
+    {
+      "name": "review/local_test_inventory.txt",
+      "bytes": 702,
+      "compressed_bytes": 293,
+      "crc32": "e6a58928",
+      "sha256": "8ba45f5a72b8739321ba4d86d62fb6598871101c5d9ceaa0a289b950a88e1c7f",
+      "is_dir": false
+    },
+    {
+      "name": "review/local_test_output.txt",
+      "bytes": 99,
+      "compressed_bytes": 34,
+      "crc32": "022d20ed",
+      "sha256": "e80a7853f8913d445e06d3e00386c262f54f51ea10822b88d3b6d976025843ba",
+      "is_dir": false
+    },
+    {
+      "name": "review/local_test_receipt.json",
+      "bytes": 1368,
+      "compressed_bytes": 777,
+      "crc32": "8d006645",
+      "sha256": "658941ecf99512bb725f67dac2d269c3d372beba70399fe0d4563d01d961b9cf",
+      "is_dir": false
+    },
+    {
+      "name": "tests/test_generator_ids.py",
+      "bytes": 583,
+      "compressed_bytes": 326,
+      "crc32": "76fac941",
+      "sha256": "42b2f120ad7ce51d63dad3116f148480bbf3be9de98621e38c14c4bf2008c51d",
+      "is_dir": false
+    },
+    {
+      "name": "tests/test_height.py",
+      "bytes": 3314,
+      "compressed_bytes": 1304,
+      "crc32": "707fb530",
+      "sha256": "9acf55e820704983f1b34a6dfd68e76ab56cc6313c132f1231d6c284f57b76b7",
+      "is_dir": false
+    },
+    {
+      "name": "tests/test_validator.py",
+      "bytes": 1651,
+      "compressed_bytes": 738,
+      "crc32": "e06e3699",
+      "sha256": "8d985b218e467f053d087657c67954f21e8543258434c160093e1c502c71103c",
+      "is_dir": false
+    },
+    {
+      "name": "validator/v165_validator.py",
+      "bytes": 5157,
+      "compressed_bytes": 2181,
+      "crc32": "9a530773",
+      "sha256": "af63ace2a6218177c21b93e6e89d96b5839c6953af564c05c7c68b815ff5f743",
+      "is_dir": false
+    },
+    {
+      "name": "manifest_sha256.csv",
+      "bytes": 1482,
+      "compressed_bytes": 913,
+      "crc32": "8b0846b8",
+      "sha256": "0c9ef4c351e2502063041fe931213b3270181c69066a7fa3450e697237aa2781",
+      "is_dir": false
+    }
+  ],
+  "manifest_verification": "PASS",
+  "problems": []
+}

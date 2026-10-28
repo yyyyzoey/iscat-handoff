@@ -1,0 +1,5 @@
+{
+  "collect_returncode": 1,
+  "test_returncode": 1,
+  "tripwire_bytes": 0
+}

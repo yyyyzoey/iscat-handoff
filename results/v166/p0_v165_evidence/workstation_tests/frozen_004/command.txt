@@ -1,0 +1,7 @@
+python
+-m
+pytest
+-q
+tools/v165_bundle/tests/test_generator_ids.py
+tools/v165_bundle/tests/test_height.py
+tools/v165_bundle/tests/test_validator.py

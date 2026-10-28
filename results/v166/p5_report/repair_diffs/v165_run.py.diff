@@ -1,0 +1,408 @@
+--- p0_snapshot/tools/v165_bundle/code/v165_run.py
++++ v166_current/tools/v165_bundle/code/v165_run.py
+@@ -158,6 +158,7 @@
+     rows.extend(task_descriptor(row["task_id"], row) for row in tasks())
+     rows.append(task_descriptor(FINAL_TASK))
+     require(len(rows) == 31, "V165_MUST_HAVE_31_TASKS")
++    require(len({r["task_id"] for r in rows}) == 31, "DUPLICATE_TASK_ID")
+     require(sum(r["cap"] for r in rows) == TOTAL, "V165_RESERVATION_SUM")
+     return rows
+ 
+@@ -729,11 +730,18 @@
+         if valid
+         else None
+     )
++    prior_actual_calls = int(store.counts()[task_id])
++    reason_codes = [reason_code]
++    if starts or prior_actual_calls:
++        # Only a task carrying durable charge or checkpoint evidence was actually
++        # interrupted.  A task that never reached its first call is blocked before
++        # any work, and must not be described as an unreplayed interruption.
++        reason_codes.append("INTERRUPTED_TASK_NOT_REPLAYED")
+     return {
+         "execution_state": "BLOCKED",
+         "task_id": task_id,
+-        "reason_codes": [reason_code, "INTERRUPTED_TASK_NOT_REPLAYED"],
+-        "prior_actual_calls": int(store.counts()[task_id]),
++        "reason_codes": reason_codes,
++        "prior_actual_calls": prior_actual_calls,
+         "attempts": _attempt_rows(store, task_id),
+         "starts": starts,
+         "optimizer_best": best,
+@@ -770,6 +778,47 @@
+     return seal_task_result(store, task_id, sig, payload, out)
+ 
+ 
++def _adopt_durable_result(
++    store: BudgetStore,
++    task_id: str,
++    sig: str,
++    out: Path,
++) -> dict | None:
++    """Seal the ledger against a result file that survived an interruption."""
++    result_path = out / "tasks" / task_id / "result.json"
++    if not result_path.exists():
++        return None
++    reconcile_charged(store, task_id, out)
++    doc = read_json(result_path)
++    require(doc.get("signature") == sig, "ORPHAN_RESULT_SIGNATURE:" + task_id)
++    store.seal(task_id, OWNER, doc["db_state"], result_path)
++    return doc
++
++
++def replay_or_block(
++    store: BudgetStore,
++    task_id: str,
++    sig: str,
++    out: Path,
++    reason_code: str,
++) -> dict:
++    """Replay durable evidence for a task that cannot be run in this process.
++
++    A task already holding a sealed result, or a result file awaiting adoption, is
++    returned exactly as recorded.  Anything else is sealed honestly as BLOCKED with
++    no charge and no recomputation.  This is the only route available to a dependent
++    task when the process has no live model object.
++    """
++    row = _task_row(store, task_id)
++    require(row["signature"] == sig, "TASK_SIGNATURE_CHANGED:" + task_id)
++    if row["state"] != "RUNNING":
++        return store.load_result(task_id, sig)
++    durable = _adopt_durable_result(store, task_id, sig, out)
++    if durable is not None:
++        return durable
++    return seal_blocked_task(store, task_id, sig, out, reason_code)
++
++
+ def execute_task(
+     store: BudgetStore,
+     task_id: str,
+@@ -782,13 +831,9 @@
+     if row["state"] != "RUNNING":
+         return store.load_result(task_id, sig)
+ 
+-    result_path = out / "tasks" / task_id / "result.json"
+-    if result_path.exists():
+-        reconcile_charged(store, task_id, out)
+-        doc = read_json(result_path)
+-        require(doc.get("signature") == sig, "ORPHAN_RESULT_SIGNATURE:" + task_id)
+-        store.seal(task_id, OWNER, doc["db_state"], result_path)
+-        return doc
++    durable = _adopt_durable_result(store, task_id, sig, out)
++    if durable is not None:
++        return durable
+ 
+     if row["used"] > 0 and task_id not in (LOADER_TASK, BIND_TASK, FINAL_TASK):
+         start_dir = out / "tasks" / task_id / "starts"
+@@ -1271,10 +1316,18 @@
+ 
+ 
+ def _load_contexts(out: Path) -> dict[str, dict]:
++    # The three-frame Y/V files were copied and hashed by preflight.  Re-checking the
++    # recorded copy hash here is what stops a swapped variance or rewritten frame file
++    # from reaching the fit after the gate has already passed.
++    pinned = read_json(out / "preflight.json")["contexts"]
+     contexts = {}
+     for group in ("ANON_01", "ANON_02", "ANON_03", "ANON_04"):
+         path = out / "source_context" / f"{group}.json"
+         require(path.is_file(), "MISSING_CONTEXT:" + group)
++        require(
++            sha_file(path) == (pinned.get(group) or {}).get("copy_sha256"),
++            "CONTEXT_BYTES_CHANGED_SINCE_PREFLIGHT:" + group,
++        )
+         d = read_json(path)["diagnostic"]
+         require(
+             np.asarray(d["frame_Y"]).shape == (3, 13, 13)
+@@ -1446,7 +1499,11 @@
+     prediction_writer: Callable[[Path, Any], str] | None = None,
+     model: Any | None = None,
+ ) -> dict:
++    # ``execute`` always routes this task through the single live model of the
++    # process, or blocks it outright.  The fallback below therefore only ever runs
++    # for a direct in-process caller, and the sealed record says which case applied.
+     if model is None:
++        model_source = "CONSTRUCTED_WITHIN_FINAL_VERIFY_CALLER"
+         model, load_info = construct_model(
+             repo,
+             store,
+@@ -1455,6 +1512,7 @@
+             prediction_writer=prediction_writer,
+         )
+     else:
++        model_source = "PROCESS_LIVE_MODEL"
+         load_info = None
+     predictor = ModelPredictor(
+         model,
+@@ -1530,6 +1588,7 @@
+     return {
+         "execution_state": "FINISHED" if not failures else "FAILED",
+         "model_id": model.model_id,
++        "model_source": model_source,
+         "fresh_model_loader": load_info,
+         "checks": checks,
+         "failures": failures,
+@@ -1539,6 +1598,21 @@
+         "reportable_D": None,
+         "reason_codes": [] if not failures else ["INDEPENDENT_FINAL_REPLAY_FAILED"],
+     }
++
++
++def _profile_group(task_id: str) -> str:
++    """Full ANON group name out of a profile task id such as
++    ``PROFILE_100000_ANON_02_m5_free_hxy``.
++
++    Group names carry an underscore themselves, so a fixed split index would
++    truncate ANON_01 to ANON and silently collapse four scenes into one label.
++    """
++    parts = task_id.split("_")
++    require(
++        task_id.startswith("PROFILE_") and len(parts) >= 4 and parts[2] == "ANON",
++        "PROFILE_TASK_ID_SHAPE:" + task_id,
++    )
++    return "_".join(parts[2:4])
+ 
+ 
+ def _history_audit(repo: Path) -> dict:
+@@ -1557,11 +1631,7 @@
+         expected_total=1357,
+         hash_only_arrays_tasks=("LOADER_1",),
+     )
+-    groups = {
+-        t["task"].split("_")[2]
+-        for t in ledger["tasks"]
+-        if t["task"].startswith("PROFILE_")
+-    }
++    groups = {_profile_group(t["task"]) for t in ledger["tasks"] if t["task"].startswith("PROFILE_")}
+     require(groups == {"ANON_02", "ANON_03", "ANON_04"}, "V164_GROUP_HISTORY")
+     return {
+         "schema": "iscat165.v164_history_audit.1",
+@@ -1798,42 +1868,48 @@
+     legal = frozen_starts(
+         repo, ["ANON_01", "ANON_02", "ANON_03", "ANON_04"]
+     )
+-    loader = execute_task(
+-        store,
+-        LOADER_TASK,
+-        sigs[LOADER_TASK]["signature"],
+-        out,
+-        lambda: {
+-            **construct_model(
+-                repo,
+-                store,
+-                out,
+-                LOADER_TASK,
+-                prediction_writer=prediction_writer,
+-            )[1],
++    live: dict[str, Any] = {}
++
++    def _loader_work() -> dict:
++        built, info = construct_model(
++            repo,
++            store,
++            out,
++            LOADER_TASK,
++            prediction_writer=prediction_writer,
++        )
++        live["model"] = built
++        return {
++            **info,
+             "execution_state": "FINISHED",
+             "reportable_D": None,
+-        },
+-    )
+-    model, _ = construct_model(
+-        repo,
+-        store,
+-        out,
+-        LOADER_TASK,
+-        prediction_writer=prediction_writer,
+-    )
+-    # A sealed loader task must never be charged again.  This second construction
+-    # is only valid when the first branch above reused a sealed result, which is
+-    # not allowed to invoke the model.  Therefore execute the whole workflow in a
+-    # fresh ledger where construction occurs exactly once.
++        }
++
++    loader = execute_task(
++        store, LOADER_TASK, sigs[LOADER_TASK]["signature"], out, _loader_work
++    )
+     if loader["execution_state"] != "FINISHED":
+         raise RunError("LOADER_TASK_NOT_FINISHED")
+-
+-    binding = execute_task(
+-        store,
++    # A sealed loader result carries no live model object and the loader task is
++    # never charged twice.  A restart therefore must not rebuild one silently: the
++    # model exists only if this process constructed it exactly once.  Otherwise every
++    # dependent task is replayed from durable evidence or blocked explicitly.
++    model = live.get("model")
++
++    def _dependent(task_id: str, work: Callable[[], dict]) -> dict:
++        sig = sigs[task_id]["signature"]
++        if model is not None:
++            return execute_task(store, task_id, sig, out, work)
++        return replay_or_block(
++            store,
++            task_id,
++            sig,
++            out,
++            "BLOCKED_MODEL_RESTART_REQUIRES_AUTHORIZATION",
++        )
++
++    binding = _dependent(
+         BIND_TASK,
+-        sigs[BIND_TASK]["signature"],
+-        out,
+         lambda: binding_task(
+             model,
+             store,
+@@ -1842,7 +1918,7 @@
+             prediction_writer=prediction_writer,
+         ),
+     )
+-    fit_payloads = {}
++    fit_payloads: dict[str, dict] = {}
+     for task in tasks():
+         task_id = task["task_id"]
+         group = task["group"]
+@@ -1859,11 +1935,8 @@
+         data = GlsData.from_frames(
+             contexts[group]["frame_Y"], contexts[group]["frame_V"]
+         )
+-        doc = execute_task(
+-            store,
++        doc = _dependent(
+             task_id,
+-            sigs[task_id]["signature"],
+-            out,
+             lambda task=task, data=data, reading=reading, group=group: fit_one_task(
+                 task=task,
+                 data=data,
+@@ -1879,11 +1952,8 @@
+         )
+         fit_payloads[task_id] = doc["payload"]
+ 
+-    final = execute_task(
+-        store,
++    final = _dependent(
+         FINAL_TASK,
+-        sigs[FINAL_TASK]["signature"],
+-        out,
+         lambda: final_verify_task(
+             repo,
+             store,
+@@ -1891,6 +1961,7 @@
+             contexts,
+             fit_payloads,
+             prediction_writer=prediction_writer,
++            model=model,
+         ),
+     )
+     write_once_json(
+@@ -1899,27 +1970,45 @@
+     )
+     guard_report = guard.report()
+     write_once_json(out / "estimator_guard.json", guard_report)
++    fit_states = [payload["execution_state"] for payload in fit_payloads.values()]
++    require(len(fit_states) == 28, "FIT_TASK_ACCOUNTING")
++    fit_finished = sum(state == "FINISHED" for state in fit_states)
++    fit_partial_search = sum(state == "PARTIAL_SEARCH" for state in fit_states)
++    fit_failed = sum(state == "FAILED" for state in fit_states)
++    fit_blocked = sum(state == "BLOCKED" for state in fit_states)
++    require(
++        fit_finished + fit_partial_search + fit_failed + fit_blocked == 28,
++        "FIT_STATE_ACCOUNTING_INCOMPLETE",
++    )
++    gate_states = [
++        loader["execution_state"],
++        binding["execution_state"],
++        final["execution_state"],
++    ]
++    if any(state in ("BLOCKED", "FAILED") for state in fit_states + gate_states):
++        execution_state = "BLOCKED_OR_PARTIAL"
++    elif "PARTIAL_SEARCH" in fit_states:
++        execution_state = "FINISHED_WITH_PARTIAL_SEARCH"
++    else:
++        execution_state = "FINISHED"
+     status = {
+         "schema": "iscat165.execute_status.1",
+-        "execution_state": "FINISHED",
++        "execution_state": execution_state,
+         "model_calls": int(sum(store.counts().values())),
+         "phase_caps": PHASES,
+-        "tasks_reserved": 31,
+-        "fit_tasks": 28,
+-        "fit_finished": sum(
+-            p["execution_state"] == "FINISHED" for p in fit_payloads.values()
+-        ),
+-        "fit_partial_search": sum(
+-            p["execution_state"] == "PARTIAL_SEARCH"
+-            for p in fit_payloads.values()
+-        ),
+-        "fit_failed": sum(
+-            p["execution_state"] in ("FAILED", "BLOCKED")
+-            for p in fit_payloads.values()
+-        ),
++        "tasks_reserved": len(store.counts()),
++        "fit_tasks": len(fit_states),
++        "fit_finished": fit_finished,
++        "fit_partial_search": fit_partial_search,
++        "fit_failed": fit_failed,
++        "fit_blocked": fit_blocked,
+         "final_verify_execution_state": final["execution_state"],
+         "binding_execution_state": binding["execution_state"],
+-        "all_reportable_D_null": True,
++        "all_reportable_D_null": all(
++            payload.get("reportable_D") is None
++            for payload in [loader["payload"], binding["payload"], final["payload"]]
++            + list(fit_payloads.values())
++        ),
+         "experimental_absolute_diameter_validated": False,
+         "scope": "OPENED_DEVELOPMENT_SIMULATED_HEIGHT_READINGS_NOT_REAL_SIZING",
+     }
+@@ -1945,12 +2034,25 @@
+     rows = []
+     for task in tasks():
+         task_id = task["task_id"]
+-        result = read_json(out / "tasks" / task_id / "result.json")
++        result_path = out / "tasks" / task_id / "result.json"
++        require(result_path.is_file(), "ESTIMATE_RESULT_MISSING:" + task_id)
++        result = read_json(result_path)
+         require(
+             result["signature"] == sigs[task_id]["signature"],
+             "ESTIMATE_TASK_SIGNATURE:" + task_id,
+         )
+         payload = result["payload"]
++        execution_state = payload["execution_state"]
++        qualification = payload.get("physical_qualification")
++        if qualification is None:
++            # Two fit failure paths carry no qualification of their own.  A failed
++            # or blocked task must never inherit the qualification of a completed
++            # one, so the label is derived from this task's own state.
++            qualification = (
++                "CONDITIONAL_SIMULATED_F2C_DEVELOPMENT"
++                if execution_state in ("FINISHED", "PARTIAL_SEARCH")
++                else "NOT_QUALIFIED_" + execution_state
++            )
+         rows.append(
+             {
+                 "task_id": task_id,
+@@ -1962,15 +2064,11 @@
+                 "theta": payload.get("theta"),
+                 "candidate_D": payload.get("candidate_D"),
+                 "reportable_D": None,
+-                "known_compatible_D_interval_nm": payload.get(
+-                    "known_compatible_D_interval_nm", [30.0, 200.0]
+-                ),
++                "known_compatible_D_interval_nm": payload.get("known_compatible_D_interval_nm"),
+                 "global_uniqueness_certified": False,
+-                "physical_qualification": "CONDITIONAL_SIMULATED_F2C_DEVELOPMENT",
++                "physical_qualification": qualification,
+                 "reason_codes": payload.get("reason_codes", []),
+-                "task_result_sha256": sha_file(
+-                    out / "tasks" / task_id / "result.json"
+-                ),
++                "task_result_sha256": sha_file(result_path),
+             }
+         )
+     require(len(rows) == 28, "ESTIMATE_COUNT")
