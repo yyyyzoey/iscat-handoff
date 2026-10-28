@@ -153,6 +153,12 @@ def run_gate_a(repo, out, projection_path):
     audit_dir = repo / "tools/v165_bundle/validator"
     if str(audit_dir) not in sys.path:
         sys.path.insert(0, str(audit_dir))
+    # The audit module was moved off the estimator import path, so the shared
+    # helper it depends on has to be resolved explicitly here instead of relying
+    # on same-directory imports or an ambient PYTHONPATH.
+    code_dir = repo / "tools/v165_bundle/code"
+    if str(code_dir) not in sys.path:
+        sys.path.insert(0, str(code_dir))
 
     import v165_truth_audit
 
