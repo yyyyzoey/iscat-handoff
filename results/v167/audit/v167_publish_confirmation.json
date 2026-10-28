@@ -1,0 +1,169 @@
+{
+  "budget_at_confirmation": {
+    "authorized_total_cap": 10000,
+    "by_phase_state": [
+      {
+        "count": 18,
+        "phase": "BIAS_STRESS",
+        "state": "RUNNING",
+        "sum_cap": 7200,
+        "sum_used": 0
+      },
+      {
+        "count": 1,
+        "phase": "FINAL_VERIFY",
+        "state": "RUNNING",
+        "sum_cap": 600,
+        "sum_used": 0
+      },
+      {
+        "count": 2,
+        "phase": "MODEL_BINDING",
+        "state": "RUNNING",
+        "sum_cap": 200,
+        "sum_used": 1
+      },
+      {
+        "count": 5,
+        "phase": "SEARCH_EXTENSION",
+        "state": "RUNNING",
+        "sum_cap": 2000,
+        "sum_used": 0
+      }
+    ],
+    "charge_attempts": [],
+    "charged_open_tasks": [
+      {
+        "cap": 100,
+        "id": "V167_LOADER_1",
+        "phase": "MODEL_BINDING",
+        "state": "RUNNING",
+        "used": 1
+      }
+    ],
+    "ledger_bytes": 24576,
+    "ledger_path": "results/v167/logs/v167_budget.sqlite",
+    "ledger_sha256": "212fc61391070cc0d8f07e41d1a356f31d76a4aed713bfc8c0e0031ef1d1eb34",
+    "stranded_charge_note": "the single recorded attempt is the authorized loader/binding construction V167_LOADER_1; it is stranded because the round-1 reserve locked the 26 task descriptors to the pre-repair code identity, and the mandated estimator repair moved that identity",
+    "tasks_total": 26,
+    "total_model_calls_used": 1
+  },
+  "code_identity_at_confirmation": {
+    "file_count": 46,
+    "git_head_recorded_by_identity_scan": "9d1eeaa0a9acb52cba69a5e1911fd5a6519d7102",
+    "identity_checks_all_true": true,
+    "identity_sha256": "9d267addaf905669824b7c226a479d4dc233fed58afed2e8583a553dc8b07185",
+    "matches_identity_pinned_by_test_run_full_008": true,
+    "note": "committing evidence does not move this value; the identity is hashed from on-disk bytes under tools/v167 and tools/v167_bundle plus the pinned files, against the fixed V166 parent, not against HEAD"
+  },
+  "contract_reference": "V167 unique contract section 10.6 line 230 and section 11",
+  "delivered_archive": {
+    "bytes": 27280244,
+    "contains_this_confirmation_file": false,
+    "contains_this_confirmation_note": "the archive was packed before this file existed, so it cannot contain it",
+    "crc_self_test_bad_member": null,
+    "member_count": 5749,
+    "path": "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T204438Z.zip",
+    "sha256": "273b20b94b1053f4f25de725ab29f4ee534e4997931c7284f27361927755fcae",
+    "sidecar": {
+      "bytes": 108,
+      "path": "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T204438Z.zip.sha256",
+      "sha256": "c8b6ccbfe5dab9b32697d4e8f40e3f59c785ac4ca769deb4fd092473038729b1"
+    }
+  },
+  "honesty_statement": "this file confirms that a push happened and that the objects on disk match the recorded digests. It is not, and cannot be, evidence that the authorized R or B computations ran or that any scientific acceptance criterion was met; both remain BLOCKED pending a PI decision on re-entry.",
+  "linked_evidence": [
+    {
+      "bytes": 8580,
+      "path": "results/v167/audit/v167_package_publish_receipt.json",
+      "sha256": "5e232320a0a65c4cfff5fe17da9cf6db1e21a85107094b8ff7ec864e362745d3"
+    },
+    {
+      "bytes": 2212,
+      "path": "results/v167/audit/v167_publish_receipt_correction_001.json",
+      "sha256": "ce044e152dd76cdaeacc6ca18c86de600d555424c301a419e7f9211b6f8edf62"
+    },
+    {
+      "bytes": 59141,
+      "path": "results/v167/audit/v167_p0c_identity_and_pins_recheck.json",
+      "sha256": "c34fba196bdf60dcf63c6a69fb372e1ae06552d385c4d73866be1c8c83e7b2c4"
+    },
+    {
+      "bytes": 4468,
+      "path": "results/v167/audit/v167_decision_required_pi.json",
+      "sha256": "46e6a9c3ccc36e3d57e25c34de969c5d3514a2f1e426a8b2819ef25b08a06dfc"
+    },
+    {
+      "bytes": 2625,
+      "path": "results/v167/estimator_inputs/00_isolation_receipt.json",
+      "sha256": "60c22bf048a92085dfbc638429181701ee2099ee241a0cb7d4b7275a8674e8bf"
+    },
+    {
+      "bytes": 15593,
+      "path": "results/v167/workstation_tests/full_008/workstation_test_receipt.json",
+      "sha256": "96c3b7c77f4c2373c56d76d11c4b49b0702c818277f969d4a0c35e65e408c48b"
+    },
+    {
+      "bytes": 2800,
+      "path": "results/v167/p5_delivery/delivery_manifest_receipt.json",
+      "sha256": "54b31754429617d26d4374371a046061931fd18dd8e59bd0043951d737a45a13"
+    },
+    {
+      "bytes": 12314,
+      "path": "V167_CURRENT_EVIDENCE_SUMMARY.md",
+      "sha256": "88b0e028518e0f4bc856fed1ee62961c931a7e9cb489a27b9c377898a2763f14"
+    }
+  ],
+  "publishing_is_delivery_not_acceptance": true,
+  "purpose": "confirm that the V167 blocked-round return package is published on the v167 branch, and record the state of the repository, the archive, the code identity and the budget at the moment of confirmation",
+  "repository": {
+    "branch": "v167",
+    "local_head": "9d1eeaa0a9acb52cba69a5e1911fd5a6519d7102",
+    "ls_remote_heads_v167": [
+      "9d1eeaa0a9acb52cba69a5e1911fd5a6519d7102\trefs/heads/v167"
+    ],
+    "origin_v167_ref": "9d1eeaa0a9acb52cba69a5e1911fd5a6519d7102",
+    "pull_request_creation_link": "https://github.com/yyyyzoey/iscat-handoff/pull/new/v167",
+    "pushed_commit_author_date": "2026-10-29 04:50:01 +0800",
+    "pushed_commit_files_changed_count": 2787,
+    "pushed_commit_parent": "e4939e19f353f8118d98b97ae2af989f298315ea",
+    "pushed_commit_subject": "V167 blocked-round delivery: evidence, publish receipts and the unique return archive",
+    "remote_head_count_seen": 109,
+    "remote_ref_equals_local_head": true,
+    "remote_url": "https://github.com/yyyyzoey/iscat-handoff.git",
+    "upstream": "origin/v167",
+    "v166_release_commit": "06b35cd4e0a47f7f49ef4b05401a07266f2c03b6"
+  },
+  "schema": "iscat167.publish_confirmation.1",
+  "self_disclosure": {
+    "explanation": "the commit listed below is the commit that carried the delivered archive and receipts; this confirmation is written after that push, so it will first appear in the repository in a later commit than the one it describes. The remote ref SHA was read live and equals that commit, which is the fact worth recording.",
+    "this_file_cannot_name_its_own_commit": true
+  },
+  "task_outcome_at_confirmation": {
+    "B_fixed_bias_trials_18": "BLOCKED",
+    "R_controlled_supplement_5_second_starts": "BLOCKED",
+    "anon_01_detection": "0/3",
+    "authorized_cap_remaining_unusable_without_pi_decision": 9999,
+    "experimental_absolute_diameter_validated": false,
+    "final_verify_authorization": "BLOCKED",
+    "reportable_D": null
+  },
+  "utc_written": "2026-10-28T20:52:26Z",
+  "working_tree": {
+    "interpretation": "the only working-tree entries are earlier rehearsal archives left in place as evidence; nothing tracked is modified or deleted, and nothing is staged",
+    "porcelain_entries": [
+      "?? results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T183921Z.zip",
+      "?? results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T184012Z.zip",
+      "?? results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T184012Z.zip.sha256",
+      "?? results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T184023Z.zip",
+      "?? results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T184023Z.zip.sha256",
+      "?? results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T184038Z.zip",
+      "?? results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T184038Z.zip.sha256",
+      "?? results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T201923Z.zip",
+      "?? results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T201923Z.zip.sha256"
+    ],
+    "porcelain_entry_count": 9,
+    "tracked_modifications": [],
+    "untracked_are_only_superseded_rehearsal_archives": true
+  }
+}
