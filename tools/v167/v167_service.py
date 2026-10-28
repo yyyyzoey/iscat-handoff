@@ -31,7 +31,7 @@ from v152_gls_core import check_theta  # noqa: E402
 from v167_common import (  # noqa: E402
     BINDING_TASK, FINAL_TASK, LOADER_TASK, MODEL_ID, OUT, OWNER, PHASES, ROOT, TOTAL,
     OPTIMIZER, array_meta, array_sha, atomic_json, canon, read_json, require,
-    sha_bytes, sha_file, theta_hex, update_json,
+    replay_json, sha_bytes, sha_file, theta_hex, update_json,
 )
 
 
@@ -283,9 +283,13 @@ class PredictionService:
                    "same_theta_conflicts": conflicts[:20],
                    "cache_theta_total": len(self.cache)}
         log = Path(log_path) if log_path is not None else self.out / "logs" / "v166_witness_import.json"
-        write_new = atomic_json(log, {"summary": summary, "imported_witnesses": details})
+        # The import is a pure function of the published V166 tree and ledger, so a bind
+        # step replayed after an interruption must land on the same bytes instead of
+        # either forking a second receipt or refusing the whole round.
+        digest, replayed = replay_json(log, {"summary": summary, "imported_witnesses": details})
         summary["receipt_path"] = str(log)
-        summary["receipt_sha256"] = write_new
+        summary["receipt_sha256"] = digest
+        summary["receipt_replayed_byte_identical"] = replayed
         self.import_summary = summary
         return summary
 

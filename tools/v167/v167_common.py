@@ -235,6 +235,19 @@ def read_json(path: Path) -> Any:
     return json.loads(Path(path).read_bytes().decode("utf-8-sig"))
 
 
+def _discard_tmp(tmp: Path) -> None:
+    """A refused write must not leave its bytes lying beside the evidence tree.
+
+    The staging file is removed best-effort: losing the cleanup is cosmetic, while
+    deleting anything else in the tree is not, so failures here are swallowed.
+    """
+    try:
+        if tmp.exists():
+            tmp.unlink()
+    except OSError:
+        pass
+
+
 def atomic_json(path: Path, value: Any) -> str:
     """Write new only, fsync, then re-read and compare.  Never overwrites."""
     path = Path(path)
@@ -246,18 +259,44 @@ def atomic_json(path: Path, value: Any) -> str:
     tmp = path.with_name(path.name + f".tmp.{os.getpid()}")
     if tmp.exists():
         tmp.unlink()
-    with tmp.open("xb") as handle:
-        handle.write(raw)
-        handle.flush()
-        os.fsync(handle.fileno())
     try:
+        with tmp.open("xb") as handle:
+            handle.write(raw)
+            handle.flush()
+            os.fsync(handle.fileno())
         path.open("xb").close()
+        os.replace(tmp, path)
     except FileExistsError as exc:
+        _discard_tmp(tmp)
         raise FatalPersistenceError("OUTPUT_PATH_ALREADY_EXISTS:" + str(path)) from exc
-    os.replace(tmp, path)
+    except BaseException:
+        _discard_tmp(tmp)
+        raise
     if read_json(path) != value:
         raise FatalPersistenceError("OUTPUT_READBACK_MISMATCH:" + str(path))
     return sha_bytes(raw)
+
+
+def replay_json(path: Path, value: Any) -> tuple[str, bool]:
+    """Publish a receipt that a restarted process re-derives from the same inputs.
+
+    atomic_json guards charged and sealed evidence with write-new.  Controller receipts
+    that are a deterministic function of frozen inputs need the opposite face of the
+    same discipline: the file may already exist only when it holds exactly these bytes,
+    in which case the replay is recorded rather than a second copy being forked.  Any
+    other byte difference is a refusal, never an overwrite.
+    """
+    path = Path(path)
+    raw = canon(value)
+    digest = sha_bytes(raw)
+    if path.is_symlink():
+        raise FatalPersistenceError("OUTPUT_IS_A_SYMLINK:" + str(path))
+    if path.exists():
+        if path.read_bytes() == raw:
+            return digest, True
+        raise FatalPersistenceError("REPLAY_BYTES_DIFFER:" + str(path))
+    atomic_json(path, value)
+    return digest, False
 
 
 def write_text_new(path: Path, text: str) -> str:
@@ -288,11 +327,15 @@ def update_json(path: Path, value: Any) -> str:
     tmp = path.with_name(path.name + f".tmp.{os.getpid()}")
     if tmp.exists():
         tmp.unlink()
-    with tmp.open("xb") as handle:
-        handle.write(raw)
-        handle.flush()
-        os.fsync(handle.fileno())
-    os.replace(tmp, path)
+    try:
+        with tmp.open("xb") as handle:
+            handle.write(raw)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(tmp, path)
+    except BaseException:
+        _discard_tmp(tmp)
+        raise
     if read_json(path) != value:
         raise FatalPersistenceError("OUTPUT_READBACK_MISMATCH:" + str(path))
     return sha_bytes(raw)

@@ -1058,9 +1058,10 @@ def bind_model(ctx: dict) -> dict:
     service = service_mod.PredictionService(ctx["store"])
     ctx["service"] = service
     resumed = service.load_existing_predictions()
-    default_import = OUT / "logs" / "v166_witness_import.json"
-    import_path = (default_import if not default_import.exists()
-                   else OUT / "logs" / ("v166_witness_import_" + ctx["run_id"] + ".json"))
+    # One deterministic receipt for the whole round: the authorized run owns the primary
+    # name, a rehearsal is written into the rehearsal tree instead, and a bind that is
+    # replayed after an interruption has to land on the same bytes.
+    import_path = _evidence(ctx, OUT / "logs" / "v166_witness_import.json")
     witness_import = service.import_v166_predictions(
         PARENT_WS, V166 / "logs" / "v165_budget.sqlite", log_path=import_path)
     construction_log = OUT / "logs" / "model_construction.json"
