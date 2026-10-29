@@ -860,10 +860,7 @@ def freeze_capsule() -> dict:
         "reserved": False,
         "freeze_stage": "PRE_RESERVATION_PRE_RUN_IDENTITY_CONSUMPTION",
         "workstation_test_release": {
-            key: release[key] for key in (
-                "receipt_sha256", "workflow_run_id", "workflow_receipt_sha256",
-                "total_tests_recorded", "suite_count", "code_identity_sha256",
-                "test_suite_sha256", "scenario_count", "camera_image_count")},
+            key: release[key] for key in test_binding_mod.FREEZE_RELEASE_KEYS},
     })
     atomic_json(CAPSULE_PATH, document)
     pinned = read_json(CAPSULE_PATH)

@@ -33,9 +33,9 @@ import v168_test_binding as test_binding
 
 GUARD = service_mod.GUARD
 PIN_NAME = "frozen_execution_capsule.json"
-RELEASE_KEYS = ("receipt_sha256", "workflow_run_id", "workflow_receipt_sha256",
-                "total_tests_recorded", "suite_count", "code_identity_sha256",
-                "test_suite_sha256", "scenario_count", "camera_image_count")
+# The same list the freeze consumes, taken from the module that produces it.  A copy kept
+# here is what let the stub agree with itself while the real verifier returned no git_head.
+RELEASE_KEYS = test_binding.FREEZE_RELEASE_KEYS
 
 
 @pytest.fixture()

@@ -54,6 +54,17 @@ FRAMES_PER_GROUP = 3
 V166_PROVENANCE = "results/v166/p5_report/provenance_scenarios_and_images.json"
 V166_DETECTIONS = "results/v166/frozen_detections.json"
 
+# The release fields the capsule freeze reads out of verify().  Naming them here, beside the
+# verifier that returns them, is what keeps the freeze and its stubs from drifting: the first
+# V168 freeze attempt died on KeyError('git_head') because that key lived in the release
+# document but not in verify()'s return, and a list hand-copied into the controller and the
+# tests could not see the difference.
+FREEZE_RELEASE_KEYS = ("receipt_sha256", "workflow_run_id", "workflow_receipt_sha256",
+                       "total_tests_recorded", "suite_count", "code_identity_sha256",
+                       "test_suite_sha256", "scenario_count", "camera_image_count")
+# Fields compared against the live tree rather than copied into the capsule.
+FREEZE_COMPARED_KEYS = ("git_head", "code_identity_sha256", "test_suite_sha256")
+
 
 def _utc() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -528,11 +539,12 @@ def verify(run_id: str | None = None, *, codes: dict | None = None) -> dict:
                     + json.dumps(again)[:300])
     provenance = input_provenance()
     require(canon(provenance) == canon(release["input_provenance"]), "INPUT_PROVENANCE_CHANGED")
-    return {"schema": "iscat168.workstation_test_verify.1", "path": str(path),
+    gate = {"schema": "iscat168.workstation_test_verify.1", "path": str(path),
             "receipt_sha256": release["receipt_sha256"], "workflow_run_id": run_id,
             "workflow_receipt_sha256": release["workflow_receipt_sha256"],
             "total_tests_recorded": release["total_tests_recorded"],
             "suite_count": len(release["suites"]),
+            "git_head": release["git_head"],
             "code_identity_sha256": codes["identity_sha256"],
             "test_suite_sha256": release["test_suite_sha256"],
             "scenario_count": provenance["scenario_count"],
@@ -541,6 +553,11 @@ def verify(run_id: str | None = None, *, codes: dict | None = None) -> dict:
             "WORKSTATION_TEST_RECEIPT_VERIFIED": True, "WORKSTATION_TESTS_PASS": True,
             "CODE_BINDING_VERIFIED": True, "INPUT_PROVENANCE_VERIFIED": True,
             "refused_receipt_kinds": FORBIDDEN_RECEIPTS, "model_calls": 0}
+    # A gate that hands the freeze an incomplete shape has to fail here, on the way out of
+    # verification, and not as a KeyError minutes later inside a billed round's preamble.
+    absent = [key for key in FREEZE_RELEASE_KEYS + FREEZE_COMPARED_KEYS if key not in gate]
+    require(not absent, "VERIFY_RESULT_MISSING_FREEZE_KEYS:" + ",".join(absent))
+    return gate
 
 
 def main(argv: list[str] | None = None) -> int:

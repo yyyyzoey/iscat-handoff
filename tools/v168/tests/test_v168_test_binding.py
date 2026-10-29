@@ -314,6 +314,13 @@ class TestHappyPathIsReproducible:
         assert gate["model_calls"] == 0
         assert gate["code_identity_sha256"] == controller.code_identities()["identity_sha256"]
         assert gate["test_suite_sha256"] == controller.test_suite_sha256()
+        # The capsule freeze reads these keys straight out of this dict, against the real
+        # verifier.  V168's first freeze crashed on KeyError('git_head') because a simulated
+        # release in the freeze tests carried the field while the gate that authorizes a run
+        # did not, so the shape the freeze depends on is now proven here.
+        assert gate["git_head"] == controller.code_identities()["git_head"]
+        for key in binding.FREEZE_RELEASE_KEYS + binding.FREEZE_COMPARED_KEYS:
+            assert key in gate, "the freeze consumes %s, so verify() must return it" % key
 
     def test_release_receipt_is_new_only_and_self_digest_pinned(self, built, probe_dir):
         run_dir, release = built
