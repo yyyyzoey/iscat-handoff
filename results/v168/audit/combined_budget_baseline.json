@@ -1,0 +1,68 @@
+{
+  "authorization_sha256": "f8fb4b76f0ffc00eb5aa536f40180d250317afdfef8000c64fea7fa3e11d9f37",
+  "binding_cap_changed_from_v167": {
+    "v167": 100,
+    "v168": 99
+  },
+  "combined_ceiling": 10000,
+  "combined_consumed_before_v168_run": 1,
+  "combined_remaining_before_v168_run": 9999,
+  "earlier_history_listed_separately": {
+    "attempts": 4937,
+    "ledger_path": "C:\\iscat\\v166\\results\\v166\\logs\\v165_budget.sqlite",
+    "ledger_sha256": "254b5485164a57865328c81f8890ea4aa458d1386ed6f5f34533f2848f7e4ece",
+    "note": "V166 spend is earlier project history; it is NOT part of this 10000 continuation allowance and is NOT deleted.",
+    "read_mode": "sqlite3_uri_mode_ro",
+    "round": "v166",
+    "tasks_reserved": 31,
+    "used_by_phase": {
+      "FINAL_VERIFY": 32,
+      "HEIGHT_FITS": 4811,
+      "MODEL_BINDING": 94
+    },
+    "used_total": 4937
+  },
+  "historical_v167_consumed": 1,
+  "phase_table": [
+    {
+      "combined_ceiling": 200,
+      "phase": "MODEL_BINDING",
+      "v167_consumed": 1,
+      "v168_new_ceiling": 199
+    },
+    {
+      "combined_ceiling": 2000,
+      "phase": "SEARCH_EXTENSION",
+      "v167_consumed": 0,
+      "v168_new_ceiling": 2000
+    },
+    {
+      "combined_ceiling": 7200,
+      "phase": "BIAS_STRESS",
+      "v167_consumed": 0,
+      "v168_new_ceiling": 7200
+    },
+    {
+      "combined_ceiling": 600,
+      "phase": "FINAL_VERIFY",
+      "v167_consumed": 0,
+      "v168_new_ceiling": 600
+    }
+  ],
+  "phases": {
+    "BIAS_STRESS": 7200,
+    "FINAL_VERIFY": 600,
+    "MODEL_BINDING": 199,
+    "SEARCH_EXTENSION": 2000
+  },
+  "reserve_items": {
+    "bias": 7200,
+    "binding": 99,
+    "final_verify": 600,
+    "loader": 100,
+    "recovery": 2000
+  },
+  "reserve_items_total": 9999,
+  "schema": "iscat168.combined_budget_baseline.1",
+  "v168_new_ceiling": 9999
+}

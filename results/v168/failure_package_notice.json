@@ -1,0 +1,42 @@
+{
+ "authorized_round_exit_code": 1,
+ "blocked_steps": [
+  "seal",
+  "validate"
+ ],
+ "budget_is_the_rounds_own_ledger": true,
+ "deliverables_absent_because_of_that_failure": {
+  "results/v168/estimates_merge_reuse.json": "estimates step FAILED",
+  "results/v168/seal.json": "seal step BLOCKED",
+  "results/v168/validator_only/": "validate step BLOCKED; the sealed truth was never opened, so the independent score is NOT_STARTED"
+ },
+ "experimental_absolute_diameter_validated": false,
+ "failed_step": "estimates",
+ "failure_records": {
+  "path": "results/v168/controller_only/failure_records_v168-20261029T114726Z-a0bdd10c07ff.json",
+  "record_count": 3
+ },
+ "first_failure": {
+  "error": "Object of type ndarray is not JSON serializable",
+  "error_type": "TypeError",
+  "step": "estimates"
+ },
+ "model_calls": 0,
+ "reportable_D": null,
+ "run_id": "v168-20261029T114726Z-a0bdd10c07ff",
+ "schema": "iscat168.failure_package_notice.1",
+ "step_status": {
+  "bind": "OK",
+  "estimates": "FAILED",
+  "final": "OK",
+  "prepare": "OK",
+  "records": "OK",
+  "run": "OK",
+  "seal": "BLOCKED",
+  "status": "OK",
+  "tables": "OK",
+  "validate": "BLOCKED"
+ },
+ "this_archive_is_a_pass": false,
+ "what_this_archive_is": "the evidence of the authorized V168 round that failed; no step of that round was re-run, re-charged or replaced here"
+}

@@ -1,0 +1,179 @@
+{
+ "archive": "results/v168/iscat_v168_failure_return_001.zip",
+ "authorized_round_blocked_steps": [
+  "seal",
+  "validate"
+ ],
+ "authorized_round_failed_step": "estimates",
+ "contents_csv_header": "sha256,bytes,arcname",
+ "contents_csv_lists_itself": false,
+ "contract_pins": {
+  "results/v166/estimates.json": "8f97339e9645a29ec929e5c792d234a28821970338cf92a62d2982bfebba7634",
+  "results/v166/height_input/height_readings.json": "bbfd793aff48247623081dd607168cd9afbba2deeff5f37c7a0cbd62b032ad4e",
+  "results/v166/iscat_v166_return_001.zip": "866feed02333f244df72f55e38ccf74060962007a5010c5c29df5ebe9f16a74e",
+  "results/v166/logs/v165_budget.sqlite": "254b5485164a57865328c81f8890ea4aa458d1386ed6f5f34533f2848f7e4ece"
+ },
+ "controller_manifest_snapshot": {
+  "note": "written by the controller manifest step during the run; the package CSV is the complete inventory of this archive",
+  "path": "results/v168/manifest.json",
+  "sha256": "4265e524b581e827165c90fc8c7ec8dda2e9e198d45b8dff28fc0a0e0960ce45"
+ },
+ "excluded_from_package": {
+  "this_receipt_and_audit": "written after the archive, disclosed by path here",
+  "v166_return_zip": "results/v166/iscat_v166_return_001.zip is not re-embedded; its SHA-256 and size are pinned in seal.json, verification.json and provenance/v166/iscat_v166_return_001.zip.sha256"
+ },
+ "failure_pack": true,
+ "member_count_including_contents_csv": 13944,
+ "member_count_listed_in_csv": 13943,
+ "pack_gate": {
+  "accepted_absences": {
+   "estimates_merge_reuse": "estimates",
+   "seal": "seal"
+  },
+  "authorized_round_blocked_steps": [
+   "seal",
+   "validate"
+  ],
+  "authorized_round_dry_run": false,
+  "authorized_round_exit_code": 1,
+  "authorized_round_failed_step": "estimates",
+  "authorized_round_model_constructions": 1,
+  "authorized_round_requested_steps": [
+   "prepare",
+   "bind",
+   "run",
+   "tables",
+   "final",
+   "estimates",
+   "seal",
+   "validate",
+   "records",
+   "status"
+  ],
+  "authorized_round_run_id": "v168-20261029T114726Z-a0bdd10c07ff",
+  "authorized_round_step_status": {
+   "bind": "OK",
+   "estimates": "FAILED",
+   "final": "OK",
+   "prepare": "OK",
+   "records": "OK",
+   "run": "OK",
+   "seal": "BLOCKED",
+   "status": "OK",
+   "tables": "OK",
+   "validate": "BLOCKED"
+  },
+  "failure_record_count": 3,
+  "latest_trace_exit_code": 0,
+  "latest_trace_requested_steps": [
+   "tables",
+   "records",
+   "status",
+   "manifest",
+   "verification"
+  ],
+  "latest_trace_run_id": "v168-20261029T114726Z-a0bdd10c07ff",
+  "release_verification_basis": "STORED_ROUND_EVIDENCE_PLUS_GIT_HISTORY",
+  "required": {
+   "controller_console_log": [
+    "C:\\iscat\\v168\\results\\v168\\logs\\controller_run.log",
+    true
+   ],
+   "estimates_merge_reuse": [
+    "C:\\iscat\\v168\\results\\v168\\estimates_merge_reuse.json",
+    false
+   ],
+   "estimates_new": [
+    "C:\\iscat\\v168\\results\\v168\\estimates_new.json",
+    true
+   ],
+   "execution_truth_report": [
+    "C:\\iscat\\v168\\results\\v168\\00_execution_truth_report.md",
+    true
+   ],
+   "failure_notice": [
+    "C:\\iscat\\v168\\results\\v168\\failure_package_notice.json",
+    true
+   ],
+   "failure_records": [
+    "C:\\iscat\\v168\\results\\v168\\controller_only\\failure_records.json",
+    true
+   ],
+   "history_corrections": [
+    "C:\\iscat\\v168\\results\\v168\\history_corrections.md",
+    true
+   ],
+   "isolation_receipt": [
+    "C:\\iscat\\v168\\results\\v168\\estimator_inputs\\00_isolation_receipt.json",
+    true
+   ],
+   "ledger": [
+    "C:\\iscat\\v168\\results\\v168\\logs\\v168_budget.sqlite",
+    true
+   ],
+   "manifest": [
+    "C:\\iscat\\v168\\results\\v168\\manifest.json",
+    true
+   ],
+   "return_readme": [
+    "C:\\iscat\\v168\\results\\v168\\README_V168_RETURN.md",
+    true
+   ],
+   "seal": [
+    "C:\\iscat\\v168\\results\\v168\\seal.json",
+    false
+   ],
+   "status": [
+    "C:\\iscat\\v168\\results\\v168\\status.json",
+    true
+   ],
+   "verification": [
+    "C:\\iscat\\v168\\results\\v168\\verification.json",
+    true
+   ]
+  },
+  "seal_status": "ABSENT_SEAL_STEP_BLOCKED",
+  "step_sequence_paths": [
+   "C:\\iscat\\v168\\results\\v168\\controller_only\\step_sequence.json",
+   "C:\\iscat\\v168\\results\\v168\\controller_only\\step_sequence_v168-20261029T114726Z-a0bdd10c07ff.json",
+   "C:\\iscat\\v168\\results\\v168\\controller_only\\step_sequence_v168-20261029T114726Z-a0bdd10c07ff_001.json",
+   "C:\\iscat\\v168\\results\\v168\\controller_only\\step_sequence_v168-20261029T114726Z-a0bdd10c07ff_002.json"
+  ],
+  "step_sequence_run_ids": [
+   "v168-20261029T114726Z-a0bdd10c07ff",
+   "v168-20261029T114726Z-a0bdd10c07ff",
+   "v168-20261029T114726Z-a0bdd10c07ff",
+   "v168-20261029T114726Z-a0bdd10c07ff"
+  ],
+  "task_result_count": 23,
+  "validator_outputs": [],
+  "workstation_test_release": {
+   "camera_image_count": 12,
+   "code_identity_sha256": "a0bdd10c07ff58609728f6721e018d356e9afdf5d5ed846a120bf4286e77ec27",
+   "receipt_sha256": "02c91971e1e2e6fb5d21a740bd81ed94e2c7dabdd1f9f1104db0846000c793d6",
+   "scenario_count": 4,
+   "suite_count": 3,
+   "test_suite_sha256": "c7521e2c2b7cf1850e6d6d50d15c44a2751c5d47323be212dcb2ae150e7a0992",
+   "total_tests_recorded": 285,
+   "workflow_receipt_sha256": "cb0ba67f24ac20523aa6f17ad923614eda30be60b2e10e1033e38cd292a53331",
+   "workflow_run_id": "full_003"
+  }
+ },
+ "rehearsal": false,
+ "results_v168_files_in_package": 10914,
+ "results_v168_files_not_in_package": [
+  "results/v168/README_V168_RETURN.md",
+  "results/v168/iscat_v168_failure_return_001.zip",
+  "results/v168/iscat_v168_failure_return_001.zip.sha256"
+ ],
+ "round_status": "FAILED",
+ "run_id": "v168-20261029T114726Z-a0bdd10c07ff",
+ "schema": "iscat168.return_package_receipt.1",
+ "sidecar_path": "results/v168/iscat_v168_failure_return_001.zip.sha256",
+ "sidecar_sha256": "550fbc23d2e44958727fddca7277cb2a9029cf7aeca38f2032cba84d6a73d956",
+ "uncompressed_bytes_of_listed_members": 135481168,
+ "utc": "20261029T133823Z",
+ "why_the_zip_has_no_digest_of_itself": "a ZIP cannot contain the SHA-256 of its own bytes; the digest lives in the sidecar beside it and in the post-pack audit, both outside the archive",
+ "zip_bytes": 57904890,
+ "zip_sha256": "1d13219e89f4323aab9d0045ae011850ea5670da21d01f13f77149b1cf5488b9"
+}

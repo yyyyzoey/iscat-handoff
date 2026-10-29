@@ -1,0 +1,36 @@
+{
+  "explicitly_not_required": "A single-zip count for the whole current Git tree is NOT required and is not asserted.",
+  "schema": "iscat168.evidence_set_separation.1",
+  "set_1_v167_return_archive": {
+    "bytes": 27280244,
+    "crc32_full_scan": "ALL_MEMBERS_OK",
+    "hash_mismatches": 0,
+    "members": 5749,
+    "note": "Fixed 27 MB return archive; contains V167 prepared inputs and receipts.",
+    "path": "results/v167_prepared/pack_rehearsal/iscat_v167_rehearsal_20261028T204438Z.zip",
+    "payload_hashes_checked": 5748,
+    "sha256": "273b20b94b1053f4f25de725ab29f4ee534e4997931c7284f27361927755fcae",
+    "verified": true
+  },
+  "set_2_publish_corrections_outside_the_archive": {
+    "commits": {
+      "8452ee1b13dd2a15373b829e972aa108fea317c2": "V167 correction receipt",
+      "9d1eeaa": "V167 publish receipt (contained the wrong-table charges query error)",
+      "ab0cfeb7c34c8019143498965b5ef8e6ca3843d8": "V167 final append correction reading attempts table (V168 code parent)"
+    },
+    "correction_receipts_git_paths": [
+      "results/v167/audit/",
+      "results/v167/history_corrections.md",
+      "results/v167/00_execution_truth_report.md",
+      "results/v167/p5_delivery/"
+    ],
+    "note": "Append-only publish corrections made AFTER the archive was built; they are not members of set_1 and must not be hidden by widening excludes."
+  },
+  "set_3_inherited_v166_files": {
+    "height_readings_sha256": "bbfd793aff48247623081dd607168cd9afbba2deeff5f37c7a0cbd62b032ad4e",
+    "note": "Committed V166 science results inherited read-only; a third distinct set.",
+    "root": "results/v166/",
+    "science_commit": "06b35cd4e0a47f7f49ef4b05401a07266f2c03b6",
+    "starts_by_group_sha256": "3fe848fd660c728e9f9928b3d1c4f262b323a0a9dc5b4dfbba7b4d9b6804a324"
+  }
+}

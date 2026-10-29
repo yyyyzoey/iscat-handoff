@@ -1,0 +1,6 @@
+STEP_OK tables {}
+STEP_OK records {"record_count": 3}
+STEP_OK status {}
+STEP_OK manifest {"file_count": 10909}
+STEP_OK verification {"contract_pins_matched": 4}
+TRACE {"blocked_steps": [], "dry_run": false, "exit_code": 0, "failed_step": null, "model_constructions_in_process": 0, "read_context_reason": "cli_read_only_step_set", "read_only_control_path": true, "reportable_D": null, "requested_steps": ["tables", "records", "status", "manifest", "verification"], "run_id": "v168-20261029T114726Z-a0bdd10c07ff", "schema": "iscat168.step_sequence.1", "steps": [{"status": "OK", "step": "tables", "summary": {}, "wall_seconds": 0.125}, {"status": "OK", "step": "records", "summary": {"record_count": 3}, "wall_seconds": 0.0}, {"status": "OK", "step": "status", "summary": {}, "wall_seconds": 0.015}, {"status": "OK", "step": "manifest", "summary": {"file_count": 10909}, "wall_seconds": 4.016}, {"status": "OK", "step": "verification", "summary": {"contract_pins_matched": 4}, "wall_seconds": 0.047}]}

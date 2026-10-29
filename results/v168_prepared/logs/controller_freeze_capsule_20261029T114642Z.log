@@ -1,0 +1,303 @@
+{
+ "WORKSTATION_TEST_RELEASE_VERIFIED": false,
+ "authorization_sha256": "f8fb4b76f0ffc00eb5aa536f40180d250317afdfef8000c64fea7fa3e11d9f37",
+ "budget_caps_by_phase": {
+  "BIAS_STRESS": 7200,
+  "FINAL_VERIFY": 600,
+  "MODEL_BINDING": 199,
+  "SEARCH_EXTENSION": 2000
+ },
+ "budget_total": 9999,
+ "camera_h5_sha256": "074305df1b6bbd47f7f523b05d871312309e9b6ffa390cd50d0be18296427e26",
+ "code_file_count": 50,
+ "code_git_state": {
+  "bundle_tracked": true,
+  "dirty_git_entries": [],
+  "estimator_code_clean": true,
+  "estimator_code_tracked": true,
+  "git_head": "5dbfeec8c1655d360f3fdb6ae38d94e617d0d087",
+  "missing_from_git": [],
+  "required_controller_files": [
+   "tools/v168/__init__.py",
+   "tools/v168/run_all.py",
+   "tools/v168/v168_common.py",
+   "tools/v168/v168_controller.py",
+   "tools/v168/v168_jail.py",
+   "tools/v168/v168_plan.py",
+   "tools/v168/v168_rpc.py",
+   "tools/v168/v168_runner.py",
+   "tools/v168/v168_service.py",
+   "tools/v168/v168_validator.py",
+   "tools/v168/v168_worker.py"
+  ],
+  "schema": "iscat168.code_git_state.1",
+  "tracked_v168_files": 42,
+  "untracked_python_under_tools_v168": []
+ },
+ "code_identity_sha256": "a0bdd10c07ff58609728f6721e018d356e9afdf5d5ed846a120bf4286e77ec27",
+ "controller_code_sha256": {
+  "run_all.py": "c1d55125c0a17bd5c5457664d2666a5246b53db86d7b785befe70b74f66e6114",
+  "v168_controller.py": "b3db0551e38dfa95cf859249f226d7ee73397250a3c3e412511f848f81f969c2",
+  "v168_plan.py": "39fb332596cbf44feccb0d73ebb55b488cdfb2144d3451e30e807aad8fc3ad3f",
+  "v168_rpc.py": "a827df4a900601268c2beefff0a149b6d177f5789d424ceb4efcf34d06fbd77f",
+  "v168_runner.py": "844ea12f8187165e59caa040801d68271687de4d214a7a9bb547f8a7428e599a",
+  "v168_service.py": "b6ca8fced7ca88e9f14ff7e6d3b85edb730b6422c3dec11dd2b4d6a1b72bb361",
+  "v168_validator.py": "a06e4ea1a8a9ebd1be4b1b647a28d26c2327757b3360f491d10f822a94a056ac"
+ },
+ "deliverable_ledger_path": "C:\\iscat\\v168\\results\\v168\\logs\\v168_budget.sqlite",
+ "dry_run": true,
+ "estimator_code_sha256": {
+  "v168_common.py": "9baf5b45853aab92b1688eaaf2c6e5497c3aba7bae033d951bee4c9199da11f9",
+  "v168_jail.py": "95e4befb074f472cd8c90c419455fc162d91e7ced5698b35e3590f5e0645e9be",
+  "v168_rpc.py": "a827df4a900601268c2beefff0a149b6d177f5789d424ceb4efcf34d06fbd77f",
+  "v168_worker.py": "46e2f91927b8109532cbd139fbdf74fe01550739d7046144fb805e5bf6be03b9"
+ },
+ "executed_file_count": 16,
+ "execution_capsule_sha256": "c168e8795338f9e275b4836f0e834de01fe59b22c1be7b0b5918e5309eb80651",
+ "field_library_sha256": "203e9e5f2d888503b62d48888a0f2e5365477b06101227109a3e98286f541c0f",
+ "frozen_modules": {
+  "v152_budget_store": {
+   "bytes": 9437,
+   "path": "C:\\iscat\\v168\\tools\\v165_bundle\\code\\v152_budget_store.py",
+   "sha256": "98615b608f57f8ba531fc6a304aa45b371d8b24ca7793c0c252bb827847808b9"
+  },
+  "v152_gls_core": {
+   "bytes": 6917,
+   "path": "C:\\iscat\\v168\\tools\\v165_bundle\\code\\v152_gls_core.py",
+   "sha256": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5"
+  },
+  "v165_objective": {
+   "bytes": 3502,
+   "path": "C:\\iscat\\v168\\tools\\v165_bundle\\code\\v165_objective.py",
+   "sha256": "7d013551d9ae155de023daa1e1a6ad5678c6b038ae217fa79fe22c4e4eed64bd"
+  },
+  "v168_payload_gate": {
+   "bytes": 4184,
+   "path": "C:\\iscat\\v168\\tools\\v168\\v168_payload_gate.py",
+   "sha256": "368f5e961e0b9061dc9736e71ba0867f648d0bc719c33f2b7c8736cf6bf56708"
+  }
+ },
+ "git_blob_pinned_files": 72,
+ "git_head": "5dbfeec8c1655d360f3fdb6ae38d94e617d0d087",
+ "ledger_path": "C:\\iscat\\v168\\results\\v168\\dry_run\\a0bdd10c07ff\\logs\\v168_budget.sqlite",
+ "model_calls_at_this_point": 0,
+ "old_source_shas": {
+  "results/v166/estimates.json": "8f97339e9645a29ec929e5c792d234a28821970338cf92a62d2982bfebba7634",
+  "results/v166/height_input/height_readings.json": "bbfd793aff48247623081dd607168cd9afbba2deeff5f37c7a0cbd62b032ad4e",
+  "results/v166/iscat_v166_return_001.zip": "866feed02333f244df72f55e38ccf74060962007a5010c5c29df5ebe9f16a74e",
+  "results/v166/logs/v165_budget.sqlite": "254b5485164a57865328c81f8890ea4aa458d1386ed6f5f34533f2848f7e4ece"
+ },
+ "plan_sha256": "48727dbd9cbf14e09a6e4d6d7fe2c3d20af7d9a8d1106b049fcdc240ac03621c",
+ "printed_before_first_model_construction": true,
+ "reserved_by_phase": {
+  "BIAS_STRESS": {
+   "cap": 7200,
+   "tasks": 18
+  },
+  "FINAL_VERIFY": {
+   "cap": 600,
+   "tasks": 1
+  },
+  "MODEL_BINDING": {
+   "cap": 199,
+   "tasks": 2
+  },
+  "SEARCH_EXTENSION": {
+   "cap": 2000,
+   "tasks": 5
+  }
+ },
+ "run_id": "v168-20261029T112611Z-a0bdd10c07ff",
+ "schema": "iscat168.run_preamble.1",
+ "task_count": 23,
+ "tasks": [
+  {
+   "kind": "SEARCH_EXTENSION",
+   "payload_sha256": "d547bb7b41df5a840e67bd62f34f5d738d215d6b56ac0a53864e6fa62f5ae406",
+   "phase": "SEARCH_EXTENSION",
+   "source_task_id": "B100000_ANON_01_H10_R00",
+   "task_cap": 400,
+   "task_id": "V168_bba8c33973a8db3986792fdc"
+  },
+  {
+   "kind": "SEARCH_EXTENSION",
+   "payload_sha256": "5dded4298d00f186cf3a34bc228c2348334d614cb8fca86276825df6da288bf2",
+   "phase": "SEARCH_EXTENSION",
+   "source_task_id": "B100000_ANON_01_H10_R01",
+   "task_cap": 400,
+   "task_id": "V168_9c45c88443c5f30f1a029abb"
+  },
+  {
+   "kind": "SEARCH_EXTENSION",
+   "payload_sha256": "25dce3a259fe8c6e9765a741a22350879b49f0e488a7bd34e5cb6e9d6dd0dfdd",
+   "phase": "SEARCH_EXTENSION",
+   "source_task_id": "B100000_ANON_01_H1_R00",
+   "task_cap": 400,
+   "task_id": "V168_6cbafc09b3a96db857e72dde"
+  },
+  {
+   "kind": "SEARCH_EXTENSION",
+   "payload_sha256": "6a8125b28f979c849f8cbbeae1c4ece1423443b25ec48a69c5ebf0977e6ef8f4",
+   "phase": "SEARCH_EXTENSION",
+   "source_task_id": "B100000_ANON_01_H1_R01",
+   "task_cap": 400,
+   "task_id": "V168_57427e055bc675c65e2150c5"
+  },
+  {
+   "kind": "SEARCH_EXTENSION",
+   "payload_sha256": "1f51a1cc6b6cf4d5e1954555431d37684102c1356917cc82deead29de4464db9",
+   "phase": "SEARCH_EXTENSION",
+   "source_task_id": "B100000_ANON_01_H1_R02",
+   "task_cap": 400,
+   "task_id": "V168_35b5f8734a282d3cfaeb33b1"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "5d1e8e34731bd1e775bc58749e9f508e7350d354d67eaa3dece0b5d2eff74aac",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_02_H1_R00",
+   "task_cap": 400,
+   "task_id": "V168_f2f047fc919490a070ca7ddf"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "8d10de0530f645001b228bebceb891fc308ef28f9f5e723a122eb4c68c5f5b20",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_02_H1_R00",
+   "task_cap": 400,
+   "task_id": "V168_3b11bb5c6775c55cd2e2abdb"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "febd131ac5adf05e8a88dd9cf4d9ac940c1d24a6ddba48ca20c68c79d4d7d337",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_02_H1_R01",
+   "task_cap": 400,
+   "task_id": "V168_6aead30193f0729070eb7067"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "b15a3195ed3c460255e33fecde6645341b0f9b5dc9eee74b744353b29834e5d4",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_02_H1_R01",
+   "task_cap": 400,
+   "task_id": "V168_bfc371ebc3d068bd653e2b9b"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "91720d9dbc3348059e1aaecf70d105ebf892c6c9121e26349638592170c24e66",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_02_H1_R02",
+   "task_cap": 400,
+   "task_id": "V168_cd07a92e814bd03287c24b10"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "349937f95ca6e357223e7478314a24e130d8fc7b69fe10930236c1f4f0ecc993",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_02_H1_R02",
+   "task_cap": 400,
+   "task_id": "V168_226934a44622d6b6f73daa2a"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "26c224c9ce77f3d4bc157f0818069c14ad19d383652dbb4f39b1e44e7dfbe4ed",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_03_H1_R00",
+   "task_cap": 400,
+   "task_id": "V168_8fdc46599d121c1698858401"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "fe4a45fd1425135ae6eac4d76afd5ff4a4079fd4df39e033005a2f24eb10c0b6",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_03_H1_R00",
+   "task_cap": 400,
+   "task_id": "V168_ed84c3ba4e2cad6be40b4893"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "15be0561bb87e5b5eee7beaf10cff0216cb703de5deccdcb77661d87511b2873",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_03_H1_R01",
+   "task_cap": 400,
+   "task_id": "V168_e7b6d9b7b0d959ac5ec96ae4"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "dd79cb6546e878fbbe7a743896ff59f826c1972ca6b072522e20296d68f9912a",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_03_H1_R01",
+   "task_cap": 400,
+   "task_id": "V168_18cbbc3267084c6c7fe3979b"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "bc3a050e182628c9fdd618e4e38c894ea658ce8e424bbf6787540aec862cce82",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_03_H1_R02",
+   "task_cap": 400,
+   "task_id": "V168_cb928865c70c592afd426f68"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "b3dc9f94e750f3287c561322ff35b30912a1572de2505ad14fd506feb9d582bc",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_03_H1_R02",
+   "task_cap": 400,
+   "task_id": "V168_ef191a2e9fbf08f65f8c2902"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "47c8c885b0aa489fdd1abf7506aee25bf805bb6bf918d2f087dd1994dc528c84",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_04_H1_R00",
+   "task_cap": 400,
+   "task_id": "V168_3fbe1c0c3337d488c229424a"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "803616ca55fee36a2975f44a90e9167b5ca38a1e7e56700a97e237815313efc4",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_04_H1_R00",
+   "task_cap": 400,
+   "task_id": "V168_859307bd6e6e0e87f3d02622"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "fac523857e6851aaaee9af73f54808d57f4da19ba958b332e1efd412e7b58441",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_04_H1_R01",
+   "task_cap": 400,
+   "task_id": "V168_df5b094abb6400d8a9e7145e"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "9246adfea080a433cbd7cdef7fd4a19742896e15cb75f2ec3152c31d0a06d57e",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_04_H1_R01",
+   "task_cap": 400,
+   "task_id": "V168_118c3d139ca96775ed1148ae"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "751662dfcf4c1492a561fdc4bc16dcd3320cafb4fe6fe50380e896493561f8ee",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_04_H1_R02",
+   "task_cap": 400,
+   "task_id": "V168_18ee74dfe4a76a0bcd404ce0"
+  },
+  {
+   "kind": "BIAS_STRESS",
+   "payload_sha256": "011482dd0a7b2a6d9e6b685450412781c5b5657bf64fc993a6d276cd95b5dc74",
+   "phase": "BIAS_STRESS",
+   "source_task_id": "B100000_ANON_04_H1_R02",
+   "task_cap": 400,
+   "task_id": "V168_a62526d308d0ff9f58f6ea3f"
+  }
+ ],
+ "test_suite_sha256": "c7521e2c2b7cf1850e6d6d50d15c44a2751c5d47323be212dcb2ae150e7a0992",
+ "v166_release_commit": "06b35cd4e0a47f7f49ef4b05401a07266f2c03b6",
+ "workstation_test_release": null
+}
+FROZEN_EXECUTION_CAPSULE {"capsule_sha256": "c168e8795338f9e275b4836f0e834de01fe59b22c1be7b0b5918e5309eb80651", "code_identity_sha256": "a0bdd10c07ff58609728f6721e018d356e9afdf5d5ed846a120bf4286e77ec27", "executed_file_count": 16, "git_head": "5dbfeec8c1655d360f3fdb6ae38d94e617d0d087", "model_calls": 0, "path": "C:\\iscat\\v168\\results\\v168\\controller_only\\frozen_execution_capsule.json", "task_count": 23, "test_suite_sha256": "c7521e2c2b7cf1850e6d6d50d15c44a2751c5d47323be212dcb2ae150e7a0992", "workstation_test_release_receipt_sha256": "02c91971e1e2e6fb5d21a740bd81ed94e2c7dabdd1f9f1104db0846000c793d6"}

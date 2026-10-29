@@ -1,0 +1,17 @@
+{
+  "actual_bytes": 24576,
+  "bytes_before_and_after_equal": true,
+  "declared_bytes": 24576,
+  "expected_sha256": "212fc61391070cc0d8f07e41d1a356f31d76a4aed713bfc8c0e0031ef1d1eb34",
+  "match": true,
+  "mutation_performed_by_any_v168_tool": false,
+  "observed_at": "P0_after_all_read_only_audits",
+  "path": "C:\\iscat\\v168\\results\\v167\\logs\\v167_budget.sqlite",
+  "schema": "iscat168.old_ledger_hash_snapshot.1",
+  "sha256": "212fc61391070cc0d8f07e41d1a356f31d76a4aed713bfc8c0e0031ef1d1eb34",
+  "sidecars_present": {
+    "-journal": false,
+    "-shm": false,
+    "-wal": false
+  }
+}

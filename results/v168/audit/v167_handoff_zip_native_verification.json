@@ -1,0 +1,34 @@
+{
+ "archive_path": "C:\\Users\\PC\\Downloads\\iscat_v167_handoff.zip",
+ "bytes_actual": 36754,
+ "crc32_full_scan_result": "ALL_MEMBERS_OK",
+ "crc_scan_internal_marker": "testzip_none_means_all_member_data_match_stored_crc",
+ "directory_members": 0,
+ "duplicate_copies_agree": true,
+ "duplicate_copy_paths": [
+  "C:\\Users\\PC\\Downloads\\iscat_v167_handoff.zip",
+  "C:\\iscat\\v168\\tools\\v168_bundle\\original_v167_handoff.zip"
+ ],
+ "duplicate_member_names": [],
+ "first_crc_error_member": null,
+ "inventory_file": "manifest_sha256.csv",
+ "inventory_hash_mismatch_count": 0,
+ "inventory_hash_mismatches": [],
+ "inventory_payload_hashes_checked": 16,
+ "inventory_rows": 16,
+ "manifest_self_reference_rows": [],
+ "members_actual": 17,
+ "members_not_listed_in_inventory": [
+  "manifest_sha256.csv"
+ ],
+ "model_or_budget_activity": "NONE_READ_ONLY",
+ "no_model_import": true,
+ "note": "This receipt replaces, by a new file name, the 0-byte artefact results/v168/audit/v167_archive_native_verification.json. The empty file is left in place and disclosed; nothing was overwritten.",
+ "schema": "iscat168.v167_handoff_zip_native_verification.1",
+ "sha256_actual": "70cd6aba446eb047bc13a95abdfc088fe1549f04af36bf166e8f63da6250a719",
+ "sha256_expected_from_v168_p0": "70cd6aba446eb047bc13a95abdfc088fe1549f04af36bf166e8f63da6250a719",
+ "sha256_match": true,
+ "symlink_members": [],
+ "unsafe_or_absolute_paths": [],
+ "verified_at_unix": 1793278637.6044698
+}

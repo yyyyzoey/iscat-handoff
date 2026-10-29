@@ -1,0 +1,342 @@
+{
+ "all_suites_green": true,
+ "budget_core_state_unchanged": true,
+ "budget_ledger_opened_mid_run": false,
+ "budget_ledger_present": false,
+ "budget_proof_mode": "absent_ledger",
+ "budget_state_after": {
+  "charge_digest": {
+   "ledger_absent": true
+  },
+  "estimates_new_exists": false,
+  "ledger_exists": false,
+  "ledger_path": "C:\\iscat\\v168\\results\\v168\\logs\\v168_budget.sqlite",
+  "ledger_sha256": null,
+  "primary_task_dirs": 0,
+  "seal_exists": false
+ },
+ "budget_state_before": {
+  "charge_digest": {
+   "ledger_absent": true
+  },
+  "estimates_new_exists": false,
+  "ledger_exists": false,
+  "ledger_path": "C:\\iscat\\v168\\results\\v168\\logs\\v168_budget.sqlite",
+  "ledger_sha256": null,
+  "primary_task_dirs": 0,
+  "seal_exists": false
+ },
+ "contract_reference": "section 3.3",
+ "real_f2c_tripwire": {
+  "exists": true,
+  "file": "real_f2c_tripwire.txt",
+  "path": "C:\\iscat\\v168\\results\\v168\\workstation_tests\\full_001\\v168_production_suite\\real_f2c_tripwire.txt",
+  "real_construction_attempts": 0,
+  "record_types": [
+   "ZERO_REAL_F2C_MODEL_CONSTRUCTION_ATTEMPTS"
+  ],
+  "records": 1,
+  "sha256": "0ec689f1a9defc5a7973db3863e96608546ba228aa2543fc088241b6cbbca5fb",
+  "zero_marker_written": true
+ },
+ "run_id": "full_001",
+ "schema": "iscat168.workstation_tests.1",
+ "scope": "LOCAL_TEST_INVENTORY_ONLY: synthetic forwards and plan guards, NOT physical validation and NOT the authorized V168 fit",
+ "source_hashes_after": {
+  "tools/v165_bundle/run_workstation_tests.py": "c3e5ed24451ed7e35257aba8a72812f82dc65358d5cdb12316e8388350dcc528",
+  "tools/v165_bundle/test_inventory.json": "9721b30a865dc868218178b969d9265e0f4b61000d0b16d6ca608f482987a0d8",
+  "tools/v168/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/v168/run_all.py": "c1d55125c0a17bd5c5457664d2666a5246b53db86d7b785befe70b74f66e6114",
+  "tools/v168/run_workstation_tests.py": "9fad79748a128aa393c4c44d23b8b75d2a210a6d616e53d1ac50a49af32fed4e",
+  "tools/v168/tests/conftest.py": "137050476e449e57140daaa13cc1fb4a98c8807da525ddd9a0b5ab1719b9115e",
+  "tools/v168/tests/test_v168_billing.py": "c134bc2a9c8edd3bf1fd9c88e9f6f90120f621aab87075ea59864f9371440973",
+  "tools/v168/tests/test_v168_capsule_freeze.py": "fd5d6772ff3ef0717b9a7498b4ad922eecb948b9551b4724a30c0df571ec0688",
+  "tools/v168/tests/test_v168_frozen_literals.py": "e66585da5daa1adde96649e298ee563b5c917490634394fec6740c4b58d4ff75",
+  "tools/v168/tests/test_v168_isolation.py": "010f150b07a970ba1433728f75efea1ac59428ccc7950fecf78a9b83ddd9e4c7",
+  "tools/v168/tests/test_v168_model_identity.py": "d709a4aa3373e754dd550e530a589f48e0f05210b0a95097f1919a3c54641fd5",
+  "tools/v168/tests/test_v168_persistence.py": "d1a91847bdeb0ff392163758faaa3943f7a5ddb822bafde110cf4746c43c17b9",
+  "tools/v168/tests/test_v168_pipeline.py": "b5b77c6f4ab35099073031b34915952ac08ca307f2227cc6cd612bc610938e7e",
+  "tools/v168/tests/test_v168_readonly_report.py": "0cbc2503ed830787af985bb67b651d025b12bade2eb52408a2605f4f9ffd7277",
+  "tools/v168/tests/test_v168_reporting.py": "c78f034850daf32ede4e8e44e56650d0e7331bbd02463916347c7999ed1d2449",
+  "tools/v168/tests/test_v168_start_quota.py": "84dde19bed4a77cd2ba8e7ff48f92edf4734c84483d55939ea8fc4809abc275b",
+  "tools/v168/tests/test_v168_test_binding.py": "0a66448e5837ec639381ae189189c38f9cca938620fa011956d6e10a0bcfa807",
+  "tools/v168/v168_common.py": "9baf5b45853aab92b1688eaaf2c6e5497c3aba7bae033d951bee4c9199da11f9",
+  "tools/v168/v168_controller.py": "a1ea771e6db1d03753ce2743cec6bb5e093eadadc80fe4708284907b1d0ae5a3",
+  "tools/v168/v168_jail.py": "95e4befb074f472cd8c90c419455fc162d91e7ced5698b35e3590f5e0645e9be",
+  "tools/v168/v168_payload_gate.py": "368f5e961e0b9061dc9736e71ba0867f648d0bc719c33f2b7c8736cf6bf56708",
+  "tools/v168/v168_plan.py": "39fb332596cbf44feccb0d73ebb55b488cdfb2144d3451e30e807aad8fc3ad3f",
+  "tools/v168/v168_rpc.py": "a827df4a900601268c2beefff0a149b6d177f5789d424ceb4efcf34d06fbd77f",
+  "tools/v168/v168_runner.py": "844ea12f8187165e59caa040801d68271687de4d214a7a9bb547f8a7428e599a",
+  "tools/v168/v168_service.py": "b6ca8fced7ca88e9f14ff7e6d3b85edb730b6422c3dec11dd2b4d6a1b72bb361",
+  "tools/v168/v168_test_binding.py": "e65f39f11d2f0acab0bac83053091dcd7b9e9c74975fe88375b82533586e418a",
+  "tools/v168/v168_validator.py": "a06e4ea1a8a9ebd1be4b1b647a28d26c2327757b3360f491d10f822a94a056ac",
+  "tools/v168/v168_worker.py": "46e2f91927b8109532cbd139fbdf74fe01550739d7046144fb805e5bf6be03b9",
+  "tools/v168_bundle/approved_core/v152_gls_core.py": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+  "tools/v168_bundle/approved_core/v165_objective.py": "7d013551d9ae155de023daa1e1a6ad5678c6b038ae217fa79fe22c4e4eed64bd",
+  "tools/v168_bundle/code/v168_recovery_gate.py": "20324b460801304c5d304e92bb9c1114a177e5e771a3ae2c58f77314a52a8ae7",
+  "tools/v168_bundle/config/v168_authorization.json": "f8fb4b76f0ffc00eb5aa536f40180d250317afdfef8000c64fea7fa3e11d9f37",
+  "tools/v168_bundle/manifest_sha256.csv": "b5dc14a85a2989ca7f2ba0360d1ef8ed4875c0c4b63286aaff42dfcb326cea3a",
+  "tools/v168_bundle/tests/test_approved_objective.py": "1eae9fd22b5e221db29f3fbe87e540253df9f9ab85754937a2cf33683a5493d6",
+  "tools/v168_bundle/tests/test_recovery_gate.py": "2e5c5b1b8d712ce06b7b367a085466a5d091b7a9fca38082b05804655505631b"
+ },
+ "source_hashes_before": {
+  "tools/v165_bundle/run_workstation_tests.py": "c3e5ed24451ed7e35257aba8a72812f82dc65358d5cdb12316e8388350dcc528",
+  "tools/v165_bundle/test_inventory.json": "9721b30a865dc868218178b969d9265e0f4b61000d0b16d6ca608f482987a0d8",
+  "tools/v168/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tools/v168/run_all.py": "c1d55125c0a17bd5c5457664d2666a5246b53db86d7b785befe70b74f66e6114",
+  "tools/v168/run_workstation_tests.py": "9fad79748a128aa393c4c44d23b8b75d2a210a6d616e53d1ac50a49af32fed4e",
+  "tools/v168/tests/conftest.py": "137050476e449e57140daaa13cc1fb4a98c8807da525ddd9a0b5ab1719b9115e",
+  "tools/v168/tests/test_v168_billing.py": "c134bc2a9c8edd3bf1fd9c88e9f6f90120f621aab87075ea59864f9371440973",
+  "tools/v168/tests/test_v168_capsule_freeze.py": "fd5d6772ff3ef0717b9a7498b4ad922eecb948b9551b4724a30c0df571ec0688",
+  "tools/v168/tests/test_v168_frozen_literals.py": "e66585da5daa1adde96649e298ee563b5c917490634394fec6740c4b58d4ff75",
+  "tools/v168/tests/test_v168_isolation.py": "010f150b07a970ba1433728f75efea1ac59428ccc7950fecf78a9b83ddd9e4c7",
+  "tools/v168/tests/test_v168_model_identity.py": "d709a4aa3373e754dd550e530a589f48e0f05210b0a95097f1919a3c54641fd5",
+  "tools/v168/tests/test_v168_persistence.py": "d1a91847bdeb0ff392163758faaa3943f7a5ddb822bafde110cf4746c43c17b9",
+  "tools/v168/tests/test_v168_pipeline.py": "b5b77c6f4ab35099073031b34915952ac08ca307f2227cc6cd612bc610938e7e",
+  "tools/v168/tests/test_v168_readonly_report.py": "0cbc2503ed830787af985bb67b651d025b12bade2eb52408a2605f4f9ffd7277",
+  "tools/v168/tests/test_v168_reporting.py": "c78f034850daf32ede4e8e44e56650d0e7331bbd02463916347c7999ed1d2449",
+  "tools/v168/tests/test_v168_start_quota.py": "84dde19bed4a77cd2ba8e7ff48f92edf4734c84483d55939ea8fc4809abc275b",
+  "tools/v168/tests/test_v168_test_binding.py": "0a66448e5837ec639381ae189189c38f9cca938620fa011956d6e10a0bcfa807",
+  "tools/v168/v168_common.py": "9baf5b45853aab92b1688eaaf2c6e5497c3aba7bae033d951bee4c9199da11f9",
+  "tools/v168/v168_controller.py": "a1ea771e6db1d03753ce2743cec6bb5e093eadadc80fe4708284907b1d0ae5a3",
+  "tools/v168/v168_jail.py": "95e4befb074f472cd8c90c419455fc162d91e7ced5698b35e3590f5e0645e9be",
+  "tools/v168/v168_payload_gate.py": "368f5e961e0b9061dc9736e71ba0867f648d0bc719c33f2b7c8736cf6bf56708",
+  "tools/v168/v168_plan.py": "39fb332596cbf44feccb0d73ebb55b488cdfb2144d3451e30e807aad8fc3ad3f",
+  "tools/v168/v168_rpc.py": "a827df4a900601268c2beefff0a149b6d177f5789d424ceb4efcf34d06fbd77f",
+  "tools/v168/v168_runner.py": "844ea12f8187165e59caa040801d68271687de4d214a7a9bb547f8a7428e599a",
+  "tools/v168/v168_service.py": "b6ca8fced7ca88e9f14ff7e6d3b85edb730b6422c3dec11dd2b4d6a1b72bb361",
+  "tools/v168/v168_test_binding.py": "e65f39f11d2f0acab0bac83053091dcd7b9e9c74975fe88375b82533586e418a",
+  "tools/v168/v168_validator.py": "a06e4ea1a8a9ebd1be4b1b647a28d26c2327757b3360f491d10f822a94a056ac",
+  "tools/v168/v168_worker.py": "46e2f91927b8109532cbd139fbdf74fe01550739d7046144fb805e5bf6be03b9",
+  "tools/v168_bundle/approved_core/v152_gls_core.py": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+  "tools/v168_bundle/approved_core/v165_objective.py": "7d013551d9ae155de023daa1e1a6ad5678c6b038ae217fa79fe22c4e4eed64bd",
+  "tools/v168_bundle/code/v168_recovery_gate.py": "20324b460801304c5d304e92bb9c1114a177e5e771a3ae2c58f77314a52a8ae7",
+  "tools/v168_bundle/config/v168_authorization.json": "f8fb4b76f0ffc00eb5aa536f40180d250317afdfef8000c64fea7fa3e11d9f37",
+  "tools/v168_bundle/manifest_sha256.csv": "b5dc14a85a2989ca7f2ba0360d1ef8ed4875c0c4b63286aaff42dfcb326cea3a",
+  "tools/v168_bundle/tests/test_approved_objective.py": "1eae9fd22b5e221db29f3fbe87e540253df9f9ab85754937a2cf33683a5493d6",
+  "tools/v168_bundle/tests/test_recovery_gate.py": "2e5c5b1b8d712ce06b7b367a085466a5d091b7a9fca38082b05804655505631b"
+ },
+ "source_hashes_unchanged": true,
+ "suite_receipt_sha256": {
+  "suite_00": "011750e22ba111e78a0bef9af9613dd2c0552878f35581eb6e792feaff58a4fa",
+  "suite_01": "c3136aa9423450f7fb3edb88464faf73298d09a1671c33a899a8b0758c0c1746",
+  "suite_02": "3c6b6b049add8136efba78a0766e502e3834056b1a22a2cc1fd1b06218d23393"
+ },
+ "suites": [
+  {
+   "all_green": true,
+   "captured_utc": "2026-10-29T10:55:56.136875+00:00",
+   "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "C:\\iscat\\v168\\tools\\v165_bundle\\run_workstation_tests.py",
+    "--out",
+    "C:\\iscat\\v168\\results\\v168\\workstation_tests\\full_001\\v166_inherited_41\\v165_driver"
+   ],
+   "counts_reconcile": true,
+   "cwd": "C:\\iscat\\v168",
+   "inherited_outcomes": {
+    "collected": 41,
+    "collection_errors": 0,
+    "exitstatus": 0,
+    "outcomes_present": true,
+    "outcomes_sha256": "9846f6d28a2937cda4f61a16bdb18651e9f99fbbe4d460e7e1c91c064f3a2f25",
+    "phase_pass_records": {
+     "call": 41,
+     "setup": 41,
+     "teardown": 41
+    },
+    "phase_reports": 123,
+    "reported_nodeids": 41,
+    "schema": "v165_receipt_plugin"
+   },
+   "inherited_real_f2c_calls": 0,
+   "inherited_receipt_sha256": "6cb5ac9dd55aca1eb01430386f8767b1b655442381665d47291734299a02fd0b",
+   "inherited_returncode": 0,
+   "inherited_scope": "COMPONENT_SYNTHETIC_FAULT_AND_ISOLATION_TESTS_NOT_PHYSICAL_VALIDATION",
+   "python": "C:\\ProgramData\\anaconda3\\python.exe",
+   "python_version": "3.11.7",
+   "returncode": 0,
+   "suite": "v166_inherited_41",
+   "suite_dir": "results/v168/workstation_tests/full_001/v166_inherited_41",
+   "target": "C:\\iscat\\v168\\tools\\v165_bundle\\run_workstation_tests.py",
+   "tests": 41,
+   "v166_inherited_sha256": {
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "c170f2b098b6ab277754e8e354bf0a099bb5d09ca34f1a6accf72b02c8d10a41"
+   }
+  },
+  {
+   "all_green": true,
+   "captured_utc": "2026-10-29T10:55:58.812193+00:00",
+   "collected": 57,
+   "collection": {
+    "captured_utc": "2026-10-29T10:55:59.668120+00:00",
+    "collect_only_sha256": {
+     "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stdout": "ce4f5744d82d8cb9b6ae6745a63a609b545474bfb2049eb159b1d6f6dc31a82c"
+    },
+    "collected_nodeids": 57,
+    "collection_failed": false,
+    "command": [
+     "C:\\ProgramData\\anaconda3\\python.exe",
+     "-m",
+     "pytest",
+     "--collect-only",
+     "-q",
+     "tests"
+    ],
+    "cwd": "C:\\iscat\\v168\\tools\\v168_bundle",
+    "nodeids_sha256": "2feeacbfc016cb45807903beaa92adf4a30fe8ba9a85401d9bd7f6ac66b4ad50",
+    "python": "C:\\ProgramData\\anaconda3\\python.exe",
+    "python_version": "3.11.7",
+    "returncode": 0
+   },
+   "collection_errors": 0,
+   "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml",
+    "C:\\iscat\\v168\\results\\v168\\workstation_tests\\full_001\\bundle_local_38\\junit.xml",
+    "-p",
+    "v165_receipt_plugin",
+    "tests"
+   ],
+   "counts_reconcile": true,
+   "cwd": "C:\\iscat\\v168\\tools\\v168_bundle",
+   "environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+   },
+   "errors": 0,
+   "exitstatus": 0,
+   "external_pytest_addopts_ignored": null,
+   "failures": 0,
+   "junit_present": true,
+   "junit_sha256": "09e571cc5f367e26abf795c57279b7bcc10da14c4a5de6c5650dd38b598e7dae",
+   "outcome_recorder": "plugin",
+   "outcomes_present": true,
+   "outcomes_sha256": "da6e847711aa5bb200169f392f85c828414c052515ffebf6a7938be2e09c89fb",
+   "phase_pass_records": {
+    "call": 57,
+    "setup": 57,
+    "teardown": 57
+   },
+   "phase_records": 57,
+   "phase_reports": 171,
+   "python": "C:\\ProgramData\\anaconda3\\python.exe",
+   "python_version": "3.11.7",
+   "reported_nodeids": 57,
+   "returncode": 0,
+   "run_sha256": {
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "2eb5dfe6aabd36b6702bd18a69e8c5ce2104022070fd978aec3dec09a5a5eec3"
+   },
+   "schema": "v165_receipt_plugin",
+   "skipped": 0,
+   "suite": "bundle_plan_and_core",
+   "suite_dir": "results/v168/workstation_tests/full_001/bundle_local_38",
+   "target": "tests",
+   "tests": 57,
+   "tripwire": {
+    "performed": false
+   }
+  },
+  {
+   "all_green": true,
+   "captured_utc": "2026-10-29T11:02:32.610144+00:00",
+   "collection": {
+    "captured_utc": "2026-10-29T11:02:33.382656+00:00",
+    "collect_only_sha256": {
+     "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "stdout": "08b1fe6b314be33931a191253a06cbd2891129c3614e14bad2c19598706f34d9"
+    },
+    "collected_nodeids": 185,
+    "collection_failed": false,
+    "command": [
+     "C:\\ProgramData\\anaconda3\\python.exe",
+     "-m",
+     "pytest",
+     "--collect-only",
+     "-q",
+     "tools/v168/tests"
+    ],
+    "cwd": "C:\\iscat\\v168",
+    "nodeids_sha256": "273249549884bc134e6e7d8f9d5efe86c8b290fdb8d657ea92ea28e3a83de0cd",
+    "python": "C:\\ProgramData\\anaconda3\\python.exe",
+    "python_version": "3.11.7",
+    "returncode": 0
+   },
+   "command": [
+    "C:\\ProgramData\\anaconda3\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml",
+    "C:\\iscat\\v168\\results\\v168\\workstation_tests\\full_001\\v168_production_suite\\junit.xml",
+    "tools/v168/tests"
+   ],
+   "counts_reconcile": true,
+   "cwd": "C:\\iscat\\v168",
+   "environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+   },
+   "errors": 0,
+   "exitstatus": 0,
+   "external_pytest_addopts_ignored": null,
+   "failures": 0,
+   "final_outcomes": {
+    "failed": 0,
+    "passed": 185,
+    "skipped": 0
+   },
+   "junit_present": true,
+   "junit_sha256": "13dd3dab86d38c22c8ee790f94969cca47411025250b1e10bc0291871aba214b",
+   "outcome_recorder": "conftest",
+   "outcomes_present": true,
+   "outcomes_sha256": "156ba72d71fe40fc210b7ce535f9667a393430538e62c8912a9b9cbfe107eb7a",
+   "phase_pass_records": {
+    "call": 185,
+    "setup": 185,
+    "teardown": 185
+   },
+   "phase_records": 185,
+   "python": "C:\\ProgramData\\anaconda3\\python.exe",
+   "python_version": "3.11.7",
+   "returncode": 0,
+   "run_sha256": {
+    "stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "dd1b5502a95cdd72d5d258275b33ab12419e5fb15d7ef1ec59f49cdb45e46d9b"
+   },
+   "schema": "iscat168.pytest_outcomes.1",
+   "skipped": 0,
+   "suite": "v168_production",
+   "suite_dir": "results/v168/workstation_tests/full_001/v168_production_suite",
+   "target": "tools/v168/tests",
+   "tests": 185,
+   "tripwire": {
+    "exists": true,
+    "file": "real_f2c_tripwire.txt",
+    "path": "C:\\iscat\\v168\\results\\v168\\workstation_tests\\full_001\\v168_production_suite\\real_f2c_tripwire.txt",
+    "real_construction_attempts": 0,
+    "record_types": [
+     "ZERO_REAL_F2C_MODEL_CONSTRUCTION_ATTEMPTS"
+    ],
+    "records": 1,
+    "sha256": "0ec689f1a9defc5a7973db3863e96608546ba228aa2543fc088241b6cbbca5fb",
+    "zero_marker_written": true
+   }
+  }
+ ],
+ "total_tests_recorded": 283,
+ "utc": "2026-10-29T11:02:33.399361+00:00",
+ "zero_charged_calls_proved": true
+}

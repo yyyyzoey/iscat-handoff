@@ -1,0 +1,20 @@
+{
+ "action_taken": "RETAINED_UNMODIFIED_AND_SUPERSEDED_BY_A_NEW_FILE",
+ "affected_path": "C:\\iscat\\v168\\results\\v168\\audit\\v167_archive_native_verification.json",
+ "budget_activity": "NONE_READ_ONLY",
+ "bytes_actual": 0,
+ "defect": "ZERO_BYTE_AUDIT_ARTEFACT",
+ "disclosed_at_unix": 1793278651.655052,
+ "empty_sha256_reference": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "is_empty": true,
+ "last_modified_unix": 1793255410.8865983,
+ "model_calls": 0,
+ "old_file_deleted": false,
+ "old_file_overwritten": false,
+ "produced_by": null,
+ "producer_note": "No module under tools/v168 or tools/v168_bundle names this file, so it was not written by the V168 production path. The P0 scratch writer that was supposed to fill it produced no bytes; the exact command is not recoverable from the retained evidence and is not being reconstructed here.",
+ "schema": "iscat168.audit_artefact_defect_disclosure.1",
+ "sha256_actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "superseded_by": "results/v168/audit/v167_handoff_zip_native_verification.json",
+ "superseded_by_sha256": "6ee790cd40fff5e5f9e5a9947fdf111bcf303df6e579ced56185ff6d9efdc3a6"
+}

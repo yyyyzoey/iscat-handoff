@@ -1,0 +1,27 @@
+{
+ "authoritative_release_after_correction": "full_002",
+ "defect": "code_identities() counted the git-ignored generated file tools/v168_bundle/.pytest_cache/README.md, so the release bound a 51-file identity 53a7ff0d32c1386cfc0c2697d0547e7eed46d369729db2bf0502a543fe8d29a5 that a clean checkout cannot reproduce; independent re-verification would have reported CODE_CHANGED_AFTER_TESTS / RELEASE_CODE_FILE_COUNT",
+ "digest_note": "self_digest is the receipt_sha256 field inside the document; sha256 is the hash of the file bytes",
+ "history_rewritten": false,
+ "model_calls_charged": 0,
+ "no_charge_consumed": true,
+ "preserved_copy": "results/v168/workstation_tests/full_001/WITHDRAWN_workstation_test_release_receipt.full_001.json",
+ "preserved_copy_sha256": "a9bc56b3e8fcbbb2dab4c48bb84d9e553ec1d4c2dd3631f19c36a8a3939a373c",
+ "reason": "RELEASE RECEIPT WITHDRAWN, NOT DELETED; RAW TEST EVIDENCE PRESERVED",
+ "schema": "iscat168.workstation_test_release_withdrawal.1",
+ "tests_in_full_001": {
+  "bundle_plan_and_core": 57,
+  "total": 283,
+  "v166_inherited_41": 41,
+  "v168_production": 185
+ },
+ "tests_were_green": true,
+ "withdrawn_release_receipt_sha256": "a9bc56b3e8fcbbb2dab4c48bb84d9e553ec1d4c2dd3631f19c36a8a3939a373c",
+ "withdrawn_release_self_digest_sha256": "2dcdc71b4957aa3a8f82206d3f8c8edbcc30c1cef6b9540ce408f231ef3984f3",
+ "withdrawn_run_id": "full_001",
+ "withdrawn_utc": "2026-10-29T11:08:51Z",
+ "workflow_evidence_untouched": {
+  "path": "results/v168/workstation_tests/full_001/workstation_test_receipt.json",
+  "sha256": "dd632e0ca3e96e592fa085de562061e569d237e0055f44eaa3968972649a0c6e"
+ }
+}

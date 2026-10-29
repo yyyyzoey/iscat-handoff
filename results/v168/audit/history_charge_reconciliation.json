@@ -1,0 +1,33 @@
+{
+  "combined_ceiling": 10000,
+  "evidence": {
+    "old_attempt": {
+      "detail": "{\"frames_sha256\":null,\"invocation\":\"charged_model_forward\",\"kind\":\"MODEL_LOADER\",\"ledger_seq\":1,\"requested_theta\":[30.0,350.0,0.0,0.0],\"start_index\":0,\"task_id\":\"V167_LOADER_1\",\"theta_sha256\":\"6cf3b6eee80372e1f36d11f746d18a1f8a81842d17e486ac2199fa53e486e588\"}",
+      "seq": 1,
+      "state": "CHARGED",
+      "task": "V167_LOADER_1",
+      "theta": "[30.0,350.0,0.0,0.0]",
+      "ts": 1793214295.0581424
+    },
+    "old_ledger_bytes": 24576,
+    "old_ledger_sha256": "212fc61391070cc0d8f07e41d1a356f31d76a4aed713bfc8c0e0031ef1d1eb34"
+  },
+  "external_classification": "POST_RETURN_VALIDATION_REFUSAL_RECORDED_IN_V167_TRACE",
+  "failure_stage": "POST_RETURN_VALIDATION",
+  "invented_C_image": false,
+  "invented_RETURNED": false,
+  "ledger_settled_in_old_snapshot": false,
+  "new_authority": 9999,
+  "note": "No RETURNED status or missing prediction is invented; original DB stays unchanged.",
+  "old_charge_carried": 1,
+  "old_row_state_kept": "CHARGED",
+  "old_snapshot": "212fc61391070cc0d8f07e41d1a356f31d76a4aed713bfc8c0e0031ef1d1eb34",
+  "old_state_kept": "CHARGED",
+  "optical_solver_no_return_claimed": false,
+  "qualifying_prediction_persisted": false,
+  "raised_by": "V167 pre-repair loader return-identity check (v167_service.charged_call post-return validation)",
+  "real_callback_reached_validation": true,
+  "schema": "iscat168.continuation_link.1",
+  "stack_error_class": "MODEL_ID_MISMATCH_IN_RETURN",
+  "this_file_is_a_side_note_only": true
+}

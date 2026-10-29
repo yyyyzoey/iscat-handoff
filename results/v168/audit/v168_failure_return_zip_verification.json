@@ -1,0 +1,100 @@
+{
+ "archive": "C:\\iscat\\v168\\results\\v168\\iscat_v168_failure_return_001.zip",
+ "audit_is_last_byte": true,
+ "crc_testzip_first_bad_member": null,
+ "csv_digest_or_size_mismatches": [],
+ "csv_missing_member_rows": [],
+ "csv_rows": 13943,
+ "csv_rows_without_member": [],
+ "estimator_input_forbidden_key_offenders": {},
+ "estimator_input_json_members_scanned": 377,
+ "experimental_absolute_diameter_validated": false,
+ "failure_pack": true,
+ "meaning": "mechanical acceptance of the archive only; it is not independent scientific acceptance",
+ "member_count": 13944,
+ "model_calls": 0,
+ "on_disk_manifest_sha256": "4265e524b581e827165c90fc8c7ec8dda2e9e198d45b8dff28fc0a0e0960ce45",
+ "on_disk_verification_sha256": "22517e2ef3294c9b40622255117aad73d8b6b31acbd3be9bc4f9fa7200c0db2d",
+ "pack_passes": {
+  "closing_pass_exit_code": 0,
+  "closing_pass_steps": "tables,records,status,manifest,verification",
+  "failure_notice": {
+   "authorized_round_exit_code": 1,
+   "blocked_steps": [
+    "seal",
+    "validate"
+   ],
+   "budget_is_the_rounds_own_ledger": true,
+   "deliverables_absent_because_of_that_failure": {
+    "results/v168/estimates_merge_reuse.json": "estimates step FAILED",
+    "results/v168/seal.json": "seal step BLOCKED",
+    "results/v168/validator_only/": "validate step BLOCKED; the sealed truth was never opened, so the independent score is NOT_STARTED"
+   },
+   "experimental_absolute_diameter_validated": false,
+   "failed_step": "estimates",
+   "failure_records": {
+    "path": "results/v168/controller_only/failure_records_v168-20261029T114726Z-a0bdd10c07ff.json",
+    "record_count": 3
+   },
+   "first_failure": {
+    "error": "Object of type ndarray is not JSON serializable",
+    "error_type": "TypeError",
+    "step": "estimates"
+   },
+   "model_calls": 0,
+   "path": "C:\\iscat\\v168\\results\\v168\\failure_package_notice.json",
+   "reportable_D": null,
+   "run_id": "v168-20261029T114726Z-a0bdd10c07ff",
+   "schema": "iscat168.failure_package_notice.1",
+   "sha256": "e6fcaeb9abacf8f6fe84078f185ef3a8cf55bb705224b9573deba22683dbf4c2",
+   "step_status": {
+    "bind": "OK",
+    "estimates": "FAILED",
+    "final": "OK",
+    "prepare": "OK",
+    "records": "OK",
+    "run": "OK",
+    "seal": "BLOCKED",
+    "status": "OK",
+    "tables": "OK",
+    "validate": "BLOCKED"
+   },
+   "this_archive_is_a_pass": false,
+   "what_this_archive_is": "the evidence of the authorized V168 round that failed; no step of that round was re-run, re-charged or replaced here"
+  },
+  "failure_pack": true,
+  "rehearsal": false,
+  "stable_console_log": {
+   "bytes": 17940,
+   "mode": "written",
+   "model_calls": 0,
+   "path": "C:\\iscat\\v168\\results\\v168\\logs\\controller_run.log",
+   "schema": "iscat168.stable_run_log.1",
+   "sha256": "9d0acaa9769e845edf6ac636694dbba077810692d72ada0a39622dc9ceb31ef3",
+   "source_transcripts": [
+    {
+     "bytes": 17880,
+     "path": "C:\\iscat\\v168\\results\\v168\\logs\\controller_run_20261029T114718Z.log",
+     "sha256": "1501c396610c0526b641a5c8e7c2011b46b9f0989fcd178e69010a49a0d16d3f"
+    }
+   ]
+  }
+ },
+ "package_receipt_sha256": "b76d195187de8585f8be060cb274066030cd7da3c56a0d54f505827a84d807be",
+ "present_00_V168_唯一执行合同.md": true,
+ "present_README_V168_RETURN.md": true,
+ "present_failure_package_notice.json": true,
+ "present_manifest.json": true,
+ "present_seal.json": false,
+ "present_status.json": true,
+ "present_verification.json": true,
+ "reportable_D": null,
+ "schema": "iscat168.return_zip_verification.1",
+ "sealed_truth_file_packaged": false,
+ "sidecar_matches": true,
+ "this_archive_is_a_pass": false,
+ "unsafe_paths": [],
+ "utc": "20261029T133827Z",
+ "zip_bytes": 57904890,
+ "zip_sha256": "1d13219e89f4323aab9d0045ae011850ea5670da21d01f13f77149b1cf5488b9"
+}

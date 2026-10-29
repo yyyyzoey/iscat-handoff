@@ -1,0 +1,26 @@
+{
+ "authoritative_release_after_correction": "full_003",
+ "defect": "the tree moved after this release was recorded: commit 5dbfeec fixed a real crash in freeze_capsule (KeyError 'git_head' because v168_test_binding.verify() returned no git_head while the capsule freeze read it). full_002 binds code identity b2af54a92f3b34538787e5e7c9c617e24780715000407b9d85fd4cf88df393f4 at git_head 7d3bd259031504e2df411fd314bf4e945e491db9; the tree now carries a0bdd10c07ff58609728f6721e018d356e9afdf5d5ed846a120bf4286e77ec27 at git_head 5dbfeec8c1655d360f3fdb6ae38d94e617d0d087, so verify() would refuse it as CODE_CHANGED_AFTER_TESTS and it cannot authorize a run",
+ "history_rewritten": false,
+ "model_calls_charged": 0,
+ "no_charge_consumed": true,
+ "preserved_copy": "results/v168/workstation_tests/full_002/WITHDRAWN_workstation_test_release_receipt.full_002.json",
+ "preserved_copy_sha256": "bbd69b2df35f4234053888575f524295a93201d70f574f0c33db095fbf6892d4",
+ "reason": "RELEASE RECEIPT WITHDRAWN, NOT DELETED; RAW TEST EVIDENCE PRESERVED",
+ "schema": "iscat168.workstation_test_release_withdrawal.1",
+ "tests_in_full_002": {
+  "bundle_plan_and_core": null,
+  "total": 285,
+  "v166_inherited_41": null,
+  "v168_production": null
+ },
+ "tests_were_green": true,
+ "withdrawn_release_receipt_sha256": "bbd69b2df35f4234053888575f524295a93201d70f574f0c33db095fbf6892d4",
+ "withdrawn_release_self_digest_sha256": "793a0b03e587bda2cced768c59251d824042e555af093f4bb98604596cc788ca",
+ "withdrawn_run_id": "full_002",
+ "withdrawn_utc": "2026-10-29T11:46:24Z",
+ "workflow_evidence_untouched": {
+  "path": "results/v168/workstation_tests/full_002/workstation_test_receipt.json",
+  "sha256": "984429a7648bae042084871793352a419fd6c423a90bd76d65a776d8aa988bf3"
+ }
+}
