@@ -560,6 +560,152 @@ def verify(run_id: str | None = None, *, codes: dict | None = None) -> dict:
     return gate
 
 
+def _blob_sha_at(commit: str, rel: str) -> str:
+    """SHA-256 of the bytes git holds for ``rel`` at ``commit``.
+
+    Read-only, and it reads history rather than the working tree, which is what a report on a
+    round whose code has since been repaired has to do.
+    """
+    proc = subprocess.run(("git", "-C", str(controller.ROOT), "show", f"{commit}:{rel}"),
+                          capture_output=True)
+    require(proc.returncode == 0,
+            "HISTORY_BLOB_MISSING:" + commit + ":" + rel
+            + ":" + (proc.stderr or b"").decode("utf-8", "replace")[:200])
+    return hashlib.sha256(proc.stdout).hexdigest()
+
+
+def verify_history(*, capsule: dict, round_preamble: dict,
+                   run_id: str | None = None) -> dict:
+    """Authenticate the stored workstation release evidence for a round that already ran.
+
+    ``verify()`` is the model-authority gate: it re-hashes the live source tree, so it can only
+    pass while the tested bytes are still the bytes on disk.  Contract 11.6 requires a failed
+    round to stay deliverable after the code has been repaired, and re-running the tests would
+    describe the repaired tree rather than the round, so this path authenticates the round's own
+    record instead:
+
+    * the receipt self-digest, the workflow receipt it points at, and each suite receipt are
+      re-hashed from disk, so a rewritten receipt is still refused;
+    * every source file the receipt binds is compared with the blob git holds at the round's own
+      ``git_head``, so the claim is checked against history rather than the working tree;
+    * the recorded node ID inventories, per-test outcomes, error streams and the pinned input
+      provenance are re-read from the evidence files and must still agree;
+    * the code identity, frozen test-suite identity and git head must match four ways: the
+      release receipt, the frozen execution capsule, the round preamble and the release block the
+      preamble copied out of the gate.
+
+    It states plainly what it does not claim: the production suite is not re-collected here, the
+    code-identity digest itself is not recomputed from history, and the live tree is compared and
+    published, with ``code_changed_after_round`` true when they differ.  This authorizes nothing;
+    it only proves the history of a round that already spent what it spent.
+    """
+    if run_id is None:
+        found = find_run_ids()
+        require(len(found) == 1, "WORKSTATION_RELEASE_RECEIPT_COUNT:" + ",".join(found))
+        run_id = found[0]
+    path = release_path(run_id)
+    require(path.is_file(), "WORKSTATION_TEST_RELEASE_RECEIPT_MISSING:" + str(path))
+    release = read_json(path)
+    require(str(release.get("schema")) == RELEASE_SCHEMA,
+            "RELEASE_RECEIPT_SCHEMA:" + str(release.get("schema")))
+    require(_self_digest(release) == release.get("receipt_sha256"), "RELEASE_RECEIPT_SELF_DIGEST")
+    require(release.get("all_suites_green") is True, "RELEASE_SUITES_NOT_GREEN")
+    require(int(release.get("model_calls") or 0) == 0, "RELEASE_CHARGED_MODEL_CALLS")
+    # Four-way agreement on the identity the round ran under.  The capsule and the preamble were
+    # both written before the first model construction, so neither can have been edited to chase
+    # a later repair.
+    pins = {"code_identity_sha256": release["code_identity_sha256"],
+            "test_suite_sha256": release["test_suite_sha256"],
+            "git_head": release["git_head"]}
+    for label, document in (("frozen_execution_capsule", capsule),
+                            ("round_preamble", round_preamble),
+                            ("round_preamble_release_block",
+                             round_preamble.get("workstation_test_release") or {})):
+        for key, value in pins.items():
+            require(str(document.get(key)) == str(value),
+                    "HISTORY_PIN_MISMATCH:" + label + ":" + key + ":"
+                    + str(document.get(key)) + "!=" + str(value))
+    require(str(round_preamble.get("WORKSTATION_TEST_RELEASE_VERIFIED")) == "True",
+            "HISTORY_ROUND_PREAMBLE_DID_NOT_PASS_THE_TEST_GATE")
+    require(str(release["receipt_sha256"])
+            == str((round_preamble.get("workstation_test_release") or {})["receipt_sha256"]),
+            "HISTORY_RECEIPT_SHA_NOT_IN_PREAMBLE")
+    require(int(capsule.get("code_file_count") or 0) == int(release["code_file_count"]),
+            "HISTORY_CODE_FILE_COUNT:" + str(capsule.get("code_file_count")))
+    workflow_file = controller.ROOT / str(release["workflow_receipt_path"])
+    require(workflow_file == workflow_path(run_id), "WORKFLOW_RECEIPT_PATH:" + str(workflow_file))
+    require(sha_file(workflow_file) == release["workflow_receipt_sha256"],
+            "WORKFLOW_RECEIPT_SHA_CHANGED")
+    workflow = read_workflow(workflow_file)
+    # The source binding is checked against the commit the receipt names, not against the disk.
+    bound = release.get("source_binding") or {}
+    records = sorted((workflow.get("source_hashes_after") or {}).items())
+    require(bool(records), "HISTORY_SOURCE_BINDING_EMPTY")
+    production = [rel for rel, _digest in records
+                  if rel.startswith("tools/v168/") and not rel.startswith("tools/v168/tests/")]
+    require(bool(production), "HISTORY_SOURCE_BINDING_HAS_NO_PRODUCTION_MODULE")
+    for rel, recorded in records:
+        require(_blob_sha_at(str(release["git_head"]), rel) == recorded,
+                "HISTORY_SOURCE_BLOB_CHANGED:" + rel)
+        row = (bound.get("files") or {}).get(rel)
+        require(row and row.get("sha256") == recorded, "HISTORY_BOUND_ROW:" + rel)
+    for index, row in enumerate(release["suites"]):
+        suite_path = workflow_file.parent / f"suite_{index:02d}_receipt.json"
+        require(sha_file(suite_path) == row["receipt_sha256"],
+                "SUITE_RECEIPT_SHA_CHANGED:" + str(row["suite"]))
+        suite = read_json(suite_path)
+        require(int(row["index"]) == index and str(suite.get("suite")) == str(row["suite"]),
+                "SUITE_ROW_ORDER:" + str(row["suite"]))
+        directory = controller.ROOT / row["suite_dir"]
+        inventory = _inventory(directory, suite)
+        require({key: value for key, value in inventory.items() if key != "nodeids"}
+                == row["inventory"], "NODEID_INVENTORY_CHANGED:" + str(row["suite"]))
+        require(int(suite.get("tests") or 0) == inventory["count"],
+                "SUITE_TEST_COUNT_VS_INVENTORY:" + str(row["suite"]))
+        outcomes = _outcomes(directory)
+        require(outcomes["channel_sha256"] == row["outcomes"]["channel_sha256"],
+                "OUTCOME_CHANNEL_SHA:" + row["suite"])
+        require(outcomes["counts"] == row["outcomes"]["counts"], "OUTCOME_COUNTS:" + row["suite"])
+        require(not outcomes["problems"], "SUITE_HAS_UNHANDLED_PROBLEMS:" + str(row["suite"]) + ":"
+                                         + json.dumps(outcomes["problems"][:2])[:600])
+        require(_streams(directory) == row["error_log_streams"], "ERROR_LOG_STREAMS:" + row["suite"])
+    provenance = input_provenance()
+    require(canon(provenance) == canon(release["input_provenance"]),
+            "INPUT_PROVENANCE_CHANGED")
+    codes = controller.code_identities()
+    live_suite = controller.test_suite_sha256()
+    gate = {"schema": "iscat168.workstation_test_history_verify.1",
+            "path": str(path), "receipt_sha256": release["receipt_sha256"],
+            "workflow_run_id": run_id,
+            "workflow_receipt_sha256": release["workflow_receipt_sha256"],
+            "total_tests_recorded": release["total_tests_recorded"],
+            "suite_count": len(release["suites"]),
+            "git_head": release["git_head"],
+            "code_identity_sha256": release["code_identity_sha256"],
+            "test_suite_sha256": release["test_suite_sha256"],
+            "scenario_count": provenance["scenario_count"],
+            "camera_image_count": provenance["camera_image_count"],
+            "WORKSTATION_TEST_RECEIPT_SCHEMA": WORKFLOW_SCHEMA,
+            "WORKSTATION_TEST_RECEIPT_VERIFIED": True,
+            "WORKSTATION_TESTS_PASS": True,
+            "verification_basis": "STORED_ROUND_EVIDENCE_PLUS_GIT_HISTORY",
+            "authorizes_model_construction": False,
+            "production_suite_recollected": False,
+            "production_suite_recollection_note": (
+                "live re-collection runs against the tree on disk, which after a repair is not "
+                "the tree the round tested; the recorded inventory and outcomes are verified "
+                "instead, and no pass is claimed for the live tree"),
+            "live_git_head": codes["git_head"],
+            "live_code_identity_sha256": codes["identity_sha256"],
+            "live_test_suite_sha256": live_suite,
+            "code_changed_after_round": bool(codes["identity_sha256"]
+                                            != release["code_identity_sha256"]),
+            "test_suite_changed_after_round": bool(live_suite != release["test_suite_sha256"]),
+            "bound_source_files": len(records),
+            "refused_receipt_kinds": FORBIDDEN_RECEIPTS, "model_calls": 0}
+    return gate
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--build", metavar="WORKFLOW_RUN_ID")

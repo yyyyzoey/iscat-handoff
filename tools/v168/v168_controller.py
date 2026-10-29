@@ -1318,7 +1318,11 @@ def binding_witnesses(ctx: dict) -> dict[str, dict]:
 
 def bind_model(ctx: dict) -> dict:
     """The one authorized construction, then the V166 witness cross-check."""
-    service = service_mod.PredictionService(ctx["store"])
+    # The service owns the prediction tree it reads and writes, so a rehearsal has to be
+    # pointed at the rehearsal tree: its ledger is the rehearsal ledger, and validating
+    # the authorized round's durable predictions against that empty ledger would refuse
+    # the rehearsal for the wrong reason.  For a real run _evidence() is OUT unchanged.
+    service = service_mod.PredictionService(ctx["store"], out=_evidence(ctx, OUT))
     ctx["service"] = service
     resumed = service.load_existing_predictions()
     # One deterministic receipt for the whole round: the authorized run owns the primary
@@ -1327,7 +1331,7 @@ def bind_model(ctx: dict) -> dict:
     import_path = _evidence(ctx, OUT / "logs" / "v166_witness_import.json")
     witness_import = service.import_v166_predictions(
         PARENT_WS, V166 / "logs" / "v165_budget.sqlite", log_path=import_path)
-    construction_log = OUT / "logs" / "model_construction.json"
+    construction_log = service.log_path
     try:
         construction = service.ensure_loader(dry_run=bool(ctx["dry_run"]))
     except service_mod.ReconstructionRefused as exc:
@@ -1991,7 +1995,20 @@ def estimates_documents(ctx: dict) -> dict:
             merge_rows.append(dict(row, identity="MERGE_REUSE_NOT_A_NEW_ESTIMATE"))
     reuse_rows = []
     for source, ref in sorted(ctx["refs"]["zero_bias"].items()):
-        reuse_rows.append(dict(ref, identity="ZERO_BIAS_REFERENCE_NOT_A_NEW_ESTIMATE",
+        # The reference C arrives as the ndarray the scorer reads in memory, and this table
+        # is published evidence.  Handing json.dumps a live array is what killed the
+        # estimates step on the authorized round, so the published row carries the same
+        # numbers as nested lists, re-verified against the digest the ref was built with.
+        # ctx["refs"] keeps the array itself: the bias witness scorer needs it in memory.
+        array = np.asarray(ref["prediction_C_array"], dtype=float)
+        require(array_sha(array) == ref["C_sha256"],
+                "ZERO_BIAS_REUSE_ARRAY_SHA:" + source)
+        published = {key: value for key, value in ref.items()
+                     if key != "prediction_C_array"}
+        published["prediction_C_array"] = array.tolist()
+        published["prediction_C_shape"] = [int(dim) for dim in array.shape]
+        published["prediction_C_sha256_reverified"] = True
+        reuse_rows.append(dict(published, identity="ZERO_BIAS_REFERENCE_NOT_A_NEW_ESTIMATE",
                                reuse_kind="V166_SEALED_H1_FINAL_ANSWER"))
     merge = {"schema": "iscat168.estimates_merge_reuse.1", "run_id": ctx["run_id"],
              "r_merge_rows": merge_rows, "r_merge_count": len(merge_rows),
@@ -2084,6 +2101,39 @@ def _stage_text(path: Path, text: str) -> str:
 def failure_records(ctx: dict) -> dict:
     """Every failure, refusal and unfinished state, kept in one durable register."""
     records: list[dict] = []
+    # Controller step failures are failures of the round, not of a task, and they used to
+    # be invisible here: an estimates crash left record_count at 0 while the trace next to
+    # it said FAILED.  Every published trace for this run is read back, plus the live trace
+    # of the process that is calling, so a failed step always has a record.
+    traces: list[list[dict]] = []
+    _current, history = latest_evidence(CONTROL / "step_sequence.json")
+    for path in history:
+        if not path.is_file():
+            continue
+        document = read_json(path)
+        if str(document.get("run_id")) != str(ctx["run_id"]):
+            continue
+        traces.append(list(document.get("steps") or []))
+    if ctx.get("step_trace"):
+        traces.append(list(ctx["step_trace"]))
+    seen_steps: set[tuple] = set()
+    for steps in traces:
+        for step in steps:
+            name = str(step.get("step"))
+            state = str(step.get("status"))
+            if state not in ("FAILED", "BLOCKED"):
+                continue
+            key = (name, state, str(step.get("error", "")), str(step.get("blocked_by", "")))
+            if key in seen_steps:
+                continue
+            seen_steps.add(key)
+            records.append({"record_type": "CONTROLLER_STEP_" + state, "step": name,
+                            "error_type": step.get("error_type"),
+                            "error": (step.get("error") or "")[:2000] or None,
+                            "blocked_by": step.get("blocked_by"),
+                            "reason": step.get("reason"),
+                            "traceback_tail": (step.get("traceback_tail") or "")[-3000:]
+                            or None})
     for entry in ctx["plan"]["entries"]:
         task_id = str(entry["task_id"])
         path = OUT / "tasks" / task_id / "result.json"
@@ -2180,7 +2230,13 @@ def status_document(ctx: dict) -> dict:
         "P3_authorized_computation": {
             "EXECUTION": (round_doc.get("status", "EXECUTED")
                           if round_ran else "NOT_STARTED"),
-            "VERIFICATION": ("%d of 23 tasks sealed" % round_doc.get("tasks_planned", 0)
+            # P3 may only claim what its own run_round.json proves: the number of task
+            # result documents that persisted.  "sealed" belongs to P5, so this says
+            # plainly whether seal.json exists yet instead of implying P3 sealed anything.
+            "VERIFICATION": ("%d of 23 task result documents persisted, %s"
+                             % (round_doc.get("tasks_planned", 0),
+                                "seal recorded by P5" if (OUT / "seal.json").exists()
+                                else "not yet sealed")
                              if round_ran else "NOT_STARTED"),
             "EVIDENCE": str(round_path),
             "SCIENTIFIC_SCOPE": "simulated F2c development fits only"},
@@ -2764,6 +2820,10 @@ def main(argv: list[str] | None = None) -> int:
     ctx: dict[str, Any] = {}
     exit_code = 0
     failed_step: str | None = None
+    # The trace list is handed to the steps before it is finished, so the failure register
+    # written by this same process can see the step that just failed instead of waiting for
+    # a later closing pass.  It is the same list object, appended to in place.
+    ctx["step_trace"] = trace
     if evidence_only and "prepare" not in wanted:
         ctx.update(read_context(reason="cli_read_only_step_set"))
     for name in wanted:

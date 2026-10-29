@@ -18,6 +18,8 @@ Modes (mutually exclusive):
   --run                the authorized run: one construction, at most 10,000 charged calls
   --pack-rehearsal     exercise the packer against today's tree, primary names untouched
   --pack               gate, then build the unique return ZIP plus its external receipts
+  --pack-failure       contract 11.6: pack the evidence of a round that failed, under the
+                       same read-only rules, with no claim of acceptance
   --status             read-only summary of the ledger, task states and contract pins
 """
 from __future__ import annotations
@@ -49,6 +51,10 @@ PLAN = PREPARED / "controller_only" / "plan.json"
 TASKS = OUT / "tasks"
 PREPARED_LOG = PREPARED / "logs"
 ZIP_NAME = "iscat_v168_return_001.zip"
+# Contract 11.6 asks for the evidence of a failed round as well, and a failure must not be
+# delivered under a name that reads like a pass, so the archive for it is a different,
+# equally unique file name.
+FAILURE_ZIP_NAME = "iscat_v168_failure_return_001.zip"
 REHEARSAL_DIR = PREPARED / "pack_rehearsal"
 
 # The authorized round: one construction, then the two computation phases, then the
@@ -375,14 +381,27 @@ def _publish_stable_run_log() -> dict[str, Any]:
             "model_calls": 0}
 
 
-def _pack_gate() -> dict[str, Any]:
-    """Every primary deliverable named by contract section 11 must really exist."""
+def _pack_gate(*, failure: bool = False) -> dict[str, Any]:
+    """Every primary deliverable named by contract section 11 must really exist.
+
+    ``failure=True`` packs a round that did not finish, which contract 11.6 demands.  It is not
+    a relaxed gate: it requires the opposite exit code from the normal gate, insists that some
+    step really FAILED, and accepts a missing artefact only when the step that owed it is the
+    step that failed or was blocked in that same trace.  A round that exited zero cannot be
+    packed as a failure, and its release evidence is authenticated from history rather than
+    re-collected, because re-collecting now would describe a repaired tree instead of the round.
+    """
     checks: dict[str, Any] = {}
     traces = _traces()
     _require(bool(traces), "PACK_GATE_NO_STEP_SEQUENCE_AT_ALL")
     rounds = [doc for _path, doc in traces
               if "run" in (doc.get("requested_steps") or [])]
     _require(bool(rounds), "PACK_GATE_NO_AUTHORIZED_ROUND_TRACE")
+    # Several spending traces are legitimate only as resumes of one run identity; a second
+    # identity means a fresh retry bought extra budget, and nothing it touched gets packaged.
+    round_ids = {str(doc.get("run_id")) for doc in rounds}
+    _require(len(round_ids) == 1, "PACK_GATE_MORE_THAN_ONE_RUN_IDENTITY:"
+             + ",".join(sorted(round_ids)))
     closing = traces[-1][1]
     sequence = rounds[-1]
     checks["step_sequence_paths"] = [str(path) for path, _doc in traces]
@@ -397,11 +416,27 @@ def _pack_gate() -> dict[str, Any]:
     checks["latest_trace_exit_code"] = closing.get("exit_code")
     checks["latest_trace_requested_steps"] = closing.get("requested_steps")
     _require(not checks["authorized_round_dry_run"], "ONLY_A_DRY_RUN_HAS_BEEN_RECORDED")
-    _require(checks["authorized_round_exit_code"] == 0,
-             "AUTHORIZED_RUN_DID_NOT_EXIT_ZERO:"
-             + str(checks["authorized_round_exit_code"]))
+    round_steps = {str(row.get("step")): str(row.get("status"))
+                   for row in (sequence.get("steps") or [])}
+    checks["authorized_round_step_status"] = round_steps
+    if failure:
+        _require(checks["authorized_round_exit_code"] != 0,
+                 "AUTHORIZED_ROUND_EXITED_ZERO_USE_PACK:"
+                 + str(checks["authorized_round_run_id"]))
+        _require(bool(sequence.get("failed_step")), "PACK_GATE_TRACE_HAS_NO_FAILED_STEP")
+        checks["authorized_round_failed_step"] = sequence.get("failed_step")
+        checks["authorized_round_blocked_steps"] = list(sequence.get("blocked_steps") or [])
+    else:
+        _require(checks["authorized_round_exit_code"] == 0,
+                 "AUTHORIZED_RUN_DID_NOT_EXIT_ZERO:"
+                 + str(checks["authorized_round_exit_code"]))
     _require(closing.get("exit_code") == 0,
              "CLOSING_EVIDENCE_PASS_DID_NOT_EXIT_ZERO:" + str(closing.get("exit_code")))
+    # The packer always closes a round with a read-only evidence pass, so the newest trace has
+    # to be that pass.  A newest trace which is itself a spending round means the archive would
+    # describe a second round rather than the authorized one.
+    _require(closing.get("read_only_control_path") is True,
+             "CLOSING_PASS_IS_NOT_A_READONLY_REPORT:" + str(closing.get("run_id")))
     _require(sequence.get("run_id") == closing.get("run_id"),
              "CLOSING_PASS_BELONGS_TO_ANOTHER_ROUND:" + str(sequence.get("run_id"))
              + "!=" + str(closing.get("run_id")))
@@ -413,17 +448,9 @@ def _pack_gate() -> dict[str, Any]:
     # authorized round's own preamble must show it passed that gate before it reserved.
     # A round delivered on strategy-function evidence, or on a receipt that has gone
     # stale, stops here rather than becoming a ZIP.
-    try:
-        release = test_binding.verify()
-    except ValueError as exc:
-        _require(False, "PACK_GATE_NO_WORKSTATION_TEST_RELEASE_RECEIPT:" + str(exc)[:400])
     capsule_path = CONTROL / "frozen_execution_capsule.json"
     _require(capsule_path.is_file(), "PACK_GATE_NO_FROZEN_EXECUTION_CAPSULE:" + str(capsule_path))
     capsule_pin = ctrl.read_json(capsule_path)
-    _require(release["test_suite_sha256"] == capsule_pin.get("test_suite_sha256"),
-             "PACK_GATE_TEST_SUITE_NOT_CAPSULE_TEST_SUITE:"
-             + str(release["test_suite_sha256"]) + "!="
-             + str(capsule_pin.get("test_suite_sha256")))
     preamble_path, _history = ctrl.latest_evidence(
         CONTROL / "preambles" / (str(checks["authorized_round_run_id"]) + ".json"))
     _require(preamble_path.is_file(), "PACK_GATE_NO_ROUND_PREAMBLE:" + str(preamble_path))
@@ -433,6 +460,30 @@ def _pack_gate() -> dict[str, Any]:
     _require(str(round_preamble.get("execution_capsule_sha256"))
              == str(capsule_pin.get("capsule_sha256")),
              "PACK_GATE_PREAMBLE_CAPSULE_MISMATCH")
+    if failure:
+        # The tree has been repaired since this round spent its budget, so re-collecting the
+        # production suite would test bytes the round never ran.  The round's own release
+        # evidence is authenticated from disk and from git history instead, and that path
+        # authorizes nothing: it only proves the history of a round that already ran.
+        try:
+            release = test_binding.verify_history(capsule=capsule_pin,
+                                                  round_preamble=round_preamble)
+        except ValueError as exc:
+            _require(False, "PACK_GATE_NO_AUTHENTICATED_TEST_RELEASE_HISTORY:"
+                     + str(exc)[:400])
+    else:
+        try:
+            release = test_binding.verify()
+        except ValueError as exc:
+            _require(False, "PACK_GATE_NO_WORKSTATION_TEST_RELEASE_RECEIPT:" + str(exc)[:400])
+    _require(release["test_suite_sha256"] == capsule_pin.get("test_suite_sha256"),
+             "PACK_GATE_TEST_SUITE_NOT_CAPSULE_TEST_SUITE:"
+             + str(release["test_suite_sha256"]) + "!="
+             + str(capsule_pin.get("test_suite_sha256")))
+    # Which gate was satisfied is part of the delivered evidence, never something a reader has
+    # to infer from the wording of a report.
+    checks["release_verification_basis"] = release.get(
+        "verification_basis", "LIVE_PRODUCTION_SUITE_RECOLLECTED")
     checks["workstation_test_release"] = {
         key: release[key] for key in (
             "receipt_sha256", "workflow_run_id", "workflow_receipt_sha256",
@@ -461,18 +512,52 @@ def _pack_gate() -> dict[str, Any]:
         "history_corrections": OUT / "history_corrections.md",
         "return_readme": OUT / "README_V168_RETURN.md",
         "controller_console_log": LOGS / "controller_run.log",
+        # The register used to be the one deliverable the gate never looked at, which is how a
+        # round whose estimates step crashed was packaged with record_count 0 beside it.
+        "failure_records": CONTROL / "failure_records.json",
     }
+    if failure:
+        # Written before the closing evidence pass, so the manifest hashes it and a reader
+        # inside the archive can see what the archive claims to be.
+        required["failure_notice"] = OUT / "failure_package_notice.json"
     checks["required"] = {name: (str(path), path.is_file())
                           for name, path in required.items()}
     missing = [name for name, (_p, present) in checks["required"].items() if not present]
-    _require(not missing, "PACK_GATE_MISSING:" + ",".join(missing))
+    if not failure:
+        _require(not missing, "PACK_GATE_MISSING:" + ",".join(missing))
+    else:
+        # A step that never ran cannot have written its artefact, and the honest delivery says
+        # so; but an absence is admitted only when the very step that owed it is the step this
+        # trace records as FAILED or BLOCKED.  Anything else missing is still a refusal, and
+        # the failed step has to appear in the failure register that ships in the archive.
+        owed_by = {"seal": "seal", "estimates_merge_reuse": "estimates"}
+        unexplained = [name for name in missing
+                       if round_steps.get(owed_by.get(name, "")) not in ("FAILED", "BLOCKED")]
+        _require(not unexplained, "PACK_GATE_FAILURE_MISSING:" + ",".join(unexplained))
+        checks["accepted_absences"] = {name: owed_by[name] for name in missing if name in owed_by}
+        current, _versions = ctrl.latest_evidence(CONTROL / "failure_records.json")
+        register = ctrl.read_json(current)
+        checks["failure_record_count"] = register.get("record_count")
+        named = {str(row.get("step")) for row in (register.get("records") or [])
+                 if str(row.get("record_type", "")).startswith("CONTROLLER_STEP_")}
+        _require(str(sequence.get("failed_step")) in named,
+                 "PACK_GATE_FAILED_STEP_NOT_IN_REGISTER:"
+                 + str(sequence.get("failed_step")) + "|register_steps="
+                 + ",".join(sorted(named)))
     validator = sorted((OUT / "validator_only").glob("*.json"))
-    _require(bool(validator), "PACK_GATE_NO_VALIDATOR_OUTPUT")
     checks["validator_outputs"] = [path.name for path in validator]
-    seal = ctrl.read_json(OUT / "seal.json")
-    checks["seal_status"] = seal.get("status")
-    _require(seal.get("status") == "SEALED_BEFORE_VALIDATOR",
-             "PACK_GATE_SEAL_NOT_SEALED_BEFORE_VALIDATOR:" + str(seal.get("status")))
+    if not validator:
+        _require(failure and round_steps.get("validate") in ("FAILED", "BLOCKED"),
+                 "PACK_GATE_NO_VALIDATOR_OUTPUT")
+    if failure:
+        checks["seal_status"] = (ctrl.read_json(OUT / "seal.json").get("status")
+                                 if (OUT / "seal.json").is_file()
+                                 else "ABSENT_SEAL_STEP_" + round_steps.get("seal", "UNKNOWN"))
+    else:
+        seal = ctrl.read_json(OUT / "seal.json")
+        checks["seal_status"] = seal.get("status")
+        _require(seal.get("status") == "SEALED_BEFORE_VALIDATOR",
+                 "PACK_GATE_SEAL_NOT_SEALED_BEFORE_VALIDATOR:" + str(seal.get("status")))
     return checks
 
 
@@ -504,7 +589,8 @@ def _mapping_source_paths(document: Any, *, found: set[str] | None = None) -> li
     return sorted(Path(item) for item in hits)
 
 
-def _collect_members(*, rehearsal: bool) -> tuple[list[tuple[Path, str]], list[str]]:
+def _collect_members(*, rehearsal: bool,
+                     failure: bool = False) -> tuple[list[tuple[Path, str]], list[str]]:
     """Build the (host file, arcname) list and report any required file that is absent."""
     members: list[tuple[Path, str]] = []
     missing: list[str] = []
@@ -548,7 +634,10 @@ def _collect_members(*, rehearsal: bool) -> tuple[list[tuple[Path, str]], list[s
         name = path.name
         if name.endswith(".zip") or name.endswith(".zip.sha256"):
             continue
-        if name in {"README_V168_RETURN.md", "return_package_receipt.json"}:
+        # The README is carried once at the archive root, and a packer's own receipt is written
+        # after the archive, so neither belongs in the results tree walk.
+        if name in {"README_V168_RETURN.md", "return_package_receipt.json",
+                    "failure_package_receipt.json"}:
             continue
         add(path, "results/v168/" + path.relative_to(OUT).as_posix())
     for path in sorted(PREPARED.rglob("*")):
@@ -603,15 +692,23 @@ def _collect_members(*, rehearsal: bool) -> tuple[list[tuple[Path, str]], list[s
     return members, sorted(set(missing))
 
 
-def _build_package(*, rehearsal: bool) -> dict[str, Any]:
-    """Write the unique ZIP, its external SHA sidecar and the two closing receipts."""
+def _build_package(*, rehearsal: bool, failure: bool = False) -> dict[str, Any]:
+    """Write the unique ZIP, its external SHA sidecar and the two closing receipts.
+
+    ``failure=True`` produces ``FAILURE_ZIP_NAME`` instead of ``ZIP_NAME`` and is gated by
+    ``_pack_gate(failure=True)``; exactly one archive of each kind can ever be written, because
+    the packer refuses a name that is already taken rather than overwriting evidence.
+    """
     destination_dir = REHEARSAL_DIR if rehearsal else OUT
-    name = ("iscat_v168_rehearsal_" + _utc() + ".zip") if rehearsal else ZIP_NAME
+    if rehearsal:
+        name = "iscat_v168_rehearsal_" + _utc() + ".zip"
+    else:
+        name = FAILURE_ZIP_NAME if failure else ZIP_NAME
     zip_path = destination_dir / name
     destination_dir.mkdir(parents=True, exist_ok=True)
     _require(not zip_path.exists(), "PACKAGE_ALREADY_EXISTS:" + str(zip_path))
-    gate = _pack_gate() if not rehearsal else {"skipped": "rehearsal"}
-    members, missing = _collect_members(rehearsal=rehearsal)
+    gate = _pack_gate(failure=failure) if not rehearsal else {"skipped": "rehearsal"}
+    members, missing = _collect_members(rehearsal=rehearsal, failure=failure)
     if rehearsal:
         # A rehearsal exercises the packer against a tree that has not run yet, so the
         # ledger and the task trees the authorized round has not produced are legitimately
@@ -652,7 +749,15 @@ def _build_package(*, rehearsal: bool) -> dict[str, Any]:
     receipt = {
         "schema": "iscat168.return_package_receipt.1",
         "rehearsal": rehearsal, "utc": _utc(),
-        "run_id": gate.get("step_sequence_run_id") if not rehearsal else None,
+        # The pack gate names this key authorized_round_run_id; asking for a key that does not
+        # exist used to record run_id null on every real pack.
+        "run_id": gate.get("authorized_round_run_id") if not rehearsal else None,
+        "failure_pack": failure,
+        "round_status": None if rehearsal else ("FAILED" if failure else "EXITED_ZERO"),
+        "authorized_round_failed_step": (None if rehearsal
+                                         else gate.get("authorized_round_failed_step")),
+        "authorized_round_blocked_steps": (None if rehearsal
+                                           else gate.get("authorized_round_blocked_steps")),
         "archive": str(zip_path.relative_to(ROOT)).replace("\\", "/"),
         "zip_sha256": zip_sha, "zip_bytes": zip_path.stat().st_size,
         "member_count_including_contents_csv": len(members) + 1,
@@ -686,7 +791,9 @@ def _build_package(*, rehearsal: bool) -> dict[str, Any]:
         "contract_pins": {rel: pinned for rel, pinned in sorted(ctrl.CONTRACT_PINS.items())},
     }
     if not rehearsal:
-        _write_new(OUT / "return_package_receipt.json", _json_text(receipt))
+        receipt_name = ("failure_package_receipt.json" if failure
+                        else "return_package_receipt.json")
+        _write_new(OUT / receipt_name, _json_text(receipt))
     else:
         (destination_dir / "rehearsal_package_receipt.json").write_text(
             _json_text(receipt), encoding="utf-8")
@@ -749,6 +856,9 @@ def _audit_package(zip_path: Path, *, expected_sha: str | None) -> dict[str, Any
                     "results/v168/verification.json", "results/v168/status.json",
                     "README_V168_RETURN.md", "contract/" + _contract_file().name):
             findings["present_" + Path(arc).name] = arc in names
+        # A failure archive has to carry its own statement of what failed, inside the archive.
+        findings["present_failure_package_notice.json"] = (
+            "results/v168/failure_package_notice.json" in names)
     sidecar = zip_path.parent / (zip_path.name + ".sha256")
     findings["sidecar_matches"] = (sidecar.is_file()
                                    and findings["zip_sha256"]
@@ -765,28 +875,103 @@ def _audit_package(zip_path: Path, *, expected_sha: str | None) -> dict[str, Any
     return findings
 
 
-def mode_pack(*, rehearsal: bool) -> int:
-    pack_passes: dict[str, Any] = {"rehearsal": rehearsal}
+def _publish_failure_notice() -> dict[str, Any]:
+    """Say what a failure archive is, before the manifest hashes the saying of it.
+
+    The notice is written first so the closing evidence pass puts its bytes in the manifest and
+    the archive carries it: a reader who only ever sees the ZIP can still tell which step failed,
+    which steps were therefore never reached, and that nothing here was re-run to make a pass.
+    Everything in it is read out of the round's own published trace, and no timestamp is used, so
+    a replay produces byte-identical evidence rather than a rewrite of it.
+    """
+    traces = _traces()
+    rounds = [doc for _path, doc in traces
+              if "run" in (doc.get("requested_steps") or [])]
+    _require(bool(rounds), "FAILURE_NOTICE_NO_AUTHORIZED_ROUND_TRACE")
+    round_ids = {str(doc.get("run_id")) for doc in rounds}
+    _require(len(round_ids) == 1, "FAILURE_NOTICE_MORE_THAN_ONE_RUN_IDENTITY:"
+             + ",".join(sorted(round_ids)))
+    sequence = rounds[-1]
+    _require(sequence.get("exit_code") != 0,
+             "FAILURE_NOTICE_ROUND_EXITED_ZERO_USE_PACK:" + str(sequence.get("run_id")))
+    steps = {str(row.get("step")): str(row.get("status"))
+             for row in (sequence.get("steps") or [])}
+    first_error = next((row for row in (sequence.get("steps") or [])
+                        if str(row.get("status")) == "FAILED"), {})
+    register_path, _versions = ctrl.latest_evidence(CONTROL / "failure_records.json")
+    register = ctrl.read_json(register_path) if register_path.is_file() else {}
+    document = {
+        "schema": "iscat168.failure_package_notice.1",
+        "run_id": sequence.get("run_id"),
+        "what_this_archive_is": ("the evidence of the authorized V168 round that failed; no "
+                                 "step of that round was re-run, re-charged or replaced here"),
+        "authorized_round_exit_code": sequence.get("exit_code"),
+        "failed_step": sequence.get("failed_step"),
+        "blocked_steps": list(sequence.get("blocked_steps") or []),
+        "step_status": steps,
+        "first_failure": {"step": first_error.get("step"),
+                          "error_type": first_error.get("error_type"),
+                          "error": (first_error.get("error") or "")[:2000] or None},
+        "deliverables_absent_because_of_that_failure": {
+            "results/v168/seal.json": "seal step " + steps.get("seal", "ABSENT_FROM_TRACE"),
+            "results/v168/estimates_merge_reuse.json":
+                "estimates step " + steps.get("estimates", "ABSENT_FROM_TRACE"),
+            "results/v168/validator_only/": ("validate step "
+                                             + steps.get("validate", "ABSENT_FROM_TRACE")
+                                             + "; the sealed truth was never opened, so the "
+                                               "independent score is NOT_STARTED"),
+        },
+        "failure_records": {"path": str(register_path.relative_to(ROOT)).replace("\\", "/"),
+                            "record_count": register.get("record_count")},
+        "budget_is_the_rounds_own_ledger": True,
+        "this_archive_is_a_pass": False,
+        "reportable_D": None,
+        "experimental_absolute_diameter_validated": False,
+        "model_calls": 0,
+    }
+    path = OUT / "failure_package_notice.json"
+    digest = _write_new(path, _json_text(document))
+    return dict(document, path=str(path), sha256=digest, model_calls=0)
+
+
+def mode_pack(*, rehearsal: bool, failure: bool = False) -> int:
+    pack_passes: dict[str, Any] = {"rehearsal": rehearsal, "failure_pack": failure}
     if not rehearsal:
+        if failure:
+            # Before the closing pass, so the manifest hashes the notice and the archive holds it.
+            pack_passes["failure_notice"] = _publish_failure_notice()
         pack_passes["stable_console_log"] = _publish_stable_run_log()
         code = _spawn(_controller_argv(dry_run=False, steps=CLOSE_STEPS),
                       LOGS / ("controller_close_" + _utc() + ".log"))
         _require(code == 0, "CLOSING_EVIDENCE_PASS_FAILED_EXIT_" + str(code))
         pack_passes["closing_pass_steps"] = CLOSE_STEPS
         pack_passes["closing_pass_exit_code"] = code
-    receipt = _build_package(rehearsal=rehearsal)
+    receipt = _build_package(rehearsal=rehearsal, failure=failure)
     zip_path = ROOT / receipt["archive"]
     findings = _audit_package(zip_path, expected_sha=receipt["zip_sha256"])
     findings["pack_passes"] = pack_passes
-    findings["package_receipt_sha256"] = (_sha(OUT / "return_package_receipt.json")
-                                          if not rehearsal else None)
+    findings["failure_pack"] = failure
+    findings["this_archive_is_a_pass"] = not failure
+    findings["package_receipt_sha256"] = (
+        _sha(OUT / ("failure_package_receipt.json" if failure
+                    else "return_package_receipt.json"))
+        if not rehearsal else None)
     findings["audit_is_last_byte"] = True
-    findings_path = (REHEARSAL_DIR / "rehearsal_zip_verification.json" if rehearsal
-                     else OUT / "audit" / "v168_return_zip_verification.json")
+    if rehearsal:
+        findings_path = REHEARSAL_DIR / "rehearsal_zip_verification.json"
+    elif failure:
+        findings_path = OUT / "audit" / "v168_failure_return_zip_verification.json"
+    else:
+        findings_path = OUT / "audit" / "v168_return_zip_verification.json"
     if rehearsal:
         findings_path.write_text(_json_text(findings), encoding="utf-8")
     else:
         _write_new(findings_path, _json_text(findings))
+    if failure:
+        # The exit code of this mode means "the failure evidence was packaged intact"; it can
+        # never mean the round passed, so the notice has to be inside the archive it describes.
+        _require(findings["present_failure_package_notice.json"],
+                 "FAILURE_NOTICE_NOT_PACKED:" + str(zip_path))
     print(_json_text({"zip_sha256": findings["zip_sha256"],
                       "zip_bytes": findings["zip_bytes"],
                       "member_count": findings["member_count"],
@@ -805,6 +990,10 @@ def mode_pack(*, rehearsal: bool) -> int:
              and not findings["estimator_input_forbidden_key_offenders"])
     print(("PACK_AUDIT_CLEAN " if clean else "PACK_AUDIT_FINDINGS ")
           + receipt["archive"])
+    if failure and clean:
+        print("FAILURE_PACK_DELIVERED round_failed_step="
+              + str(receipt["authorized_round_failed_step"])
+              + " this_archive_is_a_pass=False", flush=True)
     return 0 if clean else 2
 
 
@@ -820,6 +1009,9 @@ def main(argv: list[str] | None = None) -> int:
     group.add_argument("--run", action="store_true")
     group.add_argument("--pack", action="store_true")
     group.add_argument("--pack-rehearsal", action="store_true")
+    group.add_argument("--pack-failure", action="store_true",
+                       help=("contract 11.6: package the evidence of a round whose step failed; "
+                             "read-only, no new run identity, no new budget, not a pass"))
     group.add_argument("--status", action="store_true")
     parser.add_argument("--run-id", default="full_004",
                         help="workstation test run id; evidence directories are append-only")
@@ -837,6 +1029,8 @@ def main(argv: list[str] | None = None) -> int:
             return mode_run()
         if args.pack:
             return mode_pack(rehearsal=False)
+        if args.pack_failure:
+            return mode_pack(rehearsal=False, failure=True)
         if args.pack_rehearsal:
             return mode_pack(rehearsal=True)
         return mode_status()

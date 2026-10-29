@@ -679,7 +679,9 @@ def test_a_round_document_that_records_blocked_execution_is_reported_verbatim(
     document = controller.status_document(_status_ctx(out, entries, "PROBE_STATUS_BLOCKED"))
     p3 = document["stages"]["P3_authorized_computation"]
     assert p3["EXECUTION"] == "BLOCKED", "A_BLOCKED_ROUND_WAS_SMOOTHED_INTO_A_STATUS"
-    assert p3["VERIFICATION"] == "0 of 23 tasks sealed"
+    # "sealed" is a P5 word and no seal exists here: P3 may only report the result
+    # documents its own round persisted.
+    assert p3["VERIFICATION"] == "0 of 23 task result documents persisted, not yet sealed"
     assert document["stages"]["P4_final_verify"]["EXECUTION"] == "NOT_STARTED"
 
 
@@ -697,6 +699,32 @@ def test_p3_only_claims_executed_once_the_round_step_wrote_its_own_receipt(
     document = controller.status_document(_status_ctx(out, entries, "PROBE_STATUS_FULL"))
     p3 = document["stages"]["P3_authorized_computation"]
     assert p3["EXECUTION"] == "EXECUTED"
-    assert p3["VERIFICATION"] == "23 of 23 tasks sealed"
+    assert p3["VERIFICATION"] == "23 of 23 task result documents persisted, not yet sealed"
     assert document["stages"]["P4_final_verify"]["EXECUTION"] == "EXECUTED"
     assert "logical 28" in document["stages"]["P4_final_verify"]["VERIFICATION"]
+
+
+def test_p3_only_names_a_seal_once_the_seal_file_exists(
+        staged, probe_tree, monkeypatch):
+    """The seal clause of the P3 label tracks seal.json, and nothing else.
+
+    Before P5 the label must say "not yet sealed"; once the seal document exists it may
+    say the seal was recorded, but it must still never claim the 23 answers themselves
+    were scored.
+    """
+    entries = staged["plan"]["entries"]
+    out = probe_tree
+    _patch_status_tree(out, monkeypatch)
+    _write_control_json(out, "run_round.json", {"status": "EXECUTED", "tasks_planned": 23})
+
+    document = controller.status_document(_status_ctx(out, entries, "PROBE_STATUS_UNSEALED"))
+    assert document["stages"]["P3_authorized_computation"]["VERIFICATION"] == (
+        "23 of 23 task result documents persisted, not yet sealed")
+    assert document["stages"]["P5_seal_and_score"]["EXECUTION"] == "NOT_STARTED"
+
+    (out / "seal.json").write_bytes(common.canon(
+        {"schema": "iscat168.seal.1", "task_count": 23}))
+    document = controller.status_document(_status_ctx(out, entries, "PROBE_STATUS_SEALED"))
+    assert document["stages"]["P3_authorized_computation"]["VERIFICATION"] == (
+        "23 of 23 task result documents persisted, seal recorded by P5")
+    assert document["stages"]["P5_seal_and_score"]["EXECUTION"] == "EXECUTED"
