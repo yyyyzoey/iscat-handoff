@@ -128,12 +128,25 @@ def _code_row(path: Path) -> dict:
             "byte_identical_to_v166_commit": commit_blob == disk_blob}
 
 
+GENERATED_SOURCE_DIRS = ("__pycache__", ".pytest_cache", ".mypy_cache")
+
+
+def _is_generated_source(path: Path) -> bool:
+    """Tool-created cache bytes are not executed source.
+
+    The code identity has to be reproducible from a clean checkout, so a
+    git-ignored ``.pytest_cache`` README written by a workstation test run must
+    never move the digest that the release receipt and capsule are pinned to.
+    """
+    return any(part in GENERATED_SOURCE_DIRS for part in path.parts)
+
+
 def code_identities() -> dict:
     """Every source this round runs on, with its hash and its Git status."""
     rows: dict[str, dict] = {}
     for directory in ("tools/v168", "tools/v168_bundle"):
         for path in sorted((ROOT / directory).rglob("*")):
-            if not path.is_file() or "__pycache__" in path.parts:
+            if not path.is_file() or _is_generated_source(path):
                 continue
             if path.suffix not in {".py", ".json", ".md", ".csv", ".txt"}:
                 continue
@@ -753,7 +766,7 @@ def test_suite_sha256() -> str:
     """One digest over the frozen production test suite that authorized this code."""
     files = {path.relative_to(ROOT).as_posix(): sha_file(path)
              for path in sorted((ROOT / "tools" / "v168" / "tests").rglob("*"))
-             if path.is_file() and "__pycache__" not in path.parts}
+             if path.is_file() and not _is_generated_source(path)}
     require(len(files) >= 8, "V168_PRODUCTION_TEST_SUITE_INCOMPLETE:" + str(len(files)))
     return sha_bytes(canon(files))
 

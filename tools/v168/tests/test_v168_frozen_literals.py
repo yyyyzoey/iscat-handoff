@@ -10,6 +10,7 @@ definition mid-round.
 from __future__ import annotations
 
 import json
+import os
 import re
 import subprocess
 import sys
@@ -68,6 +69,55 @@ def test_controller_identity_driver_recomputes_and_accepts_the_same_pins():
     assert all(identities["identity_checks"].values()), identities["identity_checks"]
     assert identities["v166_release_commit"] == common.PARENT_COMMIT
     assert identities["file_count"] == len(identities["files"]) > 0
+
+
+def _committed_files() -> set[str]:
+    listing = subprocess.run(("git", "-C", str(common.ROOT), "ls-files", "-z"),
+                             capture_output=True, text=True, encoding="utf-8",
+                             check=True).stdout
+    return {name for name in listing.split("\0") if name}
+
+
+def test_every_code_identity_file_is_committed_so_a_clean_clone_can_rehash_it():
+    """Contract 4.2: the execution identity is a listed file set, not stray bytes.
+
+    An independent reviewer re-runs v168_test_binding --verify on a fresh
+    checkout.  If any identity file were only a generated artefact of this
+    workstation, that re-verification would report CODE_CHANGED_AFTER_TESTS.
+    """
+    files = controller.code_identities()["files"]
+    untracked = sorted(set(files) - _committed_files())
+    assert not untracked, untracked
+
+
+def test_generated_cache_bytes_never_move_the_identity_or_the_suite_digest():
+    """Real .pytest_cache sentinels must stay invisible to both frozen digests."""
+    noise = [("tools/v168_bundle", "v168_identity_probe.txt"),
+             ("tools/v168/tests", "v168_suite_probe.txt")]
+    paths = [(common.ROOT / rel / ".pytest_cache" / name) for rel, name in noise]
+    identity_before = controller.code_identities()["identity_sha256"]
+    suite_before = controller.test_suite_sha256()
+    made_dirs: set = set()
+    try:
+        for path in paths:
+            if not path.parent.exists():
+                path.parent.mkdir(parents=True)
+                made_dirs.add(path.parent)
+            path.write_text("V168 probe - generated cache directory\n", encoding="utf-8")
+            assert path.is_file(), "sentinel not written; the test would prove nothing"
+        during = controller.code_identities()
+        suite_during = controller.test_suite_sha256()
+    finally:
+        for path in paths:
+            if path.exists():
+                path.unlink()
+        for directory in made_dirs:
+            os.rmdir(directory)
+    assert not any(path.exists() for path in paths)
+    assert not any(".pytest_cache" in rel for rel in during["files"]), \
+        [rel for rel in during["files"] if ".pytest_cache" in rel]
+    assert during["identity_sha256"] == identity_before
+    assert suite_during == suite_before
 
 
 def _estimator_role_identity_in_a_fresh_process() -> dict:
