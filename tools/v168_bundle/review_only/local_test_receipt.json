@@ -1,0 +1,19 @@
+{
+  "scope": "LOCAL_POLICY_AND_SYNTHETIC_SQLITE_AND_APPROVED_GLS_TESTS_NOT_WORKSTATION_F2C",
+  "tests": 57,
+  "outcomes": "57 passed",
+  "production_model_calls": 0,
+  "original_v167_177_tests_reexecuted_here": false,
+  "native_v167_archive_audited_here": false,
+  "native_original_v167_sqlite_audited_here": false,
+  "executed_command": "python -m pytest -q tests",
+  "source_sha256": {
+    "approved_core/v152_gls_core.py": "a1746e4feb56136cdba15013cefc1e318f5fda690837564226e32f80db713bb5",
+    "approved_core/v165_objective.py": "7d013551d9ae155de023daa1e1a6ad5678c6b038ae217fa79fe22c4e4eed64bd",
+    "code/v168_recovery_gate.py": "20324b460801304c5d304e92bb9c1114a177e5e771a3ae2c58f77314a52a8ae7",
+    "tests/test_approved_objective.py": "1eae9fd22b5e221db29f3fbe87e540253df9f9ab85754937a2cf33683a5493d6",
+    "tests/test_recovery_gate.py": "2e5c5b1b8d712ce06b7b367a085466a5d091b7a9fca38082b05804655505631b"
+  },
+  "authorization_sha256": "f8fb4b76f0ffc00eb5aa536f40180d250317afdfef8000c64fea7fa3e11d9f37",
+  "input_v167_zip_sha256": "70cd6aba446eb047bc13a95abdfc088fe1549f04af36bf166e8f63da6250a719"
+}
